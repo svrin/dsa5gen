@@ -15,6 +15,18 @@
                 type="application/javascript"></script>
         <script src="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"
                 type="application/javascript"></script>
+        <script src="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"
+                type="application/javascript"></script>
+        <script src="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"
+                type="application/javascript"></script>
+        <script src="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone.js"
+                type="application/javascript"></script>
+
+        <script type="application/javascript">
+            require.config({
+                baseUrl: '/static/'
+            });
+        </script>
     </head>
     <body {% block body_attr %}{% end %}>
     {% block body %}

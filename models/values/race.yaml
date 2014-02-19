@@ -1,0 +1,36 @@
+-
+  name: "Mittelländer"
+  costs: 0
+  base_age: 15
+  base_age_modifier: 3
+  cultures: ["Mittelländische Städte", "Andergast/Nostria", "Bornland", "Horasreich", "Südaventurien"]
+-
+  name: "Tulamiden"
+  costs: 0
+  base_age: 15
+  base_age_modifier: 3
+  cultures: ["Tulamidische Stadtstaaten", "Novadis", "Südaventurien"]
+-
+  name: "Thorwalder"
+  costs: 5
+  base_age: 15
+  base_age_modifier: 3
+  cultures: ["Thorwal", "Andergast/Nostria", "Mittelländische Städte", "Südaventurien"]
+-
+  name: "Zwerge"
+  costs: 16
+  base_age: 35
+  base_age_modifier: 6
+  cultures: ["Ambosszwerge"]
+-
+  name: "Elfen"
+  costs: 20
+  base_age: 25
+  base_age_modifier: 20
+  cultures: ["Auelfen"]
+-
+  name: "Halbelfen"
+  costs: 3
+  base_age: 15
+  base_age_modifier: 3
+  cultures: ["Auelfen", "Mittelländische Städte", "Andergast/Nostria", "Bornland", "Horasreich"]

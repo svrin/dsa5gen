@@ -1,0 +1,60 @@
+-
+  name: "Botenreiter"
+  costs: 0
+  min: {MU: 11, GE: 11, KO: 12}
+-
+  name: "Einbrecher"
+  costs: 0
+  min: {MU: 12, FF: 13, GE: 12}
+-
+  name: "Entdecker"
+  costs: 6
+  min: {MU: 12, KL: 12, IN: 12, KO: 11}
+-
+  name: "Gaukler"
+  costs: 2
+  min: {MU: 11, CH: 12}
+-
+  name: "Jäger"
+  costs: 11
+  min: {IN: 11, GE: 12, KO: 11}
+-
+  name: "Krieger"
+  costs: 24
+  min: {MU: 12, GE: 12, KO: 13, KK: 12}
+-
+  name: "Kundschafter"
+  costs: 7
+  min: {MU: 12, IN: 12, KO: 12}
+-
+  name: "Magier"
+  costs: 18
+  min: {MU: 11, KL: 13, IN: 11, CH: 12}
+-
+  name: "Pirat"
+  costs: 1
+  min: {MU: 12, GE: 12, KO: 11, KK: 11}
+-
+  name: "Ritter"
+  costs: 23
+  min: {MU: 12, KO: 12, KK: 12}
+-
+  name: "Söldner"
+  costs: 10
+  min: {MU: 12, GE: 12, KO: 12, KK: 11}
+-
+  name: "Streuner"
+  costs: 3
+  min: {MU: 11, IN: 12, CH: 12, FF: 12}
+-
+  name: "Wundarzt"
+  costs: 0
+  min: {IN: 12, CH: 11, FF: 13}
+-
+  name: "Legendensänger"
+  costs: 4
+  min: {IN: 13, CH: 12}
+-
+  name: "Wildnisläufer"
+  costs: 5
+  min: {GE: 13, KO: 12}

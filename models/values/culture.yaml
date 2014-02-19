@@ -1,0 +1,39 @@
+-
+  name: "Mittelländische Städte"
+  costs: 0
+  professions: ["Botenreiter", "Einbrecher", "Entdecker", "Gaukler", "Jäger", "Krieger", "Kundschafter", "Magier", "Pirat", "Ritter", "Söldner", "Streuner", "Wundarzt"]
+-
+  name: "Andergast/Nostria"
+  costs: 6
+  professions: ["Botenreiter", "Einbrecher", "Entdecker", "Gaukler", "Jäger", "Krieger", "Kundschafter", "Magier", "Pirat", "Ritter", "Söldner", "Streuner", "Wundarzt"]
+-
+  name: "Bornland"
+  costs: 0
+  professions: ["Botenreiter", "Einbrecher", "Entdecker", "Gaukler", "Jäger", "Krieger", "Kundschafter", "Magier", "Pirat", "Ritter", "Söldner", "Streuner", "Wundarzt"]
+-
+  name: "Horasreich"
+  costs: 3
+  professions: ["Botenreiter", "Einbrecher", "Entdecker", "Gaukler", "Jäger", "Krieger", "Magier", "Pirat", "Söldner", "Streuner", "Wundarzt"]
+-
+  name: "Tulamidische Stadtstaaten"
+  costs: 3
+  professions: ["Botenreiter", "Einbrecher", "Entdecker", "Gaukler", "Krieger", "Magier", "Pirat", "Söldner", "Streuner", "Wundarzt"]
+-
+  name: "Novadis"
+  professions: ["Botenreiter", "Entdecker", "Gaukler", "Krieger", "Kundschafter", "Magier", "Söldner", "Streuner", "Wundarzt"]
+-
+  name: "Thorwal"
+  costs: 4
+  professions: ["Botenreiter", "Entdecker", "Gaukler", "Jäger", "Krieger", "Kundschafter", "Magier", "Pirat", "Söldner", "Streuner", "Wundarzt"]
+-
+  name: "Südaventurien"
+  costs: 4
+  professions: ["Botenreiter", "Einbrecher", "Entdecker", "Gaukler", "Jäger", "Krieger", "Kundschafter", "Magier", "Pirat", "Söldner", "Streuner", "Wundarzt"]
+-
+  name: "Ambosszwerge"
+  costs: 0
+  professions: ["Botenreiter", "Entdecker", "Kundschafter", "Söldner", "Wundarzt"]
+-
+  name: "Auelfen"
+  costs: 4
+  professions: ["Legendensänger", "Wildnisläufer"]

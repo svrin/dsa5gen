@@ -17,6 +17,10 @@ class Handler(RequestHandler):
     """
 
     def initialize(self, caption):
+        """
+
+        :param caption:
+        """
         self.caption = caption
 
         super().initialize()
