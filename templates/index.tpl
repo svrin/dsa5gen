@@ -1,5 +1,5 @@
 {% extends 'base.tpl' %}
 
 {% block content %}
-It works!
+    <main>...</main>
 {% end %}
