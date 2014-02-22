@@ -8,19 +8,7 @@
 $(document).ajaxStart(function() { NProgress.start(); });
 $(document).ajaxStop(function() { NProgress.done(); });
 
-// Require models
-require(["collections/attribute", "collections/culture", "collections/profession", "collections/race"], function (attributeCollection, cultureCollection, professionCollection, raceCollection) {
-   console.log("Loaded collections");
-
-    var attributes = new attributeCollection();
-    attributes.fetch();
-
-    var cultures = new cultureCollection();
-    cultures.fetch();
-
-    var professions = new professionCollection();
-    professions.fetch();
-
-    var races = new raceCollection();
-    races.fetch();
-});
+// Our 'i18n' stup
+__ = function (x) {
+    return x
+};

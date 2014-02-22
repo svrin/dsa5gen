@@ -1,0 +1,43 @@
+#!/usr/bin/env nodejs
+
+var builder = require('buildify'),
+    path = require('path'),
+    glob = require('glob'),
+    coffee = require('coffee-script');
+
+var baseDir = __dirname + '/..',
+    sourceDir = baseDir + '/data',
+    utilDir = baseDir + '/static/util',
+    outputDir = baseDir + '/static/data';
+
+var template = baseDir + "/static/data/template.mustache";
+
+//Files to concatenate into main file
+var dirList = [
+  'culture'
+];
+
+// Build data
+for (var index in dirList) {
+    var dir = dirList[index];
+
+    builder.task({
+      name: dir,
+      task: function () {
+
+        builder('/')
+            .concat(glob.sync(utilDir + "/*.coffee"))
+            .perform(function(content) {
+                return coffee.compile(content, {bare:true});
+            })
+            .concat(glob.sync(sourceDir + "/" + dir + "/**/*.js"))
+            .perform(function(content) {
+                return content.replace(/.{2}sourceMappingURL.+/g, '');
+            })
+            .wrap(template, {dir: dir})
+            .save(outputDir + "/" + dir + ".js")
+            .uglify()
+            .save(outputDir + "/" + dir + ".min.js");
+      }
+    });
+}

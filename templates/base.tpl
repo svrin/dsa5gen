@@ -44,6 +44,6 @@
         </div>
     {% end %}
 
-        <script type="application/javascript" src="static/dsa5gen.js"></script>
+        <script type="application/javascript" src="/static/dsa5gen.js"></script>
     </body>
 </html>

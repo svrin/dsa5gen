@@ -1,0 +1,11 @@
+define(["models/{{ dir }}"], function ({{ dir }}Model) {
+    var {{ dir }}Collection = Backbone.Collection.extend({
+        model: {{ dir }}Model
+    });
+
+    var {{ dir }}s = new {{ dir }}Collection({});
+
+    {{ body }}
+
+    return {{ dir }}s;
+});
