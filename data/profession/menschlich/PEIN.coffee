@@ -21,6 +21,7 @@ professions.add [
   vantages:
     auto: [
       choice(5, __("Goldgier"), __("Neugier"))
+      choice(__("Ortskenntnis (Gebiet)"), __("Ortskenntnis (Gegend)"))
     ]
     recommended: [
       __("Ausdauernd"),
@@ -88,7 +89,6 @@ professions.add [
     [__("Malen/Zeichnen"), 2]
     [__("Schlösser Knacken"), 7]
 
-    choice(__("Ortskenntnis (Gebiet)"), __("Ortskenntnis (Gegend)"))
     __("Klettern (Freiklettern)")
   ]
 
