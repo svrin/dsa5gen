@@ -21,8 +21,8 @@ professions.add [
 
   vantages:
     auto: [
-      choice_from(1, "Geländekunde")
-      "Scharfschütze"
+      choice_from(1, __("Geländekunde"))
+      __("Scharfschütze")
     ]
     recommended: [
       __("Ausdauernd")
@@ -63,7 +63,7 @@ professions.add [
     [__("Schleichen"), 5]
     [__("Schwimmen"), 2]
     [__("Selbstbeherrschung"), 2]
-    [__("Sich verstecken"), 5]
+    [__("Sich Verstecken"), 5]
     [__("Sinnesschärfe"), 5]
     [__("Stimmen Imitieren"), 1]
 
@@ -81,7 +81,7 @@ professions.add [
     choice(2, __("Abrichten"), __("Bogenbau"))
     choice(3, __("Fleischer"), __("Gerber/Kürschner"))
     [__("Heilkunde Gift"), 3]
-    [__("Heilkunde Krankheiten"), 2]
+    [__("Heilkunde Krankheit"), 2]
     [__("Heilkunde Wunden"), 2]
     [__("Kochen"), 1]
     [__("Lederarbeiten"), 2]

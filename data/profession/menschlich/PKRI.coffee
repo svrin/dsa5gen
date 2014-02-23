@@ -24,11 +24,11 @@ professions.add [
 
   vantages:
     auto: [
-      "Akademische Ausbildung (Krieger)"
-      ["Prinzipientreue", 10]
-      "Linkhand"
-      "Rüstungsgewöhnung I (langes Kettenhemd)"
-      "Schildkampf I"
+      __("Akademische Ausbildung (Krieger)")
+      [__("Prinzipientreue"), 10]
+      __("Linkhand")
+      __("Rüstungsgewöhnung I (langes Kettenhemd)")
+      __("Schildkampf I")
     ]
     recommended: [
       __("Adlige Abstammung")
@@ -87,7 +87,7 @@ professions.add [
     [__("Sagen/Legenden"), 2]
     [__("Tierkunde"), 2]
 
-    ["Kusliker Zeichen", 4]
+    [__("Kusliker Zeichen"), 4]
 
     [__("Heilkunde Wunden"), 3]
     [__("Lederarbeiten"), 2]

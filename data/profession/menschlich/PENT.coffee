@@ -26,7 +26,7 @@ professions.add [
     recommended: [
       __("Adlige Abstammung")
       __("Bgeabung Sprachen")
-      __("Gefahrensinstinkt")
+      __("Gefahreninstinkt")
       __("Gutes Gedächtnis")
       __("Innerer Kompass")
       __("Richtungssinn")
@@ -90,15 +90,10 @@ professions.add [
                     "Gesteinskunde", "Götter/Kulte", "Heraldik", "Kartographie", "Magiekunde", "Mechanik",
                     "Pflanzenkunde", "Rechtskunde", "Sprachenkunde", "Sternkunde", "Tierkunde")
 
-    choice_from(6, __("Sprache kennen"))
-    choice_from(6, __("Sprache kennen"))
-    choice_from(2, __("Sprache kennen"))
-    choice_from(2, __("Sprache kennen"))
-    choice_from(6, __("Lesen/Schreiben"))
-    choice_from(4, __("Lesen/Schreiben"))
-    choice_from(4, __("Lesen/Schreiben"))
+    choice_from(6, 6, 2, 2, __("Sprache kennen"))
+    choice_from(6, 4, 4, __("Lesen/Schreiben"))
 
-    [__("Boote fahren"), 2]
+    [__("Boote Fahren"), 2]
     choice(1, "Feinmechanik", "Schlösser knacken")
     [__("Heilkunde Gift"), 1]
     [__("Heilkunde Wunden"), 2]

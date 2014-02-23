@@ -65,7 +65,7 @@ cultures.add [
     [__("Thorwalsch"), -> char.attributes["KL"] - 2]
     [__("Garethi"), -> char.attributes["KL"] - 4]
 
-    [__("Boote fahren"), 2]
+    [__("Boote Fahren"), 2]
     [__("Holzbearbeitung"), 1]
     [__("Seefahrt"), 2]
 

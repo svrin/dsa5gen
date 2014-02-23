@@ -27,7 +27,7 @@ professions.add [
       __("Ausdauernd"),
       __("Balance"),
       __("Dämmerungssicht")
-      __("Gefahrensinstinkt"),
+      __("Gefahreninstinkt"),
       __("Gutes Gedächtnis"),
       __("Herausragender Sinn (Gehör)")
       __("Herausragender Sinn (Tastsinn)")
@@ -69,13 +69,13 @@ professions.add [
     [__("Körperbeherschung"), 5]
     [__("Schleichen"), 5]
     [__("Selbstbeherschung"), 2]
-    [__("Sich verstecken"), 5]
+    [__("Sich Verstecken"), 5]
     [__("Sinnesschärfe"), 3]
     [__("Taschendiebstahl"), 2]
 
     [__("Gassenwissen"), 4]
     [__("Menschenkenntnis"), 1]
-    [__("Sich verkleiden"), 1]
+    [__("Sich Verkleiden"), 1]
 
     [__("Fährtensuche"), 1]
     [__("Fesseln/Entfesseln"), 1]

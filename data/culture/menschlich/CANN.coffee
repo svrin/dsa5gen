@@ -45,7 +45,7 @@ cultures.add [
     [__("Athletik"), 1]
     [__("Schleichen"), 1]
     [__("Selbstbeherschung"), 1]
-    [__("Sich verstecken"), 1]
+    [__("Sich Verstecken"), 1]
     [__("Zechen"), 1]
 
     [__("Fährtensuche"), 1]

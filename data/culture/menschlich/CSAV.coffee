@@ -41,11 +41,11 @@ cultures.add [
     [__("Säbel"), 1]
 
     [__("Schwimmen"), 1]
-    [__("Sich verstecken"), 1]
+    [__("Sich Verstecken"), 1]
 
     [__("Gassenwissen"), 2]
     [__("Menschenkenntnis"), 1]
-    [__("Sich verkleiden"), 1]
+    [__("Sich Verkleiden"), 1]
     [__("Überreden"), 1]
 
     [__("Götter/Kulte"), 1]
@@ -58,7 +58,7 @@ cultures.add [
     [__("Mohisch"), 4]
     [__("Thorwalsch"), 2]
 
-    [__("Boote fahren"), 1]
+    [__("Boote Fahren"), 1]
     [__("Holzbearbeitung"), 1]
     [__("Lederarbeiten"), 1]
     [__("Seefahrt"), 1]

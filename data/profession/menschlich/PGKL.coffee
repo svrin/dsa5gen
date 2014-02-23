@@ -27,10 +27,10 @@ professions.add [
     recommended: [
       __("Balance"),
       __("Feenfreund"),
-      __("Gefahrensinstinkt"),
+      __("Gefahreninstinkt"),
       __("Glück")
       __("Glück im Spiel")
-      __("Gut aussehend"),
+      __("Gut Aussehend"),
       __("Schlangenmensch")
       __("Soziale Anpassungsfähigkeit")
       __("Wohlklang")
@@ -58,14 +58,14 @@ professions.add [
     choice(5, 3, __("Akrobatik"), __("Athletik"), __("Gaukeleien"))
     choice(2, 1, __("Klettern"), __("Reiten"))
     [__("Körperbeherschung"), 5]
-    [__("Sich verstecken"), 1]
+    [__("Sich Verstecken"), 1]
     choice(1, __("Singen"), __("Tanzen"))
     [__("Taschendiebstahl"), 1]
     [__("Zechen"), 1]
 
     [__("Gassenwissen"), 3]
     [__("Menschenkenntnis"), 4]
-    [__("Sich verkleiden"), 2]
+    [__("Sich Verkleiden"), 2]
     [__("Überreden"), 3]
 
     [__("Geographie"), 1]

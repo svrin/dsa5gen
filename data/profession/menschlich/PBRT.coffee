@@ -24,7 +24,7 @@ professions.add [
     recommended: [
       __("Ausdauernd"),
       __("Eisern"),
-      __("Gefahrensinstinkt"),
+      __("Gefahreninstinkt"),
       __("Gutes Gedächtnis"),
       __("Innerer Kompass"),
       __("Resistenz gegen Krankheiten"),
@@ -62,7 +62,7 @@ professions.add [
     [__("Ringen"), 1]
 
     [__("Athletik"), 3]
-    choice(1, __("Klettern"), __("Boote fahren"))
+    choice(1, __("Klettern"), __("Boote Fahren"))
     [__("Körperbeherschung"), 1]
     [__("Reiten"), 5]
     [__("Schwimmen"), 1]

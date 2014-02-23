@@ -17,7 +17,7 @@ cultures.add [
     recommended: [
       __("Ausdauernd"),
       __("Feenfreund"),
-      __("Gefahreninstikt"),
+      __("Gefahreninstinkt"),
       __("Arroganz"),
       __("Vorurteile")
     ]
@@ -41,7 +41,7 @@ cultures.add [
     [__("Körperbeherschung"), 2]
     [__("Schleichen"), 3]
     [__("Schwimmen"), 4, "L"]
-    [__("Sich verstecken"), 5, "L"]
+    [__("Sich Verstecken"), 5, "L"]
     [__("Singen"), 2]
     [__("Sinnesschärfe"), 1]
     [__("Tanzen"), 2]
@@ -63,7 +63,7 @@ cultures.add [
     [__("Isdira"), -> char.attributes["KL"] - 2]
     choice_from(4, __("Sprache kennen"))
 
-    choice(2, __("Bogenbau"), __("Boote fahren"), "L")
+    choice(2, __("Bogenbau"), __("Boote Fahren"), "L")
     [__("Heilkunde Gift"), 1]
     [__("Heilkunde Wunden"), 1, "L"]
     [__("Holzbearbeitung"), 2]
@@ -83,7 +83,7 @@ cultures.add [
     __("Repräsentation (Elfen)")
     __("Salasandra")
     __("Sumpfkundig")
-    __("Freundschaftslied)")
+    __("Freundschaftslied")
   ]
 
 

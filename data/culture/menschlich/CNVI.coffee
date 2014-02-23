@@ -68,7 +68,7 @@ cultures.add [
     [__("Reiten"), if isM then 3 else 2]
     [__("Schwimmen"), -1]
     [__("Selbstbeherschung"), 1] if isW
-    [__("Sich verstecken")] if isW
+    [__("Sich Verstecken")] if isW
     [__("Sinnesschärfe"), 1]
     [__("Tanzen"), if isM then 1 else 3]
 
@@ -85,7 +85,7 @@ cultures.add [
 
     [__("Tulamidya"), -> char.attributes["KL"] - 2]
 
-    [__("Boote fahren"), -1]
+    [__("Boote Fahren"), -1]
     [__("Heilkunde Gift"), 1] if isW
     [__("Heilkunde Krankheit"), 1] if isW
     [__("Heilkunde Wunden"), 2] if isW

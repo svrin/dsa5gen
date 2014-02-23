@@ -45,14 +45,14 @@ cultures.add [
     [__("Säbel"), 1]
 
     [__("Schleichen"), 1]
-    [__("Sich verstecken"), 1]
+    [__("Sich Verstecken"), 1]
     [__("Tanzen"), 1]
     choice(1, __("Taschendiebstahl"), __("Gaukeleien"))
 
     [__("Etikette"), 1]
     [__("Gassenwissen"), 1]
     [__("Menschenkenntnis"), 2]
-    [__("Sich verkleiden"), 1]
+    [__("Sich Verkleiden"), 1]
     [__("Überreden"), 1]
 
     [__("Brett-/Kartenspiel"), 2]
