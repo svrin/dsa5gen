@@ -14,16 +14,16 @@ var template = baseDir + "/static/data/template.mustache";
 
 //Files to concatenate into main file
 var dirList = [
-  'culture'
+  'culture',
+  'profession'
 ];
 
 // Build data
 for (var index in dirList) {
-    var dir = dirList[index];
-
     builder.task({
-      name: dir,
+      name: dirList[index],
       task: function () {
+        dir = this.name;
 
         builder('/')
             .concat(glob.sync(utilDir + "/*.coffee"))

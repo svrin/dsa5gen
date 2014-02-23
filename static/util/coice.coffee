@@ -1,5 +1,5 @@
 ###
-  choice(list of ammounts, list of reference)
+  choice(list of ammounts..., list of reference...)
 
   Let the user choice len(amounts) many from reference and assign the amounts to them
 
@@ -10,6 +10,9 @@
 choice = (args...) ->
   amounts = _.map(args, (arg) -> _.isNumber arg)
   elements = _.map(args, (arg) -> not _.isNumber arg)
+
+  if not amounts
+    amounts = [1]
 
   class choiceView extends Backbone.View
     tagName: 'div'

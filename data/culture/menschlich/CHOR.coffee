@@ -7,8 +7,6 @@ cultures.add [
 
   costs: 3
 
-  mods: []
-
   vantages:
     auto: []
     recommended: [

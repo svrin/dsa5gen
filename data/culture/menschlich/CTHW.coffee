@@ -7,9 +7,8 @@ cultures.add [
 
   costs: 4
 
-  mods: [
-    ["AuP", 2]
-  ]
+  mods:
+    AuP: 2
 
   vantages:
     auto: [

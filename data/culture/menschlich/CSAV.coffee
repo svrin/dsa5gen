@@ -7,8 +7,6 @@ cultures.add [
 
   costs: 4
 
-  mods: []
-
   vantages:
     auto: [
       __("Hitzeresistenz")

@@ -20,10 +20,6 @@ from pkg_resources import require
 
 require(open('requirements.txt').readlines())
 
-# Add Apis
-for api in next(os.walk(os.path.join(os.path.dirname(__file__), "api")))[1]:
-    site.addsitedir(os.path.join(os.path.dirname(__file__), "api", api))
-
 # Main Program
 if __name__ == "__main__":
     import argparse
