@@ -52,7 +52,7 @@ professions.add [
     ]
 
   skills: [
-    choice(5, __("Armbrust"), __("Bogen"), __("Wurfspeer"))
+    choice(5, __("Armbrust"), __("Bogen"), __("Wurfspeere"))
     choice(1, __("Hiebwaffen"), __("Säbel"))
     [__("Ringen"), 2]
     [__("Speere"), 3]
@@ -75,7 +75,7 @@ professions.add [
     [__("Wettervorhersage"), 3]
     [__("Wildnisleben"), 5]
 
-    [__("Pflanzeknude"), 2]
+    [__("Pflanzenkunde"), 2]
     [__("Tierkunde"), 4]
 
     choice(2, __("Abrichten"), __("Bogenbau"))
@@ -98,7 +98,7 @@ professions.add [
     __("Brotbeutel")
     __("Feuerstein und Zunder")
     __("Schlafsack")
-    __("kleines Zelt")
+    __("Zelt (klein)")
   ]
 
 

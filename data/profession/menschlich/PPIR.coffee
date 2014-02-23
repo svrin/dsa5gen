@@ -90,7 +90,7 @@ professions.add [
   ]
 
   equipments: [
-    __("zweckmäßige Kleidung")
+    __("Kleidung (zweckmäßig)")
     choice_from(1, __("Nahkampfwaffe"))
     choice_from(1, __("Wurfwaffe"))
     choice(1, __("Arbeitsmesser"), __("Dolch"))

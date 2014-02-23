@@ -12,8 +12,10 @@ professions.add [
   requirements: [
     ["CH", 13]
     ["IN", 13]
-    -> char.culture.is(__("Auelfen"))
-    -> 3 <= char.attributes["SO"] <= 13
+    ->
+      char.culture.is(__("Auelfen"))
+    ->
+      3 <= char.attributes["SO"] <= 13
   ]
 
   mods:
@@ -50,7 +52,7 @@ professions.add [
 
     [__("Isdira"), 4]
     [__("Asdharia"), 8]
-    choice_from(6, __("Sprachen kennen"))
+    choice_from(6, __("Sprache kennen"))
     [__("Lesen/Schreiben (Isdira/Asdharia)"), 9]
 
     [__("Malen/Zeichnen"), 4]
@@ -69,8 +71,6 @@ professions.add [
   ]
 
   equipments: []
-
-
 
 
 ]

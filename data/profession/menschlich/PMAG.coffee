@@ -6,7 +6,7 @@ professions.add [
   name: __("Magier (privater Lehrmeister)")
   name_w: __("Magierin (privater Lehrmeister)")
 
-  costs: if char.race.is("Halbelfen") then 16 else 18
+  costs: -> if char.race.is("Halbelfen") then 16 else 18
   zeitaufwendig: 3
 
   requirements: [
@@ -127,7 +127,7 @@ professions.add [
     __("Robe mit arkanen Symbolen")
     __("Reisekutte")
     __("hoher spitzer Hut")
-    __("Zauberstab mit ersten Stabzauber")
+    __("Zauberstab (mit ersten Stabzauber)")
     __("Tine")
     choice(__("Tagebuch"), [__("Blatt Pergament", 10)])
     __("Dolch")

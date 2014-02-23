@@ -99,7 +99,7 @@ professions.add [
     __("Anderthalbhänder")
     __("Schwert")
     __("Dolch")
-    __("einfacher Holzschild")
+    __("Holzschild (einfach)")
     __("langes Kettenhemd")
     __("Waffenpflegeset")
     __("Kriegerbrief")

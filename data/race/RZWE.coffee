@@ -8,7 +8,8 @@ races.add [
   costs: 16
 
   requirements: [
-    ["MU", 12] if char.gender["w"]
+    ->
+      ["MU", 12] if char.gender["w"]
   ]
 
   profile:
@@ -19,7 +20,7 @@ races.add [
       [__("hellgrau"), 12, 13]
       [__("salzweiß"), 14]
       [__("silberweiß"), 15]
-      [__("feuerrot	"), 16, 17]
+      [__("feuerrot"), 16, 17]
       [__("kupferrot"), 18, 20]
     ]
     eye: [
@@ -50,7 +51,7 @@ races.add [
       __("Resistenz gegen Krankheiten")
       __("Schwer zu verzaubern")
       [__("Goldgier"), 5]
-      __("Unfähigkeit Schwimmen")
+      __("Unfähigkeit (Schwimmen)")
       __("Zwergenwuchs")
     ]
     recommended: [

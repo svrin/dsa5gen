@@ -58,7 +58,7 @@ races.add [
 
   skills: [
     [__("Athletik"), 1]
-    [__("Sinnenschärfe"), 1]
+    [__("Sinnesschärfe"), 1]
     [__("Zechen"), 1]
     [__("Wettervorhersage"), 1]
   ]

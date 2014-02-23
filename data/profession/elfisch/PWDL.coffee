@@ -12,8 +12,10 @@ professions.add [
   requirements: [
     ["GE", 13]
     ["KO", 12]
-    -> char.culture.is(__("Auelfen"))
-    -> 3 <= char.attributes["SO"] <= 13
+    ->
+      char.culture.is(__("Auelfen"))
+    ->
+      3 <= char.attributes["SO"] <= 13
   ]
 
   mods:
@@ -80,8 +82,6 @@ professions.add [
   equipments: [
     choice_from(1, __("Waffe"))
   ]
-
-
 
 
 ]

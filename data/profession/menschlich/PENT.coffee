@@ -50,7 +50,7 @@ professions.add [
     ]
     bb: [
       choice(__("Maultier mit Sattel und Zaumzeug"),
-             __("kleines Boot"))
+        __("Boot (klein)"))
       __("Zelt")
       __("Kompass")
     ]
@@ -105,11 +105,11 @@ professions.add [
   equipments: [
     __("stabile und wetterfeste Kleidung")
     __("feste Stiefel")
-    choice(__("gewachster Mantel"), __("gewachster Umhang"))
+    choice(__("Mantel (gewachst)"), __("Umhang (gewachst)"))
     choice(__("Kampfstab"), __("Keule"), __("Säbel"))
     __("Dolch")
     __("Rucksack")
-    __("wasserdichte Lederrolle")
+    __("Lederrolle (wasserdicht)")
     __("Schreibzeug")
     __("Kohlestift")
     [__("Blatt einfaches Papier"), 20]

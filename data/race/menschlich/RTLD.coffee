@@ -46,7 +46,7 @@ races.add [
 
   cultures: [
     __("Tulamidische Stadtstaaten")
-    __("Novadi")
+    __("Novadis")
     __("Südaventurien")
   ]
 ]

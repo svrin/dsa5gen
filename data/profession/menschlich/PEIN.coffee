@@ -93,9 +93,9 @@ professions.add [
   ]
 
   equipments: [
-    __("verbreitete Kleidung")
-    choice(__("dunkle Kapuze"), __("dunkler Mantel"))
-    __("dunkle Handschuhe")
+    __("Kleidung (verbreitet)")
+    choice(__("Kapuze (dunkel)"), __("Mantel (dunkel)"))
+    __("Handschuhe (dunkel)")
     choice(__("Nachschlüssel"), __("Dietriche"))
     __("10 Schritt Seil mit Wurfhaken")
     __("Gürtel mit Trageschlaufen und -haken")

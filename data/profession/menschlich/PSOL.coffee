@@ -13,7 +13,8 @@ professions.add [
     ["GE", 12]
     ["KO", 12]
     ["KK", 11]
-    -> 2 <= char.attributes["SO"] <= 10
+    ->
+      2 <= char.attributes["SO"] <= 10
   ]
 
   mods:
@@ -51,12 +52,14 @@ professions.add [
       __("Schildkampf II")
     ]
     bb: [
-      choice(__("erprobtes Pferd mit Sattel und Zaumzeug"), [__("Packpferd mit Packsattel"), __("Zelt"), __("Kochgeschirr")])
+      choice(__("erprobtes Pferd mit Sattel und Zaumzeug"),
+        [__("Packpferd mit Packsattel"), __("Zelt"), __("Kochgeschirr")])
     ]
 
   skills: [
-    choice(5, 3, __("Anderthalbhänder"), __("Hiebwaffen"), __("Kettenwaffen"), __("Säbel"), __("Schwerter"), __("Speere"))
-    choice(2, __("Armbrust"), __("Bogen"), __("Wurfspeer"), __("Wurfbeil"), __("Wurfmesser"))
+    choice(5, 3, __("Anderthalbhänder"), __("Hiebwaffen"), __("Kettenwaffen"), __("Säbel"), __("Schwerter"),
+      __("Speere"))
+    choice(2, __("Armbrust"), __("Bogen"), __("Wurfspeere"), __("Wurfbeil"), __("Wurfmesser"))
     [__("Dolche"), 3]
     [__("Infanteriewaffen"), 3]
     [__("Raufen"), 3]
@@ -104,7 +107,7 @@ professions.add [
     __("Rüstung und Helm")
     choice_from(1, __("Waffe"))
     __("Dolch")
-    __("einfacher Holzschild")
+    __("Holzschild (einfach)")
     [__("Silbertaler"), 3]
     __("robuste, auffällige Kleidung")
     choice(1, __("Mantel"), __("Umhang"))
@@ -119,8 +122,6 @@ professions.add [
     choice(1, __("Feldflasche"), __("Wasserschlauch"))
     choice(1, __("Schlafsack"), [__("Decke"), __("Decke")])
   ]
-
-
 
 
 ]

@@ -13,7 +13,8 @@ professions.add [
     ["MU", 12]
     ["KO", 12]
     ["KK", 12]
-    -> 8 <= char.attributes["SO"] <= 13
+    ->
+      8 <= char.attributes["SO"] <= 13
   ]
 
   mods:
@@ -56,7 +57,7 @@ professions.add [
 
   skills: [
     choice(7, 4, __("Anderthalbhänder"), __("Hiebwaffen"), __("Schwerter"), __("Zweihandschwerter/-säbel"))
-    choice(3, __("Armbrust"), __("Bogen"), __("Wurfspeer"))
+    choice(3, __("Armbrust"), __("Bogen"), __("Wurfspeere"))
     [__("Dolche"), 3]
     [__("Infanteriewaffen"), 3]
     [__("Lanzenreiten"), 7]
@@ -108,8 +109,6 @@ professions.add [
     __("Umhängetasche (Leder)")
     __("Waffenpflegeset")
   ]
-
-
 
 
 ]

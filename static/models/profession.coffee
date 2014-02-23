@@ -1,5 +1,5 @@
 ###
-  A professions
+  A profession
 ###
 
 define ["models/base"], (Model) ->

@@ -98,7 +98,7 @@ professions.add [
     __("Regenmantel")
     choice_from(1, __("Waffe"))
     __("Dolch")
-    __("wasserdichte Lederrolle")
+    __("Lederrolle (wasserdicht)")
     __("Tuchbeutel")
     __("Wasserschlauch")
     # Ausürstung im Wert von 1W6+2D

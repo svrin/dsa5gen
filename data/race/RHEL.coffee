@@ -42,7 +42,8 @@ races.add [
     auto: [
       __("Viertelzauberer")
       __("Gut Aussehend")
-      __("Zweistimmiger Gesang") if char.culture.is("Auelfen")
+      ->
+        __("Zweistimmiger Gesang") if char.culture.is("Auelfen")
     ]
     recommended: [
       __("Balance")

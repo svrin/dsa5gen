@@ -83,7 +83,7 @@ professions.add [
   ]
 
   equipments: [
-    __("einfache, aber sehr auffällige Kleidung")
+    __("Kleidung (einfach) (auffällig)")
     __("Schminke")
     __("Tuchbeutel")
     __("Weinschlauch")

@@ -42,7 +42,7 @@ professions.add [
     ]
     reduced: []
     bb: [
-      __("edle Kleidung")
+      __("Kleidung (edel)")
       __("Zierwaffe")
       __("Schmink-Ausrüstung")
     ]

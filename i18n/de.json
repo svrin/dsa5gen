@@ -1,6 +1,6 @@
 {
 
-    /* "data/profession/menschlich/PEIN.coffee #2250 */
+    /* "data/profession/menschlich/PEIN.coffee #2255 */
     "10 Schritt Seil mit Wurfhaken": "10 Schritt Seil mit Wurfhaken",
 
     /* "data/culture/menschlich/CANN.coffee #332 */
@@ -8,21 +8,19 @@
     /* "data/culture/menschlich/CSAV.coffee #269 */
     /* "data/culture/menschlich/CTDS.coffee #378 */
     /* "data/culture/menschlich/CTHW.coffee #119 */
-    /* "data/profession/menschlich/PENT.coffee #759 */
-    /* "data/profession/menschlich/PGKL.coffee #636 */
-    /* "data/profession/menschlich/PMAG.coffee #886 */
+    /* "data/profession/menschlich/PENT.coffee #758 */
+    /* "data/profession/menschlich/PGKL.coffee #635 */
+    /* "data/profession/menschlich/PMAG.coffee #915 */
     /* "data/profession/menschlich/PPIR.coffee #283 */
+    /* "data/profession/menschlich/PPIR.coffee #457 */
     /* "data/profession/menschlich/PSOL.coffee #566 */
     /* "data/profession/menschlich/PSTR.coffee #579 */
     "Aberglaube": "Aberglaube",
 
-    /* "data/profession/menschlich/PPIR.coffee #457 */
-    "Aberglaube,": "Aberglaube,",
-
     /* "data/culture/menschlich/CANN.coffee #1402 */
-    /* "data/profession/menschlich/PGKL.coffee #1631 */
-    /* "data/profession/menschlich/PJAE.coffee #1719 */
-    /* "data/profession/menschlich/PRIT.coffee #1876 */
+    /* "data/profession/menschlich/PGKL.coffee #1630 */
+    /* "data/profession/menschlich/PJAE.coffee #1721 */
+    /* "data/profession/menschlich/PRIT.coffee #1877 */
     "Abrichten": "Abrichten",
 
     /* "data/culture/menschlich/CANN.coffee #1251 */
@@ -31,20 +29,20 @@
     /* "data/culture/menschlich/CMLS.coffee #951 */
     "Ackerbau": "Ackerbau",
 
-    /* "data/profession/elifsch/PWDL.coffee #1423 */
+    /* "data/profession/elfisch/PWDL.coffee #1422 */
     "Adlerauge": "Adlerauge",
 
-    /* "data/profession/elifsch/PWDL.coffee #1453 */
+    /* "data/profession/elfisch/PWDL.coffee #1452 */
     "Adlerschwinge": "Adlerschwinge",
 
-    /* "data/culture/menschlich/CNVI.coffee #844 */
+    /* "data/culture/menschlich/CNVI.coffee #882 */
     /* "data/culture/menschlich/CTDS.coffee #584 */
     /* "data/culture/menschlich/CTHW.coffee #571 */
     /* "data/culture/zwergisch/CAZW.coffee #442 */
     /* "data/profession/menschlich/PENT.coffee #339 */
-    /* "data/profession/menschlich/PGKL.coffee #740 */
+    /* "data/profession/menschlich/PGKL.coffee #739 */
     /* "data/profession/menschlich/PKRI.coffee #552 */
-    /* "data/profession/menschlich/PPIR.coffee #543 */
+    /* "data/profession/menschlich/PPIR.coffee #542 */
     /* "data/profession/menschlich/PRIT.coffee #304 */
     /* "data/profession/menschlich/PSTR.coffee #707 */
     /* "data/profession/menschlich/PWUN.coffee #427 */
@@ -53,29 +51,39 @@
     /* "data/profession/menschlich/PKRI.coffee #349 */
     "Akademische Ausbildung (Krieger)": "Akademische Ausbildung (Krieger)",
 
-    /* "data/profession/menschlich/PEIN.coffee #1430 */
-    /* "data/profession/menschlich/PGKL.coffee #1090 */
-    /* "data/profession/menschlich/PPIR.coffee #1009 */
+    /* "data/profession/menschlich/PEIN.coffee #1429 */
+    /* "data/profession/menschlich/PGKL.coffee #1089 */
+    /* "data/profession/menschlich/PPIR.coffee #1008 */
+    /* "data/race/RZWE.coffee #1801 */
     "Akrobatik": "Akrobatik",
 
     /* "data/culture/menschlich/CBLN.coffee #996 */
     "Alaani": "Alaani",
 
-    /* "data/profession/menschlich/PMAG.coffee #2100 */
+    /* "data/profession/menschlich/PMAG.coffee #2129 */
     "Alchimie": "Alchimie",
 
+    /* "data/race/elfisch/REAU.coffee #775 */
+    "Altersresistenz": "Altersresistenz",
+
     /* "data/culture/zwergisch/CAZW.coffee #81 */
+    /* "data/race/RZWE.coffee #2009 */
     "Ambosszwerge": "Ambosszwerge",
 
-    /* "data/profession/menschlich/PMAG.coffee #2307 */
+    /* "data/profession/menschlich/PMAG.coffee #2334 */
     "Analys": "Analys",
 
-    /* "data/profession/menschlich/PMAG.coffee #1446 */
+    /* "data/profession/menschlich/PMAG.coffee #1475 */
     /* "data/profession/menschlich/PWUN.coffee #1094 */
     "Anatomie": "Anatomie",
 
     /* "data/culture/menschlich/CANN.coffee #55 */
     "Andergast und Nostria": "Andergast und Nostria",
+
+    /* "data/race/RHEL.coffee #1693 */
+    /* "data/race/menschlich/RMLD.coffee #792 */
+    /* "data/race/menschlich/RTHW.coffee #1162 */
+    "Andergast/Nostria": "Andergast/Nostria",
 
     /* "data/profession/menschlich/PKRI.coffee #1110 */
     /* "data/profession/menschlich/PKRI.coffee #2012 */
@@ -84,21 +92,21 @@
     "Anderthalbhänder": "Anderthalbhänder",
 
     /* "data/profession/menschlich/PPIR.coffee #1957 */
-    /* "data/profession/menschlich/PSOL.coffee #2648 */
+    /* "data/profession/menschlich/PSOL.coffee #2647 */
     "Arbeitsmesser": "Arbeitsmesser",
 
-    /* "data/profession/menschlich/PMAG.coffee #909 */
+    /* "data/profession/menschlich/PMAG.coffee #938 */
     "Arkanophobie": "Arkanophobie",
 
-    /* "data/profession/menschlich/PMAG.coffee #2334 */
+    /* "data/profession/menschlich/PMAG.coffee #2361 */
     "Armatrutz": "Armatrutz",
 
     /* "data/culture/menschlich/CHOR.coffee #555 */
     /* "data/culture/menschlich/CMLS.coffee #441 */
     /* "data/culture/menschlich/CSAV.coffee #632 */
     /* "data/culture/zwergisch/CAZW.coffee #608 */
-    /* "data/profession/menschlich/PBRT.coffee #1134 */
-    /* "data/profession/menschlich/PENT.coffee #1106 */
+    /* "data/profession/menschlich/PBRT.coffee #1133 */
+    /* "data/profession/menschlich/PENT.coffee #1105 */
     /* "data/profession/menschlich/PJAE.coffee #1005 */
     /* "data/profession/menschlich/PKRI.coffee #1142 */
     /* "data/profession/menschlich/PKUN.coffee #1207 */
@@ -106,74 +114,78 @@
     /* "data/profession/menschlich/PSOL.coffee #1215 */
     "Armbrust": "Armbrust",
 
-    /* "data/culture/elfisch/CAUE.coffee #338 */
+    /* "data/culture/elfisch/CAUE.coffee #384 */
     /* "data/culture/menschlich/CHOR.coffee #250 */
-    /* "data/culture/menschlich/CNVI.coffee #369 */
-    /* "data/culture/menschlich/CNVI.coffee #667 */
+    /* "data/culture/menschlich/CNVI.coffee #392 */
+    /* "data/culture/menschlich/CNVI.coffee #705 */
     /* "data/culture/menschlich/CSAV.coffee #292 */
     /* "data/culture/zwergisch/CAZW.coffee #300 */
     /* "data/profession/menschlich/PKRI.coffee #705 */
-    /* "data/profession/menschlich/PMAG.coffee #728 */
+    /* "data/profession/menschlich/PMAG.coffee #757 */
     /* "data/profession/menschlich/PRIT.coffee #656 */
     "Arroganz": "Arroganz",
 
-    /* "data/profession/elifsch/PELS.coffee #958 */
+    /* "data/profession/elfisch/PELS.coffee #958 */
     "Asdharia": "Asdharia",
 
-    /* "data/profession/menschlich/PMAG.coffee #2837 */
+    /* "data/profession/menschlich/PMAG.coffee #2863 */
     "Astrale Meditation": "Astrale Meditation",
 
-    /* "data/profession/menschlich/PMAG.coffee #527 */
+    /* "data/profession/menschlich/PMAG.coffee #556 */
     "Astrale Regeneration": "Astrale Regeneration",
 
-    /* "data/profession/elifsch/PELS.coffee #343 */
-    /* "data/profession/elifsch/PWDL.coffee #339 */
-    /* "data/profession/menschlich/PMAG.coffee #560 */
+    /* "data/profession/elfisch/PELS.coffee #343 */
+    /* "data/profession/elfisch/PWDL.coffee #339 */
+    /* "data/profession/menschlich/PMAG.coffee #589 */
     "Astralmacht": "Astralmacht",
 
-    /* "data/culture/elfisch/CAUE.coffee #661 */
+    /* "data/culture/elfisch/CAUE.coffee #707 */
     /* "data/culture/menschlich/CANN.coffee #821 */
-    /* "data/culture/menschlich/CNVI.coffee #1408 */
+    /* "data/culture/menschlich/CNVI.coffee #1481 */
     /* "data/culture/menschlich/CTHW.coffee #910 */
     /* "data/culture/zwergisch/CAZW.coffee #737 */
-    /* "data/profession/elifsch/PWDL.coffee #812 */
-    /* "data/profession/menschlich/PBRT.coffee #1258 */
-    /* "data/profession/menschlich/PEIN.coffee #1455 */
-    /* "data/profession/menschlich/PGKL.coffee #1107 */
-    /* "data/profession/menschlich/PJAE.coffee #1155 */
+    /* "data/profession/elfisch/PWDL.coffee #812 */
+    /* "data/profession/menschlich/PBRT.coffee #1257 */
+    /* "data/profession/menschlich/PEIN.coffee #1454 */
+    /* "data/profession/menschlich/PGKL.coffee #1106 */
+    /* "data/profession/menschlich/PJAE.coffee #1156 */
     /* "data/profession/menschlich/PKRI.coffee #1330 */
     /* "data/profession/menschlich/PKUN.coffee #1387 */
-    /* "data/profession/menschlich/PPIR.coffee #1034 */
-    /* "data/profession/menschlich/PRIT.coffee #1364 */
-    /* "data/profession/menschlich/PSOL.coffee #1399 */
-    /* "data/profession/menschlich/PSTR.coffee #1040 */
+    /* "data/profession/menschlich/PPIR.coffee #1033 */
+    /* "data/profession/menschlich/PRIT.coffee #1365 */
+    /* "data/profession/menschlich/PSOL.coffee #1400 */
+    /* "data/profession/menschlich/PSTR.coffee #1042 */
+    /* "data/race/menschlich/RTHW.coffee #986 */
     "Athletik": "Athletik",
 
-    /* "data/culture/elfisch/CAUE.coffee #1556 */
+    /* "data/culture/elfisch/CAUE.coffee #1602 */
     "Attributo": "Attributo",
 
     /* "data/culture/elfisch/CAUE.coffee #41 */
-    /* "data/profession/elifsch/PELS.coffee #227 */
-    /* "data/profession/elifsch/PWDL.coffee #223 */
+    /* "data/profession/elfisch/PELS.coffee #227 */
+    /* "data/profession/elfisch/PWDL.coffee #223 */
+    /* "data/race/RHEL.coffee #1675 */
+    /* "data/race/elfisch/REAU.coffee #38 */
+    /* "data/race/elfisch/REAU.coffee #2064 */
     "Auelfen": "Auelfen",
 
-    /* "data/culture/elfisch/CAUE.coffee #510 */
-    /* "data/profession/menschlich/PMAG.coffee #1053 */
-    /* "data/profession/menschlich/PSTR.coffee #1662 */
+    /* "data/culture/elfisch/CAUE.coffee #556 */
+    /* "data/profession/menschlich/PMAG.coffee #1082 */
+    /* "data/profession/menschlich/PSTR.coffee #1664 */
     "Aufmerksamkeit": "Aufmerksamkeit",
 
     /* "data/profession/menschlich/PWUN.coffee #1878 */
     "Augenbinde": "Augenbinde",
 
-    /* "data/profession/menschlich/PMAG.coffee #2364 */
+    /* "data/profession/menschlich/PMAG.coffee #2391 */
     "Auris Nasus": "Auris Nasus",
 
-    /* "data/culture/elfisch/CAUE.coffee #261 */
+    /* "data/culture/elfisch/CAUE.coffee #306 */
     /* "data/culture/menschlich/CANN.coffee #177 */
     /* "data/culture/menschlich/CBLN.coffee #120 */
-    /* "data/culture/menschlich/CNVI.coffee #458 */
+    /* "data/culture/menschlich/CNVI.coffee #481 */
     /* "data/culture/menschlich/CTHW.coffee #171 */
-    /* "data/profession/elifsch/PWDL.coffee #363 */
+    /* "data/profession/elfisch/PWDL.coffee #363 */
     /* "data/profession/menschlich/PBRT.coffee #313 */
     /* "data/profession/menschlich/PEIN.coffee #421 */
     /* "data/profession/menschlich/PJAE.coffee #361 */
@@ -181,6 +193,8 @@
     /* "data/profession/menschlich/PKUN.coffee #362 */
     /* "data/profession/menschlich/PRIT.coffee #497 */
     /* "data/profession/menschlich/PSOL.coffee #324 */
+    /* "data/race/RZWE.coffee #1018 */
+    /* "data/race/menschlich/RTHW.coffee #673 */
     "Ausdauernd": "Ausdauernd",
 
     /* "data/culture/menschlich/CANN.coffee #404 */
@@ -192,30 +206,32 @@
     /* "data/profession/menschlich/PRIT.coffee #520 */
     "Ausrüstungsvorteil": "Ausrüstungsvorteil",
 
-    /* "data/profession/elifsch/PWDL.coffee #567 */
+    /* "data/profession/elfisch/PWDL.coffee #567 */
     /* "data/profession/menschlich/PGKL.coffee #326 */
     "Ausweichen I": "Ausweichen I",
 
-    /* "data/profession/elifsch/PWDL.coffee #592 */
+    /* "data/profession/elfisch/PWDL.coffee #592 */
     "Ausweichen II": "Ausweichen II",
 
-    /* "data/profession/menschlich/PSTR.coffee #1974 */
+    /* "data/profession/menschlich/PSTR.coffee #1976 */
     "Axt": "Axt",
 
     /* "data/culture/menschlich/CTHW.coffee #195 */
     /* "data/profession/menschlich/PEIN.coffee #445 */
     /* "data/profession/menschlich/PGKL.coffee #398 */
     /* "data/profession/menschlich/PKUN.coffee #385 */
+    /* "data/race/RHEL.coffee #880 */
+    /* "data/race/elfisch/REAU.coffee #1193 */
     "Balance": "Balance",
 
-    /* "data/culture/elfisch/CAUE.coffee #1581 */
-    /* "data/profession/menschlich/PMAG.coffee #2391 */
+    /* "data/culture/elfisch/CAUE.coffee #1627 */
+    /* "data/profession/menschlich/PMAG.coffee #2418 */
     "Balsam Salabunde": "Balsam Salabunde",
 
-    /* "data/culture/elfisch/CAUE.coffee #1613 */
+    /* "data/culture/elfisch/CAUE.coffee #1659 */
     "Bannbaladin": "Bannbaladin",
 
-    /* "data/profession/menschlich/PSOL.coffee #2506 */
+    /* "data/profession/menschlich/PSOL.coffee #2505 */
     "Barrett": "Barrett",
 
     /* "data/culture/zwergisch/CAZW.coffee #1157 */
@@ -231,82 +247,89 @@
     /* "data/profession/menschlich/PWUN.coffee #554 */
     "Betäubungsschlag": "Betäubungsschlag",
 
-    /* "data/culture/elfisch/CAUE.coffee #908 */
+    /* "data/culture/elfisch/CAUE.coffee #954 */
     /* "data/culture/menschlich/CHOR.coffee #731 */
-    /* "data/profession/elifsch/PELS.coffee #667 */
-    /* "data/profession/menschlich/PSTR.coffee #1318 */
+    /* "data/profession/elfisch/PELS.coffee #667 */
+    /* "data/profession/menschlich/PSTR.coffee #1320 */
     "Betören": "Betören",
 
     /* "data/profession/menschlich/PWUN.coffee #599 */
     "Beutel mit haltbaren Kräutern": "Beutel mit haltbaren Kräutern",
 
-    /* "data/profession/menschlich/PSTR.coffee #1847 */
+    /* "data/profession/menschlich/PSTR.coffee #1849 */
     "Beutelchen mit Rauschkraut": "Beutelchen mit Rauschkraut",
 
     /* "data/profession/menschlich/PENT.coffee #369 */
     "Bgeabung Sprachen": "Bgeabung Sprachen",
 
-    /* "data/profession/menschlich/PMAG.coffee #2785 */
+    /* "data/profession/menschlich/PMAG.coffee #2811 */
     "Bindung des Stabes": "Bindung des Stabes",
 
-    /* "data/profession/menschlich/PMAG.coffee #3079 */
+    /* "data/profession/menschlich/PMAG.coffee #3107 */
     "Blatt Pergament": "Blatt Pergament",
 
     /* "data/profession/menschlich/PENT.coffee #2764 */
     "Blatt einfaches Papier": "Blatt einfaches Papier",
 
-    /* "data/profession/elifsch/PELS.coffee #1131 */
+    /* "data/profession/elfisch/PELS.coffee #1130 */
     "Blick in die Gedanken": "Blick in die Gedanken",
 
-    /* "data/profession/menschlich/PMAG.coffee #2428 */
+    /* "data/profession/menschlich/PMAG.coffee #2455 */
     "Blitz": "Blitz",
 
     /* "data/culture/menschlich/CTHW.coffee #414 */
-    /* "data/profession/menschlich/PBRT.coffee #709 */
+    /* "data/profession/menschlich/PBRT.coffee #708 */
     /* "data/profession/menschlich/PKRI.coffee #866 */
-    /* "data/profession/menschlich/PMAG.coffee #815 */
+    /* "data/profession/menschlich/PMAG.coffee #844 */
     /* "data/profession/menschlich/PRIT.coffee #744 */
     /* "data/profession/menschlich/PSOL.coffee #675 */
+    /* "data/race/RHEL.coffee #1280 */
+    /* "data/race/RZWE.coffee #1274 */
+    /* "data/race/elfisch/REAU.coffee #1586 */
+    /* "data/race/menschlich/RTHW.coffee #817 */
     "Blutrausch": "Blutrausch",
 
-    /* "data/culture/elfisch/CAUE.coffee #612 */
+    /* "data/culture/elfisch/CAUE.coffee #658 */
     /* "data/culture/menschlich/CMLS.coffee #457 */
-    /* "data/culture/menschlich/CNVI.coffee #1162 */
+    /* "data/culture/menschlich/CNVI.coffee #1203 */
     /* "data/culture/menschlich/CSAV.coffee #648 */
-    /* "data/profession/elifsch/PWDL.coffee #645 */
-    /* "data/profession/menschlich/PBRT.coffee #1150 */
+    /* "data/profession/elfisch/PWDL.coffee #645 */
+    /* "data/profession/menschlich/PBRT.coffee #1149 */
     /* "data/profession/menschlich/PJAE.coffee #1021 */
     /* "data/profession/menschlich/PKUN.coffee #1223 */
     /* "data/profession/menschlich/PRIT.coffee #1202 */
     /* "data/profession/menschlich/PSOL.coffee #1231 */
     "Bogen": "Bogen",
 
-    /* "data/culture/elfisch/CAUE.coffee #1330 */
-    /* "data/profession/elifsch/PWDL.coffee #1338 */
-    /* "data/profession/menschlich/PJAE.coffee #1736 */
+    /* "data/culture/elfisch/CAUE.coffee #1376 */
+    /* "data/profession/elfisch/PWDL.coffee #1337 */
+    /* "data/profession/menschlich/PJAE.coffee #1738 */
     "Bogenbau": "Bogenbau",
 
     /* "data/profession/menschlich/PWUN.coffee #1663 */
     "Bohrer": "Bohrer",
 
-    /* "data/profession/elifsch/PWDL.coffee #1362 */
-    /* "data/profession/menschlich/PJAE.coffee #1185 */
-    /* "data/profession/menschlich/PKUN.coffee #1403 */
-    /* "data/profession/menschlich/PPIR.coffee #1534 */
-    "Boote Fahren": "Boote Fahren",
+    /* "data/profession/menschlich/PENT.coffee #1024 */
+    "Boot (klein)": "Boot (klein)",
 
-    /* "data/culture/elfisch/CAUE.coffee #1346 */
-    /* "data/culture/menschlich/CNVI.coffee #2019 */
+    /* "data/culture/elfisch/CAUE.coffee #1392 */
+    /* "data/culture/menschlich/CNVI.coffee #2122 */
     /* "data/culture/menschlich/CSAV.coffee #1169 */
     /* "data/culture/menschlich/CTHW.coffee #1297 */
-    /* "data/profession/menschlich/PBRT.coffee #1307 */
-    /* "data/profession/menschlich/PENT.coffee #2249 */
-    "Boote fahren": "Boote fahren",
+    /* "data/profession/elfisch/PWDL.coffee #1361 */
+    /* "data/profession/menschlich/PBRT.coffee #1306 */
+    /* "data/profession/menschlich/PENT.coffee #2248 */
+    /* "data/profession/menschlich/PJAE.coffee #1186 */
+    /* "data/profession/menschlich/PKUN.coffee #1403 */
+    /* "data/profession/menschlich/PPIR.coffee #1533 */
+    "Boote Fahren": "Boote Fahren",
 
     /* "data/culture/menschlich/CBLN.coffee #42 */
+    /* "data/race/RHEL.coffee #1721 */
+    /* "data/race/menschlich/RMLD.coffee #820 */
     "Bornland": "Bornland",
 
-    /* "data/culture/menschlich/CNVI.coffee #2380 */
+    /* "data/culture/menschlich/CNVI.coffee #2521 */
     /* "data/culture/zwergisch/CAZW.coffee #1333 */
     "Bote": "Bote",
 
@@ -323,79 +346,83 @@
     /* "data/profession/menschlich/PBRT.coffee #92 */
     "Botenreiterin": "Botenreiterin",
 
-    /* "data/culture/menschlich/CNVI.coffee #1735 */
+    /* "data/culture/menschlich/CNVI.coffee #1831 */
     /* "data/culture/menschlich/CTDS.coffee #1113 */
-    /* "data/profession/menschlich/PMAG.coffee #1470 */
-    /* "data/profession/menschlich/PRIT.coffee #1637 */
+    /* "data/profession/menschlich/PMAG.coffee #1499 */
+    /* "data/profession/menschlich/PRIT.coffee #1638 */
     "Brett-/Kartenspiel": "Brett-/Kartenspiel",
 
     /* "data/profession/menschlich/PJAE.coffee #2169 */
-    /* "data/profession/menschlich/PSOL.coffee #2585 */
+    /* "data/profession/menschlich/PSOL.coffee #2584 */
     "Brotbeutel": "Brotbeutel",
 
-    /* "data/profession/menschlich/PMAG.coffee #2449 */
+    /* "data/profession/menschlich/PMAG.coffee #2476 */
     "Claudibus": "Claudibus",
 
-    /* "data/profession/menschlich/PSOL.coffee #2756 */
-    /* "data/profession/menschlich/PSOL.coffee #2769 */
+    /* "data/profession/menschlich/PSOL.coffee #2755 */
+    /* "data/profession/menschlich/PSOL.coffee #2768 */
     "Decke": "Decke",
 
-    /* "data/profession/menschlich/PSTR.coffee #1948 */
+    /* "data/profession/menschlich/PSTR.coffee #1950 */
     "Degen": "Degen",
 
-    /* "data/profession/menschlich/PEIN.coffee #2229 */
+    /* "data/profession/menschlich/PEIN.coffee #2234 */
     "Dietriche": "Dietriche",
 
-    /* "data/profession/menschlich/PBRT.coffee #2153 */
-    /* "data/profession/menschlich/PENT.coffee #2651 */
+    /* "data/profession/menschlich/PBRT.coffee #2152 */
+    /* "data/profession/menschlich/PENT.coffee #2650 */
     /* "data/profession/menschlich/PJAE.coffee #2083 */
     /* "data/profession/menschlich/PKRI.coffee #2057 */
-    /* "data/profession/menschlich/PKUN.coffee #2340 */
-    /* "data/profession/menschlich/PMAG.coffee #3111 */
+    /* "data/profession/menschlich/PKUN.coffee #2337 */
+    /* "data/profession/menschlich/PMAG.coffee #3139 */
     /* "data/profession/menschlich/PPIR.coffee #1978 */
-    /* "data/profession/menschlich/PRIT.coffee #2206 */
-    /* "data/profession/menschlich/PSOL.coffee #2330 */
-    /* "data/profession/menschlich/PSTR.coffee #1925 */
+    /* "data/profession/menschlich/PRIT.coffee #2207 */
+    /* "data/profession/menschlich/PSOL.coffee #2329 */
+    /* "data/profession/menschlich/PSTR.coffee #1927 */
     /* "data/profession/menschlich/PWUN.coffee #1524 */
     "Dolch": "Dolch",
 
-    /* "data/profession/menschlich/PEIN.coffee #2337 */
+    /* "data/profession/menschlich/PEIN.coffee #2342 */
     "Dolch (verborgen)": "Dolch (verborgen)",
 
-    /* "data/culture/elfisch/CAUE.coffee #638 */
+    /* "data/culture/elfisch/CAUE.coffee #684 */
     /* "data/culture/menschlich/CANN.coffee #680 */
     /* "data/culture/menschlich/CBLN.coffee #645 */
     /* "data/culture/menschlich/CHOR.coffee #579 */
     /* "data/culture/menschlich/CMLS.coffee #493 */
-    /* "data/culture/menschlich/CNVI.coffee #1190 */
+    /* "data/culture/menschlich/CNVI.coffee #1233 */
     /* "data/culture/menschlich/CSAV.coffee #666 */
     /* "data/culture/menschlich/CTDS.coffee #748 */
-    /* "data/profession/elifsch/PWDL.coffee #681 */
-    /* "data/profession/menschlich/PBRT.coffee #1168 */
-    /* "data/profession/menschlich/PEIN.coffee #1359 */
-    /* "data/profession/menschlich/PGKL.coffee #962 */
+    /* "data/profession/elfisch/PWDL.coffee #681 */
+    /* "data/profession/menschlich/PBRT.coffee #1167 */
+    /* "data/profession/menschlich/PEIN.coffee #1358 */
+    /* "data/profession/menschlich/PGKL.coffee #961 */
     /* "data/profession/menschlich/PKRI.coffee #1166 */
     /* "data/profession/menschlich/PKUN.coffee #1241 */
-    /* "data/profession/menschlich/PPIR.coffee #877 */
-    /* "data/profession/menschlich/PRIT.coffee #1237 */
-    /* "data/profession/menschlich/PSOL.coffee #1300 */
-    /* "data/profession/menschlich/PSTR.coffee #866 */
+    /* "data/profession/menschlich/PPIR.coffee #876 */
+    /* "data/profession/menschlich/PRIT.coffee #1238 */
+    /* "data/profession/menschlich/PSOL.coffee #1301 */
+    /* "data/profession/menschlich/PSTR.coffee #868 */
     /* "data/profession/menschlich/PWUN.coffee #703 */
     "Dolche": "Dolche",
 
-    /* "data/profession/menschlich/PBRT.coffee #732 */
-    /* "data/profession/menschlich/PEIN.coffee #1063 */
-    /* "data/profession/menschlich/PENT.coffee #782 */
+    /* "data/profession/menschlich/PBRT.coffee #731 */
+    /* "data/profession/menschlich/PEIN.coffee #1062 */
+    /* "data/profession/menschlich/PENT.coffee #781 */
     /* "data/profession/menschlich/PJAE.coffee #701 */
     /* "data/profession/menschlich/PKUN.coffee #792 */
+    /* "data/race/RZWE.coffee #1621 */
     "Dunkelangst": "Dunkelangst",
 
     /* "data/profession/menschlich/PEIN.coffee #466 */
     /* "data/profession/menschlich/PJAE.coffee #384 */
     /* "data/profession/menschlich/PKUN.coffee #405 */
+    /* "data/race/RHEL.coffee #900 */
+    /* "data/race/RZWE.coffee #758 */
+    /* "data/race/elfisch/REAU.coffee #803 */
     "Dämmerungssicht": "Dämmerungssicht",
 
-    /* "data/profession/menschlich/PMAG.coffee #934 */
+    /* "data/profession/menschlich/PMAG.coffee #963 */
     "Einarmig/-händig": "Einarmig/-händig",
 
     /* "data/culture/menschlich/CANN.coffee #1640 */
@@ -410,10 +437,11 @@
     /* "data/profession/menschlich/PEIN.coffee #89 */
     "Einbrecherin": "Einbrecherin",
 
-    /* "data/profession/elifsch/PELS.coffee #1198 */
+    /* "data/profession/elfisch/PELS.coffee #1197 */
     "Einfluss bannen": "Einfluss bannen",
 
     /* "data/profession/menschlich/PKUN.coffee #816 */
+    /* "data/race/elfisch/REAU.coffee #1609 */
     "Eingeschränkter Sinn": "Eingeschränkter Sinn",
 
     /* "data/profession/menschlich/PKRI.coffee #913 */
@@ -423,15 +451,17 @@
 
     /* "data/culture/menschlich/CANN.coffee #201 */
     /* "data/culture/menschlich/CBLN.coffee #143 */
-    /* "data/culture/menschlich/CNVI.coffee #482 */
+    /* "data/culture/menschlich/CNVI.coffee #505 */
     /* "data/culture/menschlich/CTHW.coffee #215 */
-    /* "data/profession/elifsch/PWDL.coffee #386 */
+    /* "data/profession/elfisch/PWDL.coffee #386 */
     /* "data/profession/menschlich/PBRT.coffee #337 */
     /* "data/profession/menschlich/PJAE.coffee #412 */
     /* "data/profession/menschlich/PKRI.coffee #605 */
     /* "data/profession/menschlich/PKUN.coffee #433 */
     /* "data/profession/menschlich/PRIT.coffee #551 */
     /* "data/profession/menschlich/PSOL.coffee #347 */
+    /* "data/race/RZWE.coffee #1041 */
+    /* "data/race/menschlich/RTHW.coffee #696 */
     "Eisern": "Eisern",
 
     /* "data/culture/menschlich/CBLN.coffee #605 */
@@ -440,27 +470,27 @@
     /* "data/culture/menschlich/CHOR.coffee #271 */
     /* "data/culture/menschlich/CSAV.coffee #313 */
     /* "data/culture/menschlich/CTDS.coffee #402 */
-    /* "data/profession/menschlich/PGKL.coffee #659 */
-    /* "data/profession/menschlich/PMAG.coffee #749 */
+    /* "data/profession/menschlich/PGKL.coffee #658 */
+    /* "data/profession/menschlich/PMAG.coffee #778 */
     /* "data/profession/menschlich/PRIT.coffee #677 */
     /* "data/profession/menschlich/PSTR.coffee #602 */
     /* "data/profession/menschlich/PWUN.coffee #457 */
     "Eitelkeit": "Eitelkeit",
 
-    /* "data/culture/elfisch/CAUE.coffee #1988 */
+    /* "data/culture/elfisch/CAUE.coffee #2033 */
     "Elfenbogen": "Elfenbogen",
 
-    /* "data/profession/elifsch/PELS.coffee #1234 */
+    /* "data/profession/elfisch/PELS.coffee #1233 */
     "Elfenstimme": "Elfenstimme",
 
-    /* "data/culture/elfisch/CAUE.coffee #98 */
+    /* "data/culture/elfisch/CAUE.coffee #143 */
     "Elfische Weitsicht": "Elfische Weitsicht",
 
     /* "data/culture/menschlich/CANN.coffee #1662 */
     /* "data/culture/menschlich/CBLN.coffee #1263 */
     /* "data/culture/menschlich/CHOR.coffee #1296 */
     /* "data/culture/menschlich/CMLS.coffee #1114 */
-    /* "data/culture/menschlich/CNVI.coffee #2402 */
+    /* "data/culture/menschlich/CNVI.coffee #2548 */
     /* "data/culture/menschlich/CSAV.coffee #1387 */
     /* "data/culture/menschlich/CTDS.coffee #1516 */
     /* "data/culture/menschlich/CTHW.coffee #1458 */
@@ -474,148 +504,159 @@
     /* "data/profession/menschlich/PPIR.coffee #1995 */
     "Enter- oder Bootshaken": "Enter- oder Bootshaken",
 
-    /* "data/profession/elifsch/PWDL.coffee #405 */
+    /* "data/profession/elfisch/PWDL.coffee #405 */
     "Entfernungssinn": "Entfernungssinn",
 
-    /* "data/profession/elifsch/PELS.coffee #1373 */
+    /* "data/profession/elfisch/PELS.coffee #1372 */
     "Erinnerungsmelodie": "Erinnerungsmelodie",
 
-    /* "data/profession/menschlich/PGKL.coffee #853 */
+    /* "data/profession/menschlich/PGKL.coffee #852 */
     "Esel": "Esel",
 
-    /* "data/profession/menschlich/PSOL.coffee #2525 */
+    /* "data/profession/menschlich/PSOL.coffee #2524 */
     "Essbesteck": "Essbesteck",
 
-    /* "data/profession/menschlich/PSOL.coffee #2546 */
+    /* "data/profession/menschlich/PSOL.coffee #2545 */
     "Essnapf": "Essnapf",
 
     /* "data/culture/menschlich/CBLN.coffee #761 */
     /* "data/culture/menschlich/CHOR.coffee #754 */
     /* "data/culture/menschlich/CMLS.coffee #593 */
     /* "data/culture/menschlich/CTDS.coffee #972 */
-    /* "data/profession/menschlich/PBRT.coffee #1475 */
-    /* "data/profession/menschlich/PENT.coffee #1323 */
+    /* "data/profession/menschlich/PBRT.coffee #1474 */
+    /* "data/profession/menschlich/PENT.coffee #1322 */
     /* "data/profession/menschlich/PKRI.coffee #1544 */
-    /* "data/profession/menschlich/PMAG.coffee #1316 */
-    /* "data/profession/menschlich/PRIT.coffee #1529 */
-    /* "data/profession/menschlich/PSTR.coffee #1341 */
+    /* "data/profession/menschlich/PMAG.coffee #1345 */
+    /* "data/profession/menschlich/PRIT.coffee #1530 */
+    /* "data/profession/menschlich/PSTR.coffee #1343 */
     /* "data/profession/menschlich/PWUN.coffee #923 */
     "Etikette": "Etikette",
 
-    /* "data/profession/menschlich/PMAG.coffee #2814 */
+    /* "data/profession/menschlich/PMAG.coffee #2840 */
     "Ewige Flamme": "Ewige Flamme",
 
-    /* "data/profession/elifsch/PWDL.coffee #1482 */
+    /* "data/profession/elfisch/PWDL.coffee #1481 */
     "Exposami": "Exposami",
 
-    /* "data/profession/menschlich/PGKL.coffee #1694 */
+    /* "data/profession/menschlich/PGKL.coffee #1693 */
     "Fahrzeug lenken": "Fahrzeug lenken",
 
     /* "data/culture/menschlich/CANN.coffee #986 */
-    /* "data/profession/menschlich/PJAE.coffee #1474 */
-    /* "data/profession/menschlich/PKUN.coffee #1674 */
+    /* "data/profession/menschlich/PJAE.coffee #1475 */
+    /* "data/profession/menschlich/PKUN.coffee #1673 */
     /* "data/profession/menschlich/PSOL.coffee #1684 */
     "Fallenstellen": "Fallenstellen",
 
-    /* "data/profession/menschlich/PSTR.coffee #1812 */
-    "Falsche mit Hochprozentigem": "Falsche mit Hochprozentigem",
-
-    /* "data/profession/menschlich/PGKL.coffee #1648 */
-    /* "data/profession/menschlich/PSTR.coffee #1602 */
+    /* "data/profession/menschlich/PGKL.coffee #1647 */
+    /* "data/profession/menschlich/PSTR.coffee #1604 */
     "Falschspiel": "Falschspiel",
 
+    /* "data/race/elfisch/REAU.coffee #1642 */
+    "Farbenblind": "Farbenblind",
+
     /* "data/culture/menschlich/CHOR.coffee #601 */
-    /* "data/profession/elifsch/PWDL.coffee #712 */
+    /* "data/profession/elfisch/PWDL.coffee #712 */
     "Fechtwaffen": "Fechtwaffen",
 
-    /* "data/profession/menschlich/PSTR.coffee #1727 */
+    /* "data/profession/menschlich/PSTR.coffee #1729 */
     "Federhut": "Federhut",
 
-    /* "data/culture/elfisch/CAUE.coffee #285 */
+    /* "data/culture/elfisch/CAUE.coffee #330 */
     /* "data/culture/menschlich/CHOR.coffee #408 */
     /* "data/culture/menschlich/CMLS.coffee #352 */
-    /* "data/culture/menschlich/CNVI.coffee #875 */
+    /* "data/culture/menschlich/CNVI.coffee #913 */
     /* "data/culture/menschlich/CSAV.coffee #486 */
     /* "data/culture/menschlich/CTDS.coffee #615 */
     /* "data/profession/menschlich/PGKL.coffee #419 */
     /* "data/profession/menschlich/PKUN.coffee #452 */
-    /* "data/profession/menschlich/PMAG.coffee #838 */
+    /* "data/profession/menschlich/PMAG.coffee #867 */
+    /* "data/race/RHEL.coffee #928 */
+    /* "data/race/RZWE.coffee #1410 */
+    /* "data/race/elfisch/REAU.coffee #1213 */
     "Feenfreund": "Feenfreund",
 
-    /* "data/profession/menschlich/PSOL.coffee #2682 */
+    /* "data/profession/menschlich/PSOL.coffee #2681 */
     "Feldflasche": "Feldflasche",
 
-    /* "data/profession/menschlich/PPIR.coffee #797 */
+    /* "data/profession/menschlich/PPIR.coffee #796 */
     "Fernrohr": "Fernrohr",
 
     /* "data/culture/menschlich/CTHW.coffee #1015 */
-    /* "data/profession/elifsch/PWDL.coffee #1124 */
-    /* "data/profession/menschlich/PEIN.coffee #1808 */
-    /* "data/profession/menschlich/PJAE.coffee #1503 */
+    /* "data/profession/elfisch/PWDL.coffee #1123 */
+    /* "data/profession/menschlich/PEIN.coffee #1807 */
+    /* "data/profession/menschlich/PJAE.coffee #1504 */
     /* "data/profession/menschlich/PKRI.coffee #1569 */
-    /* "data/profession/menschlich/PKUN.coffee #1703 */
-    /* "data/profession/menschlich/PPIR.coffee #1259 */
+    /* "data/profession/menschlich/PKUN.coffee #1702 */
+    /* "data/profession/menschlich/PPIR.coffee #1258 */
     /* "data/profession/menschlich/PSOL.coffee #1713 */
     /* "data/profession/menschlich/PWUN.coffee #1059 */
     "Fesseln/Entfesseln": "Fesseln/Entfesseln",
 
-    /* "data/profession/menschlich/PSTR.coffee #897 */
+    /* "data/profession/menschlich/PSTR.coffee #899 */
     "Fetchwaffen": "Fetchwaffen",
 
-    /* "data/profession/menschlich/PBRT.coffee #756 */
-    /* "data/profession/menschlich/PEIN.coffee #1087 */
+    /* "data/profession/menschlich/PBRT.coffee #755 */
+    /* "data/profession/menschlich/PEIN.coffee #1086 */
     /* "data/profession/menschlich/PKRI.coffee #935 */
     /* "data/profession/menschlich/PKUN.coffee #849 */
     /* "data/profession/menschlich/PRIT.coffee #829 */
     /* "data/profession/menschlich/PSOL.coffee #760 */
+    /* "data/race/RHEL.coffee #1303 */
+    /* "data/race/elfisch/REAU.coffee #1666 */
     "Fettleibig": "Fettleibig",
 
     /* "data/profession/menschlich/PJAE.coffee #2190 */
-    /* "data/profession/menschlich/PKUN.coffee #2400 */
+    /* "data/profession/menschlich/PKUN.coffee #2397 */
     "Feuerstein und Zunder": "Feuerstein und Zunder",
 
-    /* "data/culture/elfisch/CAUE.coffee #994 */
+    /* "data/culture/elfisch/CAUE.coffee #1040 */
     /* "data/culture/menschlich/CTHW.coffee #1049 */
-    /* "data/profession/menschlich/PJAE.coffee #1537 */
-    /* "data/profession/menschlich/PKUN.coffee #1737 */
-    /* "data/profession/menschlich/PPIR.coffee #1293 */
+    /* "data/profession/menschlich/PJAE.coffee #1538 */
+    /* "data/profession/menschlich/PKUN.coffee #1736 */
+    /* "data/profession/menschlich/PPIR.coffee #1292 */
     /* "data/profession/menschlich/PSOL.coffee #1747 */
     "Fischen/Angeln": "Fischen/Angeln",
 
+    /* "data/profession/menschlich/PSTR.coffee #1814 */
+    "Flasche mit Hochprozentigem": "Flasche mit Hochprozentigem",
+
     /* "data/culture/menschlich/CANN.coffee #1419 */
-    /* "data/profession/menschlich/PJAE.coffee #1766 */
+    /* "data/profession/menschlich/PJAE.coffee #1768 */
     "Fleischer": "Fleischer",
 
-    /* "data/culture/elfisch/CAUE.coffee #1645 */
+    /* "data/culture/elfisch/CAUE.coffee #1691 */
     "Flim Flam": "Flim Flam",
 
-    /* "data/profession/menschlich/PMAG.coffee #2474 */
+    /* "data/race/RHEL.coffee #951 */
+    /* "data/race/RZWE.coffee #1434 */
+    /* "data/race/elfisch/REAU.coffee #1236 */
+    "Flink": "Flink",
+
+    /* "data/profession/menschlich/PMAG.coffee #2501 */
     "Foramen": "Foramen",
 
-    /* "data/culture/elfisch/CAUE.coffee #1865 */
-    "Freundschaftslied)": "Freundschaftslied)",
+    /* "data/culture/elfisch/CAUE.coffee #1911 */
+    "Freundschaftslied": "Freundschaftslied",
 
-    /* "data/profession/elifsch/PELS.coffee #441 */
+    /* "data/profession/elfisch/PELS.coffee #441 */
     "Friedenslied": "Friedenslied",
 
-    /* "data/culture/elfisch/CAUE.coffee #1670 */
-    /* "data/profession/menschlich/PMAG.coffee #2497 */
+    /* "data/culture/elfisch/CAUE.coffee #1716 */
+    /* "data/profession/menschlich/PMAG.coffee #2524 */
     "Fulminictus": "Fulminictus",
 
-    /* "data/culture/elfisch/CAUE.coffee #961 */
+    /* "data/culture/elfisch/CAUE.coffee #1007 */
     /* "data/culture/menschlich/CANN.coffee #958 */
-    /* "data/profession/menschlich/PBRT.coffee #1560 */
-    /* "data/profession/menschlich/PEIN.coffee #1780 */
-    /* "data/profession/menschlich/PENT.coffee #1405 */
-    /* "data/profession/menschlich/PJAE.coffee #1446 */
+    /* "data/profession/elfisch/PWDL.coffee #1046 */
+    /* "data/profession/menschlich/PBRT.coffee #1559 */
+    /* "data/profession/menschlich/PEIN.coffee #1779 */
+    /* "data/profession/menschlich/PENT.coffee #1404 */
+    /* "data/profession/menschlich/PJAE.coffee #1447 */
+    /* "data/profession/menschlich/PKUN.coffee #1645 */
+    /* "data/profession/menschlich/PSOL.coffee #1656 */
     "Fährtensuche": "Fährtensuche",
 
-    /* "data/profession/elifsch/PWDL.coffee #1046 */
-    /* "data/profession/menschlich/PKUN.coffee #1645 */
-    /* "data/profession/menschlich/PSOL.coffee #1655 */
-    "Fährtensuchen": "Fährtensuchen",
-
-    /* "data/profession/menschlich/PMAG.coffee #2529 */
+    /* "data/profession/menschlich/PMAG.coffee #2556 */
     "Gardianum": "Gardianum",
 
     /* "data/culture/menschlich/CANN.coffee #1131 */
@@ -632,31 +673,31 @@
     /* "data/culture/menschlich/CHOR.coffee #1030 */
     "Garethi (Horathi)": "Garethi (Horathi)",
 
-    /* "data/culture/elfisch/CAUE.coffee #931 */
+    /* "data/culture/elfisch/CAUE.coffee #977 */
     /* "data/culture/menschlich/CHOR.coffee #778 */
     /* "data/culture/menschlich/CMLS.coffee #617 */
     /* "data/culture/menschlich/CSAV.coffee #811 */
     /* "data/culture/menschlich/CTDS.coffee #996 */
     /* "data/culture/zwergisch/CAZW.coffee #808 */
-    /* "data/profession/menschlich/PBRT.coffee #1499 */
-    /* "data/profession/menschlich/PEIN.coffee #1688 */
-    /* "data/profession/menschlich/PGKL.coffee #1354 */
-    /* "data/profession/menschlich/PPIR.coffee #1198 */
-    /* "data/profession/menschlich/PSOL.coffee #1594 */
-    /* "data/profession/menschlich/PSTR.coffee #1365 */
+    /* "data/profession/menschlich/PBRT.coffee #1498 */
+    /* "data/profession/menschlich/PEIN.coffee #1687 */
+    /* "data/profession/menschlich/PGKL.coffee #1353 */
+    /* "data/profession/menschlich/PPIR.coffee #1197 */
+    /* "data/profession/menschlich/PSOL.coffee #1595 */
+    /* "data/profession/menschlich/PSTR.coffee #1367 */
     /* "data/profession/menschlich/PWUN.coffee #947 */
     "Gassenwissen": "Gassenwissen",
 
     /* "data/culture/menschlich/CTDS.coffee #948 */
-    /* "data/profession/elifsch/PELS.coffee #545 */
-    /* "data/profession/menschlich/PGKL.coffee #1123 */
+    /* "data/profession/elfisch/PELS.coffee #545 */
+    /* "data/profession/menschlich/PGKL.coffee #1122 */
     "Gaukeleien": "Gaukeleien",
 
     /* "data/culture/menschlich/CANN.coffee #1683 */
     /* "data/culture/menschlich/CBLN.coffee #1284 */
     /* "data/culture/menschlich/CHOR.coffee #1317 */
     /* "data/culture/menschlich/CMLS.coffee #1135 */
-    /* "data/culture/menschlich/CNVI.coffee #2429 */
+    /* "data/culture/menschlich/CNVI.coffee #2577 */
     /* "data/culture/menschlich/CSAV.coffee #1408 */
     /* "data/culture/menschlich/CTDS.coffee #1537 */
     /* "data/culture/menschlich/CTHW.coffee #1479 */
@@ -667,262 +708,297 @@
     "Gauklerin": "Gauklerin",
 
     /* "data/culture/menschlich/CANN.coffee #530 */
-    /* "data/profession/menschlich/PMAG.coffee #584 */
+    /* "data/profession/menschlich/PMAG.coffee #613 */
     "Gebildet": "Gebildet",
 
-    /* "data/profession/elifsch/PELS.coffee #1168 */
+    /* "data/profession/elfisch/PELS.coffee #1167 */
     "Gedankenbilder": "Gedankenbilder",
 
-    /* "data/culture/elfisch/CAUE.coffee #309 */
-    "Gefahreninstikt": "Gefahreninstikt",
-
-    /* "data/profession/elifsch/PWDL.coffee #433 */
+    /* "data/culture/elfisch/CAUE.coffee #354 */
+    /* "data/profession/elfisch/PWDL.coffee #433 */
+    /* "data/profession/menschlich/PBRT.coffee #357 */
+    /* "data/profession/menschlich/PEIN.coffee #494 */
+    /* "data/profession/menschlich/PENT.coffee #399 */
+    /* "data/profession/menschlich/PGKL.coffee #443 */
     /* "data/profession/menschlich/PJAE.coffee #431 */
     /* "data/profession/menschlich/PKUN.coffee #475 */
     /* "data/profession/menschlich/PSOL.coffee #366 */
     /* "data/profession/menschlich/PSTR.coffee #432 */
     "Gefahreninstinkt": "Gefahreninstinkt",
 
-    /* "data/profession/menschlich/PBRT.coffee #357 */
-    /* "data/profession/menschlich/PEIN.coffee #494 */
-    /* "data/profession/menschlich/PENT.coffee #399 */
-    /* "data/profession/menschlich/PGKL.coffee #443 */
-    "Gefahrensinstinkt": "Gefahrensinstinkt",
-
     /* "data/culture/menschlich/CSAV.coffee #335 */
     /* "data/culture/zwergisch/CAZW.coffee #322 */
     "Geiz": "Geiz",
 
-    /* "data/profession/elifsch/PWDL.coffee #1636 */
-    /* "data/profession/menschlich/PBRT.coffee #980 */
-    /* "data/profession/menschlich/PENT.coffee #923 */
+    /* "data/profession/elfisch/PWDL.coffee #1635 */
+    /* "data/profession/menschlich/PBRT.coffee #979 */
+    /* "data/profession/menschlich/PENT.coffee #922 */
     /* "data/profession/menschlich/PJAE.coffee #284 */
     /* "data/profession/menschlich/PKUN.coffee #311 */
     "Geländekunde": "Geländekunde",
 
-    /* "data/profession/menschlich/PBRT.coffee #1677 */
-    /* "data/profession/menschlich/PENT.coffee #1522 */
-    /* "data/profession/menschlich/PGKL.coffee #1471 */
-    /* "data/profession/menschlich/PKUN.coffee #1856 */
-    /* "data/profession/menschlich/PMAG.coffee #1504 */
-    /* "data/profession/menschlich/PPIR.coffee #1384 */
+    /* "data/profession/menschlich/PBRT.coffee #1676 */
+    /* "data/profession/menschlich/PENT.coffee #1521 */
+    /* "data/profession/menschlich/PGKL.coffee #1470 */
+    /* "data/profession/menschlich/PKUN.coffee #1855 */
+    /* "data/profession/menschlich/PMAG.coffee #1533 */
+    /* "data/profession/menschlich/PPIR.coffee #1383 */
     "Geographie": "Geographie",
 
     /* "data/culture/menschlich/CANN.coffee #1436 */
-    /* "data/profession/menschlich/PJAE.coffee #1783 */
+    /* "data/profession/menschlich/PJAE.coffee #1785 */
     "Gerber/Kürschner": "Gerber/Kürschner",
 
     /* "data/culture/menschlich/CHOR.coffee #865 */
     /* "data/culture/menschlich/CTDS.coffee #1147 */
-    /* "data/profession/elifsch/PELS.coffee #806 */
-    /* "data/profession/menschlich/PENT.coffee #1548 */
+    /* "data/profession/elfisch/PELS.coffee #806 */
+    /* "data/profession/menschlich/PENT.coffee #1547 */
     /* "data/profession/menschlich/PKRI.coffee #1632 */
-    /* "data/profession/menschlich/PMAG.coffee #1530 */
-    /* "data/profession/menschlich/PRIT.coffee #1671 */
+    /* "data/profession/menschlich/PMAG.coffee #1559 */
+    /* "data/profession/menschlich/PRIT.coffee #1672 */
     "Geschichtswissen": "Geschichtswissen",
 
     /* "data/culture/zwergisch/CAZW.coffee #872 */
+    /* "data/race/RZWE.coffee #1962 */
+    /* "data/race/elfisch/REAU.coffee #2017 */
     "Gesteinskunde": "Gesteinskunde",
 
-    /* "data/profession/menschlich/PEIN.coffee #892 */
-    /* "data/profession/menschlich/PPIR.coffee #481 */
+    /* "data/profession/menschlich/PEIN.coffee #891 */
+    /* "data/profession/menschlich/PPIR.coffee #480 */
     /* "data/profession/menschlich/PSOL.coffee #589 */
     /* "data/profession/menschlich/PSTR.coffee #624 */
     "Gesucht": "Gesucht",
 
-    /* "data/profession/menschlich/PBRT.coffee #779 */
+    /* "data/profession/menschlich/PBRT.coffee #778 */
     /* "data/profession/menschlich/PKRI.coffee #889 */
     /* "data/profession/menschlich/PKUN.coffee #872 */
     /* "data/profession/menschlich/PRIT.coffee #852 */
     /* "data/profession/menschlich/PSOL.coffee #783 */
+    /* "data/race/RZWE.coffee #1645 */
+    /* "data/race/menschlich/RTHW.coffee #896 */
     "Glasknochen": "Glasknochen",
 
-    /* "data/profession/menschlich/PMAG.coffee #2015 */
+    /* "data/profession/menschlich/PMAG.coffee #2044 */
     "Glyphen von Unau": "Glyphen von Unau",
 
     /* "data/culture/menschlich/CTDS.coffee #236 */
     /* "data/culture/menschlich/CTHW.coffee #235 */
-    /* "data/profession/menschlich/PGKL.coffee #474 */
+    /* "data/profession/menschlich/PGKL.coffee #473 */
     /* "data/profession/menschlich/PSTR.coffee #461 */
     "Glück": "Glück",
 
     /* "data/culture/menschlich/CTDS.coffee #255 */
-    /* "data/profession/menschlich/PGKL.coffee #492 */
+    /* "data/profession/menschlich/PGKL.coffee #491 */
     /* "data/profession/menschlich/PSTR.coffee #479 */
     "Glück im Spiel": "Glück im Spiel",
 
-    /* "data/culture/elfisch/CAUE.coffee #446 */
+    /* "data/culture/elfisch/CAUE.coffee #492 */
     /* "data/culture/menschlich/CSAV.coffee #352 */
     /* "data/culture/menschlich/CTDS.coffee #424 */
-    /* "data/profession/menschlich/PBRT.coffee #803 */
+    /* "data/profession/menschlich/PBRT.coffee #802 */
     /* "data/profession/menschlich/PEIN.coffee #288 */
-    /* "data/profession/menschlich/PEIN.coffee #913 */
+    /* "data/profession/menschlich/PEIN.coffee #912 */
     /* "data/profession/menschlich/PPIR.coffee #301 */
     /* "data/profession/menschlich/PSOL.coffee #609 */
     /* "data/profession/menschlich/PSTR.coffee #644 */
+    /* "data/race/RZWE.coffee #907 */
     "Goldgier": "Goldgier",
 
     /* "data/culture/menschlich/CANN.coffee #1460 */
     /* "data/culture/zwergisch/CAZW.coffee #1180 */
     "Grobschmied": "Grobschmied",
 
-    /* "data/culture/elfisch/CAUE.coffee #1731 */
+    /* "data/culture/elfisch/CAUE.coffee #1777 */
+    /* "data/profession/menschlich/PMAG.coffee #2785 */
     "Große Mediation": "Große Mediation",
 
-    /* "data/profession/menschlich/PMAG.coffee #2758 */
-    "Große Meditation": "Große Meditation",
-
+    /* "data/profession/menschlich/PGKL.coffee #518 */
     /* "data/profession/menschlich/PSTR.coffee #506 */
+    /* "data/race/RHEL.coffee #763 */
+    /* "data/race/elfisch/REAU.coffee #831 */
     "Gut Aussehend": "Gut Aussehend",
 
-    /* "data/profession/menschlich/PGKL.coffee #519 */
-    "Gut aussehend": "Gut aussehend",
-
-    /* "data/profession/elifsch/PELS.coffee #368 */
-    /* "data/profession/menschlich/PBRT.coffee #388 */
-    /* "data/profession/menschlich/PEIN.coffee #525 */
-    /* "data/profession/menschlich/PENT.coffee #429 */
-    /* "data/profession/menschlich/PMAG.coffee #605 */
+    /* "data/profession/elfisch/PELS.coffee #368 */
+    /* "data/profession/menschlich/PBRT.coffee #387 */
+    /* "data/profession/menschlich/PEIN.coffee #524 */
+    /* "data/profession/menschlich/PENT.coffee #428 */
+    /* "data/profession/menschlich/PMAG.coffee #634 */
+    /* "data/race/RZWE.coffee #1060 */
     "Gutes Gedächtnis": "Gutes Gedächtnis",
 
     /* "data/culture/menschlich/CANN.coffee #1072 */
     /* "data/culture/menschlich/CBLN.coffee #875 */
     /* "data/culture/menschlich/CHOR.coffee #897 */
     /* "data/culture/menschlich/CMLS.coffee #703 */
-    /* "data/culture/menschlich/CNVI.coffee #1788 */
+    /* "data/culture/menschlich/CNVI.coffee #1886 */
     /* "data/culture/menschlich/CSAV.coffee #928 */
     /* "data/culture/menschlich/CTDS.coffee #1179 */
     /* "data/culture/menschlich/CTHW.coffee #1108 */
     /* "data/culture/zwergisch/CAZW.coffee #901 */
-    /* "data/profession/menschlich/PENT.coffee #1580 */
+    /* "data/profession/menschlich/PENT.coffee #1579 */
     /* "data/profession/menschlich/PKRI.coffee #1664 */
-    /* "data/profession/menschlich/PMAG.coffee #1562 */
-    /* "data/profession/menschlich/PRIT.coffee #1703 */
+    /* "data/profession/menschlich/PMAG.coffee #1591 */
+    /* "data/profession/menschlich/PRIT.coffee #1704 */
     /* "data/profession/menschlich/PWUN.coffee #1118 */
     "Götter/Kulte": "Götter/Kulte",
 
-    /* "data/profession/menschlich/PEIN.coffee #2290 */
+    /* "data/profession/menschlich/PEIN.coffee #2295 */
     "Gürtel mit Trageschlaufen und -haken": "Gürtel mit Trageschlaufen und -haken",
 
     /* "data/profession/menschlich/PWUN.coffee #1680 */
     "Haken zum Halten der Wundränder": "Haken zum Halten der Wundränder",
 
-    /* "data/profession/menschlich/PRIT.coffee #2098 */
+    /* "data/race/RHEL.coffee #40 */
+    "Halbelfen": "Halbelfen",
+
+    /* "data/profession/menschlich/PRIT.coffee #2099 */
     "Handschuhe": "Handschuhe",
 
-    /* "data/culture/elfisch/CAUE.coffee #1376 */
-    /* "data/culture/menschlich/CNVI.coffee #2048 */
-    /* "data/profession/menschlich/PENT.coffee #2328 */
-    /* "data/profession/menschlich/PJAE.coffee #1812 */
-    /* "data/profession/menschlich/PKUN.coffee #2026 */
-    /* "data/profession/menschlich/PMAG.coffee #2124 */
+    /* "data/profession/menschlich/PEIN.coffee #2176 */
+    "Handschuhe (dunkel)": "Handschuhe (dunkel)",
+
+    /* "data/culture/elfisch/CAUE.coffee #1422 */
+    /* "data/culture/menschlich/CNVI.coffee #2154 */
+    /* "data/profession/menschlich/PENT.coffee #2327 */
+    /* "data/profession/menschlich/PJAE.coffee #1814 */
+    /* "data/profession/menschlich/PKUN.coffee #2025 */
+    /* "data/profession/menschlich/PMAG.coffee #2153 */
     /* "data/profession/menschlich/PWUN.coffee #1366 */
     "Heilkunde Gift": "Heilkunde Gift",
 
-    /* "data/culture/menschlich/CNVI.coffee #2085 */
+    /* "data/culture/menschlich/CNVI.coffee #2196 */
+    /* "data/profession/menschlich/PJAE.coffee #1844 */
+    /* "data/profession/menschlich/PKUN.coffee #2055 */
+    /* "data/profession/menschlich/PMAG.coffee #2183 */
     /* "data/profession/menschlich/PWUN.coffee #1396 */
     "Heilkunde Krankheit": "Heilkunde Krankheit",
 
-    /* "data/profession/menschlich/PJAE.coffee #1842 */
-    /* "data/profession/menschlich/PKUN.coffee #2056 */
-    /* "data/profession/menschlich/PMAG.coffee #2154 */
-    "Heilkunde Krankheiten": "Heilkunde Krankheiten",
-
-    /* "data/culture/elfisch/CAUE.coffee #1406 */
+    /* "data/culture/elfisch/CAUE.coffee #1452 */
     /* "data/culture/menschlich/CANN.coffee #1275 */
-    /* "data/culture/menschlich/CNVI.coffee #2127 */
-    /* "data/profession/elifsch/PWDL.coffee #1390 */
-    /* "data/profession/menschlich/PENT.coffee #2358 */
-    /* "data/profession/menschlich/PGKL.coffee #1725 */
+    /* "data/culture/menschlich/CNVI.coffee #2243 */
+    /* "data/profession/elfisch/PWDL.coffee #1389 */
+    /* "data/profession/menschlich/PENT.coffee #2357 */
+    /* "data/profession/menschlich/PGKL.coffee #1724 */
     /* "data/profession/menschlich/PJAE.coffee #1879 */
     /* "data/profession/menschlich/PKRI.coffee #1882 */
-    /* "data/profession/menschlich/PKUN.coffee #2093 */
-    /* "data/profession/menschlich/PMAG.coffee #2191 */
-    /* "data/profession/menschlich/PPIR.coffee #1562 */
-    /* "data/profession/menschlich/PRIT.coffee #1901 */
-    /* "data/profession/menschlich/PSOL.coffee #2037 */
+    /* "data/profession/menschlich/PKUN.coffee #2090 */
+    /* "data/profession/menschlich/PMAG.coffee #2218 */
+    /* "data/profession/menschlich/PPIR.coffee #1561 */
+    /* "data/profession/menschlich/PRIT.coffee #1902 */
+    /* "data/profession/menschlich/PSOL.coffee #2036 */
     /* "data/profession/menschlich/PWUN.coffee #1431 */
     "Heilkunde Wunden": "Heilkunde Wunden",
 
     /* "data/culture/menschlich/CMLS.coffee #731 */
-    /* "data/profession/menschlich/PBRT.coffee #1703 */
-    /* "data/profession/menschlich/PENT.coffee #1608 */
+    /* "data/profession/menschlich/PBRT.coffee #1702 */
+    /* "data/profession/menschlich/PENT.coffee #1607 */
     /* "data/profession/menschlich/PKRI.coffee #1692 */
-    /* "data/profession/menschlich/PKUN.coffee #1891 */
-    /* "data/profession/menschlich/PRIT.coffee #1731 */
-    /* "data/profession/menschlich/PSOL.coffee #1867 */
+    /* "data/profession/menschlich/PKUN.coffee #1890 */
+    /* "data/profession/menschlich/PRIT.coffee #1732 */
+    /* "data/profession/menschlich/PSOL.coffee #1866 */
     "Heraldik": "Heraldik",
 
-    /* "data/profession/menschlich/PEIN.coffee #555 */
+    /* "data/race/RZWE.coffee #1452 */
+    /* "data/race/elfisch/REAU.coffee #1254 */
+    /* "data/race/menschlich/RMLD.coffee #643 */
+    /* "data/race/menschlich/RTHW.coffee #862 */
+    /* "data/race/menschlich/RTLD.coffee #638 */
+    "Herausragende Balance": "Herausragende Balance",
+
+    /* "data/race/RHEL.coffee #969 */
+    "Herausragender Sinn": "Herausragender Sinn",
+
+    /* "data/profession/menschlich/PEIN.coffee #554 */
     /* "data/profession/menschlich/PJAE.coffee #460 */
     /* "data/profession/menschlich/PKUN.coffee #544 */
+    /* "data/race/elfisch/REAU.coffee #864 */
     "Herausragender Sinn (Gehör)": "Herausragender Sinn (Gehör)",
+
+    /* "data/race/elfisch/REAU.coffee #899 */
+    "Herausragender Sinn (Geruch)": "Herausragender Sinn (Geruch)",
 
     /* "data/profession/menschlich/PJAE.coffee #500 */
     /* "data/profession/menschlich/PKUN.coffee #504 */
+    /* "data/race/elfisch/REAU.coffee #935 */
     "Herausragender Sinn (Sicht)": "Herausragender Sinn (Sicht)",
 
-    /* "data/profession/menschlich/PEIN.coffee #595 */
+    /* "data/profession/menschlich/PEIN.coffee #594 */
     "Herausragender Sinn (Tastsinn)": "Herausragender Sinn (Tastsinn)",
+
+    /* "data/race/RHEL.coffee #1001 */
+    /* "data/race/RZWE.coffee #1486 */
+    /* "data/race/elfisch/REAU.coffee #1288 */
+    "Herausragendes Aussehen": "Herausragendes Aussehen",
 
     /* "data/culture/menschlich/CANN.coffee #702 */
     /* "data/culture/menschlich/CTHW.coffee #836 */
     /* "data/culture/zwergisch/CAZW.coffee #632 */
-    /* "data/profession/elifsch/PWDL.coffee #731 */
-    /* "data/profession/menschlich/PBRT.coffee #1199 */
-    /* "data/profession/menschlich/PENT.coffee #1139 */
-    /* "data/profession/menschlich/PGKL.coffee #993 */
-    /* "data/profession/menschlich/PJAE.coffee #1065 */
+    /* "data/profession/elfisch/PWDL.coffee #731 */
+    /* "data/profession/menschlich/PBRT.coffee #1198 */
+    /* "data/profession/menschlich/PENT.coffee #1138 */
+    /* "data/profession/menschlich/PGKL.coffee #992 */
+    /* "data/profession/menschlich/PJAE.coffee #1066 */
     /* "data/profession/menschlich/PKUN.coffee #1272 */
-    /* "data/profession/menschlich/PPIR.coffee #911 */
+    /* "data/profession/menschlich/PPIR.coffee #910 */
     /* "data/profession/menschlich/PRIT.coffee #1105 */
     /* "data/profession/menschlich/PSOL.coffee #1119 */
-    /* "data/profession/menschlich/PSTR.coffee #916 */
+    /* "data/profession/menschlich/PSTR.coffee #918 */
     /* "data/profession/menschlich/PWUN.coffee #735 */
     "Hiebwaffen": "Hiebwaffen",
 
-    /* "data/culture/menschlich/CNVI.coffee #252 */
+    /* "data/culture/menschlich/CNVI.coffee #275 */
     /* "data/culture/menschlich/CSAV.coffee #119 */
     /* "data/culture/menschlich/CTDS.coffee #283 */
+    /* "data/race/RZWE.coffee #1089 */
+    /* "data/race/elfisch/REAU.coffee #1477 */
     "Hitzeresistenz": "Hitzeresistenz",
 
     /* "data/culture/menschlich/CANN.coffee #221 */
     /* "data/culture/menschlich/CBLN.coffee #162 */
-    /* "data/culture/menschlich/CNVI.coffee #502 */
+    /* "data/culture/menschlich/CNVI.coffee #528 */
     /* "data/culture/menschlich/CTHW.coffee #305 */
     /* "data/profession/menschlich/PKRI.coffee #624 */
     /* "data/profession/menschlich/PPIR.coffee #348 */
     /* "data/profession/menschlich/PRIT.coffee #570 */
     /* "data/profession/menschlich/PSOL.coffee #419 */
+    /* "data/race/RZWE.coffee #1116 */
+    /* "data/race/menschlich/RTHW.coffee #715 */
     "Hohe Lebenskraft": "Hohe Lebenskraft",
 
-    /* "data/profession/menschlich/PMAG.coffee #634 */
+    /* "data/profession/menschlich/PMAG.coffee #663 */
+    /* "data/race/RZWE.coffee #1145 */
     "Hohe Magieresistenz": "Hohe Magieresistenz",
 
-    /* "data/culture/elfisch/CAUE.coffee #1443 */
+    /* "data/culture/elfisch/CAUE.coffee #1489 */
     /* "data/culture/menschlich/CANN.coffee #1307 */
     /* "data/culture/menschlich/CBLN.coffee #1054 */
-    /* "data/culture/menschlich/CNVI.coffee #2166 */
+    /* "data/culture/menschlich/CNVI.coffee #2287 */
     /* "data/culture/menschlich/CSAV.coffee #1197 */
     /* "data/culture/menschlich/CTHW.coffee #1325 */
-    /* "data/profession/menschlich/PKUN.coffee #2125 */
-    /* "data/profession/menschlich/PMAG.coffee #2223 */
-    /* "data/profession/menschlich/PPIR.coffee #1594 */
-    /* "data/profession/menschlich/PSOL.coffee #2069 */
+    /* "data/profession/menschlich/PKUN.coffee #2122 */
+    /* "data/profession/menschlich/PMAG.coffee #2250 */
+    /* "data/profession/menschlich/PPIR.coffee #1593 */
+    /* "data/profession/menschlich/PSOL.coffee #2068 */
     "Holzbearbeitung": "Holzbearbeitung",
 
+    /* "data/profession/menschlich/PKRI.coffee #2073 */
+    /* "data/profession/menschlich/PSOL.coffee #2345 */
+    "Holzschild (einfach)": "Holzschild (einfach)",
+
     /* "data/culture/menschlich/CHOR.coffee #44 */
+    /* "data/race/RHEL.coffee #1773 */
+    /* "data/race/menschlich/RMLD.coffee #839 */
     "Horasreich": "Horasreich",
 
-    /* "data/profession/menschlich/PSOL.coffee #2495 */
+    /* "data/profession/menschlich/PSOL.coffee #2494 */
     "Hut": "Hut",
 
     /* "data/profession/menschlich/PPIR.coffee #2028 */
     "Hängematte": "Hängematte",
 
-    /* "data/profession/menschlich/PEIN.coffee #1110 */
-    /* "data/profession/menschlich/PENT.coffee #806 */
-    /* "data/profession/menschlich/PPIR.coffee #573 */
+    /* "data/profession/menschlich/PEIN.coffee #1109 */
+    /* "data/profession/menschlich/PENT.coffee #805 */
+    /* "data/profession/menschlich/PPIR.coffee #572 */
     "Höhenangst": "Höhenangst",
 
     /* "data/culture/zwergisch/CAZW.coffee #1207 */
@@ -931,25 +1007,25 @@
     /* "data/culture/menschlich/CHOR.coffee #628 */
     /* "data/culture/menschlich/CMLS.coffee #515 */
     /* "data/profession/menschlich/PKRI.coffee #1188 */
-    /* "data/profession/menschlich/PRIT.coffee #1259 */
-    /* "data/profession/menschlich/PSOL.coffee #1322 */
+    /* "data/profession/menschlich/PRIT.coffee #1260 */
+    /* "data/profession/menschlich/PSOL.coffee #1323 */
     "Infanteriewaffen": "Infanteriewaffen",
 
-    /* "data/culture/menschlich/CNVI.coffee #538 */
+    /* "data/culture/menschlich/CNVI.coffee #566 */
     /* "data/culture/menschlich/CTHW.coffee #253 */
-    /* "data/profession/menschlich/PBRT.coffee #418 */
-    /* "data/profession/menschlich/PEIN.coffee #638 */
-    /* "data/profession/menschlich/PENT.coffee #458 */
+    /* "data/profession/menschlich/PBRT.coffee #417 */
+    /* "data/profession/menschlich/PEIN.coffee #637 */
+    /* "data/profession/menschlich/PENT.coffee #457 */
     /* "data/profession/menschlich/PJAE.coffee #540 */
     /* "data/profession/menschlich/PKUN.coffee #584 */
     /* "data/profession/menschlich/PPIR.coffee #377 */
     "Innerer Kompass": "Innerer Kompass",
 
-    /* "data/culture/elfisch/CAUE.coffee #1230 */
-    /* "data/profession/elifsch/PELS.coffee #936 */
+    /* "data/culture/elfisch/CAUE.coffee #1276 */
+    /* "data/profession/elfisch/PELS.coffee #936 */
     "Isdira": "Isdira",
 
-    /* "data/culture/elfisch/CAUE.coffee #2049 */
+    /* "data/culture/elfisch/CAUE.coffee #2094 */
     "Jagdmesser": "Jagdmesser",
 
     /* "data/culture/menschlich/CANN.coffee #1702 */
@@ -965,85 +1041,107 @@
     "Jägerin": "Jägerin",
 
     /* "data/culture/menschlich/CHOR.coffee #293 */
-    /* "data/culture/menschlich/CNVI.coffee #335 */
-    /* "data/culture/menschlich/CNVI.coffee #689 */
+    /* "data/culture/menschlich/CNVI.coffee #358 */
+    /* "data/culture/menschlich/CNVI.coffee #727 */
     /* "data/culture/menschlich/CSAV.coffee #373 */
     /* "data/culture/menschlich/CTDS.coffee #445 */
-    /* "data/profession/menschlich/PPIR.coffee #501 */
+    /* "data/profession/menschlich/PPIR.coffee #500 */
+    /* "data/race/RZWE.coffee #1297 */
+    /* "data/race/menschlich/RTHW.coffee #624 */
     "Jähzorn": "Jähzorn",
 
-    /* "data/culture/elfisch/CAUE.coffee #538 */
-    /* "data/profession/menschlich/PPIR.coffee #699 */
+    /* "data/culture/elfisch/CAUE.coffee #584 */
+    /* "data/profession/menschlich/PPIR.coffee #698 */
     "Kampf im Wasser": "Kampf im Wasser",
 
     /* "data/culture/menschlich/CTHW.coffee #281 */
     /* "data/profession/menschlich/PSOL.coffee #395 */
+    /* "data/race/RHEL.coffee #1232 */
+    /* "data/race/RZWE.coffee #1177 */
+    /* "data/race/elfisch/REAU.coffee #1505 */
+    /* "data/race/menschlich/RTHW.coffee #744 */
     "Kampfrausch": "Kampfrausch",
 
-    /* "data/profession/menschlich/PENT.coffee #2604 */
-    /* "data/profession/menschlich/PKUN.coffee #2319 */
+    /* "data/profession/menschlich/PENT.coffee #2603 */
+    /* "data/profession/menschlich/PKUN.coffee #2316 */
     "Kampfstab": "Kampfstab",
 
-    /* "data/profession/menschlich/PSTR.coffee #1777 */
+    /* "data/profession/menschlich/PEIN.coffee #2126 */
+    "Kapuze (dunkel)": "Kapuze (dunkel)",
+
+    /* "data/profession/menschlich/PSTR.coffee #1779 */
     "Karten (gezinkt)": "Karten (gezinkt)",
 
-    /* "data/profession/menschlich/PBRT.coffee #1928 */
-    /* "data/profession/menschlich/PENT.coffee #2390 */
+    /* "data/profession/menschlich/PBRT.coffee #1927 */
+    /* "data/profession/menschlich/PENT.coffee #2389 */
     "Kartographie": "Kartographie",
 
-    /* "data/profession/menschlich/PRIT.coffee #2222 */
+    /* "data/profession/menschlich/PRIT.coffee #2223 */
     "Kettenhemd": "Kettenhemd",
 
     /* "data/profession/menschlich/PSOL.coffee #1137 */
     "Kettenwaffen": "Kettenwaffen",
 
-    /* "data/profession/menschlich/PENT.coffee #2621 */
+    /* "data/profession/menschlich/PENT.coffee #2620 */
     "Keule": "Keule",
 
-    /* "data/profession/menschlich/PPIR.coffee #743 */
+    /* "data/profession/menschlich/PPIR.coffee #742 */
     "Kiste mit optischen/nautischen Utensilien": "Kiste mit optischen/nautischen Utensilien",
 
-    /* "data/culture/elfisch/CAUE.coffee #2070 */
-    /* "data/profession/menschlich/PSTR.coffee #1708 */
+    /* "data/culture/elfisch/CAUE.coffee #2115 */
+    /* "data/profession/menschlich/PSTR.coffee #1710 */
     /* "data/profession/menschlich/PWUN.coffee #1505 */
     "Kleidung": "Kleidung",
 
-    /* "data/culture/elfisch/CAUE.coffee #685 */
+    /* "data/profession/menschlich/PSTR.coffee #769 */
+    "Kleidung (edel)": "Kleidung (edel)",
+
+    /* "data/profession/menschlich/PGKL.coffee #1824 */
+    "Kleidung (einfach) (auffällig)": "Kleidung (einfach) (auffällig)",
+
+    /* "data/profession/menschlich/PEIN.coffee #2087 */
+    "Kleidung (verbreitet)": "Kleidung (verbreitet)",
+
+    /* "data/profession/menschlich/PPIR.coffee #1839 */
+    "Kleidung (zweckmäßig)": "Kleidung (zweckmäßig)",
+
+    /* "data/culture/elfisch/CAUE.coffee #731 */
     /* "data/culture/zwergisch/CAZW.coffee #761 */
-    /* "data/profession/elifsch/PWDL.coffee #836 */
-    /* "data/profession/menschlich/PBRT.coffee #1291 */
-    /* "data/profession/menschlich/PEIN.coffee #1479 */
-    /* "data/profession/menschlich/PENT.coffee #1189 */
-    /* "data/profession/menschlich/PGKL.coffee #1158 */
-    /* "data/profession/menschlich/PJAE.coffee #1210 */
+    /* "data/profession/elfisch/PWDL.coffee #836 */
+    /* "data/profession/menschlich/PBRT.coffee #1290 */
+    /* "data/profession/menschlich/PEIN.coffee #1478 */
+    /* "data/profession/menschlich/PENT.coffee #1188 */
+    /* "data/profession/menschlich/PGKL.coffee #1157 */
+    /* "data/profession/menschlich/PJAE.coffee #1211 */
     /* "data/profession/menschlich/PKRI.coffee #1354 */
     /* "data/profession/menschlich/PKUN.coffee #1442 */
-    /* "data/profession/menschlich/PPIR.coffee #1058 */
-    /* "data/profession/menschlich/PSOL.coffee #1423 */
-    /* "data/profession/menschlich/PSTR.coffee #1064 */
+    /* "data/profession/menschlich/PPIR.coffee #1057 */
+    /* "data/profession/menschlich/PSOL.coffee #1424 */
+    /* "data/profession/menschlich/PSTR.coffee #1066 */
     "Klettern": "Klettern",
 
-    /* "data/profession/menschlich/PEIN.coffee #2033 */
+    /* "data/profession/menschlich/PEIN.coffee #2032 */
     "Klettern (Freiklettern)": "Klettern (Freiklettern)",
 
     /* "data/profession/menschlich/PWUN.coffee #1598 */
     "Knochensäge": "Knochensäge",
 
     /* "data/culture/menschlich/CHOR.coffee #432 */
-    /* "data/culture/menschlich/CNVI.coffee #899 */
+    /* "data/culture/menschlich/CNVI.coffee #937 */
     /* "data/culture/menschlich/CTDS.coffee #639 */
-    /* "data/profession/menschlich/PMAG.coffee #861 */
+    /* "data/profession/menschlich/PMAG.coffee #890 */
+    /* "data/race/RZWE.coffee #1522 */
     "Koboldfreund": "Koboldfreund",
 
     /* "data/culture/menschlich/CANN.coffee #1479 */
     /* "data/culture/menschlich/CBLN.coffee #1085 */
-    /* "data/culture/menschlich/CNVI.coffee #2204 */
-    /* "data/profession/menschlich/PGKL.coffee #1757 */
+    /* "data/culture/menschlich/CNVI.coffee #2330 */
+    /* "data/profession/menschlich/PGKL.coffee #1756 */
     /* "data/profession/menschlich/PJAE.coffee #1911 */
-    /* "data/profession/menschlich/PKUN.coffee #2156 */
-    /* "data/profession/menschlich/PMAG.coffee #2254 */
-    /* "data/profession/menschlich/PPIR.coffee #1663 */
-    /* "data/profession/menschlich/PSOL.coffee #2100 */
+    /* "data/profession/menschlich/PKUN.coffee #2153 */
+    /* "data/profession/menschlich/PMAG.coffee #2281 */
+    /* "data/profession/menschlich/PPIR.coffee #1662 */
+    /* "data/profession/menschlich/PSOL.coffee #2099 */
     /* "data/profession/menschlich/PWUN.coffee #1463 */
     "Kochen": "Kochen",
 
@@ -1053,11 +1151,11 @@
     /* "data/profession/menschlich/PENT.coffee #2742 */
     "Kohlestift": "Kohlestift",
 
-    /* "data/profession/menschlich/PENT.coffee #1068 */
-    /* "data/profession/menschlich/PPIR.coffee #818 */
+    /* "data/profession/menschlich/PENT.coffee #1067 */
+    /* "data/profession/menschlich/PPIR.coffee #817 */
     "Kompass": "Kompass",
 
-    /* "data/profession/menschlich/PMAG.coffee #1137 */
+    /* "data/profession/menschlich/PMAG.coffee #1166 */
     "Kraftfokus": "Kraftfokus",
 
     /* "data/culture/menschlich/CANN.coffee #551 */
@@ -1068,19 +1166,22 @@
 
     /* "data/culture/menschlich/CANN.coffee #587 */
     /* "data/culture/menschlich/CBLN.coffee #505 */
-    /* "data/culture/menschlich/CNVI.coffee #965 */
+    /* "data/culture/menschlich/CNVI.coffee #1003 */
     /* "data/culture/menschlich/CSAV.coffee #536 */
-    /* "data/profession/menschlich/PBRT.coffee #824 */
+    /* "data/profession/menschlich/PBRT.coffee #823 */
     /* "data/profession/menschlich/PKRI.coffee #958 */
     /* "data/profession/menschlich/PKUN.coffee #896 */
     /* "data/profession/menschlich/PWUN.coffee #479 */
+    /* "data/race/RHEL.coffee #1326 */
+    /* "data/race/RZWE.coffee #1669 */
+    /* "data/race/elfisch/REAU.coffee #1689 */
     "Krankheitsanfällig": "Krankheitsanfällig",
 
     /* "data/culture/menschlich/CANN.coffee #1719 */
     /* "data/culture/menschlich/CBLN.coffee #1320 */
     /* "data/culture/menschlich/CHOR.coffee #1353 */
     /* "data/culture/menschlich/CMLS.coffee #1171 */
-    /* "data/culture/menschlich/CNVI.coffee #2447 */
+    /* "data/culture/menschlich/CNVI.coffee #2598 */
     /* "data/culture/menschlich/CSAV.coffee #1443 */
     /* "data/culture/menschlich/CTDS.coffee #1556 */
     /* "data/culture/menschlich/CTHW.coffee #1514 */
@@ -1096,10 +1197,10 @@
     "Kriegerin (Ruadas Ehr)": "Kriegerin (Ruadas Ehr)",
 
     /* "data/profession/menschlich/PKRI.coffee #1716 */
-    /* "data/profession/menschlich/PKUN.coffee #1942 */
-    /* "data/profession/menschlich/PPIR.coffee #1410 */
-    /* "data/profession/menschlich/PRIT.coffee #1755 */
-    /* "data/profession/menschlich/PSOL.coffee #1891 */
+    /* "data/profession/menschlich/PKUN.coffee #1941 */
+    /* "data/profession/menschlich/PPIR.coffee #1409 */
+    /* "data/profession/menschlich/PRIT.coffee #1756 */
+    /* "data/profession/menschlich/PSOL.coffee #1890 */
     "Kriegskunst": "Kriegskunst",
 
     /* "data/culture/zwergisch/CAZW.coffee #1230 */
@@ -1108,7 +1209,7 @@
     /* "data/culture/menschlich/CANN.coffee #1552 */
     "Kulturkunde (Andergast/Nostria)": "Kulturkunde (Andergast/Nostria)",
 
-    /* "data/culture/elfisch/CAUE.coffee #1757 */
+    /* "data/culture/elfisch/CAUE.coffee #1803 */
     "Kulturkunde (Auelfen)": "Kulturkunde (Auelfen)",
 
     /* "data/culture/menschlich/CBLN.coffee #1162 */
@@ -1120,7 +1221,7 @@
     /* "data/culture/menschlich/CMLS.coffee #1010 */
     "Kulturkunde (Mittelreich)": "Kulturkunde (Mittelreich)",
 
-    /* "data/culture/menschlich/CNVI.coffee #2325 */
+    /* "data/culture/menschlich/CNVI.coffee #2463 */
     "Kulturkunde (Novadis)": "Kulturkunde (Novadis)",
 
     /* "data/culture/menschlich/CSAV.coffee #1281 */
@@ -1135,7 +1236,7 @@
     /* "data/culture/menschlich/CANN.coffee #1738 */
     /* "data/culture/menschlich/CBLN.coffee #1339 */
     /* "data/culture/menschlich/CMLS.coffee #1190 */
-    /* "data/culture/menschlich/CNVI.coffee #2472 */
+    /* "data/culture/menschlich/CNVI.coffee #2625 */
     /* "data/culture/menschlich/CSAV.coffee #1462 */
     /* "data/culture/menschlich/CTHW.coffee #1533 */
     /* "data/culture/zwergisch/CAZW.coffee #1368 */
@@ -1145,14 +1246,14 @@
     /* "data/profession/menschlich/PKUN.coffee #95 */
     "Kundschafterin": "Kundschafterin",
 
-    /* "data/profession/elifsch/PWDL.coffee #507 */
-    /* "data/profession/menschlich/PBRT.coffee #855 */
+    /* "data/profession/elfisch/PWDL.coffee #507 */
+    /* "data/profession/menschlich/PBRT.coffee #854 */
     /* "data/profession/menschlich/PKUN.coffee #927 */
     "Kurzatmig": "Kurzatmig",
 
     /* "data/culture/menschlich/CHOR.coffee #1136 */
     /* "data/profession/menschlich/PKRI.coffee #1849 */
-    /* "data/profession/menschlich/PMAG.coffee #2039 */
+    /* "data/profession/menschlich/PMAG.coffee #2068 */
     "Kusliker Zeichen": "Kusliker Zeichen",
 
     /* "data/culture/menschlich/CBLN.coffee #191 */
@@ -1160,99 +1261,110 @@
     /* "data/culture/menschlich/CTDS.coffee #665 */
     "Kälteresistenz": "Kälteresistenz",
 
-    /* "data/culture/elfisch/CAUE.coffee #2009 */
+    /* "data/culture/elfisch/CAUE.coffee #2054 */
     "Köcher": "Köcher",
 
-    /* "data/profession/elifsch/PWDL.coffee #860 */
+    /* "data/profession/elfisch/PWDL.coffee #860 */
     "Körperbeherrerschung": "Körperbeherrerschung",
 
-    /* "data/profession/menschlich/PPIR.coffee #1082 */
+    /* "data/profession/menschlich/PPIR.coffee #1081 */
+    /* "data/race/RHEL.coffee #1501 */
+    /* "data/race/elfisch/REAU.coffee #1831 */
     "Körperbeherrschung": "Körperbeherrschung",
 
-    /* "data/culture/elfisch/CAUE.coffee #709 */
-    /* "data/culture/menschlich/CNVI.coffee #1432 */
+    /* "data/culture/elfisch/CAUE.coffee #755 */
+    /* "data/culture/menschlich/CNVI.coffee #1505 */
     /* "data/culture/menschlich/CTHW.coffee #934 */
-    /* "data/profession/menschlich/PBRT.coffee #1332 */
-    /* "data/profession/menschlich/PEIN.coffee #1503 */
-    /* "data/profession/menschlich/PENT.coffee #1213 */
-    /* "data/profession/menschlich/PGKL.coffee #1193 */
-    /* "data/profession/menschlich/PJAE.coffee #1234 */
+    /* "data/profession/menschlich/PBRT.coffee #1331 */
+    /* "data/profession/menschlich/PEIN.coffee #1502 */
+    /* "data/profession/menschlich/PENT.coffee #1212 */
+    /* "data/profession/menschlich/PGKL.coffee #1192 */
+    /* "data/profession/menschlich/PJAE.coffee #1235 */
     /* "data/profession/menschlich/PKRI.coffee #1378 */
     /* "data/profession/menschlich/PKUN.coffee #1466 */
-    /* "data/profession/menschlich/PRIT.coffee #1388 */
-    /* "data/profession/menschlich/PSOL.coffee #1447 */
-    /* "data/profession/menschlich/PSTR.coffee #1088 */
+    /* "data/profession/menschlich/PRIT.coffee #1389 */
+    /* "data/profession/menschlich/PSOL.coffee #1448 */
+    /* "data/profession/menschlich/PSTR.coffee #1090 */
     "Körperbeherschung": "Körperbeherschung",
 
-    /* "data/profession/elifsch/PWDL.coffee #529 */
+    /* "data/profession/elfisch/PWDL.coffee #529 */
     /* "data/profession/menschlich/PKUN.coffee #949 */
     "Lahm": "Lahm",
 
     /* "data/profession/menschlich/PRIT.coffee #1033 */
     "Lanze": "Lanze",
 
-    /* "data/culture/menschlich/CNVI.coffee #1212 */
-    /* "data/profession/menschlich/PRIT.coffee #1291 */
+    /* "data/culture/menschlich/CNVI.coffee #1258 */
+    /* "data/profession/menschlich/PRIT.coffee #1292 */
     "Lanzenreiten": "Lanzenreiten",
 
-    /* "data/culture/elfisch/CAUE.coffee #1474 */
+    /* "data/culture/elfisch/CAUE.coffee #1520 */
     /* "data/culture/menschlich/CANN.coffee #1338 */
     /* "data/culture/menschlich/CBLN.coffee #1107 */
-    /* "data/culture/menschlich/CNVI.coffee #2233 */
+    /* "data/culture/menschlich/CNVI.coffee #2364 */
     /* "data/culture/menschlich/CSAV.coffee #1228 */
     /* "data/profession/menschlich/PJAE.coffee #1933 */
     /* "data/profession/menschlich/PKRI.coffee #1914 */
-    /* "data/profession/menschlich/PKUN.coffee #2178 */
-    /* "data/profession/menschlich/PPIR.coffee #1625 */
-    /* "data/profession/menschlich/PSOL.coffee #2122 */
+    /* "data/profession/menschlich/PKUN.coffee #2175 */
+    /* "data/profession/menschlich/PPIR.coffee #1624 */
+    /* "data/profession/menschlich/PSOL.coffee #2121 */
     "Lederarbeiten": "Lederarbeiten",
 
-    /* "data/culture/elfisch/CAUE.coffee #1917 */
-    /* "data/profession/elifsch/PELS.coffee #70 */
+    /* "data/profession/menschlich/PBRT.coffee #2168 */
+    /* "data/profession/menschlich/PENT.coffee #2685 */
+    "Lederrolle (wasserdicht)": "Lederrolle (wasserdicht)",
+
+    /* "data/culture/elfisch/CAUE.coffee #1962 */
+    /* "data/profession/elfisch/PELS.coffee #70 */
     "Legendensänger": "Legendensänger",
 
-    /* "data/profession/elifsch/PELS.coffee #101 */
+    /* "data/profession/elfisch/PELS.coffee #101 */
     "Legendensängerin": "Legendensängerin",
 
-    /* "data/profession/elifsch/PELS.coffee #690 */
-    /* "data/profession/menschlich/PMAG.coffee #1340 */
-    /* "data/profession/menschlich/PRIT.coffee #1553 */
+    /* "data/profession/elfisch/PELS.coffee #690 */
+    /* "data/profession/menschlich/PMAG.coffee #1369 */
+    /* "data/profession/menschlich/PRIT.coffee #1554 */
     "Lehren": "Lehren",
 
-    /* "data/profession/menschlich/PBRT.coffee #1817 */
-    /* "data/profession/menschlich/PENT.coffee #2220 */
-    /* "data/profession/menschlich/PMAG.coffee #1955 */
-    /* "data/profession/menschlich/PRIT.coffee #1847 */
+    /* "data/profession/menschlich/PBRT.coffee #1816 */
+    /* "data/profession/menschlich/PENT.coffee #2219 */
+    /* "data/profession/menschlich/PMAG.coffee #1984 */
+    /* "data/profession/menschlich/PRIT.coffee #1848 */
     /* "data/profession/menschlich/PWUN.coffee #1296 */
     "Lesen/Schreiben": "Lesen/Schreiben",
 
-    /* "data/profession/elifsch/PELS.coffee #1024 */
+    /* "data/profession/elfisch/PELS.coffee #1023 */
     "Lesen/Schreiben (Isdira/Asdharia)": "Lesen/Schreiben (Isdira/Asdharia)",
 
-    /* "data/culture/menschlich/CNVI.coffee #996 */
+    /* "data/culture/menschlich/CNVI.coffee #1034 */
     "Lichtempfindlich": "Lichtempfindlich",
 
-    /* "data/culture/menschlich/CNVI.coffee #1026 */
+    /* "data/culture/menschlich/CNVI.coffee #1064 */
+    /* "data/race/RHEL.coffee #1357 */
+    /* "data/race/RZWE.coffee #1317 */
+    /* "data/race/elfisch/REAU.coffee #1720 */
     "Lichtscheu": "Lichtscheu",
 
-    /* "data/profession/elifsch/PELS.coffee #1347 */
+    /* "data/profession/elfisch/PELS.coffee #1346 */
     "Lied der Lieder": "Lied der Lieder",
 
     /* "data/profession/menschlich/PKRI.coffee #428 */
-    /* "data/profession/menschlich/PRIT.coffee #1933 */
-    /* "data/profession/menschlich/PSOL.coffee #2177 */
+    /* "data/profession/menschlich/PRIT.coffee #1934 */
+    /* "data/profession/menschlich/PSOL.coffee #2176 */
     "Linkhand": "Linkhand",
 
     /* "data/profession/menschlich/PENT.coffee #2821 */
     "Lupe": "Lupe",
 
     /* "data/profession/menschlich/PKUN.coffee #612 */
+    /* "data/race/RHEL.coffee #1037 */
+    /* "data/race/RZWE.coffee #1547 */
     "Magiegespür": "Magiegespür",
 
-    /* "data/culture/elfisch/CAUE.coffee #1091 */
-    /* "data/profession/elifsch/PELS.coffee #843 */
-    /* "data/profession/menschlich/PENT.coffee #1632 */
-    /* "data/profession/menschlich/PMAG.coffee #1590 */
+    /* "data/culture/elfisch/CAUE.coffee #1137 */
+    /* "data/profession/elfisch/PELS.coffee #843 */
+    /* "data/profession/menschlich/PENT.coffee #1631 */
+    /* "data/profession/menschlich/PMAG.coffee #1619 */
     /* "data/profession/menschlich/PWUN.coffee #1146 */
     "Magiekunde": "Magiekunde",
 
@@ -1260,7 +1372,7 @@
     /* "data/culture/menschlich/CBLN.coffee #1363 */
     /* "data/culture/menschlich/CHOR.coffee #1372 */
     /* "data/culture/menschlich/CMLS.coffee #1214 */
-    /* "data/culture/menschlich/CNVI.coffee #2496 */
+    /* "data/culture/menschlich/CNVI.coffee #2651 */
     /* "data/culture/menschlich/CSAV.coffee #1486 */
     /* "data/culture/menschlich/CTDS.coffee #1575 */
     /* "data/culture/menschlich/CTHW.coffee #1557 */
@@ -1272,40 +1384,51 @@
     /* "data/profession/menschlich/PMAG.coffee #100 */
     "Magierin (privater Lehrmeister)": "Magierin (privater Lehrmeister)",
 
-    /* "data/profession/elifsch/PELS.coffee #1074 */
-    /* "data/profession/menschlich/PBRT.coffee #1956 */
-    /* "data/profession/menschlich/PEIN.coffee #1970 */
-    /* "data/profession/menschlich/PENT.coffee #2418 */
-    /* "data/profession/menschlich/PGKL.coffee #1667 */
-    /* "data/profession/menschlich/PMAG.coffee #2276 */
+    /* "data/vantage/magisch/VM4Z.coffee #84 */
+    /* "data/vantage/magisch/VM4ZU.coffee #96 */
+    /* "data/vantage/magisch/VMVZ.coffee #78 */
+    "Magischer Vorteil": "Magischer Vorteil",
+
+    /* "data/profession/elfisch/PELS.coffee #1073 */
+    /* "data/profession/menschlich/PBRT.coffee #1955 */
+    /* "data/profession/menschlich/PEIN.coffee #1969 */
+    /* "data/profession/menschlich/PENT.coffee #2417 */
+    /* "data/profession/menschlich/PGKL.coffee #1666 */
+    /* "data/profession/menschlich/PMAG.coffee #2303 */
     "Malen/Zeichnen": "Malen/Zeichnen",
 
-    /* "data/profession/menschlich/PRIT.coffee #2136 */
-    /* "data/profession/menschlich/PSOL.coffee #2453 */
+    /* "data/profession/menschlich/PRIT.coffee #2137 */
+    /* "data/profession/menschlich/PSOL.coffee #2452 */
     "Mantel": "Mantel",
 
-    /* "data/profession/menschlich/PGKL.coffee #865 */
+    /* "data/profession/menschlich/PEIN.coffee #2149 */
+    "Mantel (dunkel)": "Mantel (dunkel)",
+
+    /* "data/profession/menschlich/PENT.coffee #2542 */
+    "Mantel (gewachst)": "Mantel (gewachst)",
+
+    /* "data/profession/menschlich/PGKL.coffee #864 */
     "Maultier": "Maultier",
 
-    /* "data/profession/menschlich/PENT.coffee #972 */
+    /* "data/profession/menschlich/PENT.coffee #971 */
     "Maultier mit Sattel und Zaumzeug": "Maultier mit Sattel und Zaumzeug",
 
     /* "data/culture/menschlich/CHOR.coffee #925 */
     /* "data/culture/zwergisch/CAZW.coffee #929 */
-    /* "data/profession/menschlich/PEIN.coffee #1871 */
-    /* "data/profession/menschlich/PENT.coffee #1658 */
-    /* "data/profession/menschlich/PMAG.coffee #1616 */
-    /* "data/profession/menschlich/PPIR.coffee #1677 */
+    /* "data/profession/menschlich/PEIN.coffee #1870 */
+    /* "data/profession/menschlich/PENT.coffee #1657 */
+    /* "data/profession/menschlich/PMAG.coffee #1645 */
+    /* "data/profession/menschlich/PPIR.coffee #1676 */
     "Mechanik": "Mechanik",
 
-    /* "data/culture/menschlich/CNVI.coffee #710 */
+    /* "data/culture/menschlich/CNVI.coffee #748 */
     /* "data/culture/menschlich/CTHW.coffee #677 */
     /* "data/culture/zwergisch/CAZW.coffee #184 */
-    /* "data/profession/menschlich/PPIR.coffee #596 */
+    /* "data/profession/menschlich/PPIR.coffee #595 */
     "Meeresangst": "Meeresangst",
 
     /* "data/culture/menschlich/CTHW.coffee #745 */
-    /* "data/profession/menschlich/PPIR.coffee #1776 */
+    /* "data/profession/menschlich/PPIR.coffee #1775 */
     "Meereskundig": "Meereskundig",
 
     /* "data/culture/menschlich/CANN.coffee #1516 */
@@ -1316,89 +1439,109 @@
     /* "data/culture/menschlich/CMLS.coffee #645 */
     /* "data/culture/menschlich/CSAV.coffee #839 */
     /* "data/culture/menschlich/CTDS.coffee #1024 */
-    /* "data/profession/elifsch/PELS.coffee #712 */
-    /* "data/profession/menschlich/PBRT.coffee #1527 */
-    /* "data/profession/menschlich/PEIN.coffee #1716 */
-    /* "data/profession/menschlich/PENT.coffee #1347 */
-    /* "data/profession/menschlich/PGKL.coffee #1382 */
-    /* "data/profession/menschlich/PMAG.coffee #1362 */
-    /* "data/profession/menschlich/PPIR.coffee #1226 */
-    /* "data/profession/menschlich/PRIT.coffee #1575 */
-    /* "data/profession/menschlich/PSOL.coffee #1622 */
-    /* "data/profession/menschlich/PSTR.coffee #1393 */
+    /* "data/profession/elfisch/PELS.coffee #712 */
+    /* "data/profession/menschlich/PBRT.coffee #1526 */
+    /* "data/profession/menschlich/PEIN.coffee #1715 */
+    /* "data/profession/menschlich/PENT.coffee #1346 */
+    /* "data/profession/menschlich/PGKL.coffee #1381 */
+    /* "data/profession/menschlich/PMAG.coffee #1391 */
+    /* "data/profession/menschlich/PPIR.coffee #1225 */
+    /* "data/profession/menschlich/PRIT.coffee #1576 */
+    /* "data/profession/menschlich/PSOL.coffee #1623 */
+    /* "data/profession/menschlich/PSTR.coffee #1395 */
     /* "data/profession/menschlich/PWUN.coffee #975 */
     "Menschenkenntnis": "Menschenkenntnis",
 
-    /* "data/profession/menschlich/PSTR.coffee #1885 */
+    /* "data/profession/menschlich/PSTR.coffee #1887 */
     "Messer in verborgener Scheide": "Messer in verborgener Scheide",
 
+    /* "data/race/menschlich/RMLD.coffee #43 */
+    "Mittelländer": "Mittelländer",
+
     /* "data/culture/menschlich/CMLS.coffee #56 */
+    /* "data/race/RHEL.coffee #1740 */
+    /* "data/race/menschlich/RMLD.coffee #759 */
+    /* "data/race/menschlich/RTHW.coffee #1129 */
     "Mittelländische Städte": "Mittelländische Städte",
 
     /* "data/culture/menschlich/CSAV.coffee #1119 */
     "Mohisch": "Mohisch",
 
-    /* "data/profession/elifsch/PWDL.coffee #1506 */
+    /* "data/profession/elfisch/PWDL.coffee #1505 */
     "Movimento": "Movimento",
 
-    /* "data/culture/elfisch/CAUE.coffee #2104 */
-    /* "data/profession/menschlich/PGKL.coffee #1982 */
+    /* "data/culture/elfisch/CAUE.coffee #2149 */
+    /* "data/profession/menschlich/PGKL.coffee #1972 */
     "Musikinstrument": "Musikinstrument",
 
-    /* "data/culture/elfisch/CAUE.coffee #1503 */
-    /* "data/profession/elifsch/PELS.coffee #1104 */
+    /* "data/culture/elfisch/CAUE.coffee #1549 */
+    /* "data/profession/elfisch/PELS.coffee #1103 */
     "Musizieren": "Musizieren",
 
-    /* "data/profession/menschlich/PEIN.coffee #2208 */
+    /* "data/profession/menschlich/PEIN.coffee #2213 */
     "Nachschlüssel": "Nachschlüssel",
 
-    /* "data/profession/menschlich/PEIN.coffee #1133 */
+    /* "data/profession/menschlich/PEIN.coffee #1132 */
     /* "data/profession/menschlich/PJAE.coffee #725 */
     /* "data/profession/menschlich/PKUN.coffee #966 */
+    /* "data/race/RHEL.coffee #1380 */
+    /* "data/race/RZWE.coffee #1700 */
+    /* "data/race/elfisch/REAU.coffee #1743 */
     "Nachtblind": "Nachtblind",
+
+    /* "data/race/elfisch/REAU.coffee #1324 */
+    "Nachtsicht": "Nachtsicht",
 
     /* "data/profession/menschlich/PPIR.coffee #1886 */
     "Nahkampfwaffe": "Nahkampfwaffe",
 
+    /* "data/race/RHEL.coffee #1144 */
+    /* "data/race/elfisch/REAU.coffee #1401 */
+    /* "data/race/menschlich/RMLD.coffee #678 */
+    /* "data/race/menschlich/RTHW.coffee #920 */
+    /* "data/race/menschlich/RTLD.coffee #673 */
+    "Nahrungsrestriktion": "Nahrungsrestriktion",
+
     /* "data/culture/menschlich/CHOR.coffee #501 */
-    /* "data/profession/menschlich/PENT.coffee #872 */
+    /* "data/profession/menschlich/PENT.coffee #871 */
     "Nandusgefälliges Wissen": "Nandusgefälliges Wissen",
 
-    /* "data/profession/elifsch/PWDL.coffee #1531 */
+    /* "data/profession/elfisch/PWDL.coffee #1530 */
     "Nebelwand": "Nebelwand",
 
-    /* "data/profession/menschlich/PGKL.coffee #681 */
+    /* "data/profession/menschlich/PGKL.coffee #680 */
     "Neid": "Neid",
 
-    /* "data/culture/elfisch/CAUE.coffee #131 */
+    /* "data/culture/elfisch/CAUE.coffee #176 */
     /* "data/culture/menschlich/CSAV.coffee #393 */
     /* "data/culture/menschlich/CTDS.coffee #465 */
     /* "data/culture/menschlich/CTHW.coffee #437 */
-    /* "data/profession/menschlich/PBRT.coffee #877 */
+    /* "data/profession/menschlich/PBRT.coffee #876 */
     /* "data/profession/menschlich/PEIN.coffee #304 */
-    /* "data/profession/menschlich/PEIN.coffee #935 */
+    /* "data/profession/menschlich/PEIN.coffee #934 */
     /* "data/profession/menschlich/PENT.coffee #290 */
-    /* "data/profession/menschlich/PGKL.coffee #698 */
-    /* "data/profession/menschlich/PMAG.coffee #391 */
+    /* "data/profession/menschlich/PGKL.coffee #697 */
+    /* "data/profession/menschlich/PMAG.coffee #420 */
     /* "data/profession/menschlich/PSTR.coffee #665 */
     "Neugier": "Neugier",
 
-    /* "data/profession/menschlich/PMAG.coffee #963 */
+    /* "data/profession/menschlich/PMAG.coffee #992 */
     "Niedrige Astralkraft": "Niedrige Astralkraft",
 
-    /* "data/profession/menschlich/PMAG.coffee #996 */
+    /* "data/profession/menschlich/PMAG.coffee #1025 */
     "Niedrige Magieresistenz": "Niedrige Magieresistenz",
 
-    /* "data/culture/menschlich/CNVI.coffee #104 */
+    /* "data/culture/menschlich/CNVI.coffee #115 */
+    /* "data/race/menschlich/RTLD.coffee #790 */
     "Novadis": "Novadis",
 
     /* "data/culture/menschlich/CBLN.coffee #1010 */
     "Nujuka": "Nujuka",
 
-    /* "data/profession/elifsch/PELS.coffee #1266 */
+    /* "data/profession/elfisch/PELS.coffee #1265 */
     "Odem": "Odem",
 
-    /* "data/profession/menschlich/PMAG.coffee #2554 */
+    /* "data/profession/menschlich/PMAG.coffee #2581 */
     "Odem Arcanum": "Odem Arcanum",
 
     /* "data/culture/menschlich/CANN.coffee #1194 */
@@ -1407,21 +1550,23 @@
     /* "data/culture/menschlich/CANN.coffee #1209 */
     "Ologhaijan": "Ologhaijan",
 
-    /* "data/culture/elfisch/CAUE.coffee #1029 */
+    /* "data/culture/elfisch/CAUE.coffee #1075 */
     /* "data/culture/menschlich/CANN.coffee #1015 */
     /* "data/culture/menschlich/CBLN.coffee #818 */
-    /* "data/culture/menschlich/CNVI.coffee #1678 */
+    /* "data/culture/menschlich/CNVI.coffee #1771 */
     /* "data/culture/menschlich/CTHW.coffee #1079 */
-    /* "data/profession/elifsch/PWDL.coffee #1158 */
-    /* "data/profession/menschlich/PBRT.coffee #1588 */
-    /* "data/profession/menschlich/PEIN.coffee #1842 */
-    /* "data/profession/menschlich/PENT.coffee #1433 */
-    /* "data/profession/menschlich/PJAE.coffee #1567 */
+    /* "data/profession/elfisch/PWDL.coffee #1157 */
+    /* "data/profession/menschlich/PBRT.coffee #1587 */
+    /* "data/profession/menschlich/PEIN.coffee #1841 */
+    /* "data/profession/menschlich/PENT.coffee #1432 */
+    /* "data/profession/menschlich/PJAE.coffee #1568 */
     /* "data/profession/menschlich/PKRI.coffee #1603 */
-    /* "data/profession/menschlich/PKUN.coffee #1767 */
-    /* "data/profession/menschlich/PPIR.coffee #1323 */
-    /* "data/profession/menschlich/PRIT.coffee #1608 */
+    /* "data/profession/menschlich/PKUN.coffee #1766 */
+    /* "data/profession/menschlich/PPIR.coffee #1322 */
+    /* "data/profession/menschlich/PRIT.coffee #1609 */
     /* "data/profession/menschlich/PSOL.coffee #1777 */
+    /* "data/race/RZWE.coffee #1933 */
+    /* "data/race/elfisch/REAU.coffee #1988 */
     "Orientierung": "Orientierung",
 
     /* "data/profession/menschlich/PJAE.coffee #792 */
@@ -1437,7 +1582,7 @@
     /* "data/culture/menschlich/CMLS.coffee #975 */
     "Ortskenntnis (Stadtteil)": "Ortskenntnis (Stadtteil)",
 
-    /* "data/profession/menschlich/PBRT.coffee #1004 */
+    /* "data/profession/menschlich/PBRT.coffee #1003 */
     "Ortskenntnis (Strecke)": "Ortskenntnis (Strecke)",
 
     /* "data/profession/menschlich/PSOL.coffee #994 */
@@ -1446,19 +1591,17 @@
     /* "data/profession/menschlich/PJAE.coffee #840 */
     "Packtier mit Zaumzeug und Packtaschen": "Packtier mit Zaumzeug und Packtaschen",
 
-    /* "data/profession/menschlich/PMAG.coffee #2582 */
+    /* "data/profession/menschlich/PMAG.coffee #2609 */
     "Paralysis": "Paralysis",
 
-    /* "data/culture/elfisch/CAUE.coffee #2027 */
+    /* "data/culture/elfisch/CAUE.coffee #2072 */
     "Pfeile": "Pfeile",
 
-    /* "data/profession/menschlich/PJAE.coffee #1656 */
-    "Pflanzeknude": "Pflanzeknude",
-
-    /* "data/culture/elfisch/CAUE.coffee #1117 */
-    /* "data/profession/elifsch/PWDL.coffee #1247 */
-    /* "data/profession/menschlich/PKUN.coffee #1907 */
-    /* "data/profession/menschlich/PMAG.coffee #1640 */
+    /* "data/culture/elfisch/CAUE.coffee #1163 */
+    /* "data/profession/elfisch/PWDL.coffee #1246 */
+    /* "data/profession/menschlich/PJAE.coffee #1657 */
+    /* "data/profession/menschlich/PKUN.coffee #1906 */
+    /* "data/profession/menschlich/PMAG.coffee #1669 */
     /* "data/profession/menschlich/PWUN.coffee #1172 */
     "Pflanzenkunde": "Pflanzenkunde",
 
@@ -1476,33 +1619,34 @@
     "Piratin": "Piratin",
 
     /* "data/culture/menschlich/CBLN.coffee #536 */
-    /* "data/culture/menschlich/CNVI.coffee #1050 */
+    /* "data/culture/menschlich/CNVI.coffee #1088 */
     /* "data/culture/menschlich/CTHW.coffee #701 */
     /* "data/culture/zwergisch/CAZW.coffee #156 */
-    /* "data/profession/menschlich/PBRT.coffee #897 */
+    /* "data/profession/menschlich/PBRT.coffee #896 */
     /* "data/profession/menschlich/PJAE.coffee #748 */
     /* "data/profession/menschlich/PKUN.coffee #989 */
-    /* "data/profession/menschlich/PPIR.coffee #620 */
+    /* "data/profession/menschlich/PPIR.coffee #619 */
+    /* "data/race/RZWE.coffee #1340 */
     "Platzangst": "Platzangst",
 
     /* "data/culture/zwergisch/CAZW.coffee #339 */
-    /* "data/profession/menschlich/PBRT.coffee #617 */
+    /* "data/profession/menschlich/PBRT.coffee #616 */
     /* "data/profession/menschlich/PKRI.coffee #395 */
     "Prinzipientreue": "Prinzipientreue",
 
-    /* "data/culture/menschlich/CNVI.coffee #735 */
+    /* "data/culture/menschlich/CNVI.coffee #773 */
     "Prinzipientreue (99 Gesetze)": "Prinzipientreue (99 Gesetze)",
 
     /* "data/profession/menschlich/PRIT.coffee #335 */
     "Prinzipientreue (Ritterkodex)": "Prinzipientreue (Ritterkodex)",
 
-    /* "data/profession/menschlich/PPIR.coffee #838 */
+    /* "data/profession/menschlich/PPIR.coffee #837 */
     "Quadrant": "Quadrant",
 
-    /* "data/culture/elfisch/CAUE.coffee #467 */
+    /* "data/culture/elfisch/CAUE.coffee #513 */
     /* "data/culture/menschlich/CHOR.coffee #313 */
-    /* "data/culture/menschlich/CNVI.coffee #385 */
-    /* "data/culture/menschlich/CNVI.coffee #776 */
+    /* "data/culture/menschlich/CNVI.coffee #408 */
+    /* "data/culture/menschlich/CNVI.coffee #814 */
     /* "data/culture/menschlich/CTHW.coffee #458 */
     "Rachsucht": "Rachsucht",
 
@@ -1510,129 +1654,141 @@
     /* "data/culture/menschlich/CBLN.coffee #667 */
     /* "data/culture/menschlich/CHOR.coffee #660 */
     /* "data/culture/menschlich/CMLS.coffee #547 */
-    /* "data/culture/menschlich/CNVI.coffee #1247 */
+    /* "data/culture/menschlich/CNVI.coffee #1298 */
     /* "data/culture/menschlich/CSAV.coffee #688 */
     /* "data/culture/menschlich/CTDS.coffee #770 */
     /* "data/culture/menschlich/CTHW.coffee #862 */
     /* "data/culture/zwergisch/CAZW.coffee #658 */
-    /* "data/profession/menschlich/PGKL.coffee #1029 */
+    /* "data/profession/menschlich/PGKL.coffee #1028 */
     /* "data/profession/menschlich/PKRI.coffee #1220 */
-    /* "data/profession/menschlich/PPIR.coffee #947 */
-    /* "data/profession/menschlich/PRIT.coffee #1319 */
-    /* "data/profession/menschlich/PSOL.coffee #1354 */
-    /* "data/profession/menschlich/PSTR.coffee #969 */
+    /* "data/profession/menschlich/PPIR.coffee #946 */
+    /* "data/profession/menschlich/PRIT.coffee #1320 */
+    /* "data/profession/menschlich/PSOL.coffee #1355 */
+    /* "data/profession/menschlich/PSTR.coffee #971 */
     /* "data/profession/menschlich/PWUN.coffee #771 */
     "Raufen": "Raufen",
 
     /* "data/culture/menschlich/CHOR.coffee #458 */
     /* "data/culture/menschlich/CMLS.coffee #376 */
-    /* "data/culture/menschlich/CNVI.coffee #308 */
+    /* "data/culture/menschlich/CNVI.coffee #331 */
     /* "data/culture/menschlich/CSAV.coffee #567 */
     /* "data/culture/menschlich/CTDS.coffee #692 */
     /* "data/culture/menschlich/CTHW.coffee #481 */
-    /* "data/profession/menschlich/PEIN.coffee #1156 */
-    /* "data/profession/menschlich/PENT.coffee #829 */
+    /* "data/profession/menschlich/PEIN.coffee #1155 */
+    /* "data/profession/menschlich/PENT.coffee #828 */
     /* "data/profession/menschlich/PJAE.coffee #617 */
+    /* "data/race/RZWE.coffee #1723 */
+    /* "data/race/elfisch/REAU.coffee #1433 */
     "Raumangst": "Raumangst",
 
     /* "data/culture/menschlich/CHOR.coffee #949 */
     /* "data/culture/menschlich/CMLS.coffee #755 */
-    /* "data/culture/menschlich/CNVI.coffee #1816 */
+    /* "data/culture/menschlich/CNVI.coffee #1914 */
     /* "data/culture/menschlich/CSAV.coffee #956 */
     /* "data/culture/menschlich/CTDS.coffee #1207 */
     /* "data/culture/zwergisch/CAZW.coffee #953 */
-    /* "data/profession/menschlich/PBRT.coffee #1727 */
-    /* "data/profession/menschlich/PEIN.coffee #1895 */
-    /* "data/profession/menschlich/PENT.coffee #1682 */
+    /* "data/profession/menschlich/PBRT.coffee #1726 */
+    /* "data/profession/menschlich/PEIN.coffee #1894 */
+    /* "data/profession/menschlich/PENT.coffee #1681 */
     /* "data/profession/menschlich/PKRI.coffee #1743 */
-    /* "data/profession/menschlich/PMAG.coffee #1669 */
-    /* "data/profession/menschlich/PRIT.coffee #1782 */
-    /* "data/profession/menschlich/PSTR.coffee #1482 */
+    /* "data/profession/menschlich/PMAG.coffee #1698 */
+    /* "data/profession/menschlich/PRIT.coffee #1783 */
+    /* "data/profession/menschlich/PSTR.coffee #1484 */
     /* "data/profession/menschlich/PWUN.coffee #1201 */
     "Rechnen": "Rechnen",
 
-    /* "data/culture/elfisch/CAUE.coffee #1146 */
+    /* "data/culture/elfisch/CAUE.coffee #1192 */
     /* "data/culture/menschlich/CHOR.coffee #972 */
     /* "data/culture/menschlich/CMLS.coffee #778 */
-    /* "data/culture/menschlich/CNVI.coffee #1839 */
+    /* "data/culture/menschlich/CNVI.coffee #1937 */
     /* "data/culture/menschlich/CTDS.coffee #1230 */
-    /* "data/profession/menschlich/PBRT.coffee #1750 */
-    /* "data/profession/menschlich/PEIN.coffee #1918 */
-    /* "data/profession/menschlich/PENT.coffee #1705 */
+    /* "data/profession/menschlich/PBRT.coffee #1749 */
+    /* "data/profession/menschlich/PEIN.coffee #1917 */
+    /* "data/profession/menschlich/PENT.coffee #1704 */
     /* "data/profession/menschlich/PKRI.coffee #1766 */
-    /* "data/profession/menschlich/PMAG.coffee #1692 */
-    /* "data/profession/menschlich/PRIT.coffee #1805 */
-    /* "data/profession/menschlich/PSOL.coffee #1918 */
+    /* "data/profession/menschlich/PMAG.coffee #1721 */
+    /* "data/profession/menschlich/PRIT.coffee #1806 */
+    /* "data/profession/menschlich/PSOL.coffee #1917 */
     /* "data/profession/menschlich/PWUN.coffee #1224 */
     "Rechtskunde": "Rechtskunde",
 
-    /* "data/culture/elfisch/CAUE.coffee #567 */
-    /* "data/profession/menschlich/PMAG.coffee #2866 */
+    /* "data/culture/elfisch/CAUE.coffee #613 */
+    /* "data/profession/menschlich/PMAG.coffee #2892 */
     "Regeneration I": "Regeneration I",
 
-    /* "data/profession/menschlich/PMAG.coffee #1080 */
+    /* "data/profession/menschlich/PMAG.coffee #1109 */
     "Regeneration II": "Regeneration II",
 
-    /* "data/profession/menschlich/PBRT.coffee #2099 */
+    /* "data/profession/menschlich/PBRT.coffee #2098 */
     "Regenmantel": "Regenmantel",
 
-    /* "data/profession/menschlich/PMAG.coffee #2948 */
+    /* "data/profession/menschlich/PMAG.coffee #2974 */
     "Reisekutte": "Reisekutte",
 
-    /* "data/culture/menschlich/CNVI.coffee #1465 */
-    /* "data/profession/menschlich/PBRT.coffee #1365 */
-    /* "data/profession/menschlich/PENT.coffee #1246 */
-    /* "data/profession/menschlich/PGKL.coffee #1174 */
-    /* "data/profession/menschlich/PJAE.coffee #1171 */
+    /* "data/culture/menschlich/CNVI.coffee #1541 */
+    /* "data/profession/menschlich/PBRT.coffee #1364 */
+    /* "data/profession/menschlich/PENT.coffee #1245 */
+    /* "data/profession/menschlich/PGKL.coffee #1173 */
+    /* "data/profession/menschlich/PJAE.coffee #1172 */
     /* "data/profession/menschlich/PKRI.coffee #1411 */
     /* "data/profession/menschlich/PKUN.coffee #1423 */
-    /* "data/profession/menschlich/PRIT.coffee #1421 */
+    /* "data/profession/menschlich/PRIT.coffee #1422 */
+    /* "data/race/RZWE.coffee #1827 */
     "Reiten": "Reiten",
 
-    /* "data/profession/menschlich/PBRT.coffee #941 */
-    /* "data/profession/menschlich/PRIT.coffee #1952 */
+    /* "data/profession/menschlich/PBRT.coffee #940 */
+    /* "data/profession/menschlich/PRIT.coffee #1953 */
     "Reiterkampf": "Reiterkampf",
 
-    /* "data/culture/elfisch/CAUE.coffee #1789 */
+    /* "data/culture/elfisch/CAUE.coffee #1835 */
     "Repräsentation (Elfen)": "Repräsentation (Elfen)",
 
-    /* "data/profession/menschlich/PMAG.coffee #2674 */
+    /* "data/profession/menschlich/PMAG.coffee #2701 */
     "Repräsentation (Gildenmagier)": "Repräsentation (Gildenmagier)",
 
     /* "data/culture/menschlich/CSAV.coffee #211 */
     "Resistenz gegen Gift": "Resistenz gegen Gift",
 
     /* "data/culture/menschlich/CBLN.coffee #218 */
-    /* "data/profession/menschlich/PBRT.coffee #447 */
+    /* "data/profession/menschlich/PBRT.coffee #446 */
     /* "data/profession/menschlich/PWUN.coffee #270 */
+    /* "data/race/RZWE.coffee #833 */
+    /* "data/race/elfisch/REAU.coffee #976 */
     "Resistenz gegen Krankheiten": "Resistenz gegen Krankheiten",
+
+    /* "data/race/RZWE.coffee #786 */
+    "Resistenz gegen mineralische Gifte": "Resistenz gegen mineralische Gifte",
 
     /* "data/culture/menschlich/CANN.coffee #251 */
     /* "data/culture/menschlich/CBLN.coffee #258 */
-    /* "data/culture/menschlich/CNVI.coffee #280 */
+    /* "data/culture/menschlich/CNVI.coffee #303 */
     /* "data/culture/menschlich/CTHW.coffee #334 */
-    /* "data/profession/menschlich/PBRT.coffee #488 */
-    /* "data/profession/menschlich/PEIN.coffee #667 */
-    /* "data/profession/menschlich/PENT.coffee #486 */
+    /* "data/profession/menschlich/PBRT.coffee #487 */
+    /* "data/profession/menschlich/PEIN.coffee #666 */
+    /* "data/profession/menschlich/PENT.coffee #485 */
     /* "data/profession/menschlich/PJAE.coffee #568 */
     /* "data/profession/menschlich/PKUN.coffee #636 */
     /* "data/profession/menschlich/PSOL.coffee #448 */
+    /* "data/race/RZWE.coffee #1201 */
+    /* "data/race/elfisch/REAU.coffee #1347 */
+    /* "data/race/menschlich/RTHW.coffee #768 */
     "Richtungssinn": "Richtungssinn",
 
     /* "data/culture/menschlich/CANN.coffee #750 */
-    /* "data/culture/menschlich/CNVI.coffee #1288 */
+    /* "data/culture/menschlich/CNVI.coffee #1344 */
     /* "data/culture/menschlich/CSAV.coffee #710 */
     /* "data/culture/menschlich/CTDS.coffee #792 */
     /* "data/culture/zwergisch/CAZW.coffee #680 */
-    /* "data/profession/menschlich/PBRT.coffee #1235 */
-    /* "data/profession/menschlich/PEIN.coffee #1381 */
-    /* "data/profession/menschlich/PJAE.coffee #1101 */
+    /* "data/profession/menschlich/PBRT.coffee #1234 */
+    /* "data/profession/menschlich/PEIN.coffee #1380 */
+    /* "data/profession/menschlich/PJAE.coffee #1102 */
     /* "data/profession/menschlich/PKRI.coffee #1242 */
     /* "data/profession/menschlich/PKUN.coffee #1308 */
-    /* "data/profession/menschlich/PRIT.coffee #1341 */
-    /* "data/profession/menschlich/PSOL.coffee #1376 */
-    /* "data/profession/menschlich/PSTR.coffee #991 */
+    /* "data/profession/menschlich/PRIT.coffee #1342 */
+    /* "data/profession/menschlich/PSOL.coffee #1377 */
+    /* "data/profession/menschlich/PSTR.coffee #993 */
     /* "data/profession/menschlich/PWUN.coffee #793 */
+    /* "data/race/RZWE.coffee #1779 */
     "Ringen": "Ringen",
 
     /* "data/culture/menschlich/CANN.coffee #1797 */
@@ -1644,10 +1800,10 @@
     /* "data/profession/menschlich/PRIT.coffee #77 */
     "Ritterin": "Ritterin",
 
-    /* "data/profession/menschlich/PMAG.coffee #2715 */
+    /* "data/profession/menschlich/PMAG.coffee #2742 */
     "Ritualkenntnis (Gildenmagie)": "Ritualkenntnis (Gildenmagie)",
 
-    /* "data/profession/menschlich/PMAG.coffee #2912 */
+    /* "data/profession/menschlich/PMAG.coffee #2938 */
     "Robe mit arkanen Symbolen": "Robe mit arkanen Symbolen",
 
     /* "data/culture/menschlich/CHOR.coffee #1116 */
@@ -1655,16 +1811,16 @@
     /* "data/culture/zwergisch/CAZW.coffee #1031 */
     "Rogolan": "Rogolan",
 
-    /* "data/profession/menschlich/PENT.coffee #2667 */
+    /* "data/profession/menschlich/PENT.coffee #2666 */
     /* "data/profession/menschlich/PJAE.coffee #2125 */
-    /* "data/profession/menschlich/PKUN.coffee #2356 */
+    /* "data/profession/menschlich/PKUN.coffee #2353 */
     "Rucksack": "Rucksack",
 
-    /* "data/profession/menschlich/PSOL.coffee #2271 */
+    /* "data/profession/menschlich/PSOL.coffee #2270 */
     "Rüstung und Helm": "Rüstung und Helm",
 
-    /* "data/profession/menschlich/PRIT.coffee #1974 */
-    /* "data/profession/menschlich/PSOL.coffee #2196 */
+    /* "data/profession/menschlich/PRIT.coffee #1975 */
+    /* "data/profession/menschlich/PSOL.coffee #2195 */
     "Rüstungsgewöhnung I": "Rüstungsgewöhnung I",
 
     /* "data/culture/zwergisch/CAZW.coffee #1267 */
@@ -1677,97 +1833,102 @@
     /* "data/profession/menschlich/PSOL.coffee #863 */
     "Rüstungsgewöhnung II": "Rüstungsgewöhnung II",
 
-    /* "data/culture/elfisch/CAUE.coffee #1174 */
+    /* "data/culture/elfisch/CAUE.coffee #1220 */
     /* "data/culture/menschlich/CANN.coffee #1100 */
     /* "data/culture/menschlich/CBLN.coffee #903 */
     /* "data/culture/menschlich/CHOR.coffee #999 */
     /* "data/culture/menschlich/CMLS.coffee #805 */
-    /* "data/culture/menschlich/CNVI.coffee #1866 */
+    /* "data/culture/menschlich/CNVI.coffee #1967 */
     /* "data/culture/menschlich/CSAV.coffee #979 */
     /* "data/culture/menschlich/CTDS.coffee #1257 */
     /* "data/culture/menschlich/CTHW.coffee #1136 */
     /* "data/culture/zwergisch/CAZW.coffee #976 */
-    /* "data/profession/elifsch/PELS.coffee #874 */
-    /* "data/profession/menschlich/PENT.coffee #1732 */
-    /* "data/profession/menschlich/PGKL.coffee #1497 */
+    /* "data/profession/elfisch/PELS.coffee #874 */
+    /* "data/profession/menschlich/PENT.coffee #1731 */
+    /* "data/profession/menschlich/PGKL.coffee #1496 */
     /* "data/profession/menschlich/PKRI.coffee #1793 */
-    /* "data/profession/menschlich/PMAG.coffee #1719 */
-    /* "data/profession/menschlich/PPIR.coffee #1437 */
-    /* "data/profession/menschlich/PSTR.coffee #1505 */
+    /* "data/profession/menschlich/PMAG.coffee #1748 */
+    /* "data/profession/menschlich/PPIR.coffee #1436 */
+    /* "data/profession/menschlich/PSTR.coffee #1507 */
     /* "data/profession/menschlich/PWUN.coffee #1251 */
     "Sagen/Legenden": "Sagen/Legenden",
 
-    /* "data/culture/elfisch/CAUE.coffee #1822 */
+    /* "data/culture/elfisch/CAUE.coffee #1868 */
     "Salasandra": "Salasandra",
 
-    /* "data/profession/elifsch/PELS.coffee #1286 */
+    /* "data/profession/elfisch/PELS.coffee #1285 */
     "Sanftmut": "Sanftmut",
 
     /* "data/profession/menschlich/PJAE.coffee #310 */
     "Scharfschütze": "Scharfschütze",
 
     /* "data/profession/menschlich/PKRI.coffee #501 */
-    /* "data/profession/menschlich/PRIT.coffee #2004 */
-    /* "data/profession/menschlich/PSOL.coffee #2226 */
+    /* "data/profession/menschlich/PRIT.coffee #2005 */
+    /* "data/profession/menschlich/PSOL.coffee #2225 */
     "Schildkampf I": "Schildkampf I",
 
     /* "data/profession/menschlich/PSOL.coffee #896 */
     "Schildkampf II": "Schildkampf II",
 
     /* "data/profession/menschlich/PJAE.coffee #2222 */
-    /* "data/profession/menschlich/PKUN.coffee #2432 */
-    /* "data/profession/menschlich/PSOL.coffee #2737 */
+    /* "data/profession/menschlich/PKUN.coffee #2429 */
+    /* "data/profession/menschlich/PSOL.coffee #2736 */
     "Schlafsack": "Schlafsack",
 
-    /* "data/profession/menschlich/PEIN.coffee #694 */
-    /* "data/profession/menschlich/PGKL.coffee #546 */
+    /* "data/profession/menschlich/PEIN.coffee #693 */
+    /* "data/profession/menschlich/PGKL.coffee #545 */
+    /* "data/race/RHEL.coffee #1061 */
+    /* "data/race/RZWE.coffee #1571 */
+    /* "data/race/elfisch/REAU.coffee #1373 */
     "Schlangenmensch": "Schlangenmensch",
 
     /* "data/profession/menschlich/PKRI.coffee #989 */
-    /* "data/profession/menschlich/PPIR.coffee #643 */
+    /* "data/profession/menschlich/PPIR.coffee #642 */
     /* "data/profession/menschlich/PRIT.coffee #876 */
     /* "data/profession/menschlich/PSOL.coffee #807 */
     "Schlechte Regeneration": "Schlechte Regeneration",
 
-    /* "data/culture/elfisch/CAUE.coffee #742 */
+    /* "data/culture/elfisch/CAUE.coffee #788 */
     /* "data/culture/menschlich/CANN.coffee #845 */
     /* "data/culture/menschlich/CTDS.coffee #836 */
-    /* "data/profession/elifsch/PWDL.coffee #896 */
-    /* "data/profession/menschlich/PEIN.coffee #1536 */
-    /* "data/profession/menschlich/PJAE.coffee #1267 */
+    /* "data/profession/elfisch/PWDL.coffee #896 */
+    /* "data/profession/menschlich/PEIN.coffee #1535 */
+    /* "data/profession/menschlich/PJAE.coffee #1268 */
     /* "data/profession/menschlich/PKUN.coffee #1499 */
-    /* "data/profession/menschlich/PSOL.coffee #1480 */
-    /* "data/profession/menschlich/PSTR.coffee #1121 */
+    /* "data/profession/menschlich/PSOL.coffee #1481 */
+    /* "data/profession/menschlich/PSTR.coffee #1123 */
+    /* "data/race/RHEL.coffee #1535 */
+    /* "data/race/elfisch/REAU.coffee #1865 */
     "Schleichen": "Schleichen",
 
-    /* "data/profession/menschlich/PEIN.coffee #2000 */
-    /* "data/profession/menschlich/PSTR.coffee #1629 */
+    /* "data/profession/menschlich/PEIN.coffee #1999 */
+    /* "data/profession/menschlich/PSTR.coffee #1631 */
     "Schlösser Knacken": "Schlösser Knacken",
 
-    /* "data/profession/menschlich/PSTR.coffee #817 */
+    /* "data/profession/menschlich/PSTR.coffee #819 */
     "Schmink-Ausrüstung": "Schmink-Ausrüstung",
 
-    /* "data/profession/menschlich/PGKL.coffee #1875 */
+    /* "data/profession/menschlich/PGKL.coffee #1865 */
     "Schminke": "Schminke",
 
     /* "data/profession/menschlich/PPIR.coffee #2099 */
-    /* "data/profession/menschlich/PSOL.coffee #2623 */
+    /* "data/profession/menschlich/PSOL.coffee #2622 */
     "Schnapsflasche": "Schnapsflasche",
 
-    /* "data/culture/elfisch/CAUE.coffee #1529 */
+    /* "data/culture/elfisch/CAUE.coffee #1575 */
     /* "data/culture/menschlich/CANN.coffee #1367 */
     /* "data/culture/menschlich/CBLN.coffee #1136 */
-    /* "data/culture/menschlich/CNVI.coffee #2269 */
-    /* "data/profession/menschlich/PGKL.coffee #1779 */
+    /* "data/culture/menschlich/CNVI.coffee #2405 */
+    /* "data/profession/menschlich/PGKL.coffee #1778 */
     /* "data/profession/menschlich/PJAE.coffee #1962 */
-    /* "data/profession/menschlich/PKUN.coffee #2207 */
-    /* "data/profession/menschlich/PPIR.coffee #1693 */
-    /* "data/profession/menschlich/PSOL.coffee #2151 */
+    /* "data/profession/menschlich/PKUN.coffee #2204 */
+    /* "data/profession/menschlich/PPIR.coffee #1692 */
+    /* "data/profession/menschlich/PSOL.coffee #2150 */
     "Schneidern": "Schneidern",
 
     /* "data/culture/menschlich/CANN.coffee #278 */
     /* "data/culture/menschlich/CBLN.coffee #284 */
-    /* "data/culture/menschlich/CNVI.coffee #567 */
+    /* "data/culture/menschlich/CNVI.coffee #598 */
     /* "data/culture/menschlich/CTHW.coffee #361 */
     /* "data/profession/menschlich/PKRI.coffee #653 */
     /* "data/profession/menschlich/PPIR.coffee #405 */
@@ -1777,152 +1938,160 @@
     /* "data/profession/menschlich/PENT.coffee #2720 */
     "Schreibzeug": "Schreibzeug",
 
-    /* "data/culture/menschlich/CNVI.coffee #603 */
+    /* "data/culture/menschlich/CNVI.coffee #639 */
+    /* "data/race/RHEL.coffee #1403 */
+    /* "data/race/RZWE.coffee #873 */
+    /* "data/race/elfisch/REAU.coffee #1529 */
     "Schwer zu verzaubern": "Schwer zu verzaubern",
 
     /* "data/profession/menschlich/PKRI.coffee #2039 */
-    /* "data/profession/menschlich/PSTR.coffee #1985 */
+    /* "data/profession/menschlich/PSTR.coffee #1987 */
     "Schwert": "Schwert",
 
-    /* "data/profession/elifsch/PWDL.coffee #762 */
+    /* "data/profession/elfisch/PWDL.coffee #762 */
     /* "data/profession/menschlich/PKRI.coffee #1264 */
     /* "data/profession/menschlich/PRIT.coffee #1123 */
     /* "data/profession/menschlich/PSOL.coffee #1170 */
-    /* "data/profession/menschlich/PSTR.coffee #947 */
+    /* "data/profession/menschlich/PSTR.coffee #949 */
     "Schwerter": "Schwerter",
 
-    /* "data/culture/elfisch/CAUE.coffee #768 */
+    /* "data/culture/elfisch/CAUE.coffee #814 */
     /* "data/culture/menschlich/CHOR.coffee #683 */
-    /* "data/culture/menschlich/CNVI.coffee #1506 */
+    /* "data/culture/menschlich/CNVI.coffee #1584 */
     /* "data/culture/menschlich/CSAV.coffee #754 */
     /* "data/culture/menschlich/CTHW.coffee #967 */
-    /* "data/profession/elifsch/PWDL.coffee #922 */
-    /* "data/profession/menschlich/PBRT.coffee #1387 */
-    /* "data/profession/menschlich/PENT.coffee #1268 */
-    /* "data/profession/menschlich/PJAE.coffee #1293 */
+    /* "data/profession/elfisch/PWDL.coffee #922 */
+    /* "data/profession/menschlich/PBRT.coffee #1386 */
+    /* "data/profession/menschlich/PENT.coffee #1267 */
+    /* "data/profession/menschlich/PJAE.coffee #1294 */
     /* "data/profession/menschlich/PKRI.coffee #1433 */
     /* "data/profession/menschlich/PKUN.coffee #1525 */
-    /* "data/profession/menschlich/PPIR.coffee #1116 */
+    /* "data/profession/menschlich/PPIR.coffee #1115 */
+    /* "data/race/RZWE.coffee #1850 */
     "Schwimmen": "Schwimmen",
 
-    /* "data/culture/menschlich/CNVI.coffee #1915 */
+    /* "data/culture/menschlich/CNVI.coffee #2018 */
     /* "data/culture/menschlich/CSAV.coffee #1009 */
     /* "data/culture/menschlich/CTDS.coffee #1287 */
     /* "data/culture/zwergisch/CAZW.coffee #1006 */
-    /* "data/profession/menschlich/PEIN.coffee #1945 */
-    /* "data/profession/menschlich/PENT.coffee #1762 */
-    /* "data/profession/menschlich/PGKL.coffee #1527 */
-    /* "data/profession/menschlich/PMAG.coffee #1749 */
-    /* "data/profession/menschlich/PPIR.coffee #1467 */
-    /* "data/profession/menschlich/PSOL.coffee #1945 */
-    /* "data/profession/menschlich/PSTR.coffee #1535 */
+    /* "data/profession/menschlich/PEIN.coffee #1944 */
+    /* "data/profession/menschlich/PENT.coffee #1761 */
+    /* "data/profession/menschlich/PGKL.coffee #1526 */
+    /* "data/profession/menschlich/PMAG.coffee #1778 */
+    /* "data/profession/menschlich/PPIR.coffee #1466 */
+    /* "data/profession/menschlich/PSOL.coffee #1944 */
+    /* "data/profession/menschlich/PSTR.coffee #1537 */
     "Schätzen": "Schätzen",
 
     /* "data/culture/menschlich/CSAV.coffee #1257 */
     /* "data/culture/menschlich/CTHW.coffee #1356 */
-    /* "data/profession/menschlich/PPIR.coffee #1752 */
+    /* "data/profession/menschlich/PPIR.coffee #1751 */
     "Seefahrt": "Seefahrt",
 
-    /* "data/profession/menschlich/PEIN.coffee #1291 */
+    /* "data/profession/menschlich/PEIN.coffee #1290 */
     "Seidenseil mit ‘lautlosem’ Wurfhaken": "Seidenseil mit ‘lautlosem’ Wurfhaken",
 
-    /* "data/profession/elifsch/PELS.coffee #1315 */
+    /* "data/profession/elfisch/PELS.coffee #1314 */
     "Seidenzunge": "Seidenzunge",
 
-    /* "data/profession/menschlich/PMAG.coffee #1108 */
+    /* "data/profession/menschlich/PMAG.coffee #1137 */
     "Seil des Adepten": "Seil des Adepten",
 
-    /* "data/profession/menschlich/PJAE.coffee #1318 */
+    /* "data/profession/menschlich/PJAE.coffee #1319 */
     /* "data/profession/menschlich/PKRI.coffee #1458 */
     /* "data/profession/menschlich/PKUN.coffee #1550 */
-    /* "data/profession/menschlich/PMAG.coffee #1252 */
-    /* "data/profession/menschlich/PPIR.coffee #1141 */
-    /* "data/profession/menschlich/PRIT.coffee #1443 */
-    /* "data/profession/menschlich/PSOL.coffee #1506 */
-    /* "data/profession/menschlich/PSTR.coffee #1147 */
+    /* "data/profession/menschlich/PMAG.coffee #1281 */
+    /* "data/profession/menschlich/PPIR.coffee #1140 */
+    /* "data/profession/menschlich/PRIT.coffee #1444 */
+    /* "data/profession/menschlich/PSOL.coffee #1507 */
+    /* "data/profession/menschlich/PSTR.coffee #1149 */
     /* "data/profession/menschlich/PWUN.coffee #837 */
+    /* "data/race/RZWE.coffee #1876 */
     "Selbstbeherrschung": "Selbstbeherrschung",
 
     /* "data/culture/menschlich/CANN.coffee #871 */
-    /* "data/culture/menschlich/CNVI.coffee #1532 */
-    /* "data/profession/menschlich/PBRT.coffee #1412 */
-    /* "data/profession/menschlich/PEIN.coffee #1562 */
+    /* "data/culture/menschlich/CNVI.coffee #1613 */
+    /* "data/profession/menschlich/PBRT.coffee #1411 */
+    /* "data/profession/menschlich/PEIN.coffee #1561 */
     "Selbstbeherschung": "Selbstbeherschung",
 
-    /* "data/culture/elfisch/CAUE.coffee #1702 */
+    /* "data/culture/elfisch/CAUE.coffee #1748 */
     "Sensibar": "Sensibar",
 
-    /* "data/profession/menschlich/PSTR.coffee #1425 */
-    "Sich Verkleiden": "Sich Verkleiden",
-
-    /* "data/profession/elifsch/PWDL.coffee #947 */
-    /* "data/profession/menschlich/PKUN.coffee #1584 */
-    /* "data/profession/menschlich/PSOL.coffee #1540 */
-    /* "data/profession/menschlich/PSTR.coffee #1181 */
-    "Sich Verstecken": "Sich Verstecken",
+    /* "data/race/RHEL.coffee #1176 */
+    /* "data/race/elfisch/REAU.coffee #1097 */
+    "Sensibler Geruchssinn": "Sensibler Geruchssinn",
 
     /* "data/culture/menschlich/CSAV.coffee #871 */
     /* "data/culture/menschlich/CTDS.coffee #1056 */
-    /* "data/profession/menschlich/PEIN.coffee #1748 */
-    /* "data/profession/menschlich/PGKL.coffee #1414 */
-    "Sich verkleiden": "Sich verkleiden",
+    /* "data/profession/menschlich/PEIN.coffee #1747 */
+    /* "data/profession/menschlich/PGKL.coffee #1413 */
+    /* "data/profession/menschlich/PSTR.coffee #1427 */
+    "Sich Verkleiden": "Sich Verkleiden",
 
-    /* "data/culture/elfisch/CAUE.coffee #798 */
+    /* "data/culture/elfisch/CAUE.coffee #844 */
     /* "data/culture/menschlich/CANN.coffee #904 */
-    /* "data/culture/menschlich/CNVI.coffee #1572 */
+    /* "data/culture/menschlich/CNVI.coffee #1658 */
     /* "data/culture/menschlich/CSAV.coffee #779 */
     /* "data/culture/menschlich/CTDS.coffee #862 */
-    /* "data/profession/menschlich/PEIN.coffee #1595 */
-    /* "data/profession/menschlich/PGKL.coffee #1226 */
-    /* "data/profession/menschlich/PJAE.coffee #1352 */
-    "Sich verstecken": "Sich verstecken",
+    /* "data/profession/elfisch/PWDL.coffee #947 */
+    /* "data/profession/menschlich/PEIN.coffee #1594 */
+    /* "data/profession/menschlich/PGKL.coffee #1225 */
+    /* "data/profession/menschlich/PJAE.coffee #1353 */
+    /* "data/profession/menschlich/PKUN.coffee #1584 */
+    /* "data/profession/menschlich/PSOL.coffee #1541 */
+    /* "data/profession/menschlich/PSTR.coffee #1183 */
+    "Sich Verstecken": "Sich Verstecken",
 
-    /* "data/profession/menschlich/PSOL.coffee #2378 */
+    /* "data/profession/menschlich/PSOL.coffee #2377 */
     "Silbertaler": "Silbertaler",
 
-    /* "data/profession/menschlich/PMAG.coffee #2612 */
+    /* "data/profession/menschlich/PMAG.coffee #2639 */
     "Silentium": "Silentium",
 
-    /* "data/culture/elfisch/CAUE.coffee #834 */
-    /* "data/profession/elifsch/PELS.coffee #593 */
-    /* "data/profession/menschlich/PGKL.coffee #1266 */
+    /* "data/culture/elfisch/CAUE.coffee #880 */
+    /* "data/profession/elfisch/PELS.coffee #593 */
+    /* "data/profession/menschlich/PGKL.coffee #1265 */
+    /* "data/race/RHEL.coffee #1561 */
+    /* "data/race/elfisch/REAU.coffee #1891 */
     "Singen": "Singen",
 
-    /* "data/profession/elifsch/PELS.coffee #615 */
-    /* "data/profession/elifsch/PWDL.coffee #978 */
-    /* "data/profession/menschlich/PSTR.coffee #1212 */
-    /* "data/profession/menschlich/PWUN.coffee #871 */
-    "Sinnenschärfe": "Sinnenschärfe",
-
-    /* "data/culture/elfisch/CAUE.coffee #856 */
-    /* "data/culture/menschlich/CNVI.coffee #1607 */
-    /* "data/profession/menschlich/PBRT.coffee #1445 */
-    /* "data/profession/menschlich/PEIN.coffee #1626 */
-    /* "data/profession/menschlich/PENT.coffee #1293 */
-    /* "data/profession/menschlich/PJAE.coffee #1383 */
+    /* "data/culture/elfisch/CAUE.coffee #902 */
+    /* "data/culture/menschlich/CNVI.coffee #1695 */
+    /* "data/profession/elfisch/PELS.coffee #615 */
+    /* "data/profession/elfisch/PWDL.coffee #978 */
+    /* "data/profession/menschlich/PBRT.coffee #1444 */
+    /* "data/profession/menschlich/PEIN.coffee #1625 */
+    /* "data/profession/menschlich/PENT.coffee #1292 */
+    /* "data/profession/menschlich/PJAE.coffee #1384 */
     /* "data/profession/menschlich/PKRI.coffee #1492 */
     /* "data/profession/menschlich/PKUN.coffee #1615 */
-    /* "data/profession/menschlich/PMAG.coffee #1286 */
-    /* "data/profession/menschlich/PRIT.coffee #1477 */
+    /* "data/profession/menschlich/PMAG.coffee #1315 */
+    /* "data/profession/menschlich/PRIT.coffee #1478 */
+    /* "data/profession/menschlich/PSTR.coffee #1214 */
+    /* "data/profession/menschlich/PWUN.coffee #871 */
+    /* "data/race/RHEL.coffee #1583 */
+    /* "data/race/elfisch/REAU.coffee #1913 */
+    /* "data/race/menschlich/RTHW.coffee #1010 */
     "Sinnesschärfe": "Sinnesschärfe",
 
-    /* "data/profession/menschlich/PMAG.coffee #2642 */
+    /* "data/profession/menschlich/PMAG.coffee #2669 */
     "Somnigravis": "Somnigravis",
 
-    /* "data/profession/elifsch/PELS.coffee #418 */
+    /* "data/profession/elfisch/PELS.coffee #418 */
     "Sorgenlied": "Sorgenlied",
 
-    /* "data/culture/elfisch/CAUE.coffee #405 */
+    /* "data/culture/elfisch/CAUE.coffee #451 */
     /* "data/culture/menschlich/CHOR.coffee #185 */
     /* "data/culture/menschlich/CMLS.coffee #211 */
-    /* "data/culture/menschlich/CNVI.coffee #925 */
+    /* "data/culture/menschlich/CNVI.coffee #963 */
     /* "data/culture/menschlich/CSAV.coffee #146 */
     /* "data/culture/menschlich/CTDS.coffee #311 */
     /* "data/culture/menschlich/CTHW.coffee #601 */
     /* "data/culture/zwergisch/CAZW.coffee #473 */
-    /* "data/profession/menschlich/PEIN.coffee #722 */
-    /* "data/profession/menschlich/PENT.coffee #512 */
-    /* "data/profession/menschlich/PGKL.coffee #574 */
+    /* "data/profession/menschlich/PEIN.coffee #721 */
+    /* "data/profession/menschlich/PENT.coffee #511 */
+    /* "data/profession/menschlich/PGKL.coffee #573 */
     /* "data/profession/menschlich/PJAE.coffee #661 */
     /* "data/profession/menschlich/PRIT.coffee #789 */
     /* "data/profession/menschlich/PSOL.coffee #503 */
@@ -1930,68 +2099,66 @@
     /* "data/profession/menschlich/PSTR.coffee #285 */
     "Soziale Anpassungsfähigkeit": "Soziale Anpassungsfähigkeit",
 
-    /* "data/profession/menschlich/PKUN.coffee #2306 */
+    /* "data/profession/menschlich/PKUN.coffee #2303 */
     "Speer": "Speer",
 
     /* "data/culture/menschlich/CANN.coffee #772 */
-    /* "data/culture/menschlich/CNVI.coffee #1345 */
-    /* "data/profession/elifsch/PWDL.coffee #779 */
-    /* "data/profession/menschlich/PJAE.coffee #1123 */
+    /* "data/culture/menschlich/CNVI.coffee #1411 */
+    /* "data/profession/elfisch/PWDL.coffee #779 */
+    /* "data/profession/menschlich/PJAE.coffee #1124 */
     /* "data/profession/menschlich/PKUN.coffee #1339 */
     /* "data/profession/menschlich/PSOL.coffee #1187 */
     "Speere": "Speere",
 
-    /* "data/culture/menschlich/CNVI.coffee #408 */
+    /* "data/culture/menschlich/CNVI.coffee #431 */
     /* "data/culture/menschlich/CTDS.coffee #485 */
     /* "data/culture/zwergisch/CAZW.coffee #549 */
     "Speisegebote": "Speisegebote",
 
-    /* "data/culture/elfisch/CAUE.coffee #1293 */
-    /* "data/profession/menschlich/PBRT.coffee #1859 */
-    /* "data/profession/menschlich/PBRT.coffee #1900 */
-    /* "data/profession/menschlich/PENT.coffee #2173 */
-    /* "data/profession/menschlich/PGKL.coffee #1591 */
-    /* "data/profession/menschlich/PKUN.coffee #1998 */
-    /* "data/profession/menschlich/PPIR.coffee #1506 */
-    /* "data/profession/menschlich/PSOL.coffee #2009 */
-    /* "data/profession/menschlich/PSTR.coffee #1574 */
+    /* "data/culture/elfisch/CAUE.coffee #1339 */
+    /* "data/profession/elfisch/PELS.coffee #996 */
+    /* "data/profession/menschlich/PBRT.coffee #1858 */
+    /* "data/profession/menschlich/PBRT.coffee #1899 */
+    /* "data/profession/menschlich/PENT.coffee #2172 */
+    /* "data/profession/menschlich/PGKL.coffee #1590 */
+    /* "data/profession/menschlich/PKUN.coffee #1997 */
+    /* "data/profession/menschlich/PPIR.coffee #1505 */
+    /* "data/profession/menschlich/PSOL.coffee #2008 */
+    /* "data/profession/menschlich/PSTR.coffee #1576 */
     /* "data/profession/menschlich/PWUN.coffee #1338 */
     "Sprache kennen": "Sprache kennen",
 
-    /* "data/profession/elifsch/PELS.coffee #996 */
-    "Sprachen Kennen": "Sprachen Kennen",
-
-    /* "data/profession/menschlich/PENT.coffee #1786 */
-    /* "data/profession/menschlich/PMAG.coffee #1773 */
+    /* "data/profession/menschlich/PENT.coffee #1785 */
+    /* "data/profession/menschlich/PMAG.coffee #1802 */
     "Sprachenkunde": "Sprachenkunde",
 
     /* "data/profession/menschlich/PGKL.coffee #351 */
-    /* "data/profession/menschlich/PPIR.coffee #1799 */
+    /* "data/profession/menschlich/PPIR.coffee #1798 */
     "Standfest": "Standfest",
 
-    /* "data/culture/menschlich/CNVI.coffee #1939 */
+    /* "data/culture/menschlich/CNVI.coffee #2042 */
     /* "data/culture/menschlich/CTHW.coffee #1166 */
-    /* "data/profession/elifsch/PELS.coffee #909 */
-    /* "data/profession/elifsch/PWDL.coffee #1281 */
-    /* "data/profession/menschlich/PENT.coffee #1815 */
-    /* "data/profession/menschlich/PMAG.coffee #1802 */
-    /* "data/profession/menschlich/PPIR.coffee #1711 */
+    /* "data/profession/elfisch/PELS.coffee #909 */
+    /* "data/profession/elfisch/PWDL.coffee #1280 */
+    /* "data/profession/menschlich/PENT.coffee #1814 */
+    /* "data/profession/menschlich/PMAG.coffee #1831 */
+    /* "data/profession/menschlich/PPIR.coffee #1710 */
     "Sternkunde": "Sternkunde",
 
     /* "data/profession/menschlich/PKRI.coffee #1994 */
-    /* "data/profession/menschlich/PRIT.coffee #2080 */
+    /* "data/profession/menschlich/PRIT.coffee #2081 */
     "Stiefel": "Stiefel",
 
-    /* "data/profession/elifsch/PELS.coffee #563 */
-    /* "data/profession/elifsch/PWDL.coffee #1007 */
-    /* "data/profession/menschlich/PJAE.coffee #1412 */
+    /* "data/profession/elfisch/PELS.coffee #563 */
+    /* "data/profession/elfisch/PWDL.coffee #1007 */
+    /* "data/profession/menschlich/PJAE.coffee #1413 */
     "Stimmen Imitieren": "Stimmen Imitieren",
 
     /* "data/culture/menschlich/CANN.coffee #1834 */
     /* "data/culture/menschlich/CBLN.coffee #1435 */
     /* "data/culture/menschlich/CHOR.coffee #1426 */
     /* "data/culture/menschlich/CMLS.coffee #1286 */
-    /* "data/culture/menschlich/CNVI.coffee #2545 */
+    /* "data/culture/menschlich/CNVI.coffee #2707 */
     /* "data/culture/menschlich/CSAV.coffee #1539 */
     /* "data/culture/menschlich/CTDS.coffee #1628 */
     /* "data/culture/menschlich/CTHW.coffee #1610 */
@@ -2001,31 +2168,31 @@
     /* "data/profession/menschlich/PSTR.coffee #83 */
     "Streunerin": "Streunerin",
 
-    /* "data/profession/elifsch/PWDL.coffee #793 */
-    /* "data/profession/menschlich/PENT.coffee #1170 */
-    /* "data/profession/menschlich/PGKL.coffee #1011 */
+    /* "data/profession/elfisch/PWDL.coffee #793 */
+    /* "data/profession/menschlich/PENT.coffee #1169 */
+    /* "data/profession/menschlich/PGKL.coffee #1010 */
     /* "data/profession/menschlich/PKUN.coffee #1353 */
-    /* "data/profession/menschlich/PMAG.coffee #1230 */
+    /* "data/profession/menschlich/PMAG.coffee #1259 */
     /* "data/profession/menschlich/PWUN.coffee #815 */
     "Stäbe": "Stäbe",
 
-    /* "data/culture/elfisch/CAUE.coffee #1843 */
+    /* "data/culture/elfisch/CAUE.coffee #1889 */
     /* "data/culture/menschlich/CBLN.coffee #580 */
     "Sumpfkundig": "Sumpfkundig",
 
-    /* "data/culture/menschlich/CNVI.coffee #1317 */
+    /* "data/culture/menschlich/CNVI.coffee #1378 */
     /* "data/culture/menschlich/CSAV.coffee #732 */
     /* "data/culture/menschlich/CTDS.coffee #814 */
-    /* "data/profession/elifsch/PWDL.coffee #749 */
-    /* "data/profession/menschlich/PBRT.coffee #1217 */
-    /* "data/profession/menschlich/PENT.coffee #1157 */
-    /* "data/profession/menschlich/PENT.coffee #2634 */
-    /* "data/profession/menschlich/PJAE.coffee #1083 */
+    /* "data/profession/elfisch/PWDL.coffee #749 */
+    /* "data/profession/menschlich/PBRT.coffee #1216 */
+    /* "data/profession/menschlich/PENT.coffee #1156 */
+    /* "data/profession/menschlich/PENT.coffee #2633 */
+    /* "data/profession/menschlich/PJAE.coffee #1084 */
     /* "data/profession/menschlich/PKUN.coffee #1290 */
-    /* "data/profession/menschlich/PPIR.coffee #929 */
+    /* "data/profession/menschlich/PPIR.coffee #928 */
     /* "data/profession/menschlich/PSOL.coffee #1157 */
-    /* "data/profession/menschlich/PSTR.coffee #934 */
-    /* "data/profession/menschlich/PSTR.coffee #1961 */
+    /* "data/profession/menschlich/PSTR.coffee #936 */
+    /* "data/profession/menschlich/PSTR.coffee #1963 */
     /* "data/profession/menschlich/PWUN.coffee #753 */
     "Säbel": "Säbel",
 
@@ -2033,7 +2200,7 @@
     /* "data/culture/menschlich/CBLN.coffee #1416 */
     /* "data/culture/menschlich/CHOR.coffee #1407 */
     /* "data/culture/menschlich/CMLS.coffee #1267 */
-    /* "data/culture/menschlich/CNVI.coffee #2520 */
+    /* "data/culture/menschlich/CNVI.coffee #2680 */
     /* "data/culture/menschlich/CSAV.coffee #1521 */
     /* "data/culture/menschlich/CTDS.coffee #1610 */
     /* "data/culture/menschlich/CTHW.coffee #1592 */
@@ -2045,31 +2212,40 @@
     "Söldnerin": "Söldnerin",
 
     /* "data/culture/menschlich/CSAV.coffee #56 */
+    /* "data/race/menschlich/RMLD.coffee #860 */
+    /* "data/race/menschlich/RTHW.coffee #1190 */
+    /* "data/race/menschlich/RTLD.coffee #808 */
     "Südaventurien": "Südaventurien",
 
     /* "data/profession/menschlich/PENT.coffee #2802 */
-    /* "data/profession/menschlich/PMAG.coffee #3062 */
+    /* "data/profession/menschlich/PMAG.coffee #3090 */
     "Tagebuch": "Tagebuch",
 
-    /* "data/culture/elfisch/CAUE.coffee #885 */
+    /* "data/culture/elfisch/CAUE.coffee #931 */
     /* "data/culture/menschlich/CBLN.coffee #716 */
     /* "data/culture/menschlich/CHOR.coffee #708 */
-    /* "data/culture/menschlich/CNVI.coffee #1636 */
+    /* "data/culture/menschlich/CNVI.coffee #1727 */
     /* "data/culture/menschlich/CTDS.coffee #893 */
-    /* "data/profession/elifsch/PELS.coffee #644 */
-    /* "data/profession/menschlich/PGKL.coffee #1280 */
-    /* "data/profession/menschlich/PRIT.coffee #1506 */
-    /* "data/profession/menschlich/PSTR.coffee #1241 */
+    /* "data/profession/elfisch/PELS.coffee #644 */
+    /* "data/profession/menschlich/PGKL.coffee #1279 */
+    /* "data/profession/menschlich/PRIT.coffee #1507 */
+    /* "data/profession/menschlich/PSTR.coffee #1243 */
+    /* "data/race/RHEL.coffee #1612 */
+    /* "data/race/elfisch/REAU.coffee #1942 */
     "Tanzen": "Tanzen",
 
     /* "data/culture/menschlich/CTDS.coffee #924 */
-    /* "data/profession/menschlich/PEIN.coffee #1655 */
-    /* "data/profession/menschlich/PGKL.coffee #1299 */
-    /* "data/profession/menschlich/PSTR.coffee #1263 */
+    /* "data/profession/menschlich/PEIN.coffee #1654 */
+    /* "data/profession/menschlich/PGKL.coffee #1298 */
+    /* "data/profession/menschlich/PSTR.coffee #1265 */
     "Taschendiebstahl": "Taschendiebstahl",
 
     /* "data/culture/menschlich/CTHW.coffee #41 */
+    /* "data/race/menschlich/RTHW.coffee #1111 */
     "Thorwal": "Thorwal",
+
+    /* "data/race/menschlich/RTHW.coffee #40 */
+    "Thorwaler": "Thorwaler",
 
     /* "data/culture/menschlich/CANN.coffee #1227 */
     /* "data/culture/menschlich/CMLS.coffee #927 */
@@ -2080,22 +2256,22 @@
     /* "data/profession/menschlich/PJAE.coffee #2100 */
     "Tierfallen": "Tierfallen",
 
-    /* "data/profession/elifsch/PWDL.coffee #462 */
+    /* "data/profession/elfisch/PWDL.coffee #462 */
     /* "data/profession/menschlich/PKUN.coffee #662 */
     "Tierfreund": "Tierfreund",
 
-    /* "data/culture/elfisch/CAUE.coffee #1204 */
-    /* "data/profession/elifsch/PWDL.coffee #1307 */
-    /* "data/profession/menschlich/PBRT.coffee #1777 */
-    /* "data/profession/menschlich/PGKL.coffee #1551 */
-    /* "data/profession/menschlich/PJAE.coffee #1684 */
+    /* "data/culture/elfisch/CAUE.coffee #1250 */
+    /* "data/profession/elfisch/PWDL.coffee #1306 */
+    /* "data/profession/menschlich/PBRT.coffee #1776 */
+    /* "data/profession/menschlich/PGKL.coffee #1550 */
+    /* "data/profession/menschlich/PJAE.coffee #1686 */
     /* "data/profession/menschlich/PKRI.coffee #1823 */
-    /* "data/profession/menschlich/PKUN.coffee #1961 */
-    /* "data/profession/menschlich/PMAG.coffee #1828 */
-    /* "data/profession/menschlich/PSOL.coffee #1969 */
+    /* "data/profession/menschlich/PKUN.coffee #1960 */
+    /* "data/profession/menschlich/PMAG.coffee #1857 */
+    /* "data/profession/menschlich/PSOL.coffee #1968 */
     "Tierkunde": "Tierkunde",
 
-    /* "data/profession/menschlich/PMAG.coffee #3040 */
+    /* "data/profession/menschlich/PMAG.coffee #3068 */
     "Tine": "Tine",
 
     /* "data/culture/menschlich/CTHW.coffee #503 */
@@ -2103,43 +2279,59 @@
     "Totenangst": "Totenangst",
 
     /* "data/profession/menschlich/PBRT.coffee #2203 */
-    /* "data/profession/menschlich/PGKL.coffee #1894 */
-    /* "data/profession/menschlich/PSOL.coffee #2564 */
+    /* "data/profession/menschlich/PGKL.coffee #1884 */
+    /* "data/profession/menschlich/PSOL.coffee #2563 */
     /* "data/profession/menschlich/PWUN.coffee #1577 */
     "Tuchbeutel": "Tuchbeutel",
 
+    /* "data/race/menschlich/RTLD.coffee #40 */
+    "Tulamiden": "Tulamiden",
+
     /* "data/culture/menschlich/CTDS.coffee #59 */
+    /* "data/race/menschlich/RTLD.coffee #754 */
     "Tulamidische Stadtstaaten": "Tulamidische Stadtstaaten",
 
     /* "data/culture/menschlich/CHOR.coffee #1099 */
     /* "data/culture/menschlich/CMLS.coffee #895 */
-    /* "data/culture/menschlich/CNVI.coffee #1966 */
+    /* "data/culture/menschlich/CNVI.coffee #2069 */
     /* "data/culture/menschlich/CSAV.coffee #1094 */
     /* "data/culture/menschlich/CTDS.coffee #1312 */
     /* "data/culture/zwergisch/CAZW.coffee #1134 */
-    /* "data/profession/menschlich/PMAG.coffee #2063 */
+    /* "data/profession/menschlich/PMAG.coffee #2092 */
     "Tulamidya": "Tulamidya",
 
-    /* "data/profession/menschlich/PRIT.coffee #2119 */
-    /* "data/profession/menschlich/PSOL.coffee #2467 */
+    /* "data/profession/menschlich/PRIT.coffee #2120 */
+    /* "data/profession/menschlich/PSOL.coffee #2466 */
     "Umhang": "Umhang",
 
-    /* "data/culture/elfisch/CAUE.coffee #2131 */
+    /* "data/profession/menschlich/PENT.coffee #2567 */
+    "Umhang (gewachst)": "Umhang (gewachst)",
+
+    /* "data/culture/elfisch/CAUE.coffee #2176 */
     "Umhängetasche": "Umhängetasche",
 
-    /* "data/profession/menschlich/PRIT.coffee #2243 */
+    /* "data/profession/menschlich/PMAG.coffee #3155 */
+    /* "data/profession/menschlich/PRIT.coffee #2244 */
     "Umhängetasche (Leder)": "Umhängetasche (Leder)",
 
-    /* "data/profession/menschlich/PMAG.coffee #3127 */
-    "Umhängetasche (ledern)": "Umhängetasche (ledern)",
+    /* "data/race/RHEL.coffee #1436 */
+    /* "data/race/elfisch/REAU.coffee #1766 */
+    "Unangenehme Stimme": "Unangenehme Stimme",
 
-    /* "data/profession/menschlich/PGKL.coffee #770 */
+    /* "data/profession/menschlich/PGKL.coffee #769 */
+    /* "data/race/RZWE.coffee #1363 */
     "Unansehnlich": "Unansehnlich",
 
-    /* "data/profession/menschlich/PBRT.coffee #2056 */
+    /* "data/race/RZWE.coffee #932 */
+    "Unfähigkeit (Schwimmen)": "Unfähigkeit (Schwimmen)",
+
+    /* "data/race/elfisch/REAU.coffee #1135 */
+    "Unfähigkeit (Zechen)": "Unfähigkeit (Zechen)",
+
+    /* "data/profession/menschlich/PBRT.coffee #2055 */
     "Uniform": "Uniform",
 
-    /* "data/profession/menschlich/PMAG.coffee #1995 */
+    /* "data/profession/menschlich/PMAG.coffee #2024 */
     "Ur-Tulamidya": "Ur-Tulamidya",
 
     /* "data/profession/menschlich/PWUN.coffee #1722 */
@@ -2156,33 +2348,33 @@
     "Verbindungen (Adlige)": "Verbindungen (Adlige)",
 
     /* "data/profession/menschlich/PWUN.coffee #335 */
-    "Verbindungen (Aptoheker)": "Verbindungen (Aptoheker)",
+    "Verbindungen (Apotheker)": "Verbindungen (Apotheker)",
 
-    /* "data/profession/menschlich/PBRT.coffee #553 */
-    /* "data/profession/menschlich/PENT.coffee #589 */
+    /* "data/profession/menschlich/PBRT.coffee #552 */
+    /* "data/profession/menschlich/PENT.coffee #588 */
     "Verbindungen (Auftraggeber)": "Verbindungen (Auftraggeber)",
 
-    /* "data/profession/menschlich/PBRT.coffee #515 */
+    /* "data/profession/menschlich/PBRT.coffee #514 */
     "Verbindungen (Dienstherr)": "Verbindungen (Dienstherr)",
 
-    /* "data/profession/menschlich/PENT.coffee #552 */
+    /* "data/profession/menschlich/PENT.coffee #551 */
     "Verbindungen (Geldgeber)": "Verbindungen (Geldgeber)",
 
-    /* "data/profession/menschlich/PEIN.coffee #762 */
+    /* "data/profession/menschlich/PEIN.coffee #761 */
     /* "data/profession/menschlich/PSTR.coffee #340 */
     "Verbindungen (Hehler)": "Verbindungen (Hehler)",
 
-    /* "data/profession/menschlich/PEIN.coffee #796 */
+    /* "data/profession/menschlich/PEIN.coffee #795 */
     /* "data/profession/menschlich/PSTR.coffee #369 */
     "Verbindungen (Informant)": "Verbindungen (Informant)",
 
     /* "data/profession/menschlich/PWUN.coffee #372 */
     "Verbindungen (Kunde)": "Verbindungen (Kunde)",
 
-    /* "data/profession/menschlich/PMAG.coffee #666 */
+    /* "data/profession/menschlich/PMAG.coffee #695 */
     "Verbindungen (Lehrmeister)": "Verbindungen (Lehrmeister)",
 
-    /* "data/profession/menschlich/PEIN.coffee #833 */
+    /* "data/profession/menschlich/PEIN.coffee #832 */
     "Verbindungen (Patron)": "Verbindungen (Patron)",
 
     /* "data/culture/menschlich/CHOR.coffee #335 */
@@ -2192,50 +2384,61 @@
     /* "data/culture/zwergisch/CAZW.coffee #368 */
     "Verpflichtungen": "Verpflichtungen",
 
-    /* "data/profession/menschlich/PEIN.coffee #998 */
-    /* "data/profession/menschlich/PENT.coffee #693 */
+    /* "data/profession/menschlich/PEIN.coffee #997 */
+    /* "data/profession/menschlich/PENT.coffee #692 */
     "Verpflichtungen (Auftraggeber)": "Verpflichtungen (Auftraggeber)",
 
-    /* "data/profession/menschlich/PEIN.coffee #956 */
+    /* "data/profession/menschlich/PEIN.coffee #955 */
     "Verpflichtungen (Diebesbande)": "Verpflichtungen (Diebesbande)",
 
-    /* "data/profession/menschlich/PBRT.coffee #646 */
+    /* "data/profession/menschlich/PBRT.coffee #645 */
     /* "data/profession/menschlich/PKRI.coffee #766 */
     "Verpflichtungen (Dienstherr)": "Verpflichtungen (Dienstherr)",
 
     /* "data/profession/menschlich/PKRI.coffee #726 */
     "Verpflichtungen (Finanzier)": "Verpflichtungen (Finanzier)",
 
-    /* "data/profession/menschlich/PENT.coffee #653 */
+    /* "data/profession/menschlich/PENT.coffee #652 */
     "Verpflichtungen (Geldgeber)": "Verpflichtungen (Geldgeber)",
+
+    /* "data/profession/menschlich/PRIT.coffee #389 */
+    "Verpflichtungen (Lehnsherr)": "Verpflichtungen (Lehnsherr)",
 
     /* "data/profession/menschlich/PKRI.coffee #807 */
     "Verpflichtungen (Lehrer)": "Verpflichtungen (Lehrer)",
 
-    /* "data/profession/menschlich/PMAG.coffee #422 */
+    /* "data/profession/menschlich/PMAG.coffee #451 */
     "Verpflichtungen (Lehrmeister)": "Verpflichtungen (Lehrmeister)",
 
-    /* "data/profession/menschlich/PRIT.coffee #389 */
-    "Verpflichtungen (Lenhsherr)": "Verpflichtungen (Lenhsherr)",
-
-    /* "data/profession/menschlich/PMAG.coffee #459 */
+    /* "data/profession/menschlich/PMAG.coffee #488 */
     "Verpflichtungen (Magiergilde)": "Verpflichtungen (Magiergilde)",
 
     /* "data/profession/menschlich/PRIT.coffee #424 */
     "Verpflichtungen (Schutzbefohlenen)": "Verpflichtungen (Schutzbefohlenen)",
 
-    /* "data/profession/elifsch/PWDL.coffee #1561 */
+    /* "data/race/RHEL.coffee #735 */
+    /* "data/vantage/magisch/VM4Z.coffee #49 */
+    /* "data/vantage/magisch/VM4ZU.coffee #133 */
+    /* "data/vantage/magisch/VMVZ.coffee #116 */
+    "Viertelzauberer": "Viertelzauberer",
+
+    /* "data/vantage/magisch/VM4ZU.coffee #49 */
+    "Viertelzauberer (unbewusst)": "Viertelzauberer (unbewusst)",
+
+    /* "data/profession/elfisch/PWDL.coffee #1560 */
     "Visibili": "Visibili",
 
-    /* "data/profession/menschlich/PMAG.coffee #365 */
+    /* "data/profession/menschlich/PMAG.coffee #394 */
+    /* "data/race/elfisch/REAU.coffee #1016 */
+    /* "data/vantage/magisch/VMVZ.coffee #46 */
     "Vollzauberer": "Vollzauberer",
 
-    /* "data/culture/elfisch/CAUE.coffee #360 */
+    /* "data/culture/elfisch/CAUE.coffee #406 */
     /* "data/culture/menschlich/CANN.coffee #356 */
     /* "data/culture/menschlich/CBLN.coffee #359 */
     /* "data/culture/menschlich/CHOR.coffee #363 */
     /* "data/culture/menschlich/CMLS.coffee #307 */
-    /* "data/culture/menschlich/CNVI.coffee #799 */
+    /* "data/culture/menschlich/CNVI.coffee #837 */
     /* "data/culture/menschlich/CSAV.coffee #441 */
     /* "data/culture/menschlich/CTDS.coffee #539 */
     /* "data/culture/menschlich/CTHW.coffee #526 */
@@ -2247,90 +2450,92 @@
     /* "data/profession/menschlich/PKUN.coffee #731 */
     "Vorurteile (Stadtbewohner)": "Vorurteile (Stadtbewohner)",
 
-    /* "data/profession/elifsch/PWDL.coffee #1696 */
-    /* "data/profession/menschlich/PBRT.coffee #2136 */
+    /* "data/profession/elfisch/PWDL.coffee #1695 */
+    /* "data/profession/menschlich/PBRT.coffee #2135 */
     /* "data/profession/menschlich/PJAE.coffee #2066 */
-    /* "data/profession/menschlich/PRIT.coffee #2189 */
-    /* "data/profession/menschlich/PSOL.coffee #2313 */
+    /* "data/profession/menschlich/PRIT.coffee #2190 */
+    /* "data/profession/menschlich/PSOL.coffee #2312 */
     "Waffe": "Waffe",
 
     /* "data/culture/menschlich/CTHW.coffee #770 */
     "Waffenloser Kampfstil (Hammerfaust)": "Waffenloser Kampfstil (Hammerfaust)",
 
-    /* "data/culture/menschlich/CNVI.coffee #1094 */
+    /* "data/culture/menschlich/CNVI.coffee #1132 */
     "Waffenloser Kampfstil (Unauer Schule)": "Waffenloser Kampfstil (Unauer Schule)",
 
     /* "data/profession/menschlich/PKRI.coffee #2132 */
-    /* "data/profession/menschlich/PRIT.coffee #2275 */
+    /* "data/profession/menschlich/PRIT.coffee #2276 */
     "Waffenpflegeset": "Waffenpflegeset",
 
     /* "data/culture/menschlich/CANN.coffee #639 */
     "Waldkundig": "Waldkundig",
 
-    /* "data/profession/menschlich/PRIT.coffee #2153 */
+    /* "data/profession/menschlich/PRIT.coffee #2154 */
     "Wappenrock": "Wappenrock",
 
     /* "data/profession/menschlich/PBRT.coffee #2224 */
     /* "data/profession/menschlich/PJAE.coffee #2144 */
-    /* "data/profession/menschlich/PKUN.coffee #2375 */
-    /* "data/profession/menschlich/PSOL.coffee #2701 */
+    /* "data/profession/menschlich/PKUN.coffee #2372 */
+    /* "data/profession/menschlich/PSOL.coffee #2700 */
     "Wasserschlauch": "Wasserschlauch",
 
-    /* "data/profession/menschlich/PGKL.coffee #1915 */
+    /* "data/profession/menschlich/PGKL.coffee #1905 */
     /* "data/profession/menschlich/PPIR.coffee #2079 */
     "Weinschlauch": "Weinschlauch",
 
-    /* "data/profession/elifsch/PWDL.coffee #1590 */
+    /* "data/profession/elfisch/PWDL.coffee #1589 */
     "Weiße Mähn": "Weiße Mähn",
 
-    /* "data/profession/menschlich/PMAG.coffee #771 */
+    /* "data/profession/menschlich/PMAG.coffee #800 */
     "Weltfremd": "Weltfremd",
 
-    /* "data/culture/elfisch/CAUE.coffee #156 */
+    /* "data/culture/elfisch/CAUE.coffee #201 */
     "Weltfremd (Besitz)": "Weltfremd (Besitz)",
 
-    /* "data/culture/elfisch/CAUE.coffee #192 */
+    /* "data/culture/elfisch/CAUE.coffee #237 */
     "Weltfremd (Götterverehrung)": "Weltfremd (Götterverehrung)",
 
     /* "data/culture/zwergisch/CAZW.coffee #838 */
-    /* "data/profession/elifsch/PWDL.coffee #1186 */
-    /* "data/profession/menschlich/PBRT.coffee #1616 */
-    /* "data/profession/menschlich/PENT.coffee #1461 */
-    /* "data/profession/menschlich/PJAE.coffee #1595 */
-    /* "data/profession/menschlich/PKUN.coffee #1795 */
-    /* "data/profession/menschlich/PPIR.coffee #1351 */
+    /* "data/profession/elfisch/PWDL.coffee #1185 */
+    /* "data/profession/menschlich/PBRT.coffee #1615 */
+    /* "data/profession/menschlich/PENT.coffee #1460 */
+    /* "data/profession/menschlich/PJAE.coffee #1596 */
+    /* "data/profession/menschlich/PKUN.coffee #1794 */
+    /* "data/profession/menschlich/PPIR.coffee #1350 */
     /* "data/profession/menschlich/PSOL.coffee #1805 */
+    /* "data/race/menschlich/RTHW.coffee #1061 */
     "Wettervorhersage": "Wettervorhersage",
 
-    /* "data/profession/menschlich/PGKL.coffee #795 */
+    /* "data/profession/menschlich/PGKL.coffee #794 */
     "Widerwertiges Aussehen": "Widerwertiges Aussehen",
 
-    /* "data/culture/elfisch/CAUE.coffee #1057 */
+    /* "data/culture/elfisch/CAUE.coffee #1103 */
     /* "data/culture/menschlich/CANN.coffee #1043 */
     /* "data/culture/menschlich/CBLN.coffee #846 */
-    /* "data/culture/menschlich/CNVI.coffee #1706 */
-    /* "data/profession/elifsch/PWDL.coffee #1218 */
-    /* "data/profession/menschlich/PBRT.coffee #1648 */
-    /* "data/profession/menschlich/PENT.coffee #1493 */
-    /* "data/profession/menschlich/PJAE.coffee #1627 */
-    /* "data/profession/menschlich/PKUN.coffee #1827 */
+    /* "data/culture/menschlich/CNVI.coffee #1799 */
+    /* "data/profession/elfisch/PWDL.coffee #1217 */
+    /* "data/profession/menschlich/PBRT.coffee #1647 */
+    /* "data/profession/menschlich/PENT.coffee #1492 */
+    /* "data/profession/menschlich/PJAE.coffee #1628 */
+    /* "data/profession/menschlich/PKUN.coffee #1826 */
+    /* "data/profession/menschlich/PSOL.coffee #1837 */
     "Wildnisleben": "Wildnisleben",
 
-    /* "data/culture/elfisch/CAUE.coffee #1943 */
-    /* "data/profession/elifsch/PWDL.coffee #68 */
+    /* "data/culture/elfisch/CAUE.coffee #1988 */
+    /* "data/profession/elfisch/PWDL.coffee #68 */
     "Wildnisläufer": "Wildnisläufer",
 
-    /* "data/profession/elifsch/PWDL.coffee #98 */
+    /* "data/profession/elfisch/PWDL.coffee #98 */
     "Wildnisläuferin": "Wildnisläuferin",
 
-    /* "data/profession/menschlich/PSOL.coffee #1837 */
-    "Wild­nisleben": "Wild­nisleben",
-
-    /* "data/profession/elifsch/PELS.coffee #466 */
+    /* "data/profession/elfisch/PELS.coffee #466 */
     "Windgeflüster": "Windgeflüster",
 
-    /* "data/profession/menschlich/PGKL.coffee #614 */
+    /* "data/profession/menschlich/PGKL.coffee #613 */
     /* "data/profession/menschlich/PSTR.coffee #557 */
+    /* "data/race/RHEL.coffee #1089 */
+    /* "data/race/RZWE.coffee #1599 */
+    /* "data/race/elfisch/REAU.coffee #1041 */
     "Wohlklang": "Wohlklang",
 
     /* "data/profession/menschlich/PPIR.coffee #2049 */
@@ -2340,7 +2545,7 @@
     /* "data/culture/menschlich/CBLN.coffee #1455 */
     /* "data/culture/menschlich/CHOR.coffee #1446 */
     /* "data/culture/menschlich/CMLS.coffee #1306 */
-    /* "data/culture/menschlich/CNVI.coffee #2564 */
+    /* "data/culture/menschlich/CNVI.coffee #2726 */
     /* "data/culture/menschlich/CSAV.coffee #1559 */
     /* "data/culture/menschlich/CTDS.coffee #1648 */
     /* "data/culture/menschlich/CTHW.coffee #1630 */
@@ -2351,7 +2556,7 @@
     /* "data/profession/menschlich/PWUN.coffee #83 */
     "Wundärztin": "Wundärztin",
 
-    /* "data/profession/menschlich/PSOL.coffee #1261 */
+    /* "data/profession/menschlich/PSOL.coffee #1262 */
     "Wurfbeil": "Wurfbeil",
 
     /* "data/culture/menschlich/CTHW.coffee #884 */
@@ -2359,73 +2564,78 @@
 
     /* "data/culture/menschlich/CBLN.coffee #689 */
     /* "data/culture/menschlich/CMLS.coffee #470 */
-    /* "data/profession/menschlich/PEIN.coffee #1403 */
-    /* "data/profession/menschlich/PGKL.coffee #1051 */
-    /* "data/profession/menschlich/PSOL.coffee #1277 */
-    /* "data/profession/menschlich/PSTR.coffee #1013 */
+    /* "data/profession/menschlich/PEIN.coffee #1402 */
+    /* "data/profession/menschlich/PGKL.coffee #1050 */
+    /* "data/profession/menschlich/PSOL.coffee #1278 */
+    /* "data/profession/menschlich/PSTR.coffee #1015 */
     "Wurfmesser": "Wurfmesser",
 
+    /* "data/culture/menschlich/CANN.coffee #794 */
+    /* "data/culture/menschlich/CNVI.coffee #1445 */
+    /* "data/profession/elfisch/PWDL.coffee #658 */
     /* "data/profession/menschlich/PJAE.coffee #1034 */
     /* "data/profession/menschlich/PRIT.coffee #1215 */
     /* "data/profession/menschlich/PSOL.coffee #1244 */
-    "Wurfspeer": "Wurfspeer",
-
-    /* "data/culture/menschlich/CANN.coffee #794 */
-    /* "data/culture/menschlich/CNVI.coffee #1374 */
-    /* "data/profession/elifsch/PWDL.coffee #658 */
     "Wurfspeere": "Wurfspeere",
 
-    /* "data/profession/menschlich/PPIR.coffee #986 */
+    /* "data/profession/menschlich/PPIR.coffee #985 */
     /* "data/profession/menschlich/PPIR.coffee #1926 */
     "Wurfwaffe": "Wurfwaffe",
 
-    /* "data/profession/menschlich/PSOL.coffee #2606 */
+    /* "data/profession/menschlich/PSOL.coffee #2605 */
     "Würfel": "Würfel",
 
-    /* "data/profession/menschlich/PSTR.coffee #1753 */
+    /* "data/profession/menschlich/PSTR.coffee #1755 */
     "Würfel (gezinkt)": "Würfel (gezinkt)",
 
-    /* "data/culture/menschlich/CNVI.coffee #2302 */
+    /* "data/culture/menschlich/CNVI.coffee #2440 */
     "Wüstenkundig": "Wüstenkundig",
 
     /* "data/profession/menschlich/PWUN.coffee #1646 */
     "Zangen": "Zangen",
 
-    /* "data/profession/elifsch/PELS.coffee #492 */
+    /* "data/profession/elfisch/PELS.coffee #492 */
     "Zaubermelodie": "Zaubermelodie",
 
-    /* "data/profession/menschlich/PMAG.coffee #2997 */
-    "Zauberstab mit ersten Stabzauber": "Zauberstab mit ersten Stabzauber",
+    /* "data/profession/menschlich/PMAG.coffee #3023 */
+    "Zauberstab (mit ersten Stabzauber)": "Zauberstab (mit ersten Stabzauber)",
 
     /* "data/culture/menschlich/CANN.coffee #935 */
     /* "data/culture/menschlich/CBLN.coffee #738 */
     /* "data/culture/menschlich/CMLS.coffee #570 */
     /* "data/culture/menschlich/CTHW.coffee #992 */
     /* "data/culture/zwergisch/CAZW.coffee #785 */
-    /* "data/profession/menschlich/PGKL.coffee #1331 */
+    /* "data/profession/menschlich/PGKL.coffee #1330 */
     /* "data/profession/menschlich/PKRI.coffee #1521 */
-    /* "data/profession/menschlich/PPIR.coffee #1175 */
-    /* "data/profession/menschlich/PSOL.coffee #1571 */
-    /* "data/profession/menschlich/PSTR.coffee #1295 */
+    /* "data/profession/menschlich/PPIR.coffee #1174 */
+    /* "data/profession/menschlich/PSOL.coffee #1572 */
+    /* "data/profession/menschlich/PSTR.coffee #1297 */
     /* "data/profession/menschlich/PWUN.coffee #900 */
+    /* "data/race/RHEL.coffee #1634 */
+    /* "data/race/RZWE.coffee #1910 */
+    /* "data/race/elfisch/REAU.coffee #1964 */
+    /* "data/race/menschlich/RTHW.coffee #1039 */
     "Zechen": "Zechen",
 
     /* "data/profession/menschlich/PKUN.coffee #708 */
-    /* "data/profession/menschlich/PMAG.coffee #705 */
+    /* "data/profession/menschlich/PMAG.coffee #734 */
     "Zeitgefühl": "Zeitgefühl",
 
-    /* "data/profession/menschlich/PENT.coffee #1051 */
+    /* "data/profession/menschlich/PENT.coffee #1050 */
     /* "data/profession/menschlich/PSOL.coffee #1026 */
     "Zelt": "Zelt",
 
-    /* "data/profession/menschlich/PMAG.coffee #2080 */
+    /* "data/profession/menschlich/PJAE.coffee #2243 */
+    "Zelt (klein)": "Zelt (klein)",
+
+    /* "data/profession/menschlich/PMAG.coffee #2109 */
     "Zhayad": "Zhayad",
 
-    /* "data/profession/menschlich/PSTR.coffee #795 */
+    /* "data/profession/menschlich/PSTR.coffee #797 */
     "Zierwaffe": "Zierwaffe",
 
     /* "data/culture/menschlich/CANN.coffee #1493 */
-    /* "data/profession/menschlich/PPIR.coffee #1729 */
+    /* "data/profession/menschlich/PPIR.coffee #1728 */
     "Zimmermann": "Zimmermann",
 
     /* "data/culture/zwergisch/CAZW.coffee #702 */
@@ -2435,27 +2645,46 @@
     /* "data/profession/menschlich/PRIT.coffee #1140 */
     "Zweihandschwerter/-säbel": "Zweihandschwerter/-säbel",
 
-    /* "data/profession/menschlich/PEIN.coffee #867 */
-    /* "data/profession/menschlich/PENT.coffee #629 */
+    /* "data/race/RHEL.coffee #792 */
+    /* "data/race/RHEL.coffee #1111 */
+    /* "data/race/elfisch/REAU.coffee #1063 */
+    "Zweistimmiger Gesang": "Zweistimmiger Gesang",
+
+    /* "data/race/RZWE.coffee #37 */
+    "Zwerge": "Zwerge",
+
+    /* "data/profession/menschlich/PEIN.coffee #866 */
+    /* "data/profession/menschlich/PENT.coffee #628 */
+    /* "data/race/RHEL.coffee #1256 */
+    /* "data/race/RZWE.coffee #1250 */
+    /* "data/race/elfisch/REAU.coffee #1562 */
     "Zwergennase": "Zwergennase",
+
+    /* "data/race/RZWE.coffee #968 */
+    "Zwergenwuchs": "Zwergenwuchs",
 
     /* "data/culture/menschlich/CANN.coffee #308 */
     /* "data/culture/menschlich/CBLN.coffee #313 */
-    /* "data/culture/menschlich/CNVI.coffee #643 */
+    /* "data/culture/menschlich/CNVI.coffee #681 */
     /* "data/culture/menschlich/CTHW.coffee #391 */
-    /* "data/profession/menschlich/PBRT.coffee #593 */
+    /* "data/profession/menschlich/PBRT.coffee #592 */
     /* "data/profession/menschlich/PJAE.coffee #594 */
     /* "data/profession/menschlich/PKRI.coffee #682 */
     /* "data/profession/menschlich/PKUN.coffee #685 */
     /* "data/profession/menschlich/PPIR.coffee #434 */
     /* "data/profession/menschlich/PRIT.coffee #633 */
     /* "data/profession/menschlich/PSOL.coffee #543 */
+    /* "data/race/RZWE.coffee #1227 */
+    /* "data/race/menschlich/RTHW.coffee #794 */
     "Zäher Hund": "Zäher Hund",
 
     /* "data/culture/menschlich/CANN.coffee #447 */
     /* "data/culture/menschlich/CANN.coffee #511 */
     /* "data/culture/menschlich/CBLN.coffee #450 */
     "adlig": "adlig",
+
+    /* "data/race/elfisch/REAU.coffee #561 */
+    "amethyst": "amethyst",
 
     /* "data/profession/menschlich/PJAE.coffee #941 */
     "ausgebildeter Jagdfalke": "ausgebildeter Jagdfalke",
@@ -2466,69 +2695,126 @@
     /* "data/profession/menschlich/PKUN.coffee #1144 */
     "ausgebildeter Spürhund": "ausgebildeter Spürhund",
 
+    /* "data/race/RHEL.coffee #495 */
+    /* "data/race/elfisch/REAU.coffee #489 */
+    "bernsteinfarben": "bernsteinfarben",
+
     /* "data/profession/menschlich/PWUN.coffee #1851 */
     "billiger Schnaps": "billiger Schnaps",
+
+    /* "data/race/RHEL.coffee #376 */
+    /* "data/race/RZWE.coffee #493 */
+    /* "data/race/menschlich/RMLD.coffee #380 */
+    /* "data/race/menschlich/RTHW.coffee #394 */
+    /* "data/race/menschlich/RTLD.coffee #432 */
+    "blau": "blau",
+
+    /* "data/race/RHEL.coffee #276 */
+    /* "data/race/elfisch/REAU.coffee #96 */
+    "blauschwarz": "blauschwarz",
+
+    /* "data/race/RZWE.coffee #155 */
+    /* "data/race/menschlich/RMLD.coffee #192 */
+    /* "data/race/menschlich/RTHW.coffee #99 */
+    /* "data/race/menschlich/RTLD.coffee #226 */
+    "blond": "blond",
 
     /* "data/profession/menschlich/PWUN.coffee #1540 */
     "blutbefleckte Lederschürze": "blutbefleckte Lederschürze",
 
-    /* "data/profession/menschlich/PEIN.coffee #2173 */
-    "dunkle Handschuhe": "dunkle Handschuhe",
+    /* "data/race/RHEL.coffee #123 */
+    /* "data/race/RZWE.coffee #442 */
+    /* "data/race/menschlich/RMLD.coffee #133 */
+    /* "data/race/menschlich/RMLD.coffee #327 */
+    /* "data/race/menschlich/RTHW.coffee #243 */
+    /* "data/race/menschlich/RTHW.coffee #342 */
+    /* "data/race/menschlich/RTLD.coffee #354 */
+    "braun": "braun",
 
-    /* "data/profession/menschlich/PEIN.coffee #2126 */
-    "dunkle Kapuze": "dunkle Kapuze",
+    /* "data/race/RHEL.coffee #149 */
+    /* "data/race/elfisch/REAU.coffee #276 */
+    /* "data/race/menschlich/RMLD.coffee #159 */
+    /* "data/race/menschlich/RTHW.coffee #213 */
+    "dunkelblond": "dunkelblond",
 
-    /* "data/profession/menschlich/PEIN.coffee #2147 */
-    "dunkler Mantel": "dunkler Mantel",
+    /* "data/race/RHEL.coffee #429 */
+    /* "data/race/RZWE.coffee #410 */
+    /* "data/race/menschlich/RMLD.coffee #295 */
+    /* "data/race/menschlich/RTHW.coffee #310 */
+    /* "data/race/menschlich/RTLD.coffee #127 */
+    /* "data/race/menschlich/RTLD.coffee #321 */
+    "dunkelbraun": "dunkelbraun",
 
-    /* "data/profession/menschlich/PSTR.coffee #769 */
-    "edle Kleidung": "edle Kleidung",
+    /* "data/race/RZWE.coffee #209 */
+    "dunkelgrau	": "dunkelgrau	",
 
-    /* "data/profession/menschlich/PGKL.coffee #1825 */
-    "einfache, aber sehr auffällige Kleidung": "einfache, aber sehr auffällige Kleidung",
+    /* "data/race/elfisch/REAU.coffee #453 */
+    "dunkelviolett": "dunkelviolett",
 
-    /* "data/profession/menschlich/PKRI.coffee #2073 */
-    /* "data/profession/menschlich/PSOL.coffee #2346 */
-    "einfacher Holzschild": "einfacher Holzschild",
-
-    /* "data/profession/menschlich/PBRT.coffee #1055 */
+    /* "data/profession/menschlich/PBRT.coffee #1054 */
     /* "data/profession/menschlich/PKRI.coffee #1040 */
     /* "data/profession/menschlich/PKUN.coffee #1097 */
     /* "data/profession/menschlich/PRIT.coffee #981 */
     /* "data/profession/menschlich/PSOL.coffee #946 */
     "erprobtes Pferd mit Sattel und Zaumzeug": "erprobtes Pferd mit Sattel und Zaumzeug",
 
-    /* "data/profession/menschlich/PBRT.coffee #2075 */
-    /* "data/profession/menschlich/PENT.coffee #2512 */
+    /* "data/profession/menschlich/PBRT.coffee #2074 */
+    /* "data/profession/menschlich/PENT.coffee #2511 */
     "feste Stiefel": "feste Stiefel",
 
-    /* "data/profession/menschlich/PENT.coffee #2543 */
-    "gewachster Mantel": "gewachster Mantel",
+    /* "data/race/RZWE.coffee #330 */
+    "feuerrot": "feuerrot",
 
-    /* "data/profession/menschlich/PENT.coffee #2568 */
-    "gewachster Umhang": "gewachster Umhang",
+    /* "data/race/RHEL.coffee #529 */
+    /* "data/race/elfisch/REAU.coffee #527 */
+    "goldgesprenkelt": "goldgesprenkelt",
+
+    /* "data/race/RHEL.coffee #351 */
+    /* "data/race/RZWE.coffee #516 */
+    /* "data/race/menschlich/RMLD.coffee #407 */
+    /* "data/race/menschlich/RTHW.coffee #421 */
+    /* "data/race/menschlich/RTLD.coffee #382 */
+    "grau": "grau",
+
+    /* "data/race/elfisch/REAU.coffee #360 */
+    "graublau": "graublau",
+
+    /* "data/race/RHEL.coffee #402 */
+    /* "data/race/RZWE.coffee #468 */
+    /* "data/race/menschlich/RMLD.coffee #353 */
+    /* "data/race/menschlich/RTHW.coffee #368 */
+    /* "data/race/menschlich/RTLD.coffee #409 */
+    "grün": "grün",
 
     /* "data/profession/menschlich/PWUN.coffee #1746 */
     "halbes Dutzend blutstillender oder fiebersenkender Kräuter": "halbes Dutzend blutstillender oder fiebersenkender Kräuter",
 
+    /* "data/race/RHEL.coffee #182 */
+    /* "data/race/elfisch/REAU.coffee #211 */
+    "hellblond": "hellblond",
+
+    /* "data/race/RHEL.coffee #463 */
+    /* "data/race/menschlich/RTLD.coffee #194 */
+    "hellbraun": "hellbraun",
+
+    /* "data/race/RZWE.coffee #243 */
+    "hellgrau": "hellgrau",
+
     /* "data/profession/menschlich/PKRI.coffee #1963 */
-    /* "data/profession/menschlich/PRIT.coffee #2049 */
+    /* "data/profession/menschlich/PRIT.coffee #2050 */
     "hochwertige Kleidung": "hochwertige Kleidung",
 
-    /* "data/profession/menschlich/PEIN.coffee #1217 */
+    /* "data/profession/menschlich/PEIN.coffee #1216 */
     "hochwertige und gut sortierte Nachschlüssel/Dietriche": "hochwertige und gut sortierte Nachschlüssel/Dietriche",
 
     /* "data/profession/menschlich/PWUN.coffee #641 */
     "hochwertiges ärztliches Besteck": "hochwertiges ärztliches Besteck",
 
-    /* "data/profession/menschlich/PMAG.coffee #2969 */
+    /* "data/profession/menschlich/PMAG.coffee #2995 */
     "hoher spitzer Hut": "hoher spitzer Hut",
 
-    /* "data/profession/menschlich/PENT.coffee #1025 */
-    "kleines Boot": "kleines Boot",
-
-    /* "data/profession/menschlich/PJAE.coffee #2243 */
-    "kleines Zelt": "kleines Zelt",
+    /* "data/race/RZWE.coffee #361 */
+    "kupferrot": "kupferrot",
 
     /* "data/profession/menschlich/PKRI.coffee #2104 */
     "langes Kettenhemd": "langes Kettenhemd",
@@ -2536,48 +2822,89 @@
     /* "data/profession/menschlich/PWUN.coffee #1815 */
     "lederumwickeltes Beißholz": "lederumwickeltes Beißholz",
 
-    /* "data/profession/menschlich/PSOL.coffee #2404 */
+    /* "data/race/elfisch/REAU.coffee #242 */
+    "mittelblond": "mittelblond",
+
+    /* "data/race/menschlich/RTLD.coffee #160 */
+    "mittelbraun": "mittelbraun",
+
+    /* "data/profession/menschlich/PSOL.coffee #2403 */
     "robuste, auffällige Kleidung": "robuste, auffällige Kleidung",
+
+    /* "data/race/RHEL.coffee #99 */
+    /* "data/race/menschlich/RMLD.coffee #252 */
+    /* "data/race/menschlich/RTHW.coffee #187 */
+    /* "data/race/menschlich/RTLD.coffee #254 */
+    "rot": "rot",
+
+    /* "data/race/menschlich/RTHW.coffee #125 */
+    "rotblond": "rotblond",
+
+    /* "data/race/RZWE.coffee #274 */
+    "salzweiß": "salzweiß",
+
+    /* "data/race/elfisch/REAU.coffee #389 */
+    "saphirblau": "saphirblau",
 
     /* "data/profession/menschlich/PWUN.coffee #1620 */
     "scharfes Messer": "scharfes Messer",
 
-    /* "data/profession/menschlich/PBRT.coffee #2016 */
-    /* "data/profession/menschlich/PENT.coffee #2469 */
+    /* "data/race/RHEL.coffee #246 */
+    /* "data/race/RHEL.coffee #323 */
+    /* "data/race/RZWE.coffee #181 */
+    /* "data/race/RZWE.coffee #543 */
+    /* "data/race/elfisch/REAU.coffee #125 */
+    /* "data/race/menschlich/RMLD.coffee #105 */
+    /* "data/race/menschlich/RMLD.coffee #434 */
+    /* "data/race/menschlich/RTHW.coffee #267 */
+    /* "data/race/menschlich/RTLD.coffee #99 */
+    /* "data/race/menschlich/RTLD.coffee #293 */
+    "schwarz": "schwarz",
+
+    /* "data/race/elfisch/REAU.coffee #327 */
+    "schwarzbraun": "schwarzbraun",
+
+    /* "data/race/elfisch/REAU.coffee #153 */
+    "silbern": "silbern",
+
+    /* "data/race/RZWE.coffee #301 */
+    "silberweiß": "silberweiß",
+
+    /* "data/race/elfisch/REAU.coffee #420 */
+    "smaragdgrün": "smaragdgrün",
+
+    /* "data/profession/menschlich/PBRT.coffee #2015 */
+    /* "data/profession/menschlich/PENT.coffee #2468 */
     /* "data/profession/menschlich/PJAE.coffee #2008 */
-    /* "data/profession/menschlich/PKUN.coffee #2253 */
+    /* "data/profession/menschlich/PKUN.coffee #2250 */
     "stabile und wetterfeste Kleidung": "stabile und wetterfeste Kleidung",
 
-    /* "data/profession/menschlich/PMAG.coffee #1176 */
+    /* "data/profession/menschlich/PMAG.coffee #1205 */
     "verbesserter Zauberstab": "verbesserter Zauberstab",
 
-    /* "data/profession/menschlich/PEIN.coffee #2088 */
-    "verbreitete Kleidung": "verbreitete Kleidung",
-
-    /* "data/profession/menschlich/PGKL.coffee #887 */
+    /* "data/profession/menschlich/PGKL.coffee #886 */
     "volle Aufrüstung für aufwendige Einmannschau": "volle Aufrüstung für aufwendige Einmannschau",
 
-    /* "data/profession/menschlich/PBRT.coffee #2169 */
-    /* "data/profession/menschlich/PENT.coffee #2686 */
-    "wasserdichte Lederrolle": "wasserdichte Lederrolle",
-
-    /* "data/profession/menschlich/PPIR.coffee #1840 */
-    "zweckmäßige Kleidung": "zweckmäßige Kleidung",
+    /* "data/race/RHEL.coffee #214 */
+    /* "data/race/elfisch/REAU.coffee #181 */
+    /* "data/race/menschlich/RMLD.coffee #220 */
+    /* "data/race/menschlich/RTHW.coffee #155 */
+    "weißblond": "weißblond",
 
     /* "data/culture/menschlich/CHOR.coffee #839 */
     /* "data/culture/menschlich/CMLS.coffee #677 */
     /* "data/culture/menschlich/CSAV.coffee #902 */
     /* "data/culture/menschlich/CTDS.coffee #1087 */
-    /* "data/profession/elifsch/PELS.coffee #749 */
-    /* "data/profession/menschlich/PENT.coffee #1379 */
-    /* "data/profession/menschlich/PGKL.coffee #1445 */
-    /* "data/profession/menschlich/PMAG.coffee #1394 */
-    /* "data/profession/menschlich/PSTR.coffee #1456 */
+    /* "data/profession/elfisch/PELS.coffee #749 */
+    /* "data/profession/menschlich/PENT.coffee #1378 */
+    /* "data/profession/menschlich/PGKL.coffee #1444 */
+    /* "data/profession/menschlich/PMAG.coffee #1423 */
+    /* "data/profession/menschlich/PSTR.coffee #1458 */
     /* "data/profession/menschlich/PWUN.coffee #1007 */
     "Überreden": "Überreden",
 
-    /* "data/profession/elifsch/PELS.coffee #774 */
-    /* "data/profession/menschlich/PMAG.coffee #1419 */
+    /* "data/profession/elfisch/PELS.coffee #774 */
+    /* "data/profession/menschlich/PMAG.coffee #1448 */
     /* "data/profession/menschlich/PWUN.coffee #1032 */
     "Überzeugen": "Überzeugen"
 }
