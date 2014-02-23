@@ -14,7 +14,7 @@ choice = (args...) ->
   if not amounts
     amounts = [1]
 
-  class choiceView extends Backbone.View
+  class ChoiceView extends Backbone.View
     tagName: 'div'
 
     initialize: ->
@@ -24,6 +24,6 @@ choice = (args...) ->
       @$el.append 'Choice amounts: ' + amounts
       @$el.append 'For Elements: ' + elements
 
-  new choiceView
+  new ChoiceView
 
 

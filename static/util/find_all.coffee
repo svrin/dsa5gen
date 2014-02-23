@@ -8,10 +8,9 @@
 ###
 
 find_all = (reference) ->
-  if window.i18n?
-    _.every window.i18n, (value, key) ->
-      key.startsWith(reference)
+  if window.mapping?
+    return window.mapping[reference]
   else
     console.log? "No i18n loaded"
-    []
+    return []
 
