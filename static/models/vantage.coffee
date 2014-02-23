@@ -1,6 +1,7 @@
 ###
-  A culture
+  A race
 ###
 
 define ["models/base"], (Model) ->
-  class Culture extends Model
+  class Vantage extends Model
+

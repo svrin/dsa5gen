@@ -15,7 +15,9 @@ var template = baseDir + "/static/data/template.mustache";
 //Files to concatenate into main file
 var dirList = [
   'culture',
-  'profession'
+  'profession',
+  'race',
+  'vantage'
 ];
 
 // Build data

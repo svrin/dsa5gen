@@ -5,7 +5,7 @@
 cultures.add [
   name: __("Auelfen")
 
-  costs: 4
+  costs: if char.race.is("Halbelfen") then 12 else 4
 
   vantages:
     auto: [

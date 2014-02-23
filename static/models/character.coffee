@@ -6,8 +6,5 @@
 class Character extends Backbone.Model
 
 
-  
-
-
 
 
