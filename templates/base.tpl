@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ handler.locale.code }}" {% block html_attr %}{% end %}>
-    <head>
+<html manifest="/static/resources/appcache.mf" lang="{{ handler.locale.code }}" {% block html_attr %}{% end %}>
+<head>
         {% block head %}
             <title>{% if handler.caption %}{{ handler.caption }}{% end %}</title>
         {% end %}

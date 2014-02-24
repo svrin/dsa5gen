@@ -4,8 +4,6 @@
 
 """
 import inspect
-import os
-import site
 import sys
 
 __author__ = 'Severin Orth <severin.orth@st.ovgu.de>'
@@ -40,7 +38,7 @@ if __name__ == "__main__":
 
             # Add Parser
             aparser = sparser.add_parser(name)
-            aparser.set_defaults(cls=cls, name=cls.__name__)
+            aparser.set_defaults(cls=cls, name=name)
 
     # Load all handler (-> will make tornado_menuroute active)
     for name in dir(handler):

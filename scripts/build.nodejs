@@ -58,3 +58,29 @@ builder.task({
   }
 });
 
+// Write cache manifest
+builder.task({
+  name: "manifest",
+  task: function() {
+    builder('/')
+      .setContent('')
+      .perform(function(content) {
+        content += 'CACHE MANIFEST' + "\n";
+        content += '# ' + (new Date()).toJSON() + "\n";
+
+        content += '' + "\n";
+        content += 'CACHE:' + "\n";
+        for (var index in dirList) {
+            content += "/" + path.relative(baseDir, outputDir + "/" + dirList[index] + ".js") + "\n";
+            content += "# /" + path.relative(baseDir, outputDir + "/" + dirList[index] + ".min.js") + "\n";
+        }
+
+        content += '' + "\n";
+        content += 'NETWORK:' + "\n";
+        content += '*' + "\n";
+        return content
+      })
+      .save(outputDir + "/../resources/appcache.mf");
+  }
+});
+
