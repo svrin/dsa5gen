@@ -20,7 +20,8 @@ data/**/*.map
 static/**/*.css
 static/**/*.js
 static/**/*.map
-static/resources/appcache.mf
+static/libs
+static/resources
 
 # Packages
 *.egg

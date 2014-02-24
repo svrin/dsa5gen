@@ -9,18 +9,14 @@
 
         <meta charset="UTF-8">
 
-        <script src="{{ request.protocol }}://cdnjs.cloudflare.com/ajax/libs/require-jquery/0.25.0/require-jquery.min.js"
-                type="application/javascript"></script>
-        <script src="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"
-                type="application/javascript"></script>
-        <script src="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"
-                type="application/javascript"></script>
-        <script src="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone.js"
-                type="application/javascript"></script>
-        <script src="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.js"
-                type="application/javascript"></script>
+    <script src="/static/libs/jquery.min.js" type="application/javascript"></script>
+    <script src="/static/libs/require.min.js" type="application/javascript"></script>
+    <script src="/static/libs/require-text.min.js" type="application/javascript"></script>
+    <script src="/static/libs/underscore-min.js" type="application/javascript"></script>
+    <script src="/static/libs/backbone-min.js" type="application/javascript"></script>
+    <script src="/static/libs/nprogress.min.js" type="application/javascript"></script>
 
-        <link href="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.css"
+    <link href="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.css"
               rel="stylesheet" type="text/css" />
         <link href="{{ handler.request.protocol }}://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css"
               rel="stylesheet" type="text/css" />

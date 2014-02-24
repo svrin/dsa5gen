@@ -10,77 +10,91 @@ var baseDir = __dirname + '/..',
     utilDir = baseDir + '/static/util',
     outputDir = baseDir + '/static/data';
 
-var template = baseDir + "/static/data/template.mustache";
+var template = outputDir + "/template.hbs";
+
+var libList = [
+    'static/libs/jquery.min.js',
+    'static/libs/require.min.js',
+    'static/libs/require-text.min.js',
+    'static/libs/underscore-min.js',
+    'static/libs/backbone-min.js',
+    'static/libs/nprogress.min.js'
+];
 
 //Files to concatenate into main file
 var dirList = [
-  'culture',
-  'profession',
-  'race',
-  'vantage'
+    'culture',
+    'profession',
+    'race',
+    'vantage',
+    'character'
 ];
 
 // Build data
 for (var index in dirList) {
     builder.task({
-      name: dirList[index],
-      task: function () {
-        dir = this.name;
+        name: dirList[index],
+        task: function () {
+            dir = this.name;
 
-        builder('/')
-            .concat(glob.sync(sourceDir + "/" + dir + "/**/*.js"))
-            .perform(function(content) {
-                return content.replace(/.{2}sourceMappingURL.+/g, '');
-            })
-            .wrap(template, {dir: dir})
-            .save(outputDir + "/" + dir + ".js")
-            .uglify()
-            .save(outputDir + "/" + dir + ".min.js");
-      }
+            builder('/')
+                .concat(glob.sync(sourceDir + "/" + dir + "/**/*.js"))
+                .perform(function (content) {
+                    return content.replace(/.{2}sourceMappingURL.+/g, '');
+                })
+                .wrap(template, {dir: dir})
+                .save(outputDir + "/" + dir + ".js")
+                .uglify()
+                .save(outputDir + "/" + dir + ".min.js");
+        }
     });
 }
 
 // Build app
 builder.task({
-  name: "app",
-  task: function () {
-    builder('/')
-      .concat(glob.sync(utilDir + "/*.coffee"))
-      .perform(function(content) {
-          return coffee.compile(content, {bare:true});
-      })
-      .perform(function(content) {
-          return content.replace(/.{2}sourceMappingURL.+/g, '');
-      })
-      .save(outputDir + "/../app.js")
-      .uglify()
-      .save(outputDir + "/../app.min.js");
-  }
+    name: "app",
+    task: function () {
+        builder('/')
+            .concat(glob.sync(utilDir + "/*.coffee"))
+            .perform(function (content) {
+                return coffee.compile(content, {bare: true});
+            })
+            .perform(function (content) {
+                return content.replace(/.{2}sourceMappingURL.+/g, '');
+            })
+            .save(outputDir + "/../app.js")
+            .uglify()
+            .save(outputDir + "/../app.min.js");
+    }
 });
 
 // Write cache manifest
 builder.task({
-  name: "manifest",
-  task: function() {
-    builder('/')
-      .setContent('')
-      .perform(function(content) {
-        content += 'CACHE MANIFEST' + "\n";
-        content += '# ' + (new Date()).toJSON() + "\n";
+    name: "manifest",
+    task: function () {
+        builder('/')
+            .setContent('')
+            .perform(function (content) {
+                content += 'CACHE MANIFEST' + "\n";
+                content += '# ' + (new Date()).toJSON() + "\n";
 
-        content += '' + "\n";
-        content += 'CACHE:' + "\n";
-        for (var index in dirList) {
-            content += "/" + path.relative(baseDir, outputDir + "/" + dirList[index] + ".js") + "\n";
-            content += "# /" + path.relative(baseDir, outputDir + "/" + dirList[index] + ".min.js") + "\n";
-        }
+                content += '' + "\n";
+                content += 'CACHE:' + "\n";
+                for (var idir in dirList) {
+                    content += "/" + path.relative(baseDir, outputDir + "/" + dirList[idir] + ".js") + "\n";
+                    content += "# /" + path.relative(baseDir, outputDir + "/" + dirList[idir] + ".min.js") + "\n";
+                }
+                content += '' + "\n";
+                for (var ilib in libList) {
+                    content += "/" + libList[ilib] + "\n";
+                }
 
-        content += '' + "\n";
-        content += 'NETWORK:' + "\n";
-        content += '*' + "\n";
-        return content
-      })
-      .save(outputDir + "/../resources/appcache.mf");
-  }
+                content += '' + "\n";
+                content += 'NETWORK:' + "\n";
+                content += '*' + "\n";
+                return content
+            })
+            .save(outputDir + "/../resources/appcache.mf");
+    }
 });
 
