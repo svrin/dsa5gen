@@ -3,8 +3,11 @@
   with choosen skills and equipment
 ###
 
-class Character extends Backbone.Model
+define [], ->
+  class Character extends Backbone.Model
 
+    defaults:
+      name: "Neue Heldin"
 
 
 
