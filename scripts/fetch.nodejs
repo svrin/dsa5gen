@@ -6,22 +6,41 @@ var builder = require('buildify'),
 var baseDir = __dirname + '/..',
     outputDir = baseDir + '/lib';
 
-var libs = {
-    'jquery.min': 'http://cdnjs.cloudflare.com/ajax/lib/jquery/2.0.3/jquery.min',
-    'require.min': 'http://cdnjs.cloudflare.com/ajax/lib/require.js/2.1.10/require.min',
-    'require-text.min': 'http://cdnjs.cloudflare.com/ajax/lib/require-text/2.0.10/text.min',
-    'underscore-min': 'http://cdnjs.cloudflare.com/ajax/lib/underscore.js/1.5.2/underscore-min',
-    'backbone-min': 'http://cdnjs.cloudflare.com/ajax/lib/backbone.js/1.1.0/backbone-min',
-    'nprogress.min': 'http://cdnjs.cloudflare.com/ajax/lib/nprogress/0.1.2/nprogress.min'
+var jsLibs = {
+    'jquery.min': 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min',
+    'require.min': 'http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min',
+    'require-text.min': 'http://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.10/text.min',
+    'underscore-min': 'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min',
+    'backbone-min': 'http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min',
+    'nprogress.min': 'http://cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.min'
+};
+
+var cssLibs = {
+    'nprogress.css': 'http://cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.css',
+    'normalize.css': 'http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.css'
 };
 
 // Fetch libaries
 builder.task({
     name: "lib",
     task: function () {
-        for (var ilib in libs) {
+        for (var cssLib in cssLibs) {
             !function fetch(lib) {
-                request(libs[lib] + ".js", function (error, response, body) {
+                request(cssLibs[lib], function (error, response, body) {
+                    if (!error && response.statusCode == 200) {
+                        builder('/')
+                            .setContent(body)
+                            .save(outputDir + "/" + lib);
+                    } else {
+                        console.error(error);
+                    }
+                });
+            }(cssLib);
+        }
+
+        for (var jsLib in jsLibs) {
+            !function fetch(lib) {
+                request(jsLibs[lib] + ".js", function (error, response, body) {
                     if (!error && response.statusCode == 200) {
                         builder('/')
                             .setContent(body)
@@ -30,7 +49,7 @@ builder.task({
                         console.error(error);
                     }
                 });
-                request(libs[lib].substr(0, libs[lib].length - 4) + ".js", function (error, response, body) {
+                request(jsLibs[lib].substr(0, jsLibs[lib].length - 4) + ".js", function (error, response, body) {
                     if (!error && response.statusCode == 200) {
                         builder('/')
                             .setContent(body)
@@ -39,7 +58,7 @@ builder.task({
                         console.error(error);
                     }
                 });
-                request(libs[lib] + ".map", function (error, response, body) {
+                request(jsLibs[lib] + ".map", function (error, response, body) {
                     if (!error && response.statusCode == 200) {
                         builder('/')
                             .setContent(body)
@@ -48,7 +67,7 @@ builder.task({
                         console.error(error);
                     }
                 });
-            }(ilib);
+            }(jsLib);
         }
     }
 });

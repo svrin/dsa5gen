@@ -12,15 +12,17 @@
     <script src="/lib/backbone-min.js" type="application/javascript"></script>
     <script src="/lib/nprogress.min.js" type="application/javascript"></script>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/lib/nprogress/0.1.2/nprogress.css"
-          rel="stylesheet" type="text/css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/lib/normalize/3.0.0/normalize.min.css"
-          rel="stylesheet" type="text/css"/>
+    <link href="/lib/nprogress.css" rel="stylesheet" type="text/css"/>
+    <link href="/lib/normalize.css" rel="stylesheet" type="text/css"/>
 
     <link href="/css/base.css" rel="stylesheet" type="text/css"/>
 
     <script type="application/javascript">
-        require.config({});
+        require.config({
+            paths: {
+                "data": "gen/data"
+            }
+        });
     </script>
 </head>
 <body>

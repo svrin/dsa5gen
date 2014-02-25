@@ -51,5 +51,3 @@ define ['text!templates/welcome.hbs', 'data/character', 'models/character'], (hb
       window.navigate cid
 
   return WelcomeView
-
-

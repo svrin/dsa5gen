@@ -9,5 +9,3 @@ define [], ->
     defaults:
       name: "Neue Heldin"
 
-
-
