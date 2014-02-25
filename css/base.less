@@ -11,6 +11,8 @@ body {
 
   position: fixed;
 
+  font-size: 1.1em;
+
   top: 0px;
   bottom: 0px;
   right: 0px;
@@ -34,11 +36,64 @@ body {
   }
 }
 
+@link-color: #602020;
+
 a {
+  cursor: pointer;
+
   font-size: 0.9em;
   font-variant: small-caps;
 
-  color: #602020;
+  color: @link-color;
 
   text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:after {
+    content: url('/images/arrow_right.gif');
+
+    position: relative;
+    top: -1px;
+
+    margin-left: 3px;
+    margin-right: 2px;
+  }
+}
+
+footer {
+  position: absolute;
+
+  bottom: 0px;
+
+  margin: 15px;
+  padding-right: 35px;
+
+  width: 100%;
+  text-align: right;
+}
+
+.welcome {
+  display: inline-block;
+}
+
+.box-link {
+  display: block;
+
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border-image: url('/images/button_bg.gif') 20 25 15 25 fill stretch;
+  border-bottom-width: 15px;
+  border-top-width: 20px;
+  border-left-width: 25px;
+  border-right-width: 25px;
+
+  margin-bottom: 3px;
+  margin-top: 2px;
+
+  color: lighten(@link-color, 10%);
 }
