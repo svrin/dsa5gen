@@ -7,18 +7,18 @@ var builder = require('buildify'),
 
 var baseDir = __dirname + '/..',
     sourceDir = baseDir + '/data',
-    utilDir = baseDir + '/static/util',
-    outputDir = baseDir + '/static/data';
+    utilDir = baseDir + '/util',
+    outputDir = baseDir + '/gen/data';
 
 var template = outputDir + "/template.hbs";
 
 var libList = [
-    'static/libs/jquery.min.js',
-    'static/libs/require.min.js',
-    'static/libs/require-text.min.js',
-    'static/libs/underscore-min.js',
-    'static/libs/backbone-min.js',
-    'static/libs/nprogress.min.js'
+    'lib/jquery.min.js',
+    'lib/require.min.js',
+    'lib/require-text.min.js',
+    'lib/underscore-min.js',
+    'lib/backbone-min.js',
+    'lib/nprogress.min.js'
 ];
 
 //Files to concatenate into main file

@@ -8,7 +8,6 @@
 ###
 
 distribute = (amount, elements...) ->
-
   class distributeView extends Backbone.View
     tagName: 'div'
 

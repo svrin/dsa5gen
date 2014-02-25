@@ -15,18 +15,15 @@
 *.min.css
 
 # Generated files
-data/**/*.js
-data/**/*.map
-static/**/*.css
-static/**/*.js
-static/**/*.map
-static/libs
-static/resources
+**/*.js
+**/*.map
+**/*.css
 
 # Packages
 *.egg
 *.egg-info
 dist
+gen
 build
 eggs
 parts

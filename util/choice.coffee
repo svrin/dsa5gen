@@ -8,8 +8,10 @@
 ###
 
 choice = (args...) ->
-  amounts = _.map(args, (arg) -> _.isNumber arg)
-  elements = _.map(args, (arg) -> not _.isNumber arg)
+  amounts = _.map(args, (arg) ->
+    _.isNumber arg)
+  elements = _.map(args, (arg) ->
+    not _.isNumber arg)
 
   if not amounts
     amounts = [1]
