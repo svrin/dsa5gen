@@ -6,8 +6,11 @@ class Router extends Backbone.Router
 
   initialize: (options) ->
     @route /^\/?$/, 'index', @.welcome
-    @route 'c:cid', 'character', @.character
+    @route 'c:id', 'character', @.character
     @route 'impressum', 'impressum', @.impressum
+
+    require ['data/character'], (characters) ->
+      characters.fetch()
 
     $(document).on 'click', "a[href='/impressum']", (event) ->
       event.preventDefault()
@@ -22,10 +25,12 @@ class Router extends Backbone.Router
       $('main').html view.$el
 
   character: (cid) ->
-    require ['views/character', 'data/character'], (CharacterView, characters) ->
+    require ['views/character', 'views/error', 'data/character'], (CharacterView, ErrorView, characters) ->
       model = characters.get('c' + cid);
-      view = new CharacterView({model: model})
-      $('main').html view.$el
+      if model
+        return new CharacterView({model: model})
+      else
+        new ErrorView({msg: "Der Character existiert nicht"})
 
   impressum: () ->
     require ['text!templates/impressum.hbs'], (Template) ->

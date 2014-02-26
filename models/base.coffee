@@ -6,3 +6,4 @@
 
 define [], () ->
   class Model extends Backbone.Model
+    idAttribute: 'name'

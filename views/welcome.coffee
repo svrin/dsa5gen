@@ -13,41 +13,40 @@ define ['text!templates/welcome.hbs', 'data/character', 'models/character'], (hb
 
     events:
       'click .new': "new"
-      'click [cid]': "load"
+      'click [id]': "load"
 
     initialize: ->
       @listenTo @collection, "add", @add
       @listenTo @collection, "remove", @remove
       @listenTo @collection, "change", @change
-      @listenTo @collection, "reset", @render
+      @listenTo @collection, "reset", @reset
 
-      if window.localStorage
-        @reset window.localStorage.getItem('characters')
-      else
-        @reset []
+      @collection.fetch()
 
     add: (character) ->
-      @$el.append $(@template(character.attributes)).attr("cid", character.cid)
+      @$el.append $(@template(character.attributes)).attr("id", character.id)
 
     remove: (character) ->
-      @$el.find(["cid='" + character.cid + "'"]).remove()
+      @$el.find("#" + character.id).remove()
 
     change: (character) ->
-      @$el.find(["cid='" + character.cid + "'"]).replaceWith $(@template(character.attributes)).attr("cid",
-        character.cid)
+      @$el.find("#" + character.id).replaceWith $(@template(character.attributes)).attr("id",
+        character.id)
 
-    reset: (characters) ->
+    reset: () ->
+      @$el.html ""
+
       @$el.append $(@template({name: characterModel.prototype.defaults.name})).addClass('new')
 
-      _.each characters, (character) =>
-        @add character
+      @collection.each (character) =>
+      @add character
 
     new: () ->
       character = @collection.push {}
-      window.navigate character.cid
+      window.navigate character.id
 
     load: (event) ->
-      cid = $(event.target).attr("cid")
+      cid = $(event.target).attr("id")
       window.navigate cid
 
   return WelcomeView
