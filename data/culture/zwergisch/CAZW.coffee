@@ -2,7 +2,7 @@
   Ambosszwerge
 ###
 
-define ["cultures"], (cultures) -> cultures.add [
+cultures.add [
   name: __("Ambosszwerge")
 
   costs: 0

@@ -101,8 +101,7 @@ cultures.add [
     [__("Schätzen"), 1]
     [__("Sternkunde"), 1]
 
-    [__("Tulamidya"), ->
-      char.attributes["KL"] - 2]
+    [__("Tulamidya"), -> (char.attributes["KL"] - 2)]
 
     [__("Boote Fahren"), -1]
     ->
