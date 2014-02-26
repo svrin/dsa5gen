@@ -60,8 +60,7 @@ cultures.add [
     [__("Sagen/Legenden"), 2]
     [__("Tierkunde"), 2]
 
-    [__("Isdira"), ->
-      char.attributes["KL"] - 2]
+    [__("Isdira"), -> char.attributes["KL"] - 2]
     choice_from(4, __("Sprache kennen"))
 
     choice(2, __("Bogenbau"), __("Boote Fahren"), "L")
