@@ -30,8 +30,7 @@ define ['text!templates/welcome.hbs', 'data/character', 'models/character'], (hb
       @$el.find("#" + character.id).remove()
 
     change: (character) ->
-      @$el.find("#" + character.id).replaceWith $(@template(character.attributes)).attr("id",
-        character.id)
+      @$el.find("#" + character.id).replaceWith $(@template(character.attributes)).attr("id", character.id)
 
     reset: () ->
       @$el.html ""
@@ -39,7 +38,7 @@ define ['text!templates/welcome.hbs', 'data/character', 'models/character'], (hb
       @$el.append $(@template({name: characterModel.prototype.defaults.name})).addClass('new')
 
       @collection.each (character) =>
-      @add character
+        @add character
 
     new: () ->
       character = @collection.push {}
