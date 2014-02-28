@@ -4,6 +4,8 @@
   -webkit-box-sizing: border-box;
 }
 
+@footer-height: 45px;
+
 body {
   text-align: center;
 
@@ -30,7 +32,8 @@ body {
 
     box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.5);
 
-    padding: 20px;
+    padding: 40px;
+    padding-bottom: 40px + @footer-height;
 
     > div {
       display: table-cell;
@@ -42,7 +45,7 @@ body {
 
 @link-color: #602020;
 
-a {
+a, [data-href] > i {
   cursor: pointer;
 
   font-size: 0.9em;
@@ -68,9 +71,7 @@ a {
 }
 
 footer {
-  padding-right: 30px;
-
-  margin-bottom: -45px;
+  margin-bottom: @footer-height * -1;
 
   width: 100%;
   text-align: right;
@@ -85,7 +86,7 @@ h3 {
 }
 
 main {
-  margin-left: 15px;
+
 }
 
 .welcome {
