@@ -18,7 +18,7 @@ body {
   right: 0px;
   left: 0px;
 
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Gothik, Route, Georgia, "Times New Roman", Times, serif;
 
   background-color: #FEF3D7;
 
@@ -76,6 +76,14 @@ footer {
   text-align: right;
 }
 
+h3 {
+  &:first-letter {
+    color: @link-color;
+
+    font-size: 150%;
+  }
+}
+
 main {
   margin-left: 15px;
 }
@@ -111,4 +119,37 @@ main {
 
   margin-bottom: 3px;
   margin-top: 2px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  h2, h3 {
+    margin-bottom: 0px;
+  }
+
+  ul {
+    list-style-type: none;
+
+    margin-top: 0px;
+
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  li {
+    text-align: left;
+
+    > label {
+      &:after {
+        content: ':';
+      }
+    }
+
+    > span {
+      float: right;
+    }
+  }
+
 }

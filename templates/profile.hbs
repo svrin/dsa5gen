@@ -1,9 +1,39 @@
 <h2><%= character.get('name') %></h2>
-<dl>
-    <dd><%= character.get('profession') %></dd>
-    <dd><%= character.get('culture') %></dd>
-    <dd><%= character.get('race') %></dd>
+<ul>
+    <% profession = character.get('profession'); %>
+    <% culture = character.get('culture'); %>
+    <% race = character.get('race'); %>
 
-    <dt>Generierungspunkte</dt>
-    <dd><%= character.costs %></dd>
-</dl>
+    <% if (culture && race) { %>
+    <li data-href="profession">
+
+        <% if (profession) { %>
+            <%= profession %>
+        <% } else { %>
+            <i>Profession wählen</i>
+        <% } %>
+    </li>
+    <% } if (race) { %>
+    <li data-href="culture">
+        <% if (culture) { %>
+            <%= culture %>
+        <% } else { %>
+            <i>Kultur wählen</i>
+        <% } %>
+    </li>
+    <% } %>
+    <li data-href="race">
+        <% if (race) { %>
+            <%= race %>
+        <% } else { %>
+            <i>Rasse wählen</i>
+        <% } %>
+    </li>
+
+    <% _.each(character.costs, function (key, value) { %>
+    <li>
+        <label><%= __(key) %></label>
+        <span><%= value || 0 %></span>
+    </li>
+    <% }); %>
+</ul>
