@@ -7,6 +7,8 @@ define ['data/race', 'data/culture', 'data/profession'], (races, cultures, profe
   class Character extends Backbone.Model
     idAttribute: 'uuid'
 
+    properties: {}
+
     defaults:
       name: "Neue Heldin"
 
@@ -14,15 +16,68 @@ define ['data/race', 'data/culture', 'data/profession'], (races, cultures, profe
       culture: null
       profession: null
 
-      attributes: {}
+      attributes:
+        MU: 0
+        KL: 0
+        IN: 0
+        CH: 0
+        FF: 0
+        GE: 0
+        KO: 0
+        KK: 0
 
     initialize: () =>
       pget @, 'race', races
       pget @, 'culture', cultures
       pget @, 'profession', professions
 
+      cget @, 'attributes', ['race', 'culture', 'profession'], @calc_attributes
+
       if not @id
         @set('uuid', uuid())
+
+    get: (attr) ->
+      ###
+        Overwritten for allowing @pget and @cget calls
+      ###
+
+      # .get(_) calls bypass property functions
+      if attr.startsWith("_")
+        return @.attributes[attr.substr(1)]
+
+      value = @.attributes[attr]
+
+      if _.isFunction(value)
+        value = value(@)
+
+      func = @['properties'][attr]
+      if func?
+        value = func(value)
+
+      return value
+
+    calc_attributes: (attributes) ->
+      ###
+        Calculates the attributes for this character
+      ###
+
+      attributes["MR"] = (attributes["MU"] + attributes["KL"] + attributes["KO"]) / 5
+
+      attributes["LeP"] = (attributes["KO"] + attributes["KO"] + attributes["KK"]) / 2
+      attributes["AuP"] = (attributes["MU"] + attributes["KO"] + attributes["GE"]) / 2
+      attributes["AsP"] = (attributes["MU"] + attributes["IN"] + attributes["CH"]) / 2
+
+      attributes["AT"] = (attributes["MU"] + attributes["GE"] + attributes["KK"]) / 5
+      attributes["PA"] = (attributes["IN"] + attributes["GE"] + attributes["KK"]) / 5
+      attributes["FK"] = (attributes["IN"] + attributes["FF"] + attributes["KK"]) / 5
+
+      return attributes
+
+
+
+
+
+
 
 
 ###
@@ -46,9 +101,36 @@ uuid = ->
 ###
 
 pget = (_this, prop, collection) ->
-  func = () ->
-    return collection.get(_this.get(prop))
-  Object.defineProperty _this, prop, {func, configurable: yes}
+  func = (value) ->
+    return collection.get(value)
+  _this['properties'][prop] = func
+
+###
+  A getter property wrapper for defining a proxy getter over all collections
+
+  cget @, name, callback
+
+  will add a property nam the uses function to resolve
+###
+cget = (_this, prop, collections, callback) ->
+  func = (rtn) ->
+    rtn = rtn || {}
+
+    for collection in collections
+      ref = _this.get(collection)
+      if not ref
+        continue
+
+      value = ref.get(prop)
+      if value
+        $.extend(rtn, value)
+
+    if callback
+      return callback(rtn)
+    else
+      rtn
+  _this['properties'][prop] = func
+
 
 
 

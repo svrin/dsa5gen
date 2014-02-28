@@ -18,7 +18,7 @@ professions.add [
       7 <= char.attributes["SO"] <= 13
   ]
 
-  mods:
+  attributes:
     SO: 7
 
   vantages:

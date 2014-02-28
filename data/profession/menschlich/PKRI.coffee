@@ -17,7 +17,7 @@ professions.add [
     -> 8 <= char.attributes["SO"] <= 12
   ]
 
-  mods:
+  attributes:
     LeP: 2
     AuP: 3
     SO: 8

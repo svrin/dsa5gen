@@ -7,7 +7,7 @@ cultures.add [
 
   costs: 4
 
-  mods:
+  attributes:
     AuP: 2
 
   vantages:

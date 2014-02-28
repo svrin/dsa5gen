@@ -7,7 +7,7 @@ cultures.add [
 
   costs: 3
 
-  mods:
+  attributes:
     MR: 1
 
   vantages:

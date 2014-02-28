@@ -28,7 +28,7 @@ races.add [
     weight: ->
       char.profile.height - 95
 
-  mods:
+  attributes:
     MU: 1
     KO: 1
     KK: 1

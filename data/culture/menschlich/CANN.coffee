@@ -7,7 +7,7 @@ cultures.add [
 
   costs: 6
 
-  mods:
+  attributes:
     LeP: 1
     AuP: 2
 

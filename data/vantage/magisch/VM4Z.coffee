@@ -13,7 +13,7 @@ vantages.add [
       not char.profession.is("Krieger", "Ritter", "Söldner")
   ]
 
-  mods:
+  attributes:
     AsP: -6
 ]
 

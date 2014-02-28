@@ -12,7 +12,7 @@ cultures.add [
 
   costs: -> if isM() then 3 else 1
 
-  mods:
+  attributes:
     MU: -> if isM() then 1 else 0
     AuP: -> if isM() then 2 else 1
 

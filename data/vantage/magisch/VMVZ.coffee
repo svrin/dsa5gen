@@ -8,7 +8,7 @@ vantages.add [
 
   replaces: __("Viertelzauberer")
 
-  mods:
+  attributes:
     MR: 2
     AsP: 12
 ]

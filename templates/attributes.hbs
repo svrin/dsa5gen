@@ -1,7 +1,9 @@
 <h3>Eigenschaften</h3>
-<dl>
+<ul>
     <% _.each(character.get('attributes'), function (value, key) { %>
-    <dt><%= key %></dt>
-    <dd><% value %></dd>
+    <li data-href="attributes">
+        <label><%= key %></label>
+        <span><%= value || 0 %></span>
+    </li>
     <% }); %>
-</dl>
+</ul>
