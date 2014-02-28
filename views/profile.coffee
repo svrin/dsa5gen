@@ -7,7 +7,7 @@ define ['text!templates/profile.hbs'], (hbs) ->
     template: _.template (hbs)
 
     tagName: 'section'
-    className: 'profile'
+    className: 'profile box-left'
 
     initialize: (options) ->
       @listenTo @model, "change", @reset

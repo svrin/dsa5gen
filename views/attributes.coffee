@@ -7,7 +7,7 @@ define ['text!templates/attributes.hbs'], (hbs) ->
     template: _.template (hbs)
 
     tagName: 'section'
-    className: 'attributes'
+    className: 'attributes box-left'
 
     initialize: (options) ->
       @listenTo @model, "change:attributes", @reset
