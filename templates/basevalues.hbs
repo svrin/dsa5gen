@@ -1,10 +1,10 @@
-<h3>Eigenschaften</h3>
+<h3>Basiswerte</h3>
 <ul>
     <% _.each(character.get('attributes'), function (value, key) { %>
-    <% if (key in character.defaults.attributes) { %>
-    <li data-href="attributes">
+    <% if (!(key in character.defaults.attributes) && value) { %>
+    <li>
         <label title="<%= __(key) %>"><%= key %></label>
-        <span><%= value || 0 %></span>
+        <span><%= value %></span>
     </li>
     <% } %>
     <% }); %>

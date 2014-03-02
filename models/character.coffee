@@ -60,16 +60,21 @@ define ['data/race', 'data/culture', 'data/profession'], (races, cultures, profe
       ###
         Calculates the attributes for this character
       ###
+      attributes["MR"] = (attributes["MR"] || 0) + (attributes["MU"] + attributes["KL"] + attributes["KO"]) / 5
 
-      attributes["MR"] = (attributes["MU"] + attributes["KL"] + attributes["KO"]) / 5
+      attributes["LeP"] = (attributes["LeP"] || 0) + (attributes["KO"] + attributes["KO"] + attributes["KK"]) / 2
+      attributes["AuP"] = (attributes["AuP"] || 0) + (attributes["MU"] + attributes["KO"] + attributes["GE"]) / 2
+      attributes["AsP"] = (attributes["AsP"] || 0) + (attributes["MU"] + attributes["IN"] + attributes["CH"]) / 2
 
-      attributes["LeP"] = (attributes["KO"] + attributes["KO"] + attributes["KK"]) / 2
-      attributes["AuP"] = (attributes["MU"] + attributes["KO"] + attributes["GE"]) / 2
-      attributes["AsP"] = (attributes["MU"] + attributes["IN"] + attributes["CH"]) / 2
+      attributes["AT"] = (attributes["AT"] || 0) + (attributes["MU"] + attributes["GE"] + attributes["KK"]) / 5
+      attributes["PA"] = (attributes["PA"] || 0) + (attributes["IN"] + attributes["GE"] + attributes["KK"]) / 5
+      attributes["FK"] = (attributes["FK"] || 0) + (attributes["IN"] + attributes["FF"] + attributes["KK"]) / 5
 
-      attributes["AT"] = (attributes["MU"] + attributes["GE"] + attributes["KK"]) / 5
-      attributes["PA"] = (attributes["IN"] + attributes["GE"] + attributes["KK"]) / 5
-      attributes["FK"] = (attributes["IN"] + attributes["FF"] + attributes["KK"]) / 5
+      # V4.1 Grundregelwerk #189
+      attributes["GS"] = (attributes["GS"] || 0) + switch
+        when attributes["GE"] <= 10 then 7
+        when attributes["GE"] <= 15 then 8
+        else 9
 
       return attributes
 
@@ -114,7 +119,7 @@ pget = (_this, prop, collection) ->
 ###
 cget = (_this, prop, collections, callback) ->
   func = (rtn) ->
-    rtn = rtn || {}
+    rtn = $.extend({}, rtn)
 
     for collection in collections
       ref = _this.get(collection)
@@ -122,13 +127,12 @@ cget = (_this, prop, collections, callback) ->
         continue
 
       value = ref.get(prop)
-      if value
-        $.extend(rtn, value)
+      $.extend(rtn, value)
 
     if callback
       return callback(rtn)
     else
-      rtn
+      return rtn
   _this['properties'][prop] = func
 
 
