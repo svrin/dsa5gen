@@ -12,7 +12,8 @@ professions.add [
     ["IN", 12]
     ["CH", 11]
     ["FF", 13]
-    -> 5 <= char.attributes["SO"] <= 10
+    ->
+      5 <= this.get('attributes')["SO"] <= 10
   ]
 
   attributes:
@@ -42,7 +43,7 @@ professions.add [
 
   skills: [
     [__("Dolche"), 2]
-    choice(1,  __("Hiebwaffen"), __("Säbel"))
+    choice(1, __("Hiebwaffen"), __("Säbel"))
     [__("Raufen"), 3]
     [__("Ringen"), 3]
     [__("Stäbe"), 2]

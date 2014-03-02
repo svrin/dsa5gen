@@ -22,7 +22,8 @@ cultures.add [
       __("Vorurteile")
     ]
     uncommon: [
-      -> __("Ausrüstungsvorteil") if !char.vantages[__("adlig")]
+      ->
+        __("Ausrüstungsvorteil") if !this.has(__("adlig"))
       __("Krankhafte Reinlichkeit")
       __("Krankheitsanfällig")
       __("Platzangst")
@@ -49,7 +50,7 @@ cultures.add [
     [__("Götter/Kulte"), 1]
     [__("Sagen/Legenden"), 2]
 
-    [__("Garethi"), -> char.attributes["KL"] - 2]
+    [__("Garethi"), -> this.get('attributes')["KL"] - 2]
     choice(6, 2, __("Alaani"), __("Nujuka"))
 
     [__("Ackerbau"), 1]

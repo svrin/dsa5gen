@@ -12,7 +12,8 @@ professions.add [
     ["MU", 11]
     ["GE", 11]
     ["KO", 12]
-    -> 5 <= char.attributes["SO"] <= 10
+    ->
+      5 <= this.get('attributes')["SO"] <= 10
   ]
 
   attributes:
@@ -49,7 +50,7 @@ professions.add [
     reduced: [
       __("Reiterkampf")
       choice_from(1, __("Geländekunde"))
-    __("Ortskenntnis (Strecke)")
+      __("Ortskenntnis (Strecke)")
     ]
     bb: [
       __("erprobtes Pferd mit Sattel und Zaumzeug")
@@ -103,8 +104,6 @@ professions.add [
     __("Wasserschlauch")
     # Ausürstung im Wert von 1W6+2D
   ]
-
-
 
 
 ]

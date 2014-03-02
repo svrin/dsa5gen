@@ -51,8 +51,8 @@ cultures.add [
     [__("Sagen/Legenden"), 2]
     [__("Schätzen"), 1]
 
-    [__("Rogolan"), -> char.attributes["KL"] - 2]
-    choice((-> char.attributes["KL"] - 4), __("Garethi"), __("Tulamidya"))
+    [__("Rogolan"), -> this.get('attributes')["KL"] - 2]
+    choice((-> this.get('attributes')["KL"] - 4), __("Garethi"), __("Tulamidya"))
 
     [__("Bergbau"), 2]
     [__("Grobschmied"), 3]

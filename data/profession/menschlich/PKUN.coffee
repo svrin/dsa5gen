@@ -12,7 +12,8 @@ professions.add [
     ["MU", 12]
     ["IN", 12]
     ["KO", 12]
-    -> 2 <= char.attributes["SO"] <= 7
+    ->
+      2 <= this.get('attributes')["SO"] <= 7
   ]
 
   attributes:
@@ -106,8 +107,6 @@ professions.add [
     __("Feuerstein und Zunder")
     __("Schlafsack")
   ]
-
-
 
 
 ]

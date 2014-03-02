@@ -63,8 +63,8 @@ cultures.add [
     [__("Sagen/Legenden"), 2]
     [__("Schätzen"), 2]
 
-    [__("Tulamidya"), -> char.attributes["KL"] - 2]
-    [__("Garethi"), -> char.attributes["KL"] - 4]
+    [__("Tulamidya"), -> this.get('attributes')["KL"] - 2]
+    [__("Garethi"), -> this.get('attributes')["KL"] - 4]
 
     __("Kulturkunde (Tulamiden)")
   ]

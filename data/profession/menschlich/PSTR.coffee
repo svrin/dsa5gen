@@ -13,7 +13,8 @@ professions.add [
     ["IN", 12]
     ["CH", 12]
     ["FF", 12]
-    -> 2 <= char.attributes["SO"] <= 10
+    ->
+      2 <= this.get('attributes')["SO"] <= 10
   ]
 
   attributes:
@@ -94,8 +95,6 @@ professions.add [
     choice(__("Degen"), __("Säbel"), __("Axt"), __("Schwert"))
 
   ]
-
-
 
 
 ]

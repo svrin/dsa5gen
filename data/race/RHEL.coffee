@@ -4,6 +4,8 @@
 
 races.add [
   name: __("Halbelfen")
+  name_m: __("Halbelfe")
+  name_w: __("Halbelfin")
 
   costs: 3
 
@@ -29,7 +31,7 @@ races.add [
     ]
     height: [158, 1, 20, 4, 6]
     weight: ->
-      char.profile.height - 120
+      this.get('profile')['height'] - 120
 
   attributes:
     KK: -1
@@ -43,7 +45,7 @@ races.add [
       __("Viertelzauberer")
       __("Gut Aussehend")
       ->
-        __("Zweistimmiger Gesang") if char.culture.is("Auelfen")
+        __("Zweistimmiger Gesang") if this.get('culture').is("Auelfen")
     ]
     recommended: [
       __("Balance")

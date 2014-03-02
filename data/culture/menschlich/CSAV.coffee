@@ -53,7 +53,7 @@ cultures.add [
     [__("Sagen/Legenden"), 1]
     [__("Schätzen"), 1]
 
-    [__("Garethi (Brabaci)"), -> char.attributes["KL"] - 2]
+    [__("Garethi (Brabaci)"), -> this.get('attributes')["KL"] - 2]
     [__("Tulamidya"), 4]
     [__("Mohisch"), 4]
     [__("Thorwalsch"), 2]

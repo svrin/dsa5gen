@@ -12,7 +12,8 @@ professions.add [
     ["MU", 12]
     ["FF", 13]
     ["GE", 12]
-    -> 2 <= char.attributes["SO"] <= 10
+    ->
+      2 <= this.get('attributes')["SO"] <= 10
   ]
 
   attributes:
@@ -55,7 +56,7 @@ professions.add [
     reduced: []
     bb: [
       choice(__("hochwertige und gut sortierte Nachschlüssel/Dietriche"),
-             __("Seidenseil mit ‘lautlosem’ Wurfhaken"))
+        __("Seidenseil mit ‘lautlosem’ Wurfhaken"))
     ]
 
   skills: [
@@ -101,8 +102,6 @@ professions.add [
     __("Gürtel mit Trageschlaufen und -haken")
     __("Dolch (verborgen)")
   ]
-
-
 
 
 ]

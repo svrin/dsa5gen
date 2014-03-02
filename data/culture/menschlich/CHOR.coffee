@@ -53,7 +53,7 @@ cultures.add [
     [__("Rechtskunde"), 1]
     [__("Sagen/Legenden"), 2]
 
-    [__("Garethi (Horathi)"), -> char.attributes["KL"] - 2]
+    [__("Garethi (Horathi)"), -> this.get('attributes')["KL"] - 2]
     choice(5, __("Tulamidya"), __("Rogolan"))
     [__("Kusliker Zeichen"), 2]
 

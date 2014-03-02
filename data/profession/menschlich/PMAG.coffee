@@ -6,7 +6,7 @@ professions.add [
   name: __("Magier (privater Lehrmeister)")
   name_w: __("Magierin (privater Lehrmeister)")
 
-  costs: -> if char.race.is("Halbelfen") then 16 else 18
+  costs: -> if this.get('race').is("Halbelfen") then 16 else 18
   zeitaufwendig: 3
 
   requirements: [
@@ -15,7 +15,7 @@ professions.add [
     ["IN", 11]
     ["CH", 12]
     ->
-      7 <= char.attributes["SO"] <= 13
+      7 <= this.get('attributes')["SO"] <= 13
   ]
 
   attributes:

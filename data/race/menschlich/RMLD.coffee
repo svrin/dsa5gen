@@ -4,6 +4,8 @@
 
 races.add [
   name: __("Mittelländer")
+  name_m: __("Mittelländer")
+  name_w: __("Mittelländerin")
 
   costs: 0
 
@@ -26,7 +28,7 @@ races.add [
     ]
     height: [160, 2, 20]
     weight: ->
-      char.profile.height - 100
+      this.get('profile')['height'] - 100
 
   attributes:
     LeP: 10

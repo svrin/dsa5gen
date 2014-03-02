@@ -11,8 +11,10 @@ professions.add [
   requirements: [
     ["MU", 11]
     ["CH", 12]
-    -> char.attributes["GE"] > 13 or char.attributes["FF"] > 13
-    -> 5 <= char.attributes["SO"] <= 10
+    ->
+      this.get('attributes')["GE"] > 13 or this.get('attributes')["FF"] > 13
+    ->
+      5 <= this.get('attributes')["SO"] <= 10
   ]
 
   attributes:
@@ -90,8 +92,6 @@ professions.add [
     # passendes Arbeitsgerät
     choice_from(1, __("Musikinstrument"))
   ]
-
-
 
 
 ]

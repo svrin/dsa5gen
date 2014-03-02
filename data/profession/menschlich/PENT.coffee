@@ -13,7 +13,8 @@ professions.add [
     ["KL", 12]
     ["IN", 12]
     ["KO", 11]
-    -> 7 <= char.attributes["SO"] <= 13
+    ->
+      7 <= this.get('attributes')["SO"] <= 13
   ]
 
   attributes:
@@ -87,8 +88,8 @@ professions.add [
     [__("Sprachenkunde"), 3]
     [__("Sternkunde"), 2]
     choice(5, 4, 2, "Anatomie", "Alchimie", "Bergbau", "Feinmechanik", "Geographie", "Geschichtswissen",
-                    "Gesteinskunde", "Götter/Kulte", "Heraldik", "Kartographie", "Magiekunde", "Mechanik",
-                    "Pflanzenkunde", "Rechtskunde", "Sprachenkunde", "Sternkunde", "Tierkunde")
+      "Gesteinskunde", "Götter/Kulte", "Heraldik", "Kartographie", "Magiekunde", "Mechanik",
+      "Pflanzenkunde", "Rechtskunde", "Sprachenkunde", "Sternkunde", "Tierkunde")
 
     choice_from(6, 6, 2, 2, __("Sprache kennen"))
     choice_from(6, 4, 4, __("Lesen/Schreiben"))
@@ -116,8 +117,6 @@ professions.add [
     __("Tagebuch")
     __("Lupe")
   ]
-
-
 
 
 ]

@@ -4,12 +4,14 @@
 
 races.add [
   name: __("Zwerge")
+  name_m: __("Zwerg")
+  name_w: __("Zwergin")
 
   costs: 16
 
   requirements: [
     ->
-      ["MU", 12] if char.gender["w"]
+      ["MU", 12] if this.get('gender') == "w"
   ]
 
   profile:
@@ -33,7 +35,7 @@ races.add [
     ]
     height: [128, 2, 6]
     weight: ->
-      char.profile.height - 80
+      this.get('profile')['height'] - 80
 
   attributes:
     FF: 1

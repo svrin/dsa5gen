@@ -12,7 +12,8 @@ professions.add [
     ["IN", 11]
     ["GE", 12]
     ["KO", 11]
-    -> 3 <= char.attributes["SO"] <= 7
+    ->
+      3 <= this.get('attributes')["SO"] <= 7
   ]
 
   attributes:
@@ -47,8 +48,8 @@ professions.add [
     ]
     bb: [
       choice(__("Packtier mit Zaumzeug und Packtaschen"),
-             __("ausgebildeter Jagdhund"),
-             __("ausgebildeter Jagdfalke"))
+        __("ausgebildeter Jagdhund"),
+        __("ausgebildeter Jagdfalke"))
     ]
 
   skills: [
@@ -100,8 +101,6 @@ professions.add [
     __("Schlafsack")
     __("Zelt (klein)")
   ]
-
-
 
 
 ]

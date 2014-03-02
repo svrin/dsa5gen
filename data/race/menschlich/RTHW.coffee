@@ -4,6 +4,8 @@
 
 races.add [
   name: __("Thorwaler")
+  name_m: __("Thorwaler")
+  name_w: __("Thorwalerin")
 
   costs: 5
 
@@ -26,7 +28,7 @@ races.add [
     ]
     height: [168, 2, 20]
     weight: ->
-      char.profile.height - 95
+      this.get('profile')['height'] - 95
 
   attributes:
     MU: 1

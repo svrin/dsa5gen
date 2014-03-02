@@ -13,7 +13,8 @@ professions.add [
     ["GE", 12]
     ["KO", 11]
     ["KK", 11]
-    -> 1 <= char.attributes["SO"] <= 10
+    ->
+      1 <= this.get('attributes')["SO"] <= 10
   ]
 
   attributes:
@@ -99,8 +100,6 @@ professions.add [
     __("Wolldecke")
     choice(1, __("Weinschlauch"), __("Schnapsflasche"))
   ]
-
-
 
 
 ]

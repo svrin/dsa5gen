@@ -4,6 +4,8 @@
 
 races.add [
   name: __("Tulamiden")
+  name_m: __("Tulamide")
+  name_w: __("Tulamidin")
 
   costs: 0
 
@@ -26,7 +28,7 @@ races.add [
     ]
     height: [155, 2, 20]
     weight: ->
-      char.profile.height - 105
+      this.get('profile')['height'] - 105
 
   attributes:
     LeP: 10

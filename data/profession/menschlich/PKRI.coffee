@@ -14,7 +14,8 @@ professions.add [
     ["GE", 12]
     ["KO", 13]
     ["KK", 12]
-    -> 8 <= char.attributes["SO"] <= 12
+    ->
+      8 <= this.get('attributes')["SO"] <= 12
   ]
 
   attributes:
@@ -104,8 +105,6 @@ professions.add [
     __("Waffenpflegeset")
     __("Kriegerbrief")
   ]
-
-
 
 
 ]

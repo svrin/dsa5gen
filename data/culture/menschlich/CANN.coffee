@@ -24,8 +24,10 @@ cultures.add [
       __("Vorurteile")
     ]
     uncommon: [
-      -> __("Ausrüstungsvorteil") if !char.vantages[__("adlig")]
-      -> __("Besonderer Besitz") if !char.vantages[__("adlig")]
+      ->
+        __("Ausrüstungsvorteil") if !this.has(__("adlig"))
+      ->
+        __("Besonderer Besitz") if !this.has(__("adlig"))
       __("Gebildet")
       __("Krankhafte Reinlichkeit")
       __("Krankheitsanfällig")
@@ -56,7 +58,7 @@ cultures.add [
     [__("Götter/Kulte"), 1]
     [__("Sagen/Legenden"), 2]
 
-    [__("Garethi"), -> char.attributes["KL"] - 2]
+    [__("Garethi"), -> this.get('attributes')["KL"] - 2]
     distribute(4, __("Oloarkh"), __("Ologhaijan"), __("Thorwalsch"))
 
     [__("Ackerbau"), 1]
@@ -64,7 +66,8 @@ cultures.add [
     [__("Holzbearbeitung"), 2]
     [__("Lederarbeiten"), 1]
     [__("Schneidern"), 1]
-    choice(1, __("Abrichten"), __("Fleischer"), __("Gerber/Kürschner"), __("Grobschmied"), __("Kochen"), __("Zimmermann"))
+    choice(1, __("Abrichten"), __("Fleischer"), __("Gerber/Kürschner"), __("Grobschmied"), __("Kochen"),
+      __("Zimmermann"))
 
     __("Meister der Improvisation")
     __("Kulturkunde (Andergast/Nostria)")

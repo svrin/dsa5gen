@@ -3,7 +3,7 @@
 ###
 
 isM = ->
-  char.gender["m"] || char.has("Achmad’Sunni")
+  this.get('gender') == "m" || this.has("Achmad’Sunni")
 isW = ->
   not isM()
 
@@ -101,7 +101,7 @@ cultures.add [
     [__("Schätzen"), 1]
     [__("Sternkunde"), 1]
 
-    [__("Tulamidya"), -> (char.attributes["KL"] - 2)]
+    [__("Tulamidya"), -> (this.get('attributes')["KL"] - 2)]
 
     [__("Boote Fahren"), -1]
     ->

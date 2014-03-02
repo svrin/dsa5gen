@@ -14,7 +14,7 @@ professions.add [
     ["KO", 12]
     ["KK", 12]
     ->
-      8 <= char.attributes["SO"] <= 13
+      8 <= this.get('attributes')["SO"] <= 13
   ]
 
   attributes:

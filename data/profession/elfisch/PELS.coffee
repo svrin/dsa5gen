@@ -13,9 +13,9 @@ professions.add [
     ["CH", 13]
     ["IN", 13]
     ->
-      char.culture.is(__("Auelfen"))
+      this.get('culture').is(__("Auelfen"))
     ->
-      3 <= char.attributes["SO"] <= 13
+      3 <= this.get('attributes')["SO"] <= 13
   ]
 
   attributes:

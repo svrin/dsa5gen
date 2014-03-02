@@ -10,7 +10,7 @@ vantages.add [
 
   requirements: [
     ->
-      not char.profession.is("Krieger", "Ritter", "Söldner")
+      not this.get('profession').is("Krieger", "Ritter", "Söldner")
   ]
 
   attributes:

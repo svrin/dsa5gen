@@ -62,8 +62,8 @@ cultures.add [
     [__("Sagen/Legenden"), 4]
     [__("Sternkunde"), 1]
 
-    [__("Thorwalsch"), -> char.attributes["KL"] - 2]
-    [__("Garethi"), -> char.attributes["KL"] - 4]
+    [__("Thorwalsch"), -> this.get('attributes')["KL"] - 2]
+    [__("Garethi"), -> this.get('attributes')["KL"] - 4]
 
     [__("Boote Fahren"), 2]
     [__("Holzbearbeitung"), 1]
