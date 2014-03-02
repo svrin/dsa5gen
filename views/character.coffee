@@ -2,16 +2,29 @@
   View for showing a character
 ###
 
-define ['views/profile', 'views/attributes', 'views/basevalues'], (ProfileView, AttributesView, BasevaluesView) ->
+define [], (ProfileView, AttributesView, BasevaluesView) ->
   class CharacterView extends Backbone.View
     el: 'main'
-    className: 'C'
+    className: 'c'
 
     initialize: ->
       @.$el.html('')
 
-      @._profileView = new ProfileView({model: @model, container: @$el})
-      @._attributesView = new AttributesView({model: @model, container: @$el})
-      @._basevaluesView = new BasevaluesView({model: @model, container: @$el})
+      # Storage of all views, so they are "runtime-bound" to the character instance view
+      @.views = {}
+
+      # Left Boxes
+      for view in ['profile', 'attributes', 'basevalues']
+        require ['views/left/' + view], (View) =>
+          @.views[view] = new View({model: @model, container: @$el})
+
+      # Content Boxes for Collection Selection
+      for view in ['race', 'culture', 'profession']
+        require ['views/select/' + view], (View) =>
+          @.views[view] = new View({model: @model, container: @$el})
+
+
+
+
 
 

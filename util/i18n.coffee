@@ -8,7 +8,7 @@ window.mapping = {}
 
 __ = (x) ->
 
-  # Find the base of the string, excludign all (...) spezialisations
+  # Find the base of the string, excluding all (...) spezialisations
   base = x
   while base.indexOf("(") >= 0
     start = base.indexOf("(")

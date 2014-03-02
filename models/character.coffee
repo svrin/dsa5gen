@@ -3,11 +3,9 @@
   with choosen skills and equipment
 ###
 
-define ['data/race', 'data/culture', 'data/profession'], (races, cultures, professions) ->
-  class Character extends Backbone.Model
+define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, races, cultures, professions) ->
+  class Character extends Model
     idAttribute: 'uuid'
-
-    properties: {}
 
     defaults:
       name: "Neue Heldin"
@@ -35,26 +33,6 @@ define ['data/race', 'data/culture', 'data/profession'], (races, cultures, profe
 
       if not @id
         @set('uuid', uuid())
-
-    get: (attr) ->
-      ###
-        Overwritten for allowing @pget and @cget calls
-      ###
-
-      # .get(_) calls bypass property functions
-      if attr.startsWith("_")
-        return @.attributes[attr.substr(1)]
-
-      value = @.attributes[attr]
-
-      if _.isFunction(value)
-        value = value(@)
-
-      func = @['properties'][attr]
-      if func?
-        value = func(value)
-
-      return value
 
     calc_attributes: (attributes) ->
       ###
