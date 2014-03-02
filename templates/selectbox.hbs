@@ -4,7 +4,7 @@
 <label>
     <input type="radio" value="<%= element.id %>" name="<%= name %>"/>
 
-    <span class="name"><%= element.get('name') %></span>
-    <span class="costs"><%= element.get('costs') %></span>
+    <span class="name"><%= element.get('name', character) %></span>
+    <span class="costs"><%= element.get('costs', character) %></span>
 </label>
 <% }); %>
