@@ -23,7 +23,7 @@ define [], () ->
       value = @.attributes[attr]
 
       if _.isFunction(value)
-        value = value(@)
+        value = value.call(@)
 
       func = @['properties'][attr]
       if func?

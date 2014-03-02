@@ -14,6 +14,8 @@ define ['text!templates/selectbox.hbs'], (hbs) ->
       @listenTo @.model, @.event, @change
       @listenTo @.collection, "reset", @reset
 
+      @$el.on "change", "input", @.select
+
       options['container'].append @$el
 
       $(window).on 'hashchange', @consider
@@ -26,10 +28,12 @@ define ['text!templates/selectbox.hbs'], (hbs) ->
         if not @$el.is(":target")
           window.location.href = "#" + @.name
 
-
     reset: =>
       @$el.attr "id", @.name
       @$el.html @template({character: @model, collection: @collection, selected: @model.get(@.name), name: @.name})
+
+    select: (event) =>
+      @.model.set @.name, $(event.target).val()
 
     change: ->
       # @TODO Implement this

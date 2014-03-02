@@ -2,7 +2,7 @@
   View for showing a character
 ###
 
-define [], (ProfileView, AttributesView, BasevaluesView) ->
+define [], () ->
   class CharacterView extends Backbone.View
     el: 'main'
     className: 'c'

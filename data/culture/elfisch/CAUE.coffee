@@ -5,7 +5,8 @@
 cultures.add [
   name: __("Auelfen")
 
-  costs: -> if this.get('race').is("Halbelfen") then 12 else 4
+  costs: ->
+    if this.get('race').is("Halbelfen") then 12 else 4
 
   vantages:
     auto: [
