@@ -62,7 +62,7 @@ a, [data-href] > i {
     text-decoration: none;
   }
 
-  &:after {
+  &:not([href*=':']):after {
     content: url('/images/arrow_right.gif');
 
     position: relative;
@@ -70,6 +70,14 @@ a, [data-href] > i {
 
     margin-left: 3px;
     margin-right: 2px;
+  }
+
+  &[href*=':incr'] {
+    content: url('/images/arrow_right.gif');
+  }
+
+  &[href*=':decr'] {
+    content: url('/images/arrow_left.gif');
   }
 }
 

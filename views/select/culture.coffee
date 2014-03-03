@@ -5,7 +5,7 @@
 define ['views/bases/selectbox', 'data/culture'], (BaseView, cultures) ->
   class CultureView extends BaseView
     name: 'culture'
-    event: 'change:culture'
+    event: ['change:culture', 'change:race', 'change:profile']
     collection: cultures
 
     # Previous & Following tab

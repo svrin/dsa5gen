@@ -5,7 +5,7 @@
 define ['views/bases/selectbox', 'data/race'], (BaseView, races) ->
   class RaceView extends BaseView
     name: 'race'
-    event: 'change:race'
+    event: ['change:race', 'change:profile']
     collection: races
 
     # Following tab

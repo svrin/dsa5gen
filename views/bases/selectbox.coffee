@@ -11,7 +11,8 @@ define ['text!templates/selectbox.hbs'], (hbs) ->
       'box-tab box-select ' + @.name
 
     initialize: (options) ->
-      @listenTo @.model, @.event, @change
+      for event in @event
+        @listenTo @.model, event, @reset
       @listenTo @.collection, "reset", @reset
 
       @$el.on "change", "input", @.select
@@ -46,9 +47,6 @@ define ['text!templates/selectbox.hbs'], (hbs) ->
 
       if @.next?
         window.location.href = "#" + @.next
-
-    change: ->
-      # @TODO Implement this
 
 
 

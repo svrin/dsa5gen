@@ -6,7 +6,7 @@ define ['views/bases/leftbox', 'text!templates/basevalues.hbs'], (BaseView, hbs)
   class BasevaluesView extends BaseView
     template: _.template (hbs)
     name: 'basevalues'
-    event: 'change:attributes'
+    event: ['change:profession', 'change:culture', 'change:race', 'change:attributes']
 
 
 

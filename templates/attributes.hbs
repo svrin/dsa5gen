@@ -4,7 +4,11 @@
     <% if (key in character.defaults.attributes) { %>
     <li data-href="attributes">
         <label title="<%= __(key) %>"><%= key %></label>
-        <span><%= value || 0 %></span>
+        <span>
+            <a href=":decr(attributes.<%=key%>)"></a>
+            <%= value || 0 %>
+            <a href=":incr(attributes.<%=key%>)"></a>
+        </span>
     </li>
     <% } %>
     <% }); %>

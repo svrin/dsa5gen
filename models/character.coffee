@@ -7,6 +7,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
   class Character extends Model
     idAttribute: 'uuid'
 
+    properties: {}
+
     defaults:
       name: "Neue Heldin"
 
@@ -15,14 +17,14 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       profession: null
 
       attributes:
-        MU: 0
-        KL: 0
-        IN: 0
-        CH: 0
-        FF: 0
-        GE: 0
-        KO: 0
-        KK: 0
+        MU: 10
+        KL: 10
+        IN: 10
+        CH: 10
+        FF: 10
+        GE: 10
+        KO: 10
+        KK: 10
 
     initialize: () =>
       pget @, 'race', races
@@ -33,6 +35,51 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
 
       if not @id
         @set('uuid', uuid())
+
+    incr: (attr, key) =>
+
+      value = @.attributes[attr]
+      if key
+        value[key] += 1
+        @trigger 'change:' + attr + ":" + key, this
+        @trigger 'change:' + attr, this
+      else
+        value += 1
+        @set attr, value
+
+    decr: (attr, key) =>
+
+      value = @.attributes[attr]
+      if key
+        if value[key] > 0
+          value[key] -= 1
+          @trigger 'change:' + attr + ":" + key, this
+          @trigger 'change:' + attr, this
+      else
+        if value > 0
+          value -= 1
+          @set attr, value
+
+    get: (attr, context) =>
+      ###
+        Overwritten for allowing @pget and @cget calls
+        and evaluating functions on the fly
+      ###
+
+      # .get(_) calls bypass property functions
+      if attr.startsWith("_")
+        return @.attributes[attr.substr(1)]
+
+      value = @.attributes[attr]
+
+      if _.isFunction(value)
+        value = value.call(context or this)
+
+      func = @['properties'][attr]
+      if func?
+        value = func(value)
+
+      return value
 
     calc_attributes: (attributes) ->
       ###
@@ -100,12 +147,12 @@ cget = (_this, prop, collections, callback) ->
     rtn = $.extend({}, rtn)
 
     for collection in collections
-      ref = _this.get(collection)
-      if not ref
+      model = _this.get(collection)
+      if not model
         continue
 
-      value = ref.get(prop)
-      $.extend(rtn, value)
+      _.each model.get.call(model, prop, _this), (value, key) =>
+        rtn[key] += value
 
     if callback
       return callback(rtn)

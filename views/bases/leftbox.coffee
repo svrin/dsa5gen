@@ -10,7 +10,8 @@ define [], () ->
       'box-left ' + @.name
 
     initialize: (options) ->
-      @listenTo @.model, @.event, @reset
+      for event in @.event
+        @listenTo @.model, event, @reset
 
       @reset()
 

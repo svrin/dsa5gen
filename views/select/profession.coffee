@@ -5,7 +5,7 @@
 define ['views/bases/selectbox', 'data/profession'], (BaseView, professions) ->
   class ProfessionView extends BaseView
     name: 'profession'
-    event: 'change:profession'
+    event: ['change:profession', 'change:culture', 'change:race', 'change:profile']
     collection: professions
 
     # Previous tab

@@ -6,7 +6,7 @@ define ['views/bases/leftbox', 'text!templates/profile.hbs'], (BaseView, hbs) ->
   class ProfileView extends BaseView
     template: _.template (hbs)
     name: 'profile'
-    event: 'change'
+    event: ['change:profession', 'change:culture', 'change:race', 'change:profile']
 
 
 
