@@ -4,9 +4,25 @@
     <% if (key in character.defaults.attributes) { %>
     <li data-href="attributes">
         <label title="<%= __(key) %>"><%= key %></label>
+
+        <% race = character.get('race'); attributes = race && race.get('attributes') %>
+        <% if (race && attributes && attributes[key]) { %>
+        <i>Rasse: <%= race.get('attributes')[key] %></i>
+        <% } %>
+
+        <% culture = character.get('culture'); attributes = culture && culture.get('attributes') %>
+        <% if (culture && attributes && attributes[key]) { %>
+        <i>Kultur: <%= culture.get('attributes')[key] %></i>
+        <% } %>
+
+        <% profession = character.get('profession'); attributes = profession && profession.get('attributes') %>
+        <% if (profession && attributes && attributes[key]) { %>
+        <i>Profession: <%= profession.get('attributes')[key] %></i>
+        <% } %>
+
         <span>
             <a href=":decr(attributes.<%=key%>)"></a>
-            <%= value || 0 %>
+            <%= Math.round(value || 0) %>
             <a href=":incr(attributes.<%=key%>)"></a>
         </span>
     </li>

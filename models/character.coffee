@@ -31,7 +31,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       pget @, 'culture', cultures
       pget @, 'profession', professions
 
-      cget @, 'attributes', ['race', 'culture', 'profession'], @calc_attributes
+      fget @, 'attributes', @calc_attributes
 
       if not @id
         @set('uuid', uuid())
@@ -62,7 +62,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
 
     get: (attr, context) =>
       ###
-        Overwritten for allowing @pget and @cget calls
+        Overwritten for allowing @pget calls
         and evaluating functions on the fly
       ###
 
@@ -77,14 +77,31 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
 
       func = @['properties'][attr]
       if func?
-        value = func(value)
+        return func(_.clone(value))
 
       return value
 
-    calc_attributes: (attributes) ->
+    calc_attributes: (attributes) =>
       ###
         Calculates the attributes for this character
       ###
+      character = @
+
+      race = character.get('race')
+      if race && race.get('attributes')
+        _.each race.get('attributes'), (value, key) ->
+          attributes[key] = (attributes[key] || 0) + value
+
+      culture = character.get('culture')
+      if culture && culture.get('attributes')
+        _.each culture.get('attributes'), (value, key) ->
+          attributes[key] = (attributes[key] || 0) + value
+
+      profession = character.get('profession')
+      if profession && profession.get('attributes')
+        _.each profession.get('attributes'), (value, key) ->
+          attributes[key] = (attributes[key] || 0) + value
+
       attributes["MR"] = (attributes["MR"] || 0) + (attributes["MU"] + attributes["KL"] + attributes["KO"]) / 5
 
       attributes["LeP"] = (attributes["LeP"] || 0) + (attributes["KO"] + attributes["KO"] + attributes["KK"]) / 2
@@ -123,7 +140,7 @@ uuid = ->
   )
 
 ###
-  A getter property wrapper for defining proxy getter
+  A getter property wrapper for defining a proxy getter
 
   pget @, name, collection
 
@@ -136,29 +153,15 @@ pget = (_this, prop, collection) ->
   _this['properties'][prop] = func
 
 ###
-  A getter property wrapper for defining a proxy getter over all collections
+  A getter property wrapper for defining a functional getter
 
-  cget @, name, callback
+  fget @, name, func
 
-  will add a property nam the uses function to resolve
+  will add a property name that uses the func to resolve @.get(name)
 ###
-cget = (_this, prop, collections, callback) ->
-  func = (rtn) ->
-    rtn = $.extend({}, rtn)
 
-    for collection in collections
-      model = _this.get(collection)
-      if not model
-        continue
-
-      _.each model.get.call(model, prop, _this), (value, key) =>
-        rtn[key] += value
-
-    if callback
-      return callback(rtn)
-    else
-      return rtn
-  _this['properties'][prop] = func
+fget = (_this, prop, func) ->
+_this['properties'][prop] = func
 
 
 

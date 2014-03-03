@@ -48,7 +48,7 @@ body {
 
 @link-color: #602020;
 
-a, [data-href] > i {
+a {
   cursor: pointer;
 
   font-size: 0.9em;
@@ -200,6 +200,18 @@ main {
     -moz-padding-start: 0px;
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  i {
+    font-size: 0.7em;
+
+    &:before {
+      content: '(';
+    }
+
+    &:after {
+      content: ')';
+    }
   }
 
   li {
