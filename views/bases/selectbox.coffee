@@ -34,7 +34,12 @@ define ['text!templates/selectbox.hbs'], (hbs) ->
 
     reset: =>
       @$el.attr "id", @.name
-      @$el.html @template({character: @model, collection: @collection, selected: @model.get(@.name), name: @.name})
+      @$el.html @template({character: @model, collection: @collection, name: @.name})
+
+      # Select the value if present
+      val = @model.get("_" + @.name)
+      if val
+        @$el.find("[value='" + val + "']").prop("checked", true)
 
     select: (event) =>
       @.model.set @.name, $(event.target).val()
