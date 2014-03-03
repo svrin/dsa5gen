@@ -23,6 +23,10 @@ define ['text!templates/selectbox.hbs'], (hbs) ->
 
     consider: =>
       if location.hash == "#" + @.name
+        if @.prev? and not @.model.get(@.prev)
+          window.location.href = "#" + @.prev
+          return
+
         @reset()
 
         if not @$el.is(":target")
@@ -34,6 +38,9 @@ define ['text!templates/selectbox.hbs'], (hbs) ->
 
     select: (event) =>
       @.model.set @.name, $(event.target).val()
+
+      if @.next?
+        window.location.href = "#" + @.next
 
     change: ->
       # @TODO Implement this

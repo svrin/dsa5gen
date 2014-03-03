@@ -8,6 +8,9 @@ define ['views/bases/selectbox', 'data/race'], (BaseView, races) ->
     event: 'change:race'
     collection: races
 
+    # Following tab
+    next: 'culture'
+
 
 
 

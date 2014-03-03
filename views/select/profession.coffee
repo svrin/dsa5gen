@@ -8,6 +8,9 @@ define ['views/bases/selectbox', 'data/profession'], (BaseView, professions) ->
     event: 'change:profession'
     collection: professions
 
+    # Previous tab
+    prev: 'culture'
+
 
 
 
