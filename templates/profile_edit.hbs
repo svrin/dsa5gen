@@ -1,46 +1,50 @@
 <h3><%= self.caption || __(self.name) %></h3>
 
 <dl>
-	<dt><label for="character.name">Name</label></dt>
-	<dd><input type="text" name="character.name" value="<%= character.get('name') %>" /></dd>
+	<dt><label for="profile.input.character.name">Name</label></dt>
+	<dd><input type="text" name="character.name" id="profile.input.character.name" value="<%= character.get('name') %>" /></dd>
 
 	<dt><label for="character.gender">Geschlecht</label></dt>
 	<dd>
-		<input type="radio" name="character.gender" value="m" /> männlich
-		<input type="radio" name="character.gender" value="w" /> weiblich
-		<input type="radio" name="character.gender" value="x" /> neutral/exotisch
+		<label><input type="radio" name="character.gender" value="m" /> männlich</label>
+		<label><input type="radio" name="character.gender" value="w" /> weiblich</label>
+		<label><input type="radio" name="character.gender" value="x" /> neutral/exotisch</label>
 	</dd>
 
     <% if (character.get('race')) { // begin race depended %> 
 	
-	<dt><label for="character.profile.hair">Haarfarbe</label></dt>
+	<dt><label for="profile.select.character.profile.hair">Haarfarbe</label></dt>
 	<dd>
-		<select name="character.profile.hair">
+		<select name="character.profile.hair" id="profile.select.character.profile.hair">
 		    <option value="" data-for="character.profile.hair"><%= character.get('profile')['hair'] %></option>
 			<option value="%!">Würfeln</option>
 			<option value="%?">Frei Wählen</option>
-			<optgroup></optgroup>
+			<optgroup label=""></optgroup>
 		</select>
 	</dd>
 	
-	<dt><label for="character.profile.eye">Augenfarbe</label></dt>
+	<dt><label for="profile.select.character.profile.eye">Augenfarbe</label></dt>
 	<dd>
-		<select name="character.profile.eye">
+		<select name="character.profile.eye" id="profile.select.character.profile.eye">
 		    <option value="" data-for="character.profile.eye"><%= character.get('profile')['eye'] %></option>
 			<option value="%!">Würfeln</option>
 			<option value="%?">Frei Wählen</option>
-			<optgroup></optgroup>
+			<optgroup label=""></optgroup>
 		</select>
 	</dd>
 	
-	<dt><label for="character.profile.height">Größe</label></dt>
+	<dt><label for="profile.input.character.profile.height">Größe</label></dt>
 	<dd>
-		<input type="number" name="character.profile.height" step="0.01" value="<%= character.get('profile')['height'] %>"  />
+		<input type="number"
+               id="profile.input.character.profile.height"
+               name="character.profile.height" step="0.01" value="<%= character.get('profile')['height'] %>"  />
 	</dd>
 	
-	<dt><label for="character.profile.weight">Gewicht</label></dt>
+	<dt><label for="profile.input.character.profile.weight">Gewicht</label></dt>
 	<dd>
-		<input type="number" name="character.profile.weight" step="1" value="<%= character.get('profile')['weight'] %>" />
+		<input type="number"
+               id="profile.input.character.profile.weight"
+               name="character.profile.weight" step="1" value="<%= character.get('profile')['weight'] %>" />
 	</dd>
 	
 	<% } // end race depended %>
