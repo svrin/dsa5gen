@@ -1,10 +1,25 @@
 <h3><%= self.caption || __(self.name) %></h3>
 
-<% self.collection.each(function(element) { %>
-<label>
-    <input type="radio" value="<%= element.id %>" name="character.<%= self.name %>"/>
+<dl>
+    <% self.collection.each(function(element) { %>
+    <dd>
+        <details>
+            <summary>
+                <input type="radio" value="<%= element.id %>"
+                       name="character.<%= self.name %>"
+                       id="selectbox.<%= self.name %>.character.<%= self.name %>" />
+                <label for="selectbox.<%= self.name %>.character.<%= self.name %>">
+                    <%= element.get('name', character) %>
+                </label>
+            </summary>
 
-    <span class="name"><%= element.get('name', character) %></span>
-    <span class="costs"><%= element.get('costs', character) %></span>
-</label>
-<% }); %>
+            <ul>
+                <li>
+                    <label>Kosten</label>
+                    <span><%= element.get('costs', character) %></span>
+                </li>
+            </ul>
+        </details>
+    </dd>
+    <% }); %>
+</dl>

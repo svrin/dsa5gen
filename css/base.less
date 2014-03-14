@@ -222,41 +222,41 @@ nav {
     margin-bottom: 0px;
   }
 
-  ul {
-    list-style-type: none;
+}
 
-    margin-top: 0px;
+ul {
+  list-style-type: none;
 
-    -webkit-padding-start: 0px;
-    -moz-padding-start: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+  margin-top: 0px;
+
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+i {
+  font-size: 0.7em;
+
+  &:before {
+    content: '(';
   }
 
-  i {
-    font-size: 0.7em;
+  &:after {
+    content: ')';
+  }
+}
 
-    &:before {
-      content: '(';
-    }
+li {
+  text-align: left;
 
+  > label {
     &:after {
-      content: ')';
+      content: ':';
     }
   }
 
-  li {
-    text-align: left;
-
-    > label {
-      &:after {
-        content: ':';
-      }
-    }
-
-    > span {
-      float: right;
-    }
+  .box-left & > span {
+    float: right;
   }
-
 }
