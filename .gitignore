@@ -72,4 +72,11 @@ nohup.out
 /.settings
 
 # npm
+.npm
 npm-debug.log
+
+# ~ config files
+.bash*
+.gitconfig
+.profile
+.ssh

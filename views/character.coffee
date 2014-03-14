@@ -11,21 +11,35 @@ define [], () ->
       @.$el.html('')
 
       # Storage of all views, so they are "runtime-bound" to the character instance view
-      @.views = {}
+      @.views = {'left': {}, 'tab': {}}
 
       # Left Boxes
       for view in ['profile', 'attributes', 'basevalues']
         require ['views/left/' + view], (View) =>
-          @.views[view] = new View({model: @model, container: @$el})
+          @.views['left'][view] = new View({model: @model, container: @$el})
+      
+      # Bind or Create the nav
+      @.$nav = @.$el.find 'nav'
+      if not @.$nav.length
+        @.$nav = $('<nav>').appendTo(@.$el)
 
       # Content Boxes for Collection Selection
       for view in ['race', 'culture', 'profession']
         require ['views/select/' + view], (View) =>
-          @.views[view] = new View({model: @model, container: @$el})
+          @.views['tab'][view] = new View({model: @model, container: @$el})
+          
+      # Tab Boxes
+      for view in ['profile']
+        require ['views/tab/' + view], (View) =>
+          @.views['tab'][view] = new View({model: @model, container: @$el})        
 
       # Special treatment of :incr / :decr calls
-      @.$el.on 'click', "a[href*=':incr']", @.incr
-      @.$el.on 'click', "a[href*=':decr']", @.decr
+      @.$el.off 'click.dsa5gen.incr'
+      @.$el.on 'click.dsa5gen.incr', "a[href*=':incr']", @.incr
+      @.$el.off 'click.dsa5gen.decr'
+      @.$el.on 'click.dsa5gen.decr', "a[href*=':decr']", @.decr
+        
+      return
 
     incr: (event) =>
       ###

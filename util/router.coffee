@@ -23,19 +23,22 @@ $ () ->
     welcome: () ->
       require ['views/welcome'], (WelcomeView) ->
         view = new WelcomeView()
+        $('main').attr "role", "navigation"
         $('main').html view.$el
 
     character: (cid) ->
       require ['views/character', 'views/error', 'data/character'], (CharacterView, ErrorView, characters) ->
         model = characters.get('c' + cid);
         if model
+          $('main').attr "role", "main"
           return new CharacterView({model: model})
         else
           new ErrorView({msg: "Der Character existiert nicht"})
 
     impressum: () ->
       require ['text!templates/impressum.hbs'], (Template) ->
-        $('main').html _.template(Template)({})
+      	$('main').attr "role", "document"
+      	$('main').html _.template(Template)({})
 
   router = new Router
   window.navigate = (url) ->

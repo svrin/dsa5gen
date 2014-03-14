@@ -1,5 +1,6 @@
 <h2><%= character.get('name') %></h2>
 <ul>
+    <% gender = character.get('gender'); %>
     <% profession = character.get('profession'); %>
     <% culture = character.get('culture'); %>
     <% race = character.get('race'); %>
@@ -8,7 +9,7 @@
     <li data-href="profession">
 
         <% if (profession) { %>
-        <%= profession.get('name') %>
+        <%= profession.get(gender == 'w' ? 'name_w' : 'name') %>
         <% } else { %>
         <a href="#profession">Profession wählen</a>
         <% } %>

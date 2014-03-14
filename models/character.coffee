@@ -15,6 +15,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       race: null
       culture: null
       profession: null
+      
+      profile: {}
 
       attributes:
         MU: 10
@@ -41,11 +43,13 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       value = @.attributes[attr]
       if key
         value[key] += 1
-        @trigger 'change:' + attr + ":" + key, this
-        @trigger 'change:' + attr, this
+        @trigger "change:#{attr[0]}:#{attr[1]}", this
+        @trigger "change:#{attr[0]}", this
       else
         value += 1
         @set attr, value
+        
+      return @
 
     decr: (attr, key) =>
 
@@ -53,12 +57,32 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       if key
         if value[key] > 0
           value[key] -= 1
-          @trigger 'change:' + attr + ":" + key, this
-          @trigger 'change:' + attr, this
+      	  @trigger "change:#{attr[0]}:#{attr[1]}", this
+      	  @trigger "change:#{attr[0]}", this
       else
         if value > 0
           value -= 1
           @set attr, value
+          
+      return @
+          
+    set: (attr..., value) =>
+      ###
+        Overwritten for allowing beside of the @set(attr, value) call
+        the additional @set(attr, key, value) call
+      ###
+      if not (0 < attr.length <= 2)
+        throw "Unexpected attribute set length: #{attr.length}"
+      
+      if attr.length == 1
+        super attr[0], value
+      else
+      	value = @.attributes[attr[0]]
+      	value[attr[1]] = value
+      	@trigger "change:#{attr[0]}:#{attr[1]}", this
+      	@trigger "change:#{attr[0]}", this
+      
+      return @
 
     get: (attr, context) =>
       ###
@@ -161,7 +185,7 @@ pget = (_this, prop, collection) ->
 ###
 
 fget = (_this, prop, func) ->
-_this['properties'][prop] = func
+  _this['properties'][prop] = func
 
 
 

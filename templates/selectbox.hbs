@@ -1,8 +1,8 @@
-<h2><%= __(name) %></h2>
+<h3><%= self.caption || __(self.name) %></h3>
 
-<% collection.each(function(element) { %>
+<% self.collection.each(function(element) { %>
 <label>
-    <input type="radio" value="<%= element.id %>" name="<%= name %>"/>
+    <input type="radio" value="<%= element.id %>" name="character.<%= self.name %>"/>
 
     <span class="name"><%= element.get('name', character) %></span>
     <span class="costs"><%= element.get('costs', character) %></span>

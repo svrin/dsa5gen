@@ -61,8 +61,14 @@ a {
   &:hover {
     text-decoration: none;
   }
+    
+  &.active, &:active {
+    text-decoration: none;
+  
+    color: inherit;
+  }
 
-  &:not([href*=':']):after {
+  &:not([href^=':']):not(.active):after {
     content: url('/images/arrow_right.gif');
 
     position: relative;
@@ -72,11 +78,11 @@ a {
     margin-right: 2px;
   }
 
-  &[href*=':incr'] {
+  &[href^=':incr'] {
     content: url('/images/arrow_right.gif');
   }
 
-  &[href*=':decr'] {
+  &[href^=':decr'] {
     content: url('/images/arrow_left.gif');
   }
 }
@@ -150,6 +156,29 @@ main {
 
 @left-width: 25%;
 
+nav {
+  position: relative;
+  
+  width: 100% - @left-width;
+  
+  margin-left: @left-width;
+  margin-bottom: -15px;
+  
+  z-index: 10;
+  
+  text-align: left;
+  
+  > a {
+    display: inline-block;
+    
+    border-image: url('/images/scape.png') 20 20 fill round;
+    border-width: 20px;
+    border-bottom: 5px;
+    
+    padding-left: 5px;
+  }
+}
+
 .box-tab {
   position: relative;
 
@@ -157,8 +186,10 @@ main {
   height: 100%;
 
   margin-left: @left-width;
+  
+  text-align: left;
 
-  h2 {
+  h3 {
     position: absolute;
 
     color: gray;
