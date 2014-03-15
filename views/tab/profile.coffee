@@ -21,12 +21,13 @@ define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs
     
     render: ->
       rtn = super()
-      
+
+      gender = this.model.get('gender') || 'x'
       race = this.model.get('race')
       profile = this.model.get('profile')
       
       # Gender
-      @.$el.find("[name='character.gender'][value=#{profile.gender}]").prop("selected", "selected")
+      @.$el.find("[name='character.gender'][value=#{gender}]").prop("checked", "checked")
       
       # The additional informations are only available when a race has been selected
       return rtn if not race
