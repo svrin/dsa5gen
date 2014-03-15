@@ -1,14 +1,14 @@
 <h3><%= self.caption || __(self.name) %></h3>
 
 <dl>
-    <% self.collection.each(function(element) { %>
+    <% self.collection.each(function(element, index) { %>
     <dd>
         <details>
             <summary>
                 <input type="radio" value="<%= element.id %>"
                        name="character.<%= self.name %>"
-                       id="selectbox.<%= self.name %>.character.<%= self.name %>" />
-                <label for="selectbox.<%= self.name %>.character.<%= self.name %>">
+                       id="selectbox.<%= self.name %>.<%= index %>" />
+                <label for="selectbox.<%= self.name %>.<%= index %>">
                     <%= element.get('name', character) %>
                 </label>
             </summary>
