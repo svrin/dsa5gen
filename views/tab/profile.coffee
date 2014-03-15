@@ -19,7 +19,7 @@ define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs
       if profile[attr]
       	node.find('option:first').text(profile[attr]).val(profile[attr]).prop('selected', 'selected')
     
-    reset: ->
+    render: ->
       rtn = super()
       
       race = this.model.get('race')
@@ -32,10 +32,10 @@ define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs
       return rtn if not race
       
       # Build the hair select
-      @.build_select race profile 'hair'
+      @.build_select race, profile, 'hair'
       
       # Build the eye select
-      @.build_select race profile 'eye'
+      @.build_select race, profile, 'eye'
       	
       # Height
       height = profile.height or race.get('profile')?.height[0]
@@ -57,7 +57,7 @@ define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs
       value = node.val()
       if value == "%!"
         options = $('optgroup option', node)
-        option = _.sample options  
+        option = $(_.sample options)
         option.prop "selected", "selected"
         super event
       else if value == "%?"

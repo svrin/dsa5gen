@@ -51,6 +51,7 @@ define [], () ->
       href = href.substr(0, href.length - 1)
 
       args = href.split('.')
+
       @.model.incr(args...)
 
     decr: (event) =>

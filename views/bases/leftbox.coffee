@@ -11,13 +11,13 @@ define [], () ->
 
     initialize: (options) ->
       for event in @.event
-        @listenTo @.model, event, @reset
+        @listenTo @.model, event, @render
 
-      @reset()
+      @render()
 
       options['container'].append @$el
 
-    reset: ->
+    render: ->
       @$el.html @template({character: @model})
 
 

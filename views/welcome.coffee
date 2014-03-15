@@ -19,7 +19,7 @@ define ['text!templates/welcome.hbs', 'data/character', 'models/character'], (hb
       @listenTo @collection, "add", @add
       @listenTo @collection, "remove", @remove
       @listenTo @collection, "change", @change
-      @listenTo @collection, "reset", @reset
+      @listenTo @collection, "reset", @render
 
       @collection.fetch()
 
@@ -32,7 +32,7 @@ define ['text!templates/welcome.hbs', 'data/character', 'models/character'], (hb
     change: (character) ->
       @$el.find("#" + character.id).replaceWith $(@template(character.attributes)).attr("id", character.id)
 
-    reset: () ->
+    render: () ->
       @$el.html ""
 
       @$el.append $(@template({name: characterModel.prototype.defaults.name})).addClass('new')

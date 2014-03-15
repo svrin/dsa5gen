@@ -10,9 +10,9 @@ define ['text!templates/error.hbs'], (hbs) ->
     className: 'error'
 
     initialize: (options) ->
-      @reset options['msg']
+      @render options['msg']
 
-    reset: (msg) ->
+    render: (msg) ->
       @$el.prepend @template({msg: msg})
 
   return ErrorView

@@ -14,7 +14,8 @@ define [], () ->
       'box-tab ' + @.name
 
     initialize: (options) ->
-      @listenTo @.model, @.event, @render
+      for event in @.event
+        @listenTo @.model, event, @render
       
       $('<a>').attr('href', "##{@.name}").text(@.caption or __(@.name)).addClass('link-tab').appendTo $('nav')
 
