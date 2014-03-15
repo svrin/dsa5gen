@@ -38,33 +38,25 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       if not @id
         @set('uuid', uuid())
 
-    incr: (attr, key) =>
+    incr: (attr, key, value) =>
+      if not value
+        value = 1
 
-      value = @.attributes[attr]
-      if key
-        value[key] += 1
-        @trigger "change:#{attr[0]}:#{attr[1]}", this
-        @trigger "change:#{attr[0]}", this
+      if attr and key
+        @.set attr, key, @.attributes[attr][key] + value
       else
-        value += 1
-        @set attr, value
-        
-      return @
+        @.set attr, @.attributes[attr] + value
 
-    decr: (attr, key) =>
+    decr: (attr, key, value) =>
+      if not value
+        value = 1
 
-      value = @.attributes[attr]
-      if key
-        if value[key] > 0
-          value[key] -= 1
-      	  @trigger "change:#{attr[0]}:#{attr[1]}", this
-      	  @trigger "change:#{attr[0]}", this
+      gtz = (value) -> value > 0 and value or 0
+
+      if attr and key
+        @.set attr, key, gtz(@.attributes[attr][key] - value)
       else
-        if value > 0
-          value -= 1
-          @set attr, value
-          
-      return @
+        @.set attr, gtz(@.attributes[attr] - value)
           
     set: (attr..., value) =>
       ###
@@ -77,8 +69,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       if attr.length == 1
         super attr[0], value
       else
-      	value = @.attributes[attr[0]]
-      	value[attr[1]] = value
+      	ref = @.attributes[attr[0]]
+      	ref[attr[1]] = value
       	@trigger "change:#{attr[0]}:#{attr[1]}", this
       	@trigger "change:#{attr[0]}", this
       
