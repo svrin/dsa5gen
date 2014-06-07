@@ -32,7 +32,7 @@ races.add
     height: [158, 1, 20, 4, 6]
 
     weight: ->
-      this.get('height') - 120
+      this.get('profile')?['height']? - 120
 
     attributes:
       LE: 23

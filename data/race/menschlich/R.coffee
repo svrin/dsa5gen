@@ -10,7 +10,7 @@ define "data/race/menschlich", [], () ->
     costs: 0
 
     weight: ->
-      this.get('height') - 100
+      this.get('profile')?['height']? - 100
 
     attributes:
       LE: 25

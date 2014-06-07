@@ -12,7 +12,7 @@ define "data/race/elfisch", [], () ->
     height: [168, 2, 20]
 
     weight: ->
-      this.get('height') - 120
+      this.get('profile')?['height']? - 120
 
     attributes:
       LE: 20
