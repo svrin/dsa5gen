@@ -5,75 +5,88 @@
 cultures.add [
   name: __("Horasreich")
 
-  costs: 3
-
-  vantages:
-    auto: []
-    recommended: [
-      __("Ausrüstungsvorteil")
-      __("Besonderer Besitz")
-      __("Soziale Anpassungsfähigkeit")
-      __("Verbindungen")
-      __("Arroganz")
-      __("Eitelkeit")
-      __("Jähzorn")
-      __("Rachsucht")
-      __("Verpflichtungen")
-      __("Vorurteile")
-    ]
-    uncommon: [
-      __("Feenfreund"),
-      __("Koboldfreund"),
-      __("Raumangst")
-    ]
-    reduced: [
-      __("Nandusgefälliges Wissen")
-    ]
-
-  skills: [
-    [__("Armbrust"), 1]
-    [__("Dolche"), 1]
-    [__("Fechtwaffen"), 1]
-    [__("Infanteriewaffen"), 1]
-    [__("Raufen"), 1]
-
-    [__("Schwimmen"), 1]
-    [__("Tanzen"), 1]
-
-    [__("Betören"), 1]
-    [__("Etikette"), 2]
-    [__("Gassenwissen"), 2]
-    [__("Menschenkenntnis") , 2]
-    [__("Überreden"), 1]
-
-    [__("Geschichtswissen"), 1]
-    [__("Götter/Kulte"), 2]
-    [__("Mechanik"), 1]
-    [__("Rechnen"), 2]
-    [__("Rechtskunde"), 1]
-    [__("Sagen/Legenden"), 2]
-
-    [__("Garethi (Horathi)"), -> this.get('attributes')["KL"] - 2]
-    choice(5, __("Tulamidya"), __("Rogolan"))
-    [__("Kusliker Zeichen"), 2]
-
-    [__("Ackerbau"), 1]
-
-    __("Kulturkunde (Horasreich)")
+  social: [
+    [2000, [__("Adlig")],
+     [__("Vogt"), __("Amtsadel"), 1],
+     [__("Nobili/a"), __("Titularadel"), 1],
+     [__("Esquirio/a"), __("Titularadel"), 2, __("Erbadel"), 2],
+     [__("Domicello/a"), __("Titularadel"),  2, __("Erbadel"), 2],
+     [__("Cavalliere/a"), __("Titularadel"), 3, __("Erbadel"), 3],
+     [__("Baronet/Baroness"), __("Titularadel"), 4, __("Erbadel"), 4],
+     [__("Baron/in"), __("Erbadel"), 5]]
+    [2500, [__("Oberschicht")]]
+    [500, []]
+    [100, [__("Unterschicht")]]
+    false
   ]
 
+  speech: [
+    __("Sprache (Garethi)")
+    __("Garethi (Horathi)")
+  ]
+
+  lettering: [
+    __("Kusliker Zeichen")
+  ]
+
+  knowledge: [
+    __("Kulturkunde (Horasreich)")
+    __("Horasreich (Aurelat)")
+    __("Horasreich (Coverna)")
+    __("Horasreich (Septimana)")
+    __("Horasreich (Wilder Süden)")
+    __("Horasreich (Yaquirien)")
+  ]
+
+  common: [
+    __("Soziale Anpassungsfähigkeit")
+
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Vorurteile)")
+
+    __("Betören")
+    __("Etikette")
+    __("Fahrzeuge")
+    __("Gassenwissen")
+    __("Geographie")
+    __("Geschichtswissen")
+    __("Handel")
+    __("Magiekunde")
+    __("Mechanik")
+    __("Rechnen")
+    __("Rechtskunde")
+    __("Seefahrt")
+    __("Staatskunst")
+    __("Tanzen")
+  ]
+
+  uncommon: [
+    __("Begabung in Wildnistalenten")
+
+    __("Kind der Wildnis")
+    __("Schlechte Eigenschaft (Platzangst)")
+    __("Schlechte Eigenschaft (Raumangst)")
+
+    __("Fährtensuchen")
+    __("Fliegen")
+    __("Pflanzenkunde")
+    __("Tierkunde")
+    __("Wildnisleben")
+
+    __("Stammeskrieger")
+  ]
 
   professions: [
-    __("Botenreiter"),
-    __("Einbrecher"),
-    __("Entdecker"),
-    __("Gaukler"),
-    __("Jäger"),
-    __("Krieger"),
-    __("Magier"),
-    __("Pirat"),
-    __("Söldner"),
-    __("Streuner"),
-    __("Wundarzt")
+    __("Profession (profan)")
+
+    __("Alchimist")
+    __("Druide")
+    __("Hexe")
+    __("Magiedilettant")
+    __("Magier")
+    __("Scharlatan")
+
+    __("Geweihter (Zwölfgötterkult)")
   ]
 ]

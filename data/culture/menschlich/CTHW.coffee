@@ -1,89 +1,98 @@
 ###
-  Thorwal
+  Thorwaler
 ###
 
 cultures.add [
-  name: __("Thorwal")
+  name: __("Thorwaler")
 
-  costs: 4
-
-  attributes:
-    AuP: 2
-
-  vantages:
-    auto: [
-      [__("Aberglaube"), 5]
-    ]
-    recommended: [
-      __("Ausdauernd"),
-      __("Balance")
-      __("Eisern"),
-      __("Glück")
-      __("Innerer Kompass")
-      __("Kampfrausch")
-      __("Hohe Lebenskraft")
-      __("Richtungssinn"),
-      __("Schnelle Heilung"),
-      __("Zäher Hund")
-      __("Blutrausch")
-      __("Neugier"),
-      __("Rachsucht"),
-      __("Raumangst")
-      __("Totenangst")
-      __("Vorurteile")
-    ]
-    uncommon: [
-      __("Adlige Abstammung")
-      __("Soziale Anpassungsfähigkeit")
-      __("Krankhafte Reinlichkeit")
-      __("Meeresangst")
-      __("Platzangst")
-    ]
-    reduced: [
-      __("Meereskundig")
-      __("Waffenloser Kampfstil (Hammerfaust)")
-    ]
-
-  skills: [
-    [__("Hiebwaffen"), 1]
-    [__("Raufen"), 2]
-    [__("Wurfbeile"), 2]
-
-    [__("Athletik"), 1]
-    [__("Körperbeherschung"), 1]
-    [__("Schwimmen"), 3]
-    [__("Zechen"), 3]
-
-    [__("Fesseln/Entfesseln"), 1]
-    [__("Fischen/Angeln"), 3]
-    [__("Orientierung"), 3]
-
-    [__("Götter/Kulte"), 1]
-    [__("Sagen/Legenden"), 4]
-    [__("Sternkunde"), 1]
-
-    [__("Thorwalsch"), -> this.get('attributes')["KL"] - 2]
-    [__("Garethi"), -> this.get('attributes')["KL"] - 4]
-
-    [__("Boote Fahren"), 2]
-    [__("Holzbearbeitung"), 1]
-    [__("Seefahrt"), 2]
-
-    __("Kulturkunde (Thorwal)")
+  social: [
+    false
+    [2500, [__("Oberschicht")]]
+    [500, []]
+    [100, [__("Unterschicht")]]
+    false
   ]
 
+  speech: [
+    __("Sprache (Throwalsch)")
+    __("Throwalsch (Throwal-Dialekt)")
+    __("Throwalsch (Premer-Dialekt)")
+    __("Throwalsch (Olporter-Dialekt)")
+    __("Throwalsch (Waskirer Hochland-Dialekt)")
+    __("Throwalsch (Dialekt der Olportsteine)")
+  ]
+
+  lettering: [
+    __("Thorwalsche Runen")
+  ]
+
+  knowledge: [
+    __("Kulturkunde (Thorwal)")
+    __("Thorwal (Nordthrowal)")
+    __("Thorwal (Premer Halbinsel)")
+    __("Thorwal (Südthorwal)")
+    __("Thorwal (Waskirer Hochland)")
+    __("Thorwal (Olportsteine)")
+  ]
+
+  common: [
+    __("Balance")
+    __("Eisern")
+    __("Entfernungssinn")
+    __("Glück")
+    __("Kampfrausch")
+    __("Herausragende Eigenschaft (MU)")
+    __("Herausragende Eigenschaft (KO)")
+    __("Herausragende Eigenschaft (KK)")
+    __("Hohe Lebenskraft")
+    __("Richtungssinn")
+    __("Verbesserte Regeneration (Lebensenergie)")
+    __("Zäher Hund")
+
+    __("Blutrausch")
+    __("Schlechte Eigenschaft (Aberglaube)")
+    __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Rachsucht)")
+    __("Schlechte Eigenschaft (Raumangst)")
+    __("Schlechte Eigenschaft (Vorurteile)")
+
+    __("Einschüchtern")
+    __("Fischen & Angeln")
+    __("Geographie")
+    __("Orientierung")
+    __("Sagen & Legenden")
+    __("Seefahrt")
+    __("Selbstbeherrschung")
+    __("Steinbearbeitung")
+    __("Sternkunde")
+    __("Zechen")
+  ]
+
+  uncommon: [
+    __("Soziale Anpassungsfähigkeit")
+
+    __("Schlechte Eigenschaft (Meeresangst)")
+    __("Schlechte Eigenschaft (Platzangst)")
+
+    __("Etikette")
+    __("Fliegen")
+    __("Kochen & Backen")
+    __("Staatskunst")
+
+    __("Ritter")
+    __("Stammeskrieger")
+  ]
 
   professions: [
-    __("Botenreiter"),
-    __("Entdecker"),
-    __("Gaukler"),
-    __("Jäger")
-    __("Krieger"),
-    __("Kundschafter"),
-    __("Magier"),
-    __("Pirat"),
-    __("Söldner")
-    __("Streuner"),
-    __("Wundarzt")
+    __("Profession (profan)")
+
+    __("Alchimist")
+    __("Druide")
+    __("Hexe")
+    __("Magiedilettant")
+    __("Magier")
+    __("Scharlatan")
+
+    __("Geweihter (Zwölfgötterkult)")
   ]
 ]

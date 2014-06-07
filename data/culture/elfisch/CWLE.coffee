@@ -1,46 +1,47 @@
 ###
-  Auelfen
+  Waldelfen
 ###
 
 require ["data/culture/elfisch"], (C) -> cultures.add _.extend C,
-  name: __("Auelfen")
+  name: __("Waldelfen")
 
   speech: [
     __("Sprache (Isdira)")
-    __("Isdira (auelfischer Dialekt)")
+    __("Isdira (waldelfischer Dialekt)")
   ]
 
   knowledge: [
-    __("Kulturkunde (Auelfen)")
+    __("Kulturkunde (Waldelfen)")
   ]
 
   common: [
-    __("Begabung in Handwerkstalenten")
+    __("Begabung in Körpertalenten")
+    __("Begabung in Naturtalenten")
     __("Begabung in Kampftechniken")
     __("Gefahreninstinkt")
+    __("Magische Einstimmung (Wesen des Waldes)")
     __("Verbundenheit (Feen)")
     __("Verbundenheit (Tiere)")
-    __("Magische Einstimmung (Wesen der Auen)")
 
     __("Artefaktgebunden (Instrument)")
+    __("Körpergebundene Kraft")
     __("Magieblockade (KL)")
     __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Raumangst)")
     __("Schlechte Eigenschaft (Vorurteile)")
     __("Schlechte Eigenschaft (Weltfremd)")
-    __("Wilde Magie")
+    __("Unfähig in Wissenstalenten")
 
     __("Betören")
-    __("Einschüchtern")
     __("Fährtensuchen")
-    __("Fischen & Angeln")
+    __("Klettern")
     __("Körperbeherrschung")
+    __("Magiekunde")
     __("Musizieren")
     __("Orientierung")
     __("Pflanzenkunde")
     __("Singen")
     __("Sinnesschärfe")
-    __("Seefahrt")
     __("Tanzen")
     __("Tierkunde")
     __("Verbergen")
@@ -49,8 +50,10 @@ require ["data/culture/elfisch"], (C) -> cultures.add _.extend C,
 
   uncommon: [
     __("Begabung in Wissenstalenten")
+    __("Soziale Anpassungsfähigkeit")
 
     __("Schlechte Eigenschaft (Goldgier)")
+    __("Schlechte Eigenschaft (Jähzorn)")
     __("Schlechte Eigenschaft (Rachsucht)")
     __("Unfähig in Körpertalenten")
     __("Unfähig in Naturtalenten")
@@ -60,6 +63,7 @@ require ["data/culture/elfisch"], (C) -> cultures.add _.extend C,
     __("Fahrzeuge")
     __("Rechtskunde")
     __("Schlösserknacken")
+    __("Seefahrt")
     __("Staatskunst")
     __("Zechen")
   ]

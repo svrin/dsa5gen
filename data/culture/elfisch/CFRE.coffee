@@ -1,46 +1,47 @@
 ###
-  Auelfen
+  Firnelfen
 ###
 
 require ["data/culture/elfisch"], (C) -> cultures.add _.extend C,
-  name: __("Auelfen")
+  name: __("Firnelfen")
 
   speech: [
     __("Sprache (Isdira)")
-    __("Isdira (auelfischer Dialekt)")
+    __("Isdira (firnelfischer Dialekt)")
   ]
 
   knowledge: [
-    __("Kulturkunde (Auelfen)")
+    __("Kulturkunde (Firnelfen)")
   ]
 
   common: [
-    __("Begabung in Handwerkstalenten")
+    __("Begabung in Körpertalenten")
+    __("Begabung in Naturtalenten")
     __("Begabung in Kampftechniken")
     __("Gefahreninstinkt")
-    __("Verbundenheit (Feen)")
+    __("Magische Einstimmung (Wesen der Eises)")
+    __("Richtungssinn")
     __("Verbundenheit (Tiere)")
-    __("Magische Einstimmung (Wesen der Auen)")
 
     __("Artefaktgebunden (Instrument)")
     __("Magieblockade (KL)")
     __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Neugier)")
     __("Schlechte Eigenschaft (Vorurteile)")
     __("Schlechte Eigenschaft (Weltfremd)")
+    __("Unfähig in Wissenstalenten")
     __("Wilde Magie")
 
-    __("Betören")
-    __("Einschüchtern")
     __("Fährtensuchen")
+    __("Fesseln")
     __("Fischen & Angeln")
+    __("Klettern")
     __("Körperbeherrschung")
     __("Musizieren")
     __("Orientierung")
     __("Pflanzenkunde")
+    __("Selbstbeherrschung")
     __("Singen")
     __("Sinnesschärfe")
-    __("Seefahrt")
     __("Tanzen")
     __("Tierkunde")
     __("Verbergen")
@@ -49,15 +50,20 @@ require ["data/culture/elfisch"], (C) -> cultures.add _.extend C,
 
   uncommon: [
     __("Begabung in Wissenstalenten")
+    __("Soziale Anpassungsfähigkeit")
 
+    __("Schlechte Eigenschaft (Dunkelangst)")
     __("Schlechte Eigenschaft (Goldgier)")
+    __("Schlechte Eigenschaft (Platzangst)")
     __("Schlechte Eigenschaft (Rachsucht)")
+    __("Schlechte Eigenschaft (Raumangst)")
     __("Unfähig in Körpertalenten")
     __("Unfähig in Naturtalenten")
 
     __("Alchimie")
     __("Brett- & Glücksspiel")
     __("Fahrzeuge")
+    __("Fliegen")
     __("Rechtskunde")
     __("Schlösserknacken")
     __("Staatskunst")

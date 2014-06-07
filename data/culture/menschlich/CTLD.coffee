@@ -1,13 +1,16 @@
 ###
-  Südaventurien
+  Tulamidenlande
 ###
 
 cultures.add [
-  name: __("Südaventurien")
+  name: __("Tulamidenlande")
 
   social: [
     [2000, [__("Adlig")],
-     [__(" "), __("Amtsadel"), 1, __("Erbadel"), 1, __("Titularadel"), 1]]
+     [__("Wesier"), __("Amtsadel"), 1],
+     [__("Bey/sa"), __("Erbadel"), 1],
+     [__("Emir"), __("Erbadel"), 2],
+     [__("Sultan"), __("Erbadel"), 4]]
     [2500, [__("Oberschicht")]]
     [500, []]
     [100, [__("Unterschicht")]]
@@ -15,63 +18,60 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
-    __("Garethi (Brabaci)")
-    __("Garethi (Charypto)")
-    __("Garethi (Gatamo)")
+    __("Sprache (Tulamidya)")
+    __("Tulamidya (Mhanadisch-Balashidisch)")
   ]
 
   lettering: [
-    __("Kusliker Zeichen")
+    __("Schrift (Tulamidya)")
   ]
 
   knowledge: [
-    __("Kulturkunde (Südaventurien)")
-    __("Südaventurien (Al'Anfa)")
-    __("Südaventurien (Brabak)")
-    __("Südaventurien (Bukanier)")
-    __("Südaventurien (Chrohop)")
-    __("Südaventurien (Mengbilla)")
-    __("Südaventurien (Salem)")
+    __("Kulturkunde (Tulamidenlande)")
+    __("Tulamidenlande (Balash)")
+    __("Tulamidenlande (Fasar)")
+    __("Tulamidenlande (Gorien)")
+    __("Tulamidenlande (Knuchom)")
+    __("Tulamidenlande (Mhanadistan)")
+    __("Tulamidenlande (Thalusien)")
+    __("Tulamidenlande (Yalaiad)")
+    __("Tulamidenlande (Szintotal)")
   ]
 
   common: [
+    __("Glück")
     __("Hitzeresistenz")
     __("Soziale Anpassungsfähigkeit")
 
-    __("Kälteempfindlichkeit")
     __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Arroganz)")
     __("Schlechte Eigenschaft (Eitelkeit)")
     __("Schlechte Eigenschaft (Goldgier)")
     __("Schlechte Eigenschaft (Jähzorn)")
     __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Vorurteile)")
 
-    __("Betören")
-    __("Fischen & Angeln")
+    __("Brett- & Glücksspiel")
     __("Gassenwissen")
+    __("Geschichtswissen")
+    __("Götter & Kulte")
     __("Handel")
-    __("Heilkunde Gift")
-    __("Menschenkenntnis")
-    __("Orientierung")
-    __("Pflanzenkunde")
-    __("Seefahrt")
-    __("Staatskunst")
+    __("Magiekunde")
+    __("Reiten")
+    __("Sagen & Legenden")
+    __("Sternkunde")
+    __("Taschendiebstahl")
     __("Überreden")
-    __("Willenskraft")
-    __("Zechen")
   ]
 
   uncommon: [
     __("Kälteresistenz")
+    __("Verbundenheit (Feen)")
+    __("Verbundenheit (Kobolde)")
 
     __("Schlechte Eigenschaft (Angst vor Menschenmassen)")
     __("Schlechte Eigenschaft (Raumangst)")
-    __("Schlechte Eigenschaft (Totenangst)")
 
     __("Fahrzeuge")
-    __("Fliegen")
-    __("Geographie")
 
     __("Ritter")
     __("Stammeskrieger")
@@ -83,10 +83,9 @@ cultures.add [
     __("Alchimist")
     __("Druide")
     __("Hexe")
-    __("Magiedilettant")
     __("Magier")
     __("Scharlatan")
-    __("Zaubertänzer (Sharisadim)")
+    __("Zaubertänzer (Sharisadmin)")
 
     __("Geweihter (Zwölfgötterkult)")
   ]

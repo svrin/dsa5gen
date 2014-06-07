@@ -1,15 +1,10 @@
 ###
-  Tulamiden
+  Die Menschen / Tulamiden
 ###
 
-races.add [
-  name: __("Tulamiden")
-  name_m: __("Tulamide")
-  name_w: __("Tulamidin")
+require ["data/race/menschlich"], (R) -> races.add _.extend R,
+    name: __("Tulamiden")
 
-  costs: 0
-
-  profile:
     hair: [
       [__("schwarz"), 1, 6]
       [__("dunkelbraun"), 7, 12]
@@ -27,32 +22,21 @@ races.add [
       [__("blau"), 20]
     ]
     height: [155, 2, 20]
-    weight: ->
-      this.get('profile')['height'] - 105
 
-  attributes:
-    LeP: 10
-    AuP: 10
-    MR: -4
-
-  vantages:
-    auto: []
-    recommended: []
-    uncommon: [
-      __("Herausragende Balance"),
-      __("Nahrungsrestriktion")
+    cultures: [
+      __("Aranien")
+      __("Ferkinas")
+      __("Maraskaner")
+      __("Novadis")
+      __("Südaventurien")
+      __("Trollzacker")
+      __("Tulamidenlande")
+      __("Zahori")
     ]
-    reduced: []
 
-  skills: []
-
-  cultures: [
-    __("Tulamidische Stadtstaaten")
-    __("Novadis")
-    __("Südaventurien")
-  ]
-]
-
+    common: [
+      __("Hitzeresistenz")
+    ]
 
 
 

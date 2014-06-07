@@ -38,7 +38,7 @@ I18N_CALL_REGEX = ///
         '
         |           # or...
         "           # double-quoted...
-            (.+?        # (match anything, but lazily, not greedily)
+            ([^"]+?        # (match anything, but lazily, not greedily)
             [^\\])      # and the closing quote is one that's *not* preceded by a `\`
         "
     )
