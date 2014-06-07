@@ -2,7 +2,7 @@
   Die Elfen
 ###
 
-define "data/race/elifsch", [], () ->
+define "data/race/elfisch", [], () ->
     name: __("Elf")
     name_m: __("Elf")
     name_w: __("Elfin")
