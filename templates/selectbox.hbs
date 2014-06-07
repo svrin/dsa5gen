@@ -1,7 +1,21 @@
 <h3><%= self.caption || __(self.name) %></h3>
 
+<% if (self.options) { %>
+    <% option = $("[name='view." + self.name + ".options']").val() %>
+    <select data-action="render", name="view.<%= self.name %>.options">
+        <% _.each(self.options, function(element, index) { %>
+            <% if (option == index) { %>
+                <option selected="selected" value="<%= index %>"><%= element[0] %></option>
+            <% } else  { %>
+                <option value="<%= index %>"><%= element[0] %></option>
+            <% } %>
+        <% }); %>
+    </select>
+<% } %>
+
 <dl>
     <% self.collection.each(function(element, index) { %>
+          <% if (!self.options || !option || self.options[option][1](element)) { %>
     <dd>
         <details>
             <summary>
@@ -16,10 +30,11 @@
             <ul>
                 <li>
                     <label>Kosten</label>
-                    <span><%= element.get('costs', character) %></span>
+                    <span><%= element.get('costs', character) || 0 %></span>
                 </li>
             </ul>
         </details>
     </dd>
+          <% } %>
     <% }); %>
 </dl>
