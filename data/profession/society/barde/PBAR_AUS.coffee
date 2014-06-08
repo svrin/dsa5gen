@@ -24,6 +24,14 @@ class PBAR_AUS extends PBAR
     [__("Betören"), 4]
     [__("Etikette"), 4]
     [__("Gassenwissen"), 4]
+    [__("Menschenkenntnis"), 7]
+    [__("Überreden"), 7]
+    [__("Verkleiden"), 4]
+
+    [__("Wildnisleben"), 4]
+
+    [__("Geographie"), 4]
+    [__("Geschichtswissen"), 4]
     [__("Götter & Kulte"), 4]
     [__("Rechnen"), 4]
     [__("Rechtskunde"), 4]
@@ -34,17 +42,6 @@ class PBAR_AUS extends PBAR
     [__("Holzbearbeitung"), 4]
     [__("Musizieren"), 4]
   ]
-
-  cultures:
-    uncommon: [
-      __("Ferkinas")
-      __("Fjarninger")
-      __("Gjalsker")
-      __("Mohas")
-      __("Nivesen")
-      __("Trollzacker")
-      __("Elfen")
-    ]
 
 professions.add new PBAR_AUS()
 

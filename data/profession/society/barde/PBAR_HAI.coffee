@@ -24,6 +24,14 @@ class PBAR_HAI extends PBAR
     [__("Betören"), 4]
     [__("Etikette"), 4]
     [__("Gassenwissen"), 7]
+    [__("Menschenkenntnis"), 7]
+    [__("Überreden"), 7]
+    [__("Verkleiden"), 4]
+
+    [__("Wildnisleben"), 4]
+
+    [__("Geographie"), 4]
+    [__("Geschichtswissen"), 4]
     [__("Götter & Kulte"), 4]
     [__("Rechnen"), 4]
     [__("Rechtskunde"), 4]
