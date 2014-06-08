@@ -3,6 +3,9 @@
 ###
 
 define "data/culture/elfisch", [], () ->
+  groups: [
+    __("Elfen")
+  ]
 
   social: [
     false

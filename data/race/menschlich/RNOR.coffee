@@ -2,8 +2,12 @@
   Die Menschen / Nivese
 ###
 
-require ["data/race/menschlich"], (R) -> races.add _.extend R,
-    name: __("Norbarde")
+require ["data/race/menschlich"], (R) ->
+  races.add _.extend R,
+    name: __("Mensch/Norbarde")
+
+    name_m: __("Norbarde")
+    name_w: __("Norbardin")
 
     hair: [
       [__("schwarz"), 1, 17]

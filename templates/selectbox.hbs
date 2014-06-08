@@ -1,29 +1,31 @@
 <h3><%= self.caption || __(self.name) %></h3>
 
+<% gender = character.get('gender'); %>
+
 <% if (self.options) { %>
-    <% option = $("[name='view." + self.name + ".options']").val() %>
-    <select data-action="render", name="view.<%= self.name %>.options">
-        <% _.each(self.options, function(element, index) { %>
-            <% if (option == index) { %>
-                <option selected="selected" value="<%= index %>"><%= element[0] %></option>
-            <% } else  { %>
-                <option value="<%= index %>"><%= element[0] %></option>
-            <% } %>
-        <% }); %>
-    </select>
+<% option = $("[name='view." + self.name + ".options']").val() %>
+<select data-action="render", name="view.<%= self.name %>.options">
+<% _.each(self.options, function(element, index) { %>
+<% if (option == index) { %>
+<option selected="selected" value="<%= index %>"><%= element[0] %></option>
+<% } else  { %>
+<option value="<%= index %>"><%= element[0] %></option>
+<% } %>
+<% }); %>
+</select>
 <% } %>
 
 <dl>
     <% self.collection.each(function(element, index) { %>
-          <% if (!self.options || !option || self.options[option][1](element)) { %>
+    <% if (!self.options || !option || self.options[option][1](element)) { %>
     <dd>
         <details>
             <summary>
                 <input type="radio" value="<%= element.id %>"
                        name="character.<%= self.name %>"
-                       id="selectbox.<%= self.name %>.<%= index %>" />
+                       id="selectbox.<%= self.name %>.<%= index %>"/>
                 <label for="selectbox.<%= self.name %>.<%= index %>">
-                    <%= element.get('name', character) %>
+                    <%= element.get('name_' + gender, character) || element.get('name', character) %>
                 </label>
             </summary>
 
@@ -35,6 +37,6 @@
             </ul>
         </details>
     </dd>
-          <% } %>
+    <% } %>
     <% }); %>
 </dl>

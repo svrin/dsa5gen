@@ -2,8 +2,12 @@
   Die Menschen / Waldmensch
 ###
 
-require ["data/race/menschlich"], (R) -> races.add _.extend R,
-    name: __("Waldmensch")
+require ["data/race/menschlich"], (R) ->
+  races.add _.extend R,
+    name: __("Mensch/Waldmensch")
+
+    name_m: __("Waldmensch")
+    name_w: __("Waldmenschin")
 
     hair: [
       [__("schwarz"), 1, 5]

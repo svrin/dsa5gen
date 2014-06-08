@@ -2,8 +2,12 @@
   Die Menschen / Nivese
 ###
 
-require ["data/race/menschlich"], (R) -> races.add _.extend R,
-    name: __("Nivese")
+require ["data/race/menschlich"], (R) ->
+  races.add _.extend R,
+    name: __("Mensch/Nivese")
+
+    name_m: __("Nivese")
+    name_w: __("Nivesin")
 
     hair: [
       [__("kupferrot"), 1, 15]

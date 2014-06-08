@@ -2,8 +2,12 @@
   Die Menschen / Utulu
 ###
 
-require ["data/race/menschlich"], (R) -> races.add _.extend R,
-    name: __("Utulu")
+require ["data/race/menschlich"], (R) ->
+  races.add _.extend R,
+    name: __("Mensch/Utulu")
+
+    name_m: __("Utulu")
+    name_w: __("Utulu")
 
     hair: [
       [__("schwarz"), 1, 17]

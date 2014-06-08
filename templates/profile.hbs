@@ -9,7 +9,7 @@
     <li data-href="profession">
 
         <% if (profession) { %>
-        <%= profession.get(gender == 'w' ? 'name_w' : 'name') %>
+        <%= profession.get('name_' + gender) || profession.get('name') %>
         <% } else { %>
         <a href="#profession">Profession wählen</a>
         <% } %>
@@ -17,7 +17,7 @@
     <% } if (race) { %>
     <li data-href="culture">
         <% if (culture) { %>
-        <%= culture.get('name') %>
+        <%= culture.get('name_' + gender) || profession.get('name') %>
         <% } else { %>
         <a href="#culture">Kultur wählen</a>
         <% } %>

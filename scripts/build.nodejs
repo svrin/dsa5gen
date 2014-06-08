@@ -38,7 +38,10 @@ for (var index in dirList) {
             dir = this.name;
 
             builder('/')
-                .concat(glob.sync(sourceDir + "/" + dir + "/**/*.js"))
+                .concat(glob.sync(sourceDir + "/" + dir + "/**/*.coffee"))
+                .perform(function (content) {
+                    return coffee.compile(content, {bare: true});
+                })
                 .perform(function (content) {
                     return content.replace(/.{2}sourceMappingURL.+/g, '');
                 })

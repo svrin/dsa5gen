@@ -2,8 +2,12 @@
   Die Menschen / Tulamiden
 ###
 
-require ["data/race/menschlich"], (R) -> races.add _.extend R,
+require ["data/race/menschlich"], (R) ->
+  races.add _.extend R,
     name: __("Tulamiden")
+
+    name_m: __("Tulamide")
+    name_w: __("Tulamidin")
 
     hair: [
       [__("schwarz"), 1, 6]

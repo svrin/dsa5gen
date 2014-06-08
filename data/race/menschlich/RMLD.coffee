@@ -2,8 +2,12 @@
   Die Menschen / Mittelländer
 ###
 
-require ["data/race/menschlich"], (R) -> races.add _.extend R,
-    name: __("Mittelländer")
+require ["data/race/menschlich"], (R) ->
+  races.add _.extend R,
+    name: __("Mensch/Mittelländer")
+
+    name_m: __("Mittelländer")
+    name_w: __("Mittelländerin")
 
     hair: [
       [__("schwarz"), 1, 3]

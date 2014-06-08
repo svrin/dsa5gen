@@ -2,8 +2,12 @@
   Die Menschen / Thorwaler
 ###
 
-require ["data/race/menschlich"], (R) -> races.add _.extend R,
-    name: __("Thorwaler")
+require ["data/race/menschlich"], (R) ->
+  races.add _.extend R,
+    name: __("Mensch/Thorwaler")
+
+    name_m: __("Thorwaler")
+    name_w: __("Thorwalerin")
 
     hair: [
       [__("blond"), 1, 8]
