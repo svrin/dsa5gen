@@ -127,6 +127,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       attributes["WS"] = Math.ceil((attributes["KO"] || 0) / 2)
 
       attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0)
+      attributes["EDG"] = 3
 
       attributes["AT/PA_GE"] = 5 + Math.max(attributes["GE"] - 10, 0)
       attributes["AT/PA_KK"] = 5 + Math.max(attributes["KK"] - 10, 0)
