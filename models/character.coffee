@@ -4,7 +4,7 @@
 ###
 
 define ["models/base", 'data/race', 'data/culture', 'data/profession',
-        'data/lifegrade'], (Model, races, cultures, professions, lifegrades) ->
+        'data/lifegrade', 'data/skill'], (Model, races, cultures, professions, lifegrades, skills) ->
   class Character extends Model
     idAttribute: 'uuid'
 
@@ -106,42 +106,50 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
       return value
 
-    calc_skills: (skills) =>
+    calc_skills: (top) =>
       ###
         Calulcates the skills for a character
       ###
       character = @
-      skills = skills || {}
 
+      base = {}
       lambda = (element) =>
         if _.isFunction(element)
           element = element(character)
 
         if _.isString(element)
-          skills[element] = true
+          base[element] = true
         else if _.isArray(element)
-          skills[element[0]] = (skills[element[0]] || 0) + element[1]
+          base[element[0]] = (base[element[0]] || 0) + element[1]
         else if element.constructor.name == 'ChoiceView'
           console.log "Do something about this"
         else
           throw "Unexpected element in list"
 
+      # Add content from race
       race = character.get('race')
       if race
         _.each race.get('auto'), lambda
 
+      # Add content from culture
       culture = character.get('culture')
       if culture
         _.each culture.get('auto'), lambda
 
+      # Add content from profession
       profession = character.get('profession')
       if profession
         _.each profession.get('auto'), lambda
 
-      return skills
+      # Now base each skill with it min and add the current value on top of it
+      skills.each (skill) =>
+        key = skill.get('name')
+        if skill.get('min') >= 1
+          base[key] = Math.max(base[key] || 0, skill.get('min'))
 
+        base[key] = (base[key] || 0) + (top[key] || 0)
 
-
+      return base
 
     calc_costs: (costs) =>
       ###
@@ -161,6 +169,39 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       profession = character.get('profession')
       if profession
         costs += profession.get('costs') || 0
+
+      # Add costs from attributes
+      _.each character.attributes['attributes'], (value, key) =>
+        costs += switch value
+          when 20 then 1320
+          when 19 then 1040
+          when 18 then 800
+          when 17 then 600
+          when 16 then 440
+          when 15 then 320
+          when 14 then 240
+          when 13 then 200
+          when 12 then 160
+          when 11 then 120
+          when 10 then 80
+          when  9 then 40
+          else
+            0
+
+      # Add costs from skills
+      _.each character.attributes['skills'], (value, key) =>
+        skill = skills.get(key)
+        if skill.get('costs')
+          costs += value * skill.get('costs')
+        else if skill.get('SF') == "A"
+          costs += value * 5
+        else if skill.get('SF') == "B"
+          costs += value * 10
+        else if skill.get('SF') == "C"
+          costs += value * 15
+        else
+          console.error "Unknown cost table for skill " + skill.get('name')
+
 
       return costs
 

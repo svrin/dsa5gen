@@ -16,12 +16,13 @@
         <ul>
             <% _.each(collection, function(element, index) { %>
             <% var key = element.get('name'); %>
-            <li>
+            <% var value = values[key] || element.get('min'); %>
+            <li data-key="<%=self.for%>.<%=key%>" data-value="<%= value %>">
                 <label><%= element.get('name_' + gender, character) || element.get('name', character) %></label>
 
                 <span>
                     <a href=":decr(<%=self.for%>.<%=key%>)"></a>
-                    <span data-for="<%=self.for%>.<%=key%>"><%= values[key] || element.get('min') %></span>
+                    <span data-for="<%=self.for%>.<%=key%>"><%= value %></span>
                     <a href=":incr(<%=self.for%>.<%=key%>)"></a>
                 </span>
 

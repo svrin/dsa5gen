@@ -23,6 +23,7 @@ define ['views/bases/tabbox', 'text!templates/valuebox.hbs'], (TabView, hbs) ->
     item_change: (character, element) =>
       value = character.get(element[0])[element[1]]
       $("[data-for='#{element[0]}.#{element[1]}']").text value
+      $("[data-key='#{element[0]}.#{element[1]}']").attr "data-value", value
 
 
 

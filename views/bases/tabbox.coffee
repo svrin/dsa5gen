@@ -49,6 +49,7 @@ define [], () ->
       name = node.attr('name')
 
       $("[data-for='#{name}']").text node.val()
+      $("[data-key='#{name}']").attr "data-value", node.val()
 
       if name && name.startsWith('character')
         args = name.split('.').slice(1)
