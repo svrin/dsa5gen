@@ -250,6 +250,86 @@ nav {
   color: darkred;
 }
 
+[data-count="roman"][data-value='1'] [data-for] {
+  &:after {
+    content: "I";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.0ex;
+    font-size: 0.8em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='2'] [data-for] {
+  &:after {
+    content: "II";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.1ex;
+    font-size: 0.8em;
+    padding-right: 0.1em;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='3'] [data-for] {
+  &:after {
+    content: "III";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.2ex;
+    font-size: 0.8em;
+    padding-right: 0em;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='4'] [data-for] {
+  &:after {
+    content: "IV";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.1ex;
+    font-size: 0.8em;
+    padding-right: 0.1em;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='5'] [data-for] {
+  &:after {
+    content: "V";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.0ex;
+    font-size: 0.8em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='6'] [data-for] {
+  &:after {
+    content: "VI";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.1ex;
+    font-size: 0.8em;
+    padding-right: 0.1em;
+  }
+  visibility: hidden;
+}
+
 .box-values {
   dl {
     display: table;

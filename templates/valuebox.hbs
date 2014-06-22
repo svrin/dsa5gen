@@ -17,7 +17,7 @@
             <% _.each(collection, function(element, index) { %>
             <% var key = element.get('name'); %>
             <% var value = values[key] || element.get('min'); %>
-            <li data-key="<%=self.for%>.<%=key%>" data-value="<%= value %>">
+            <li data-key="<%=self.for%>.<%=key%>" data-value="<%= value %>" data-count="<%= element.get('count') %>">
                 <label><%= element.get('name_' + gender, character) || element.get('name', character) %></label>
 
                 <span>
@@ -26,8 +26,12 @@
                     <a href=":incr(<%=self.for%>.<%=key%>)"></a>
                 </span>
 
+                <% if (element.get('dice') || element.get('dices')) { %>
                 <span><%= element.get('dice') || element.get('dices').join("/") %></span>
+                <% } %>
+                <% if (element.get('BE') !== undefined) { %>
                 <span><%= __(element.get('BE')) %></span>
+                <% } %>
                 <span><%= element.get('SF') %></span>
             </li>
             <% }); %>

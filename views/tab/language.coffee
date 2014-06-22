@@ -1,16 +1,16 @@
 ###
-  View for selecting battle skills
+  View for selecting languages
 ###
 
 define ['views/bases/valuebox', 'data/skill'], (BaseView, skills) ->
   class SkillView extends BaseView
-    name: 'battle'
+    name: 'language'
     for: 'skills'
-    caption: __("Kampftalente")
+    caption: __("Sprachen & Schriften")
 
     event: ['change:race', 'change:culture', 'change:profession']
     collection: skills
-    view: [__('Kampftechniken'), __('Kampfsonderfertigkeiten')]
+    view: [__('Sprache'), __('Schrift')]
 
 
 
