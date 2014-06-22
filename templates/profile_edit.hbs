@@ -4,12 +4,22 @@
 	<dt><label for="profile.input.character.name">Name</label></dt>
 	<dd><input type="text" name="character.name" id="profile.input.character.name" value="<%= character.get('name') %>" /></dd>
 
-	<dt><label for="character.gender">Geschlecht</label></dt>
-	<dd>
+    <dt><label for="character.gender"><%= __('Geschlecht') %></label></dt>
+    <dd>
 		<label><input type="radio" name="character.gender" value="m" /> männlich</label>
 		<label><input type="radio" name="character.gender" value="w" /> weiblich</label>
 		<label><input type="radio" name="character.gender" value="x" /> neutral/exotisch</label>
 	</dd>
+
+    <dt><label for="character.lifegrade"><%= __('Erfahrungsgrad') %></label></dt>
+    <dd>
+        <% self.lifegrades.each( function (lifegrade) { %>
+        <label>
+            <input type="radio" name="character.lifegrade" value="<%= lifegrade.id %>"/>
+            <%= lifegrade.get('name') %>
+        </label>
+        <% }); %>
+    </dd>
 
     <% if (character.get('race')) { // begin race depended %> 
 	
@@ -37,7 +47,7 @@
 	<dd>
 		<input type="number"
                id="profile.input.character.profile.height"
-               name="character.profile.height" step="0.01" value="<%= character.get('profile')['height'] %>"  />
+               name="character.profile.height" step="1" value="<%= character.get('profile')['height'] %>"/>
         Halbfinger
 	</dd>
 	

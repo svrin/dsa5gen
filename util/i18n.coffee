@@ -8,6 +8,9 @@ window.mapping = {}
 
 __ = (x) ->
 
+  # NaN is still NaN
+  return x if !x
+
   # Find the base of the string, excluding all (...) spezialisations
   base = x
   while base.indexOf("(") >= 0

@@ -3,7 +3,8 @@
   with choosen skills and equipment
 ###
 
-define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, races, cultures, professions) ->
+define ["models/base", 'data/race', 'data/culture', 'data/profession',
+        'data/lifegrade'], (Model, races, cultures, professions, lifegrades) ->
   class Character extends Model
     idAttribute: 'uuid'
 
@@ -15,6 +16,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       race: null
       culture: null
       profession: null
+      lifegrade: null
 
       profile: {}
 
@@ -32,8 +34,10 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       pget @, 'race', races
       pget @, 'culture', cultures
       pget @, 'profession', professions
+      pget @, 'lifegrade', lifegrades
 
       fget @, 'attributes', @calc_attributes
+      fget @, 'costs', @calc_costs
 
       if not @id
         @set('uuid', uuid())
@@ -97,6 +101,28 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
         return func(_.clone(value))
 
       return value
+
+    calc_costs: (costs) =>
+      ###
+        Calculates the costs for this character
+      ###
+      character = @
+      costs = costs? || 0
+
+      race = character.get('race')
+      if race
+        costs += race.get('costs') || 0
+
+      culture = character.get('culture')
+      if culture
+        costs += culture.get('costs') || 0
+
+      profession = character.get('profession')
+      if profession
+        costs += profession.get('costs') || 0
+
+      return costs
+
 
     calc_attributes: (attributes) =>
       ###

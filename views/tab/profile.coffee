@@ -2,14 +2,15 @@
   View for editing the profile information for a character
 ###
 
-define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs) ->
+define ['views/bases/tabbox', 'text!templates/profile_edit.hbs', 'data/lifegrade'], (BaseView, hbs, lifegrades) ->
   class ProfileView extends BaseView
     template: _.template (hbs)
+    lifegrades: lifegrades
     
     name: 'profile'
     caption: __("Profil")
-    
-    event: ['change:profile', 'change:race']
+
+    event: ['change:profile', 'change:race', 'change:lifegrade']
     
     build_select: (race, profile, attr) =>
       node = @.$el.find("[name='character.profile.#{attr}']")
@@ -25,9 +26,14 @@ define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs
       gender = this.model.get('gender') || 'x'
       race = this.model.get('race')
       profile = this.model.get('profile')
+      lifegrade = this.model.get('lifegrade')
       
       # Gender
       @.$el.find("[name='character.gender'][value=#{gender}]").prop("checked", "checked")
+
+      # Lifegrade
+      if lifegrade
+        @.$el.find("[name='character.lifegrade'][value=#{lifegrade.id}]").prop("checked", "checked")
       
       # The additional informations are only available when a race has been selected
       return rtn if not race

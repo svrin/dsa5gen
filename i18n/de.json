@@ -1,5 +1,9 @@
 {
 
+    /* "templates/profile.hbs #1309 */
+    /* "templates/profile.hbs #1461 */
+    "AP": "Abenteuerpunkte",
+
     /* "data/profession/military/PSTK.coffee #1218 */
     /* "data/profession/society/gaukler/PGAU.coffee #1192 */
     /* "data/profession/society/gelehrter/PGEH.coffee #918 */
@@ -220,6 +224,7 @@
     /* "data/culture/menschlich/CARA.coffee #824 */
     /* "data/culture/zwergisch/CHGZ.coffee #396 */
     /* "data/profession/military/PSTK.coffee #1469 */
+    /* "data/profession/society/haendler/PHAE.coffee #702 */
     "Begabung in Gesellschaftstalenten": "Begabung in Gesellschaftstalenten",
 
     /* "data/culture/elfisch/CAUE.coffee #258 */
@@ -324,6 +329,7 @@
     "Beyroun/a": "Beyroun/a",
 
     /* "data/profession/society/gaukler/PGAU.coffee #1368 */
+    /* "data/profession/society/haendler/PHAE.coffee #957 */
     "Blind": "Blind",
 
     /* "data/culture/menschlich/CARA.coffee #1454 */
@@ -340,6 +346,7 @@
     /* "data/profession/military/PSTK.coffee #1337 */
     /* "data/profession/society/gaukler/PGAU.coffee #1384 */
     /* "data/profession/society/gelehrter/PGEH.coffee #939 */
+    /* "data/profession/society/haendler/PHAE.coffee #973 */
     /* "data/race/RHEL.coffee #1777 */
     /* "data/race/RZWE.coffee #1551 */
     /* "data/race/elfisch/R.coffee #1789 */
@@ -386,6 +393,7 @@
     "Buskur": "Buskur",
 
     /* "data/profession/society/barde/PBAR.coffee #1063 */
+    /* "data/profession/society/haendler/PHAE.coffee #902 */
     "CH": "Charisma",
 
     /* "data/culture/menschlich/CHOR.coffee #321 */
@@ -429,6 +437,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #227 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #230 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #233 */
+    /* "data/profession/society/haendler/PHAE.coffee #279 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #237 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #220 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #223 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #220 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #208 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #205 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #217 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #226 */
     "Dolche": "Dolche",
 
     /* "data/culture/menschlich/CHOR.coffee #254 */
@@ -530,6 +547,8 @@
     /* "data/profession/society/barde/PBAR.coffee #1299 */
     /* "data/profession/society/gaukler/PGAU.coffee #1645 */
     /* "data/profession/society/gelehrter/PGEH.coffee #1122 */
+    /* "data/profession/society/haendler/PHAE.coffee #1216 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #912 */
     "Elfen": "Elfen",
 
     /* "data/race/elfisch/R.coffee #112 */
@@ -582,6 +601,10 @@
     /* "data/culture/menschlich/CZYK.coffee #169 */
     "Erbadel": "Erbadel",
 
+    /* "templates/profile.hbs #1141 */
+    /* "templates/profile_edit.hbs #630 */
+    "Erfahrungsgrad": "Erfahrungsgrad",
+
     /* "data/culture/zwergisch/CEZZ.coffee #43 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #658 */
     /* "data/race/RZWE.coffee #1080 */
@@ -630,6 +653,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #250 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #253 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #256 */
+    /* "data/profession/society/haendler/PHAE.coffee #361 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #376 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #422 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #305 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #302 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #290 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #312 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #358 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #342 */
     "Etikette": "Etikette",
 
     /* "data/profession/society/gaukler/PGAU_DOM.coffee #334 */
@@ -639,6 +671,12 @@
     /* "data/profession/society/gaukler/PGAU.coffee #1300 */
     /* "data/profession/society/gelehrter/PGEH.coffee #826 */
     "FF": "Fingerfertigkeit",
+
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #131 */
+    "Fahrende Händlerin": "Fahrende Händlerin",
+
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #97 */
+    "Fahrender Händler": "Fahrender Händler",
 
     /* "data/culture/elfisch/CAUE.coffee #1337 */
     /* "data/culture/elfisch/CFRE.coffee #1545 */
@@ -670,6 +708,15 @@
     /* "data/profession/society/gaukler/PGAU_VAG.coffee #877 */
     /* "data/profession/society/gaukler/PGAU_WAH.coffee #846 */
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #905 */
+    /* "data/profession/society/haendler/PHAE.coffee #638 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #653 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #751 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #583 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #580 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #625 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #616 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #773 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #705 */
     "Fahrzeuge": "Fahrzeuge",
 
     /* "data/culture/menschlich/CMAR.coffee #1185 */
@@ -680,8 +727,16 @@
     /* "data/profession/society/barde/PBAR.coffee #1172 */
     /* "data/profession/society/gaukler/PGAU.coffee #1518 */
     /* "data/profession/society/gelehrter/PGEH.coffee #995 */
+    /* "data/profession/society/haendler/PHAE.coffee #1089 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #785 */
     /* "data/race/menschlich/RTLD.coffee #632 */
     "Ferkinas": "Ferkinas",
+
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #91 */
+    "Fernhändler": "Fernhändler",
+
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #119 */
+    "Fernhändlerin": "Fernhändlerin",
 
     /* "data/culture/elfisch/CFRE.coffee #794 */
     "Fesseln": "Fesseln",
@@ -730,6 +785,8 @@
     /* "data/profession/society/barde/PBAR.coffee #1193 */
     /* "data/profession/society/gaukler/PGAU.coffee #1539 */
     /* "data/profession/society/gelehrter/PGEH.coffee #1016 */
+    /* "data/profession/society/haendler/PHAE.coffee #1110 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #806 */
     /* "data/race/menschlich/RTHW.coffee #608 */
     "Fjarninger": "Fjarninger",
 
@@ -795,6 +852,9 @@
     /* "data/culture/menschlich/CSVL.coffee #637 */
     /* "data/culture/menschlich/CTZK.coffee #909 */
     /* "data/culture/menschlich/CZYK.coffee #751 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #336 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #496 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #480 */
     "Fährtensuchen": "Fährtensuchen",
 
     /* "data/culture/menschlich/CBOR.coffee #257 */
@@ -862,6 +922,15 @@
     /* "data/profession/society/gaukler/PGAU_VAG.coffee #622 */
     /* "data/profession/society/gaukler/PGAU_WAH.coffee #591 */
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #650 */
+    /* "data/profession/society/haendler/PHAE.coffee #385 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #400 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #446 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #329 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #326 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #314 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #336 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #382 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #366 */
     "Gassenwissen": "Gassenwissen",
 
     /* "data/culture/menschlich/CZAH.coffee #933 */
@@ -929,6 +998,15 @@
     /* "data/profession/military/PSGE.coffee #1003 */
     /* "data/profession/military/PSTK.coffee #1044 */
     "Gefahrensinstinkt": "Gefahrensinstinkt",
+
+    /* "data/profession/society/haendler/PHAE.coffee #826 */
+    "Geiz": "Geiz",
+
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #92 */
+    "Geldwechsler": "Geldwechsler",
+
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #121 */
+    "Geldwechslerin": "Geldwechslerin",
 
     /* "data/profession/society/gelehrter/PGEH.coffee #190 */
     "Gelehrte": "Gelehrte",
@@ -1019,6 +1097,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #357 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #303 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #306 */
+    /* "data/profession/society/haendler/PHAE.coffee #499 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #514 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #560 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #443 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #440 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #486 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #477 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #582 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #566 */
     "Geographie": "Geographie",
 
     /* "data/profession/society/barde/PBAR_GES.coffee #95 */
@@ -1062,6 +1149,9 @@
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #329 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #332 */
     "Geschichtswissen": "Geschichtswissen",
+
+    /* "templates/profile_edit.hbs #281 */
+    "Geschlecht": "Geschlecht",
 
     /* "data/culture/menschlich/CFJA.coffee #2098 */
     "Geweihter (Angara)": "Geweihter (Angara)",
@@ -1139,6 +1229,8 @@
     /* "data/profession/society/barde/PBAR.coffee #1216 */
     /* "data/profession/society/gaukler/PGAU.coffee #1562 */
     /* "data/profession/society/gelehrter/PGEH.coffee #1039 */
+    /* "data/profession/society/haendler/PHAE.coffee #1133 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #829 */
     /* "data/race/menschlich/RTHW.coffee #631 */
     "Gjalsker": "Gjalsker",
 
@@ -1171,9 +1263,18 @@
     /* "data/culture/menschlich/CZAH.coffee #455 */
     "Glück": "Glück",
 
+    /* "data/profession/society/haendler/PHAE.coffee #841 */
+    "Goldgier": "Goldgier",
+
     /* "data/culture/menschlich/CBOR.coffee #181 */
     /* "data/culture/menschlich/CN&A.coffee #391 */
     "Graf": "Graf",
+
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #91 */
+    "Großhändler": "Großhändler",
+
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #119 */
+    "Großhändlerin": "Großhändlerin",
 
     /* "data/profession/society/gaukler/PGAU.coffee #1091 */
     "Gutausehend": "Gutausehend",
@@ -1231,6 +1332,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #415 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #361 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #364 */
+    /* "data/profession/society/haendler/PHAE.coffee #525 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #540 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #586 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #469 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #466 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #512 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #503 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #608 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #592 */
     "Götter & Kulte": "Götter & Kulte",
 
     /* "data/profession/society/barde/PBAR_HAI.coffee #84 */
@@ -1253,6 +1363,15 @@
     /* "data/culture/menschlich/CNOR.coffee #680 */
     /* "data/culture/menschlich/CSAV.coffee #1185 */
     /* "data/culture/menschlich/CTLD.coffee #1340 */
+    /* "data/profession/society/haendler/PHAE.coffee #663 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #678 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #776 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #608 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #605 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #650 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #641 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #798 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #730 */
     "Handel": "Handel",
 
     /* "data/culture/menschlich/CFER.coffee #2141 */
@@ -1266,6 +1385,18 @@
 
     /* "data/culture/menschlich/CARA.coffee #179 */
     "Haran/i": "Haran/i",
+
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #87 */
+    "Hausier": "Hausier",
+
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #111 */
+    "Hausierin": "Hausierin",
+
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #86 */
+    "Hehler": "Hehler",
+
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #109 */
+    "Hehlerin": "Hehlerin",
 
     /* "data/culture/menschlich/CFER.coffee #2162 */
     /* "data/culture/menschlich/CFJA.coffee #1981 */
@@ -1492,9 +1623,40 @@
     "Horasreich (Yaquirien)": "Horasreich (Yaquirien)",
 
     /* "data/culture/menschlich/CZAH.coffee #1438 */
+    /* "data/profession/society/haendler/PHAE.coffee #37 */
+    /* "data/profession/society/haendler/PHAE.coffee #129 */
+    /* "data/profession/society/haendler/PHAE.coffee #158 */
     "Händler": "Händler",
 
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #54 */
+    "Händler/Fahrender Händler": "Händler/Fahrender Händler",
+
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #54 */
+    "Händler/Fernhändler": "Händler/Fernhändler",
+
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #54 */
+    "Händler/Geldwechsler": "Händler/Geldwechsler",
+
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #54 */
+    "Händler/Großhändler": "Händler/Großhändler",
+
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #54 */
+    "Händler/Hausier": "Händler/Hausier",
+
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #54 */
+    "Händler/Hehler": "Händler/Hehler",
+
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #54 */
+    "Händler/Kauffahrer": "Händler/Kauffahrer",
+
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #54 */
+    "Händler/Tauschhändler": "Händler/Tauschhändler",
+
+    /* "data/profession/society/haendler/PHAE.coffee #182 */
+    "Händlerin": "Händlerin",
+
     /* "data/profession/society/barde/PBAR.coffee #1095 */
+    /* "data/profession/society/haendler/PHAE.coffee #994 */
     "Hässlich": "Hässlich",
 
     /* "data/culture/zwergisch/CBOZ.coffee #901 */
@@ -1513,6 +1675,7 @@
 
     /* "data/profession/military/PKRR.coffee #1189 */
     /* "data/profession/military/PSGE.coffee #1245 */
+    /* "data/profession/society/haendler/PHAE.coffee #889 */
     "IN": "Intuition",
 
     /* "data/race/RZWE.coffee #1365 */
@@ -1576,6 +1739,7 @@
 
     /* "data/profession/society/barde/PBAR.coffee #1050 */
     /* "data/profession/society/gelehrter/PGEH.coffee #813 */
+    /* "data/profession/society/haendler/PHAE.coffee #876 */
     "KL": "Klugheit",
 
     /* "data/profession/military/PSTK.coffee #1424 */
@@ -1598,6 +1762,7 @@
     /* "data/profession/military/PSTK.coffee #1072 */
     /* "data/profession/society/gaukler/PGAU.coffee #1345 */
     /* "data/profession/society/gelehrter/PGEH.coffee #895 */
+    /* "data/profession/society/haendler/PHAE.coffee #934 */
     /* "data/race/RHEL.coffee #1695 */
     /* "data/race/RZWE.coffee #1312 */
     /* "data/race/elfisch/R.coffee #1707 */
@@ -1616,6 +1781,12 @@
     /* "data/profession/military/PSGE.coffee #501 */
     /* "data/profession/military/PSTK.coffee #536 */
     "Kampftechnik": "Kampftechnik",
+
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #90 */
+    "Kauffahrer": "Kauffahrer",
+
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #117 */
+    "Kauffahrerin": "Kauffahrerin",
 
     /* "data/culture/menschlich/CBOR.coffee #819 */
     /* "data/culture/menschlich/CFER.coffee #644 */
@@ -1829,6 +2000,9 @@
     /* "data/profession/society/gaukler/PGAU_VAG.coffee #418 */
     /* "data/profession/society/gaukler/PGAU_WAH.coffee #387 */
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #446 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #272 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #269 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #278 */
     "Körperbeherrschung": "Körperbeherrschung",
 
     /* "data/culture/elfisch/CWLE.coffee #557 */
@@ -1916,6 +2090,8 @@
     /* "data/culture/menschlich/CTLD.coffee #1357 */
     /* "data/profession/society/gelehrter/PGEH_HIS.coffee #383 */
     /* "data/profession/society/gelehrter/PGEH_PHI.coffee #442 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #616 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #638 */
     "Magiekunde": "Magiekunde",
 
     /* "data/culture/menschlich/CBOR.coffee #1406 */
@@ -2059,6 +2235,15 @@
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #678 */
     /* "data/profession/society/gelehrter/PGEH_MAW.coffee #291 */
     /* "data/profession/society/gelehrter/PGEH_RET.coffee #280 */
+    /* "data/profession/society/haendler/PHAE.coffee #413 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #428 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #474 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #357 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #354 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #342 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #365 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #410 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #394 */
     "Menschenkenntnis": "Menschenkenntnis",
 
     /* "data/race/menschlich/R.coffee #99 */
@@ -2130,6 +2315,8 @@
     /* "data/profession/society/barde/PBAR.coffee #1237 */
     /* "data/profession/society/gaukler/PGAU.coffee #1583 */
     /* "data/profession/society/gelehrter/PGEH.coffee #1060 */
+    /* "data/profession/society/haendler/PHAE.coffee #1154 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #850 */
     /* "data/race/menschlich/RUTU.coffee #434 */
     /* "data/race/menschlich/RWLD.coffee #484 */
     "Mohas": "Mohas",
@@ -2177,6 +2364,7 @@
 
     /* "data/profession/society/gaukler/PGAU.coffee #1233 */
     /* "data/profession/society/gelehrter/PGEH.coffee #680 */
+    /* "data/profession/society/haendler/PHAE.coffee #860 */
     "Neid": "Neid",
 
     /* "data/profession/society/barde/PBAR.coffee #1031 */
@@ -2208,6 +2396,8 @@
     /* "data/profession/society/barde/PBAR.coffee #1255 */
     /* "data/profession/society/gaukler/PGAU.coffee #1601 */
     /* "data/profession/society/gelehrter/PGEH.coffee #1078 */
+    /* "data/profession/society/haendler/PHAE.coffee #1172 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #868 */
     /* "data/race/RHEL.coffee #902 */
     /* "data/race/menschlich/RNIV.coffee #594 */
     "Nivesen": "Nivesen",
@@ -2313,6 +2503,11 @@
     /* "data/culture/zwergisch/CEZZ.coffee #900 */
     /* "data/profession/military/PSTK.coffee #743 */
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #300 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #319 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #365 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #429 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #525 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #509 */
     "Orientierung": "Orientierung",
 
     /* "data/profession/society/gelehrter/PGEH_ANA.coffee #317 */
@@ -2345,6 +2540,9 @@
 
     /* "data/profession/society/gelehrter/PGEH_PHI.coffee #117 */
     "Philosphin": "Philosphin",
+
+    /* "data/profession/society/haendler/PHAE.coffee #1013 */
+    "Platzangst": "Platzangst",
 
     /* "data/profession/society/gaukler/PGAU_POS.coffee #92 */
     "Possenreißer": "Possenreißer",
@@ -2404,6 +2602,7 @@
     /* "data/profession/society/barde/PBAR.coffee #64 */
     /* "data/profession/society/gaukler/PGAU.coffee #68 */
     /* "data/profession/society/gelehrter/PGEH.coffee #72 */
+    /* "data/profession/society/haendler/PHAE.coffee #68 */
     "Profession (profan)": "Profession (profan)",
 
     /* "data/profession/society/P.coffee #88 */
@@ -2411,6 +2610,7 @@
     /* "data/profession/society/barde/PBAR.coffee #94 */
     /* "data/profession/society/gaukler/PGAU.coffee #98 */
     /* "data/profession/society/gelehrter/PGEH.coffee #102 */
+    /* "data/profession/society/haendler/PHAE.coffee #98 */
     "Profession (society)": "Profession (society)",
 
     /* "data/profession/military/PSTK.coffee #1276 */
@@ -2469,6 +2669,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #445 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #391 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #418 */
+    /* "data/profession/society/haendler/PHAE.coffee #555 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #570 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #642 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #499 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #496 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #542 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #533 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #664 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #622 */
     "Rechnen": "Rechnen",
 
     /* "data/profession/society/gelehrter/PGEH_RET.coffee #131 */
@@ -2510,6 +2719,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #468 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #414 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #441 */
+    /* "data/profession/society/haendler/PHAE.coffee #578 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #593 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #665 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #523 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #520 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #565 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #556 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #687 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #645 */
     "Rechtskunde": "Rechtskunde",
 
     /* "data/culture/elfisch/CSPE.coffee #921 */
@@ -2649,6 +2867,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #495 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #441 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #468 */
+    /* "data/profession/society/haendler/PHAE.coffee #605 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #620 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #692 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #550 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #547 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #592 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #583 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #714 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #672 */
     "Sagen & Legenden": "Sagen & Legenden",
 
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #619 */
@@ -2991,6 +3218,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #206 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #209 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #212 */
+    /* "data/profession/society/haendler/PHAE.coffee #258 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #216 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #199 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #202 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #199 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #187 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #184 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #196 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #205 */
     "Schrift": "Schrift",
 
     /* "data/culture/elfisch/C.coffee #237 */
@@ -3036,6 +3272,7 @@
     /* "data/culture/zwergisch/CAMZ.coffee #1477 */
     /* "data/culture/zwergisch/CBIZ.coffee #1274 */
     /* "data/culture/zwergisch/CEZZ.coffee #1416 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #303 */
     "Schwimmen": "Schwimmen",
 
     /* "data/culture/elfisch/CAUE.coffee #971 */
@@ -3059,6 +3296,7 @@
     /* "data/culture/zwergisch/CBIZ.coffee #1294 */
     /* "data/culture/zwergisch/CBOZ.coffee #1633 */
     /* "data/culture/zwergisch/CEZZ.coffee #1436 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #821 */
     "Seefahrt": "Seefahrt",
 
     /* "data/culture/elfisch/CFRE.coffee #955 */
@@ -3115,6 +3353,15 @@
     /* "data/profession/military/PKRR.coffee #639 */
     /* "data/profession/military/PSGE.coffee #617 */
     /* "data/profession/military/PSTK.coffee #630 */
+    /* "data/profession/society/haendler/PHAE.coffee #331 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #289 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #306 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #275 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #272 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #260 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #257 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #328 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #312 */
     "Sinnesschärfe": "Sinnesschärfe",
 
     /* "data/profession/society/barde/PBAR_SKA.coffee #82 */
@@ -3156,6 +3403,7 @@
     /* "data/profession/military/PSGE.coffee #1081 */
     /* "data/profession/military/PSTK.coffee #1513 */
     /* "data/profession/society/barde/PBAR.coffee #933 */
+    /* "data/profession/society/haendler/PHAE.coffee #746 */
     "Soziale Anpassungsfähigkeit": "Soziale Anpassungsfähigkeit",
 
     /* "data/profession/military/PKRR.coffee #290 */
@@ -3188,6 +3436,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #191 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #194 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #197 */
+    /* "data/profession/society/haendler/PHAE.coffee #243 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #201 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #184 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #187 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #184 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #172 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #169 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #181 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #190 */
     "Sprache": "Sprache",
 
     /* "data/culture/menschlich/CNAV.coffee #217 */
@@ -3319,6 +3576,17 @@
     /* "data/profession/military/PSTK.coffee #211 */
     "Stammeskriegerin": "Stammeskriegerin",
 
+    /* "data/profession/society/haendler/PHAE.coffee #301 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #259 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #242 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #245 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #242 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #230 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #227 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #239 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #248 */
+    "Stangenwaffen": "Stangenwaffen",
+
     /* "data/culture/menschlich/CFER.coffee #1242 */
     /* "data/culture/menschlich/CFJA.coffee #1159 */
     /* "data/culture/menschlich/CNAV.coffee #857 */
@@ -3350,6 +3618,8 @@
     /* "data/culture/zwergisch/CAMZ.coffee #1516 */
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #527 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #500 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #724 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #746 */
     "Sternkunde": "Sternkunde",
 
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #127 */
@@ -3463,6 +3733,12 @@
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #546 */
     "Taschendiebstahl": "Taschendiebstahl",
 
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #93 */
+    "Tauschhändler": "Tauschhändler",
+
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #123 */
+    "Tauschhändlerin": "Tauschhändlerin",
+
     /* "data/culture/menschlich/CFER.coffee #1659 */
     /* "data/profession/society/gelehrter/PGEH.coffee #616 */
     "Theoretiker": "Theoretiker",
@@ -3570,6 +3846,8 @@
     /* "data/profession/society/barde/PBAR.coffee #1275 */
     /* "data/profession/society/gaukler/PGAU.coffee #1621 */
     /* "data/profession/society/gelehrter/PGEH.coffee #1098 */
+    /* "data/profession/society/haendler/PHAE.coffee #1192 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #888 */
     /* "data/race/menschlich/RTLD.coffee #722 */
     "Trollzacker": "Trollzacker",
 
@@ -3762,6 +4040,7 @@
     /* "data/profession/society/gaukler/PGAU_VAG.coffee #550 */
     /* "data/profession/society/gaukler/PGAU_WAH.coffee #519 */
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #578 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #286 */
     "Verbergen": "Verbergen",
 
     /* "data/race/elfisch/R.coffee #1391 */
@@ -3822,6 +4101,7 @@
     /* "data/profession/society/gaukler/PGAU_VAG.coffee #707 */
     /* "data/profession/society/gaukler/PGAU_WAH.coffee #676 */
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #735 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #422 */
     "Verkleiden": "Verkleiden",
 
     /* "data/profession/military/PSTK.coffee #1384 */
@@ -3872,6 +4152,7 @@
     "Waldmenschin": "Waldmenschin",
 
     /* "data/profession/society/gelehrter/PGEH.coffee #792 */
+    /* "data/profession/society/haendler/PHAE.coffee #1034 */
     "Weltfremd": "Weltfremd",
 
     /* "data/culture/menschlich/CTLD.coffee #114 */
@@ -3928,6 +4209,11 @@
     /* "data/profession/society/gaukler/PGAU_WAH.coffee #728 */
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #787 */
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #328 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #347 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #393 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #457 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #553 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #537 */
     "Wildnisleben": "Wildnisleben",
 
     /* "data/culture/elfisch/C.coffee #373 */
@@ -3939,12 +4225,22 @@
     /* "data/profession/society/gelehrter/PGEH_MAW.coffee #348 */
     /* "data/profession/society/gelehrter/PGEH_PHI.coffee #324 */
     /* "data/profession/society/gelehrter/PGEH_RET.coffee #337 */
+    /* "data/profession/society/haendler/PHAE.coffee #470 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #485 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #531 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #414 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #411 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #400 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #448 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #467 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #451 */
     "Willenskraft": "Willenskraft",
 
     /* "data/culture/menschlich/CZAH.coffee #556 */
     /* "data/culture/menschlich/CZYK.coffee #597 */
     /* "data/profession/society/barde/PBAR.coffee #971 */
     /* "data/profession/society/gaukler/PGAU.coffee #1171 */
+    /* "data/profession/society/haendler/PHAE.coffee #784 */
     /* "data/race/RHEL.coffee #1570 */
     /* "data/race/RZWE.coffee #1724 */
     /* "data/race/elfisch/R.coffee #647 */
@@ -4028,6 +4324,9 @@
     /* "data/profession/society/gaukler/PGAU_WAH.coffee #544 */
     /* "data/profession/society/gaukler/PGAU_ZIR.coffee #603 */
     "Zechen": "Zechen",
+
+    /* "data/profession/society/haendler/PHAE.coffee #804 */
+    "Zeitgefühl": "Zeitgefühl",
 
     /* "data/culture/menschlich/CARA.coffee #1044 */
     /* "data/culture/menschlich/CFER.coffee #1681 */
@@ -4140,6 +4439,15 @@
     /* "data/race/menschlich/RTLD.coffee #464 */
     "braun": "braun",
 
+    /* "templates/profile_edit.hbs #1313 */
+    "brilliant": "Brilliant",
+
+    /* "templates/profile_edit.hbs #862 */
+    "common": "Durchschnittlich",
+
+    /* "templates/profile_edit.hbs #1091 */
+    "competent": "Kompetent",
+
     /* "data/race/RHEL.coffee #196 */
     /* "data/race/elfisch/RAUE.coffee #367 */
     /* "data/race/elfisch/RFRE.coffee #406 */
@@ -4172,6 +4480,9 @@
 
     /* "data/race/elfisch/RFRE.coffee #509 */
     "eisgrau": "eisgrau",
+
+    /* "templates/profile_edit.hbs #975 */
+    "experienced": "Erfahren",
 
     /* "data/race/RZWE.coffee #315 */
     "feuerrot": "feuerrot",
@@ -4229,6 +4540,15 @@
     /* "data/race/menschlich/RNIV.coffee #199 */
     /* "data/race/menschlich/RNOR.coffee #234 */
     "kupferrot": "kupferrot",
+
+    /* "templates/profile_edit.hbs #1427 */
+    "legendary": "Legendär",
+
+    /* "templates/profile_edit.hbs #757 */
+    "low": "Unerfahren",
+
+    /* "templates/profile_edit.hbs #1202 */
+    "master": "Meisterlich",
 
     /* "data/race/elfisch/RAUE.coffee #333 */
     /* "data/race/elfisch/RFRE.coffee #372 */
@@ -4351,6 +4671,15 @@
     /* "data/profession/society/gelehrter/PGEH_STN.coffee #274 */
     /* "data/profession/society/gelehrter/PGEH_VLK.coffee #277 */
     /* "data/profession/society/gelehrter/PGEH_ZMY.coffee #280 */
+    /* "data/profession/society/haendler/PHAE.coffee #445 */
+    /* "data/profession/society/haendler/PHAE_FAH.coffee #460 */
+    /* "data/profession/society/haendler/PHAE_FEH.coffee #506 */
+    /* "data/profession/society/haendler/PHAE_GEL.coffee #389 */
+    /* "data/profession/society/haendler/PHAE_GHA.coffee #386 */
+    /* "data/profession/society/haendler/PHAE_HAU.coffee #374 */
+    /* "data/profession/society/haendler/PHAE_HEH.coffee #397 */
+    /* "data/profession/society/haendler/PHAE_KAU.coffee #442 */
+    /* "data/profession/society/haendler/PHAE_TAU.coffee #426 */
     "Überreden": "Überreden",
 
     /* "data/culture/menschlich/CFER.coffee #984 */

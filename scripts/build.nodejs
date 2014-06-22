@@ -25,6 +25,7 @@ var libList = [
 var dirList = [
     'culture',
     'profession',
+    'lifegrade',
     'race',
     'vantage',
     'character'
