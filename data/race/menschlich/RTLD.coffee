@@ -4,7 +4,7 @@
 
 require ["data/race/menschlich"], (R) ->
   races.add _.extend R,
-    name: __("Tulamiden")
+    name: __("Mensch/Tulamiden")
 
     name_m: __("Tulamide")
     name_w: __("Tulamidin")

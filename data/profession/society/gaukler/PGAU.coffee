@@ -14,9 +14,7 @@ class PGAU
   name_m: __("Gaukler")
   name_w: __("Gauklerin")
 
-  costs: 8900
-
-  attributes: ["MU", "FF", "GE"]
+  costs: 900
 
   auto: [
     choice_from(30, __("Sprache"), __("Schrift"))
@@ -69,6 +67,10 @@ class PGAU
     __("Neid")
     __("Neugier")
     __("Rachsucht")
+
+    __("MU")
+    __("FF")
+    __("GE")
   ]
 
   uncommon: [

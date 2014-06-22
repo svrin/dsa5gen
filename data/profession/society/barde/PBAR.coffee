@@ -16,8 +16,6 @@ class PBAR
 
   costs: 850
 
-  attributes: ["KL", "CH"]
-
   auto: [
     choice_from(25, __("Sprache"), __("Schrift"))
 
@@ -59,6 +57,9 @@ class PBAR
     __("Arroganz")
     __("Eitelkeit")
     __("Neugier")
+
+    __("KL")
+    __("CH")
   ]
 
   uncommon: [

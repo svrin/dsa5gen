@@ -2,8 +2,12 @@
   Die Elfen / Waldelf
 ###
 
-require ["data/race/elfisch"], (R) -> races.add _.extend R,
-    name: __("Waldelf")
+require ["data/race/elfisch"], (R) ->
+  races.add _.extend R,
+    name: __("Elf/Waldelf")
+
+    name_m: __("Waldelf")
+    name_w: __("Waldelfin")
 
     hair: [
       [__("blauschwarz"), 1, 3]

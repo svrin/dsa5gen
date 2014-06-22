@@ -2,8 +2,12 @@
   Die Elfen / Firnelf
 ###
 
-require ["data/race/elfisch"], (R) -> races.add _.extend R,
-    name: __("Firnelf")
+require ["data/race/elfisch"], (R) ->
+  races.add _.extend R,
+    name: __("Elf/Firnelf")
+
+    name_m: __("Firnelf")
+    name_w: __("Firnelfin")
 
     hair: [
       [__("blauschwarz"), 1]

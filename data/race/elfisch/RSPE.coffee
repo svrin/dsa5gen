@@ -2,8 +2,12 @@
   Die Elfen / Steppenelf
 ###
 
-require ["data/race/elfisch"], (R) -> races.add _.extend R,
-    name: __("Steppenelf")
+require ["data/race/elfisch"], (R) ->
+  races.add _.extend R,
+    name: __("Elf/Steppenelf")
+
+    name_m: __("Steppenelf")
+    name_w: __("Steppenelfin")
 
     hair: [
       [__("blauschwarz"), 1]
