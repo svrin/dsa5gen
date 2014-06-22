@@ -8,6 +8,10 @@ window.mapping = {}
 
 __ = (x) ->
 
+  # Bool check
+  return __("ja") if x is true
+  return __("nein") if x is false
+
   # NaN is still NaN
   return x if !x
 

@@ -19,6 +19,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       lifegrade: null
 
       profile: {}
+      skills: {}
 
       attributes:
         MU: 8
@@ -38,6 +39,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
       fget @, 'attributes', @calc_attributes
       fget @, 'costs', @calc_costs
+      fget @, 'skills', @calc_skills
 
       if not @id
         @set('uuid', uuid())
@@ -47,9 +49,9 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         value = 1
 
       if attr and key
-        @.set attr, key, @.attributes[attr][key] + value
+        @.set attr, key, (@.attributes[attr][key] || 0) + value
       else
-        @.set attr, @.attributes[attr] + value
+        @.set attr, (@.attributes[attr] || 0) + value
 
     decr: (attr, key, value) =>
       if not value
@@ -78,8 +80,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       else
         ref = @.attributes[attr[0]]
         ref[attr[1]] = value
-        @trigger "change:#{attr[0]}:#{attr[1]}", this
-        @trigger "change:#{attr[0]}", this
+        @trigger "change:#{attr[0]}:#{attr[1]}", this, attr, value
+        @trigger "change:#{attr[0]}", this, attr, value
 
       return @
 
@@ -103,6 +105,43 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         return func(_.clone(value))
 
       return value
+
+    calc_skills: (skills) =>
+      ###
+        Calulcates the skills for a character
+      ###
+      character = @
+      skills = skills || {}
+
+      lambda = (element) =>
+        if _.isFunction(element)
+          element = element(character)
+
+        if _.isString(element)
+          skills[element] = true
+        else if _.isArray(element)
+          skills[element[0]] = (skills[element[0]] || 0) + element[1]
+        else if element.constructor.name == 'ChoiceView'
+          console.log "Do something about this"
+        else
+          throw "Unexpected element in list"
+
+      race = character.get('race')
+      if race
+        _.each race.get('auto'), lambda
+
+      culture = character.get('culture')
+      if culture
+        _.each culture.get('auto'), lambda
+
+      profession = character.get('profession')
+      if profession
+        _.each profession.get('auto'), lambda
+
+      return skills
+
+
+
 
     calc_costs: (costs) =>
       ###

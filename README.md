@@ -25,7 +25,7 @@ Aufbau
         /data/profession         Datenbestand der Professionen
         /data/race               Datenbestand der Rassen
         /data/vantage            Datenbestand der Vorteile, Nachteile, Sonderfertigkeiten
-        /data/skills             Datenbestand der Talente, Eigenschaften
+        /data/skill             Datenbestand der Talente, Eigenschaften
         /models                  Modellinformationen für Daten
 
  * [CoffeeScript](http://coffeescript.org/) <br /><br />

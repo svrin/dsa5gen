@@ -46,10 +46,10 @@ define [], () ->
       
     change: (event) =>
       node = $(event.target)
+      name = node.attr('name')
 
       $("[data-for='#{name}']").text node.val()
-      
-      name = node.attr('name')
+
       if name && name.startsWith('character')
         args = name.split('.').slice(1)
         @model.set args..., node.val()

@@ -28,7 +28,8 @@ var dirList = [
     'lifegrade',
     'race',
     'vantage',
-    'character'
+    'character',
+    'skill'
 ];
 
 // Build data

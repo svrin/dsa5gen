@@ -17,7 +17,7 @@ define [], () ->
       for view in ['profile', 'attributes', 'basevalues', 'options']
         require ['views/left/' + view], (View) =>
           @.views['left'][view] = new View({model: @model, container: @$el})
-      
+
       # Bind or Create the nav
       @.$nav = @.$el.find 'nav'
       if not @.$nav.length
@@ -27,9 +27,14 @@ define [], () ->
       for view in ['race', 'culture', 'profession']
         require ['views/select/' + view], (View) =>
           @.views['tab'][view] = new View({model: @model, container: @$el})
-          
+
       # Tab Boxes
       for view in ['profile']
+        require ['views/tab/' + view], (View) =>
+          @.views['tab'][view] = new View({model: @model, container: @$el})
+
+      # Tab Boxes
+      for view in ['skills', 'battle', 'magic', 'liturgy']
         require ['views/tab/' + view], (View) =>
           @.views['tab'][view] = new View({model: @model, container: @$el})
 
@@ -37,7 +42,7 @@ define [], () ->
       for cmd in ["incr", "decr", "save", "export", "import"]
         @.$el.off "click.dsa5gen.#{cmd}"
         @.$el.on "click.dsa5gen.#{cmd}", "a[href*=':#{cmd}']", @[cmd]
-        
+
       return
 
     incr: (event) =>

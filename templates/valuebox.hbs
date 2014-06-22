@@ -1,0 +1,38 @@
+<h3><%= self.caption %></h3>
+
+<% gender = character.get('gender'); %>
+<% values = character.get(self.for) || {}; %>
+
+<dl>
+    <% groups = self.collection.groupBy(function (element) { return element.get('groups') && element.get('groups')[0]
+    }); %>
+    <% _.each(groups, function(collection, group) { %>
+
+    <% if (collection.length > 0 && self.view.indexOf(group) >= 0) { %>
+    <dd>
+        <% if (collection.length > 1) { %>
+        <h4><%= group %></h4>
+        <% } %>
+        <ul>
+            <% _.each(collection, function(element, index) { %>
+            <% var key = element.get('name'); %>
+            <li>
+                <label><%= element.get('name_' + gender, character) || element.get('name', character) %></label>
+
+                <span>
+                    <a href=":decr(<%=self.for%>.<%=key%>)"></a>
+                    <span data-for="<%=self.for%>.<%=key%>"><%= values[key] || element.get('min') %></span>
+                    <a href=":incr(<%=self.for%>.<%=key%>)"></a>
+                </span>
+
+                <span><%= element.get('dice') || element.get('dices').join("/") %></span>
+                <span><%= __(element.get('BE')) %></span>
+                <span><%= element.get('SF') %></span>
+            </li>
+            <% }); %>
+        </ul>
+    </dd>
+    <% } %>
+
+    <% }); %>
+</dl>
