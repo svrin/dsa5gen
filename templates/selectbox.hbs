@@ -19,6 +19,7 @@
     <% groups = self.collection.groupBy(function (element) { return element.get('name').split('/')[0] }); %>
     <% _.each(groups, function(collection, key) { %>
 
+    <% if (collection.length > 0) { %>
     <dd>
         <% if (collection.length > 1) { %>
         <h4><%= key %></h4>
@@ -47,6 +48,7 @@
 
         <% }); %>
     </dd>
+    <% } %>
 
     <% }); %>
 </dl>
