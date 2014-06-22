@@ -68,7 +68,7 @@ a {
     color: inherit;
   }
 
-  &:not([href^=':']):not(.active):after {
+  &:not([href^=':']):not(.active):not([rel=start]):after {
     content: url('/images/arrow_right.gif');
 
     position: relative;
@@ -76,6 +76,17 @@ a {
 
     margin-left: 3px;
     margin-right: 2px;
+  }
+
+  &[rel=start]:before {
+    content: url('/images/arrow_left.gif');
+
+    position: relative;
+    top: -1px;
+
+    margin-left: 2px;
+    margin-right: 3px;
+
   }
 
   &[href^=':incr'] {
