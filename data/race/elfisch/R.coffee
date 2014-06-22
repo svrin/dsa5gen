@@ -17,8 +17,8 @@ define "data/race/elfisch", [], () ->
     attributes:
       LE: 20
       MR: 2
-      IN: 10
-      GE: 8
+      INI: 10
+      GS: 8
 
     auto: [
       __("Altersresistenz")

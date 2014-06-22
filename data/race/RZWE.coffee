@@ -34,8 +34,8 @@ races.add
     attributes:
       LE: 30
       MR: 2
-      IN: 10
-      GE: 6
+      INI: 10
+      GS: 6
 
     auto: [
       [__("Dunkelsicht"), 1]

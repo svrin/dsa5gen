@@ -15,18 +15,18 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       race: null
       culture: null
       profession: null
-      
+
       profile: {}
 
       attributes:
-        MU: 10
-        KL: 10
-        IN: 10
-        CH: 10
-        FF: 10
-        GE: 10
-        KO: 10
-        KK: 10
+        MU: 8
+        KL: 8
+        IN: 8
+        CH: 8
+        FF: 8
+        GE: 8
+        KO: 8
+        KK: 8
 
     initialize: () =>
       pget @, 'race', races
@@ -51,13 +51,14 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       if not value
         value = 1
 
-      gtz = (value) -> value > 0 and value or 0
+      gtz = (value) ->
+        value > 0 and value or 0
 
       if attr and key
         @.set attr, key, gtz(@.attributes[attr][key] - value)
       else
         @.set attr, gtz(@.attributes[attr] - value)
-          
+
     set: (attr..., value) =>
       ###
         Overwritten for allowing beside of the @set(attr, value) call
@@ -65,15 +66,15 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       ###
       if not (0 < attr.length <= 2)
         throw "Unexpected attribute set length: #{attr.length}"
-      
+
       if attr.length == 1
         super attr[0], value
       else
-      	ref = @.attributes[attr[0]]
-      	ref[attr[1]] = value
-      	@trigger "change:#{attr[0]}:#{attr[1]}", this
-      	@trigger "change:#{attr[0]}", this
-      
+        ref = @.attributes[attr[0]]
+        ref[attr[1]] = value
+        @trigger "change:#{attr[0]}:#{attr[1]}", this
+        @trigger "change:#{attr[0]}", this
+
       return @
 
     get: (attr, context) =>
@@ -118,29 +119,21 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
         _.each profession.get('attributes'), (value, key) ->
           attributes[key] = (attributes[key] || 0) + value
 
-      attributes["MR"] = (attributes["MR"] || 0) + (attributes["MU"] + attributes["KL"] + attributes["KO"]) / 5
+      attributes["LE"] = (attributes["LE"] || 0) + Math.max(attributes["KO"] - 10, 0)
+      attributes["AE"] = (attributes["AE"] || 0)
+      attributes["KE"] = (attributes["KE"] || 0)
+      attributes["MR"] = (attributes["MR"] || 0) + Math.max(attributes["MU"] - 10, 0)
+      attributes["GS"] = (attributes["GS"] || 0) + Math.max(attributes["GE"] - 10, 0)
+      attributes["WS"] = Math.ceil((attributes["KO"] || 0) / 2)
 
-      attributes["LeP"] = (attributes["LeP"] || 0) + (attributes["KO"] + attributes["KO"] + attributes["KK"]) / 2
-      attributes["AuP"] = (attributes["AuP"] || 0) + (attributes["MU"] + attributes["KO"] + attributes["GE"]) / 2
-      attributes["AsP"] = (attributes["AsP"] || 0) + (attributes["MU"] + attributes["IN"] + attributes["CH"]) / 2
+      attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0)
 
-      attributes["AT"] = (attributes["AT"] || 0) + (attributes["MU"] + attributes["GE"] + attributes["KK"]) / 5
-      attributes["PA"] = (attributes["PA"] || 0) + (attributes["IN"] + attributes["GE"] + attributes["KK"]) / 5
-      attributes["FK"] = (attributes["FK"] || 0) + (attributes["IN"] + attributes["FF"] + attributes["KK"]) / 5
-
-      # V4.1 Grundregelwerk #189
-      attributes["GS"] = (attributes["GS"] || 0) + switch
-        when attributes["GE"] <= 10 then 7
-        when attributes["GE"] <= 15 then 8
-        else 9
+      attributes["AT/PA_GE"] = 5 + Math.max(attributes["GE"] - 10, 0)
+      attributes["AT/PA_KK"] = 5 + Math.max(attributes["KK"] - 10, 0)
+      attributes["AT/PA_FF"] = 5 + Math.max(attributes["FF"] - 10, 0)
+      attributes["FK"] = 5 + Math.max(attributes["FF"] - 10, 0)
 
       return attributes
-
-
-
-
-
-
 
 
 ###

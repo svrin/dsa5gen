@@ -15,8 +15,8 @@ define "data/race/menschlich", [], () ->
     attributes:
       LE: 25
       MR: 0
-      IN: 10
-      GE: 8
+      INI: 10
+      GS: 8
 
     uncommon: [
       __("Wahrer Name")

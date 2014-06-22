@@ -37,8 +37,8 @@ races.add
     attributes:
       LE: 23
       MR: 1
-      IN: 10
-      GE: 8
+      INI: 10
+      GS: 8
 
     cultures: [
       __("Auelfen")
