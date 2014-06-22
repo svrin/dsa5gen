@@ -13,16 +13,22 @@ define ['views/bases/selectbox', 'data/profession'], (BaseView, professions) ->
     # Filter
     options:
       common: [__('Geläufige Professionen'), (profession) ->
+        if not culture?
+          return null
 
         # Geläufige Professionen stehen einmal bei der Kultur
         # Und geläufige/ungeläufige bei der Profession
-        if profession.get('cultures')['uncommon'] and culture.in(profession.get('cultures')['uncommon'])
+        if profession.get('cultures') and profession.get('cultures')['uncommon'] and culture.in(profession.get('cultures')['uncommon'])
           # Kultur ist als uncommon bei der Profession eingetragen
           return false
 
-        if profession.get('cultures')['common'] and culture.in(profession.get('cultures')['common'])
+        if profession.get('cultures') and profession.get('cultures')['common'] and culture.in(profession.get('cultures')['common'])
           # Kultur ist als common bei der Profession eingetragen
           return true
+
+        if profession.get('cultures') and profession.get('cultures')['common'] and profession.get('cultures')['common'].length > 0 and !culture.in(profession.get('cultures')['common'])
+          # Profession hat common cultures und cultur fehlt in der Liste
+          return false
 
         if profession.in(culture.get('professions'))
           # Profession ist als common bei Kultur eingetragen

@@ -61,10 +61,10 @@ a {
   &:hover {
     text-decoration: none;
   }
-    
+
   &.active, &:active {
     text-decoration: none;
-  
+
     color: inherit;
   }
 
@@ -103,6 +103,16 @@ h3 {
 
     font-size: 150%;
   }
+}
+
+h4 {
+  &:first-letter {
+    color: @link-color;
+
+    font-size: 120%;
+  }
+
+  margin-bottom: 0px;
 }
 
 main {
@@ -158,23 +168,23 @@ main {
 
 nav {
   position: relative;
-  
+
   width: 100% - @left-width;
-  
+
   margin-left: @left-width;
   margin-bottom: -15px;
-  
+
   z-index: 10;
-  
+
   text-align: left;
-  
+
   > a {
     display: inline-block;
-    
+
     border-image: url('/images/scape.png') 20 20 fill round;
     border-width: 20px;
     border-bottom: 5px;
-    
+
     padding-left: 5px;
   }
 }
@@ -186,7 +196,7 @@ nav {
   height: 100%;
 
   margin-left: @left-width;
-  
+
   text-align: left;
 
   h3 {
