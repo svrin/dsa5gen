@@ -19,6 +19,10 @@
 **/*.map
 **/*.css
 
+# Don't ship glyphicons on github
+images/glyphicons*
+images/fantasy*
+
 # Packages
 *.egg
 *.egg-info

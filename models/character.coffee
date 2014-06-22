@@ -68,10 +68,12 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         Overwritten for allowing beside of the @set(attr, value) call
         the additional @set(attr, key, value) call
       ###
-      if not (0 < attr.length <= 2)
+      if not (0 <= attr.length <= 2)
         throw "Unexpected attribute set length: #{attr.length}"
 
-      if attr.length == 1
+      if attr.length == 0
+        super value
+      else if attr.length == 1
         super attr[0], value
       else
         ref = @.attributes[attr[0]]

@@ -14,7 +14,7 @@ define [], () ->
       @.views = {'left': {}, 'tab': {}}
 
       # Left Boxes
-      for view in ['profile', 'attributes', 'basevalues']
+      for view in ['profile', 'attributes', 'basevalues', 'options']
         require ['views/left/' + view], (View) =>
           @.views['left'][view] = new View({model: @model, container: @$el})
       
@@ -31,13 +31,12 @@ define [], () ->
       # Tab Boxes
       for view in ['profile']
         require ['views/tab/' + view], (View) =>
-          @.views['tab'][view] = new View({model: @model, container: @$el})        
+          @.views['tab'][view] = new View({model: @model, container: @$el})
 
-      # Special treatment of :incr / :decr calls
-      @.$el.off 'click.dsa5gen.incr'
-      @.$el.on 'click.dsa5gen.incr', "a[href*=':incr']", @.incr
-      @.$el.off 'click.dsa5gen.decr'
-      @.$el.on 'click.dsa5gen.decr', "a[href*=':decr']", @.decr
+      # Special treatment of :* calls
+      for cmd in ["incr", "decr", "save", "export", "import"]
+        @.$el.off "click.dsa5gen.#{cmd}"
+        @.$el.on "click.dsa5gen.#{cmd}", "a[href*=':#{cmd}']", @[cmd]
         
       return
 
@@ -65,6 +64,85 @@ define [], () ->
 
       args = href.split('.')
       @.model.decr(args...)
+
+    save: (event) =>
+      ###
+        Save call
+      ###
+      event.preventDefault()
+
+      @.model.save()
+
+      # Change image to saved
+      image = $(event.target)
+      if !image.tagName == "img"
+        image = image.find("img")
+      image.attr("src", "/images/glyphicons_disk_saved.png")
+
+      # And bind to any change event
+      @.model.once "all", =>
+        image.attr("src", "/images/glyphicons_disk_save.png")
+
+    export: (event) =>
+      ###
+        Export call
+      ###
+      event.preventDefault()
+
+      # Build Data Blob
+      blob = new Blob([JSON.stringify(@.model.toJSON())], {type: "text/plain"})
+
+      # Get name
+      name = @.model.get("name").replace(/[^A-Za-z0-9]/g, "_")
+
+      # Create link
+      a = document.createElement('a')
+      a.download = "#{name}.dsa5gen.json"
+      a.href = (window.URL || window.webkitURL).createObjectURL(blob)
+      a.textContent = 'Download'
+
+      # attach download content
+      a.dataset.downloadurl = ["application/json", a.download, a.href].join(':')
+      a.draggable = true
+
+      # Dispatch click event
+      event = document.createEvent('Event')
+      event.initEvent('click', true, true)
+      a.dispatchEvent(event)
+      (window.URL || window.webkitURL).revokeObjectURL(a.href)
+      return event
+
+    import: (event) =>
+      ###
+        Import call
+      ###
+      event.preventDefault()
+
+      # Build an input file chooser
+      input = document.createElement('input')
+      input.type = "file"
+      input.accept = ".dsa5gen.json"
+      input.multiple = false
+
+      character = @.model
+
+      # Bind event
+      input.addEventListener 'change', (event) ->
+        reader = new FileReader()
+        reader.onload = (event) ->
+          character.fetch({load: JSON.parse(event.target.result)})
+        reader.readAsText(event.target.files[0], 'UTF-8')
+
+      # Dispatch click event
+      event = document.createEvent('Event')
+      event.initEvent('click', true, true)
+      input.dispatchEvent(event)
+
+      return event
+
+
+
+
 
 
 
