@@ -11,7 +11,7 @@ class PGEH_MAW extends PGEH
   costs: 650
 
   auto: [
-    choice_from(80, __("Sprache"), __("Schrift"))
+    add_pool(80, __("Sprache"), __("Schrift"))
 
     [__("Dolche"), 4]
 

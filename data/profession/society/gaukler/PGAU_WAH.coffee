@@ -11,7 +11,7 @@ class PGAU_WAH extends PGAU
   costs: 900
 
   auto: [
-    choice_from(30, __("Sprache"), __("Schrift"))
+    add_pool(30, __("Sprache"), __("Schrift"))
 
     [__("Ausweichen"), 4]
     [__("Dolche"), 4]

@@ -11,7 +11,7 @@ class PHOE_DIP extends PHOE
   costs: 810
 
   auto: [
-    choice_from(15, __("Sprache"), __("Schrift"))
+    add_pool(15, __("Sprache"), __("Schrift"))
 
     [__("Raufen"), 4]
     [__("Dolche"), 4]

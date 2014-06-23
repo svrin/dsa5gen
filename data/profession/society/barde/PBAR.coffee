@@ -17,7 +17,7 @@ class PBAR
   costs: 850
 
   auto: [
-    choice_from(25, __("Sprache"), __("Schrift"))
+    add_pool(25, __("Sprache"), __("Schrift"))
 
     [__("Raufen"), 4]
     [__("Dolche"), 4]

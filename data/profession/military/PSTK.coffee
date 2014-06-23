@@ -22,16 +22,16 @@ class PSTK
     KK: 11
 
   auto: [
-    choice_from(15, __("Sprache"), __("Schrift"))
+    add_pool(15, __("Sprache"), __("Schrift"))
 
     __("Aufmerksamkeit")
     __("Finte")
     __("Kampfreflexe")
     __("Wuchtschlag")
-    choice_from(20, __("Kampfsonderfertigkeit"))
+    add_pool(20, __("Kampfsonderfertigkeit"))
 
     [__("Raufen"), 7]
-    choice_from(120, __("Kampftechnik"))
+    add_pool(120, __("Kampftechniken"))
 
     [__("Körperbeherrschung"), 4]
     [__("Selbstbeherrschung"), 4]

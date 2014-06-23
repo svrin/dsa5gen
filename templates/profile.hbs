@@ -48,8 +48,8 @@
         <span><%= lifegrade.get('AP') || 0 %></span>
     </li>
 
-    <li>
-        <label title="Offene Abenteuerpunkte"><%= __("AP") %> (Offen)</label>
+    <li name="character.ap">
+    <label title="Offene Abenteuerpunkte"><%= __("AP") %> (Offen)</label>
         <% value = lifegrade.get('AP') - character.get('costs') %>
         <span data-key="AP" data-value="<%= value %>"><%= value %></span>
     </li>

@@ -108,7 +108,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
     calc_skills: (top) =>
       ###
-        Calulcates the skills for a character
+        Calculates the skills for a character
       ###
       character = @
 
@@ -121,6 +121,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
           base[element] = true
         else if _.isArray(element)
           base[element[0]] = (base[element[0]] || 0) + element[1]
+        else if element.constructor.name == 'PoolView'
+          element.$el.insertAfter $("[name='character.ap']")
         else if element.constructor.name == 'ChoiceView'
           console.log "Do something about this"
         else
@@ -158,14 +160,17 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       character = @
       costs = costs? || 0
 
+      # Get costs from race
       race = character.get('race')
       if race
         costs += race.get('costs') || 0
 
+      # Get costs from culture
       culture = character.get('culture')
       if culture
         costs += culture.get('costs') || 0
 
+      # Get costs from profession
       profession = character.get('profession')
       if profession
         costs += profession.get('costs') || 0
@@ -189,19 +194,34 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
             0
 
       # Add costs from skills
+      # and bundle them in their groups
+      groups = {}
       _.each character.attributes['skills'], (value, key) =>
         skill = skills.get(key)
+
+        # Calculate
         if skill.get('costs')
-          costs += value * skill.get('costs')
+          value *= skill.get('costs')
         else if skill.get('SF') == "A"
-          costs += value * 5
+          value *= 5
         else if skill.get('SF') == "B"
-          costs += value * 10
+          value *= 10
         else if skill.get('SF') == "C"
-          costs += value * 15
+          value *= 15
         else
           console.error "Unknown cost table for skill " + skill.get('name')
 
+        # Add
+        costs += value
+
+        # Sum group costs up
+        _.each skill.get('groups'), (group) ->
+          groups[group] = (groups[group] || 0) + value
+
+      # Update pools
+      _.each profession.get('auto'), (element) ->
+        if element.constructor.name == 'PoolView'
+          costs -= element.refresh(groups)
 
       return costs
 

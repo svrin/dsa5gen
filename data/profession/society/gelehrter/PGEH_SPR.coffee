@@ -11,7 +11,7 @@ class PGEH_SPR extends PGEH
   costs: 975
 
   auto: [
-    choice_from(230, __("Sprache"), __("Schrift"))
+    add_pool(230, __("Sprache"), __("Schrift"))
 
     [__("Dolche"), 4]
 

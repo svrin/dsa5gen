@@ -11,7 +11,7 @@ class PHAE_HAU extends PHAE
   costs: 860
 
   auto: [
-    choice_from(35, __("Sprache"), __("Schrift"))
+    add_pool(35, __("Sprache"), __("Schrift"))
 
     [__("Dolche"), 4]
     [__("Stangenwaffen"), 4]

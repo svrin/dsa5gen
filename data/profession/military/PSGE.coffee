@@ -21,15 +21,15 @@ class PSGE
     GE: 11
 
   auto: [
-    choice_from(35, __("Sprache"), __("Schrift"))
+    add_pool(35, __("Sprache"), __("Schrift"))
 
     __("Finte")
     __("Meisterparade")
-    choice_from(100, __("Kampfsonderfertigkeit"))
+    add_pool(100, __("Kampfsonderfertigkeit"))
 
     [__("Raufen"), 4]
     [__("Dolche"), 4]
-    choice_from(150, __("Kampftechnik"))
+    add_pool(150, __("Kampftechniken"))
 
     [__("Körperbeherrschung"), 4]
     [__("Reiten"), 4]

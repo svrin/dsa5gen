@@ -11,7 +11,7 @@ class PGEH_HIS extends PGEH
   costs: 545
 
   auto: [
-    choice_from(80, __("Sprache"), __("Schrift"))
+    add_pool(80, __("Sprache"), __("Schrift"))
 
     [__("Dolche"), 4]
 

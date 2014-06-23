@@ -11,7 +11,7 @@ class PGAU_POS extends PGAU
   costs: 915
 
   auto: [
-    choice_from(30, __("Sprache"), __("Schrift"))
+    add_pool(30, __("Sprache"), __("Schrift"))
 
     [__("Ausweichen"), 4]
     [__("Dolche"), 4]

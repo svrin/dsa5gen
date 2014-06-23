@@ -17,17 +17,17 @@ class PKRR
   costs: 1000
 
   auto: [
-    choice_from(20, __("Sprache"), __("Schrift"))
+    add_pool(20, __("Sprache"), __("Schrift"))
 
     __("Finte")
     __("Meisterparade")
     __("Wuchtschlag")
-    choice_from(80, __("Kampfsonderfertigkeit"))
+    add_pool(80, __("Kampfsonderfertigkeit"))
 
     [__("Raufen"), 4]
     [__("Dolche"), 4]
     [__("Schwerter"), 7]
-    choice_from(150, __("Kampftechnik"))
+    add_pool(150, __("Kampftechniken"))
 
     [__("Körperbeherrschung"), 4]
     [__("Reiten"), 7]

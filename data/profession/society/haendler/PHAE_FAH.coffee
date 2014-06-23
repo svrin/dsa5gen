@@ -11,7 +11,7 @@ class PHAE_FAH extends PHAE
   costs: 740
 
   auto: [
-    choice_from(35, __("Sprache"), __("Schrift"))
+    add_pool(35, __("Sprache"), __("Schrift"))
 
     [__("Dolche"), 4]
     [__("Stangenwaffen"), 4]

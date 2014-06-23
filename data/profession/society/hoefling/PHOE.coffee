@@ -17,7 +17,7 @@ class PHOE
   costs: 750
 
   auto: [
-    choice_from(15, __("Sprache"), __("Schrift"))
+    add_pool(15, __("Sprache"), __("Schrift"))
 
     [__("Raufen"), 4]
     [__("Dolche"), 4]

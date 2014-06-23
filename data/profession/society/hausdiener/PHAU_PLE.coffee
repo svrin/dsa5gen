@@ -11,7 +11,7 @@ class PHAU_PLE extends PHAU
   costs: 850
 
   auto: [
-    choice_from(10, __("Sprache"), __("Schrift"))
+    add_pool(10, __("Sprache"), __("Schrift"))
 
     [__("Raufen"), 4]
     [__("Dolche"), 4]
