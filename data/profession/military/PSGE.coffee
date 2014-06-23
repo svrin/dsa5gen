@@ -25,7 +25,7 @@ class PSGE
 
     __("Finte")
     __("Meisterparade")
-    add_pool(100, __("Kampfsonderfertigkeit"))
+    add_pool(100, __("Kampfsonderfertigkeiten"))
 
     [__("Raufen"), 4]
     [__("Dolche"), 4]

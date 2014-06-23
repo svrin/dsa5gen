@@ -20,7 +20,7 @@
             <li data-key="<%=self.for%>.<%=key%>" data-value="<%= value %>" data-count="<%= element.get('count') %>">
                 <label><%= element.get('name_' + gender, character) || element.get('name', character) %></label>
 
-                <span>
+                <span data-min="<%= element.get('min') %>" data-max="<%= element.get('max') %>">
                     <a href=":decr(<%=self.for%>.<%=key%>)"></a>
                     <span data-for="<%=self.for%>.<%=key%>"><%= value %></span>
                     <a href=":incr(<%=self.for%>.<%=key%>)"></a>
@@ -32,7 +32,12 @@
                 <% if (element.get('BE') !== undefined) { %>
                 <span><%= __(element.get('BE')) %></span>
                 <% } %>
+                <% if (element.get('SF') !== undefined) { %>
                 <span><%= element.get('SF') %></span>
+                <% } %>
+                <% if (element.get('requirements') !== undefined) { %>
+                <i><%= _.join(element.get('requirements'), value + 1, element) %></i>
+                <% } %>
             </li>
             <% }); %>
         </ul>

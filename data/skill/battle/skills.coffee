@@ -1,4 +1,4 @@
-define "data/skill/battle", [], () ->
+define "data/skill/battle/skills", [], () ->
   min: 0
   BE: true
 
@@ -6,7 +6,7 @@ define "data/skill/battle", [], () ->
     __("Kampftechniken")
   ]
 
-require ["data/skill/battle"], (S) ->
+require ["data/skill/battle/skills"], (S) ->
   skills.add _.extend S,
     name: __("Armbrüste")
     dice: "FF"

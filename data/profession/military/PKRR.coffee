@@ -22,7 +22,7 @@ class PKRR
     __("Finte")
     __("Meisterparade")
     __("Wuchtschlag")
-    add_pool(80, __("Kampfsonderfertigkeit"))
+    add_pool(80, __("Kampfsonderfertigkeiten"))
 
     [__("Raufen"), 4]
     [__("Dolche"), 4]

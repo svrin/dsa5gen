@@ -28,7 +28,7 @@ class PSTK
     __("Finte")
     __("Kampfreflexe")
     __("Wuchtschlag")
-    add_pool(20, __("Kampfsonderfertigkeit"))
+    add_pool(20, __("Kampfsonderfertigkeiten"))
 
     [__("Raufen"), 7]
     add_pool(120, __("Kampftechniken"))
