@@ -1,88 +1,93 @@
 ###
-  Mittelländische Städte
+  Südaventurien
 ###
 
 cultures.add [
   name: __("Südaventurien")
 
-  costs: 4
-
-  vantages:
-    auto: [
-      __("Hitzeresistenz")
-      __("Soziale Anpassungsfähigkeit")
-    ]
-    recommended: [
-      __("Resistenz gegen Gift")
-      __("Verbindungen")
-      __("Aberglaube")
-      __("Arroganz")
-      __("Eitelkeit")
-      __("Geiz")
-      __("Goldgier")
-      __("Jähzorn")
-      __("Neugier")
-      __("Verpflichtungen")
-      __("Vorurteile")
-    ]
-    uncommon: [
-      __("Feenfreund")
-      __("Kälteresistenz")
-      __("Krankheitsanfällig")
-      __("Raumangst")
-    ]
-    reduced: []
-
-  skills: [
-    choice(1, __("Armbrust"), __("Bogen"))
-    [__("Dolche"), 2]
-    [__("Raufen"), 1]
-    [__("Ringen"), 1]
-    [__("Säbel"), 1]
-
-    [__("Schwimmen"), 1]
-    [__("Sich Verstecken"), 1]
-
-    [__("Gassenwissen"), 2]
-    [__("Menschenkenntnis"), 1]
-    [__("Sich Verkleiden"), 1]
-    [__("Überreden"), 1]
-
-    [__("Götter/Kulte"), 1]
-    [__("Rechnen"), 1]
-    [__("Sagen/Legenden"), 1]
-    [__("Schätzen"), 1]
-
-    [__("Garethi (Brabaci)"), -> this.get('attributes')["KL"] - 2]
-    [__("Tulamidya"), 4]
-    [__("Mohisch"), 4]
-    [__("Thorwalsch"), 2]
-
-    [__("Boote Fahren"), 1]
-    [__("Holzbearbeitung"), 1]
-    [__("Lederarbeiten"), 1]
-    [__("Seefahrt"), 1]
-
-    __("Kulturkunde (Südaventurien)")
+  social: [
+    [2000, [__("Adlig")],
+     [__(" "), __("Amtsadel"), 1, __("Erbadel"), 1, __("Titularadel"), 1]]
+    [2500, [__("Oberschicht")]]
+    [500, []]
+    [100, [__("Unterschicht")]]
+    [20, [__("Unfrei")], [__("Sklave"), 1]]
   ]
 
+  speech: [
+    __("Sprache (Garethi)")
+    __("Garethi (Brabaci)")
+    __("Garethi (Charypto)")
+    __("Garethi (Gatamo)")
+  ]
+
+  lettering: [
+    __("Kusliker Zeichen")
+  ]
+
+  knowledge: [
+    __("Kulturkunde (Südaventurien)")
+    __("Südaventurien (Al'Anfa)")
+    __("Südaventurien (Brabak)")
+    __("Südaventurien (Bukanier)")
+    __("Südaventurien (Chrohop)")
+    __("Südaventurien (Mengbilla)")
+    __("Südaventurien (Salem)")
+  ]
+
+  common: [
+    __("Hitzeresistenz")
+    __("Soziale Anpassungsfähigkeit")
+
+    __("Kälteempfindlichkeit")
+    __("Schlechte Eigenschaft (Aberglaube)")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Goldgier)")
+    __("Schlechte Eigenschaft (Jähzorn)")
+    __("Schlechte Eigenschaft (Neugier)")
+
+    __("Betören")
+    __("Fischen & Angeln")
+    __("Gassenwissen")
+    __("Handel")
+    __("Heilkunde Gift")
+    __("Menschenkenntnis")
+    __("Orientierung")
+    __("Pflanzenkunde")
+    __("Seefahrt")
+    __("Staatskunst")
+    __("Überreden")
+    __("Willenskraft")
+    __("Zechen")
+  ]
+
+  uncommon: [
+    __("Kälteresistenz")
+
+    __("Schlechte Eigenschaft (Angst vor Menschenmassen)")
+    __("Schlechte Eigenschaft (Raumangst)")
+    __("Schlechte Eigenschaft (Totenangst)")
+
+    __("Fahrzeuge")
+    __("Fliegen")
+    __("Geographie")
+
+    __("Ritter")
+    __("Stammeskrieger")
+  ]
 
   professions: [
-    __("Botenreiter"),
-    __("Einbrecher"),
-    __("Entdecker"),
-    __("Gaukler"),
-    __("Jäger")
-    __("Krieger"),
-    __("Kundschafter"),
-    __("Magier"),
-    __("Pirat"),
-    __("Söldner")
-    __("Streuner"),
-    __("Wundarzt")
+    __("Profession (profan)")
+
+    __("Alchimist")
+    __("Druide")
+    __("Hexe")
+    __("Magiedilettant")
+    __("Magier")
+    __("Scharlatan")
+    __("Zaubertänzer (Sharisadim)")
+
+    __("Geweihter (Zwölfgötterkult)")
   ]
 ]
-
-
-
-

@@ -2,18 +2,19 @@
   View for editing the profile information for a character
 ###
 
-define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs) ->
+define ['views/bases/tabbox', 'text!templates/profile_edit.hbs', 'data/lifegrade'], (BaseView, hbs, lifegrades) ->
   class ProfileView extends BaseView
     template: _.template (hbs)
+    lifegrades: lifegrades
     
     name: 'profile'
     caption: __("Profil")
-    
-    event: ['change:profile', 'change:race']
+
+    event: ['change:profile', 'change:race', 'change:lifegrade']
     
     build_select: (race, profile, attr) =>
       node = @.$el.find("[name='character.profile.#{attr}']")
-      _.each race.get('profile')?[attr], (item) ->
+      _.each race.get(attr), (item) ->
         item_node = $("<option>").text(item[0]).attr("value", item[0])
         node.find('optgroup').append(item_node)
       if profile[attr]
@@ -25,9 +26,14 @@ define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs
       gender = this.model.get('gender') || 'x'
       race = this.model.get('race')
       profile = this.model.get('profile')
+      lifegrade = this.model.get('lifegrade')
       
       # Gender
       @.$el.find("[name='character.gender'][value=#{gender}]").prop("checked", "checked")
+
+      # Lifegrade
+      if lifegrade
+        @.$el.find("[name='character.lifegrade'][value=#{lifegrade.id}]").prop("checked", "checked")
       
       # The additional informations are only available when a race has been selected
       return rtn if not race
@@ -39,11 +45,11 @@ define ['views/bases/tabbox', 'text!templates/profile_edit.hbs'], (BaseView, hbs
       @.build_select race, profile, 'eye'
       	
       # Height
-      height = profile.height or race.get('profile')?.height[0]
+      height = profile.height or race.get('height', this.model)?[0]
       this.$el.find("[name='character.profile.height']").val(height)
       
       # Weight
-      weight = profile.weight or race.get('profile')?.weight.call(this.model)
+      weight = profile.weight or race.get('weight', this.model)
       this.$el.find("[name='character.profile.weight']").val(weight)
       
       # Allow chaining

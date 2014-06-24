@@ -1,20 +1,14 @@
 ###
-  Zwerge
+  Die Zwerge
 ###
 
-races.add [
-  name: __("Zwerge")
-  name_m: __("Zwerg")
-  name_w: __("Zwergin")
+races.add
+    name: __("Zwerge")
+    name_m: __("Zwerg")
+    name_w: __("Zwergin")
 
-  costs: 16
+    costs: 150
 
-  requirements: [
-    ->
-      ["MU", 12] if this.get('gender') == "w"
-  ]
-
-  profile:
     hair: [
       [__("blond"), 1, 5]
       [__("schwarz"), 6, 9]
@@ -35,78 +29,64 @@ races.add [
     ]
     height: [128, 2, 6]
     weight: ->
-      this.get('profile')['height'] - 80
+      this.get('profile')?['height']? - 80
 
-  attributes:
-    FF: 1
-    GE: -1
-    KO: 2
-    KK: 2
-    LeP: 12
-    AuP: 18
-    MR: -4
+    attributes:
+      LE: 30
+      MR: 2
+      INI: 10
+      GS: 6
 
-  vantages:
     auto: [
-      __("Dämmerungssicht")
-      __("Resistenz gegen mineralische Gifte")
-      __("Resistenz gegen Krankheiten")
+      [__("Dunkelsicht"), 1]
+      choice(1, 1, __("Herausragende Eigenschaft (FF)"), __("Herausragende Eigenschaft (KO)"), __("Herausragende Eigenschaft (KK)"))
+      __("Krankheitsresistenz")
       __("Schwer zu verzaubern")
-      [__("Goldgier"), 5]
-      __("Unfähigkeit (Schwimmen)")
-      __("Zwergenwuchs")
+
+      __("Unfähig (Schwimmen)")
     ]
-    recommended: [
-      __("Ausdauernd")
+
+    cultures: [
+      __("Ambosszwerge")
+      __("Brillantzwerge")
+      __("Brobim")
+      __("Erzzwerge")
+      __("Hügelzwerge")
+    ]
+
+    common: [
+      [__("Dunkelsicht"), 2]
       __("Eisern")
+      __("Gefahreninstinkt")
       __("Gutes Gedächtnis")
       __("Hitzeresistenz")
-      __("Hohe Lebenskraft")
       __("Hohe Magieresistenz")
       __("Kampfrausch")
+      __("Hohe Lebenskraft")
+      __("Immunität gegen Gift (Tulmadron)")
+      __("Immunität gegen Gift (schwermetallhaltige Speisepilze)")
       __("Richtungssinn")
       __("Zäher Hund")
       __("Zwergennase")
+
       __("Blutrausch")
-      __("Jähzorn")
-      __("Lichtscheu")
-      __("Platzangst")
-      __("Unansehnlich")
+      __("Lichtempfindlich")
     ]
+
     uncommon: [
-      __("Feenfreund"),
-      __("Flink")
-      __("Herausragende Balance")
-      __("Herausragendes Aussehen")
-      __("Koboldfreund")
+      __("Balance")
       __("Magiegespür")
       __("Schlangenmensch")
+      __("Verbundenheit")
       __("Wohlklang")
-      __("Dunkelangst")
+
       __("Glasknochen")
-      __("Krankheitsanfällig")
+      __("Hitzeempfindlichkeit")
       __("Nachtblind")
-      __("Raumangst")
+      __("Niedrige Magieresistenz")
+      __("Zauberer")
+      __("Zerbrechlich")
     ]
-    reduced: []
-
-  skills: [
-    [__("Ringen"), 1]
-    [__("Akrobatik"), -3]
-    [__("Reiten"), -1]
-    [__("Schwimmen"), -3]
-    [__("Selbstbeherrschung"), 2]
-    [__("Zechen"), 1]
-
-    [__("Orientierung"), 1]
-
-    [__("Gesteinskunde"), 1]
-  ]
-
-  cultures: [
-    __("Ambosszwerge")
-  ]
-]
 
 
 

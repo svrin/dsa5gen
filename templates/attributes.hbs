@@ -20,9 +20,9 @@
         <i>Profession: <%= profession.get('attributes')[key] %></i>
         <% } %>
 
-        <span>
+        <span data-min="8">
             <a href=":decr(attributes.<%=key%>)"></a>
-            <%= Math.round(value || 0) %>
+            <span data-for="attributes.<%=key%>"><%= Math.round(value || 0) %></span>
             <a href=":incr(attributes.<%=key%>)"></a>
         </span>
     </li>

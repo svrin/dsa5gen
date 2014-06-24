@@ -2,108 +2,67 @@
   Auelfen
 ###
 
-cultures.add [
+require ["data/culture/elfisch"], (C) -> cultures.add _.extend C,
   name: __("Auelfen")
 
-  costs: ->
-    if this.get('race').is("Halbelfen") then 12 else 4
+  speech: [
+    __("Sprache (Isdira)")
+    __("Isdira (auelfischer Dialekt)")
+  ]
 
-  vantages:
-    auto: [
-      __("Elfische Weitsicht"),
-      [__("Neugier"), 5]
-      [__("Weltfremd (Besitz)"), 6]
-      [__("Weltfremd (Götterverehrung)"), 6]
-    ]
-    recommended: [
-      __("Ausdauernd"),
-      __("Feenfreund"),
-      __("Gefahreninstinkt"),
-      __("Arroganz"),
-      __("Vorurteile")
-    ]
-    uncommon: [
-      __("Soziale Anpassungsfähigkeit"),
-      __("Goldgier")
-      __("Rachsucht")
-    ]
-    reduced: [
-      __("Aufmerksamkeit"),
-      __("Kampf im Wasser"),
-      __("Regeneration I")
-    ]
-
-  skills: [
-    [__("Bogen"), 3, "L"]
-    [__("Dolche"), 2]
-
-    [__("Athletik"), 1]
-    [__("Klettern"), 1]
-    [__("Körperbeherschung"), 2]
-    [__("Schleichen"), 3]
-    [__("Schwimmen"), 4, "L"]
-    [__("Sich Verstecken"), 5, "L"]
-    [__("Singen"), 2]
-    [__("Sinnesschärfe"), 1]
-    [__("Tanzen"), 2]
-
-    [__("Betören"), 3]
-    [__("Gassenwissen"), -2]
-
-    [__("Fährtensuche"), 3, "L"]
-    [__("Fischen/Angeln"), 3, "L"]
-    [__("Orientierung"), 2]
-    [__("Wildnisleben"), 5, "L"]
-
-    [__("Magiekunde"), 3]
-    [__("Pflanzenkunde"), 3]
-    [__("Rechtskunde"), -2]
-    [__("Sagen/Legenden"), 2]
-    [__("Tierkunde"), 2]
-
-    [__("Isdira"), -> this.get('attributes')["KL"] - 2]
-    choice_from(4, __("Sprache kennen"))
-
-    choice(2, __("Bogenbau"), __("Boote Fahren"), "L")
-    [__("Heilkunde Gift"), 1]
-    [__("Heilkunde Wunden"), 1, "L"]
-    [__("Holzbearbeitung"), 2]
-    [__("Lederarbeiten"), 2]
-    [__("Musizieren"), 3]
-    [__("Schneidern"), 2]
-
-    [__("Attributo"), 7]
-    [__("Balsam Salabunde"), 9]
-    [__("Bannbaladin"), 9, "H"]
-    [__("Flim Flam"), 7]
-    [__("Fulminictus"), 8, "H"]
-    [__("Sensibar"), 8, "H"]
-
-    __("Große Mediation")
+  knowledge: [
     __("Kulturkunde (Auelfen)")
-    __("Repräsentation (Elfen)")
-    __("Salasandra")
-    __("Sumpfkundig")
-    __("Freundschaftslied")
   ]
 
+  common: [
+    __("Begabung in Handwerkstalenten")
+    __("Begabung in Kampftechniken")
+    __("Gefahreninstinkt")
+    __("Verbundenheit (Feen)")
+    __("Verbundenheit (Tiere)")
+    __("Magische Einstimmung (Wesen der Auen)")
 
-  professions: [
-    __("Legendensänger"),
-    __("Wildnisläufer")
+    __("Artefaktgebunden (Instrument)")
+    __("Magieblockade (KL)")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Vorurteile)")
+    __("Schlechte Eigenschaft (Weltfremd)")
+    __("Wilde Magie")
+
+    __("Betören")
+    __("Einschüchtern")
+    __("Fährtensuchen")
+    __("Fischen & Angeln")
+    __("Körperbeherrschung")
+    __("Musizieren")
+    __("Orientierung")
+    __("Pflanzenkunde")
+    __("Singen")
+    __("Sinnesschärfe")
+    __("Seefahrt")
+    __("Tanzen")
+    __("Tierkunde")
+    __("Verbergen")
+    __("Wildnisleben")
   ]
 
-  equipments: [
-    __("Elfenbogen")
-    __("Köcher")
-    [__("Pfeile"), 12]
-    __("Jagdmesser")
-    __("Kleidung")
-    choice_from(1, __("Musikinstrument"))
-    __("Umhängetasche")
-  ]
-]
+  uncommon: [
+    __("Begabung in Wissenstalenten")
 
+    __("Schlechte Eigenschaft (Goldgier)")
+    __("Schlechte Eigenschaft (Rachsucht)")
+    __("Unfähig in Körpertalenten")
+    __("Unfähig in Naturtalenten")
+
+    __("Alchimie")
+    __("Brett- & Glücksspiel")
+    __("Fahrzeuge")
+    __("Rechtskunde")
+    __("Schlösserknacken")
+    __("Staatskunst")
+    __("Zechen")
+  ]
 
 
 

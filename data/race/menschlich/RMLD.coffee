@@ -1,15 +1,14 @@
 ###
-  Mittelländer
+  Die Menschen / Mittelländer
 ###
 
-races.add [
-  name: __("Mittelländer")
-  name_m: __("Mittelländer")
-  name_w: __("Mittelländerin")
+require ["data/race/menschlich"], (R) ->
+  races.add _.extend R,
+    name: __("Mensch/Mittelländer")
 
-  costs: 0
+    name_m: __("Mittelländer")
+    name_w: __("Mittelländerin")
 
-  profile:
     hair: [
       [__("schwarz"), 1, 3]
       [__("braun"), 4, 7]
@@ -27,34 +26,18 @@ races.add [
       [__("schwarz"), 20]
     ]
     height: [160, 2, 20]
-    weight: ->
-      this.get('profile')['height'] - 100
 
-  attributes:
-    LeP: 10
-    AuP: 10
-    MR: -4
-
-  vantages:
-    auto: []
-    recommended: []
-    uncommon: [
-      __("Herausragende Balance"),
-      __("Nahrungsrestriktion")
+    cultures: [
+      __("Bornland")
+      __("Horasreich")
+      __("Maraskaner")
+      __("Mittelreich")
+      __("Nostria & Andergast")
+      __("Nordaventurien")
+      __("Südaventurien")
+      __("Svellttal")
+      __("Zyklopeninseln")
     ]
-    reduced: []
-
-  skills: []
-
-  cultures: [
-    __("Mittelländische Städte")
-    __("Andergast/Nostria")
-    __("Bornland")
-    __("Horasreich")
-    __("Südaventurien")
-  ]
-]
-
 
 
 

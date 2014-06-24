@@ -1,15 +1,14 @@
 ###
-  Halbelfen
+  Die Halbelfen
 ###
 
-races.add [
-  name: __("Halbelfen")
-  name_m: __("Halbelfe")
-  name_w: __("Halbelfin")
+races.add
+    name: __("Halbelf")
+    name_m: __("Halbelf")
+    name_w: __("Halbelfin")
 
-  costs: 3
+    costs: 0
 
-  profile:
     hair: [
       [__("rot"), 1, 3]
       [__("braun"), 4, 6]
@@ -21,7 +20,7 @@ races.add [
     ]
     eye: [
       [__("schwarz"), 1, 3]
-      [__("grau"), 3, 6]
+      [__("grau"), 4, 6]
       [__("blau"), 7, 10]
       [__("grün"), 11, 14]
       [__("dunkelbraun"), 15, 16]
@@ -29,68 +28,67 @@ races.add [
       [__("bernsteinfarben"), 19]
       [__("goldgesprenkelt"), 20]
     ]
+
     height: [158, 1, 20, 4, 6]
+
     weight: ->
-      this.get('profile')['height'] - 120
+      this.get('profile')?['height']? - 120
 
-  attributes:
-    KK: -1
-    GE: 1
-    LeP: 8
-    AuP: 10
-    MR: -4
+    attributes:
+      LE: 23
+      MR: 1
+      INI: 10
+      GS: 8
 
-  vantages:
-    auto: [
-      __("Viertelzauberer")
-      __("Gut Aussehend")
-      ->
-        __("Zweistimmiger Gesang") if this.get('culture').is("Auelfen")
+    cultures: [
+      __("Auelfen")
+      __("Bornland")
+      __("Firnelfen")
+      __("Horasreich")
+      __("Mittelreich")
+      __("Nivesen")
+      __("Nostria & Andergast")
+      __("Nordaventurien")
+      __("Steppenelfen")
+      __("Südaventurien")
+      __("Svellttal")
+      __("Thorwaler")
+      __("Waldelfen")
     ]
-    recommended: [
+
+    common: [
       __("Balance")
-      __("Dämmerungssicht")
-      __("Feenfreund")
+      __("Begabung (Singen)")
+      __("Begabung (Musizieren)")
+      __("Beidhändig")
+      [__("Dunkelsicht"), 1]
       __("Flink")
-      __("Herausragender Sinn")
-      __("Herausragendes Aussehen")
+      __("Gefahreninstinkt")
+      __("Gutaussehend")
+      __("Herausragende Eigenschaft")
+      choice(1, __("Herausragender Sinn (Sicht)"), __("Herausragender Sinn (Gehör)"))
       __("Magiegespür")
       __("Schlangenmensch")
+      __("Verbundenheit (Tiere)")
+      __("Verbundenheit (Feen)")
       __("Wohlklang")
-      __("Zweistimmiger Gesang")
-      __("Nahrungsrestriktion")
+      __("Zauberer")
+
       __("Sensibler Geruchssinn")
+      __("Wahrer Name")
     ]
+
     uncommon: [
       __("Kampfrausch")
+      __("Schwer zu verzaubern")
       __("Zwergennase")
+
       __("Blutrausch")
       __("Fettleibig")
       __("Krankheitsanfällig")
-      __("Lichtscheu")
-      __("Nachtblind")
-      __("Schwer zu verzaubern")
       __("Unangenehme Stimme")
     ]
-    reduced: []
 
-  skills: [
-    [__("Körperbeherrschung"), 2]
-    [__("Schleichen"), 1]
-    [__("Singen"), 1]
-    [__("Sinnesschärfe"), 2]
-    [__("Tanzen"), 1]
-    [__("Zechen"), -1]
-  ]
-
-  cultures: [
-    __("Auelfen")
-    __("Andergast/Nostria")
-    __("Bornland")
-    __("Mittelländische Städte")
-    __("Horasreich")
-  ]
-]
 
 
 

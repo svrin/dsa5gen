@@ -1,40 +1,61 @@
 <h2><%= character.get('name') %></h2>
 <ul>
     <% gender = character.get('gender'); %>
+    <% lifegrade = character.get('lifegrade'); %>
     <% profession = character.get('profession'); %>
     <% culture = character.get('culture'); %>
     <% race = character.get('race'); %>
 
-    <% if (culture && race) { %>
+    <% if (culture && race && lifegrade) { %>
     <li data-href="profession">
 
         <% if (profession) { %>
-        <%= profession.get(gender == 'w' ? 'name_w' : 'name') %>
+        <%= profession.get('name_' + gender) || profession.get('name') %>
         <% } else { %>
         <a href="#profession">Profession wählen</a>
         <% } %>
     </li>
-    <% } if (race) { %>
+    <% } if (race && lifegrade) { %>
     <li data-href="culture">
         <% if (culture) { %>
-        <%= culture.get('name') %>
+        <%= culture.get('name_' + gender) || culture.get('name') %>
         <% } else { %>
         <a href="#culture">Kultur wählen</a>
         <% } %>
     </li>
-    <% } %>
+    <% } if (lifegrade) { %>
     <li data-href="race">
         <% if (race) { %>
-        <%= race.get('name') %>
+        <%= race.get('name_' + gender) || race.get('name') %>
         <% } else { %>
         <a href="#race">Rasse wählen</a>
         <% } %>
     </li>
+    <% } %>
 
-    <% _.each(character.costs, function (key, value) { %>
-    <li>
-        <label><%= __(key) %></label>
-        <span><%= value || 0 %></span>
+    <% if (lifegrade) { %>
+    <li class="spacer">
+        <hr/>
     </li>
-    <% }); %>
+
+    <li data-href="lifegrade">
+        <label><%= __("Erfahrungsgrad") %></label>
+        <span><%= lifegrade.get('name') %></span>
+    </li>
+
+    <li>
+        <label title="Gesamt zur Verfügung stehenden Abenteuerpunkte"><%= __("AP") %> (Gesamt)</label>
+        <span><%= lifegrade.get('AP') || 0 %></span>
+    </li>
+
+    <li name="character.ap">
+    <label title="Offene Abenteuerpunkte"><%= __("AP") %> (Offen)</label>
+        <% value = lifegrade.get('AP') - character.get('costs') %>
+        <span data-key="AP" data-value="<%= value %>"><%= value %></span>
+    </li>
+    <% } else { %>
+    <li data-href="lifegrade">
+        <a href="#profile">Erfahrungsgrad wählen</a>
+    </li>
+    <% } %>
 </ul>

@@ -12,14 +12,27 @@ define [], () ->
 
     is: (other) =>
       ###
-        Check on euqality that considers name, name_w, name_m and aliases
+        Check on equality that considers name, name_w, name_m and aliases
       ###
       return switch other
         when @.get(@.idAttribute) then true
         when @.get('name') then true
         when @.get('name_m') then true
         when @.get('name_w') then true
-        else other in (@.get('aliases') || [])
+        else
+          other in (@.get('aliases') || [])
+
+    in: (other) =>
+      ###
+        Check elementof that considers name, name_w, name_m and aliases/groups
+      ###
+      groups = @.get('groups') || []
+      for item in other
+        if @.is(item)
+          return true
+        if groups.indexOf(item) >= 0
+          return true
+      return false
 
     get: (attr, context) =>
       ###

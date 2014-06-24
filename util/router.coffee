@@ -37,8 +37,9 @@ $ () ->
 
     impressum: () ->
       require ['text!templates/impressum.hbs'], (Template) ->
-      	$('main').attr "role", "document"
-      	$('main').html _.template(Template)({})
+        main = $('main')
+        main.attr "role", "document"
+        main.html _.template(Template)({})
 
   router = new Router
   window.navigate = (url) ->

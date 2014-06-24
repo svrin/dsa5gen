@@ -3,7 +3,8 @@
   with choosen skills and equipment
 ###
 
-define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, races, cultures, professions) ->
+define ["models/base", 'data/race', 'data/culture', 'data/profession',
+        'data/lifegrade', 'data/skill'], (Model, races, cultures, professions, lifegrades, skills) ->
   class Character extends Model
     idAttribute: 'uuid'
 
@@ -15,25 +16,30 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
       race: null
       culture: null
       profession: null
-      
+      lifegrade: null
+
       profile: {}
+      skills: {}
 
       attributes:
-        MU: 10
-        KL: 10
-        IN: 10
-        CH: 10
-        FF: 10
-        GE: 10
-        KO: 10
-        KK: 10
+        MU: 8
+        KL: 8
+        IN: 8
+        CH: 8
+        FF: 8
+        GE: 8
+        KO: 8
+        KK: 8
 
     initialize: () =>
       pget @, 'race', races
       pget @, 'culture', cultures
       pget @, 'profession', professions
+      pget @, 'lifegrade', lifegrades
 
       fget @, 'attributes', @calc_attributes
+      fget @, 'costs', @calc_costs
+      fget @, 'skills', @calc_skills
 
       if not @id
         @set('uuid', uuid())
@@ -43,37 +49,40 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
         value = 1
 
       if attr and key
-        @.set attr, key, @.attributes[attr][key] + value
+        @.set attr, key, (@.attributes[attr][key] || 0) + value
       else
-        @.set attr, @.attributes[attr] + value
+        @.set attr, (@.attributes[attr] || 0) + value
 
     decr: (attr, key, value) =>
       if not value
         value = 1
 
-      gtz = (value) -> value > 0 and value or 0
+      gtz = (value) ->
+        value > 0 and value or 0
 
       if attr and key
         @.set attr, key, gtz(@.attributes[attr][key] - value)
       else
         @.set attr, gtz(@.attributes[attr] - value)
-          
+
     set: (attr..., value) =>
       ###
         Overwritten for allowing beside of the @set(attr, value) call
         the additional @set(attr, key, value) call
       ###
-      if not (0 < attr.length <= 2)
+      if not (0 <= attr.length <= 2)
         throw "Unexpected attribute set length: #{attr.length}"
-      
-      if attr.length == 1
+
+      if attr.length == 0
+        super value
+      else if attr.length == 1
         super attr[0], value
       else
-      	ref = @.attributes[attr[0]]
-      	ref[attr[1]] = value
-      	@trigger "change:#{attr[0]}:#{attr[1]}", this
-      	@trigger "change:#{attr[0]}", this
-      
+        ref = @.attributes[attr[0]]
+        ref[attr[1]] = value
+        @trigger "change:#{attr[0]}:#{attr[1]}", this, attr, value
+        @trigger "change:#{attr[0]}", this, attr, value
+
       return @
 
     get: (attr, context) =>
@@ -97,6 +106,126 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
 
       return value
 
+    calc_skills: (top) =>
+      ###
+        Calculates the skills for a character
+      ###
+      character = @
+
+      base = {}
+      lambda = (element) =>
+        if _.isFunction(element)
+          element = element(character)
+
+        if _.isString(element)
+          base[element] = true
+        else if _.isArray(element)
+          base[element[0]] = (base[element[0]] || 0) + element[1]
+        else if element.constructor.name == 'PoolView'
+          element.$el.insertAfter $("[name='character.ap']")
+        else if element.constructor.name == 'ChoiceView'
+          console.log "Do something about this"
+        else
+          throw "Unexpected element in list"
+
+      # Add content from race
+      race = character.get('race')
+      if race
+        _.each race.get('auto'), lambda
+
+      # Add content from culture
+      culture = character.get('culture')
+      if culture
+        _.each culture.get('auto'), lambda
+
+      # Add content from profession
+      profession = character.get('profession')
+      if profession
+        _.each profession.get('auto'), lambda
+
+      # Now base each skill with it min and add the current value on top of it
+      skills.each (skill) =>
+        key = skill.get('name')
+        if skill.get('min') >= 1
+          base[key] = Math.max(base[key] || 0, skill.get('min'))
+
+        base[key] = (base[key] || 0) + (top[key] || 0)
+
+      return base
+
+    calc_costs: (costs) =>
+      ###
+        Calculates the costs for this character
+      ###
+      character = @
+      costs = costs? || 0
+
+      # Get costs from race
+      race = character.get('race')
+      if race
+        costs += race.get('costs') || 0
+
+      # Get costs from culture
+      culture = character.get('culture')
+      if culture
+        costs += culture.get('costs') || 0
+
+      # Get costs from profession
+      profession = character.get('profession')
+      if profession
+        costs += profession.get('costs') || 0
+
+      # Add costs from attributes
+      _.each character.attributes['attributes'], (value, key) =>
+        costs += switch value
+          when 20 then 1320
+          when 19 then 1040
+          when 18 then 800
+          when 17 then 600
+          when 16 then 440
+          when 15 then 320
+          when 14 then 240
+          when 13 then 200
+          when 12 then 160
+          when 11 then 120
+          when 10 then 80
+          when  9 then 40
+          else
+            0
+
+      # Add costs from skills
+      # and bundle them in their groups
+      groups = {}
+      _.each character.attributes['skills'], (value, key) =>
+        skill = skills.get(key)
+
+        # Calculate
+        if skill.get('costs')
+          value *= skill.get('costs')
+        else if skill.get('SF') == "A"
+          value *= 5
+        else if skill.get('SF') == "B"
+          value *= 10
+        else if skill.get('SF') == "C"
+          value *= 15
+        else
+          console.error "Unknown cost table for skill " + skill.get('name')
+
+        # Add
+        costs += value
+
+        # Sum group costs up
+        _.each skill.get('groups'), (group) ->
+          groups[group] = (groups[group] || 0) + value
+
+      # Update pools
+      _.each profession.get('auto'), (element) ->
+        if element.constructor.name == 'PoolView'
+          costs -= element.refresh(groups)
+
+      return costs
+
+
     calc_attributes: (attributes) =>
       ###
         Calculates the attributes for this character
@@ -118,29 +247,22 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession'], (Model, 
         _.each profession.get('attributes'), (value, key) ->
           attributes[key] = (attributes[key] || 0) + value
 
-      attributes["MR"] = (attributes["MR"] || 0) + (attributes["MU"] + attributes["KL"] + attributes["KO"]) / 5
+      attributes["LE"] = (attributes["LE"] || 0) + Math.max(attributes["KO"] - 10, 0)
+      attributes["AE"] = (attributes["AE"] || 0)
+      attributes["KE"] = (attributes["KE"] || 0)
+      attributes["MR"] = (attributes["MR"] || 0) + Math.max(attributes["MU"] - 10, 0)
+      attributes["GS"] = (attributes["GS"] || 0) + Math.max(attributes["GE"] - 10, 0)
+      attributes["WS"] = Math.ceil((attributes["KO"] || 0) / 2)
 
-      attributes["LeP"] = (attributes["LeP"] || 0) + (attributes["KO"] + attributes["KO"] + attributes["KK"]) / 2
-      attributes["AuP"] = (attributes["AuP"] || 0) + (attributes["MU"] + attributes["KO"] + attributes["GE"]) / 2
-      attributes["AsP"] = (attributes["AsP"] || 0) + (attributes["MU"] + attributes["IN"] + attributes["CH"]) / 2
+      attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0)
+      attributes["EDG"] = 3
 
-      attributes["AT"] = (attributes["AT"] || 0) + (attributes["MU"] + attributes["GE"] + attributes["KK"]) / 5
-      attributes["PA"] = (attributes["PA"] || 0) + (attributes["IN"] + attributes["GE"] + attributes["KK"]) / 5
-      attributes["FK"] = (attributes["FK"] || 0) + (attributes["IN"] + attributes["FF"] + attributes["KK"]) / 5
-
-      # V4.1 Grundregelwerk #189
-      attributes["GS"] = (attributes["GS"] || 0) + switch
-        when attributes["GE"] <= 10 then 7
-        when attributes["GE"] <= 15 then 8
-        else 9
+      attributes["AT/PA_GE"] = 5 + Math.max(attributes["GE"] - 10, 0)
+      attributes["AT/PA_KK"] = 5 + Math.max(attributes["KK"] - 10, 0)
+      attributes["AT/PA_FF"] = 5 + Math.max(attributes["FF"] - 10, 0)
+      attributes["FK"] = 5 + Math.max(attributes["FF"] - 10, 0)
 
       return attributes
-
-
-
-
-
-
 
 
 ###

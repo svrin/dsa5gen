@@ -48,10 +48,11 @@ Backbone.sync = (method, model, options) ->
       $.extend(data, options.data)
       window.localStorage.setItem(options.url, JSON.stringify(data))
     else if method == "read"
-      model.set(JSON.parse(window.localStorage.getItem(options.url)))
+      data = options["payload"] || JSON.parse(window.localStorage.getItem(options.url))
+      model.set data
     else if method == "delete"
       window.localStorage.removeItem(options.url)
     else
       throw "unknown method: " + method
 
-    return options['success']()
+    options['success']?()

@@ -22,7 +22,7 @@ STRINGS_FILEPATH = "#{__dirname}/../i18n/de.json"
 # -I (no long option) means exclude binary files.
 # https://www.kernel.org/pub/software/scm/git/docs/git-grep.html
 GIT_GREP_COMMAND = """
-    git grep -I --word-regexp --name-only -e '__' -- #{__dirname}/../data
+    git grep -I --word-regexp --name-only -e '__' -- #{__dirname}/../data #{__dirname}/../templates
 """
 
 # Tailored regex to match our `__()` calls and extract the strings.
@@ -33,12 +33,12 @@ I18N_CALL_REGEX = ///
     [(\s]       # "calling" means either an `(` or whitespace (CoffeeScript)
     (           # and the string is either...
         '           # single-quoted...
-            (.+?        # (match anything, but lazily, not greedily)
+            ([^']+?        # (match anything, but lazily, not greedily)
             [^\\])      # and the closing quote is one that's *not* preceded by a `\`
         '
         |           # or...
         "           # double-quoted...
-            (.+?        # (match anything, but lazily, not greedily)
+            ([^"]+?        # (match anything, but lazily, not greedily)
             [^\\])      # and the closing quote is one that's *not* preceded by a `\`
         "
     )

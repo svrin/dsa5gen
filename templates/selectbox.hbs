@@ -1,25 +1,54 @@
 <h3><%= self.caption || __(self.name) %></h3>
 
+<% gender = character.get('gender'); %>
+
+<% if (self.options) { %>
+<% option = $("[name='view." + self.name + ".options']").val() %>
+<select data-action="render" name="view.<%= self.name %>.options">
+    <% _.each(self.options, function(element, index) { %>
+<% if (option == index) { %>
+<option selected="selected" value="<%= index %>"><%= element[0] %></option>
+<% } else  { %>
+<option value="<%= index %>"><%= element[0] %></option>
+<% } %>
+<% }); %>
+</select>
+<% } %>
+
 <dl>
-    <% self.collection.each(function(element, index) { %>
+    <% groups = self.collection.groupBy(function (element) { return element.get('name').split('/')[0] }); %>
+    <% _.each(groups, function(collection, key) { %>
+
+    <% if (collection.length > 0) { %>
     <dd>
+        <% if (collection.length > 1) { %>
+        <h4><%= key %></h4>
+        <% } %>
+        <% _.each(collection, function(element, index) { %>
+
+        <% if (!self.options || !option || self.options[option][1](element)) { %>
         <details>
             <summary>
                 <input type="radio" value="<%= element.id %>"
                        name="character.<%= self.name %>"
-                       id="selectbox.<%= self.name %>.<%= index %>" />
-                <label for="selectbox.<%= self.name %>.<%= index %>">
-                    <%= element.get('name', character) %>
+                       id="selectbox.<%= self.name %>.<%= key.toLowerCase() %>.<%= index %>"/>
+                <label for="selectbox.<%= self.name %>.<%= key.toLowerCase() %>.<%= index %>">
+                    <%= element.get('name_' + gender, character) || element.get('name', character) %>
                 </label>
             </summary>
 
             <ul>
                 <li>
                     <label>Kosten</label>
-                    <span><%= element.get('costs', character) %></span>
+                    <span><%= element.get('costs', character) || 0 %> AP</span>
                 </li>
             </ul>
         </details>
+        <% } %>
+
+        <% }); %>
     </dd>
+    <% } %>
+
     <% }); %>
 </dl>
