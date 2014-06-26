@@ -1,0 +1,8 @@
+<h3>Helden</h3>
+<ul>
+    <% self.collection.each(function (character) { %>
+    <li>
+        <a href="<%= character.url() %>"><%= character.get('name') %></a>
+    </li>
+    <% }); %>
+</ul>

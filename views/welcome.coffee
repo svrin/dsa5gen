@@ -1,51 +1,19 @@
 ###
-  Modal greeting
+  View for the welcome page
 ###
 
-define ['text!templates/welcome.hbs', 'data/character', 'models/character'], (hbs, characters, characterModel) ->
+define [], () ->
   class WelcomeView extends Backbone.View
-    template: _.template (hbs)
-
-    tagName: 'section'
-    className: 'welcome'
-
-    collection: characters
-
-    events:
-      'click .new': "new"
-      'click [id]': "load"
+    el: 'main'
+    className: 'c'
 
     initialize: ->
-      @listenTo @collection, "add", @add
-      @listenTo @collection, "remove", @remove
-      @listenTo @collection, "change", @change
-      @listenTo @collection, "reset", @render
+      @.$el.html('')
 
-      @collection.fetch()
+      # Storage of all views, so they are "runtime-bound" to the character instance view
+      @.views = {'left': {}, 'tab': {}}
 
-    add: (character) ->
-      @$el.append $(@template(character.attributes)).attr("id", character.id)
-
-    remove: (character) ->
-      @$el.find("#" + character.id).remove()
-
-    change: (character) ->
-      @$el.find("#" + character.id).replaceWith $(@template(character.attributes)).attr("id", character.id)
-
-    render: () ->
-      @$el.html ""
-
-      @$el.append $(@template({name: characterModel.prototype.defaults.name})).addClass('new')
-
-      @collection.each (character) =>
-        @add character
-
-    new: () ->
-      character = @collection.push {}
-      window.navigate character.id
-
-    load: (event) ->
-      cid = $(event.target).attr("id")
-      window.navigate cid
-
-  return WelcomeView
+      # Left Boxes
+      for view in ['characters', 'options']
+        require ['views/left/' + view], (View) =>
+          @.views['left'][view] = new View({collection: @collection, container: @$el})
