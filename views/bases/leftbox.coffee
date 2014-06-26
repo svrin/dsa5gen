@@ -18,7 +18,7 @@ define [], () ->
       options['container'].append @$el
 
     render: ->
-      @$el.html @template({character: @model})
+      @$el.html @template({character: @model, self: @})
 
 
 
