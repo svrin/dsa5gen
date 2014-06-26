@@ -160,21 +160,6 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       character = @
       costs = costs? || 0
 
-      # Get costs from race
-      race = character.get('race')
-      if race
-        costs += race.get('costs') || 0
-
-      # Get costs from culture
-      culture = character.get('culture')
-      if culture
-        costs += culture.get('costs') || 0
-
-      # Get costs from profession
-      profession = character.get('profession')
-      if profession
-        costs += profession.get('costs') || 0
-
       # Add costs from attributes
       _.each character.attributes['attributes'], (value, key) =>
         costs += switch value
@@ -218,10 +203,35 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         _.each skill.get('groups'), (group) ->
           groups[group] = (groups[group] || 0) + value
 
-      # Update pools
-      _.each profession.get('auto'), (element) ->
-        if element.constructor.name == 'PoolView'
-          costs -= element.refresh(groups)
+      # Get costs from race
+      race = character.get('race')
+      if race
+        costs += race.get('costs') || 0
+
+        # Update pools
+        _.each race.get('auto'), (element) ->
+          if element.constructor.name == 'PoolView'
+            costs -= element.refresh(groups)
+
+      # Get costs from culture
+      culture = character.get('culture')
+      if culture
+        costs += culture.get('costs') || 0
+
+        # Update pools
+        _.each culture.get('auto'), (element) ->
+          if element.constructor.name == 'PoolView'
+            costs -= element.refresh(groups)
+
+      # Get costs from profession
+      profession = character.get('profession')
+      if profession
+        costs += profession.get('costs') || 0
+
+        # Update pools
+        _.each profession.get('auto'), (element) ->
+          if element.constructor.name == 'PoolView'
+            costs -= element.refresh(groups)
 
       return costs
 
