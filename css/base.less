@@ -5,6 +5,7 @@
 }
 
 @footer-height: 45px;
+@nav-height: 50px;
 @main-padding: 40px;
 
 body {
@@ -190,10 +191,11 @@ nav {
     display: inline-block;
 
     border-image: url('/images/scape.png') 20 20 fill round;
-    border-width: 20px;
+    border-width: 15px;
     border-bottom: 5px;
 
     padding-left: 5px;
+    margin-right: -5px;
   }
 }
 
@@ -240,6 +242,9 @@ nav {
     margin-bottom: 0px;
   }
 
+  &:first-of-type {
+    margin-top: -25px;
+  }
 }
 
 [data-value='0'] {
