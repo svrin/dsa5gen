@@ -30,7 +30,7 @@ $ () ->
       require ['views/print', 'views/error', 'data/character'], (PrintView, ErrorView, characters) ->
         model = characters.get(cid);
         if model
-          $('main').attr "role", "main"
+          $('main').attr "role", "print"
           return new PrintView({model: model, collection: characters, mode: mode})
         else
           new ErrorView({msg: "Der Character existiert nicht"})

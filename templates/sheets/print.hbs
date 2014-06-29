@@ -1,7 +1,7 @@
 <% gender = character.get('gender'); %>
 <% name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
 
-<div class="span6">
+<section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
 
     <h3 data-for="profession"><%= character.get('profession').get(name) || character.get('profession').get("name")
@@ -13,12 +13,14 @@
 
     <h3 data-for="race"><%= character.get('race').get(name) || character.get('race').get("name") %></h3>
     <label for="race">Rasse</label>
-</div>
+</section>
 
-<div class="span6">
-    <img src="/images/dsa5.png"/>
+<section class="span6 print-box">
+    <div id="logo">
+        <img src="/images/dsa5.png"/>
 
-    <h2>Heldendokument</h2>
+        <h2>Heldendokument</h2>
+    </div>
 
     <label for="character.profile.hair">Haarfarbe</label>
     <span data-for="character.profile.hair"><%= character.get('profile')['hair'] %></span>
@@ -33,14 +35,14 @@
     <span data-for="character.profile.weight"><%= character.get('profile')['weight'] %></span>
 
     <label for="character.lifegrade">Erfahrungsgrad</label>
-    <span data-for="character.lifegrade"><%= character.get('lifegrade') %></span>
+    <span data-for="character.lifegrade"><%= character.get('lifegrade').get(name) || character.get('lifegrade').get("name") %></span>
 
     <label for="character.social">Sozialstatus</label>
     <span data-for="character.social"><%= character.get('social') %></span>
-</div>
+</section>
 
-<div class="span6">
-    <h2>Eigenschaften</h2>
+<section class="span6 print-box">
+<h2>Eigenschaften</h2>
 
     <% _.each(character.get('attributes'), function (value, key) { %>
     <% if (key in character.defaults.attributes) { %>
@@ -50,19 +52,18 @@
     <span data-for="attributes.<%= key %>.max"><%= character.get('attributes')[key + "_max"] %></span>
     <% } %>
     <% }); %>
-</div>
+</section>
 
-<div class="span6">
-    <h2>Vorteile & Nachteile</h2>
+<section class="span6 print-box">
+<h2>Vorteile & Nachteile</h2>
 
     <% _.each(character.get('vantages'), function (value, index) { %>
     <span data-for="vantages.<%= index %>"><%= value %></span>
     <% }); %>
-</div>
+</section>
 
-
-<table class="span12">
-    <thead>
+<table class="span12 print-box">
+<thead>
     <tr>
         <th>&nbsp;</th>
         <th>Grundwert</th>
