@@ -16,7 +16,9 @@
 <% } %>
 
 <dl>
-    <% groups = self.collection.groupBy(function (element) { return element.get('name').split('/')[0] }); %>
+    <% groups = self.collection.sortBy(function (element) { return element.get('name').split('/')[1] &&
+    element.get('name').split('/')[0] || "" }); %>
+    <% groups = _(groups).groupBy(function (element) { return element.get('name').split('/')[0] }); %>
     <% _.each(groups, function(collection, key) { %>
 
     <% if (collection.length > 0) { %>
