@@ -178,7 +178,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
           when 11 then 120
           when 10 then 80
           when  9 then 40
-        else 0
+          else 0
 
       # Add costs from skills
       # and bundle them in their groups
@@ -236,7 +236,6 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
             costs -= element.refresh(groups)
 
       return costs
-
 
     calc_attributes: (attributes) ->
       ###
