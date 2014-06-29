@@ -5,7 +5,14 @@
 ###
 
 window.mapping = {}
+window.locale = {}
 
+# Load correct language dependency
+# Currently only german exists
+require ['i18n!gen/nls/nls'], (locale) ->
+  window.locale = locale
+
+# Define the __ function
 __ = (x) ->
 
   # Bool check
@@ -35,5 +42,8 @@ __ = (x) ->
   # Add it to mapping
   window.mapping[base][x] = true
 
-  # Return it unchanged
-  return x
+  # Return it translated
+  if window.locale
+    return window.locale[x] and window.locale[x] or x
+  else
+    return x

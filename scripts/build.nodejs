@@ -3,7 +3,8 @@
 var builder = require('buildify'),
     path = require('path'),
     glob = require('glob'),
-    coffee = require('coffee-script');
+    coffee = require('coffee-script'),
+    minify = require("node-json-minify");
 
 var baseDir = __dirname + '/..',
     sourceDir = baseDir + '/data',
@@ -16,6 +17,7 @@ var libList = [
     'lib/jquery.min.js',
     'lib/require.min.js',
     'lib/require-text.min.js',
+    'lib/require-i18n.min.js',
     'lib/underscore-min.js',
     'lib/backbone-min.js',
     'lib/nprogress.min.js'
@@ -30,6 +32,11 @@ var dirList = [
     'vantage',
     'character',
     'skill'
+];
+
+//i18n Files
+var i18nList = [
+    'de'
 ];
 
 // Build data
@@ -70,6 +77,33 @@ builder.task({
             .save(outputDir + "/../app.js")
             .uglify()
             .save(outputDir + "/../app.min.js");
+    }
+});
+
+// Build i18n data
+builder.task({
+    name: "i18n",
+    task: function () {
+        for (var index in i18nList) {
+            name = i18nList[index];
+
+            builder('/')
+                .concat(baseDir + "/i18n/" + name + ".json")
+                .perform(function (content) {
+                    content = minify(content);
+                    content = 'define(' + content + '); ';
+                    return content;
+                })
+                .save(outputDir + "/../nls/" + name + "/nls.js");
+        }
+        builder('/')
+            .concat(glob.sync(baseDir + "/i18n/*.json"))
+            .perform(function (content) {
+                content = minify(content);
+                content = 'define({"root": ' + content + '}); ';
+                return content;
+            })
+            .save(outputDir + "/../nls/nls.js");
     }
 });
 
