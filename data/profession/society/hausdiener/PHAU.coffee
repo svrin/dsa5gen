@@ -11,8 +11,8 @@ class PHAU
     __("Hausdiener")
   ]
 
-  name_m: __("Hausdiener")
-  name_w: __("Hausdienerin")
+  name_m: __("Knecht")
+  name_w: __("Magd")
 
   costs: 700
 

@@ -11,8 +11,8 @@ class PHAE
     __("Händler")
   ]
 
-  name_m: __("Händler")
-  name_w: __("Händlerin")
+  name_m: __("Krämer")
+  name_w: __("Krämerin")
 
   costs: 650
 
