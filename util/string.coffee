@@ -26,6 +26,4 @@ _.mixin {
 
       return "#{key}: #{value}"
     data.join(", ")
-
-
 }

@@ -15,6 +15,11 @@ __ = (x) ->
   # NaN is still NaN
   return x if !x
 
+  # We don't care about numbers
+  if (typeof x != "string")
+    console.warn "Got #{typeof x} in i18n.__ function"
+    return x
+
   # Find the base of the string, excluding all (...) spezialisations
   base = x
   while base.indexOf("(") >= 0

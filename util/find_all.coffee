@@ -11,6 +11,6 @@ find_all = (reference) ->
   if window.mapping?
     return window.mapping[reference]
   else
-    console.log? "No i18n loaded"
+    console.error? "No i18n loaded"
     return []
 
