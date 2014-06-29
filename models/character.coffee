@@ -8,8 +8,6 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
   class Character extends Model
     idAttribute: 'uuid'
 
-    properties: {}
-
     defaults:
       name: "Neue Heldin"
 
@@ -31,7 +29,11 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         KO: 8
         KK: 8
 
-    initialize: () =>
+    initialize: () ->
+      super
+
+      @['properties'] = {}
+
       pget @, 'race', races
       pget @, 'culture', cultures
       pget @, 'profession', professions
@@ -44,7 +46,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       if not @id
         @set('uuid', uuid())
 
-    incr: (attr, key, value) =>
+    incr: (attr, key, value) ->
       if not value
         value = 1
 
@@ -53,7 +55,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       else
         @.set attr, (@.attributes[attr] || 0) + value
 
-    decr: (attr, key, value) =>
+    decr: (attr, key, value) ->
       if not value
         value = 1
 
@@ -65,7 +67,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       else
         @.set attr, gtz(@.attributes[attr] - value)
 
-    set: (attr..., value) =>
+    set: (attr..., value) ->
       ###
         Overwritten for allowing beside of the @set(attr, value) call
         the additional @set(attr, key, value) call
@@ -85,7 +87,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
       return @
 
-    get: (attr, context) =>
+    get: (attr, context) ->
       ###
         Overwritten for allowing @pget calls
         and evaluating functions on the fly
@@ -98,15 +100,15 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       value = @.attributes[attr]
 
       if _.isFunction(value)
-        value = value.call(context or this)
+        value = value.call(context or @)
 
       func = @['properties'][attr]
       if func?
-        return func(_.clone(value))
+        return func.call(context or @, _.clone(value))
 
       return value
 
-    calc_skills: (top) =>
+    calc_skills: (top) ->
       ###
         Calculates the skills for a character
       ###
@@ -124,7 +126,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         else if element.constructor.name == 'PoolView'
           element.$el.insertAfter $("[name='character.ap']")
         else if element.constructor.name == 'ChoiceView'
-          console.log "Do something about this"
+          console.warn "Do something about this"
         else
           throw "Unexpected element in list"
 
@@ -153,11 +155,12 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
       return base
 
-    calc_costs: (costs) =>
+    calc_costs: (costs) ->
       ###
         Calculates the costs for this character
       ###
       character = @
+
       costs = costs? || 0
 
       # Add costs from attributes
@@ -175,8 +178,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
           when 11 then 120
           when 10 then 80
           when  9 then 40
-          else
-            0
+        else 0
 
       # Add costs from skills
       # and bundle them in their groups
@@ -236,7 +238,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       return costs
 
 
-    calc_attributes: (attributes) =>
+    calc_attributes: (attributes) ->
       ###
         Calculates the attributes for this character
       ###

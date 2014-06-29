@@ -8,9 +8,10 @@ define [], () ->
   class Model extends Backbone.Model
     idAttribute: 'name'
 
-    properties: {}
+    initialize: () ->
+      super
 
-    is: (other) =>
+    is: (other) ->
       ###
         Check on equality that considers name, name_w, name_m and aliases
       ###
@@ -22,7 +23,7 @@ define [], () ->
         else
           other in (@.get('aliases') || [])
 
-    in: (other) =>
+    in: (other) ->
       ###
         Check elementof that considers name, name_w, name_m and aliases/groups
       ###
@@ -34,7 +35,7 @@ define [], () ->
           return true
       return false
 
-    get: (attr, context) =>
+    get: (attr, context) ->
       ###
         Overwritten for allowing @pget and @cget calls
         and evaluating functions on the fly
@@ -42,6 +43,6 @@ define [], () ->
       value = @.attributes[attr]
 
       if _.isFunction(value)
-        value = value.call(context or this)
+        value = value.call(context or @)
 
       return value
