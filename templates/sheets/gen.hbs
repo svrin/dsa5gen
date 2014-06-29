@@ -1,0 +1,105 @@
+<% gender = character.get('gender'); %>
+<% name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
+
+<div class="span6">
+    <h1><%= character.get('name') %></h1>
+
+    <h3 data-for="profession"><%= character.get('profession').get(name) %></h3>
+    <label for="profession">Profession</label>
+
+    <h3 data-for="culture"><%= character.get('culture').get(name) %></h3>
+    <label for="culture">Kultur</label>
+
+    <h3 data-for="race"><%= character.get('race').get(name) %></h3>
+    <label for="race">Rasse</label>
+</div>
+
+<div class="span6">
+    <img src="/images/dsa5.png"/>
+
+    <h2>Heldendokument</h2>
+
+    <label for="character.profile.hair">Haarfarbe</label>
+    <span data-for="character.profile.hair"><%= character.get('profile')['hair'] %></span>
+
+    <label for="character.profile.eye">Augenfarbe</label>
+    <span data-for="character.profile.eye"><%= character.get('profile')['eye'] %></span>
+
+    <label for="character.profile.height">Größe</label>
+    <span data-for="character.profile.height"><%= character.get('profile')['height'] %></span>
+
+    <label for="character.profile.weight">Gewicht</label>
+    <span data-for="character.profile.weight"><%= character.get('profile')['weight'] %></span>
+
+    <label for="character.lifegrade">Erfahrungsgrad</label>
+    <span data-for="character.lifegrade"><%= character.get('lifegrade') %></span>
+
+    <label for="character.social">Sozialstatus</label>
+    <span data-for="character.social"><%= character.get('social') %></span>
+</div>
+
+<div class="span6">
+    <h2>Eigenschaften</h2>
+
+    <% _.each(character.get('attributes'), function (value, key) { %>
+    <% if (key in character.defaults.attributes) { %>
+    <b><%= key %></b>
+    <label for="attributes"><%= __(key) %></label>
+    <span data-for="attributes.<%= key %>"><%= value %></span>
+    <span data-for="attributes.<%= key %>.max"><%= character.get('attributes')[key + "_max"] %></span>
+    <% } %>
+    <% }); %>
+</div>
+
+<div class="span6">
+    <h2>Vorteile & Nachteile</h2>
+
+    <% _.each(character.get('vantages'), function (value, index) { %>
+    <span data-for="vantages.<%= index %>"><%= value %></span>
+    <% }); %>
+</div>
+
+
+<table class="span12">
+    <thead>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Grundwert</th>
+        <th>Bonus</th>
+        <th>Gekauft</th>
+        <th>Aktuell</th>
+        <th>&nbsp;</th>
+    </tr>
+    <% _.each(['GS', 'MR', 'INI', 'LE', 'AP', 'KP', 'EDG'], function (value, index) { %>
+    <tr>
+        <td>
+            <b><%= key %></b>
+            <span><%= __(key) %></span>
+        </td>
+        <td>
+            <%= character.get('race').get('attributes')[key] %>
+        </td>
+        <td>
+            <%= character.get('attributes')[key] - character.get('race').get('attributes')[key] -
+            character.attributes['attributes'][key] %>
+        </td>
+        <td>
+            <%= character.attributes['attributes'][key] %>
+        </td>
+        <td>
+            <%= character.get('attributes')[key] %>
+        </td>
+    </tr>
+    <% }); %>
+
+
+    </thead>
+
+
+</table>
+
+
+
+
+
+
