@@ -4,13 +4,14 @@
 <div class="span6">
     <h1><%= character.get('name') %></h1>
 
-    <h3 data-for="profession"><%= character.get('profession').get(name) %></h3>
+    <h3 data-for="profession"><%= character.get('profession').get(name) || character.get('profession').get("name")
+        %></h3>
     <label for="profession">Profession</label>
 
-    <h3 data-for="culture"><%= character.get('culture').get(name) %></h3>
+    <h3 data-for="culture"><%= character.get('culture').get(name) || character.get('culture').get("name") %></h3>
     <label for="culture">Kultur</label>
 
-    <h3 data-for="race"><%= character.get('race').get(name) %></h3>
+    <h3 data-for="race"><%= character.get('race').get(name) || character.get('race').get("name") %></h3>
     <label for="race">Rasse</label>
 </div>
 
@@ -70,21 +71,21 @@
         <th>Aktuell</th>
         <th>&nbsp;</th>
     </tr>
-    <% _.each(['GS', 'MR', 'INI', 'LE', 'AP', 'KP', 'EDG'], function (value, index) { %>
+    <% _.each(['GS', 'MR', 'INI', 'LE', 'AP', 'KP', 'EDG'], function (key) { %>
     <tr>
         <td>
             <b><%= key %></b>
             <span><%= __(key) %></span>
         </td>
         <td>
-            <%= character.get('race').get('attributes')[key] %>
+            <%= (character.get('race').get('attributes')[key] || 0) %>
         </td>
         <td>
-            <%= character.get('attributes')[key] - character.get('race').get('attributes')[key] -
-            character.attributes['attributes'][key] %>
+            <%= (character.get('attributes')[key] || 0) - (character.get('race').get('attributes')[key] || 0) -
+            (character.attributes['attributes'][key] || 0) %>
         </td>
         <td>
-            <%= character.attributes['attributes'][key] %>
+            <%= character.attributes['attributes'][key] || 0 %>
         </td>
         <td>
             <%= character.get('attributes')[key] %>

@@ -7,7 +7,8 @@ $ () ->
 
     initialize: (options) ->
       @route /^\/?$/, 'index', @.welcome
-      @route /^\/?character\/(.+)$/, 'character', @.character
+      @route /^\/?character\/([\w\d\-]+)$/, 'character', @.character
+      @route /^\/?character\/([\w\d\-]+)\/(\w+)$/, 'print', @.print
       @route 'impressum', 'impressum', @.impressum
 
       require ['data/character'], (characters) ->
@@ -24,6 +25,15 @@ $ () ->
         view = new WelcomeView({collection: characters})
         $('main').attr "role", "navigation"
         $('main').html view.$el
+
+    print: (cid, mode) ->
+      require ['views/print', 'views/error', 'data/character'], (PrintView, ErrorView, characters) ->
+        model = characters.get(cid);
+        if model
+          $('main').attr "role", "main"
+          return new PrintView({model: model, collection: characters, mode: mode})
+        else
+          new ErrorView({msg: "Der Character existiert nicht"})
 
     character: (cid) ->
       require ['views/character', 'views/error', 'data/character'], (CharacterView, ErrorView, characters) ->
