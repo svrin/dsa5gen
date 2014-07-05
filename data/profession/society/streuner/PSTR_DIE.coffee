@@ -13,7 +13,7 @@ professions.add new (
     ]
 
     name_m: __("Dieb")
-    name_w: __("Dieb/in")
+    name_w: __("Diebin")
 
     costs: 1205
 
