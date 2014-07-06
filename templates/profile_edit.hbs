@@ -11,6 +11,10 @@
 		<label><input type="radio" name="character.gender" value="x" /> neutral/exotisch</label>
 	</dd>
 
+    <dt><label for="profile.input.character.profile.birthday"><%= __('Geburtstag') %></label></dt>
+    <dd><input type="text" name="character.profile.birthday" id="profile.input.character.profile.birthday"
+               value="<%= character.get('profile')['birthday'] %>"/></dd>
+
     <dt><label for="character.lifegrade"><%= __('Erfahrungsgrad') %></label></dt>
     <dd>
         <% self.lifegrades.each( function (lifegrade) { %>
@@ -20,10 +24,11 @@
         </label>
         <% }); %>
     </dd>
+</dl>
 
-    <% if (character.get('race')) { // begin race depended %> 
-	
-	<dt><label for="profile.select.character.profile.hair">Haarfarbe</label></dt>
+<% if (character.get('race')) { // begin race depended %>
+<dl>
+<dt><label for="profile.select.character.profile.hair">Haarfarbe</label></dt>
 	<dd>
 		<select name="character.profile.hair" id="profile.select.character.profile.hair">
 		    <option value="" data-for="character.profile.hair"><%= character.get('profile')['hair'] %></option>
@@ -58,7 +63,10 @@
                name="character.profile.weight" step="1" value="<%= character.get('profile')['weight'] %>" />
         Stein
 	</dd>
-	
-	<% } // end race depended %>
 </dl>
+<% } // end race depended %>
+
+
+
+
 	

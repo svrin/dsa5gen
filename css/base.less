@@ -26,7 +26,7 @@ body {
 
   background-color: #FEF3D7;
 
-  > div {
+  > div.container-outer {
     display: table;
     width: 100%;
     height: 100%;
@@ -38,7 +38,7 @@ body {
 
     padding: @main-padding @main-padding @main-padding + @footer-height;
 
-    > div {
+    > div.container-inner {
       display: table-cell;
 
       vertical-align: middle;
@@ -168,7 +168,7 @@ main {
   color: lighten(@link-color, 10%);
 }
 
-.box-left, .box-tab {
+.box-left, .box-tab, .box-table {
   border-image: url('/images/scape.png') 25 25 fill round;
   border-width: 25px;
 
@@ -203,6 +203,11 @@ nav {
     padding-left: 5px;
     margin-right: -5px;
   }
+}
+
+.box-table {
+  width: auto;
+  display: inline-block;
 }
 
 .box-tab {

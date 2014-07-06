@@ -46,16 +46,25 @@ define ['views/bases/tabbox', 'text!templates/profile_edit.hbs', 'data/lifegrade
       	
       # Height
       height = profile.height or race.get('height', this.model)?[0]
-      this.$el.find("[name='character.profile.height']").val(height)
+      @.$el.find("[name='character.profile.height']").val(height)
       
       # Weight
       weight = profile.weight or race.get('weight', this.model)
-      this.$el.find("[name='character.profile.weight']").val(weight)
+      @.$el.find("[name='character.profile.weight']").val(weight)
+
+      # Use Datepicker for birthday
+      require ['views/misc/datepicker'], (View) =>
+        new View({
+          container: $("body"),
+          element: @.$el.find("[name='character.profile.birthday']"),
+          callback: (value) =>
+            this.model.get('profile')['birthday'] = value
+        })
       
       # Allow chaining
       return rtn
-      
-    change: (event) => 
+
+    change: (event) =>
       
       node = $(event.target)
       if not node.is "select"

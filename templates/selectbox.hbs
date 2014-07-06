@@ -2,16 +2,17 @@
 
 <% gender = character.get('gender'); %>
 
+<% var option = -1; %>
 <% if (self.options) { %>
 <% option = $("[name='view." + self.name + ".options']").val() || _(self.options).keys()[0] %>
 <select data-action="render" name="view.<%= self.name %>.options">
     <% _.each(self.options, function(element, index) { %>
-<% if (option == index) { %>
-<option selected="selected" value="<%= index %>"><%= element[0] %></option>
-<% } else  { %>
-<option value="<%= index %>"><%= element[0] %></option>
-<% } %>
-<% }); %>
+    <% if (option == index) { %>
+    <option selected="selected" value="<%= index %>"><%= element[0] %></option>
+    <% } else { %>
+    <option value="<%= index %>"><%= element[0] %></option>
+    <% } %>
+    <% }); %>
 </select>
 <% } %>
 
