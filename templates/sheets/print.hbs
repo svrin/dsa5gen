@@ -6,20 +6,20 @@
 
     <h3 data-for="profession"><%= character.get('profession').get(name) || character.get('profession').get("name")
         %></h3>
-    <label for="profession">Profession</label>
+    <label class="subline" for="profession">Profession</label>
 
     <h3 data-for="culture"><%= character.get('culture').get(name) || character.get('culture').get("name") %></h3>
-    <label for="culture">Kultur</label>
+    <label class="subline" for="culture">Kultur</label>
 
     <h3 data-for="race"><%= character.get('race').get(name) || character.get('race').get("name") %></h3>
-    <label for="race">Rasse</label>
+    <label class="subline" for="race">Rasse</label>
 </section>
 
 <section class="span6 print-box">
     <div id="logo">
         <img src="/images/dsa5.png"/>
 
-        <h2>Heldendokument</h2>
+        <h2 class="subcaption">Heldendokument</h2>
     </div>
 
     <label for="character.profile.hair">Haarfarbe</label>
@@ -47,9 +47,10 @@
     <% _.each(character.get('attributes'), function (value, key) { %>
     <% if (key in character.defaults.attributes) { %>
     <b><%= key %></b>
-    <label for="attributes"><%= __(key) %></label>
+    <label class="subdesc" for="attributes"><%= __(key) %></label>
     <span data-for="attributes.<%= key %>"><%= value %></span>
     <span data-for="attributes.<%= key %>.max"><%= character.get('attributes')[key + "_max"] %></span>
+    <br/>
     <% } %>
     <% }); %>
 </section>
@@ -63,41 +64,40 @@
 </section>
 
 <table class="span12 print-box">
-<thead>
+    <caption>Abgeleitete Werte</caption>
+    <thead>
     <tr>
-        <th>&nbsp;</th>
-        <th>Grundwert</th>
-        <th>Bonus</th>
-        <th>Gekauft</th>
-        <th>Aktuell</th>
+        <th width="11%">&nbsp;</th>
+        <th width="13%">Grundwert</th>
+        <th width="13%">Bonus</th>
+        <th width="13%">Gekauft</th>
+        <th width="30%">Aktuell</th>
         <th>&nbsp;</th>
     </tr>
-    <% _.each(['GS', 'MR', 'INI', 'LE', 'AP', 'KP', 'EDG'], function (key) { %>
-    <tr>
+    </thead>
+    <tbody>
+    <% _.each(['GS', 'MR', 'INI', 'LE', 'AsP', 'KaP', 'EDG'], function (key) { %>
+    <tr data-key="<%= key %>" data-value="<%= character.get('attributes')[key] %>">
         <td>
             <b><%= key %></b>
-            <span><%= __(key) %></span>
+            <label class="subdesc"><%= __(key) %></label>
         </td>
-        <td>
+        <td data-for="attributes.<%= key %>.base">
             <%= (character.get('race').get('attributes')[key] || 0) %>
         </td>
-        <td>
+        <td data-for="attributes.<%= key %>.bonus">
             <%= (character.get('attributes')[key] || 0) - (character.get('race').get('attributes')[key] || 0) -
             (character.attributes['attributes'][key] || 0) %>
         </td>
-        <td>
+        <td data-for="attributes.<%= key %>">
             <%= character.attributes['attributes'][key] || 0 %>
         </td>
-        <td>
+        <td data-for="attributes.<%= key %>.current">
             <%= character.get('attributes')[key] %>
         </td>
     </tr>
     <% }); %>
-
-
-    </thead>
-
-
+    </tbody>
 </table>
 
 
