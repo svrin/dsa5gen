@@ -122,7 +122,14 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         if _.isString(element)
           base[element] = true
         else if _.isArray(element)
-          base[element[0]] = (base[element[0]] || 0) + element[1]
+
+          if _.isString(element[1])
+            if base[element[0]]
+              base[element[0]] = base[element[0]] + "; " + element[1]
+            else
+              base[element[0]] = element[1]
+          else
+            base[element[0]] = (base[element[0]] || 0) + element[1]
         else if element.constructor.name == 'PoolView'
           element.$el.insertAfter $("[name='character.ap']")
         else if element.constructor.name == 'ChoiceView'

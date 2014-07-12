@@ -58,8 +58,12 @@
 <section class="span6 print-box">
     <h2>Vorteile & Nachteile</h2>
 
-    <% _.each(character.get('skills'), function (value, index) { %>
-    <span data-for="skills.<%= index %>"><%= value %></span>
+    <% _.each(character.get('skills'), function (value, key) { %>
+    <% if (value && value > 1) { %>
+    <h3 data-for="skills.<%= key %>"><%= key %>: <%= value %></h3>
+    <% } else if (value && value == 1) { %>
+    <h3 data-for="skills.<%= key %>"><%= key %></h3>
+    <% } %>
     <% }); %>
 </section>
 
