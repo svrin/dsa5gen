@@ -29,7 +29,6 @@ var dirList = [
     'profession',
     'lifegrade',
     'race',
-    'vantage',
     'character',
     'skill'
 ];

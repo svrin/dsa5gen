@@ -35,7 +35,7 @@ define [], () ->
           @.views['tab'][view] = new View({model: @model, container: @$el})
 
       # Tab Boxes
-      for view in ['language', 'skills', 'battle', 'magic', 'liturgy']
+      for view in ['language', 'skills', 'battle', 'magic', 'liturgy', 'vantage']
         require ['views/tab/' + view], (View) =>
           @.views['tab'][view] = new View({model: @model, container: @$el})
 

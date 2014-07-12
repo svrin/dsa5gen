@@ -35,6 +35,9 @@
                 <% if (element.get('SF') !== undefined) { %>
                 <span><%= element.get('SF') %></span>
                 <% } %>
+                <% if (element.get('costs') !== undefined) { %>
+                <span title="<%= __('AP') %>"><%= element.get('costs') %> AP</span>
+                <% } %>
                 <% if (element.get('requirements') !== undefined) { %>
                 <i><%= _.join(element.get('requirements'), value + 1, element) %></i>
                 <% } %>

@@ -9,7 +9,7 @@ define "data/skill/battle/style", [], () ->
   ]
 
 require ["data/skill/battle/style"], (S) ->
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Blutgruben-Stil")
     costs: 20
 
@@ -17,7 +17,7 @@ require ["data/skill/battle/style"], (S) ->
       [__("Raufen"), 6]
     ]
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Gassen-Stil")
     costs: 20
 
@@ -25,7 +25,7 @@ require ["data/skill/battle/style"], (S) ->
       [__("Raufen"), 4]
     ]
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Hammerfaust")
     costs: 25
 
@@ -33,7 +33,7 @@ require ["data/skill/battle/style"], (S) ->
       [__("Raufen"), 6]
     ]
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Hruruzat")
     costs: 30
 
@@ -41,7 +41,7 @@ require ["data/skill/battle/style"], (S) ->
       [__("Raufen"), 8]
     ]
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Mercenario")
     costs: 15
 
@@ -49,7 +49,7 @@ require ["data/skill/battle/style"], (S) ->
       [__("Raufen"), 8]
     ]
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Unauer Schule")
     costs: 15
 
@@ -57,7 +57,7 @@ require ["data/skill/battle/style"], (S) ->
       [__("Raufen"), 8]
     ]
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Zyklopäisches Ringen")
     costs: 20
 

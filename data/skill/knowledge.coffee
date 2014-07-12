@@ -6,7 +6,7 @@ define "data/skill/society", [], () ->
   ]
 
 require ["data/skill/society"], (S) ->
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Bekehren & Überzeugen")
 
     dices: ["MU", "IN", "CH"]
@@ -14,7 +14,7 @@ require ["data/skill/society"], (S) ->
     BE: false
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Betören")
 
     dices: ["MU", "CH", "CH"]
@@ -22,7 +22,7 @@ require ["data/skill/society"], (S) ->
     BE: false
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Einschüchtern")
 
     dices: ["MU", "IN", "CH"]
@@ -30,7 +30,7 @@ require ["data/skill/society"], (S) ->
     BE: false
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Etikette")
 
     dices: ["KL", "IN", "CH"]
@@ -38,7 +38,7 @@ require ["data/skill/society"], (S) ->
     BE: false
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Gassenwissen")
 
     dices: ["KL", "IN", "CH"]
@@ -46,7 +46,7 @@ require ["data/skill/society"], (S) ->
     BE: false
     SF: "C"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Menschenkenntnis")
 
     dices: ["KL", "IN", "CH"]
@@ -54,7 +54,7 @@ require ["data/skill/society"], (S) ->
     BE: false
     SF: "C"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Überreden")
 
     dices: ["MU", "IN", "CH"]
@@ -62,7 +62,7 @@ require ["data/skill/society"], (S) ->
     BE: false
     SF: "C"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Verkleiden")
 
     dices: ["IN", "CH", "GE"]
@@ -70,7 +70,7 @@ require ["data/skill/society"], (S) ->
     BE: "j/n"
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Willenskraft")
 
     dices: ["MU", "IN", "CH"]

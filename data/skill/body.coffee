@@ -6,7 +6,7 @@ define "data/skill/body", [], () ->
   ]
 
 require ["data/skill/body"], (S) ->
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Fliegen")
 
     dices: ["MU", "IN", "GE"]
@@ -14,7 +14,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Gaukeleien")
 
     dices: ["MU", "CH", "FF"]
@@ -22,7 +22,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "A"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Klettern")
 
     dices: ["MU", "GE", "KK"]
@@ -30,7 +30,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Körperbeherrschung")
 
     dices: ["IN", "GE", "KK"]
@@ -38,7 +38,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "C"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Reiten")
 
     dices: ["IN", "GE", "KK"]
@@ -46,7 +46,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Schwimmen")
 
     dices: ["GE", "KO", "KK"]
@@ -54,7 +54,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Selbstbeherrschung")
 
     dices: ["MU", "MU", "KO"]
@@ -62,7 +62,7 @@ require ["data/skill/body"], (S) ->
     BE: false
     SF: "C"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Singen")
 
     dices: ["IN", "CH", "KO"]
@@ -70,7 +70,7 @@ require ["data/skill/body"], (S) ->
     BE: false
     SF: "A"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Sinnesschärfe")
 
     dices: ["KL", "IN", "IN"]
@@ -78,7 +78,7 @@ require ["data/skill/body"], (S) ->
     BE: false
     SF: "C"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Tanzen")
 
     dices: ["CH", "GE", "GE"]
@@ -86,7 +86,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "A"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Taschendiebstahl")
 
     dices: ["MU", "IN", "FF"]
@@ -94,7 +94,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "B"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Verbergen")
 
     dices: ["MU", "IN", "GE"]
@@ -102,7 +102,7 @@ require ["data/skill/body"], (S) ->
     BE: true
     SF: "C"
 
-  skills.add _.extend S,
+  skills.add _.extend {}, S,
     name: __("Zechen")
 
     dices: ["IN", "KO", "KK"]
