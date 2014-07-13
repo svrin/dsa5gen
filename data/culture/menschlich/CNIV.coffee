@@ -14,13 +14,13 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Nujuka)")
+    [__("Nujuka")]
   ]
 
   lettering: []
 
   knowledge: [
-    __("Kulturkunde (Nivesen)")
+    [__("Kulturkunde (Nivesen)")]
   ]
 
   common: [

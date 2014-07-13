@@ -1,0 +1,40 @@
+<% if (character.get('race')) { // begin race depended %>
+<h4>Charakter</h4>
+<dl>
+    <dt><label for="profile.select.character.profile.hair">Haarfarbe</label></dt>
+    <dd>
+        <select name="character.profile.hair" id="profile.select.character.profile.hair">
+            <option value="" data-for="character.profile.hair"><%= character.get('profile')['hair'] %></option>
+            <option value="%!">Würfeln</option>
+            <option value="%?">Frei Wählen</option>
+            <optgroup label=""></optgroup>
+        </select>
+    </dd>
+
+    <dt><label for="profile.select.character.profile.eye">Augenfarbe</label></dt>
+    <dd>
+        <select name="character.profile.eye" id="profile.select.character.profile.eye">
+            <option value="" data-for="character.profile.eye"><%= character.get('profile')['eye'] %></option>
+            <option value="%!">Würfeln</option>
+            <option value="%?">Frei Wählen</option>
+            <optgroup label=""></optgroup>
+        </select>
+    </dd>
+
+    <dt><label for="profile.input.character.profile.height">Größe</label></dt>
+    <dd>
+        <input type="number"
+               id="profile.input.character.profile.height"
+               name="character.profile.height" step="1" value="<%= character.get('profile')['height'] %>"/>
+        Halbfinger
+    </dd>
+
+    <dt><label for="profile.input.character.profile.weight">Gewicht</label></dt>
+    <dd>
+        <input type="number"
+               id="profile.input.character.profile.weight"
+               name="character.profile.weight" step="1" value="<%= character.get('profile')['weight'] %>"/>
+        Stein
+    </dd>
+</dl>
+<% } // end race depended %>

@@ -19,17 +19,17 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
-    __("Garethi (Bornländisch)")
+    [__("Garethi")]
+    [__("Garethi (Bornländisch)")]
   ]
 
   lettering: []
 
   knowledge: [
-    __("Kulturkunde (Bornland)")
-    __("Bornland (Festenland)")
-    __("Bornland (Mark)")
-    __("Bornland (Sewerien)")
+    [__("Kulturkunde (Bornland)")]
+    [__("Kulturkunde (Bornland/Festenland)")]
+    [__("Kulturkunde (Bornland/Mark)")]
+    [__("Kulturkunde (Bornland/Sewerien)")]
   ]
 
   common: [

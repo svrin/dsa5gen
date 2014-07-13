@@ -1,0 +1,34 @@
+<% if (character.get('culture')) { // begin culture depended %>
+<% var culture = character.get('culture'); %>
+
+<h4>Charakter</h4>
+<dl>
+    <dt><label for="profile.select.character.profile.social">Sozialstatus</label></dt>
+    <dd>
+        <select name="character.profile.social" id="profile.select.character.profile.social">
+            <option value="" data-for="character.profile.social"><%= character.get('profile')['social'] %></option>
+            <option value="%?">Frei Wählen</option>
+            <optgroup label=""></optgroup>
+        </select>
+    </dd>
+
+    <dt><label for="profile.select.character.profile.speech">Muttersprache</label></dt>
+    <dd>
+        <select name="character.profile.speech" id="profile.select.character.profile.speech">
+            <option value="" data-for="character.profile.speech"><%= character.get('profile')['social'] %></option>
+            <option value="%?">Frei Wählen</option>
+            <optgroup label=""></optgroup>
+        </select>
+    </dd>
+
+    <dt><label for="profile.select.character.profile.knowledge">Kulturkunde</label></dt>
+    <dd>
+        <select name="character.profile.knowledge" id="profile.select.character.profile.knowledge">
+            <option value="" data-for="character.profile.knowledge"><%= character.get('profile')['knowledge'] %>
+            </option>
+            <option value="%?">Frei Wählen</option>
+            <optgroup label=""></optgroup>
+        </select>
+    </dd>
+</dl>
+<% } // end culture depended %>

@@ -14,9 +14,9 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Alaani)")
-    __("Alaani (Gajka)")
-    __("Alaani (Takellen)")
+    [__("Alaani")]
+    [__("Alaani (Gajka)")]
+    [__("Alaani (Takellen)")]
   ]
 
   lettering: [
@@ -24,7 +24,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Norbarden)")
+    [__("Kulturkunde (Norbarden)")]
   ]
 
   common: [

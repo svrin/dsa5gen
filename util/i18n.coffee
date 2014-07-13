@@ -28,12 +28,7 @@ __ = (x) ->
     return x
 
   # Find the base of the string, excluding all (...) spezialisations
-  base = x
-  while base.indexOf("(") >= 0
-    start = base.indexOf("(")
-    ends = base.indexOf(")", start)
-    base = base.substr(0, start) + base.substr(ends)
-    base = base.trim()
+  base = __base(x)
 
   # Have the base
   if not window.mapping[base]
@@ -47,3 +42,20 @@ __ = (x) ->
     return window.locale[x] and window.locale[x] or x
   else
     return x
+
+# Function to discover the base of something
+__base = (x) ->
+
+  # We don't care about numbers
+  if (typeof x != "string")
+    console.warn "Got #{typeof x} in i18n.__base function"
+    return x
+
+  base = x
+  while base.indexOf("(") >= 0
+    start = base.indexOf("(")
+    ends = base.indexOf(")", start)
+    base = base.substr(0, start) + base.substr(ends + 1)
+    base = base.trim()
+
+  return base

@@ -14,12 +14,12 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Throwalsch)")
-    __("Throwalsch (Throwal-Dialekt)")
-    __("Throwalsch (Premer-Dialekt)")
-    __("Throwalsch (Olporter-Dialekt)")
-    __("Throwalsch (Waskirer Hochland-Dialekt)")
-    __("Throwalsch (Dialekt der Olportsteine)")
+    [__("Throwalsch")]
+    [__("Throwalsch (Throwal-Dialekt)")]
+    [__("Throwalsch (Premer-Dialekt)")]
+    [__("Throwalsch (Olporter-Dialekt)")]
+    [__("Throwalsch (Waskirer Hochland-Dialekt)")]
+    [__("Throwalsch (Dialekt der Olportsteine)")]
   ]
 
   lettering: [
@@ -27,12 +27,12 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Thorwal)")
-    __("Thorwal (Nordthrowal)")
-    __("Thorwal (Premer Halbinsel)")
-    __("Thorwal (Südthorwal)")
-    __("Thorwal (Waskirer Hochland)")
-    __("Thorwal (Olportsteine)")
+    [__("Kulturkunde (Thorwal)")]
+    [__("Kulturkunde (Thorwal/Nordthrowal)")]
+    [__("Kulturkunde (Thorwal/Premer Halbinsel)")]
+    [__("Kulturkunde (Thorwal/Südthorwal)")]
+    [__("Kulturkunde (Thorwal/Waskirer Hochland)")]
+    [__("Kulturkunde (Thorwal/Olportsteine)")]
   ]
 
   common: [

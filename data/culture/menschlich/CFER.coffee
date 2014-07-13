@@ -14,13 +14,13 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Ferkina)")
+    [__("Ferkina")]
   ]
 
   lettering: []
 
   knowledge: [
-    __("Kulturkunde (Ferkinas)")
+    [__("Kulturkunde (Ferkinas)")]
   ]
 
   common: [

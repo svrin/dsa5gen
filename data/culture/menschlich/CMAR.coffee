@@ -18,10 +18,10 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
-    __("Garethi (Maraskani)")
-    __("Sprache (Tylamidya)")
-    __("Tylamidya (Maraskani-Tylamidya)")
+    [__("Garethi")]
+    [__("Garethi (Maraskani)")]
+    [__("Tylamidya")]
+    [__("Tylamidya (Maraskani-Tylamidya)")]
   ]
 
   lettering: [
@@ -30,7 +30,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Maraskan)")
+    [__("Kulturkunde (Maraskan)")]
   ]
 
   common: [

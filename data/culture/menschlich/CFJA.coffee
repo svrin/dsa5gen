@@ -14,13 +14,13 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Fjarningisch)")
+    [__("Fjarningisch")]
   ]
 
   lettering: []
 
   knowledge: [
-    __("Kulturkunde (Fjarninger)")
+    [__("Kulturkunde (Fjarninger)")]
   ]
 
   common: [

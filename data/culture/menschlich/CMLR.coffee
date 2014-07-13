@@ -19,7 +19,7 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
+    [__("Garethi")]
   ]
 
   lettering: [
@@ -27,16 +27,16 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Mittelreich)")
-    __("Mittelreich (Albernia)")
-    __("Mittelreich (Almada)")
-    __("Mittelreich (Darpatien)")
-    __("Mittelreich (Donnerbach)")
-    __("Mittelreich (Garetien)")
-    __("Mittelreich (Kosch)")
-    __("Mittelreich (Nordmarken)")
-    __("Mittelreich (Tobrien)")
-    __("Mittelreich (Weiden)")
+    [__("Kulturkunde (Mittelreich)")]
+    [__("Kulturkunde (Mittelreich/Albernia)")]
+    [__("Kulturkunde (Mittelreich/Almada)")]
+    [__("Kulturkunde (Mittelreich/Darpatien)")]
+    [__("Kulturkunde (Mittelreich/Donnerbach)")]
+    [__("Kulturkunde (Mittelreich/Garetien)")]
+    [__("Kulturkunde (Mittelreich/Kosch)")]
+    [__("Kulturkunde (Mittelreich/Nordmarken)")]
+    [__("Kulturkunde (Mittelreich/Tobrien)")]
+    [__("Kulturkunde (Mittelreich/Weiden)")]
   ]
 
   common: [

@@ -10,7 +10,7 @@ cultures.add [
      [__("Vogt"), __("Amtsadel"), 1],
      [__("Nobili/a"), __("Titularadel"), 1],
      [__("Esquirio/a"), __("Titularadel"), 2, __("Erbadel"), 2],
-     [__("Domicello/a"), __("Titularadel"),  2, __("Erbadel"), 2],
+     [__("Domicello/a"), __("Titularadel"), 2, __("Erbadel"), 2],
      [__("Cavalliere/a"), __("Titularadel"), 3, __("Erbadel"), 3],
      [__("Baronet/Baroness"), __("Titularadel"), 4, __("Erbadel"), 4],
      [__("Baron/in"), __("Erbadel"), 5]]
@@ -21,8 +21,8 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
-    __("Garethi (Horathi)")
+    [__("Garethi")]
+    [__("Garethi (Horathi)")]
   ]
 
   lettering: [
@@ -30,12 +30,12 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Horasreich)")
-    __("Horasreich (Aurelat)")
-    __("Horasreich (Coverna)")
-    __("Horasreich (Septimana)")
-    __("Horasreich (Wilder Süden)")
-    __("Horasreich (Yaquirien)")
+    [__("Kulturkunde (Horasreich)")]
+    [__("Kulturkunde (Horasreich/Aurelat)")]
+    [__("Kulturkunde (Horasreich/Coverna)")]
+    [__("Kulturkunde (Horasreich/Septimana)")]
+    [__("Kulturkunde (Horasreich/Wilder Süden)")]
+    [__("Kulturkunde (Horasreich/Yaquirien)")]
   ]
 
   common: [

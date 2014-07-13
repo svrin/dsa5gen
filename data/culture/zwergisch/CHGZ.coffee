@@ -14,8 +14,8 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Rogolan)")
-    __("Rogolan (hügelzwergischen Dialekt)")
+    [__("Rogolan")]
+    [__("Rogolan (hügelzwergischen Dialekt)")]
   ]
 
   lettering: [
@@ -23,7 +23,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Hügelzwerge)")
+    [__("Kulturkunde (Hügelzwerge)")]
   ]
 
   common: [

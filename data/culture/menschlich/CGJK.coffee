@@ -14,13 +14,13 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Gjalskisch)")
+    [__("Gjalskisch")]
   ]
 
   lettering: []
 
   knowledge: [
-    __("Kulturkunde (Gjalsker)")
+    [__("Kulturkunde (Gjalsker)")]
   ]
 
   common: [

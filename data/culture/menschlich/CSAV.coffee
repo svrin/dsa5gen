@@ -15,10 +15,10 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
-    __("Garethi (Brabaci)")
-    __("Garethi (Charypto)")
-    __("Garethi (Gatamo)")
+    [__("Garethi")]
+    [__("Garethi (Brabaci)")]
+    [__("Garethi (Charypto)")]
+    [__("Garethi (Gatamo)")]
   ]
 
   lettering: [
@@ -26,13 +26,13 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Südaventurien)")
-    __("Südaventurien (Al'Anfa)")
-    __("Südaventurien (Brabak)")
-    __("Südaventurien (Bukanier)")
-    __("Südaventurien (Chrohop)")
-    __("Südaventurien (Mengbilla)")
-    __("Südaventurien (Salem)")
+    [__("Kulturkunde (Südaventurien)")]
+    [__("Kulturkunde (Südaventurien/Al'Anfa)")]
+    [__("Kulturkunde (Südaventurien/Brabak)")]
+    [__("Kulturkunde (Südaventurien/Bukanier)")]
+    [__("Kulturkunde (Südaventurien/Chrohop)")]
+    [__("Kulturkunde (Südaventurien/Mengbilla)")]
+    [__("Kulturkunde (Südaventurien/Salem)")]
   ]
 
   common: [

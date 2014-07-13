@@ -18,8 +18,8 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Tulamidya)")
-    __("Tulamidya (Mhanadisch-Balashidisch)")
+    [__("Tulamidya")]
+    [__("Tulamidya (Mhanadisch-Balashidisch)")]
   ]
 
   lettering: [
@@ -27,15 +27,15 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Tulamidenlande)")
-    __("Tulamidenlande (Balash)")
-    __("Tulamidenlande (Fasar)")
-    __("Tulamidenlande (Gorien)")
-    __("Tulamidenlande (Knuchom)")
-    __("Tulamidenlande (Mhanadistan)")
-    __("Tulamidenlande (Thalusien)")
-    __("Tulamidenlande (Yalaiad)")
-    __("Tulamidenlande (Szintotal)")
+    [__("Kulturkunde (Tulamidenlande)")]
+    [__("Kulturkunde (Tulamidenlande/Balash)")]
+    [__("Kulturkunde (Tulamidenlande/Fasar)")]
+    [__("Kulturkunde (Tulamidenlande/Gorien)")]
+    [__("Kulturkunde (Tulamidenlande/Knuchom)")]
+    [__("Kulturkunde (Tulamidenlande/Mhanadistan)")]
+    [__("Kulturkunde (Tulamidenlande/Thalusien)")]
+    [__("Kulturkunde (Tulamidenlande/Yalaiad)")]
+    [__("Kulturkunde (Tulamidenlande/Szintotal)")]
   ]
 
   common: [

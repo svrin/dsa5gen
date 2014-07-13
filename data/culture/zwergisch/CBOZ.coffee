@@ -14,14 +14,14 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Rogolan)")
-    __("Rogolan (Brobimisch)")
+    [__("Rogolan")]
+    [__("Rogolan (Brobimisch)")]
   ]
 
   lettering: []
 
   knowledge: [
-    __("Kulturkunde (Brobim)")
+    [__("Kulturkunde (Brobim)")]
   ]
 
   common: [

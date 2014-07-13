@@ -14,8 +14,8 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Tulamidya)")
-    __("Tulamidya (Zahorisch)")
+    [__("Tulamidya")]
+    [__("Tulamidya (Zahorisch)")]
   ]
 
   lettering: [
@@ -24,7 +24,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Zahori)")
+    [__("Kulturkunde (Zahori)")]
   ]
 
   common: [

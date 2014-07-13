@@ -13,10 +13,10 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
-    __("Sprache (Alaani)")
-    __("Sprache (Nujuka)")
-    __("Sprache (Thorwalsch)")
+    [__("Garethi")]
+    [__("Alaani")]
+    [__("Nujuka")]
+    [__("Thorwalsch")]
   ]
 
   lettering: [
@@ -24,7 +24,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Nordaventurien)")
+    [__("Kulturkunde (Nordaventurien)")]
   ]
 
   common: [

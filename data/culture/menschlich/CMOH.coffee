@@ -14,13 +14,13 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Mohisch)")
+    [__("Mohisch")]
   ]
 
   lettering: []
 
   knowledge: [
-    __("Kulturkunde (Waldmenschen)")
+    [__("Kulturkunde (Waldmenschen)")]
   ]
 
   common: [

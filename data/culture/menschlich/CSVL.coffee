@@ -14,7 +14,7 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
+    [__("Garethi")]
   ]
 
   lettering: [
@@ -22,7 +22,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Svellttal)")
+    [__("Kulturkunde (Svellttal)")]
   ]
 
   common: [

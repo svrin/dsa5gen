@@ -147,6 +147,12 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       if culture
         _.each culture.get('auto'), lambda
 
+      # Add 3 in mother language
+      speech = character.get('profile')['speech']
+      if speech
+        speech = __base(speech)
+        lambda([speech, 3])
+
       # Add content from profession
       profession = character.get('profession')
       if profession

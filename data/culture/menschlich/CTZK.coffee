@@ -14,13 +14,13 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Zhulchammaqra)")
+    [__("Zhulchammaqra")]
   ]
 
   lettering: []
 
   knowledge: [
-    __("Kulturkunde (Trollzacker)")
+    [__("Kulturkunde (Trollzacker)")]
   ]
 
   common: [

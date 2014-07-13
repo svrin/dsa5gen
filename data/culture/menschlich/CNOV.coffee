@@ -17,8 +17,8 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Tulamidya)")
-    __("Tulamidya (Khôm-Novadisch)")
+    [__("Tulamidya")]
+    [__("Tulamidya (Khôm-Novadisch)")]
   ]
 
   lettering: [
@@ -26,7 +26,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Novadis)")
+    [__("Kulturkunde (Novadis)")]
   ]
 
   common: [

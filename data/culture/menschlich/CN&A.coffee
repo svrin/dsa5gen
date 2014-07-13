@@ -21,9 +21,9 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Garethi)")
-    __("Garethi (Andergastisch)")
-    __("Garethi (Nostrisch)")
+    [__("Garethi")]
+    [__("Garethi (Andergastisch)")]
+    [__("Garethi (Nostrisch)")]
   ]
 
   lettering: [
@@ -31,10 +31,10 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Nostria & Andergast)")
-    __("Nostria & Andergast (Andergast)")
-    __("Nostria & Andergast (Engasal)")
-    __("Nostria & Andergast (Nostria)")
+    [__("Kulturkunde (Nostria & Andergast)")]
+    [__("Kulturkunde (Nostria & Andergast/Andergast)")]
+    [__("Kulturkunde (Nostria & Andergast/Engasal)")]
+    [__("Kulturkunde (Nostria & Andergast/Nostria)")]
   ]
 
   common: [

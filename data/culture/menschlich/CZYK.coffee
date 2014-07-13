@@ -16,7 +16,7 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Zyklopäisch)")
+    [__("Zyklopäisch")]
   ]
 
   lettering: [
@@ -24,7 +24,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Zyklopeninseln)")
+    [__("Kulturkunde (Zyklopeninseln)")]
   ]
 
   common: [

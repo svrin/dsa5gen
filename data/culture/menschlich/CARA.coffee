@@ -19,9 +19,9 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Tulamidya)")
-    __("Tulamidya (Aranisch)")
-    __("Sprache (Garethi)")
+    [__("Tulamidya")]
+    [__("Tulamidya (Aranisch)")]
+    [__("Garethi")]
   ]
 
   lettering: [
@@ -30,12 +30,12 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Aranien)")
-    __("Aranien (Baburin)")
-    __("Aranien (Elburum)")
-    __("Aranien (Gorien)")
-    __("Aranien (Palmyramis)")
-    __("Aranien (Zorgan)")
+    [__("Kulturkunde (Aranien)")]
+    [__("Kulturkunde (Aranien/Baburin)")]
+    [__("Kulturkunde (Aranien/Elburum)")]
+    [__("Kulturkunde (Aranien/Gorien)")]
+    [__("Kulturkunde (Aranien/Palmyramis)")]
+    [__("Kulturkunde (Aranien/Zorgan)")]
   ]
 
   common: [

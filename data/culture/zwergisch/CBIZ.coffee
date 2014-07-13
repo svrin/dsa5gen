@@ -14,8 +14,8 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Rogolan)")
-    __("Rogolan (brillantzwergischer Dialekt)")
+    [__("Rogolan")]
+    [__("Rogolan (brillantzwergischer Dialekt)")]
   ]
 
   lettering: [
@@ -23,7 +23,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Brillantzwerge)")
+    [__("Kulturkunde (Brillantzwerge)")]
   ]
 
   common: [

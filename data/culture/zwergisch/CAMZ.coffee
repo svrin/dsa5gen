@@ -14,8 +14,8 @@ cultures.add [
   ]
 
   speech: [
-    __("Sprache (Rogolan)")
-    __("Rogolan (ambosszwergischer Dialekt)")
+    [__("Rogolan")]
+    [__("Rogolan (ambosszwergischer Dialekt)")]
   ]
 
   lettering: [
@@ -23,7 +23,7 @@ cultures.add [
   ]
 
   knowledge: [
-    __("Kulturkunde (Ambosszwerge)")
+    [__("Kulturkunde (Ambosszwerge)")]
   ]
 
   common: [
