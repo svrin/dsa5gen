@@ -182,16 +182,15 @@ main {
 @left-width: 25%;
 
 nav {
-  position: relative;
-
   width: 100% - @left-width;
 
   margin-left: @left-width;
-  margin-bottom: -15px;
+  height: 35px;
 
   z-index: 10;
 
   text-align: left;
+  overflow: hidden;
 
   > a {
     display: inline-block;
@@ -250,7 +249,7 @@ nav {
   clear: left;
 
   &:first-of-type {
-    margin-top: -25px;
+    margin-top: -40px;
   }
 }
 
