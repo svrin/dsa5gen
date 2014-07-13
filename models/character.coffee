@@ -15,6 +15,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       culture: null
       profession: null
       lifegrade: null
+      social: null
 
       profile: {}
       skills: {}
@@ -42,6 +43,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       fget @, 'attributes', @calc_attributes
       fget @, 'costs', @calc_costs
       fget @, 'skills', @calc_skills
+      fget @, 'social', @calc_social
 
       if not @id
         @set('uuid', uuid())
@@ -107,6 +109,15 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         return func.call(context or @, _.clone(value))
 
       return value
+
+    calc_social: (top) ->
+      ###
+        Returns Mittelschicht if not set
+      ###
+      if not top? or not top
+        return __("Mittelschicht")
+      else
+        return top
 
     calc_skills: (top) ->
       ###

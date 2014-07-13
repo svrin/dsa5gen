@@ -10,7 +10,7 @@ define "data/culture/elfisch", [], () ->
   social: [
     false
     false
-    [100, []]
+    [100, [__("Mittelschicht")]]
     false
     false
   ]

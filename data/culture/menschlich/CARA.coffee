@@ -13,7 +13,7 @@ cultures.add [
      [__("Bey/sa"), __("Amtsadel"), 2],
      [__("Beyroun/a"), __("Erbadel"), 5]]
     [2500, [__("Oberschicht")]]
-    [500, []]
+    [500, [__("Mittelschicht")]]
     [100, [__("Unterschicht")]]
     [20, [__("Unfrei")], [__("Sklave"), 1]]
   ]

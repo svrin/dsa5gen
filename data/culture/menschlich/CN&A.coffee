@@ -15,7 +15,7 @@ cultures.add [
      [__("Flussgraf"), __("Erbadel"), 2],
      [__("Graf"), __("Erbadel"), 2]]
     [2500, [__("Oberschicht")]]
-    [500, []]
+    [500, [__("Mittelschicht")]]
     [100, [__("Unterschicht")]]
     [20, [__("Unfrei")], [__("Leibeigener"), 1]]
   ]

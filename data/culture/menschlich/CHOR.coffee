@@ -15,7 +15,7 @@ cultures.add [
      [__("Baronet/Baroness"), __("Titularadel"), 4, __("Erbadel"), 4],
      [__("Baron/in"), __("Erbadel"), 5]]
     [2500, [__("Oberschicht")]]
-    [500, []]
+    [500, [__("Mittelschicht")]]
     [100, [__("Unterschicht")]]
     false
   ]

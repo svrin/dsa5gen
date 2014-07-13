@@ -10,7 +10,7 @@ cultures.add [
      [__("Kyrios"), __("Erbadel"), 1],
      [__("Einokrat"), __("Erbadel"), 2]]
     [2500, [__("Oberschicht")]]
-    [500, []]
+    [500, [__("Mittelschicht")]]
     [100, [__("Unterschicht")]]
     false
   ]

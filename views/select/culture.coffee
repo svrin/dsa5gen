@@ -31,6 +31,7 @@ define ['views/bases/selectbox', 'data/culture', 'text!templates/culture.hbs'], 
       # Variables used
       culture = this.model.get('culture')
       profile = this.model.get('profile')
+      social = this.model.get('social')
 
       # The additional informations are only available when a race has been selected
       return rtn if not culture
@@ -42,11 +43,33 @@ define ['views/bases/selectbox', 'data/culture', 'text!templates/culture.hbs'], 
       # Build the mother tong select
       @.build_select culture, profile, 'speech'
 
-      # Build the social state select
-      @.build_select culture, profile, 'social'
-
       # Build the culture knowledge select
       @.build_select culture, profile, 'knowledge'
+
+      # Build the social state select
+      node = @.$el.find("[name='character.social']")
+      _.each culture.get('social'), (item) ->
+        return true if not item
+
+        name = item[1]
+        specialisations = _.tail(item, 2)
+
+        if specialisations.length > 0
+          optgroup = $("<optgroup>").appendTo(node).attr("label", name)
+
+          _.each specialisations, (element) ->
+            name = element[0]
+            type = element[1]
+            multiplicator = element[2]
+
+            option = $("<option>").appendTo(optgroup).attr("value", name).text("#{name} (#{type} x#{multiplicator})")
+            option.prop('selected', 'selected').attr("selected", "selected") if social == name
+
+        else
+          option = $("<option>").appendTo(node).attr("value", name).text(name)
+          if "#{social}" == "#{name}"
+            option.prop('selected', 'selected').attr("selected", "selected")
+
 
 
 

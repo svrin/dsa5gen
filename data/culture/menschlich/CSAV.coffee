@@ -9,7 +9,7 @@ cultures.add [
     [2000, [__("Adlig")],
      [__(" "), __("Amtsadel"), 1, __("Erbadel"), 1, __("Titularadel"), 1]]
     [2500, [__("Oberschicht")]]
-    [500, []]
+    [500, [__("Mittelschicht")]]
     [100, [__("Unterschicht")]]
     [20, [__("Unfrei")], [__("Sklave"), 1]]
   ]

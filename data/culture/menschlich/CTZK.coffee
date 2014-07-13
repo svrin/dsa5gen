@@ -8,7 +8,7 @@ cultures.add [
   social: [
     false
     [500, [__("Oberschicht")]]
-    [100, []]
+    [100, [__("Mittelschicht")]]
     [20, [__("Unterschicht")]]
     false
   ]

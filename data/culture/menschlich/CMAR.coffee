@@ -12,7 +12,7 @@ cultures.add [
      [__("Dschunkar/a"), __("Erbadel"), 1],
      [__("Barunn/a"), __("Erbadel"), 2]]
     [2500, [__("Oberschicht")]]
-    [500, []]
+    [500, [__("Mittelschicht")]]
     [100, [__("Unterschicht")]]
     false
   ]

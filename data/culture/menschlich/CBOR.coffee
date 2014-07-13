@@ -13,7 +13,7 @@ cultures.add [
      [__("Herzog"), __("Erbadel"), 1],
      [__("Fürst"), __("Erbadel"), 1]]
     [2500, [__("Oberschicht")]]
-    [500, []]
+    [500, [__("Mittelschicht")]]
     [100, [__("Unterschicht")]]
     [20, [__("Unfrei")], [__("Leibeigener"), 1]]
   ]
