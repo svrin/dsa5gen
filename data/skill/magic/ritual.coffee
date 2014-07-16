@@ -43,6 +43,6 @@ require ["data/skill/magic/ritual"], (S) ->
     SF: "C"
 
   skills.add _.extend {}, S,
-    name: __("Zauberklinge")
+    name: __("Zauberklinge Geisterspeer")
     dices: ["KL", "IN", "FF"]
     SF: "C"
