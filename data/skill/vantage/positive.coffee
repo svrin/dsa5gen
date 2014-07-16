@@ -171,7 +171,7 @@ require ["data/vantage/positive"], (S) ->
     costs: 10
     max: 3
     auto: [
-      ["AsP", 10]
+      ["AE", 10]
     ]
 
   skills.add _.extend {}, S,
@@ -179,7 +179,7 @@ require ["data/vantage/positive"], (S) ->
     costs: 10
     max: 3
     auto: [
-      ["KsP", 10]
+      ["KE", 10]
     ]
 
   skills.add _.extend {}, S,
@@ -366,7 +366,7 @@ require ["data/vantage/positive"], (S) ->
     costs: 30
     max: 5
     auto: [
-      ['AsP', 10]
+      ['AE', 10]
     ]
 
   skills.add _.extend {}, S,
