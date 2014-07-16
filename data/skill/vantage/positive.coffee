@@ -112,9 +112,68 @@ require ["data/vantage/positive"], (S) ->
     costs: 40
 
   skills.add _.extend {}, S,
-    name: __("Herausragende Eigenschaft")
+    name: __("Herausragende Eigenschaft (MU)")
     costs: 40
-    multiple: "Eigenschaft"
+    max: 2
+    auto: [
+      ['MU_max', 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Herausragende Eigenschaft (KL)")
+    costs: 40
+    max: 2
+    auto: [
+      ['KL_max', 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Herausragende Eigenschaft (IN)")
+    costs: 40
+    max: 2
+    auto: [
+      ['IN_max', 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Herausragende Eigenschaft (CH)")
+    costs: 40
+    max: 2
+    auto: [
+      ['CH_max', 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Herausragende Eigenschaft (FF)")
+    costs: 40
+    max: 2
+    auto: [
+      ['FF_max', 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Herausragende Eigenschaft (GE)")
+    costs: 40
+    max: 2
+    auto: [
+      ['GE_max', 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Herausragende Eigenschaft (KO)")
+    costs: 40
+    max: 2
+    auto: [
+      ['KO_max', 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Herausragende Eigenschaft (KK)")
+    costs: 40
+    max: 2
+    auto: [
+      ['KK_max', 1]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Herausragende Fertigkeit (A)")

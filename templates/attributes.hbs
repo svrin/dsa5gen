@@ -1,6 +1,7 @@
 <h3>Eigenschaften</h3>
 <ul>
-    <% _.each(character.get('attributes'), function (value, key) { %>
+    <% c_attributes = character.get('attributes'); %>
+    <% _.each(c_attributes, function (value, key) { %>
     <% if (key in character.defaults.attributes) { %>
     <li data-href="attributes">
         <label title="<%= __(key) %>"><%= key %></label>
@@ -23,6 +24,7 @@
         <span data-min="8">
             <a href=":decr(attributes.<%=key%>)"></a>
             <span data-for="attributes.<%=key%>"><%= Math.round(value || 0) %></span>
+            <span data-for="attributes.<%=key%>_max"><%= 18 + Math.round(c_attributes[key + "_max"] || 0) %></span>
             <a href=":incr(attributes.<%=key%>)"></a>
         </span>
     </li>

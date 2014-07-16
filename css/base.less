@@ -267,6 +267,13 @@ nav {
   }
 }
 
+// Add a slash / before max attributes
+[data-for] + [data-for$=max] {
+  &:before {
+    content: " / ";
+  }
+}
+
 .print-box {
   text-align: left;
   position: relative;
@@ -328,10 +335,6 @@ nav {
   }
 
   [data-for] + [data-for$=max] {
-    &:before {
-      content: " / ";
-    }
-
     border-left: 0px;
     margin-left: -10%;
     width: 14%;

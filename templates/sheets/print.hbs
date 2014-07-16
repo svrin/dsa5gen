@@ -49,7 +49,7 @@
     <b><%= key %></b>
     <label class="subdesc" for="attributes"><%= __(key) %></label>
     <span data-for="attributes.<%= key %>"><%= value %></span>
-    <span data-for="attributes.<%= key %>.max"><%= character.get('attributes')[key + "_max"] %></span>
+    <span data-for="attributes.<%= key %>_max"><%= 18 + (character.get('attributes')[key + "_max"] || 0) %></span>
     <br/>
     <% } %>
     <% }); %>

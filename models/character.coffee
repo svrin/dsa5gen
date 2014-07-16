@@ -223,6 +223,11 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       _.each character.attributes['skills'], (value, key) =>
         skill = skills.get(key)
 
+        # Maybe lost from a previous version
+        if not skill
+          console.warn "Lost skill in data", key, value
+          return
+
         # Calculate
         if skill.get('costs')
           value *= skill.get('costs')
@@ -312,6 +317,12 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       attributes["AT/PA_KK"] = 5 + Math.max(attributes["KK"] - 10, 0)
       attributes["AT/PA_FF"] = 5 + Math.max(attributes["FF"] - 10, 0)
       attributes["FK"] = 5 + Math.max(attributes["FF"] - 10, 0)
+
+      # Add _max values if existent
+      _.each attributes, (value, key) ->
+        if c_skills[key + "_max"]
+          attributes[key + "_max"] = (attributes[key + "_max"] || 0) + (c_skills[key + "_max"] || 0)
+
 
       return attributes
 
