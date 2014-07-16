@@ -23,6 +23,11 @@ define [], () ->
       @.$nav = @.$el.find 'nav'
       if not @.$nav.length
         @.$nav = $('<nav>').appendTo(@.$el)
+        @.$nav.prepend ($('<a>')
+        .append($('<img>').attr("src", "/images/arrow_up.gif"))
+        .append($('<img>').attr("src", "/images/arrow_down.gif"))
+        .attr("id", "nav")
+        .attr("href", ":nav"));
 
       # Content Boxes for Collection Selection
       for view in ['race', 'culture', 'profession']
@@ -40,11 +45,29 @@ define [], () ->
           @.views['tab'][view] = new View({model: @model, container: @$el})
 
       # Special treatment of :* calls
-      for cmd in ["incr", "decr"]
+      for cmd in ["incr", "decr", "nav"]
         @.$el.off "click.dsa5gen.#{cmd}"
         @.$el.on "click.dsa5gen.#{cmd}", "a[href*=':#{cmd}']", @[cmd]
 
       return
+
+    nav: (event) =>
+      ###
+        Nav scroll button
+      ###
+      event.preventDefault()
+
+      up = $(event.target).attr("src") && $(event.target).attr("src").indexOf("up") >= 0;
+      down = $(event.target).attr("src") && $(event.target).attr("src").indexOf("down") >= 0;
+      current = $("nav").scrollTop()
+
+      if up
+        current -= 40
+
+      if down
+        current += 40
+
+      $("nav").scrollTop(current)
 
     incr: (event) =>
       ###
@@ -56,7 +79,6 @@ define [], () ->
       href = href.substr(0, href.length - 1)
 
       args = href.split('.')
-
       @.model.incr(args...)
 
     decr: (event) =>

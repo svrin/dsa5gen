@@ -185,12 +185,26 @@ nav {
   width: 100% - @left-width;
 
   margin-left: @left-width;
+  padding-left: 50px;
   height: 35px;
 
   z-index: 10;
 
   text-align: left;
   overflow: hidden;
+
+  #nav {
+    margin-left: -50px;
+    position: absolute;
+
+    img:not(:first-child) {
+      padding-left: 2px;
+    }
+    img:not(:last-child) {
+      padding-right: 2px;
+    }
+
+  }
 
   > a {
     display: inline-block;
