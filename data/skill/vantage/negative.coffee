@@ -73,8 +73,7 @@ require ["data/vantage/negative"], (S) ->
     costs: -20
     max: 3
     auto: [
-      ["WS"],
-      -1
+      ["WS", -1]
     ]
 
   skills.add _.extend {}, S,

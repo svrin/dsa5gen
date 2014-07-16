@@ -559,6 +559,17 @@ img + h2 {
   margin-right: 6%;
 }
 
+section, table {
+  page-break-inside: avoid;
+}
+
+@page {
+  margin-left: 0px;
+  margin-right: 0px;
+
+  size: portrait;
+}
+
 @media print {
 
   body {

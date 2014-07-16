@@ -127,6 +127,9 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
       base = {}
       lambda = (element) =>
+        if not element? || not element
+          return
+
         if _.isFunction(element)
           element = element(character)
 
@@ -146,6 +149,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         else if element.constructor.name == 'ChoiceView'
           console.warn "Do something about this"
         else
+          console.warn "Unexpected element in list", element
           throw "Unexpected element in list"
 
       # Add content from race
@@ -172,10 +176,17 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       # Now base each skill with it min and add the current value on top of it
       skills.each (skill) =>
         key = skill.get('name')
+
         if skill.get('min') >= 1
           base[key] = Math.max(base[key] || 0, skill.get('min'))
 
         base[key] = (base[key] || 0) + (top[key] || 0)
+
+        # Add all auto things of selected skills
+        (_.each skill.get('auto'), lambda) for i in [0..(base[key] || 0)]
+
+        # Return blank
+        return
 
       return base
 
@@ -282,15 +293,18 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         _.each profession.get('attributes'), (value, key) ->
           attributes[key] = (attributes[key] || 0) + value
 
+      # Some things depend on skills
+      c_skills = character.get('skills')
+
       attributes["LE"] = (attributes["LE"] || 0) + Math.max(attributes["KO"] - 10, 0)
       attributes["AE"] = (attributes["AE"] || 0)
       attributes["KE"] = (attributes["KE"] || 0)
       attributes["MR"] = (attributes["MR"] || 0) + Math.max(attributes["MU"] - 10, 0)
       attributes["GS"] = (attributes["GS"] || 0) + Math.max(attributes["GE"] - 10, 0)
-      attributes["WS"] = Math.ceil((attributes["KO"] || 0) / 2)
+      attributes["WS"] = Math.ceil((attributes["KO"] || 0) / 2) + (c_skills['WS'] || 0)
 
       attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0)
-      attributes["EDG"] = 3
+      attributes["EDG"] = 3 + (c_skills['EDG'] || 0)
 
       attributes["AT/PA_GE"] = 5 + Math.max(attributes["GE"] - 10, 0)
       attributes["AT/PA_KK"] = 5 + Math.max(attributes["KK"] - 10, 0)
