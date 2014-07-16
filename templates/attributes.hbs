@@ -21,10 +21,12 @@
         <i>Profession: <%= profession.get('attributes')[key] %></i>
         <% } %>
 
-        <span data-min="8">
+        <% v_max = 18 + Math.round(c_attributes[key + "_max"] || 0) %>
+
+        <span data-min="8" data-max="<%= v_max %>">
             <a href=":decr(attributes.<%=key%>)"></a>
             <span data-for="attributes.<%=key%>"><%= Math.round(value || 0) %></span>
-            <span data-for="attributes.<%=key%>_max"><%= 18 + Math.round(c_attributes[key + "_max"] || 0) %></span>
+            <span data-for="attributes.<%=key%>_max"><%= v_max %></span>
             <a href=":incr(attributes.<%=key%>)"></a>
         </span>
     </li>

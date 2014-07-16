@@ -75,10 +75,15 @@ define [], () ->
       ###
       event.preventDefault()
 
-      href = $(event.target).attr('href').substr(6)
+      $target = $(event.target)
+      href = $target.attr('href').substr(6)
       href = href.substr(0, href.length - 1)
-
       args = href.split('.')
+
+      v_max = $target.data("max") || $target.parent().data("max")
+      if v_max
+        args.push({max: v_max})
+
       @.model.incr(args...)
 
     decr: (event) =>
@@ -87,10 +92,15 @@ define [], () ->
       ###
       event.preventDefault()
 
-      href = $(event.target).attr('href').substr(6)
+      $target = $(event.target)
+      href = $target.attr('href').substr(6)
       href = href.substr(0, href.length - 1)
-
       args = href.split('.')
+
+      v_min = $target.data("min") || $target.parent().data("min")
+      if v_min
+        args.push({min: v_min})
+
       @.model.decr(args...)
 
 

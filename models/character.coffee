@@ -48,26 +48,41 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       if not @id
         @set('uuid', uuid())
 
-    incr: (attr, key, value) ->
+    incr: (attr, key, value, options) ->
+      if _.isObject(value) && !options
+        options = value
+        value = null
+
       if not value
         value = 1
+
+      v_max = (options && options['max']) || 18
+
+      ltz = (value) ->
+        value < v_max and value or v_max
 
       if attr and key
-        @.set attr, key, (@.attributes[attr][key] || 0) + value
+        @.set attr, key, ltz((@.attributes[attr][key] || 0) + value)
       else
-        @.set attr, (@.attributes[attr] || 0) + value
+        @.set attr, ltz((@.attributes[attr] || 0) + value)
 
-    decr: (attr, key, value) ->
+    decr: (attr, key, value, options) ->
+      if _.isObject(value) && !options
+        options = value
+        value = null
+
       if not value
         value = 1
+
+      v_min = (options && options['min']) || 0
 
       gtz = (value) ->
-        value > 0 and value or 0
+        value > v_min and value or v_min
 
       if attr and key
-        @.set attr, key, gtz(@.attributes[attr][key] - value)
+        @.set attr, key, gtz((@.attributes[attr][key] || 0) - value)
       else
-        @.set attr, gtz(@.attributes[attr] - value)
+        @.set attr, gtz((@.attributes[attr] || 0) - value)
 
     set: (attr..., value) ->
       ###
