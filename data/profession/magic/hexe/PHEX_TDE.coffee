@@ -14,6 +14,7 @@ class PHEX_TDE
   name_w: __("Tochter der Erde")
 
   costs: 1050
+  attribute: 'CH'
 
   required: [
     [__("Zauberer"), 1]
@@ -22,6 +23,8 @@ class PHEX_TDE
   auto: [
     [__("Schwesternschaft"), __("Töchter der Erde")]
 
+    add_pool(((character) ->
+      Math.round(character.get('AP') / 4)), __('Vertrautenmagie'))
     add_pool(45, __("Sprache"), __("Schrift"))
 
     [__("Raufen"), 4]

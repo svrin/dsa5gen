@@ -14,6 +14,7 @@ class PWDL
   name_w: __("Wildnisläuferin")
 
   costs: 950
+  attribute: 'IN'
 
   required: [
     [__("Elf")]

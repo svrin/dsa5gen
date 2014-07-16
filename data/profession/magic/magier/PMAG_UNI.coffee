@@ -15,6 +15,7 @@ class PMAG_UNI
   name_w: __("Universalmagierin")
 
   costs: 900
+  attribute: 'KL'
 
   required: [
     [__("Zauberer"), 1]

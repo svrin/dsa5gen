@@ -14,6 +14,7 @@ class PHEX_SDN
   name_w: __("Schöne der Nacht")
 
   costs: 900
+  attribute: 'CH'
 
   required: [
     [__("Zauberer"), 1]
@@ -22,6 +23,8 @@ class PHEX_SDN
   auto: [
     [__("Schwesternschaft"), __("Schöne der Nacht")]
 
+    add_pool(((character) ->
+      Math.round(character.get('AP') / 4)), __('Vertrautenmagie'))
     add_pool(35, __("Sprache"), __("Schrift"))
 
     [__("Raufen"), 4]

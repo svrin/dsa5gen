@@ -14,6 +14,7 @@ class PHEX_SHM
   name_w: __("Seherin von Heute und Morgen")
 
   costs: 950
+  attribute: 'CH'
 
   required: [
     [__("Zauberer"), 1]
@@ -22,6 +23,8 @@ class PHEX_SHM
   auto: [
     [__("Schwesternschaft"), __("Seherin von Heute und Morgen")]
 
+    add_pool(((character) ->
+      Math.round(character.get('AP') / 4)), __('Vertrautenmagie'))
     add_pool(30, __("Sprache"), __("Schrift"))
 
     [__("Raufen"), 4]

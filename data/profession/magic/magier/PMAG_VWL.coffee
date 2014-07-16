@@ -15,6 +15,7 @@ class PMAG_VWL
   name_w: __("Verwandlungsmagierin")
 
   costs: 1000
+  attribute: 'KL'
 
   required: [
     [__("Zauberer"), 1]

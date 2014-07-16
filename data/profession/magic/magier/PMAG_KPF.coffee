@@ -15,6 +15,7 @@ class PMAG_KPF
   name_w: __("Kampfmagierin")
 
   costs: 1000
+  attribute: 'KL'
 
   required: [
     [__("Zauberer"), 1]

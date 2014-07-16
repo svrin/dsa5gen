@@ -15,6 +15,7 @@ class PMAG_BEH
   name_w: __("Beherschungsmagierin")
 
   costs: 1050
+  attribute: 'KL'
 
   required: [
     [__("Zauberer"), 1]

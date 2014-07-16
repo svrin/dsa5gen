@@ -14,6 +14,7 @@ class PZWB
   name_w: __("Zauberweberin")
 
   costs: 800
+  attribute: 'IN'
 
   required: [
     [__("Elf")]
