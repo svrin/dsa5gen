@@ -12,7 +12,7 @@ define ['views/bases/leftbox', 'text!templates/options.hbs'], (BaseView, hbs) ->
       super
 
       # Special treatment of :* calls
-      for cmd in ["create", "save", "export", "import", "destroy"]
+      for cmd in ["create", "save", "export", "import", "destroy", "print"]
         @.$el.off "click.dsa5gen.#{cmd}"
         @.$el.on "click.dsa5gen.#{cmd}", "a[href*=':#{cmd}']", @[cmd]
 
@@ -34,6 +34,14 @@ define ['views/bases/leftbox', 'text!templates/options.hbs'], (BaseView, hbs) ->
 
       @.model.destroy()
       window.navigate "/"
+
+    print: (event) =>
+      ###
+        Destroy character call
+      ###
+      event.preventDefault()
+
+      window.navigate @.model.url() + "/print"
 
     import: (event) =>
       ###
