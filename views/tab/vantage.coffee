@@ -10,7 +10,7 @@ define ['views/bases/valuebox', 'data/skill'], (BaseView, skills) ->
 
     event: ['change:race', 'change:culture', 'change:profession']
     collection: skills
-    view: [__('Vorteile'), __('Nachteile')]
+    view: [__('Nachteile'), __('Schlechte Eigenschaft'), __('Schlechte Angewohnheiten'), __('Vorteile')]
 
 
 
