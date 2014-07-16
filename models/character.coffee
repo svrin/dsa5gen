@@ -183,7 +183,9 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         base[key] = (base[key] || 0) + (top[key] || 0)
 
         # Add all auto things of selected skills
-        (_.each skill.get('auto'), lambda) for i in [0..(base[key] || 0)]
+        i = base[key] || 0
+        while i-- > 0
+          _.each skill.get('auto'), lambda
 
         # Return blank
         return
@@ -296,14 +298,14 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       # Some things depend on skills
       c_skills = character.get('skills')
 
-      attributes["LE"] = (attributes["LE"] || 0) + Math.max(attributes["KO"] - 10, 0)
-      attributes["AE"] = (attributes["AE"] || 0)
-      attributes["KE"] = (attributes["KE"] || 0)
-      attributes["MR"] = (attributes["MR"] || 0) + Math.max(attributes["MU"] - 10, 0)
-      attributes["GS"] = (attributes["GS"] || 0) + Math.max(attributes["GE"] - 10, 0)
+      attributes["LE"] = (attributes["LE"] || 0) + Math.max(attributes["KO"] - 10, 0) + (c_skills['LE'] || 0)
+      attributes["AE"] = (attributes["AE"] || 0) + (c_skills['AE'] || 0)
+      attributes["KE"] = (attributes["KE"] || 0) + (c_skills['KE'] || 0)
+      attributes["MR"] = (attributes["MR"] || 0) + Math.max(attributes["MU"] - 10, 0) + (c_skills['MR'] || 0)
+      attributes["GS"] = (attributes["GS"] || 0) + Math.max(attributes["GE"] - 10, 0) + (c_skills['GS'] || 0)
       attributes["WS"] = Math.ceil((attributes["KO"] || 0) / 2) + (c_skills['WS'] || 0)
 
-      attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0)
+      attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0) + (c_skills['INI'] || 0)
       attributes["EDG"] = 3 + (c_skills['EDG'] || 0)
 
       attributes["AT/PA_GE"] = 5 + Math.max(attributes["GE"] - 10, 0)

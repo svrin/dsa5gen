@@ -20,6 +20,11 @@
         <i>Profession: <%= profession.get('attributes')[key] %></i>
         <% } %>
 
+        <% skills = character.get('skills'); %>
+        <% if (skills && skills[key]) { %>
+        <i>Vor/Nachteile: <%= skills[key] %></i>
+        <% } %>
+
         <span><%= Math.round(value) %></span>
     </li>
     <% } %>
