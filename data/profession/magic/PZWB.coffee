@@ -41,7 +41,7 @@ class PZWB
     [__("Adlerschwinge"), 4]
     [__("Blick in die Gedanken"), 4]
     [__("Band und Fessel"), 4]
-    [__("Bannbaldin"), 7]
+    [__("Bannbaladin"), 7]
     [__("Wasseratem"), 4]
     [__("Silentium"), 7]
     [__("Visibili"), 7]
