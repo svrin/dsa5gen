@@ -45,6 +45,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       fget @, 'skills', @calc_skills
       fget @, 'social', @calc_social
 
+      fget @, 'AP', @calc_ap
+
       if not @id
         @set('uuid', uuid())
 
@@ -124,6 +126,14 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         return func.call(context or @, _.clone(value))
 
       return value
+
+    calc_ap: (top) ->
+      ###
+        Compelte AP of character
+      ###
+      character = @
+
+      return (character.get('lifegrade').get('AP') || 0) + (top || 0)
 
     calc_social: (top) ->
       ###
@@ -230,7 +240,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
           when 11 then 120
           when 10 then 80
           when  9 then 40
-          else 0
+          else
+            0
 
       # Add costs from skills
       # and bundle them in their groups
@@ -270,7 +281,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         # Update pools
         _.each race.get('auto'), (element) ->
           if element.constructor.name == 'PoolView'
-            costs -= element.refresh(groups)
+            costs -= element.refresh(character, groups)
 
       # Get costs from culture
       culture = character.get('culture')
@@ -280,7 +291,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         # Update pools
         _.each culture.get('auto'), (element) ->
           if element.constructor.name == 'PoolView'
-            costs -= element.refresh(groups)
+            costs -= element.refresh(character, groups)
 
       # Get costs from profession
       profession = character.get('profession')
@@ -290,7 +301,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         # Update pools
         _.each profession.get('auto'), (element) ->
           if element.constructor.name == 'PoolView'
-            costs -= element.refresh(groups)
+            costs -= element.refresh(character, groups)
 
       return costs
 

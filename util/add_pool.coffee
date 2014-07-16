@@ -13,8 +13,12 @@ add_pool = (amount, elements...) ->
         @template = _.template (hbs)
         @render()
 
-    refresh: (payload) =>
+    refresh: (context, payload) =>
+      if _.isFunction(amount)
+        amount = amount(context)
+
       current = amount
+
       _.each elements, (element) =>
         if payload[element]
           current -= payload[element]
