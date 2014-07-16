@@ -1,7 +1,7 @@
 <h3>Basiswerte</h3>
 <ul>
     <% _.each(character.get('attributes'), function (value, key) { %>
-    <% if (!(key in character.defaults.attributes) && value) { %>
+    <% if (!(key in character.defaults.attributes) && !key.endsWith("max") && value) { %>
     <li>
         <label title="<%= __(key) %>"><%= key %></label>
 
