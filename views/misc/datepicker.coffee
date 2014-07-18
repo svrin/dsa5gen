@@ -173,11 +173,7 @@ define [], () ->
             <a href=":incrMonth()"></a>
           </td>
         </tr>
-      </thead>
-    """
-
-    tbody: """
-      <tbody>
+        <tr>
           <th title="Windstag" width="40px">
             Wi
           </th>
@@ -199,6 +195,12 @@ define [], () ->
           <th title="Wassertag" width="40px">
             Wa
           </th>
+        </tr>
+      </thead>
+    """
+
+    tbody: """
+      <tbody>
       </tbody>
     """
 
