@@ -1,5 +1,7 @@
 <% gender = character.get('gender'); %>
 <% name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
+<% skills = character.get_skill_items(); %>
+<% nyathis = character; %>
 
 <section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
@@ -53,56 +55,67 @@
     <br/>
     <% } %>
     <% }); %>
+
+    <div class="spacer">&nbsp;</div>
+
+    <h2>Abgeleitete Werte</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th width="25%">&nbsp;</th>
+            <th width="17%">Grundwert</th>
+            <th width="17%">Bonus</th>
+            <th width="17%">Gekauft</th>
+            <th width="24%">Aktuell</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% _.each(['GS', 'MR', 'INI', 'LE', 'AE', 'KE', 'EDG'], function (key) { %>
+        <tr data-key="<%= key %>" data-value="<%= character.get('attributes')[key] %>">
+            <td>
+                <b><%= key %></b>
+                <label class="subdesc"><%= __(key) %></label>
+            </td>
+            <td data-for="attributes.<%= key %>.base">
+                <%= (character.get('race').get('attributes')[key] || 0) %>
+            </td>
+            <td data-for="attributes.<%= key %>.bonus">
+                <%= (character.get('attributes')[key] || 0) - (character.get('race').get('attributes')[key] || 0) -
+                (character.attributes['attributes'][key] || 0) %>
+            </td>
+            <td data-for="attributes.<%= key %>">
+                <%= character.attributes['attributes'][key] || 0 %>
+            </td>
+            <td data-for="attributes.<%= key %>.current">
+                <%= character.get('attributes')[key] %>
+            </td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>
 </section>
 
 <section class="span6 print-box">
     <h2>Vorteile & Nachteile</h2>
 
-    <% _.each(character.get('skills'), function (value, key) { %>
-    <% if (value && value > 1) { %>
-    <h3 data-for="skills.<%= key %>"><%= key %>: <%= value %></h3>
-    <% } else if (value && value == 1) { %>
-    <h3 data-for="skills.<%= key %>"><%= key %></h3>
+    <% var i = 17; %>
+    <% _.each(skills, function (skill) { %>
+    <% if (skill.item && skill.item.isVantage()) { %>
+    <h3 data-for="skills.<%= skill.key %>">
+        <%= skill.item.toString(skill.value) %>
+    </h3>
+    <% i--; %>
     <% } %>
     <% }); %>
+    <% while (i-- > 0) { %>
+    <h3 data-for="skills">
+        &nbsp;
+    </h3>
+    <% } %>
 </section>
 
-<table class="span12 print-box">
-    <caption>Abgeleitete Werte</caption>
-    <thead>
-    <tr>
-        <th width="11%">&nbsp;</th>
-        <th width="13%">Grundwert</th>
-        <th width="13%">Bonus</th>
-        <th width="13%">Gekauft</th>
-        <th width="30%">Aktuell</th>
-        <th>&nbsp;</th>
-    </tr>
-    </thead>
-    <tbody>
-    <% _.each(['GS', 'MR', 'INI', 'LE', 'AE', 'KE', 'EDG'], function (key) { %>
-    <tr data-key="<%= key %>" data-value="<%= character.get('attributes')[key] %>">
-        <td>
-            <b><%= key %></b>
-            <label class="subdesc"><%= __(key) %></label>
-        </td>
-        <td data-for="attributes.<%= key %>.base">
-            <%= (character.get('race').get('attributes')[key] || 0) %>
-        </td>
-        <td data-for="attributes.<%= key %>.bonus">
-            <%= (character.get('attributes')[key] || 0) - (character.get('race').get('attributes')[key] || 0) -
-            (character.attributes['attributes'][key] || 0) %>
-        </td>
-        <td data-for="attributes.<%= key %>">
-            <%= character.attributes['attributes'][key] || 0 %>
-        </td>
-        <td data-for="attributes.<%= key %>.current">
-            <%= character.get('attributes')[key] %>
-        </td>
-    </tr>
-    <% }); %>
-    </tbody>
-</table>
+
 
 
 

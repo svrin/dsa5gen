@@ -279,10 +279,10 @@ nav {
   position: relative;
 
   h2, caption {
-    margin-bottom: 10px;
-    font-size: 26px;
+    margin-bottom: 0.5em;
+    font-size: 1.6em;
     font-weight: bold;
-    height: 30px;
+    height: 1.5em;
 
     &:not(.subcaption) {
       text-align: left;
@@ -320,10 +320,18 @@ nav {
     .span3
   }
 
+  table {
+    width: 100%;
+  }
+
+  .spacer {
+    height: 1.4em;
+  }
+
   [data-for] {
     margin-top: 0px;
-    height: 36px;
-    padding-top: 6px;
+    height: 1.8em;
+    padding-top: 0.3em;
 
     background-color: white;
 
@@ -331,7 +339,6 @@ nav {
     border-width: 0px 0px 1px 1px;
 
     padding-left: 0.5ex;
-    font-size: 15pt;
   }
 
   [data-for] + [data-for$=max] {
@@ -349,6 +356,10 @@ nav {
 
 #logo {
   text-align: center;
+
+  > img {
+    width: 20em;
+  }
 }
 
 [data-value='0'] {
@@ -577,6 +588,8 @@ section, table {
 
   body {
     background-color: white;
+
+    font-size: 10px;
   }
 
   .span6 {
