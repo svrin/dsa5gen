@@ -1,7 +1,6 @@
 <% gender = character.get('gender'); %>
 <% name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
 <% skills = character.get_skill_items(); %>
-<% nyathis = character; %>
 
 <section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
@@ -115,8 +114,89 @@
     <% } %>
 </section>
 
+<div class="pagebreak">
+    <hr/>
+</div>
+
+<% function printSkillBox(skills, key) { %>
+<h2><%= key %></h2>
+
+<table>
+    <thead>
+    <tr>
+        <th width="40%">Name</th>
+        <th width="18%">Probe</th>
+        <th width="6%">BE</th>
+        <th width="6%">SF</th>
+        <th width="12%">FW</th>
+        <th width="18%">&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% _.each(skills, function (skill) { %>
+    <% if (skill.item && skill.groups.indexOf(key) >= 0) { %>
+    <tr>
+        <td data-for="skills.<%= skill.key %>.name"><%= skill.key %></td>
+        <td class="center" data-for="skills.<%= skill.key %>.dices"><%= skill.item.get('dices').join("/") %></td>
+        <td class="center" data-for="skills.<%= skill.key %>.BE"><%= skill.item.get('BE') && "j" || "n" %></td>
+        <td class="center" data-for="skills.<%= skill.key %>.SF"><%= skill.item.get('SF') %></td>
+        <td class="center" data-for="skills.<%= skill.key %>.value"><%= skill.value %></td>
+        <td data-for="skills.<%= skill.key %>.comment">&nbsp;</td>
+    </tr>
+    <% } %>
+    <% }); %>
+    <tr>
+        <td data-for="skills.name">&nbsp;</td>
+        <td data-for="skills.dices">&nbsp;</td>
+        <td data-for="skills.BE">&nbsp;</td>
+        <td data-for="skills.SF">&nbsp;</td>
+        <td data-for="skills.value">&nbsp;</td>
+        <td data-for="skills.comment">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+<% } %>
 
 
+<section class="span6 print-box">
+    <% printSkillBox(skills, __('Körpertalente')) %>
+    <% printSkillBox(skills, __('Gesellschaftstalente')) %>
+    <% printSkillBox(skills, __('Naturtalente')) %>
+    <% printSkillBox(skills, __('Gaben')) %>
+</section>
+
+<section class="span6 print-box">
+    <div id="logo">
+        <img src="/images/dsa5.png"/>
+
+        <h2 class="subcaption">Talentdokument</h2>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <% _.each(character.get('attributes'), function (value, key) { %>
+            <% if (key in character.defaults.attributes) { %>
+            <th width="12.5%"><%= key %></th>
+            <% } %>
+            <% }); %>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <% _.each(character.get('attributes'), function (value, key) { %>
+            <% if (key in character.defaults.attributes) { %>
+            <td data-for="attributes.<%= key %>"><%= value %></td>
+            <% } %>
+            <% }); %>
+        </tr>
+        </tbody>
+    </table>
+
+    <% printSkillBox(skills, __('Wissenstalente')) %>
+    <% printSkillBox(skills, __('Handwerkstalente')) %>
+
+</section>
 
 
 
