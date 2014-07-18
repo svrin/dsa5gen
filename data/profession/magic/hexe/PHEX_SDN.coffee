@@ -51,7 +51,7 @@ class PHEX_SDN
     [__("Katzenaugen"), 7]
     [__("Odem Arcanum"), 4]
     [__("Motoricus"), 4]
-    [__("Saturias Herrlichkeit"), 7]
+    [__("Satuarias Herrlichkeit"), 7]
   ]
 
   common: [
