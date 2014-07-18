@@ -217,6 +217,24 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
       return base
 
+    get_skill_items: () ->
+      ###
+        Get a key, value, node list of all skills
+      ###
+      character = @
+
+      rtn = {}
+      _.each @.get('skills'), (value, key) ->
+        if value
+          skill = skills.get(key)
+          rtn[key] = {
+            key: key
+            value: value
+            item: skill
+            groups: skill.get('groups') if skill
+          }
+      return rtn
+
     calc_costs: (costs) ->
       ###
         Calculates the costs for this character
@@ -226,7 +244,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       costs = costs? || 0
 
       # Add costs from attributes
-      _.each character.attributes['attributes'], (value, key) =>
+      _.each character.attributes['attributes'], (value) =>
         costs += switch value
           when 20 then 1320
           when 19 then 1040
