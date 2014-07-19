@@ -21,7 +21,8 @@ class PPER
   ]
 
   auto: [
-    [__("Tradition"), __("Peraine")]
+    [__("Tradition"), __("Zwölfgötterkult")]
+    [__("Kirche"), __("Peraine")]
 
     add_pool(10, __("Sprache"), __("Schrift"))
 

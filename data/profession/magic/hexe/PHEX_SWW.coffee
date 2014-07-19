@@ -21,6 +21,7 @@ class PHEX_SWW
   ]
 
   auto: [
+    [__("Tradition"), __("Hexe")]
     [__("Schwesternschaft"), __("Schwarze Witwen")]
     add_pool(5, __("Zaubertricks"))
     [__("Zaubertricks"), 7]

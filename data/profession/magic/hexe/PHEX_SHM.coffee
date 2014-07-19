@@ -21,6 +21,7 @@ class PHEX_SHM
   ]
 
   auto: [
+    [__("Tradition"), __("Hexe")]
     [__("Schwesternschaft"), __("Seherin von Heute und Morgen")]
     add_pool(5, __("Zaubertricks"))
     [__("Zaubertricks"), 7]

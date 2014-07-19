@@ -22,6 +22,7 @@ class PHEX_SDN
   ]
 
   auto: [
+    [__("Tradition"), __("Hexe")]
     [__("Schwesternschaft"), __("Schöne der Nacht")]
     add_pool(5, __("Zaubertricks"))
     [__("Zaubertricks"), 7]

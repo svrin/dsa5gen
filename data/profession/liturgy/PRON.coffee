@@ -21,7 +21,8 @@ class PRON
   ]
 
   auto: [
-    [__("Tradition"), __("Rondra")]
+    [__("Tradition"), __("Zwölfgötterkult")]
+    [__("Kirche"), __("Rondra")]
 
     add_pool(35, __("Sprache"), __("Schrift"))
     [__("Behinderungsgewöhnung"), 1]

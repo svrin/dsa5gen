@@ -21,6 +21,7 @@ class PHEX_TDE
   ]
 
   auto: [
+    [__("Tradition"), __("Hexe")]
     [__("Schwesternschaft"), __("Töchter der Erde")]
     add_pool(5, __("Zaubertricks"))
     [__("Zaubertricks"), 7]
