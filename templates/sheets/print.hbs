@@ -95,12 +95,37 @@
         <% }); %>
         </tbody>
     </table>
+
+    <h2>Sprachen</h2>
+    <% _.each(skills, function (skill) { %>
+    <% if (skill.item && skill.groups.indexOf(__('Sprache')) >= 0) { %>
+    <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
+        <%= skill.item.toString(skill.value) %>
+    </h3>
+    <% } %>
+    <% }); %>
+    <h3 data-for="skills">
+        &nbsp;
+    </h3>
+
+    <h2>Schriften</h2>
+    <% _.each(skills, function (skill) { %>
+    <% if (skill.item && skill.groups.indexOf(__('Schrift')) >= 0) { %>
+    <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
+        <%= skill.item.toString(skill.value) %>
+    </h3>
+    <% } %>
+    <% }); %>
+    <h3 data-for="skills">
+        &nbsp;
+    </h3>
+
 </section>
 
 <section class="span8 print-box">
     <h2>Vorteile & Nachteile</h2>
 
-    <% var i = 17; %>
+    <% var i = 25; %>
     <% _.each(skills, function (skill) { %>
     <% if (skill.item && skill.item.isVantage()) { %>
     <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
