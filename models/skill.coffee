@@ -23,6 +23,15 @@ define ["models/base"], (Model) ->
         return @.get('name') + ": 0"
       return @.get('name') + ": " + value
 
+    # Liturgy
+    liturgyGroups: [
+      __('Liturgien')
+      __('Segen')
+      __('Klerikerikale Sonderfertigkeiten')
+    ]
+    isLiturgy: ->
+      return _.intersection(@.liturgyGroups, @.get('groups')).length > 0
+
     # Magic
     magicGroups: [
       __('Zauber')
