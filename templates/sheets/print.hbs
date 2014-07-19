@@ -70,6 +70,7 @@
             <th width="24%">Aktuell</th>
         </tr>
         </thead>
+        <!-- __('GS') __('MR') __('INI') __('LE') __('AE') __('KE') __('EDG') -->
         <tbody>
         <% _.each(['GS', 'MR', 'INI', 'LE', 'AE', 'KE', 'EDG'], function (key) { %>
         <tr data-key="<%= key %>" data-value="<%= character.get('attributes')[key] %>">
@@ -171,6 +172,8 @@
         <img src="/images/dsa5.png"/>
 
         <h2 class="subcaption">Talentdokument</h2>
+
+        <h2 class="subcaption"><%= character.get('name') %></h2>
     </div>
 
     <table>
@@ -202,6 +205,206 @@
 <div class="pagebreak">
     <hr/>
 </div>
+
+<section class="span6 print-box">
+    <h1><%= character.get('name') %></h1>
+
+    <h3 data-for="tradition"> <%= skills[__('Tradition')] && skills[__('Tradition')].value %></h3>
+    <label class="subline" for="tradition"><%= __('Tradition') %></label>
+
+    <% if (skills[__('Schwesternschaft')]) { %>
+    <h3 data-for="schwesternschaft"> <%= skills[__('Schwesternschaft')].value %></h3>
+    <label class="subline" for="schwesternschaft"><%= __('Schwesternschaft') %></label>
+    <% } %>
+
+    <% if (skills[__('Spezialgebiet')]) { %>
+    <h3 data-for="spezialgebiet"> <%= skills[__('Spezialgebiet')].value %></h3>
+    <label class="subline" for="spezialgebiet"><%= __('Spezialgebiet') %></label>
+    <% } %>
+
+    <% if (skills[__('Kirche')]) { %>
+    <h3 data-for="kirche"> <%= skills[__('Kirche')].value %></h3>
+    <label class="subline" for="kirche"><%= __('Kirche') %></label>
+    <% } %>
+</section>
+
+<section class="span6 print-box">
+    <div id="logo">
+        <img src="/images/dsa5.png"/>
+
+        <h2 class="subcaption">Zauber & Liturgien</h2>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <% _.each(character.get('attributes'), function (value, key) { %>
+            <% if (key in character.defaults.attributes) { %>
+            <th width="12.5%"><%= key %></th>
+            <% } %>
+            <% }); %>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <% _.each(character.get('attributes'), function (value, key) { %>
+            <% if (key in character.defaults.attributes) { %>
+            <td data-for="attributes.<%= key %>"><%= value %></td>
+            <% } %>
+            <% }); %>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="span12 print-box">
+
+    <h2><%= __("Zauber/Liturgien") %></h2>
+    <table>
+        <thead>
+        <tr>
+            <th width="30%">Name</th>
+            <th width="17%">Probe</th>
+            <th width="5%">SF</th>
+            <th width="8%">FW</th>
+            <th width="8%">Kosten</th>
+            <th width="8%">Dauer</th>
+            <th width="8%">Reich&shy;weite</th>
+            <th width="8%">Wirkungs&shy;dauer</th>
+            <th width="8%">Merkmal</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% var i = 20; %>
+        <% _.each(skills, function (skill) { %>
+        <% if (skill.item && (skill.item.isMagic() || skill.item.isLiturgy()) && skill.item.get('max') != 1 &&
+        skill.item.get('count') != 'roman') { %>
+        <tr>
+            <td data-for="skills.<%= skill.key %>.name"><%= skill.key %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.dices"><%= skill.item.get('dices').join("/") %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.SF"><%= skill.item.get('SF') %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.value"><%= skill.value %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.1">&nbsp;</td>
+            <td class="center" data-for="skills.<%= skill.key %>.2">&nbsp;</td>
+            <td class="center" data-for="skills.<%= skill.key %>.3">&nbsp;</td>
+            <td class="center" data-for="skills.<%= skill.key %>.4">&nbsp;</td>
+            <td class="center" data-for="skills.<%= skill.key %>.5">&nbsp;</td>
+        </tr>
+        <% i--; %>
+        <% } %>
+        <% }); %>
+        <% while (i-- > 0) { %>
+        <tr>
+            <td data-for="skills.name">&nbsp;</td>
+            <td class="center" data-for="skills.dices">&nbsp;</td>
+            <td class="center" data-for="skills.SF">&nbsp;</td>
+            <td class="center" data-for="skills.value">&nbsp;</td>
+            <td class="center" data-for="skills.1">&nbsp;</td>
+            <td class="center" data-for="skills.2">&nbsp;</td>
+            <td class="center" data-for="skills.3">&nbsp;</td>
+            <td class="center" data-for="skills.4">&nbsp;</td>
+            <td class="center" data-for="skills.5">&nbsp;</td>
+        </tr>
+        <% } %>
+        </tbody>
+    </table>
+</section>
+
+<section class="span6 print-box">
+    <h2>Magische Sonderfertigkeiten</h2>
+
+    <% var i = 10; %>
+    <% _.each(skills, function (skill) { %>
+    <% if (skill.item && skill.item.isMagic() && (skill.item.get('max') == 1 || skill.item.get('count') == 'roman')) {
+    %>
+    <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 30) && 'text-long' || 'text' %>">
+        <%= skill.item.toString(skill.value) %>
+
+        <small>(<%= skill.groups[0] %>)</small>
+    </h3>
+    <% i--; %>
+    <% } %>
+    <% }); %>
+    <% while (i-- > 0) { %>
+    <h3 data-for="skills">
+        &nbsp;
+    </h3>
+    <% } %>
+</section>
+
+<section class="span6 print-box">
+    <h2>Klerikale Sonderfertigkeiten</h2>
+
+    <% var i = 10; %>
+    <% _.each(skills, function (skill) { %>
+    <% if (skill.item && skill.item.isLiturgy() && (skill.item.get('max') == 1 || skill.item.get('count') == 'roman')) {
+    %>
+    <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 30) && 'text-long' || 'text' %>">
+        <%= skill.item.toString(skill.value) %>
+
+        <small>(<%= skill.groups[0] %>)</small>
+    </h3>
+    <% i--; %>
+    <% } %>
+    <% }); %>
+    <% while (i-- > 0) { %>
+    <h3 data-for="skills">
+        &nbsp;
+    </h3>
+    <% } %>
+</section>
+
+<div class="pagebreak">
+    <hr/>
+</div>
+
+<section class="span6 print-box">
+    <h1><%= character.get('name') %></h1>
+
+    <h2><%= __("Kampftechniken") %></h2>
+    <table>
+        <thead>
+        <tr>
+            <th width="40%">Name</th>
+            <th width="18%">Probe</th>
+            <th width="6%">SF</th>
+            <th width="12%">FW</th>
+            <th width="12%">AT</th>
+            <th width="12%">PA</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% _.each(skills, function (skill) { %>
+        <% if (skill.item && skill.groups.indexOf(__("Kampftechniken")) >= 0) { %>
+        <tr>
+            <td data-for="skills.<%= skill.key %>.name"><%= skill.key %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.dice"><%= skill.item.get('dice') %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.SF"><%= skill.item.get('SF') %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.value"><%= skill.value %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.AT">&nbsp;</td>
+            <td class="center" data-for="skills.<%= skill.key %>.PA">&nbsp;</td>
+        </tr>
+        <% } %>
+        <% }); %>
+        <tr>
+            <td data-for="skills.name">&nbsp;</td>
+            <td data-for="skills.dices">&nbsp;</td>
+            <td data-for="skills.SF">&nbsp;</td>
+            <td data-for="skills.value">&nbsp;</td>
+            <td data-for="skills.AT">&nbsp;</td>
+            <td data-for="skills.PA">&nbsp;</td>
+        </tr>
+        <tr>
+            <td data-for="skills.name">&nbsp;</td>
+            <td data-for="skills.dices">&nbsp;</td>
+            <td data-for="skills.SF">&nbsp;</td>
+            <td data-for="skills.value">&nbsp;</td>
+            <td data-for="skills.AT">&nbsp;</td>
+            <td data-for="skills.PA">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
 
 <section class="span6 print-box">
     <div id="logo">
@@ -253,7 +456,6 @@
         </tbody>
     </table>
 </section>
-
 
 
 
