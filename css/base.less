@@ -168,7 +168,7 @@ main {
   color: lighten(@link-color, 10%);
 }
 
-.box-left, .box-tab, .box-table {
+.box-left, .box-tab, .box-table, .box-right {
   border-image: url('/images/scape.png') 25 25 fill round;
   border-width: 25px;
 
@@ -223,7 +223,7 @@ nav {
   display: inline-block;
 }
 
-.box-tab {
+.box-tab, .box-right {
   position: relative;
 
   width: 100% - @left-width;
@@ -245,15 +245,23 @@ nav {
     margin-right: 0px;
   }
 
-  &:not(:target) {
-    display: none;
-  }
-
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
+}
+
+.box-tab:not(:target) {
+  display: none;
+}
+
+.box-right {
+  width: 70%;
+
+  position: absolute;
+
+  height: 80%;
 }
 
 .box-left {

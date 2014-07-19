@@ -17,3 +17,8 @@ define [], () ->
       for view in ['characters', 'options']
         require ['views/left/' + view], (View) =>
           @.views['left'][view] = new View({collection: @collection, container: @$el})
+
+      # Welcome box
+      require ['text!templates/welcome.hbs'], (hbs) =>
+        console.log "nya"
+        @.$el.append _.template(hbs)({self: @})
