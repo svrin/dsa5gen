@@ -20,5 +20,4 @@ define [], () ->
 
       # Welcome box
       require ['text!templates/welcome.hbs'], (hbs) =>
-        console.log "nya"
         @.$el.append _.template(hbs)({self: @})
