@@ -10,8 +10,7 @@ define ['views/bases/valuebox', 'data/skill'], (BaseView, skills) ->
 
     event: ['change:race', 'change:culture', 'change:profession']
     collection: skills
-    view: [__('Zauber'), __('Rituale'), __('Stabzauber'), __('Elfenlieder'), __('Hexenflüche'),
-           __('Magische Sonderfertigkeiten'), __('Vertrautenmagie'), __('Zaubertricks')]
+    view: skills.model.prototype.magicGroups
 
 
 

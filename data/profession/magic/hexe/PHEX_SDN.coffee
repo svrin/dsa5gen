@@ -2,6 +2,7 @@
   Hexe / Schwesternschaft: Schöne der Nacht
 ###
 
+
 class PHEX_SDN
   name: __("Hexe/Schöne der Nacht")
 
@@ -22,6 +23,9 @@ class PHEX_SDN
 
   auto: [
     [__("Schwesternschaft"), __("Schöne der Nacht")]
+    add_pool(5, __("Zaubertricks"))
+    [__("Zaubertricks"), 7]
+    [__("Zwiegespräch"), 1]
 
     add_pool(((character) ->
       Math.round(character.get('AP') / 4)), __('Vertrautenmagie'))

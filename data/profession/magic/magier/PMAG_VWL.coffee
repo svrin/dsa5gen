@@ -24,6 +24,8 @@ class PMAG_VWL
   auto: [
     [__("Tradition"), __("Gildenmagier")]
     [__("Spezialgebiet"), __("Verwandlung")]
+    add_pool(5, __("Zaubertricks"))
+    [__("Zaubertricks"), 7]
 
     add_pool(35, __("Sprache"), __("Schrift"))
 

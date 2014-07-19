@@ -23,6 +23,20 @@ define ["models/base"], (Model) ->
         return @.get('name') + ": 0"
       return @.get('name') + ": " + value
 
+    # Magic
+    magicGroups: [
+      __('Zauber')
+      __('Rituale')
+      __('Stabzauber')
+      __('Elfenlieder')
+      __('Hexenflüche')
+      __('Magische Sonderfertigkeiten')
+      __('Vertrautenmagie')
+      __('Zaubertricks')
+    ]
+    isMagic: ->
+      return _.intersection(@.magicGroups, @.get('groups')).length > 0
+
     # Vantages
     vantageGroups: [
       __('Nachteile')

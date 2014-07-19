@@ -554,8 +554,28 @@ li {
   vertical-align: top;
 }
 
+.span4 {
+  width: 30%;
+
+  margin-left: 4%;
+  margin-right: 4%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
 .span6 {
   width: 40%;
+
+  margin-left: 4%;
+  margin-right: 4%;
+
+  display: inline-block;
+  vertical-align: top;
+}
+
+.span8 {
+  width: 50%;
 
   margin-left: 4%;
   margin-right: 4%;
@@ -600,6 +620,23 @@ section, table {
     visibility: hidden;
   }
 
+  [data-for].text-long {
+    font-size: 0.9em;
+    height: 2.4em;
+    line-height: 2.4em;
+
+    &:first-letter {
+      font-size: 180%;
+    }
+  }
+
+  .span4 {
+    width: 35%;
+
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
   .span6 {
     width: 45%;
 
@@ -612,5 +649,12 @@ section, table {
 
     margin-left: 2%;
     margin-right: 2%;
+  }
+
+  .span8 {
+    width: 55%;
+
+    margin-left: 1%;
+    margin-right: 1%;
   }
 }

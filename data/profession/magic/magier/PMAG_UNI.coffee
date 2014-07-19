@@ -23,6 +23,8 @@ class PMAG_UNI
 
   auto: [
     [__("Tradition"), __("Gildenmagier")]
+    add_pool(5, __("Zaubertricks"))
+    [__("Zaubertricks"), 7]
 
     add_pool(50, __("Sprache"), __("Schrift"))
 

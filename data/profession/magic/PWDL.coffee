@@ -22,6 +22,8 @@ class PWDL
 
   auto: [
     [__("Tradition"), __("Elfen")]
+    add_pool(5, __("Zaubertricks"))
+    [__("Zaubertricks"), 7]
 
     add_pool(25, __("Sprache"), __("Schrift"))
 

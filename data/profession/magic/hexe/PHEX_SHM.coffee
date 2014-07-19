@@ -22,6 +22,9 @@ class PHEX_SHM
 
   auto: [
     [__("Schwesternschaft"), __("Seherin von Heute und Morgen")]
+    add_pool(5, __("Zaubertricks"))
+    [__("Zaubertricks"), 7]
+    [__("Zwiegespräch"), 1]
 
     add_pool(((character) ->
       Math.round(character.get('AP') / 4)), __('Vertrautenmagie'))

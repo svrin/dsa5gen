@@ -24,6 +24,8 @@ class PMAG_BEH
   auto: [
     [__("Tradition"), __("Gildenmagier")]
     [__("Spezialgebiet"), __("Beherrschung")]
+    add_pool(5, __("Zaubertricks"))
+    [__("Zaubertricks"), 7]
 
     add_pool(40, __("Sprache"), __("Schrift"))
 

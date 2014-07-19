@@ -1,6 +1,7 @@
 <% gender = character.get('gender'); %>
 <% name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
 <% skills = character.get_skill_items(); %>
+<% attributes = character.get('attributes'); %>
 
 <section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
@@ -42,7 +43,7 @@
     <span data-for="character.social"><%= character.get('social') %></span>
 </section>
 
-<section class="span6 print-box">
+<section class="span4 print-box">
     <h2>Eigenschaften</h2>
 
     <% _.each(character.get('attributes'), function (value, key) { %>
@@ -95,13 +96,13 @@
     </table>
 </section>
 
-<section class="span6 print-box">
+<section class="span8 print-box">
     <h2>Vorteile & Nachteile</h2>
 
     <% var i = 17; %>
     <% _.each(skills, function (skill) { %>
     <% if (skill.item && skill.item.isVantage()) { %>
-    <h3 data-for="skills.<%= skill.key %>">
+    <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
         <%= skill.item.toString(skill.value) %>
     </h3>
     <% i--; %>
@@ -196,6 +197,61 @@
     <% printSkillBox(skills, __('Wissenstalente')) %>
     <% printSkillBox(skills, __('Handwerkstalente')) %>
 
+</section>
+
+<div class="pagebreak">
+    <hr/>
+</div>
+
+<section class="span6 print-box">
+    <div id="logo">
+        <img src="/images/dsa5.png"/>
+
+        <h2 class="subcaption">Kampfdokument</h2>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th width="12.5%" title="<%= __('FF') %>">FK
+                <small>(FF)</small>
+            </th>
+            <th width="12.5%" title="<%= __('GE') %>">MK
+                <small>(GE)</small>
+            </th>
+            <th width="12.5%" title="<%= __('KK') %>">NK
+                <small>(KK)</small>
+            </th>
+            <th width="12.5%" title="<%= __('INI') %>">INI
+                <small>(IN)</small>
+            </th>
+            <th width="12.5%" title="<%= __('WS') %>">WS</th>
+            <th width="12.5%" title="<%= __('GS') %>">GS</th>
+            <th width="12.5%" title="<%= __('EDG') %>">EDG</th>
+            <th width="12.5%" title="<%= __('BE') %>">BE</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-for="attributes.FF"><%= attributes['AT/PA_FF'] %>
+                <small>(<%= attributes['FF'] %>)</small>
+            </td>
+            <td data-for="attributes.GE"><%= attributes['AT/PA_GE'] %>
+                <small>(<%= attributes['GE'] %>)</small>
+            </td>
+            <td data-for="attributes.KK"><%= attributes['AT/PA_KK'] %>
+                <small>(<%= attributes['KK'] %>)</small>
+            </td>
+            <td data-for="attributes.INI"><%= attributes['INI'] %>
+                <small>(<%= attributes['IN'] %>)</small>
+            </td>
+            <td data-for="attributes.WS"><%= attributes['WS'] %></td>
+            <td data-for="attributes.GS"><%= attributes['GS'] %></td>
+            <td data-for="attributes.EDG"><%= attributes['EDG'] %></td>
+            <td data-for="attributes.BE"><%= attributes['BE'] %></td>
+        </tr>
+        </tbody>
+    </table>
 </section>
 
 
