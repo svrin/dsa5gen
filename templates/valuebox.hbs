@@ -31,7 +31,10 @@
 
                 <% if (element.get('dice') || element.get('dices')) { %>
                 <span><%= element.get('dice') || element.get('dices').join("/") %></span>
+                <% } else { %>
+                <span></span>
                 <% } %>
+
                 <% if (element.get('BE') !== undefined) { %>
                 <span><%= __(element.get('BE')) %></span>
                 <% } %>
