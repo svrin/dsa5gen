@@ -8,6 +8,7 @@ var baseDir = __dirname + '/..',
 
 var jsLibs = {
     'jquery.min': 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min',
+    'jquery.tipsy.min': 'http://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.min',
     'require.min': 'http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min',
     'require-text.min': 'http://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.10/text.min',
     'require-i18n.min': 'http://cdnjs.cloudflare.com/ajax/libs/require-i18n/2.0.4/i18n.min',
@@ -18,7 +19,9 @@ var jsLibs = {
 
 var cssLibs = {
     'nprogress.css': 'http://cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.css',
-    'normalize.css': 'http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.css'
+    'normalize.css': 'http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.css',
+    'jquery.tipsy.css': 'http://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.css'
+
 };
 
 // Fetch libaries
