@@ -58,10 +58,10 @@ class PSTR
     __("Soziale Anpassungsfähigkeit")
     __("Wohlklang")
 
-    __("Aberglaube")
-    __("Eitelkeit")
-    __("Goldgier")
-    __("Neugier")
+    __("Schlechte Eigenschaft (Aberglaube)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Goldgier)")
+    __("Schlechte Eigenschaft (Neugier)")
 
     __("MU")
     __("IN")

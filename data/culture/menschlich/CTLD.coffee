@@ -68,7 +68,7 @@ cultures.add [
     __("Verbundenheit (Feen)")
     __("Verbundenheit (Kobolde)")
 
-    __("Schlechte Eigenschaft (Angst vor Menschenmassen)")
+    __("Schlechte Eigenschaft (Angst vor ...)")
     __("Schlechte Eigenschaft (Raumangst)")
 
     __("Fahrzeuge")

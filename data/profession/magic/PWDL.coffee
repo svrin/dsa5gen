@@ -61,8 +61,8 @@ class PWDL
     __("Richtungssinn")
     __("Unauffällig")
 
-    __("Neugier")
-    __("Raumangst")
+    __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Raumangst)")
 
     __("MU")
     __("KL")

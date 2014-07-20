@@ -58,8 +58,8 @@ class PMAG_VWL
   common: [
     __("Verbesserte Regeneration (Astralenergie)")
 
-    __("Neugier")
-    __("Weltfremd")
+    __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Weltfremd)")
 
     __("MU")
     __("KL")

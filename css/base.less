@@ -233,6 +233,27 @@ nav {
 
   text-align: left;
 
+  label.common, label.uncommon, label.undef, label.normal {
+    &:before {
+      background-size: 0.83em 0.83em;
+      content: "";
+      width: 0.83em;
+      height: 0.83em;
+      display: inline-block;
+      margin-right: 0.2em;
+    }
+  }
+
+  label.common:before {
+    background-image: url('/images/glyphicons_ok.png');
+  }
+  label.uncommon:before {
+    background-image: url('/images/glyphicons_remove.png');
+  }
+  label.undef:before {
+    background-image: url('/images/glyphicons_question.png');
+  }
+
   h3 {
     position: absolute;
 

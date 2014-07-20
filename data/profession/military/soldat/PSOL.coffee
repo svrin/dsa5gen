@@ -57,8 +57,8 @@ class PSOL
     __("Richtungssinn")
     __("Verbesserte Regeneration (Lebensenergie)")
 
-    __("Aberglaube")
-    __("Jähzorn")
+    __("Schlechte Eigenschaft (Aberglaube)")
+    __("Schlechte Eigenschaft (Jähzorn)")
 
     __("GE")
     __("KK")

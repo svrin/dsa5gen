@@ -52,7 +52,7 @@ class PHAU
     __("Begabung in Gesellschaftstalenten")
     __("Soziale Anpassungsfähigkeit")
 
-    __("Aberglaube")
+    __("Schlechte Eigenschaft (Aberglaube)")
 
     __("KO")
   ]

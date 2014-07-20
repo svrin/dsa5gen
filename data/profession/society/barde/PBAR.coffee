@@ -54,9 +54,9 @@ class PBAR
     __("Soziale Anpassungsfähigkeit")
     __("Wohlklang")
 
-    __("Arroganz")
-    __("Eitelkeit")
-    __("Neugier")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Neugier)")
 
     __("KL")
     __("CH")

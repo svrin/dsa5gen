@@ -61,8 +61,8 @@ class PSGE
     __("Verbesserte Regeneration (Lebensenergie)")
     __("Zäher Hund")
 
-    __("Arroganz")
-    __("Eitelkeit")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
 
     __("MU")
     __("IN")

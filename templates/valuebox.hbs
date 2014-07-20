@@ -1,7 +1,9 @@
 <h3><%= self.caption %></h3>
 
-<% gender = character.get('gender'); %>
-<% values = character.get(self.for) || {}; %>
+<% nyathis = character; %>
+<% var gender = character.get('gender'); %>
+<% var recommendations = character.get('recommendations') || {}; %>
+<% var values = character.get(self.for) || {}; %>
 
 <dl>
     <% groups = self.collection.groupBy(function (element) { return element.get('groups') && element.get('groups')[0]
@@ -18,7 +20,8 @@
             <% var key = element.get('name'); %>
             <% var value = values[key] || element.get('min'); %>
             <li data-key="<%=self.for%>.<%=key%>" data-value="<%= value %>" data-count="<%= element.get('count') %>">
-                <label><%= element.get('name_' + gender, character) || element.get('name', character) %></label>
+                <label class="<%= recommendations[key] || 'normal' %>"><%= element.get('name_' + gender, character) ||
+                    element.get('name', character) %></label>
 
                 <span data-min="<%= element.get('min') %>" data-max="<%= element.get('max') %>">
                     <a href=":decr(<%=self.for%>.<%=key%>)"></a>

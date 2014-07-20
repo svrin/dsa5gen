@@ -33,7 +33,7 @@ cultures.add [
     __("Zäher Hund")
 
     __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Ansgt vor Flugwesen)")
+    __("Schlechte Eigenschaft (Angst vor ...)")
     __("Schlechte Eigenschaft (Autoritätsgläubig)")
     __("Schlechte Eigenschaft (Höhenangst)")
     __("Schlechte Eigenschaft (Jähzorn)")

@@ -57,9 +57,9 @@ class PMAG_BEH
     __("Soziale Anpassungsfähigkeit")
     __("Verbesserte Regeneration (Astralenergie)")
 
-    __("Arroganz")
-    __("Eitelkeit")
-    __("Neugier")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Neugier)")
 
     __("MU")
     __("KL")

@@ -44,8 +44,8 @@ class PHAN
     __("Herausragender Sinn")
     __("Hitzeresistenz")
 
-    __("Aberglaube")
-    __("Vorurteile")
+    __("Schlechte Eigenschaft (Aberglaube)")
+    __("Schlechte Eigenschaft (Vorurteile)")
 
     __("IN")
     __("FF")

@@ -65,7 +65,7 @@ cultures.add [
   uncommon: [
     __("Kälteresistenz")
 
-    __("Schlechte Eigenschaft (Angst vor Menschenmassen)")
+    __("Schlechte Eigenschaft (Angst vor ...)")
     __("Schlechte Eigenschaft (Raumangst)")
     __("Schlechte Eigenschaft (Totenangst)")
 

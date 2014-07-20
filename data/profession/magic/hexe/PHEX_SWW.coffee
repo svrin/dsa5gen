@@ -71,10 +71,10 @@ class PHEX_SWW
     __("Immunität gegen Gift")
     __("Magische Einstimmung")
 
-    __("Arroganz")
-    __("Eitelkeit")
-    __("Goldgier")
-    __("Neugier")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Goldgier)")
+    __("Schlechte Eigenschaft (Neugier)")
 
     __("MU")
     __("KL")

@@ -62,11 +62,11 @@ class PGAU
     __("Verbundenheit (Tiere)")
     __("Wohlklang")
 
-    __("Aberglaube")
-    __("Eitelkeit")
-    __("Neid")
-    __("Neugier")
-    __("Rachsucht")
+    __("Schlechte Eigenschaft (Aberglaube)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Neid)")
+    __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Rachsucht)")
 
     __("MU")
     __("FF")
@@ -78,7 +78,7 @@ class PGAU
 
     __("Blind")
     __("Blutrausch")
-    __("Höhenangst")
+    __("Schlechte Eigenschaft (Höhenangst)")
     __("Nachtblind")
     __("Unfähig in Körpertalenten")
   ]

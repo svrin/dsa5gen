@@ -38,13 +38,13 @@ class PGEH
     __("Begabung in Wissenstalenten")
     __("Theoretiker")
 
-    __("Arroganz")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Neid)")
+    __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Weltfremd)")
     __("Glasknochen")
-    __("Neid")
-    __("Neugier")
     __("Unfähig in Körpertalenten")
     __("Unfähig in Gesellschaftstalenten")
-    __("Weltfremd")
 
     __("KL")
     __("FF")
@@ -54,7 +54,7 @@ class PGEH
     __("Begabung in Körpertalenten")
     __("Kampfrausch")
 
-    __("Aberglaube")
+    __("Schlechte Eigenschaft (Aberglaube)")
     __("Blutrausch")
   ]
 

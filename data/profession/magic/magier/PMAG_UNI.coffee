@@ -58,9 +58,9 @@ class PMAG_UNI
     __("Hohe Magieresistenz")
     __("Verbesserte Regeneration (Astralenergie)")
 
-    __("Eitelkeit")
-    __("Neugier")
-    __("Weltfremd")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Neugier)")
+    __("Schlechte Eigenschaft (Weltfremd)")
 
     __("KL")
     __("IN")

@@ -54,8 +54,8 @@ class PLND
   common: [
     __("Begabung in Naturtalenten")
 
-    __("Aberglaube")
-    __("Vorurteile")
+    __("Schlechte Eigenschaft (Aberglaube)")
+    __("Schlechte Eigenschaft (Vorurteile)")
 
     __("KO")
     __("KK")
@@ -65,8 +65,8 @@ class PLND
     __("Begabung in Wissenstalenten")
 
     __("Blind")
-    __("Krankhafte Reinlichkeit")
-    __("Platzangst")
+    __("Schlechte Eigenschaft (Krankhafte Reinlichkeit)")
+    __("Schlechte Eigenschaft (Platzangst)")
   ]
 
   cultures:

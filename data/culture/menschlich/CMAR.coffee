@@ -59,7 +59,7 @@ cultures.add [
     __("Kampfrausch")
 
     __("Farbenblind")
-    __("Schlechte Eigenschaft (Angst vor Insekten)")
+    __("Schlechte Eigenschaft (Angst vor ...)")
     __("Schlechte Eigenschaft (Jähzorn)")
 
     __("Fahrzeuge")

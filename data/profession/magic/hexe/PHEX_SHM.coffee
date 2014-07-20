@@ -64,8 +64,8 @@ class PHEX_SHM
     __("Prophezeien")
     __("Verhüllte Aura")
 
-    __("Eitelkeit")
-    __("Rachsucht")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Rachsucht)")
 
     __("KL")
     __("IN")

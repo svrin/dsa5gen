@@ -52,10 +52,10 @@ class PLIE
     __("Gutaussehend")
     __("Wohlklang")
 
-    __("Eitelkeit")
-    __("Goldgier")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Goldgier)")
     __("Kälteresitenz")
-    __("Krankhafte Reinlichkeit")
+    __("Schlechte Eigenschaft (Krankhafte Reinlichkeit)")
     __("Soziale Anpassungsfähigkeit")
 
     __("CH")
@@ -67,7 +67,7 @@ class PLIE
 
     __("Blutrausch")
     __("Hässlich")
-    __("Raumangst")
+    __("Schlechte Eigenschaft (Raumangst)")
     __("Übler Geruch")
   ]
 

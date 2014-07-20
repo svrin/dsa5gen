@@ -67,7 +67,7 @@ class PRON
     __("Zäher Hund")
 
     __("Prinzipientreue")
-    __("Arroganz")
+    __("Schlechte Eigenschaft (Arroganz)")
     __("Verpflichtungen")
 
     __("MU")

@@ -56,7 +56,7 @@ class PSPL
   ]
 
   uncommon: [
-    __("Jähzorn")
+    __("Schlechte Eigenschaft (Jähzorn)")
   ]
 
   cultures:

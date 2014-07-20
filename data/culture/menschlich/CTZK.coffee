@@ -62,7 +62,7 @@ cultures.add [
     __("Glasknochen")
     __("Krankheitsanfällig")
     __("Niedrige Lebenskraft")
-    __("Totenangst")
+    __("Schlechte Eigenschaft (Totenangst)")
     __("Unfähig in Naturtalenten")
 
     __("Betören")

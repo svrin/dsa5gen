@@ -40,10 +40,10 @@ class PKUE
     __("Begabung in Handwerkstalenten")
     __("Begabung in Wissenstalenten")
 
-    __("Arroganz")
-    __("Eitelkeit")
-    __("Größenwahn")
-    __("Neugier")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Größenwahn)")
+    __("Schlechte Eigenschaft (Neugier)")
 
     __("IN")
     __("CH")

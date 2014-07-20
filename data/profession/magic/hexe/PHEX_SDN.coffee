@@ -66,10 +66,10 @@ class PHEX_SDN
     __("Soziale Anpassungsfähigkeit")
     __("Verhüllte Aura")
 
-    __("Arroganz")
-    __("Eitelkeit")
-    __("Goldgier")
-    __("Rachsucht")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Goldgier)")
+    __("Schlechte Eigenschaft (Rachsucht)")
 
     __("IN")
     __("CH")

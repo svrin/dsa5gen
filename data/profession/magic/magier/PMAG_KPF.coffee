@@ -63,9 +63,9 @@ class PMAG_KPF
     __("Verbesserte Regeneration (Astralenergie)")
     __("Zäher Hund")
 
-    __("Arroganz")
-    __("Eitelkeit")
-    __("Neugier")
+    __("Schlechte Eigenschaft (Arroganz)")
+    __("Schlechte Eigenschaft (Eitelkeit)")
+    __("Schlechte Eigenschaft (Neugier)")
 
     __("MU")
     __("KL")

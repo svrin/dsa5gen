@@ -46,9 +46,9 @@ class PHAE
     __("Wohlklang")
     __("Zeitgefühl")
 
-    __("Geiz")
-    __("Goldgier")
-    __("Neid")
+    __("Schlechte Eigenschaft (Geiz)")
+    __("Schlechte Eigenschaft (Goldgier)")
+    __("Schlechte Eigenschaft (Neid)")
 
     __("KL")
     __("IN")
@@ -61,8 +61,8 @@ class PHAE
     __("Blind")
     __("Blutrausch")
     __("Hässlich")
-    __("Platzangst")
-    __("Weltfremd")
+    __("Schlechte Eigenschaft (Platzangst)")
+    __("Schlechte Eigenschaft (Weltfremd)")
   ]
 
   cultures:

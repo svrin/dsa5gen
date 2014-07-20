@@ -68,8 +68,8 @@ class PHEX_TDE
     __("Verhüllte Aura")
 
     __("Körpergebundene Kraft")
-    __("Angst vor Feuer")
-    __("Weltfremd")
+    __("Schlechte Eigenschaft (Angst vor ...)")
+    __("Schlechte Eigenschaft (Weltfremd)")
     __("Stigma (Hexensträhne)")
 
     __("IN")

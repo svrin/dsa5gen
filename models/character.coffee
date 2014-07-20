@@ -45,6 +45,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       fget @, 'skills', @calc_skills
       fget @, 'social', @calc_social
 
+      fget @, 'recommendations', @calc_recommendations
+
       fget @, 'AP', @calc_ap
 
       if not @id
@@ -143,6 +145,55 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         return __("Mittelschicht")
       else
         return top
+
+    calc_recommendations: (top) ->
+      ###
+        Collects all recommendations for a character
+      ###
+      character = @
+
+      base = {}
+      lambda = (weight, element) ->
+        if not element? || not element
+          return
+
+        if _.isFunction(element)
+          element = element(character)
+
+        if _.isArray(element)
+          element = element[0]
+
+        if !_.isString(element)
+          console.error "Unexpected element in common/uncommon list", element
+          return
+
+        if weight > 0 && (!base[element] || base[element] == "common")
+          base[element] = "common"
+        else if weight < 0 && (!base[element] || base[element] == "uncommon")
+          base[element] = "uncommon"
+        else
+          base[element] = "undef"
+
+      # Add content from race
+      race = character.get('race')
+      if race
+        _.each race.get('common'), _.partial(lambda, 1);
+        _.each race.get('uncommon'), _.partial(lambda, -1);
+
+      # Add content from culture
+      culture = character.get('culture')
+      if culture
+        _.each culture.get('common'), _.partial(lambda, 1);
+        _.each culture.get('uncommon'), _.partial(lambda, -1);
+
+      # Add content from profession
+      profession = character.get('profession')
+      if profession
+        _.each profession.get('common'), _.partial(lambda, 1);
+        _.each profession.get('uncommon'), _.partial(lambda, -1);
+
+      return base
+
 
     calc_skills: (top) ->
       ###
