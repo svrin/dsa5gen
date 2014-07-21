@@ -171,7 +171,7 @@ require ["data/vantage/negative"], (S) ->
     costs: -25
     max: 3
     auto: [
-      ["EDG", -1]
+      ["GLK", -1]
     ]
 
   skills.add _.extend {}, S,
