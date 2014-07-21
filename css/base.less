@@ -394,9 +394,17 @@ nav {
 
 #logo {
   text-align: center;
+  position: relative;
 
   > img {
     width: 20em;
+  }
+
+  .inprint {
+    color: lightgray;
+    position: absolute;
+    margin-left: 13em;
+    margin-top: 0.6ex;
   }
 }
 
@@ -685,7 +693,7 @@ section, table {
   }
 
   .span4 {
-    width: 35%;
+    width: 40%;
 
     margin-left: 1%;
     margin-right: 1%;
@@ -706,7 +714,7 @@ section, table {
   }
 
   .span8 {
-    width: 55%;
+    width: 50%;
 
     margin-left: 1%;
     margin-right: 1%;
@@ -714,15 +722,6 @@ section, table {
 
   .pagebreak {
     text-align: right;
-
-    &:after {
-      color: lightgray;
-
-      position: absolute;
-      right: 15px;
-
-      content: "dsa5gen.de";
-    }
   }
 
   footer {

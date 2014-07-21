@@ -17,12 +17,17 @@
     <label class="subline" for="race">Rasse</label>
 </section>
 
-<section class="span6 print-box">
-    <div id="logo">
-        <img src="/images/dsa5.png"/>
+<% function printLogo(caption) { %>
+<div id="logo">
+    <span class="inprint">dsa5gen.de</span>
+    <img src="/images/dsa5.png"/>
 
-        <h2 class="subcaption">Heldendokument</h2>
-    </div>
+    <h2 class="subcaption"><%= caption %></h2>
+</div>
+<% } %>
+
+<section class="span6 print-box">
+    <% printLogo('Heldendokument') %>
 
     <label for="character.profile.hair">Haarfarbe</label>
     <span data-for="character.profile.hair"><%= character.get('profile')['hair'] %></span>
@@ -96,11 +101,17 @@
         </tbody>
     </table>
 
+    <div class="spacer">&nbsp;</div>
+
+
+    <% var i = 23; %>
+
     <h2>Sprachen</h2>
     <% _.each(skills, function (skill) { %>
     <% if (skill.item && skill.groups.indexOf(__('Sprache')) >= 0) { %>
     <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
         <%= skill.item.toString(skill.value) %>
+        <% i++ %>
     </h3>
     <% } %>
     <% }); %>
@@ -113,6 +124,7 @@
     <% if (skill.item && skill.groups.indexOf(__('Schrift')) >= 0) { %>
     <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
         <%= skill.item.toString(skill.value) %>
+        <% i++ %>
     </h3>
     <% } %>
     <% }); %>
@@ -125,7 +137,6 @@
 <section class="span8 print-box">
     <h2>Vorteile & Nachteile</h2>
 
-    <% var i = 25; %>
     <% _.each(skills, function (skill) { %>
     <% if (skill.item && skill.item.isVantage()) { %>
     <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
@@ -186,6 +197,8 @@
 
 
 <section class="span6 print-box">
+    <h1><%= character.get('name') %></h1>
+
     <% printSkillBox(skills, __('Körpertalente')) %>
     <% printSkillBox(skills, __('Gesellschaftstalente')) %>
     <% printSkillBox(skills, __('Naturtalente')) %>
@@ -193,13 +206,7 @@
 </section>
 
 <section class="span6 print-box">
-    <div id="logo">
-        <img src="/images/dsa5.png"/>
-
-        <h2 class="subcaption">Talentdokument</h2>
-
-        <h2 class="subcaption"><%= character.get('name') %></h2>
-    </div>
+    <% printLogo('Talentdokument') %>
 
     <table>
         <thead>
@@ -258,11 +265,7 @@
 </section>
 
 <section class="span6 print-box">
-    <div id="logo">
-        <img src="/images/dsa5.png"/>
-
-        <h2 class="subcaption">Zauber & Liturgien</h2>
-    </div>
+    <% printLogo('Zauber & Liturgien') %>
 
     <table>
         <thead>
@@ -445,11 +448,7 @@
 </section>
 
 <section class="span6 print-box">
-    <div id="logo">
-        <img src="/images/dsa5.png"/>
-
-        <h2 class="subcaption">Kampfdokument</h2>
-    </div>
+    <% printLogo('Kampfdokument') %>
 
     <table>
         <thead>
