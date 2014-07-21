@@ -268,6 +268,32 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
       return base
 
+    hasMagic: () ->
+      ###
+        Detect whetehr this is a magic awoken character
+      ###
+      if @.attributes['skills'][__('Zauberer')] > 0
+        return true
+
+      _.each @.get('skills'), (value, key) ->
+        if value and skills.get(key) and skills.get(key).isMagic()
+          return true
+
+      return false
+
+    hasLiturgy: () ->
+      ###
+        Detect whetehr this is a magic awoken character
+      ###
+      if @.attributes['skills'][__('Geweihter')] > 0
+        return true
+
+      _.each @.get('skills'), (value, key) ->
+        if value and skills.get(key) and skills.get(key).isLiturgy()
+          return true
+
+      return false
+
     get_skill_items: () ->
       ###
         Get a key, value, node list of all skills

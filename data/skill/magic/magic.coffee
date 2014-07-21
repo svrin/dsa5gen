@@ -47,6 +47,11 @@ require ["data/skill/magic/spells"], (S) ->
     dices: ["KL", "IN", "FF", "MR"]
     SF: "C"
 
+    AsP: "8 + 4/30s"
+    range: "4"
+    attribute: __("Hellsicht")
+    duration: {"casting": "8", "effect": "*"}
+
   skills.add _.extend {}, S,
     name: __("Blitz dich find")
     dices: ["KL", "IN", "CH", "MR"]
@@ -72,6 +77,11 @@ require ["data/skill/magic/spells"], (S) ->
     dices: ["MU", "IN", "CH"]
     SF: "A"
 
+    AsP: "1"
+    range: "8"
+    attribute: __("Elementar")
+    duration: {"casting": "2", "effect": "*"}
+
   skills.add _.extend {}, S,
     name: __("Fulminictus")
     dices: ["IN", "FF", "KO"]
@@ -87,15 +97,30 @@ require ["data/skill/magic/spells"], (S) ->
     dices: ["KL", "IN", "CH", "MR"]
     SF: "B"
 
+    AsP: 4
+    range: "Berührung"
+    attribute: __("Einfluss")
+    duration: {"casting": "4", "effect": "FP x 5m"}
+
   skills.add _.extend {}, S,
     name: __("Harmlose Gestalt")
     dices: ["KL", "IN", "FF"]
     SF: "B"
 
+    AsP: "8 + 4/5m"
+    range: "Selbst"
+    attribute: __("Illusion")
+    duration: {"casting": "8", "effect": "*"}
+
   skills.add _.extend {}, S,
     name: __("Hexengalle")
     dices: ["IN", "FF", "KO"]
     SF: "B"
+
+    AsP: 4
+    range: "Selbst"
+    attribute: __("Verwandlung")
+    duration: {"casting": "2", "effect": "FP x 1m"}
 
   skills.add _.extend {}, S,
     name: __("Hexenkrallen")
@@ -122,6 +147,11 @@ require ["data/skill/magic/spells"], (S) ->
     dices: ["KL", "IN", "FF"]
     SF: "A"
 
+    AsP: "2 + 1/10m"
+    range: "Selbst"
+    attribute: __("Verwandlung")
+    duration: {"casting": "8", "effect": "*"}
+
   skills.add _.extend {}, S,
     name: __("Krötensprung")
     dices: ["KL", "IN", "FF"]
@@ -137,6 +167,11 @@ require ["data/skill/magic/spells"], (S) ->
     dices: ["GE", "FF", "KK"]
     SF: "B"
 
+    AsP: "3 + 1/5S"
+    range: "8"
+    attribute: __("Telekinese")
+    duration: {"casting": "4", "effect": "5m"}
+
   skills.add _.extend {}, S,
     name: __("Nebelwand")
     dices: ["MU", "IN", "CH"]
@@ -146,6 +181,11 @@ require ["data/skill/magic/spells"], (S) ->
     name: __("Odem Arcanum")
     dices: ["KL", "IN", "FF"]
     SF: "A"
+
+    AsP: "4"
+    range: "8"
+    attribute: __("Hellsicht")
+    duration: {"casting": "4", "effect": "1m"}
 
   skills.add _.extend {}, S,
     name: __("Paralysis")
@@ -182,10 +222,20 @@ require ["data/skill/magic/spells"], (S) ->
     dices: ["MU", "CH", "CH", "MR"]
     SF: "A"
 
+    AsP: "4"
+    range: "8"
+    attribute: __("Einfluss")
+    duration: {"casting": "2", "effect": "5m"}
+
   skills.add _.extend {}, S,
     name: __("Satuarias Herrlichkeit")
     dices: ["KL", "IN", "FF"]
     SF: "B"
+
+    AsP: "8"
+    range: "Selbst"
+    attribute: __("Verwandlung")
+    duration: {"casting": "8", "effect": "FP x 1h"}
 
   skills.add _.extend {}, S,
     name: __("Silentium")

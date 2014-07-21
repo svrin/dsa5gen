@@ -1,7 +1,7 @@
-<% gender = character.get('gender'); %>
-<% name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
-<% skills = character.get_skill_items(); %>
-<% attributes = character.get('attributes'); %>
+<% var gender = character.get('gender'); %>
+<% var name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
+<% var skills = _.sortBy(character.get_skill_items(), function (skill) { return skill.key } ); %>
+<% var attributes = character.get('attributes'); %>
 
 <section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
@@ -231,24 +231,28 @@
     <hr/>
 </div>
 
+<% if (character.hasMagic() || character.hasLiturgy()) { %>
 <section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
 
-    <h3 data-for="tradition"> <%= skills[__('Tradition')] && skills[__('Tradition')].value %></h3>
+    <h3 data-for="tradition"> <%= _.findWhere(skills, {key: __('Tradition') }).value %></h3>
     <label class="subline" for="tradition"><%= __('Tradition') %></label>
 
-    <% if (skills[__('Schwesternschaft')]) { %>
-    <h3 data-for="schwesternschaft"> <%= skills[__('Schwesternschaft')].value %></h3>
+    <% var schwesternschaft = _.findWhere(skills, {key: __('Schwesternschaft') }) %>
+    <% if (schwesternschaft) { %>
+    <h3 data-for="schwesternschaft"> <%= schwesternschaft.value %></h3>
     <label class="subline" for="schwesternschaft"><%= __('Schwesternschaft') %></label>
     <% } %>
 
-    <% if (skills[__('Spezialgebiet')]) { %>
-    <h3 data-for="spezialgebiet"> <%= skills[__('Spezialgebiet')].value %></h3>
+    <% var spezialgebiet = _.findWhere(skills, {key: __('Spezialgebiet') }) %>
+    <% if (spezialgebiet) { %>
+    <h3 data-for="spezialgebiet"> <%= spezialgebiet.value %></h3>
     <label class="subline" for="spezialgebiet"><%= __('Spezialgebiet') %></label>
     <% } %>
 
-    <% if (skills[__('Kirche')]) { %>
-    <h3 data-for="kirche"> <%= skills[__('Kirche')].value %></h3>
+    <% var kirche = _.findWhere(skills, {key: __('Kirche') }) %>
+    <% if (kirche) { %>
+    <h3 data-for="kirche"> <%= kirche.value %></h3>
     <label class="subline" for="kirche"><%= __('Kirche') %></label>
     <% } %>
 </section>
@@ -284,7 +288,11 @@
 
 <section class="span12 print-box">
 
-    <h2><%= __("Zauber/Liturgien") %></h2>
+    <h2>
+        <%= character.hasMagic() && __("Zauber") || "" %>
+        <% if (character.hasMagic() && character.hasLiturgy()) { %>/<% } %>
+        <%= character.hasLiturgy() && __("Liturgien") || "" %>
+    </h2>
     <table>
         <thead>
         <tr>
@@ -309,11 +317,15 @@
             <td class="center" data-for="skills.<%= skill.key %>.dices"><%= skill.item.get('dices').join("/") %></td>
             <td class="center" data-for="skills.<%= skill.key %>.SF"><%= skill.item.get('SF') %></td>
             <td class="center" data-for="skills.<%= skill.key %>.value"><%= skill.value %></td>
-            <td class="center" data-for="skills.<%= skill.key %>.1">&nbsp;</td>
-            <td class="center" data-for="skills.<%= skill.key %>.2">&nbsp;</td>
-            <td class="center" data-for="skills.<%= skill.key %>.3">&nbsp;</td>
-            <td class="center" data-for="skills.<%= skill.key %>.4">&nbsp;</td>
-            <td class="center" data-for="skills.<%= skill.key %>.5">&nbsp;</td>
+            <td class="center" data-for="skills.<%= skill.key %>.AsP"><%= skill.item.get('AsP') %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.duration.casting"><%= skill.item.get('duration') &&
+                skill.item.get('duration')['casting'] %>
+            </td>
+            <td class="center" data-for="skills.<%= skill.key %>.range"><%= skill.item.get('range') %></td>
+            <td class="center" data-for="skills.<%= skill.key %>.duration.effect"><%= skill.item.get('duration') &&
+                skill.item.get('duration')['effect'] %>
+            </td>
+            <td class="center" data-for="skills.<%= skill.key %>.attribute"><%= skill.item.get('attribute') %></td>
         </tr>
         <% i--; %>
         <% } %>
@@ -382,6 +394,7 @@
 <div class="pagebreak">
     <hr/>
 </div>
+<% } %>
 
 <section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
