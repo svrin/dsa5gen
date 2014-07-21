@@ -156,7 +156,7 @@
     <hr/>
 </div>
 
-<% function printSkillBox(skills, key) { %>
+<% function printSkillBox(skills, key, empty_lines) { %>
 <h2><%= key %></h2>
 
 <table>
@@ -183,6 +183,7 @@
     </tr>
     <% } %>
     <% }); %>
+    <% while (empty_lines-- > 0) { %>
     <tr>
         <td data-for="skills.name">&nbsp;</td>
         <td data-for="skills.dices">&nbsp;</td>
@@ -191,6 +192,7 @@
         <td data-for="skills.value">&nbsp;</td>
         <td data-for="skills.comment">&nbsp;</td>
     </tr>
+    <% } %>
     </tbody>
 </table>
 <% } %>
@@ -199,10 +201,10 @@
 <section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
 
-    <% printSkillBox(skills, __('Körpertalente')) %>
-    <% printSkillBox(skills, __('Gesellschaftstalente')) %>
-    <% printSkillBox(skills, __('Naturtalente')) %>
-    <% printSkillBox(skills, __('Gaben')) %>
+    <% printSkillBox(skills, __('Körpertalente'), 1) %>
+    <% printSkillBox(skills, __('Gesellschaftstalente'), 1) %>
+    <% printSkillBox(skills, __('Naturtalente'), 1) %>
+    <% printSkillBox(skills, __('Gaben'), 1) %>
 </section>
 
 <section class="span6 print-box">
@@ -229,8 +231,8 @@
         </tbody>
     </table>
 
-    <% printSkillBox(skills, __('Wissenstalente')) %>
-    <% printSkillBox(skills, __('Handwerkstalente')) %>
+    <% printSkillBox(skills, __('Wissenstalente'), 3) %>
+    <% printSkillBox(skills, __('Handwerkstalente'), 3) %>
 
 </section>
 
