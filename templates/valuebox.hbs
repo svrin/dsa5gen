@@ -20,8 +20,21 @@
             <% var key = element.get('name'); %>
             <% var value = values[key] || element.get('min'); %>
             <li data-key="<%=self.for%>.<%=key%>" data-value="<%= value %>" data-count="<%= element.get('count') %>">
-                <label class="<%= recommendations[key] || 'normal' %>"><%= element.get('name_' + gender, character) ||
-                    element.get('name', character) %></label>
+                <label class="<%= recommendations[key] || 'normal' %>">
+                    <%= element.get('name_' + gender, character) || element.get('name', character) %>
+
+                    <% var multiple = element.get('multiple') %>
+                    <% if (multiple) { %>
+                    <select>
+                        <option></option>
+                        <% _.each(self.collection.filter(function (element) { return element.is(multiple) }), function
+                        (skill) { %>
+                        <option value="<%= skill.get('name') %>"><%= skill.get('name') %></option>
+                        <% }); %>
+                    </select>
+                    <% } %>
+
+                </label>
 
                 <span data-min="<%= element.get('min') %>" data-max="<%= element.get('max') %>">
                     <a href=":decr(<%=self.for%>.<%=key%>)"></a>

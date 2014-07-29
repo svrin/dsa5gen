@@ -3,6 +3,7 @@ define "data/skill/nature", [], () ->
 
   groups: [
     __("Naturtalente")
+    __("Fertigkeiten")
   ]
 
 require ["data/skill/nature"], (S) ->

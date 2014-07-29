@@ -3,6 +3,7 @@ define "data/skill/knowledge", [], () ->
 
   groups: [
     __("Wissenstalente")
+    __("Fertigkeiten")
   ]
 
 require ["data/skill/knowledge"], (S) ->

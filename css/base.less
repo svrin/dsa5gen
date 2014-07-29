@@ -254,6 +254,23 @@ nav {
     background-image: url('/images/glyphicons_question.png');
   }
 
+  label > select {
+    font-size: 0.8em;
+    margin-top: -0.1em;
+    margin-bottom: -0.1em;
+
+    background-color: transparent;
+    min-width: 80px;
+
+    &::before {
+      content: '(';
+    }
+
+    &::after {
+      content: ')';
+    }
+  }
+
   h3 {
     position: absolute;
 

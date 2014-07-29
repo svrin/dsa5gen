@@ -3,6 +3,7 @@ define "data/skill/crafting", [], () ->
 
   groups: [
     __("Handwerkstalente")
+    __("Fertigkeiten")
   ]
 
 require ["data/skill/crafting"], (S) ->

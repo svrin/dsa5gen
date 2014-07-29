@@ -3,6 +3,7 @@ define "data/skill/society", [], () ->
 
   groups: [
     __("Gesellschaftstalente")
+    __("Fertigkeiten")
   ]
 
 require ["data/skill/society"], (S) ->

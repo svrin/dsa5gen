@@ -3,6 +3,7 @@ define "data/skill/body", [], () ->
 
   groups: [
     __("Körpertalente")
+    __("Fertigkeiten")
   ]
 
 require ["data/skill/body"], (S) ->

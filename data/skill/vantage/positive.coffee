@@ -34,19 +34,12 @@ require ["data/vantage/positive"], (S) ->
     costs: 20
 
   skills.add _.extend {}, S,
-    name: __("Begabung (A)")
-    costs: 10
-    multiple: "A-Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Begabung (B)")
-    costs: 20
-    multiple: "B-Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Begabung (C)")
-    costs: 30
-    multiple: "C-Fertigkeit"
+    name: __("Begabung")
+    costs: (character, skill, value) ->
+      return 10 if skill.get('SF') == "A"
+      return 20 if skill.get('SF') == "B"
+      return 30 if skill.get('SF') == "C"
+    multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
     name: __("Beidhändig")
@@ -176,34 +169,20 @@ require ["data/vantage/positive"], (S) ->
     ]
 
   skills.add _.extend {}, S,
-    name: __("Herausragende Fertigkeit (A)")
-    costs: 5
-    multiple: "A-Fertigkeit"
+    name: __("Herausragende Fertigkeit")
+    costs: (character, skill, value) ->
+      return 5 if skill.get('SF') == "A"
+      return 10 if skill.get('SF') == "B"
+      return 15 if skill.get('SF') == "C"
+    multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
-    name: __("Herausragende Fertigkeit (B)")
-    costs: 10
-    multiple: "B-Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Herausragende Fertigkeit (C)")
-    costs: 15
-    multiple: "C-Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Herausragende Kampftechnik (A)")
-    costs: 10
-    multiple: "A-Kampftechnik"
-
-  skills.add _.extend {}, S,
-    name: __("Herausragende Kampftechnik (B)")
-    costs: 20
-    multiple: "B-Kampftechnik"
-
-  skills.add _.extend {}, S,
-    name: __("Herausragende Kampftechnik (C)")
-    costs: 30
-    multiple: "C-Kampftechnik"
+    name: __("Herausragende Kampftechnik")
+    costs: (character, skill, value) ->
+      return 10 if skill.get('SF') == "A"
+      return 20 if skill.get('SF') == "B"
+      return 30 if skill.get('SF') == "C"
+    multiple: "Kampftechniken"
 
   skills.add _.extend {}, S,
     name: __("Herausragender Sinn (Gehör)")
@@ -296,19 +275,12 @@ require ["data/vantage/positive"], (S) ->
     max: 3
 
   skills.add _.extend {}, S,
-    name: __("Meisterhandwerk (A)")
-    costs: 10
-    multiple: "A-Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Meisterhandwerk (B)")
-    costs: 20
-    multiple: "B-Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Meisterhandwerk (C)")
-    costs: 30
-    multiple: "C-Fertigkeit"
+    name: __("Meisterhandwerk")
+    costs: (character, skill, value) ->
+      return 10 if skill.get('SF') == "A"
+      return 20 if skill.get('SF') == "B"
+      return 30 if skill.get('SF') == "C"
+    multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
     name: __("Nichtschläfer")
@@ -398,19 +370,12 @@ require ["data/vantage/positive"], (S) ->
     costs: 10
 
   skills.add _.extend {}, S,
-    name: __("Waffenbegabung (A)")
-    costs: 15
-    multiple: "A-Kampftechnik"
-
-  skills.add _.extend {}, S,
-    name: __("Waffenbegabung (B)")
-    costs: 30
-    multiple: "B-Kampftechnik"
-
-  skills.add _.extend {}, S,
-    name: __("Waffenbegabung (C)")
-    costs: 45
-    multiple: "C-Kampftechnik"
+    name: __("Waffenbegabung")
+    costs: (character, skill, value) ->
+      return 15 if skill.get('SF') == "A"
+      return 30 if skill.get('SF') == "B"
+      return 45 if skill.get('SF') == "C"
+    multiple: "Kampftechniken"
 
   skills.add _.extend {}, S,
     name: __("Wohlklang")
