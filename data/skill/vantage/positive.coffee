@@ -35,7 +35,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Begabung")
-    costs: (character, skill, value) ->
+    costs: (skill) ->
       return 10 if skill.get('SF') == "A"
       return 20 if skill.get('SF') == "B"
       return 30 if skill.get('SF') == "C"
@@ -170,7 +170,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Herausragende Fertigkeit")
-    costs: (character, skill, value) ->
+    costs: (skill) ->
       return 5 if skill.get('SF') == "A"
       return 10 if skill.get('SF') == "B"
       return 15 if skill.get('SF') == "C"
@@ -178,7 +178,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Herausragende Kampftechnik")
-    costs: (character, skill, value) ->
+    costs: (skill) ->
       return 10 if skill.get('SF') == "A"
       return 20 if skill.get('SF') == "B"
       return 30 if skill.get('SF') == "C"
@@ -276,7 +276,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Meisterhandwerk")
-    costs: (character, skill, value) ->
+    costs: (skill) ->
       return 10 if skill.get('SF') == "A"
       return 20 if skill.get('SF') == "B"
       return 30 if skill.get('SF') == "C"
@@ -371,7 +371,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Waffenbegabung")
-    costs: (character, skill, value) ->
+    costs: (skill) ->
       return 15 if skill.get('SF') == "A"
       return 30 if skill.get('SF') == "B"
       return 45 if skill.get('SF') == "C"

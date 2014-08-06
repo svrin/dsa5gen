@@ -259,19 +259,12 @@ require ["data/vantage/negative"], (S) ->
     costs: -15
 
   skills.add _.extend {}, S,
-    name: __("Unfähig (A)")
-    costs: -5
-    multiple: "A-Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Unfähig (B)")
-    costs: -10
-    multiple: "B-Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Unfähig (C)")
-    costs: -15
-    multiple: "C-Fertigkeit"
+    name: __("Unfähig")
+    costs: (skill) ->
+      return -5 if skill.get('SF') == "A"
+      return -10 if skill.get('SF') == "B"
+      return -15 if skill.get('SF') == "C"
+    multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
     name: __("Unfrei")
@@ -314,7 +307,7 @@ require ["data/vantage/negative"], (S) ->
     costs: -20
 
   skills.add _.extend {}, S,
-    name: __("Verstümmelt (Einhändig:)")
+    name: __("Verstümmelt (Einhändig)")
     costs: -40
 
   skills.add _.extend {}, S,
