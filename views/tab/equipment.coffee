@@ -26,8 +26,13 @@ define ['views/bases/tabbox', 'text!templates/equipment.hbs', 'text!templates/eq
 
       @render
 
-      @.$el.off "dblclick.dsa5gen.equip"
-      @.$el.on "dblclick.dsa5gen.equip", "option", @equip_equipment
+      # on keyinput the options are filtered
+      @.$el.off "keyup.dsa5gen.equipment-search"
+      @.$el.on "keyup.dsa5gen.equipment-search", "[type=search]", @search_equipment
+
+      # Dblclick on an option in adder adds the equipment
+      @.$el.off "dblclick.dsa5gen.equipment-equip"
+      @.$el.on "dblclick.dsa5gen.equipment-equip", "option", @equip_equipment
 
     add_equipment: (equipment) =>
 
@@ -39,6 +44,16 @@ define ['views/bases/tabbox', 'text!templates/equipment.hbs', 'text!templates/eq
 
       # Build option
       $("<option>").text(equipment.get('name')).appendTo(optgroup)
+
+    search_equipment: (arg) =>
+      name = $(arg.target).val() || arg
+      re = new RegExp(name, "i")
+
+      @.$el.find("option").each (i, node) =>
+        if $(node).text().match(re)
+          $(node).show()
+        else
+          $(node).hide()
 
     equip_equipment: (arg, value) =>
       name = $(arg.target).text() || arg
