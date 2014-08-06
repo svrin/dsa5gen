@@ -324,9 +324,19 @@ nav {
   text-align: center;
 }
 
-.select-adder {
+.adder {
   width: 80%;
   background-color: transparent;
+  box-sizing: border-box;
+
+  > input, select {
+    width: 100%;
+    background-color: transparent;
+
+    box-sizing: border-box;
+    border-width: 2px;
+    padding: 1px;
+  }
 }
 
 .print-box {
