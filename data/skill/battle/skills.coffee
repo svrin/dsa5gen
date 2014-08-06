@@ -28,7 +28,7 @@ require ["data/skill/battle/skills"], (S) ->
     SF: "B"
 
   skills.add _.extend {}, S,
-    name: __("Fetchwaffen")
+    name: __("Fechtwaffen")
     dice: "GE"
     SF: "C"
 
