@@ -260,10 +260,10 @@ require ["data/vantage/negative"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Unfähig")
-    costs: (skill) ->
-      return -5 if skill.get('SF') == "A"
-      return -10 if skill.get('SF') == "B"
-      return -15 if skill.get('SF') == "C"
+    costs: () ->
+      return -5 if this.get('SF') == "A"
+      return -10 if this.get('SF') == "B"
+      return -15 if this.get('SF') == "C"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,

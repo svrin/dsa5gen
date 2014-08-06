@@ -35,10 +35,10 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Begabung")
-    costs: (skill) ->
-      return 10 if skill.get('SF') == "A"
-      return 20 if skill.get('SF') == "B"
-      return 30 if skill.get('SF') == "C"
+    costs: () ->
+      return 10 if this.get('SF') == "A"
+      return 20 if this.get('SF') == "B"
+      return 30 if this.get('SF') == "C"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
@@ -170,18 +170,18 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Herausragende Fertigkeit")
-    costs: (skill) ->
-      return 5 if skill.get('SF') == "A"
-      return 10 if skill.get('SF') == "B"
-      return 15 if skill.get('SF') == "C"
+    costs: () ->
+      return 5 if this.get('SF') == "A"
+      return 10 if this.get('SF') == "B"
+      return 15 if this.get('SF') == "C"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
     name: __("Herausragende Kampftechnik")
-    costs: (skill) ->
-      return 10 if skill.get('SF') == "A"
-      return 20 if skill.get('SF') == "B"
-      return 30 if skill.get('SF') == "C"
+    costs: () ->
+      return 10 if this.get('SF') == "A"
+      return 20 if this.get('SF') == "B"
+      return 30 if this.get('SF') == "C"
     multiple: "Kampftechniken"
 
   skills.add _.extend {}, S,
@@ -276,10 +276,10 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Meisterhandwerk")
-    costs: (skill) ->
-      return 10 if skill.get('SF') == "A"
-      return 20 if skill.get('SF') == "B"
-      return 30 if skill.get('SF') == "C"
+    costs: () ->
+      return 10 if this.get('SF') == "A"
+      return 20 if this.get('SF') == "B"
+      return 30 if this.get('SF') == "C"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
@@ -371,10 +371,10 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Waffenbegabung")
-    costs: (skill) ->
-      return 15 if skill.get('SF') == "A"
-      return 30 if skill.get('SF') == "B"
-      return 45 if skill.get('SF') == "C"
+    costs: () ->
+      return 15 if this.get('SF') == "A"
+      return 30 if this.get('SF') == "B"
+      return 45 if this.get('SF') == "C"
     multiple: "Kampftechniken"
 
   skills.add _.extend {}, S,
