@@ -1,0 +1,19 @@
+<li data-key="equipments.<%= name %>" data-value="<%= value %>">
+    <label class="normal"><%= name %></label>
+    <span data-min="0" data-max="">
+        <a href=":decr(equipments.<%= name %>)"></a>
+        <span data-for="equipments.<%= name %>"><%= value %></span>
+        <a href=":incr(equipments.<%= name %>)"></a>
+    </span>
+    <% if (item) { %>
+        <span>
+            <%= item.get('groups').join("/") %>
+        </span>
+        <span>
+            <%= item.get('costs') %> S
+        </span>
+        <span>
+            <%= item.get('weight') %> Stein
+        </span>
+    <% } %>
+</li>

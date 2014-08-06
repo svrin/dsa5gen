@@ -19,6 +19,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
 
       profile: {}
       skills: {}
+      equipments: {}
 
       attributes:
         MU: 8

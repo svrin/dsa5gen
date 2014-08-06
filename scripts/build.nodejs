@@ -30,7 +30,8 @@ var dirList = [
     'lifegrade',
     'race',
     'character',
-    'skill'
+    'skill',
+    'equipment'
 ];
 
 //i18n Files
