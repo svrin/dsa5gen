@@ -12,7 +12,7 @@ define ['views/bases/tabbox', 'text!templates/equipment.hbs', 'text!templates/eq
     name: 'equipment'
     caption: __("Ausrüstung")
 
-    event: ['change:equipment']
+    event: ['change:equipments']
     collection: equipments
 
     className: ->
