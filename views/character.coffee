@@ -45,9 +45,11 @@ define [], () ->
           @.views['tab'][view] = new View({model: @model, container: @$el})
 
       # Special treatment of :* calls
-      for cmd in ["incr", "decr", "nav"]
-        @.$el.off "click.dsa5gen.#{cmd}"
-        @.$el.on "click.dsa5gen.#{cmd}", "a[href*=':#{cmd}']", @[cmd]
+      for cmd in ["incr", "decr", "nav", "dialect"]
+        @.$el.off "click.dsa5gen.a-#{cmd}"
+        @.$el.on "click.dsa5gen.a-#{cmd}", "a[href*=':#{cmd}']", @[cmd]
+        @.$el.off "click.dsa5gen.select-#{cmd}"
+        @.$el.on "change.dsa5gen.select-#{cmd}", "select[data-href*=':#{cmd}']", @[cmd]
 
       return
 
@@ -68,6 +70,17 @@ define [], () ->
         current += 40
 
       $("nav").scrollTop(current)
+
+    dialect: (event) =>
+      ###
+        Choose dialect calls
+      ###
+      $target = $(event.target)
+      href = $target.data('href').substr(9)
+      href = href.substr(0, href.length - 1)
+      args = href.split('.')
+
+      @.model.dialect(args..., $target.val())
 
     incr: (event) =>
       ###

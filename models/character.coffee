@@ -67,9 +67,19 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         value < v_max and value or v_max
 
       if attr and key
-        @.set attr, key, ltz((@.attributes[attr][key] || 0) + value)
+        current = @.attributes[attr][key] || 0
       else
-        @.set attr, ltz((@.attributes[attr] || 0) + value)
+        current = @.attributes[attr] || 0
+
+      if _.isArray(current)
+        current[0] = ltz(current[0] + value)
+      else
+        current = ltz(current + value)
+
+      if attr and key
+        @.set attr, key, current
+      else
+        @.set attr, current
 
     decr: (attr, key, value, options) ->
       if _.isObject(value) && !options
@@ -85,9 +95,47 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
         value > v_min and value or v_min
 
       if attr and key
-        @.set attr, key, gtz((@.attributes[attr][key] || 0) - value)
+        current = @.attributes[attr][key] || 0
       else
-        @.set attr, gtz((@.attributes[attr] || 0) - value)
+        current = @.attributes[attr] || 0
+
+      if _.isArray(current)
+        current[0] = gtz(current[0] - value)
+      else
+        current = gtz(current - value)
+
+      if attr and key
+        @.set attr, key, current
+      else
+        @.set attr, current
+
+    dialect: (attr, key, value, options) ->
+      if _.isObject(value) && !options
+        options = value
+        value = null
+
+      if attr and key
+        current = @.attributes[attr][key] || 0
+      else
+        current = @.attributes[attr] || 0
+
+      console.log("dialect", attr, key, current, value)
+
+      if _.isArray(current) and value
+        current[1] = value
+      else if _.isArray(current) and !value
+        current = current[0]
+      else if !_.isArray(current) and value
+        current = [current, value]
+      else if !_.isArray(current) and !value
+        current = current
+
+      console.log("dialect", attr, key, current, value)
+
+      if attr and key
+        @.set attr, key, current
+      else
+        @.set attr, current
 
     set: (attr..., value) ->
       ###
@@ -254,13 +302,33 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       skills.each (skill) =>
         key = skill.get('name')
 
-        if skill.get('min') >= 1
-          base[key] = Math.max(base[key] || 0, skill.get('min'))
+        current_top = (top[key] || 0)
+        if _.isArray(current_top)
+          current_top_value = current_top[0] || 0
+        else
+          current_top_value = current_top || 0
 
-        base[key] = (base[key] || 0) + (top[key] || 0)
+        current_base = (base[key] || 0)
+        if _.isArray(current_base)
+          current_base_value = current_base[0] || 0
+        else
+          current_base_value = current_base || 0
+
+        if skill.get('min') >= 1
+          current_base_value = Math.max(current_base_value, skill.get('min'))
+
+        current_base_value += current_top_value
+        if _.isArray(current_base) && _.isArray(current_top)
+          base[key] = [current_base_value].concat(_.union(_.rest(current_base), _.rest(current_top)))
+        else if _.isArray(current_base)
+          base[key] = [current_base_value].concat(_.rest(current_base))
+        else if _.isArray(current_top)
+          base[key] = [current_base_value].concat(_.rest(current_top))
+        else
+          base[key] = current_base_value
 
         # Add all auto things of selected skills
-        i = base[key] || 0
+        i = current_base_value || 0
         while i-- > 0
           _.each skill.get('auto'), lambda
 

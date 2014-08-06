@@ -28,6 +28,8 @@ define [], () ->
         Check elementof that considers name, name_w, name_m and aliases/groups
       ###
       groups = @.get('groups') || []
+      if _.isString(other)
+        other = [other]
       for item in other
         if @.is(item)
           return true

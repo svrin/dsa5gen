@@ -25,11 +25,15 @@
 
                     <% var multiple = element.get('multiple') %>
                     <% if (multiple) { %>
-                    <select>
+                    <select data-href=":dialect(<%=self.for%>.<%=key%>)">
                         <option></option>
-                        <% _.each(self.collection.filter(function (element) { return element.is(multiple) }), function
-                        (skill) { %>
+                        <% _.each(self.collection.filter(function (element) {
+                        return element.in(multiple) }), function (skill) { %>
+                        <% if( _.isArray(value) && value.indexOf(skill.get('name')) >= 0) { %>
+                        <option selected="selected" value="<%= skill.get('name') %>"><%= skill.get('name') %></option>
+                        <% } else { %>
                         <option value="<%= skill.get('name') %>"><%= skill.get('name') %></option>
+                        <% } %>
                         <% }); %>
                     </select>
                     <% } %>
@@ -38,7 +42,7 @@
 
                 <span data-min="<%= element.get('min') %>" data-max="<%= element.get('max') %>">
                     <a href=":decr(<%=self.for%>.<%=key%>)"></a>
-                    <span data-for="<%=self.for%>.<%=key%>"><%= value %></span>
+                    <span data-for="<%=self.for%>.<%=key%>"><%= _.isArray(value) && value[0] || value %></span>
                     <a href=":incr(<%=self.for%>.<%=key%>)"></a>
                 </span>
 
