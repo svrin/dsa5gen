@@ -351,15 +351,16 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
           return
 
         # Calculate
-        if skill.get('costs') and not skill.get('SF')
-          value *= skill.get('costs')
+        costs = skill.get('costs') || 0
+        if costs and not skill.get('SF')
+          value *= costs
         else if skill.get('SF') == "A"
-          value *= 5 + (skill.get('costs') || 0)
+          value *= 5 + costs
         else if skill.get('SF') == "B"
-          value *= 10 + (skill.get('costs') || 0)
+          value *= 10 + costs
         else if skill.get('SF') == "C"
-          value *= 15 + (skill.get('costs') || 0)
-        else if not skill.get('costs')?
+          value *= 15 + costs
+        else if not costs?
           console.error "Unknown cost table for skill " + skill.get('name')
 
         # Add
