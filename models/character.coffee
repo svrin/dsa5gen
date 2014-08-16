@@ -431,11 +431,11 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
           console.error "Unknown cost table for skill " + skill.get('name')
 
         # Add
-        costs += value
+        costs += (value || 0)
 
         # Sum group costs up
         _.each skill.get('groups'), (group) ->
-          groups[group] = (groups[group] || 0) + value
+          groups[group] = (groups[group] || 0) + (value || 0)
 
       # Get costs from race
       race = character.get('race')
