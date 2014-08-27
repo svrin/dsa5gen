@@ -55,6 +55,15 @@ define ['views/bases/tabbox', 'text!templates/equipment.hbs', 'text!templates/eq
         else
           $(node).hide()
 
+      # Hide all optgroup with no visible options
+      @.$el.find("optgroup").each (i, optgroup) =>
+        options = $("option", optgroup).filter (i, node) ->
+          $(node).css("display") == "inline"
+        if options.length > 0
+          $(optgroup).show()
+        else
+          $(optgroup).hide()
+
     equip_equipment: (arg, value) =>
       name = $(arg.target).text() || arg
       equipment = equipments.findWhere({name: name})
