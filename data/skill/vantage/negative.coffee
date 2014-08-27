@@ -260,10 +260,11 @@ require ["data/vantage/negative"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Unfähig")
-    costs: () ->
-      return -5 if this.get('SF') == "A"
-      return -10 if this.get('SF') == "B"
-      return -15 if this.get('SF') == "C"
+    costs: (dialect) ->
+      return 0 if not dialect
+      return -5 if dialect.get('SF') == "A"
+      return -10 if dialect.get('SF') == "B"
+      return -15 if dialect.get('SF') == "C"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,

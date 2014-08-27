@@ -35,10 +35,11 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Begabung")
-    costs: () ->
-      return 10 if this.get('SF') == "A"
-      return 20 if this.get('SF') == "B"
-      return 30 if this.get('SF') == "C"
+    costs: (dialect) ->
+      return 0 if not dialect
+      return 10 if dialect.get('SF') == "A"
+      return 20 if dialect.get('SF') == "B"
+      return 30 if dialect.get('SF') == "C"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
@@ -170,18 +171,20 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Herausragende Fertigkeit")
-    costs: () ->
-      return 5 if this.get('SF') == "A"
-      return 10 if this.get('SF') == "B"
-      return 15 if this.get('SF') == "C"
+    costs: (dialect) ->
+      return 0 if not dialect
+      return 5 if dialect.get('SF') == "A"
+      return 10 if dialect.get('SF') == "B"
+      return 15 if dialect.get('SF') == "C"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
     name: __("Herausragende Kampftechnik")
-    costs: () ->
-      return 10 if this.get('SF') == "A"
-      return 20 if this.get('SF') == "B"
-      return 30 if this.get('SF') == "C"
+    costs: (dialect) ->
+      return 0 if not dialect
+      return 10 if dialect.get('SF') == "A"
+      return 20 if dialect.get('SF') == "B"
+      return 30 if dialect.get('SF') == "C"
     multiple: "Kampftechniken"
 
   skills.add _.extend {}, S,
@@ -276,10 +279,11 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Meisterhandwerk")
-    costs: () ->
-      return 10 if this.get('SF') == "A"
-      return 20 if this.get('SF') == "B"
-      return 30 if this.get('SF') == "C"
+    costs: (dialect) ->
+      return 0 if not dialect
+      return 10 if dialect.get('SF') == "A"
+      return 20 if dialect.get('SF') == "B"
+      return 30 if dialect.get('SF') == "C"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
@@ -371,10 +375,11 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Waffenbegabung")
-    costs: () ->
-      return 15 if this.get('SF') == "A"
-      return 30 if this.get('SF') == "B"
-      return 45 if this.get('SF') == "C"
+    costs: (dialect) ->
+      return 0 if not dialect
+      return 15 if dialect.get('SF') == "A"
+      return 30 if dialect.get('SF') == "B"
+      return 45 if dialect.get('SF') == "C"
     multiple: "Kampftechniken"
 
   skills.add _.extend {}, S,

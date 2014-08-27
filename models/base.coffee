@@ -44,7 +44,9 @@ define [], () ->
       ###
       value = @.attributes[attr]
 
-      if _.isFunction(value)
-        value = value.call(context or @)
+      if _.isFunction(value) and _.isArray(context)
+        value = value.call(context...)
+      else if _.isFunction(value)
+        value = value.apply(context or @)
 
       return value

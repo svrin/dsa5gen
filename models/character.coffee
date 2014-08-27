@@ -413,21 +413,29 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
       _.each character.attributes['skills'], (value, key) =>
         skill = skills.get(key)
 
+        # Context
+        if _.isArray(value) and value[1]
+          context = [skill, skills.get(value[1])]
+          value = value[0]
+        else
+          context = [skill]
+
         # Maybe lost from a previous version
         if not skill
           console.warn "Lost skill in data", key, value
           return
 
         # Calculate
-        if skill.get('costs') and not skill.get('SF')
-          value *= skill.get('costs')
+        skill_costs = skill.get('costs', context)
+        if skill_costs and not skill.get('SF')
+          value *= skill_costs
         else if skill.get('SF') == "A"
-          value *= 5 + (skill.get('costs') || 0)
+          value *= 5 + (skill_costs || 0)
         else if skill.get('SF') == "B"
-          value *= 10 + (skill.get('costs') || 0)
+          value *= 10 + (skill_costs || 0)
         else if skill.get('SF') == "C"
-          value *= 15 + (skill.get('costs') || 0)
-        else if not skill.get('costs')?
+          value *= 15 + (skill_costs || 0)
+        else
           console.error "Unknown cost table for skill " + skill.get('name')
 
         # Add
