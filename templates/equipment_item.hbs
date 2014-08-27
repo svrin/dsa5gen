@@ -15,5 +15,22 @@
         <span>
             <%= item.get('weight') %> Stein
         </span>
+        <span class="lwb">
+            <% if (item.get('protection')) { %>
+            <%= item.get('protection') %> Kälteschutz
+            <% } %>
+
+            <% if (item.get('skill')) { %>
+            <%= item.get('skill') %><% } %><% if (item.get('distance')) { %>[<%= item.get('distance') %>]
+            <% } %>
+
+            <% if (item.get('dice')) { %>
+            <%= item.get('dice') %>
+            <% } %>
+
+            <% if (item.get('bonus')) { %>
+            <%= item.get('bonus')['attribute'] %><%= item.get('bonus')['value'] %>
+            <% } %>
+        </span>
     <% } %>
 </li>

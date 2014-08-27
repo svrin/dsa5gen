@@ -1,9 +1,86 @@
+define "data/equipment/kleidungsset", [], () ->
+  groups: [
+    __("Ausrüstung")
+    __("Kleidungsset")
+    __("Kleidung")
+  ]
+
+  protection: 0
+
+# Kleidungsset
+require ["data/equipment/kleidungsset"], (S) ->
+  equipments.add _.extend {}, S,
+    name: __("Anaurakkleidung")
+
+    protection: 4
+
+    weight: 3
+    costs: 100
+
+  equipments.add _.extend {}, S,
+    name: __("Bauschkleidung")
+
+    protection: 2
+
+    weight: 12.5
+    costs: 8
+
+  equipments.add _.extend {}, S,
+    name: __("Lederkleidung")
+
+    protection: 1
+
+    weight: 2.5
+    costs: 40
+
+  equipments.add _.extend {}, S,
+    name: __("Leinenkleidung")
+
+    protection: 1
+
+    weight: 1.75
+    costs: 5
+
+  equipments.add _.extend {}, S,
+    name: __("Pelzkleidung")
+
+    protection: 2
+
+    weight: 5
+    costs: 80
+
+  equipments.add _.extend {}, S,
+    name: __("Samtkleidung")
+
+    protection: 1
+
+    weight: 2
+    costs: 60
+
+  equipments.add _.extend {}, S,
+    name: __("Seidenkleidung")
+
+    protection: 0
+
+    weight: 1
+    costs: 70
+
+  equipments.add _.extend {}, S,
+    name: __("Wollkleidung")
+
+    protection: 2
+
+    weight: 2.5
+    costs: 6
+
+
 define "data/equipment/kleidung", [], () ->
   groups: [
     __("Ausrüstung")
     __("Kleidung")
   ]
 
+# Kleidung
 require ["data/equipment/kleidung"], (S) ->
   equipments.add _.extend {}, S,
     name: __("Balihoer Wachsmantel")
