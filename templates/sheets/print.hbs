@@ -1,6 +1,7 @@
 <% var gender = character.get('gender'); %>
 <% var name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
 <% var skills = _.sortBy(character.get_skill_items(), function (skill) { return skill.key } ); %>
+<% var equipments = _.sortBy(character.get_equipment_items(), function (equipment) { return equipment.key } ); %>
 <% var attributes = character.get('attributes'); %>
 
 <section class="span6 print-box">
@@ -403,6 +404,51 @@
 
 <section class="span6 print-box">
     <h1><%= character.get('name') %></h1>
+</section>
+
+<section class="span6 print-box">
+    <% printLogo('Ausrüstung') %>
+</section>
+
+
+<section class="span12 print-box">
+    <table>
+        <thead>
+        <tr>
+            <th width="34%">Name</th>
+            <th width="8%">Preis</th>
+            <th width="8%">Gew.</th>
+            <th width="8%">Anz.</th>
+            <th width="34%">Notizen</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% _.each(equipments, function (equipment) { %>
+        <tr>
+            <td data-for="equipments.<%= equipment.key %>.name"><%= equipment.key %></td>
+            <td data-for="equipments.<%= equipment.key %>.costs"><%= equipment.item.get('costs') %></td>
+            <% if (equipment.value != 1) { %>
+            <td data-for="equipments.<%= equipment.key %>.weight">
+                <%= equipment.item.get('weight') * equipment.value %>
+                <small>(<%= equipment.item.get('weight') %>)</small>
+            </td>
+            <% } else { %>
+            <td data-for="equipments.<%= equipment.key %>.weight"><%= equipment.item.get('weight') %></td>
+            <% } %>
+            <td data-for="equipments.<%= equipment.key %>.value"><%= equipment.value %></td>
+            <td data-for="equipments.<%= equipment.key %>.notes"></td>
+        </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</section>
+
+<div class="pagebreak">
+    <hr/>
+</div>
+
+<section class="span6 print-box">
+    <h1><%= character.get('name') %></h1>
 
     <h2><%= __("Kampftechniken") %></h2>
     <table>
@@ -447,6 +493,69 @@
         </tr>
         </tbody>
     </table>
+
+    <% _.each(equipments, function (equipment) { %>
+    <% if (equipment.item && equipment.groups.indexOf(__("Waffen")) >= 0) { %>
+    <br/>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="6" width="50%"><%= _.last(equipment.groups).substring(0, _.last(equipment.groups).length - 1)
+                %>
+            </th>
+            <th colspan="3" width="25%">Kampftechnik</th>
+            <th colspan="3" width="25%">Reichweite</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="6" data-for="equipments.<%= equipment.key %>.name"><%= equipment.item.get('name') %></td>
+            <td colspan="3" class="center" data-for="equipments.<%= equipment.key %>.skill"><%=
+                equipment.item.get('skill') %>
+            </td>
+            <td colspan="3" class="center" data-for="equipments.<%= equipment.key %>.distance"><%=
+                equipment.item.get('distance') %>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="center" data-for="equipments.<%= equipment.key %>.bonus">
+                <%= equipment.item.get('bonus')['attribute'] %><%= equipment.item.get('bonus')['value'] %>
+            </td>
+            <td colspan="2" class="center" data-for="equipments.<%= equipment.key %>.dice">
+                <%= equipment.item.get('dice')[0] %>
+                <% if (equipment.item.get('dice')[1] > 0) { %>
+                +<%= equipment.item.get('dice')[1] %>
+                <% } %>
+                <% if (equipment.item.get('dice')[1] < 0) { %>
+                <%= equipment.item.get('dice')[1] %>
+                <% } %>
+                <% if (attributes[equipment.item.get('bonus')['attribute']] > equipment.item.get('bonus')['value']) { %>
+                +<%= attributes[equipment.item.get('bonus')['attribute']]-equipment.item.get('bonus')['value'] %>
+                <% } %>
+            </td>
+            <td colspan="2" class="center" data-for="equipments.<%= equipment.key %>.AT">
+                <%= attributes["AT/PA_" + equipment.item.get('bonus')['attribute']] +
+                Math.ceil(character.get('skills')[equipment.item.get('skill')] / 2) %>
+            </td>
+            <td colspan="2" class="center" data-for="equipments.<%= equipment.key %>.PA">
+                <%= attributes["AT/PA_" + equipment.item.get('bonus')['attribute']] +
+                Math.floor(character.get('skills')[equipment.item.get('skill')] / 2) %>
+            </td>
+            <td colspan="4" class="center" data-for="equipments.<%= equipment.key %>.notes">&nbsp;</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th colspan="2" width="17%">SB</th>
+            <th colspan="2" width="17%">TP</th>
+            <th colspan="2" width="17%">AT</th>
+            <th colspan="2" width="17%">PA</th>
+            <th colspan="4">Notizen</th>
+        </tr>
+        </tfoot>
+    </table>
+    <% } %>
+    <% }); %>
 </section>
 
 <section class="span6 print-box">

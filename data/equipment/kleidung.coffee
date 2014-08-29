@@ -1,8 +1,8 @@
 define "data/equipment/kleidungsset", [], () ->
   groups: [
     __("Ausrüstung")
-    __("Kleidungsset")
     __("Kleidung")
+    __("Kleidungsset")
   ]
 
   protection: 0

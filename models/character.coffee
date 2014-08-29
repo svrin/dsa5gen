@@ -3,8 +3,8 @@
   with choosen skills and equipment
 ###
 
-define ["models/base", 'data/race', 'data/culture', 'data/profession',
-        'data/lifegrade', 'data/skill'], (Model, races, cultures, professions, lifegrades, skills) ->
+define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lifegrade', 'data/skill',
+        'data/equipment'], (Model, races, cultures, professions, lifegrades, skills, equipments) ->
   class Character extends Model
     idAttribute: 'uuid'
 
@@ -380,6 +380,25 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession',
             groups: skill.get('groups') if skill
           }
       return rtn
+
+    get_equipment_items: () ->
+      ###
+        Get a key, value, node list of all equipments
+      ###
+      character = @
+
+      rtn = {}
+      _.each @.get('equipments'), (value, key) ->
+        if value
+          equipment = equipments.get(key)
+          rtn[key] = {
+            key: key
+            value: value
+            item: equipment
+            groups: equipment.get('groups') if equipment
+          }
+      return rtn
+
 
     calc_costs: (costs) ->
       ###
