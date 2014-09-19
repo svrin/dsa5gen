@@ -72,11 +72,15 @@ define ['views/bases/tabbox', 'text!templates/equipment.hbs', 'text!templates/eq
       else
         @.$el.find("ul").append @.item_template({name: name, item: false, value: value || 0})
 
-    render: =>
-      super
+    render: (character, node, new_value) =>
+      if @.$el and @.$el.length and node and node[0] == "equipments"
+        @.$el.find("[data-for='#{node[0]}.#{node[1]}']").text(new_value)
+        @.$el.find("[data-key='#{node[0]}.#{node[1]}']").attr("data-value", new_value)
+      else
+        super
 
-      @.collection.each (equipment) =>
-        @.add_equipment(equipment)
+        @.collection.each (equipment) =>
+          @.add_equipment(equipment)
 
-      _.each @.model.get('equipments'), (value, equipment) =>
-        @.equip_equipment(equipment, value)
+        _.each @.model.get('equipments'), (value, equipment) =>
+          @.equip_equipment(equipment, value)
