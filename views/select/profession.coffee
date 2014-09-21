@@ -2,7 +2,7 @@
   View for selecting a race
 ###
 
-define ['views/bases/selectbox', 'data/profession'], (BaseView, professions) ->
+define ['views/bases/selectbox', 'data/profession'], (BaseView, professions, hbs) ->
   class ProfessionView extends BaseView
     name: 'profession'
     caption: __("Profession")
@@ -43,6 +43,8 @@ define ['views/bases/selectbox', 'data/profession'], (BaseView, professions) ->
 
     # Previous tab
     prev: 'culture'
+
+
 
 
 

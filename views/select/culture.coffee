@@ -2,7 +2,8 @@
   View for selecting a race
 ###
 
-define ['views/bases/selectbox', 'data/culture', 'text!templates/culture.hbs'], (BaseView, cultures, hbs) ->
+define ['views/bases/selectbox', 'data/culture', 'data/animal',
+        'text!templates/culture.hbs'], (BaseView, cultures, animals, hbs) ->
   class CultureView extends BaseView
     name: 'culture'
     caption: __("Kultur")
@@ -45,6 +46,14 @@ define ['views/bases/selectbox', 'data/culture', 'text!templates/culture.hbs'], 
 
       # Build the culture knowledge select
       @.build_select culture, profile, 'knowledge'
+
+      # Build familiar select
+      node = @.$el.find("[name='character.familiar']")
+      animals.each (animal) ->
+        item_node = $("<option>").text(animal.get('name')).attr("value", animal.get('name'))
+        node.find('optgroup').append(item_node)
+      #if profile[attr]
+      #  node.find('option:first').text(profile[attr]).val(profile[attr]).prop('selected', 'selected')
 
       # Build the social state select
       node = @.$el.find("[name='character.social']")

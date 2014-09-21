@@ -28,8 +28,22 @@ class PHEX_SHM
     [__("Zwiegespräch"), 1]
 
     add_pool(((character) ->
-      Math.round(character.get('AP') / 4)), __('Vertrautenmagie'))
+      Math.round(character.get('AP') / 4)), __("Vertrauter"), __('Vertrautenmagie'))
     add_pool(30, __("Sprache"), __("Schrift"))
+
+    [__("Zaubertradition mit Vertrautentiere")]
+    ["V_MU", 2],
+    ["V_KL", 2],
+    ["V_IN", 2],
+    ["V_CH", 2],
+    ["V_FF", 2],
+    ["V_GE", 2],
+    ["V_KO", 2],
+    ["V_KK", 2]
+    ["V_LE", 10],
+    ["V_AE", 15],
+    ["V_RS", 1],
+    ["V_MR", 1]
 
     [__("Raufen"), 4]
 

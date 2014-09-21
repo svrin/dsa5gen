@@ -4,7 +4,8 @@
 ###
 
 define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lifegrade', 'data/skill',
-        'data/equipment'], (Model, races, cultures, professions, lifegrades, skills, equipments) ->
+        'data/equipment',
+        'data/animal'], (Model, races, cultures, professions, lifegrades, skills, equipments, animals) ->
   class Character extends Model
     idAttribute: 'uuid'
 
@@ -14,8 +15,11 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       race: null
       culture: null
       profession: null
+
       lifegrade: null
       social: null
+
+      familiar: null
 
       profile: {}
       skills: {}
@@ -40,6 +44,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       pget @, 'culture', cultures
       pget @, 'profession', professions
       pget @, 'lifegrade', lifegrades
+      pget @, 'familiar', animals
 
       fget @, 'attributes', @calc_attributes
       fget @, 'costs', @calc_costs
@@ -49,6 +54,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       fget @, 'recommendations', @calc_recommendations
 
       fget @, 'AP', @calc_ap
+      fget @, 'V', @calc_v
 
       if not @id
         @set('uuid', uuid())
@@ -243,6 +249,57 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
 
       return base
 
+    calc_v: (top) ->
+      ###
+        Calculates the skills for a familiar
+      ###
+      if not @.attributes['familiar']
+        return {}
+
+      familiar = animals.get(@.attributes['familiar'])
+      character = @
+
+      base = top || {}
+      lambda = (element) =>
+        if not element? || not element
+          return
+
+        if _.isFunction(element)
+          element = element(character)
+
+        if _.isString(element)
+          base[element] = true
+        else if _.isArray(element)
+
+          if _.isString(element[1])
+            if base[element[0]]
+              base[element[0]] = base[element[0]] + "; " + element[1]
+            else
+              base[element[0]] = element[1]
+          else
+            base[element[0]] = (base[element[0]] || 0) + element[1]
+        else if element.constructor.name == 'PoolView'
+          element.$el.insertAfter $("[name='character.ap']")
+        else if element.constructor.name == 'ChoiceView'
+          console.warn "Do something about this"
+        else
+          console.warn "Unexpected element in list", element
+          throw "Unexpected element in list"
+
+      _.each character.get('skills'), (value, key) =>
+        if key.startsWith("V_")
+          lambda([key, value])
+
+      _.each character.get('attributes'), (value, key) =>
+        if key.startsWith("V_")
+          lambda([key, value])
+
+      _.each familiar.get('auto'), lambda
+
+      _.each familiar.get('attributes'), (value, key) =>
+        lambda(["V_" + key, value])
+
+      return base
 
     calc_skills: (top) ->
       ###
@@ -339,29 +396,36 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
 
     hasMagic: () ->
       ###
-        Detect whetehr this is a magic awoken character
+        Detect whether this is a magic awoken character
       ###
       if @.attributes['skills'][__('Zauberer')] > 0
         return true
 
-      _.each @.get('skills'), (value, key) ->
+      return undefined isnt _.find @.get('skills'), (value, key) ->
         if value and skills.get(key) and skills.get(key).isMagic()
           return true
 
-      return false
+    hasFamiliar: () ->
+      ###
+        Detect whether this is character needs a familiar
+      ###
+      if @.attributes['skills'][__('Zaubertradition mit Vertrautentiere')] > 0
+        return true
+
+      return undefined isnt _.find @.get('skills'), (value, key) ->
+        if key == __('Zaubertradition mit Vertrautentiere')
+          return true
 
     hasLiturgy: () ->
       ###
-        Detect whetehr this is a magic awoken character
+        Detect whether this is a magic awoken character
       ###
       if @.attributes['skills'][__('Geweihter')] > 0
         return true
 
-      _.each @.get('skills'), (value, key) ->
+      return undefined isnt _.find @.get('skills'), (value, key) ->
         if value and skills.get(key) and skills.get(key).isLiturgy()
           return true
-
-      return false
 
     get_skill_items: () ->
       ###
@@ -407,28 +471,36 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       character = @
 
       costs = costs? || 0
+      groups = {}
 
       # Add costs from attributes
-      _.each character.attributes['attributes'], (value) =>
-        costs += switch value
-          when 20 then 1320
-          when 19 then 1040
-          when 18 then 800
-          when 17 then 600
-          when 16 then 440
-          when 15 then 320
-          when 14 then 240
-          when 13 then 200
-          when 12 then 160
-          when 11 then 120
-          when 10 then 80
-          when  9 then 40
+      _.each character.attributes['attributes'], (value, key) =>
+        if key.startsWith("V_")
+          if key in ["V_MU", "V_KL", "V_IN", "V_CH", "V_FF", "V_GE", "V_KO", "V_KK"]
+            value = value * 40
           else
-            0
+            value = value * 15
+          costs += value
+          groups["Vertrauter"] = (groups["Vertrauter"] || 0) + (value || 0)
+        else
+          costs += switch value
+            when 20 then 1320
+            when 19 then 1040
+            when 18 then 800
+            when 17 then 600
+            when 16 then 440
+            when 15 then 320
+            when 14 then 240
+            when 13 then 200
+            when 12 then 160
+            when 11 then 120
+            when 10 then 80
+            when  9 then 40
+            else
+              0
 
       # Add costs from skills
       # and bundle them in their groups
-      groups = {}
       _.each character.attributes['skills'], (value, key) =>
         skill = skills.get(key)
 
@@ -454,7 +526,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
           value *= 10 + (skill_costs || 0)
         else if skill.get('SF') == "C"
           value *= 15 + (skill_costs || 0)
-        else
+        else if !skill_costs?
           console.error "Unknown cost table for skill " + skill.get('name')
 
         # Add

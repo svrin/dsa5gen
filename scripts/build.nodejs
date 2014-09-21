@@ -31,7 +31,8 @@ var dirList = [
     'race',
     'character',
     'skill',
-    'equipment'
+    'equipment',
+    'animal'
 ];
 
 //i18n Files

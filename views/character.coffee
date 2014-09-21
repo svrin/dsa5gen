@@ -15,7 +15,7 @@ define [], () ->
       @.views = {'left': {}, 'tab': {}}
 
       # Left Boxes
-      for view in ['profile', 'attributes', 'basevalues', 'options']
+      for view in ['profile', 'attributes', 'basevalues', 'familiar', 'options']
         require ['views/left/' + view], (View) =>
           @.views['left'][view] = new View({collection: @collection, model: @model, container: @$el})
 

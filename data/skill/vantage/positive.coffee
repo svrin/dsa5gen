@@ -262,10 +262,40 @@ require ["data/vantage/positive"], (S) ->
   skills.add _.extend {}, S,
     name: __("Machtvoller Vertrauter (Großes Exemplar)")
     costs: 30
+    auto: [
+      ["V_MU", 1],
+      ["V_MU_max", 1]
+      ["V_KL", 1],
+      ["V_KL_max", 1]
+      ["V_IN", 1],
+      ["V_IN_max", 1]
+      ["V_CH", 1],
+      ["V_CH_max", 1]
+      ["V_FF", 1],
+      ["V_FF_max", 1]
+      ["V_GE", 1],
+      ["V_GE_max", 1]
+      ["V_KO", 1],
+      ["V_KO_max", 1]
+      ["V_KK", 1],
+      ["V_KK_max", 1]
+      ["V_LE", 10]
+      ["V_AE", 10]
+      ["V_MR", 2]
+      ["V_INI", 4]
+    ]
+    required: [
+      [__("Zauberer"), 1]
+      [__("Zaubertradition mit Vertrautentiere"), 1]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Machtvoller Vertrauter (Ungewöhnliches Vertrautentier)")
     costs: 50
+    required: [
+      [__("Zauberer"), 1]
+      [__("Zaubertradition mit Vertrautentiere"), 1]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Magiegespür")

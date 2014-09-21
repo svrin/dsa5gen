@@ -1,0 +1,33 @@
+<h3>Vertrautentier</h3>
+
+<% familiar = character.get('familiar'); familiar_attributes = familiar && familiar.get('attributes') %>
+<% skills = character.get('skills'); %>
+
+<ul>
+    <% v_attributes = character.get('V'); %>
+    <% _.each(v_attributes, function (value, key) { %>
+    <% if (key.startsWith("V_") && !key.endsWith("max")) { %>
+    <li>
+        <label title="<%= __(key.substring(2)) %>"><%= key.substring(2) %></label>
+
+        <% if (familiar && familiar_attributes && familiar_attributes[key.substring(2)]) { %>
+        <i>Rasse: <%= familiar_attributes[key.substring(2)] %></i>
+        <% } %>
+
+        <% if (skills && skills[key]) { %>
+        <i>Bonus: <%= skills[key] %></i>
+        <% } %>
+
+        <% v_max = 18 + v_attributes[key + "_max"] %>
+        <span data-min="0" data-max="<%= v_max || 18 %>">
+            <a href=":decr(attributes.<%=key%>)"></a>
+            <span data-for="attributes.<%=key%>"><%= Math.round(value || 0) %></span>
+            <% if (v_max || key.substring(2) in character.defaults.attributes) { %>
+            <span data-for="attributes.<%=key%>_max"><%= v_max || 18 %></span>
+            <% } %>
+            <a href=":incr(attributes.<%=key%>)"></a>
+        </span>
+    </li>
+    <% } %>
+    <% }); %>
+</ul>

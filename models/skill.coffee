@@ -55,3 +55,12 @@ define ["models/base"], (Model) ->
     ]
     isVantage: ->
       return _.intersection(@.vantageGroups, @.get('groups')).length > 0
+
+    # Battles
+    battleGroups: [
+      __('Kampftechniken')
+      __('Kampfstile')
+      __('Kampfsonderfertigkeiten')
+    ]
+    isBattle: ->
+      return _.intersection(@.battleGroups, @.get('groups')).length > 0

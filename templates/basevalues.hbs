@@ -1,26 +1,28 @@
 <h3>Basiswerte</h3>
+
+<% race = character.get('race'); race_attributes = race && race.get('attributes') %>
+<% culture = character.get('culture'); culture_attributes = culture && culture.get('attributes') %>
+<% profession = character.get('profession'); profession_attributes = profession && profession.get('attributes') %>
+<% skills = character.get('skills'); %>
+
 <ul>
     <% _.each(character.get('attributes'), function (value, key) { %>
-    <% if (!(key in character.defaults.attributes) && !key.endsWith("max") && value) { %>
+    <% if (!(key in character.defaults.attributes) && !key.startsWith("V_") && !key.endsWith("max") && value) { %>
     <li>
         <label title="<%= __(key) %>"><%= key %></label>
 
-        <% race = character.get('race'); attributes = race && race.get('attributes') %>
-        <% if (race && attributes && attributes[key]) { %>
-        <i>Rasse: <%= race.get('attributes')[key] %></i>
+        <% if (race && race_attributes && race_attributes[key]) { %>
+        <i>Rasse: <%= race_attributes[key] %></i>
         <% } %>
 
-        <% culture = character.get('culture'); attributes = culture && culture.get('attributes') %>
-        <% if (culture && attributes && attributes[key]) { %>
-        <i>Kultur: <%= culture.get('attributes')[key] %></i>
+        <% if (culture && culture_attributes && culture_attributes[key]) { %>
+        <i>Kultur: <%= culture_attributes[key] %></i>
         <% } %>
 
-        <% profession = character.get('profession'); attributes = profession && profession.get('attributes') %>
-        <% if (profession && attributes && attributes[key]) { %>
-        <i>Profession: <%= profession.get('attributes')[key] %></i>
+        <% if (profession && profession_attributes && profession_attributes[key]) { %>
+        <i>Profession: <%= profession_attributes[key] %></i>
         <% } %>
 
-        <% skills = character.get('skills'); %>
         <% if (skills && skills[key]) { %>
         <i>Vor/Nachteile: <%= skills[key] %></i>
         <% } %>

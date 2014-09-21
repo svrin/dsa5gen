@@ -29,3 +29,36 @@
     </dd>
 </dl>
 <% } // end culture depended %>
+
+<% if (character.get('profession')) { // begin profession depended %>
+<% var profession = character.get('profession'); %>
+
+<% if (character.hasFamiliar()) { %>
+<h4>Rasse</h4>
+<dl>
+    <dt><label for="profile.select.character.familiar">Vertrautentier</label></dt>
+    <dd>
+        <select name="character.familiar" id="profile.select.character.familiar">
+            <option value="" data-for="character.profile.familiar"><%= character.get('familiar') &&
+                character.get('familiar').get('name') %>
+            </option>
+            <optgroup label=""></optgroup>
+        </select>
+
+        <br/>
+
+        <ul>
+            <% _.each(character.get('V'), function (value, key) { %>
+            <% if (!key.startsWith("V_") && !key.endsWith("max")) { %>
+            <li>
+                <label title="<%= __(key) %>"><%= key %></label>
+                <span><%= Math.round(value) %></span>
+            </li>
+            <% } %>
+            <% }); %>
+        </ul>
+    </dd>
+</dl>
+<% } %>
+
+<% } // end profession depended %>
