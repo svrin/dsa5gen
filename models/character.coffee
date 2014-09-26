@@ -600,7 +600,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       # Astralenergie / Karmalenergie
       attributes["AE"] = (attributes["AE"] || 0) + (c_skills['AE'] || 0)
       attributes["KE"] = (attributes["KE"] || 0) + (c_skills['KE'] || 0)
-      attribute = profession.get('attribute')
+      attribute = profession?.get?('attribute')
       if attribute
         attributes["AE"] += Math.max(attributes[attribute] - 10, 0)
         attributes["KE"] += Math.max(attributes[attribute] - 10, 0)
