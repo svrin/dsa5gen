@@ -27,7 +27,7 @@ define ["models/base"], (Model) ->
     liturgyGroups: [
       __('Liturgien')
       __('Segen')
-      __('Klerikerikale Sonderfertigkeiten')
+      __('Klerikale Sonderfertigkeiten')
     ]
     isLiturgy: ->
       return _.intersection(@.liturgyGroups, @.get('groups')).length > 0
@@ -55,6 +55,17 @@ define ["models/base"], (Model) ->
     ]
     isVantage: ->
       return _.intersection(@.vantageGroups, @.get('groups')).length > 0
+
+    # Sonderfertigkeiten
+    capabilityGroups: [
+      __('Allgemeine Sonderfertigkeiten')
+      __('Magische Sonderfertigkeiten')
+      __('Klerikale Sonderfertigkeiten')
+      __('Sprachsonderfertigkeiten')
+      __('Kampfsonderfertigkeiten')
+    ]
+    isCapability: ->
+      return _.intersection(@.capabilityGroups, @.get('groups')).length > 0
 
     # Battles
     battleGroups: [

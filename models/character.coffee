@@ -597,7 +597,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       attributes["GS"] = (attributes["GS"] || 0) + Math.max(attributes["GE"] - 10, 0) + (c_skills['GS'] || 0)
       attributes["WS"] = Math.ceil((attributes["KO"] || 0) / 2) + (c_skills['WS'] || 0)
 
-      # Astralenergie / Karmalenergie
+      # Astralenergie / Karmalenergie (only calculate if given)
       attributes["AE"] = (attributes["AE"] || 0) + (c_skills['AE'] || 0)
       attributes["KE"] = (attributes["KE"] || 0) + (c_skills['KE'] || 0)
       attribute = profession?.get?('attribute')

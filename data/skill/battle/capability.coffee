@@ -1,13 +1,14 @@
-define "data/skill/battle/vantage", [], () ->
+define "data/skill/capability/battle", [], () ->
   min: 0
   max: 1
   count: "roman"
 
   groups: [
+    __("Sonderfertigkeiten")
     __("Kampfsonderfertigkeiten")
   ]
 
-require ["data/skill/battle/vantage"], (S) ->
+require ["data/skill/capability/battle"], (S) ->
   skills.add _.extend {}, S,
     name: __("Aufmerksamkeit")
     costs: 25

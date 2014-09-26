@@ -260,7 +260,7 @@
     "Auffällig": "Auffällig",
 
     /* "data/profession/military/PSTK.coffee #358 */
-    /* "data/skill/battle/vantage.coffee #217 */
+    /* "data/skill/battle/capability.coffee #217 */
     "Aufmerksamkeit": "Aufmerksamkeit",
 
     /* "data/skill/language/speach.coffee #533 */
@@ -272,7 +272,7 @@
     /* "data/skill/magic/magic.coffee #479 */
     "Auris Nasus": "Auris Nasus",
 
-    /* "data/skill/battle/vantage.coffee #324 */
+    /* "data/skill/battle/capability.coffee #324 */
     "Ausfall": "Ausfall",
 
     /* "data/profession/society/barde/PBAR_AUS.coffee #105 */
@@ -303,7 +303,7 @@
     /* "data/skill/battle/skills.coffee #274 */
     "Ausweichen": "Ausweichen",
 
-    /* "data/skill/battle/vantage.coffee #448 */
+    /* "data/skill/battle/capability.coffee #448 */
     "Ausweiden": "Ausweiden",
 
     /* "data/skill/vantage/habits.coffee #1868 */
@@ -499,7 +499,7 @@
     /* "data/profession/military/soldat/PSOL_REI.coffee #251 */
     /* "data/profession/military/soldat/PSOL_SAP.coffee #254 */
     /* "data/profession/military/soldat/PSOL_STR.coffee #284 */
-    /* "data/skill/battle/vantage.coffee #518 */
+    /* "data/skill/battle/capability.coffee #518 */
     "Behinderungsgewöhnung": "Behinderungsgewöhnung",
 
     /* "data/profession/military/PSTK.coffee #1691 */
@@ -513,8 +513,8 @@
     /* "data/skill/vantage/positive.coffee #864 */
     "Beidhändig": "Beidhändig",
 
-    /* "data/skill/battle/vantage.coffee #678 */
-    /* "data/skill/battle/vantage.coffee #4513 */
+    /* "data/skill/battle/capability.coffee #678 */
+    /* "data/skill/battle/capability.coffee #4513 */
     "Beidhändiger Kampf": "Beidhändiger Kampf",
 
     /* "data/equipment/nahkampfwaffen.coffee #2181 */
@@ -556,7 +556,7 @@
 
     /* "data/profession/military/soldat/PSOL_BSC.coffee #137 */
     /* "data/profession/military/soldat/PSOL_BSC.coffee #389 */
-    /* "data/skill/battle/vantage.coffee #768 */
+    /* "data/skill/battle/capability.coffee #768 */
     "Berittener Schütze": "Berittener Schütze",
 
     /* "data/culture/menschlich/CFJA.coffee #2140 */
@@ -881,7 +881,7 @@
     /* "data/equipment/reisebedarf.coffee #601 */
     "Decke (Wolle)": "Decke (Wolle)",
 
-    /* "data/skill/battle/vantage.coffee #894 */
+    /* "data/skill/battle/capability.coffee #894 */
     "Defensiver Kampfstil": "Defensiver Kampfstil",
 
     /* "data/equipment/nahkampfwaffen.coffee #3487 */
@@ -1190,7 +1190,7 @@
     /* "data/skill/vantage/positive.coffee #1039 */
     "Eisenaffine Aura": "Eisenaffine Aura",
 
-    /* "data/skill/battle/vantage.coffee #1053 */
+    /* "data/skill/battle/capability.coffee #1053 */
     "Eisenarm": "Eisenarm",
 
     /* "data/culture/menschlich/CBOR.coffee #730 */
@@ -1304,7 +1304,7 @@
     /* "data/skill/vantage/positive.coffee #1288 */
     "Entfernungssinn": "Entfernungssinn",
 
-    /* "data/skill/battle/vantage.coffee #1200 */
+    /* "data/skill/battle/capability.coffee #1200 */
     "Entwaffnen": "Entwaffnen",
 
     /* "data/culture/menschlich/CARA.coffee #194 */
@@ -1628,7 +1628,7 @@
     /* "data/skill/nature.coffee #305 */
     "Fesseln": "Fesseln",
 
-    /* "data/skill/battle/vantage.coffee #1303 */
+    /* "data/skill/battle/capability.coffee #1303 */
     "Festhalten": "Festhalten",
 
     /* "data/culture/menschlich/CFJA.coffee #1347 */
@@ -1666,8 +1666,8 @@
     /* "data/profession/military/soldat/PSOL_REI.coffee #289 */
     /* "data/profession/military/soldat/PSOL_SAP.coffee #292 */
     /* "data/profession/military/soldat/PSOL_STR.coffee #322 */
-    /* "data/skill/battle/vantage.coffee #1373 */
-    /* "data/skill/battle/vantage.coffee #2113 */
+    /* "data/skill/battle/capability.coffee #1373 */
+    /* "data/skill/battle/capability.coffee #2113 */
     "Finte": "Finte",
 
     /* "data/race/elfisch/RFRE.coffee #133 */
@@ -1850,8 +1850,8 @@
     /* "data/profession/society/gaukler/PGAU.coffee #1430 */
     /* "data/profession/society/spitzel/PSPL.coffee #917 */
     /* "data/profession/society/streuner/PSTR.coffee #1363 */
-    /* "data/skill/battle/vantage.coffee #2057 */
-    /* "data/skill/battle/vantage.coffee #4358 */
+    /* "data/skill/battle/capability.coffee #2057 */
+    /* "data/skill/battle/capability.coffee #4358 */
     /* "templates/sheets/print.hbs #16118 */
     "GE": "Gewandtheit",
 
@@ -2068,7 +2068,7 @@
     /* "data/profession/military/soldat/PSOL.coffee #892 */
     "Gefahrensinstinkt": "Gefahrensinstinkt",
 
-    /* "data/skill/battle/vantage.coffee #1471 */
+    /* "data/skill/battle/capability.coffee #1471 */
     "Gegenhalten": "Gegenhalten",
 
     /* "data/skill/language/lettering.coffee #933 */
@@ -2272,7 +2272,7 @@
     /* "templates/profile_edit.hbs #304 */
     "Geschlecht": "Geschlecht",
 
-    /* "data/skill/battle/vantage.coffee #1622 */
+    /* "data/skill/battle/capability.coffee #1622 */
     "Geschosshagel": "Geschosshagel",
 
     /* "data/profession/society/liebesdiener/PLIE_KUR.coffee #120 */
@@ -2358,15 +2358,15 @@
     /* "data/profession/liturgy/PRON.coffee #131 */
     "Geweihter (Zwölfgötterkult)": "Geweihter (Zwölfgötterkult)",
 
-    /* "data/skill/battle/vantage.coffee #1774 */
-    /* "data/skill/battle/vantage.coffee #2078 */
+    /* "data/skill/battle/capability.coffee #1774 */
+    /* "data/skill/battle/capability.coffee #2078 */
     "Gezielter Angriff": "Gezielter Angriff",
 
-    /* "data/skill/battle/vantage.coffee #1884 */
+    /* "data/skill/battle/capability.coffee #1884 */
     "Gezielter Schuss": "Gezielter Schuss",
 
-    /* "data/skill/battle/vantage.coffee #1993 */
-    /* "data/skill/battle/vantage.coffee #4379 */
+    /* "data/skill/battle/capability.coffee #1993 */
+    /* "data/skill/battle/capability.coffee #4379 */
     "Gezielter Stich": "Gezielter Stich",
 
     /* "data/skill/vantage/negative.coffee #1250 */
@@ -2683,7 +2683,7 @@
     /* "data/equipment/kleidung.coffee #1133 */
     "Halbschuhe (Leder)": "Halbschuhe (Leder)",
 
-    /* "data/skill/battle/vantage.coffee #2175 */
+    /* "data/skill/battle/capability.coffee #2175 */
     "Halbschwert": "Halbschwert",
 
     /* "data/equipment/kleidung.coffee #1233 */
@@ -2692,7 +2692,7 @@
     /* "data/skill/battle/style.coffee #451 */
     "Hammerfaust": "Hammerfaust",
 
-    /* "data/skill/battle/vantage.coffee #2292 */
+    /* "data/skill/battle/capability.coffee #2292 */
     "Hammerschlag": "Hammerschlag",
 
     /* "data/equipment/nahkampfwaffen.coffee #2393 */
@@ -3427,7 +3427,7 @@
     /* "data/skill/language/lettering.coffee #1161 */
     "Imperiale Zeichen": "Imperiale Zeichen",
 
-    /* "data/skill/battle/vantage.coffee #2464 */
+    /* "data/skill/battle/capability.coffee #2464 */
     "Improvisierte Waffen": "Improvisierte Waffen",
 
     /* "data/skill/vantage/habits.coffee #3407 */
@@ -3511,9 +3511,9 @@
     /* "data/profession/military/PKRR.coffee #1245 */
     /* "data/profession/military/PSTK.coffee #1576 */
     /* "data/profession/military/soldat/PSOL.coffee #1146 */
-    /* "data/skill/battle/vantage.coffee #2375 */
-    /* "data/skill/battle/vantage.coffee #3044 */
-    /* "data/skill/battle/vantage.coffee #3849 */
+    /* "data/skill/battle/capability.coffee #2375 */
+    /* "data/skill/battle/capability.coffee #3044 */
+    /* "data/skill/battle/capability.coffee #3849 */
     /* "templates/sheets/print.hbs #16229 */
     "KK": "Körperkraft",
 
@@ -3594,13 +3594,13 @@
     "Kampfrausch": "Kampfrausch",
 
     /* "data/profession/military/PSTK.coffee #399 */
-    /* "data/skill/battle/vantage.coffee #2623 */
+    /* "data/skill/battle/capability.coffee #2623 */
     "Kampfreflexe": "Kampfreflexe",
 
     /* "data/profession/military/PKRR.coffee #397 */
     /* "data/profession/military/PSGE.coffee #400 */
     /* "data/profession/military/PSTK.coffee #457 */
-    /* "data/skill/battle/vantage.coffee #97 */
+    /* "data/skill/battle/capability.coffee #97 */
     "Kampfsonderfertigkeiten": "Kampfsonderfertigkeiten",
 
     /* "data/equipment/nahkampfwaffen.coffee #9133 */
@@ -3811,7 +3811,7 @@
     /* "data/skill/vantage/positive.coffee #4844 */
     "Krankheitsresistenz": "Krankheitsresistenz",
 
-    /* "data/skill/battle/vantage.coffee #2774 */
+    /* "data/skill/battle/capability.coffee #2774 */
     "Kreuzblock": "Kreuzblock",
 
     /* "data/profession/military/PKRR.coffee #46 */
@@ -4440,9 +4440,9 @@
     /* "data/profession/society/gaukler/PGAU.coffee #1404 */
     /* "data/profession/society/spitzel/PSPL.coffee #878 */
     /* "data/profession/society/streuner/PSTR.coffee #1324 */
-    /* "data/skill/battle/vantage.coffee #1531 */
-    /* "data/skill/battle/vantage.coffee #2354 */
-    /* "data/skill/battle/vantage.coffee #4210 */
+    /* "data/skill/battle/capability.coffee #1531 */
+    /* "data/skill/battle/capability.coffee #2354 */
+    /* "data/skill/battle/capability.coffee #4210 */
     "MU": "Mut",
 
     /* "data/skill/vantage/positive.coffee #4924 */
@@ -4680,8 +4680,8 @@
 
     /* "data/profession/military/PKRR.coffee #338 */
     /* "data/profession/military/PSGE.coffee #362 */
-    /* "data/skill/battle/vantage.coffee #1552 */
-    /* "data/skill/battle/vantage.coffee #2877 */
+    /* "data/skill/battle/capability.coffee #1552 */
+    /* "data/skill/battle/capability.coffee #2877 */
     "Meisterparade": "Meisterparade",
 
     /* "data/skill/magic/melody.coffee #587 */
@@ -5059,7 +5059,7 @@
     /* "data/skill/vantage/positive.coffee #5560 */
     "Nichtschläfer": "Nichtschläfer",
 
-    /* "data/skill/battle/vantage.coffee #2983 */
+    /* "data/skill/battle/capability.coffee #2983 */
     "Niederwerfen": "Niederwerfen",
 
     /* "data/skill/vantage/negative.coffee #2518 */
@@ -5207,9 +5207,9 @@
     /* "data/skill/magic/magic.coffee #3738 */
     "Odem Arcanum": "Odem Arcanum",
 
-    /* "data/skill/battle/vantage.coffee #377 */
-    /* "data/skill/battle/vantage.coffee #3133 */
-    /* "data/skill/battle/vantage.coffee #4549 */
+    /* "data/skill/battle/capability.coffee #377 */
+    /* "data/skill/battle/capability.coffee #3133 */
+    /* "data/skill/battle/capability.coffee #4549 */
     "Offensiver Kampfstil": "Offensiver Kampfstil",
 
     /* "data/equipment/nahkampfwaffen.coffee #15023 */
@@ -5910,7 +5910,7 @@
     /* "data/profession/society/hoefling/PHOE_DIP.coffee #338 */
     /* "data/profession/society/hoefling/PHOE_HOF.coffee #340 */
     /* "data/profession/society/hoefling/PHOE_MUE.coffee #347 */
-    /* "data/skill/battle/vantage.coffee #3353 */
+    /* "data/skill/battle/capability.coffee #3353 */
     /* "data/skill/body.coffee #643 */
     "Reiten": "Reiten",
 
@@ -5926,8 +5926,8 @@
     /* "data/profession/military/soldat/PSOL_BSC.coffee #365 */
     /* "data/profession/military/soldat/PSOL_REI.coffee #331 */
     /* "data/profession/military/soldat/PSOL_STR.coffee #364 */
-    /* "data/skill/battle/vantage.coffee #832 */
-    /* "data/skill/battle/vantage.coffee #3293 */
+    /* "data/skill/battle/capability.coffee #832 */
+    /* "data/skill/battle/capability.coffee #3293 */
     "Reiterkampf": "Reiterkampf",
 
     /* "data/equipment/schilde.coffee #1196 */
@@ -5976,7 +5976,7 @@
     /* "data/equipment/ruestung.coffee #2127 */
     "Ringmantel": "Ringmantel",
 
-    /* "data/skill/battle/vantage.coffee #3417 */
+    /* "data/skill/battle/capability.coffee #3417 */
     "Riposte": "Riposte",
 
     /* "data/skill/language/speach.coffee #2022 */
@@ -6057,7 +6057,7 @@
     /* "data/equipment/nahkampfwaffen.coffee #18256 */
     "Runaskraja": "Runaskraja",
 
-    /* "data/skill/battle/vantage.coffee #3517 */
+    /* "data/skill/battle/capability.coffee #3517 */
     "Rundumschlag": "Rundumschlag",
 
     /* "data/skill/language/speach.coffee #2291 */
@@ -6240,7 +6240,7 @@
     /* "data/culture/menschlich/CNIV.coffee #1456 */
     "Schamane": "Schamane",
 
-    /* "data/skill/battle/vantage.coffee #3668 */
+    /* "data/skill/battle/capability.coffee #3668 */
     "Scharfschütze": "Scharfschütze",
 
     /* "data/culture/menschlich/CARA.coffee #1846 */
@@ -6285,7 +6285,7 @@
     /* "data/skill/battle/skills.coffee #852 */
     "Schilde": "Schilde",
 
-    /* "data/skill/battle/vantage.coffee #3787 */
+    /* "data/skill/battle/capability.coffee #3787 */
     "Schildspalter": "Schildspalter",
 
     /* "data/skill/magic/curse.coffee #805 */
@@ -6783,10 +6783,10 @@
     /* "data/skill/vantage/negative.coffee #3884 */
     "Schnelle Alterung": "Schnelle Alterung",
 
-    /* "data/skill/battle/vantage.coffee #3938 */
+    /* "data/skill/battle/capability.coffee #3938 */
     "Schnellladen": "Schnellladen",
 
-    /* "data/skill/battle/vantage.coffee #4043 */
+    /* "data/skill/battle/capability.coffee #4043 */
     "Schnellziehen": "Schnellziehen",
 
     /* "data/skill/magic/tricks.coffee #1036 */
@@ -7006,7 +7006,7 @@
     /* "data/profession/magic/PWDL.coffee #490 */
     /* "data/profession/magic/PZWB.coffee #482 */
     /* "data/profession/society/haendler/PHAE_KAU.coffee #337 */
-    /* "data/skill/battle/vantage.coffee #4686 */
+    /* "data/skill/battle/capability.coffee #4686 */
     /* "data/skill/body.coffee #753 */
     "Schwimmen": "Schwimmen",
 
@@ -7792,7 +7792,7 @@
     /* "data/skill/liturgy.coffee #1000 */
     "Sturm": "Sturm",
 
-    /* "data/skill/battle/vantage.coffee #4149 */
+    /* "data/skill/battle/capability.coffee #4149 */
     "Sturmangriff": "Sturmangriff",
 
     /* "data/equipment/nahkampfwaffen.coffee #22568 */
@@ -8085,10 +8085,10 @@
     /* "data/profession/magic/hexe/PHEX_TDE.coffee #206 */
     "Tochter der Erde": "Tochter der Erde",
 
-    /* "data/skill/battle/vantage.coffee #4451 */
+    /* "data/skill/battle/capability.coffee #4451 */
     "Tod von Links": "Tod von Links",
 
-    /* "data/skill/battle/vantage.coffee #4299 */
+    /* "data/skill/battle/capability.coffee #4299 */
     "Todesstoß": "Todesstoß",
 
     /* "data/skill/vantage/habits.coffee #5236 */
@@ -8714,7 +8714,7 @@
     /* "data/skill/magic/magic.coffee #5593 */
     "Wasseratem": "Wasseratem",
 
-    /* "data/skill/battle/vantage.coffee #4626 */
+    /* "data/skill/battle/capability.coffee #4626 */
     "Wasserkampf": "Wasserkampf",
 
     /* "data/skill/vantage/habits.coffee #6111 */
@@ -8917,11 +8917,11 @@
     /* "data/profession/military/soldat/PSOL_REI.coffee #307 */
     /* "data/profession/military/soldat/PSOL_SAP.coffee #310 */
     /* "data/profession/military/soldat/PSOL_STR.coffee #340 */
-    /* "data/skill/battle/vantage.coffee #2396 */
-    /* "data/skill/battle/vantage.coffee #3065 */
-    /* "data/skill/battle/vantage.coffee #3870 */
-    /* "data/skill/battle/vantage.coffee #4231 */
-    /* "data/skill/battle/vantage.coffee #4753 */
+    /* "data/skill/battle/capability.coffee #2396 */
+    /* "data/skill/battle/capability.coffee #3065 */
+    /* "data/skill/battle/capability.coffee #3870 */
+    /* "data/skill/battle/capability.coffee #4231 */
+    /* "data/skill/battle/capability.coffee #4753 */
     "Wuchtschlag": "Wuchtschlag",
 
     /* "data/skill/language/speach.coffee #2633 */
@@ -8936,7 +8936,7 @@
     /* "data/equipment/heilmittel.coffee #962 */
     "Wundnähzeug": "Wundnähzeug",
 
-    /* "data/skill/battle/vantage.coffee #4857 */
+    /* "data/skill/battle/capability.coffee #4857 */
     "Wurf": "Wurf",
 
     /* "data/profession/military/soldat/PSOL.coffee #464 */

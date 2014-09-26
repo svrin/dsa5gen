@@ -1,6 +1,6 @@
 <% var gender = character.get('gender'); %>
 <% var name = (gender == 'x' || !gender) ? 'name' : 'name_' + gender; %>
-<% var skills = _.sortBy(character.get_skill_items(), function (skill) { return skill.key } ); %>
+<% var c_skills = _.sortBy(character.get_skill_items(), function (c_skill) { return c_skill.key } ); %>
 <% var equipments = _.sortBy(character.get_equipment_items(), function (equipment) { return equipment.key } ); %>
 <% var attributes = character.get('attributes'); %>
 
@@ -109,7 +109,7 @@
         <% var i = 23; %>
 
         <h2>Sprachen</h2>
-        <% _.each(skills, function (skill) { %>
+        <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.groups.indexOf(__('Sprache')) >= 0) { %>
         <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
             <%= skill.item.toString(skill.value) %>
@@ -122,7 +122,7 @@
         </h3>
 
         <h2>Schriften</h2>
-        <% _.each(skills, function (skill) { %>
+        <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.groups.indexOf(__('Schrift')) >= 0) { %>
         <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
             <%= skill.item.toString(skill.value) %>
@@ -139,7 +139,7 @@
     <section class="span8 print-box">
         <h2>Vorteile & Nachteile</h2>
 
-        <% _.each(skills, function (skill) { %>
+        <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.item.isVantage()) { %>
         <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
             <%= skill.item.toString(skill.value) %>
@@ -155,7 +155,7 @@
     </section>
 </article>
 
-<% function printSkillBox(skills, key, empty_lines) { %>
+<% function printSkillBox(c_skills, key, empty_lines) { %>
 <h2><%= key %></h2>
 
 <table>
@@ -170,7 +170,7 @@
     </tr>
     </thead>
     <tbody>
-    <% _.each(skills, function (skill) { %>
+    <% _.each(c_skills, function (skill) { %>
     <% if (skill.item && skill.groups.indexOf(key) >= 0) { %>
     <tr>
         <td data-for="skills.<%= skill.key %>.name"><%= skill.key %></td>
@@ -200,10 +200,10 @@
     <section class="span6 print-box">
         <h1><%= character.get('name') %></h1>
 
-        <% printSkillBox(skills, __('Körpertalente'), 1) %>
-        <% printSkillBox(skills, __('Gesellschaftstalente'), 1) %>
-        <% printSkillBox(skills, __('Naturtalente'), 1) %>
-        <% printSkillBox(skills, __('Gaben'), 1) %>
+        <% printSkillBox(c_skills, __('Körpertalente'), 1) %>
+        <% printSkillBox(c_skills, __('Gesellschaftstalente'), 1) %>
+        <% printSkillBox(c_skills, __('Naturtalente'), 1) %>
+        <% printSkillBox(c_skills, __('Gaben'), 1) %>
     </section>
 
     <section class="span6 print-box">
@@ -230,8 +230,8 @@
             </tbody>
         </table>
 
-        <% printSkillBox(skills, __('Wissenstalente'), 3) %>
-        <% printSkillBox(skills, __('Handwerkstalente'), 3) %>
+        <% printSkillBox(c_skills, __('Wissenstalente'), 3) %>
+        <% printSkillBox(c_skills, __('Handwerkstalente'), 3) %>
 
     </section>
 </article>
@@ -241,22 +241,22 @@
     <section class="span6 print-box">
         <h1><%= character.get('name') %></h1>
 
-        <h3 data-for="tradition"> <%= _.findWhere(skills, {key: __('Tradition') }).value %></h3>
+        <h3 data-for="tradition"> <%= _.findWhere(c_skills, {key: __('Tradition') }).value %></h3>
         <label class="subline" for="tradition"><%= __('Tradition') %></label>
 
-        <% var schwesternschaft = _.findWhere(skills, {key: __('Schwesternschaft') }) %>
+        <% var schwesternschaft = _.findWhere(c_skills, {key: __('Schwesternschaft') }) %>
         <% if (schwesternschaft) { %>
         <h3 data-for="schwesternschaft"> <%= schwesternschaft.value %></h3>
         <label class="subline" for="schwesternschaft"><%= __('Schwesternschaft') %></label>
         <% } %>
 
-        <% var spezialgebiet = _.findWhere(skills, {key: __('Spezialgebiet') }) %>
+        <% var spezialgebiet = _.findWhere(c_skills, {key: __('Spezialgebiet') }) %>
         <% if (spezialgebiet) { %>
         <h3 data-for="spezialgebiet"> <%= spezialgebiet.value %></h3>
         <label class="subline" for="spezialgebiet"><%= __('Spezialgebiet') %></label>
         <% } %>
 
-        <% var kirche = _.findWhere(skills, {key: __('Kirche') }) %>
+        <% var kirche = _.findWhere(c_skills, {key: __('Kirche') }) %>
         <% if (kirche) { %>
         <h3 data-for="kirche"> <%= kirche.value %></h3>
         <label class="subline" for="kirche"><%= __('Kirche') %></label>
@@ -311,7 +311,7 @@
             </thead>
             <tbody>
             <% var i = 20; %>
-            <% _.each(skills, function (skill) { %>
+            <% _.each(c_skills, function (skill) { %>
             <% if (skill.item && (skill.item.isMagic() || skill.item.isLiturgy()) && skill.item.get('max') != 1 &&
             skill.item.get('count') != 'roman') { %>
             <tr>
@@ -354,7 +354,7 @@
         <h2>Magische Sonderfertigkeiten</h2>
 
         <% var i = 10; %>
-        <% _.each(skills, function (skill) { %>
+        <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.item.isMagic() && (skill.item.get('max') == 1 || skill.item.get('count') == 'roman'))
         {
         %>
@@ -377,7 +377,7 @@
         <h2>Klerikale Sonderfertigkeiten</h2>
 
         <% var i = 10; %>
-        <% _.each(skills, function (skill) { %>
+        <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.item.isLiturgy() && (skill.item.get('max') == 1 || skill.item.get('count') ==
         'roman')) {
         %>
@@ -416,7 +416,7 @@
             </tr>
             </thead>
             <tbody>
-            <% _.each(skills, function (skill) { %>
+            <% _.each(c_skills, function (skill) { %>
             <% if (skill.item && skill.groups.indexOf(__("Kampftechniken")) >= 0) { %>
             <tr>
                 <td data-for="skills.<%= skill.key %>.name"><%= skill.key %></td>
@@ -607,18 +607,18 @@
                 </td>
                 <td data-for="attributes.<%= key %>.base">
                     <%= (character.get('familiar').get('attributes')[key.substring(2)] || 0) %>
-            </td>
+                </td>
                 <td data-for="attributes.<%= key %>.bonus">
                     <%= (character.get('skills')[key] || 0) %>
-            </td>
+                </td>
                 <td data-for="attributes.<%= key %>">
                     <%= value - (character.get('familiar').get('attributes')[key.substring(2)] || 0) -
                     (character.get('skills')[key] || 0) %>
-            </td>
+                </td>
                 <td data-for="attributes.<%= key %>.current">
                     <%= value %>
-            </td>
-        </tr>
+                </td>
+            </tr>
             <% } %>
             <% }); %>
             </tbody>
@@ -633,7 +633,7 @@
 
         <h2>Vor & Nachteile, Sonderfertigkeiten</h2>
 
-        <% _.each(skills, function (skill) { %>
+        <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.key.indexOf("Vertrauter") >= 0 && skill.item.isVantage()) { %>
         <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
             <%= skill.item.toString(skill.value) %>
@@ -655,7 +655,7 @@
 
         <h2>Magische Sonderfertigkeiten</h2>
 
-        <% _.each(skills, function (skill) { %>
+        <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.item.isMagic() && (skill.item.get('max') == 1 || skill.item.get('count') == 'roman')
         && skill.groups[0] == 'Vertrautenmagie') {
         %>
@@ -671,7 +671,7 @@
 
         <h2>Kampfsonderfertigkeiten</h2>
 
-        <% _.each(skills, function (skill) { %>
+        <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.item.isBattle() && (skill.item.get('max') == 1 || skill.item.get('count') == 'roman')
         && skill.groups[0] == 'Vertrautenmagie') {
         %>

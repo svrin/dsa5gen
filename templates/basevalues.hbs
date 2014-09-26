@@ -1,9 +1,9 @@
 <h3>Basiswerte</h3>
 
-<% race = character.get('race'); race_attributes = race && race.get('attributes') %>
-<% culture = character.get('culture'); culture_attributes = culture && culture.get('attributes') %>
-<% profession = character.get('profession'); profession_attributes = profession && profession.get('attributes') %>
-<% skills = character.get('skills'); %>
+<% var c_race = character.get('race'); race_attributes = c_race && c_race.get('attributes') %>
+<% var c_culture = character.get('culture'); culture_attributes = c_culture && c_culture.get('attributes') %>
+<% var c_profession = character.get('profession'); profession_attributes = c_profession && c_profession.get('attributes') %>
+<% var c_skills = character.get('skills'); %>
 
 <ul>
     <% _.each(character.get('attributes'), function (value, key) { %>
@@ -11,20 +11,20 @@
     <li>
         <label title="<%= __(key) %>"><%= key %></label>
 
-        <% if (race && race_attributes && race_attributes[key]) { %>
+        <% if (c_race && race_attributes && race_attributes[key]) { %>
         <i>Rasse: <%= race_attributes[key] %></i>
         <% } %>
 
-        <% if (culture && culture_attributes && culture_attributes[key]) { %>
+        <% if (c_culture && culture_attributes && culture_attributes[key]) { %>
         <i>Kultur: <%= culture_attributes[key] %></i>
         <% } %>
 
-        <% if (profession && profession_attributes && profession_attributes[key]) { %>
+        <% if (c_profession && profession_attributes && profession_attributes[key]) { %>
         <i>Profession: <%= profession_attributes[key] %></i>
         <% } %>
 
-        <% if (skills && skills[key]) { %>
-        <i>Vor/Nachteile: <%= skills[key] %></i>
+        <% if (c_skills && c_skills[key]) { %>
+        <i>Vor/Nachteile: <%= c_skills[key] %></i>
         <% } %>
 
         <span><%= Math.round(value) %></span>
