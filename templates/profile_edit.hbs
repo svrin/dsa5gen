@@ -24,6 +24,13 @@
             <%= lifegrade.get('name') %>
         </label>
         <% }); %>
+        <% if (character.get('lifegrade')) { %>
+        <div>
+            <i>Höchstwert Eigenschaft: <%= character.get('lifegrade').get('E_MAX') %></i>
+            <i>Höchstwert Fertigkeit: <%= character.get('lifegrade').get('F_MAX') %></i>
+            <i>Höchstwert Kampftechnik: <%= character.get('lifegrade').get('K_MAX') %></i>
+        </div>
+        <% }; %>
     </dd>
 </dl>
 

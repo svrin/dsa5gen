@@ -1,4 +1,7 @@
 <h3>Eigenschaften</h3>
+
+<% var c_lifegrade = character.get('lifegrade'); %>
+
 <ul>
     <% c_attributes = character.get('attributes'); %>
     <% _.each(c_attributes, function (value, key) { %>
@@ -6,27 +9,31 @@
     <li data-href="attributes">
         <label title="<%= __(key) %>"><%= key %></label>
 
+        <% v_max = (c_lifegrade.get('E_MAX') || 14) + Math.round(c_attributes[key + "_max"] || 0) %>
+        <% v_max_text = v_max %>
+
         <% race = character.get('race'); attributes = race && race.get('attributes') %>
         <% if (race && attributes && attributes[key]) { %>
         <i>Rasse: <%= race.get('attributes')[key] %></i>
+        <% v_max_text += race.get('attributes')[key] %>
         <% } %>
 
         <% culture = character.get('culture'); attributes = culture && culture.get('attributes') %>
         <% if (culture && attributes && attributes[key]) { %>
         <i>Kultur: <%= culture.get('attributes')[key] %></i>
+        <% v_max_text += culture.get('attributes')[key] %>
         <% } %>
 
         <% profession = character.get('profession'); attributes = profession && profession.get('attributes') %>
         <% if (profession && attributes && attributes[key]) { %>
         <i>Profession: <%= profession.get('attributes')[key] %></i>
+        <% v_max_text += profession.get('attributes')[key] %>
         <% } %>
-
-        <% v_max = 18 + Math.round(c_attributes[key + "_max"] || 0) %>
 
         <span data-min="8" data-max="<%= v_max %>">
             <a href=":decr(attributes.<%=key%>)"></a>
             <span data-for="attributes.<%=key%>"><%= Math.round(value || 0) %></span>
-            <span data-for="attributes.<%=key%>_max"><%= v_max %></span>
+            <span data-for="attributes.<%=key%>_max"><%= v_max_text %></span>
             <a href=":incr(attributes.<%=key%>)"></a>
         </span>
     </li>
