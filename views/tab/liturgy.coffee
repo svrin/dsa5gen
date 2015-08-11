@@ -3,7 +3,7 @@
 ###
 
 define ['views/bases/valuebox', 'data/skill'], (BaseView, skills) ->
-  class SkillView extends BaseView
+  class LiturgyView extends BaseView
     name: 'liturgy'
     for: 'skills'
     caption: __("Götterwirken")

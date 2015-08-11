@@ -26,7 +26,8 @@ define ["models/base"], (Model) ->
     # Liturgy
     liturgyGroups: [
       __('Liturgien')
-      __('Segen')
+      __('Segnungen')
+      __('Zeremonien')
       __('Klerikale Sonderfertigkeiten')
     ]
     isLiturgy: ->

@@ -232,6 +232,10 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
           console.debug "Unwired choice view"
           return
 
+        if _.isBoolean(element)
+          console.log "Unexpected element in common/uncommon list", element
+          return
+
         if !_.isString(element)
           console.error "Unexpected element in common/uncommon list", element
           return
@@ -246,6 +250,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       # Add content from race
       race = character.get('race')
       if race
+        _.each race.get('ultra'), _.partial(lambda, 1);
         _.each race.get('common'), _.partial(lambda, 1);
         _.each race.get('uncommon'), _.partial(lambda, -1);
 

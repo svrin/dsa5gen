@@ -29,7 +29,7 @@ define "data/race/elfisch", [], () ->
   auto: [
     __("Zweistimmiger Gesang")
     __("Zauberer")
-    choice(-2, "KL", "KK")
+#/* @TODO: choice(-2, "KL", "KK") */
   ]
 
   cultures: [
