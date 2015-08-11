@@ -1,5 +1,8 @@
 ###
   Die Menschen
+
+  @version: US25001
+  @page: 89
 ###
 
 define "data/race/menschlich", [], () ->
@@ -13,13 +16,13 @@ define "data/race/menschlich", [], () ->
       this.get('profile')?['height']? - 100
 
     attributes:
-      LE: 25
-      MR: 0
-      INI: 10
+      LE: 5
+      SK: -5
+      ZK: -5
       GS: 8
 
-    uncommon: [
-      __("Wahrer Name")
+    auto: [
+      choice(1, "MU", "KL", "IN", "CH", "FF", "GE", "KO", "KK")
     ]
 
 

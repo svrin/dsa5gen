@@ -1,10 +1,10 @@
 ###
-  Die Menschen / Utulu
+  Die Menschen / Utulus
 ###
 
 require ["data/race/menschlich"], (R) ->
   races.add _.extend R,
-    name: __("Mensch/Utulu")
+    name: __("Mensch/Utulus")
 
     name_m: __("Utulu")
     name_w: __("Utulu")
@@ -21,20 +21,21 @@ require ["data/race/menschlich"], (R) ->
     height: [165, 2, 20]
 
     cultures: [
-      __("Aranien")
+      __("Aranier")
+      __("Mhanadistani")
       __("Mohas")
       __("Novadis")
-      __("Südaventurien")
-      __("Tulamidenlande")
+      __("Südaventurier")
     ]
 
     common: [
-      __("Herausragende Eigenschaft (GE)")
       __("Angenehmer Geruch")
       __("Hitzeresistenz")
       __("Immunität gegen Gift (Wurara)")
       __("Immunität gegen Krankheit (Flinker Difar)")
       __("Immunität gegen Krankheit (Brabaker Schweiß)")
+
+      __("Kälteempfindlich")
     ]
 
 

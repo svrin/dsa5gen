@@ -28,18 +28,17 @@ require ["data/race/menschlich"], (R) ->
     height: [155, 2, 20]
 
     cultures: [
-      __("Aranien")
-      __("Ferkinas")
+      __("Aranier")
       __("Maraskaner")
+      __("Südaventurier")
       __("Novadis")
-      __("Südaventurien")
-      __("Trollzacker")
-      __("Tulamidenlande")
-      __("Zahori")
+      __("Mhanadistani")
     ]
 
     common: [
       __("Hitzeresistenz")
+
+      __("Kälteempfindlich")
     ]
 
 

@@ -1,5 +1,8 @@
 ###
   Die Halbelfen
+
+  @version: US25001
+  @page: 92
 ###
 
 races.add
@@ -35,58 +38,54 @@ races.add
     this.get('profile')?['height']? - 120
 
   attributes:
-    LE: 23
-    MR: 1
-    INI: 10
+    LE: 5
+    SK: -4
+    ZK: -6
     GS: 8
 
+  auto: [
+    choice(1, "MU", "KL", "IN", "CH", "FF", "GE", "KO", "KK")
+  ]
+
   cultures: [
+    __("Andergaster")
     __("Auelfen")
-    __("Bornland")
+    __("Bornländer")
     __("Firnelfen")
-    __("Horasreich")
-    __("Mittelreich")
+    __("Horasier")
+    __("Mittelreicher")
     __("Nivesen")
-    __("Nostria & Andergast")
-    __("Nordaventurien")
-    __("Steppenelfen")
-    __("Südaventurien")
-    __("Svellttal")
+    __("Nostrier")
+    __("Nordaventurier")
+    __("Svellttaler")
     __("Thorwaler")
     __("Waldelfen")
   ]
 
   common: [
-    __("Balance")
     __("Begabung (Singen)")
     __("Begabung (Musizieren)")
     __("Beidhändig")
     [__("Dunkelsicht"), 1]
     __("Flink")
-    __("Gefahreninstinkt")
     __("Gutaussehend")
-    __("Herausragende Eigenschaft")
     choice(1, __("Herausragender Sinn (Sicht)"), __("Herausragender Sinn (Gehör)"))
-    __("Magiegespür")
     __("Schlangenmensch")
-    __("Verbundenheit (Tiere)")
-    __("Verbundenheit (Feen)")
     __("Wohlklang")
     __("Zauberer")
+    __("Zweistimmiger Gesang")
 
-    __("Schlechte Eigenschaft (Sensibler Geruchssinn)")
+    __("Sensibler Geruchssinn")
     __("Wahrer Name")
   ]
 
   uncommon: [
-    __("Kampfrausch")
     __("Schwer zu verzaubern")
     __("Zwergennase")
 
     __("Blutrausch")
     __("Fettleibig")
     __("Krankheitsanfällig")
-    __("Unangenehme Stimme")
   ]
 
 

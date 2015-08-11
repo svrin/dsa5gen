@@ -1,5 +1,8 @@
 ###
   Die Zwerge
+
+  @version: US25001
+  @page: 94
 ###
 
 races.add
@@ -7,7 +10,7 @@ races.add
   name_m: __("Zwerg")
   name_w: __("Zwergin")
 
-  costs: 150
+  costs: 61
 
   hair: [
     [__("blond"), 1, 5]
@@ -32,60 +35,53 @@ races.add
     this.get('profile')?['height']? - 80
 
   attributes:
-    LE: 30
-    MR: 2
-    INI: 10
+    LE: 8
+    SK: -4
+    ZK: -4
     GS: 6
 
-  auto: [
-    [__("Dunkelsicht"), 1]
-    choice(1, 1, __("Herausragende Eigenschaft (FF)"), __("Herausragende Eigenschaft (KO)"),
-      __("Herausragende Eigenschaft (KK)"))
-    __("Krankheitsresistenz")
-    __("Schwer zu verzaubern")
+    KO: 1
+    KK: 1
 
+  auto: [
+    choice(-2, "CH", "GE")
+  ]
+
+  ultra: [
+    [__("Dunkelsicht"), 1]
+    __("Immunität gegen Tulmadron")
     __("Unfähig (Schwimmen)")
   ]
 
   cultures: [
     __("Ambosszwerge")
     __("Brillantzwerge")
-    __("Brobim")
     __("Erzzwerge")
     __("Hügelzwerge")
   ]
 
   common: [
     [__("Dunkelsicht"), 2]
-    __("Eisern")
-    __("Gefahreninstinkt")
-    __("Gutes Gedächtnis")
     __("Hitzeresistenz")
-    __("Hohe Magieresistenz")
-    __("Kampfrausch")
-    __("Hohe Lebenskraft")
-    __("Immunität gegen Gift (Tulmadron)")
-    __("Immunität gegen Gift (schwermetallhaltige Speisepilze)")
+    __("Hohe Zähigkeit")
+    __("Krankheitsresitenz")
     __("Richtungssinn")
+    __("Schwer zu verzaubern")
     __("Zäher Hund")
     __("Zwergennase")
 
     __("Blutrausch")
-    __("Lichtempfindlich")
   ]
 
   uncommon: [
-    __("Balance")
-    __("Magiegespür")
     __("Schlangenmensch")
-    __("Verbundenheit")
     __("Wohlklang")
+    __("Zauberer")
 
-    __("Glasknochen")
     __("Hitzeempfindlichkeit")
     __("Nachtblind")
-    __("Niedrige Magieresistenz")
-    __("Zauberer")
+    __("Niedrige Seelenkraft")
+    __("Niedrige Zähigkeit")
     __("Zerbrechlich")
   ]
 

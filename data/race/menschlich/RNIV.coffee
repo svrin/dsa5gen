@@ -4,7 +4,7 @@
 
 require ["data/race/menschlich"], (R) ->
   races.add _.extend R,
-    name: __("Mensch/Nivese")
+    name: __("Mensch/Nivesen")
 
     name_m: __("Nivese")
     name_w: __("Nivesin")
@@ -27,17 +27,17 @@ require ["data/race/menschlich"], (R) ->
     height: [155, 2, 20]
 
     cultures: [
-      __("Bornland")
+      __("Bornländer")
       __("Nivesen")
-      __("Nordaventurien")
-      __("Svellttal")
+      __("Nordaventurier")
+      __("Svellttaler")
     ]
 
     common: [
-      __("Herausragende Eigenschaft (IN)")
       __("Entfernungssinn")
       __("Kälteresistenz")
-      __("Verbundenheit (Tiere)")
+
+      __("Hitzempfindlich")
     ]
 
 

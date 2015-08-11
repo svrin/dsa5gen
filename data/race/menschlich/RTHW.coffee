@@ -29,14 +29,12 @@ require ["data/race/menschlich"], (R) ->
 
     cultures: [
       __("Fjarninger")
-      __("Gjalsker")
+      __("Nordaventurier")
       __("Thorwaler")
     ]
 
     common: [
-      __("Herausragende Eigenschaft (KK)")
-      __("Eisern")
-      __("Kampfrausch")
+      __("Hohe Zähigkeit")
       __("Zäher Hund")
 
       __("Blutrausch")

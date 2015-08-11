@@ -1,10 +1,10 @@
 ###
-  Die Menschen / Nivese
+  Die Menschen / Norbarden
 ###
 
 require ["data/race/menschlich"], (R) ->
   races.add _.extend R,
-    name: __("Mensch/Norbarde")
+    name: __("Mensch/Norbarden")
 
     name_m: __("Norbarde")
     name_w: __("Norbardin")
@@ -24,13 +24,9 @@ require ["data/race/menschlich"], (R) ->
     height: [158, 2, 20]
 
     cultures: [
-      __("Bornland")
+      __("Bornländer")
       __("Norbarden")
-      __("Nordaventurien")
-    ]
-
-    common: [
-      __("Herausragende Eigenschaft (KO)")
+      __("Nordaventurier")
     ]
 
 

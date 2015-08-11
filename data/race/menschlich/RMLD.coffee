@@ -1,5 +1,8 @@
 ###
   Die Menschen / Mittelländer
+
+  @version: US25001
+  @page: 89
 ###
 
 require ["data/race/menschlich"], (R) ->
@@ -28,15 +31,16 @@ require ["data/race/menschlich"], (R) ->
     height: [160, 2, 20]
 
     cultures: [
-      __("Bornland")
-      __("Horasreich")
+      __("Andergaster")
+      __("Bornländer")
+      __("Horasier")
       __("Maraskaner")
-      __("Mittelreich")
-      __("Nostria & Andergast")
-      __("Nordaventurien")
-      __("Südaventurien")
-      __("Svellttal")
-      __("Zyklopeninseln")
+      __("Mittelreicher")
+      __("Nordaventurier")
+      __("Nostrier")
+      __("Südaventurier")
+      __("Svellttaler")
+      __("Zyklopäer")
     ]
 
 

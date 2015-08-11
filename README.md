@@ -10,6 +10,8 @@ History
 -------
 
 Feb/2014: Aufbau der Datenmodelle für DSA 4.1, Evaluieren der benötigten Funktionalitäten.
+Sep/2014: Adaption zu DSA 5 BETA
+Aug/2015: Anpassung der Modelle für DSA 5
 
 Lizenzen
 --------
