@@ -487,7 +487,7 @@ nav {
     text-align: center;
     margin-left: -1.2ex;
     font-size: 0.8em;
-    padding-right: 0em;
+    padding-right: 0;
   }
   visibility: hidden;
 }
@@ -528,6 +528,57 @@ nav {
     margin-left: -1.1ex;
     font-size: 0.8em;
     padding-right: 0.1em;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='7'] [data-for] {
+  &:after {
+    content: "VII";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.2ex;
+    font-size: 0.8em;
+    padding-right: 0;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='8'] [data-for] {
+  &:after {
+    content: "VIII";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.4ex;
+    font-size: 0.8em;
+    padding-right: -0.1em;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='9'] [data-for] {
+  &:after {
+    content: "IX";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    margin-left: -1.1ex;
+    font-size: 0.8em;
+    padding-right: 0.1em;
+  }
+  visibility: hidden;
+}
+
+[data-count="roman"][data-value='10'] [data-for] {
+  &:after {
+    content: "X";
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+    font-size: 0.8em;
+    margin-left: -2.3ex;
   }
   visibility: hidden;
 }
