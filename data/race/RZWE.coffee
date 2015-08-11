@@ -49,7 +49,7 @@ races.add
 
   ultra: [
     [__("Dunkelsicht"), 1]
-    __("Immunität gegen Tulmadron")
+    __("Immunität gegen Gift (Tulmadron)")
     __("Unfähig (Schwimmen)")
   ]
 

@@ -39,7 +39,7 @@ define "data/race/elfisch", [], () ->
   ]
 
   ultra: [
-    __("Altersresitenz")
+    __("Altersresistenz")
     [__("Dunkelsicht"), 1]
     __("Nichtschläfer")
     __("Sensibler Geruchssinn")
