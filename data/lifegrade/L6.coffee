@@ -1,9 +1,10 @@
 lifegrades.add
   name: __("Legendär")
 
-  AP: 5000
+  AP: 2100
   E: 114
-  L: 11
+  L: 6
 
   E_MAX: 18
-  F_MAX: NaN
+  F_MAX: 20
+  K_MAX: 20
