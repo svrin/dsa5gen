@@ -18,34 +18,34 @@ require ["data/skill/liturgy"], (S) ->
     name: __("Ackersegen")
     dices: ["MU", "KL", "IN"]
     SF: "B"
-    groups: [__("Liturgien"), __("Peraine (Landwirtschaft)")]
+    groups: [__("Zeremonien"), __("Peraine (Landwirtschaft)")]
 
   skills.add _.extend {}, S,
     name: __("Exorzismus")
     dices: ["MU", "IN", "CH", "SK"]
     SF: "B"
-    groups: [__("Liturgien"), __("Praios (Antimagie)"), __("Boron (Traum)")]
+    groups: [__("Zeremonien"), __("Praios (Antimagie)"), __("Boron (Traum)")]
 
   skills.add _.extend {}, S,
     name: __("Geweihter Panzer")
     dices: ["MU", "IN", "CH"]
     SF: "B"
-    groups: [__("Liturgien"), __("Rondra (Sturm)")]
+    groups: [__("Zeremonien"), __("Rondra (Sturm)")]
 
   skills.add _.extend {}, S,
     name: __("Löwengestalt")
     dices: ["MU", "KL", "IN"]
     SF: "B"
-    groups: [__("Liturgien"), __("Rondra (Schild)"), __("Rondra (Sturm)")]
+    groups: [__("Zeremonien"), __("Rondra (Schild)"), __("Rondra (Sturm)")]
 
   skills.add _.extend {}, S,
     name: __("Nebelleib")
     dices: ["KL", "IN", "CH"]
     SF: "B"
-    groups: [__("Liturgien"), __("Phex (Schatten)")]
+    groups: [__("Zeremonien"), __("Phex (Schatten)")]
 
   skills.add _.extend {}, S,
     name: __("Objektweihe")
     dices: ["KL", "IN", "CH"]
     SF: "C"
-    groups: [__("Liturgien"), __("Aspekt (allgemein)")]
+    groups: [__("Zeremonien"), __("Aspekt (allgemein)")]
