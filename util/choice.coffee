@@ -26,6 +26,8 @@ choice = (args...) ->
       @$el.append 'Choice amounts: ' + amounts
       @$el.append 'For Elements: ' + elements
 
-  new ChoiceView
+  rtn = new ChoiceView
+  rtn.elements = elements
+  rtn.amounts = amounts
 
 
