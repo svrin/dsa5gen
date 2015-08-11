@@ -1,18 +1,21 @@
+# @version: US25001
+# @page: 198-201
+
 define "data/skill/nature", [], () ->
-  min: 1
+  min: 0
 
   groups: [
     __("Naturtalente")
-    __("Fertigkeiten")
+    __("Talente")
   ]
 
 require ["data/skill/nature"], (S) ->
   skills.add _.extend {}, S,
     name: __("Fährtensuchen")
 
-    dices: ["KL", "IN", "IN"]
+    dices: ["MU", "IN", "GE"]
 
-    BE: false
+    BE: true
     SF: "C"
 
   skills.add _.extend {}, S,
@@ -42,23 +45,23 @@ require ["data/skill/nature"], (S) ->
   skills.add _.extend {}, S,
     name: __("Pflanzenkunde")
 
-    dices: ["KL", "IN", "FF"]
+    dices: ["KL", "FF", "KO"]
 
-    BE: false
+    BE: "j/n"
     SF: "C"
 
   skills.add _.extend {}, S,
     name: __("Tierkunde")
 
-    dices: ["MU", "KL", "IN"]
+    dices: ["MU", "MU", "CH"]
 
-    BE: false
+    BE: true
     SF: "C"
 
   skills.add _.extend {}, S,
     name: __("Wildnisleben")
 
-    dices: ["IN", "GE", "KO"]
+    dices: ["MU", "GE", "KO"]
 
     BE: true
     SF: "C"

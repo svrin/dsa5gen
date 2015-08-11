@@ -1,104 +1,83 @@
-define "data/skill/knowledge", [], () ->
-  min: 1
+# @version: US25001
+# @page: 194-198
+
+define "data/skill/society", [], () ->
+  min: 0
 
   groups: [
-    __("Wissenstalente")
-    __("Fertigkeiten")
+    __("Gesellschaftstalente")
+    __("Talente")
   ]
 
-require ["data/skill/knowledge"], (S) ->
+require ["data/skill/society"], (S) ->
   skills.add _.extend {}, S,
-    name: __("Brett- & Glücksspiel")
+    name: __("Bekehren & Überzeugen")
 
-    dices: ["KL", "KL", "IN"]
-
-    BE: false
-    SF: "A"
-
-  skills.add _.extend {}, S,
-    name: __("Geographie")
-
-    dices: ["KL", "KL", "IN"]
+    dices: ["MU", "KL", "CH"]
 
     BE: false
     SF: "B"
 
   skills.add _.extend {}, S,
-    name: __("Geschichtswissen")
+    name: __("Betören")
 
-    dices: ["KL", "KL", "IN"]
-
-    BE: false
-    SF: "B"
-
-  skills.add _.extend {}, S,
-    name: __("Götter & Kulte")
-
-    dices: ["KL", "KL", "IN"]
+    dices: ["MU", "CH", "CH"]
 
     BE: false
     SF: "B"
 
   skills.add _.extend {}, S,
-    name: __("Kriegskunst")
+    name: __("Einschüchtern")
 
-    dices: ["MU", "KL", "IN"]
+    dices: ["MU", "IN", "CH"]
 
     BE: false
-    SF: "A"
+    SF: "B"
 
   skills.add _.extend {}, S,
-    name: __("Magiekunde")
+    name: __("Etikette")
 
-    dices: ["KL", "KL", "IN"]
+    dices: ["KL", "IN", "CH"]
+
+    BE: false
+    SF: "B"
+
+  skills.add _.extend {}, S,
+    name: __("Gassenwissen")
+
+    dices: ["KL", "IN", "CH"]
 
     BE: false
     SF: "C"
 
   skills.add _.extend {}, S,
-    name: __("Mechanik")
+    name: __("Menschenkenntnis")
 
-    dices: ["KL", "KL", "FF"]
+    dices: ["KL", "IN", "CH"]
 
     BE: false
+    SF: "C"
+
+  skills.add _.extend {}, S,
+    name: __("Überreden")
+
+    dices: ["MU", "IN", "CH"]
+
+    BE: false
+    SF: "C"
+
+  skills.add _.extend {}, S,
+    name: __("Verkleiden")
+
+    dices: ["IN", "CH", "GE"]
+
+    BE: true
     SF: "B"
 
   skills.add _.extend {}, S,
-    name: __("Rechnen")
+    name: __("Willenskraft")
 
-    dices: ["KL", "KL", "IN"]
-
-    BE: false
-    SF: "A"
-
-  skills.add _.extend {}, S,
-    name: __("Rechtskunde")
-
-    dices: ["KL", "KL", "IN"]
+    dices: ["MU", "IN", "CH"]
 
     BE: false
-    SF: "A"
-
-  skills.add _.extend {}, S,
-    name: __("Sagen & Legenden")
-
-    dices: ["KL", "KL", "IN"]
-
-    BE: false
-    SF: "B"
-
-  skills.add _.extend {}, S,
-    name: __("Staatskunst")
-
-    dices: ["KL", "KL", "CH"]
-
-    BE: false
-    SF: "A"
-
-  skills.add _.extend {}, S,
-    name: __("Sternkunde")
-
-    dices: ["KL", "KL", "IN"]
-
-    BE: false
-    SF: "B"
+    SF: "C"

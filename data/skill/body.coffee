@@ -1,9 +1,12 @@
+# @version: US25001
+# @page: 188-193
+
 define "data/skill/body", [], () ->
-  min: 1
+  min: 0
 
   groups: [
     __("Körpertalente")
-    __("Fertigkeiten")
+    __("Talente")
   ]
 
 require ["data/skill/body"], (S) ->
@@ -34,15 +37,23 @@ require ["data/skill/body"], (S) ->
   skills.add _.extend {}, S,
     name: __("Körperbeherrschung")
 
-    dices: ["IN", "GE", "KK"]
+    dices: ["GE", "GE", "KO"]
 
     BE: true
-    SF: "C"
+    SF: "D"
+
+  skills.add _.extend {}, S,
+    name: __("Kraftakt")
+
+    dices: ["KO", "KK", "KK"]
+
+    BE: true
+    SF: "B"
 
   skills.add _.extend {}, S,
     name: __("Reiten")
 
-    dices: ["IN", "GE", "KK"]
+    dices: ["CH", "GE", "KK"]
 
     BE: true
     SF: "B"
@@ -61,12 +72,12 @@ require ["data/skill/body"], (S) ->
     dices: ["MU", "MU", "KO"]
 
     BE: false
-    SF: "C"
+    SF: "D"
 
   skills.add _.extend {}, S,
     name: __("Singen")
 
-    dices: ["IN", "CH", "KO"]
+    dices: ["KL", "CH", "KO"]
 
     BE: false
     SF: "A"
@@ -77,12 +88,12 @@ require ["data/skill/body"], (S) ->
     dices: ["KL", "IN", "IN"]
 
     BE: false
-    SF: "C"
+    SF: "D"
 
   skills.add _.extend {}, S,
     name: __("Tanzen")
 
-    dices: ["CH", "GE", "GE"]
+    dices: ["KL", "CH", "GE"]
 
     BE: true
     SF: "A"
@@ -90,7 +101,7 @@ require ["data/skill/body"], (S) ->
   skills.add _.extend {}, S,
     name: __("Taschendiebstahl")
 
-    dices: ["MU", "IN", "FF"]
+    dices: ["MU", "FF", "GE"]
 
     BE: true
     SF: "B"
@@ -106,7 +117,7 @@ require ["data/skill/body"], (S) ->
   skills.add _.extend {}, S,
     name: __("Zechen")
 
-    dices: ["IN", "KO", "KK"]
+    dices: ["KL", "KO", "KK"]
 
     BE: false
     SF: "A"

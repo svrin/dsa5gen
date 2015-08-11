@@ -1,9 +1,12 @@
+# @version: US25001
+# @page: 206-213
+
 define "data/skill/crafting", [], () ->
-  min: 1
+  min: 0
 
   groups: [
     __("Handwerkstalente")
-    __("Fertigkeiten")
+    __("Talente")
   ]
 
 require ["data/skill/crafting"], (S) ->
@@ -16,11 +19,19 @@ require ["data/skill/crafting"], (S) ->
     SF: "C"
 
   skills.add _.extend {}, S,
+    name: __("Boote & Schiffe")
+
+    dices: ["FF", "GE", "KK"]
+
+    BE: true
+    SF: "B"
+
+  skills.add _.extend {}, S,
     name: __("Fahrzeuge")
 
-    dices: ["IN", "CH", "FF"]
+    dices: ["CH", "FF", "KO"]
 
-    BE: false
+    BE: true
     SF: "A"
 
   skills.add _.extend {}, S,
@@ -36,21 +47,21 @@ require ["data/skill/crafting"], (S) ->
 
     dices: ["MU", "KL", "IN"]
 
-    BE: false
+    BE: true
     SF: "B"
 
   skills.add _.extend {}, S,
     name: __("Heilkunde Krankheiten")
 
-    dices: ["MU", "KL", "IN"]
+    dices: ["MU", "IN", "KO"]
 
-    BE: false
+    BE: true
     SF: "B"
 
   skills.add _.extend {}, S,
     name: __("Heilkunde Seele")
 
-    dices: ["KL", "IN", "CH"]
+    dices: ["IN", "CH", "KO"]
 
     BE: false
     SF: "B"
@@ -60,55 +71,55 @@ require ["data/skill/crafting"], (S) ->
 
     dices: ["KL", "FF", "FF"]
 
-    BE: false
-    SF: "C"
+    BE: true
+    SF: "D"
 
   skills.add _.extend {}, S,
     name: __("Holzbearbeitung")
 
-    dices: ["KL", "FF", "KK"]
+    dices: ["FF", "GE", "KO"]
 
-    BE: false
+    BE: true
     SF: "B"
 
   skills.add _.extend {}, S,
-    name: __("Kochen & Backen")
+    name: __("Lebensmittelbearbeitung")
 
-    dices: ["KL", "IN", "FF"]
+    dices: ["IN", "FF", "FF"]
 
-    BE: false
+    BE: true
     SF: "A"
 
   skills.add _.extend {}, S,
     name: __("Lederbearbeitung")
 
-    dices: ["KL", "FF", "FF"]
+    dices: ["FF", "GE", "KO"]
 
-    BE: false
+    BE: true
     SF: "B"
 
   skills.add _.extend {}, S,
     name: __("Malen & Zeichnen")
 
-    dices: ["KL", "IN", "FF"]
+    dices: ["IN", "FF", "FF"]
 
-    BE: false
+    BE: true
     SF: "A"
 
   skills.add _.extend {}, S,
     name: __("Metallbearbeitung")
 
-    dices: ["KL", "FF", "KK"]
+    dices: ["FF", "KO", "KK"]
 
-    BE: false
+    BE: true
     SF: "C"
 
   skills.add _.extend {}, S,
     name: __("Musizieren")
 
-    dices: ["IN", "CH", "FF"]
+    dices: ["CH", "FF", "KO"]
 
-    BE: false
+    BE: true
     SF: "A"
 
   skills.add _.extend {}, S,
@@ -120,20 +131,12 @@ require ["data/skill/crafting"], (S) ->
     SF: "C"
 
   skills.add _.extend {}, S,
-    name: __("Seefahrt")
-
-    dices: ["FF", "GE", "KK"]
-
-    BE: false
-    SF: "B"
-
-  skills.add _.extend {}, S,
     name: __("Steinbearbeitung")
 
     dices: ["FF", "FF", "KK"]
 
-    BE: false
-    SF: "B"
+    BE: true
+    SF: "A"
 
   skills.add _.extend {}, S,
     name: __("Stoffbearbeitung")
