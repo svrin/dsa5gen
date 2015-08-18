@@ -23,13 +23,12 @@ define "data/race/elfisch", [], () ->
     ZK: -6
     GS: 8
 
-    IN: 1
-    GE: 1
-
   auto: [
     __("Zweistimmiger Gesang")
     __("Zauberer")
-#/* @TODO: choice(-2, "KL", "KK") */
+    choice(-2, "KL_max", "KK_max")
+    ["IN_max", 1]
+    ["GE_max", 1]
   ]
 
   cultures: [

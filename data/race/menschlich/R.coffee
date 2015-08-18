@@ -22,7 +22,7 @@ define "data/race/menschlich", [], () ->
       GS: 8
 
     auto: [
-      choice(1, "MU", "KL", "IN", "CH", "FF", "GE", "KO", "KK")
+      choice(1, "MU_max", "KL_max", "IN_max", "CH_max", "FF_max", "GE_max", "KO_max", "KK_max")
     ]
 
 

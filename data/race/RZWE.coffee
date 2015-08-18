@@ -40,11 +40,10 @@ races.add
     ZK: -4
     GS: 6
 
-    KO: 1
-    KK: 1
-
   auto: [
-    choice(-2, "CH", "GE")
+    choice(-2, "CH_max", "GE_max")
+    ["KO_max", 1]
+    ["KK_max", 1]
   ]
 
   ultra: [
