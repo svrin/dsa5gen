@@ -1,84 +1,75 @@
 ###
   Nivesen
+
+  @version: US25001
+  @page: 109
 ###
 
-cultures.add [
-  name: __("Nivesen")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Nivesen")
 
-  social: [
-    false
-    [500, [__("Oberschicht")]]
-    [100, [__("Mittelschicht")]]
-    [20, [__("Unterschicht")]]
-    false
-  ]
+    social: [__("Adel")]
 
-  speech: [
-    [__("Nujuka")]
-  ]
+    speech: [
+      [__("Nujuka")]
+    ]
 
-  lettering: []
+    lettering: []
 
-  knowledge: [
-    [__("Kulturkunde (Nivesen)")]
-  ]
+    common: [
+      __("Kälteresistenz")
+      __("Richtungssinn")
 
-  common: [
-    __("Gefahreninstinkt")
-    __("Kälteresistenz")
-    __("Richtungssinn")
-    __("Verbundenheit (Tiere)")
+      __("Angst vor ... (engen Räumen)")
+      __("Angst vor ... (Höhe)")
+      __("Angst vor ... (Toten und Untoten)")
+    ]
 
-    __("Schlechte Eigenschaft (Höhenangst)")
-    __("Schlechte Eigenschaft (Raumangst)")
-    __("Schlechte Eigenschaft (Totenangst)")
+    ultra: [
+      [__("Fährtensuchen"), 2]
+      [__("Fahrzeuge"), 1]
+      [__("Körperbeherrschung"), 0]
+      [__("Orientierung"), 2]
+      [__("Pflanzenkunde"), 1]
+      [__("Sagen & Legenden"), 2]
+      [__("Sinnesschärfe"), 1]
+      [__("Tierkunde"), 2]
+      [__("Verbergen"), 1]
+      [__("Wildnisleben"), 2]
+    ]
 
-    __("Fährtensuchen")
-    __("Fahrzeuge")
-    __("Körperbeherrschung")
-    __("Orientierung")
-    __("Pflanzenkunde")
-    __("Sagen & Legenden")
-    __("Sinnesschärfe")
-    __("Tierkunde")
-    __("Verbergen")
-    __("Wildnisleben")
-  ]
+    uncommon: [
+      __("Hitzeresistenz")
+      __("Soziale Anpassungsfähigkeit")
 
-  uncommon: [
-    __("Hitzeresistenz")
-    __("Soziale Anpassungsfähigkeit")
+      __("Fettleibig")
+      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Schlechte Eigenschaft (Goldgier)")
 
-    __("Fettleibig")
-    __("Niedrige Lebenskraft")
-    __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Goldgier)")
-    __("Schlechte Eigenschaft (Platzangst)")
+      __("Boote & Schiffe")
+      __("Einschüchtern")
+      __("Etikette")
+      __("Fliegen")
+      __("Gassenwissen")
+      __("Geschichtswissen")
+      __("Kriegskunst")
+      __("Reiten")
+      __("Schlösserknacken")
+    ]
 
-    __("Einschüchtern")
-    __("Etikette")
-    __("Fliegen")
-    __("Gassenwissen")
-    __("Geschichtswissen")
-    __("Heraldik")
-    __("Kriegskunst")
-    __("Schlösserknacken")
-    __("Seefahrt")
-  ]
+    professions: [
+      __("Handwerker")
+      __("Heiler")
+      __("Jäger")
+      __("Landarbeiter")
+      __("Räuber")
+      __("Söldner")
+      __("Streuner")
+      __("Tierkundiger")
 
-  professions: [
-    __("Handwerker")
-    __("Heiler")
-    __("Jäger")
-    __("Landarbeiter")
-    __("Räuber")
-    __("Söldner")
-    __("Streuner")
-    __("Tierkundiger")
+      __("Magiedilettant")
+      __("Schamane")
 
-    __("Magiedilettant")
-    __("Schamane")
-
-    __("Hochschamane (Himmelswölfe)")
-  ]
-]
+      __("Hochschamane (Himmelswölfe)")
+    ]

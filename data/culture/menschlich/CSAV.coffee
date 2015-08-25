@@ -1,93 +1,79 @@
 ###
-  Südaventurien
+  Südaventurier
+
+  @version: US25001
+  @page: 114
 ###
 
-cultures.add [
-  name: __("Südaventurien")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Südaventurier")
 
-  social: [
-    [2000, [__("Adlig")],
-     [__(" "), __("Amtsadel"), 1, __("Erbadel"), 1, __("Titularadel"), 1]]
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    [20, [__("Unfrei")], [__("Sklave"), 1]]
-  ]
+    social: [__("Adel"), __("Unfrei")]
 
-  speech: [
-    [__("Garethi")]
-    [__("Garethi (Brabaci)")]
-    [__("Garethi (Charypto)")]
-    [__("Garethi (Gatamo)")]
-  ]
+    speech: [
+      [__("Garethi")]
+      [__("Garethi (Brabaci)")]
+      [__("Garethi (Charypto)")]
+      [__("Garethi (Gatamo)")]
+    ]
 
-  lettering: [
-    __("Kusliker Zeichen")
-  ]
+    lettering: [
+      __("Kusliker Zeichen")
+    ]
 
-  knowledge: [
-    [__("Kulturkunde (Südaventurien)")]
-    [__("Kulturkunde (Südaventurien/Al'Anfa)")]
-    [__("Kulturkunde (Südaventurien/Brabak)")]
-    [__("Kulturkunde (Südaventurien/Bukanier)")]
-    [__("Kulturkunde (Südaventurien/Chrohop)")]
-    [__("Kulturkunde (Südaventurien/Mengbilla)")]
-    [__("Kulturkunde (Südaventurien/Salem)")]
-  ]
+    common: [
+      __("Hitzeresistenz")
+      __("Soziale Anpassungsfähigkeit")
 
-  common: [
-    __("Hitzeresistenz")
-    __("Soziale Anpassungsfähigkeit")
+      __("Kälteempfindlich")
+      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Persönlichkeitsschwächen (Eitelkeit)")
+      __("Schlechte Eigenschaften (Aberglaube)")
+      __("Schlechte Eigenschaften (Goldgier)")
+      __("Schlechte Eigenschaften (Jähzorn)")
+      __("Schlechte Eigenschaften (Neugier)")
+    ]
 
-    __("Kälteempfindlichkeit")
-    __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Eitelkeit)")
-    __("Schlechte Eigenschaft (Goldgier)")
-    __("Schlechte Eigenschaft (Jähzorn)")
-    __("Schlechte Eigenschaft (Neugier)")
+    ultra: [
+      [__("Betören"), 1]
+      [__("Boote & Schiffe"), 1]
+      [__("Fischen & Angeln"), 1]
+      [__("Gassenwissen"), 2]
+      [__("Handel"), 0]
+      [__("Heilkunde Gift"), 1]
+      [__("Menschenkenntnis"), 2]
+      [__("Orientierung"), 0]
+      [__("Pflanzenkunde"), 0]
+      [__("Überreden"), 1]
+      [__("Willenskraft"), 1]
+      [__("Zechen"), 0]
+    ]
 
-    __("Betören")
-    __("Fischen & Angeln")
-    __("Gassenwissen")
-    __("Handel")
-    __("Heilkunde Gift")
-    __("Menschenkenntnis")
-    __("Orientierung")
-    __("Pflanzenkunde")
-    __("Seefahrt")
-    __("Staatskunst")
-    __("Überreden")
-    __("Willenskraft")
-    __("Zechen")
-  ]
+    uncommon: [
+      __("Kälteresistenz")
 
-  uncommon: [
-    __("Kälteresistenz")
+      __("Angst vor ... (engen Räumen)")
+      __("Angst vor ... (Menschenmassen)")
+      __("Angst vor ... (Toten und Untoten)")
 
-    __("Schlechte Eigenschaft (Angst vor ...)")
-    __("Schlechte Eigenschaft (Raumangst)")
-    __("Schlechte Eigenschaft (Totenangst)")
+      __("Fahrzeuge")
+      __("Fliegen")
 
-    __("Fahrzeuge")
-    __("Fliegen")
-    __("Geographie")
+      __("Ritter")
+      __("Stammeskrieger")
+    ]
 
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
+    professions: [
+      __("Profession (profan)")
 
-  professions: [
-    __("Profession (profan)")
+      __("Hexe")
+      __("Magier")
 
-    __("Alchimist")
-    __("Druide")
-    __("Hexe")
-    __("Magiedilettant")
-    __("Magier")
-    __("Scharlatan")
-    __("Zaubertänzer (Sharisadim)")
-
-    __("Geweihter (Zwölfgötterkult)")
-  ]
-]
+      __("Geweihter (Boron)")
+      __("Geweihter (Hesinde)")
+      __("Geweihter (Peraine)")
+      __("Geweihter (Phex)")
+      __("Geweihter (Praois)")
+      __("Geweihter (Rondra)")
+    ]

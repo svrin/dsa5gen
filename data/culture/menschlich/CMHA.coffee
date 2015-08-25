@@ -1,61 +1,59 @@
 ###
-  Horasier
+  Mhanadistani
 
   @version: US25001
-  @page: 102
+  @page: 104
 ###
 
 require ["data/culture/menschlich"], (C) ->
   cultures.add _.extend C,
-    name: __("Horasier")
+    name: __("Mhanadistani")
 
-    social: [__("Adel")]
+    social: [__("Adel"), __("Unfrei")]
 
     speech: [
-      [__("Garethi")]
-      [__("Garethi (Horathi)")]
+      [__("Tylamidya")]
+      [__("Tylamidya (Mhanadisch-Balashidisch)")]
     ]
 
     lettering: [
-      __("Kusliker Zeichen")
+      __("Schrift (Tulamidya)")
     ]
 
     common: [
+      __("Glück")
+      __("Hitzeresistenz")
       __("Soziale Anpassungsfähigkeit")
 
-      __("Persönlichkeitsschwächen (Arroganz)")
       __("Persönlichkeitsschwächen (Eitelkeit)")
       __("Persönlichkeitsschwächen (Vorurteile)")
-  ]
+      __("Schlechte Eigenschaften (Aberglaube)")
+      __("Schlechte Eigenschaften (Goldgier)")
+      __("Schlechte Eigenschaften (Neugier)")
+    ]
 
     ultra: [
-      [__("Betören"), 1]
-      [__("Boote & Schiffe"), 1]
-      [__("Etikette"), 2]
-      [__("Fahrzeuge"), 0]
+      [__("Brett- & Glücksspiel"), 2]
       [__("Gassenwissen"), 2]
-      [__("Geographie"), 1]
       [__("Geschichtswissen"), 1]
-      [__("Handel"), 1]
-      [__("Magiekunde"), 0]
-      [__("Mechanik"), 1]
-      [__("Rechnen"), 2]
-      [__("Rechtskunde"), 2]
-      [__("Tanzen"), 1]
+      [__("Götter & Kulte"), 2]
+      [__("Handel"), 2]
+      [__("Magiekunde"), 1]
+      [__("Reiten"), 0]
+      [__("Sagen & Legenden"), 2]
+      [__("Sternkunde"), 0]
+      [__("Taschendiebstahl"), 0]
+      [__("Überreden"), 1]
     ]
 
     uncommon: [
-      __("Begabung in Naturtalenten")
+      __("Kälteresistenz")
 
+      __("Angst vor ... (Menschenmassen)")
       __("Angst vor ... (engen Räumen)")
 
-      __("Fährtensuchen")
-      __("Fliegen")
-      __("Pflanzenkunde")
-      __("Tierkunde")
-      __("Wildnisleben")
+      __("Fahrzeuge")
 
-      __("Gladiator")
       __("Ritter")
       __("Stammeskrieger")
     ]

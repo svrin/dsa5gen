@@ -1,81 +1,65 @@
 ###
-  Bornland
+  Bornländer
+
+  @version: US25001
+  @page: 99
 ###
 
-cultures.add [
-  name: __("Bornland")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Bornländer")
 
-  social: [
-    [2000, [__("Adlig")],
-     [__("Ritter"), __("Ritter"), 1],
-     [__("Baron/in"), __("Erbadel"), 1],
-     [__("Graf"), __("Erbadel"), 1],
-     [__("Herzog"), __("Erbadel"), 1],
-     [__("Fürst"), __("Erbadel"), 1]]
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    [20, [__("Unfrei")], [__("Leibeigener"), 1]]
-  ]
+    social: [__("Adel"), __("Unfrei")]
 
-  speech: [
-    [__("Garethi")]
-    [__("Garethi (Bornländisch)")]
-  ]
+    speech: [
+      [__("Garethi")]
+      [__("Garethi (Bornländisch)")]
+    ]
 
-  lettering: []
+    lettering: [
+      __("Schrift (Kusliker Zeichen)")
+    ]
 
-  knowledge: [
-    [__("Kulturkunde (Bornland)")]
-    [__("Kulturkunde (Bornland/Festenland)")]
-    [__("Kulturkunde (Bornland/Mark)")]
-    [__("Kulturkunde (Bornland/Sewerien)")]
-  ]
+    common: [
+      __("Kälteresistenz")
+      __("Richtungssinn")
+      __("Zäher Hund")
 
-  common: [
-    __("Eisern")
-    __("Hohe Lebenskraft")
-    __("Kälteresistenz")
-    __("Richtungssinn")
-    __("Zäher Hund")
+      __("Hitzeempfindlichkeit")
+      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Schlechte Eigenschaft (Aberglaube)")
+    ]
 
-    __("Hitzeempfindlichkeit")
-    __("Kind der Wildnis")
-    __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Vorurteile)")
-    __("Verarmt")
+    ultra: [
+      [__("Fährtensuchen"), 1]
+      [__("Holzbearbeitung"), 2]
+      [__("Lebensmittelbearbeitung"), 1]
+      [__("Orientierung"), 1]
+      [__("Pflanzenkunde"), 1]
+      [__("Wildnisleben"), 1]
+      [__("Zechen"), 2]
+    ]
 
-    __("Fährtensuchen")
-    __("Holzbearbeitung")
-    __("Kochen & Backen")
-    __("Orientierung")
-    __("Pflanzenkunde")
-    __("Wildnisleben")
-    __("Zechen")
-  ]
+    uncommon: [
+      __("Hitzeresistenz")
 
-  uncommon: [
-    __("Hitzeresistenz")
+      __("Fliegen")
+      __("Gassenwissen")
 
-    __("Schlechte Eigenschaft (Platzangst)")
+      __("Gladiator")
+      __("Stammeskrieger")
+    ]
 
-    __("Fliegen")
-    __("Gassenwissen")
+    professions: [
+      __("Profession (profan)")
 
-    __("Stammeskrieger")
-  ]
+      __("Hexe")
+      __("Magier")
 
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Druide")
-    __("Hexe")
-    __("Magiedilettant")
-    __("Magier")
-    __("Scharlatan")
-
-    __("Geweihter (Zwölfgötterkult)")
-    __("Priester des Ingrakults")
-  ]
-]
+      __("Geweihter (Boron)")
+      __("Geweihter (Hesinde)")
+      __("Geweihter (Peraine)")
+      __("Geweihter (Phex)")
+      __("Geweihter (Praois)")
+      __("Geweihter (Rondra)")
+    ]

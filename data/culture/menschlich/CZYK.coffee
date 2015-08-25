@@ -1,89 +1,79 @@
 ###
-  Zyklopeninseln
+  Zyklopäer
 ###
 
-cultures.add [
-  name: __("Zyklopeninseln")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Zyklopäer")
 
-  social: [
-    [2000, [__("Adlig")],
-     [__("Kyrios"), __("Erbadel"), 1],
-     [__("Einokrat"), __("Erbadel"), 2]]
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    false
+    social: [__("Adel")]
+
+    speech: [
+      [__("Zyklopäisch")]
+      [__("Garethi")]
+      [__("Garethi (Horathi)")]
+    ]
+
+    lettering: [
+      __("Schrift (Kusliker Zeichen)")
+    ]
+
+    common: [
+      __("Begabung (Schwimmen)")
+      __("Entfernungssinn")
+      __("Gutaussehend")
+      __("Richtungssinn")
+      __("Wohlklang")
+
+      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Persönlichkeitsschwächen (Eitelkeit)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
   ]
 
-  speech: [
-    [__("Zyklopäisch")]
-  ]
+    ultra: [
+      [__("Boote & Schiffe"), 1]
+      [__("Fährtensuchen"), 0]
+      [__("Fischen & Angeln"), 2]
+      [__("Geschichtswissen"), 1]
+      [__("Götter & Kulte"), 2]
+      [__("Klettern"), 0]
+      [__("Mechanik"), 0]
+      [__("Musizieren"), 1]
+      [__("Orientierung"), 0]
+      [__("Pflanzenkunde"), 0]
+      [__("Rechnen"), 1]
+      [__("Rechtskunde"), 1]
+      [__("Sagen & Legenden"), 1]
+      [__("Sternkunde"), 0]
+      [__("Stoffbearbeitung"), 0]
+      [__("Tanzen"), 1]
+      [__("Tierkunde"), 0]
+      [__("Wildnisleben"), 0]
+    ]
 
-  lettering: [
-    __("Schrift (Kusliker Zeichen)")
-  ]
+    uncommon: [
+      __("Kälteresistenz")
 
-  knowledge: [
-    [__("Kulturkunde (Zyklopeninseln)")]
-  ]
+      __("Angst vor ... (dem Meer)")
 
-  common: [
-    __("Begabung (Schwimmen)")
-    __("Entfernungssinn")
-    __("Gutaussehend")
-    __("Richtungssinn")
-    __("Verbundenheit (Feen)")
-    __("Wohlklang")
+      __("Fahrzeuge")
+      __("Menschenkenntnis")
+      __("Reiten")
 
-    __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Eitelkeit)")
-    __("Schlechte Eigenschaft (Vorurteile)")
+      __("Ritter")
+      __("Stammeskrieger")
+    ]
 
-    __("Fährtensuchen")
-    __("Fischen & Angeln")
-    __("Geschichtswissen")
-    __("Götter & Kulte")
-    __("Klettern")
-    __("Mechanik")
-    __("Musizieren")
-    __("Orientierung")
-    __("Pflanzenkunde")
-    __("Rechnen")
-    __("Rechtskunde")
-    __("Sagen & Legenden")
-    __("Seefahrt")
-    __("Staatskunst")
-    __("Sternkunde")
-    __("Stoffbearbeitung")
-    __("Tanzen")
-    __("Tierkunde")
-    __("Wildnisleben")
-  ]
+    professions: [
+      __("Profession (profan)")
 
-  uncommon: [
-    __("Kälteresistenz")
+      __("Hexe")
+      __("Magier")
 
-    __("Schlechte Eigenschaft (Meeresangst)")
-    __("Schlechte Eigenschaft (Platzangst)")
-
-    __("Fahrzeuge")
-    __("Fliegen")
-    __("Gassenwissen")
-    __("Reiten")
-
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
-
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Druide")
-    __("Hexe")
-    __("Magier")
-    __("Scharlatan")
-
-    __("Geweihter (Zwölfgötterkult)")
-  ]
-]
+      __("Geweihter (Boron)")
+      __("Geweihter (Hesinde)")
+      __("Geweihter (Peraine)")
+      __("Geweihter (Phex)")
+      __("Geweihter (Praois)")
+      __("Geweihter (Rondra)")
+    ]

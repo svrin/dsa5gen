@@ -1,94 +1,79 @@
 ###
-  Aranien
+  Aranier
+
+  @version: US25001
+  @page: 98
 ###
 
-cultures.add [
-  name: __("Aranien")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Aranier")
 
-  social: [
-    [2000, [__("Adlig")],
-     [__("Wesir/a"), __("Amtsadel"), 1],
-     [__("Kadi"), __("Amtsadel"), 2],
-     [__("Haran/i"), __("Erbadel"), 2],
-     [__("Bey/sa"), __("Amtsadel"), 2],
-     [__("Beyroun/a"), __("Erbadel"), 5]]
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    [20, [__("Unfrei")], [__("Sklave"), 1]]
-  ]
+    social: [__("Adel"), __("Unfrei")]
 
-  speech: [
-    [__("Tulamidya")]
-    [__("Tulamidya (Aranisch)")]
-    [__("Garethi")]
-  ]
+    speech: [
+      [__("Tulamidya")]
+      [__("Tulamidya (Aranisch)")]
+      [__("Garethi")]
+      [__("Garethi (Aretya)")]
+    ]
 
-  lettering: [
-    __("Schrift (Kusliker Zeichen)")
-    __("Schrift (Tulamidya)")
-  ]
+    lettering: [
+      __("Schrift (Kusliker Zeichen)")
+      __("Schrift (Tulamidya)")
+    ]
 
-  knowledge: [
-    [__("Kulturkunde (Aranien)")]
-    [__("Kulturkunde (Aranien/Baburin)")]
-    [__("Kulturkunde (Aranien/Elburum)")]
-    [__("Kulturkunde (Aranien/Gorien)")]
-    [__("Kulturkunde (Aranien/Palmyramis)")]
-    [__("Kulturkunde (Aranien/Zorgan)")]
-  ]
+    common: [
+      __("Begabung in Gesellschaftstalenten")
+      __("Entfernungssinn")
 
-  common: [
-    __("Begabung in Gesellschaftstalenten")
-    __("Entfernungssinn")
+      __("Persönlichkeitsschwächen (Eitelkeit)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Schlechte Eigenschaft (Aberglaube)")
+      __("Zerbrechlich")
+    ]
 
-    __("Schlechte Eigenschaft (Abgerglaube)")
-    __("Schlechte Eigenschaft (Krankhafte Reinlichkeit)")
-    __("Schlechte Eigenschaft (Vorurteile)")
-    __("Zerbrechlich")
+    ultra: [
+      [__("Betören"), 1]
+      [__("Brett- & Glücksspiel"), 1]
+      [__("Gassenwissen"), 2]
+      [__("Handel"), 2]
+      [__("Malen & Zeichnen"), 0]
+      [__("Menschenkenntnis"), 1]
+      [__("Rechnen"), 1]
+      [__("Rechtskunde"), 0]
+      [__("Reiten"), 0]
+      [__("Sagen & Legenden"), 1]
+      [__("Sternkunde"), 0]
+      [__("Stoffbearbeitung"), 1]
+      [__("Taschendiebstahl"), 0]
+      [__("Überreden"), 2]
+    ]
 
-    __("Betören")
-    __("Brett- & Glücksspiel")
-    __("Gassenwissen")
-    __("Handel")
-    __("Malen & Zeichnen")
-    __("Menschenkenntnis")
-    __("Rechnen")
-    __("Rechtskunde")
-    __("Reiten")
-    __("Sagen & Legenden")
-    __("Seefahrt")
-    __("Sternkunde")
-    __("Stoffbearbeitung")
-    __("Taschendiebstahl")
-    __("Überreden")
-  ]
+    uncommon: [
+      __("Kälteresistenz")
 
-  uncommon: [
-    __("Kälteresistenz")
+      __("Blutrausch")
 
-    __("Blutrausch")
+      __("Einschüchtern")
+      __("Fährtensuchen")
+      __("Wildnisleben")
 
-    __("Einschüchtern")
-    __("Fährtensuchen")
-    __("Wildnisleben")
+      __("Ritter")
+      __("Gladiator")
+      __("Stammeskrieger")
+    ]
 
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
+    professions: [
+      __("Profession (profan)")
 
-  professions: [
-    __("Profession (profan)")
+      __("Hexe")
+      __("Magier")
 
-    __("Alchimist")
-    __("Hexe")
-    __("Magiedilettant")
-    __("Magier (Gildenmagier)")
-    __("Magier (Qabalyimmagier)")
-    __("Scharlatan")
-    __("Zaubertänzer (Majunas)")
-    __("Zaubertänzer (Sharisadim)")
-
-    __("Geweihter (Zwölfgötterkult)")
-  ]
-]
+      __("Geweihter (Boron)")
+      __("Geweihter (Hesinde)")
+      __("Geweihter (Peraine)")
+      __("Geweihter (Phex)")
+      __("Geweihter (Praois)")
+      __("Geweihter (Rondra)")
+    ]

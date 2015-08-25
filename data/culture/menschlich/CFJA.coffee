@@ -1,106 +1,81 @@
 ###
   Fjarninger
+
+  @version: US25001
+  @page: 101
 ###
 
-cultures.add [
-  name: __("Fjarninger")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Fjarninger")
 
-  social: [
-    false
-    [500, [__("Oberschicht")]]
-    [100, [__("Mittelschicht")]]
-    [20, [__("Unterschicht")]]
-    false
-  ]
+    social: [__("Adel")]
 
-  speech: [
-    [__("Fjarningisch")]
-  ]
+    speech: [
+      [__("Fjarningisch")]
+    ]
 
-  lettering: []
+    lettering: []
 
-  knowledge: [
-    [__("Kulturkunde (Fjarninger)")]
-  ]
+    common: [
+      __("Entfernungssinn")
+      __("Kälteresistenz")
+      __("Richtungssinn")
+      __("Verbesserte Regeneration (Lebensenergie)")
+      __("Zäher Hund")
 
-  common: [
-    __("Balance")
-    __("Eisern")
-    __("Entfernungssinn")
-    __("Herausragende Eigenschaft (MU)")
-    __("Herausragende Eigenschaft (KO)")
-    __("Herausragende Eigenschaft (KK)")
-    __("Kälteresistenz")
-    __("Kampfrausch")
-    __("Hohe Lebenskraft")
-    __("Richtungssinn")
-    __("Saumagen")
-    __("Unheimlich")
-    __("Verbesserte Regeneration (Lebensenergie)")
-    __("Zäher Hund")
+      __("Angst vor ... (dem Meer)")
+      __("Blutrausch")
+      __("Hitzeempfindlichkeit")
+      __("Schlechte Eigenschaft (Aberglaube)")
+      __("Schlechte Eigenschaft (Jähzorn)")
+      __("Unfähig in Gesellschaftstalenten")
+    ]
 
-    __("Auffällig")
-    __("Blutrausch")
-    __("Hitzeempfindlichkeit")
-    __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Jähzorn)")
-    __("Schlechte Eigenschaft (Meeresangst)")
-    __("Unfähig in Gesellschaftstalenten")
+    ultra: [
+      [__("Einschüchtern"), 2]
+      [__("Fährtensuchen"), 1]
+      [__("Holzbearbeitung"), 0]
+      [__("Klettern"), 0]
+      [__("Körperbeherrschung"), 1]
+      [__("Kraftakt"), 2]
+      [__("Metallbearbeitung"), 1]
+      [__("Orientierung"), 2]
+      [__("Selbstbeherrschung"), 1]
+      [__("Steinbearbeitung"), 1]
+      [__("Tierkunde"), 0]
+      [__("Wildnisleben"), 2]
+    ]
 
-    __("Einschüchtern")
-    __("Fährtensuchen")
-    __("Holzbearbeitung")
-    __("Klettern")
-    __("Körperbeherrschung")
-    __("Metallbearbeitung")
-    __("Orientierung")
-    __("Selbstbeherrschung")
-    __("Steinbearbeitung")
-    __("Tierkunde")
-    __("Wildnisleben")
-  ]
+    uncommon: [
+      __("Unscheinbar")
+      __("Hitzeresistenz")
+      __("Soziale Anpassungsfähigkeit")
 
-  uncommon: [
-    __("Unauffällig")
-    __("Hitzeresistenz")
-    __("Soziale Anpassungsfähigkeit")
+      __("Angst vor ... (Dunkelheit)")
+      __("Angst vor ... (engen Räumen)")
+      __("Angst vor ... (Höhe)")
+      __("Fettleibig")
+      __("Kälteempfindlich")
+      __("Krankheitsanfällig")
+      __("Nachtblind")
+      __("Persönlichkeitsschwächen (Eitelkeit)")
+      __("Zerbrechlich")
 
-    __("Fettleibig")
-    __("Glasknochen")
-    __("Krankheitsanfällig")
-    __("Lahm")
-    __("Nachtblind")
-    __("Niedrige Lebenskraft")
-    __("Schlechte Eigenschaft (Dunkelangst)")
-    __("Schlechte Eigenschaft (Höhenangst)")
-    __("Schlechte Eigenschaft (Krankhafte Reinlichkeit)")
-    __("Schlechte Eigenschaft (Platzangst)")
-    __("Schlechte Eigenschaft (Raumangst)")
-    __("Zerbrechlich")
+      __("Betören")
+      __("Boote & Schiffe")
+      __("Etikette")
+      __("Fahrzeuge")
+      __("Fliegen")
+      __("Gassenwissen")
+      __("Reiten")
+      __("Schlösserknacken")
+    ]
 
-    __("Betören")
-    __("Etikette")
-    __("Fahrzeuge")
-    __("Fliegen")
-    __("Gassenwissen")
-    __("Reiten")
-    __("Schlösserknacken")
-    __("Seefahrt")
-    __("Staatskunst")
-  ]
-
-  professions: [
-    __("Gladiator")
-    __("Handwerker")
-    __("Heiler")
-    __("Jäger")
-    __("Räuber")
-    __("Söldner")
-    __("Stammeskrieger")
-    __("Tierkundiger")
-
-    __("Geweihter (Angara)")
-    __("Berserker")
-    __("Geweihter (Firun)")
-  ]
-]
+    professions: [
+      __("Händler")
+      __("Heiler")
+      __("Jäger")
+      __("Söldner")
+      __("Stammeskrieger")
+    ]

@@ -1,92 +1,74 @@
 ###
   Ambosszwerge
+
+  @version: US25001
+  @page: 122
 ###
 
-cultures.add [
-  name: __("Ambosszwerge")
+require ["data/culture/zwergisch"], (C) ->
+  cultures.add _.extend C,
+    name: __("Ambosszwerge")
 
-  social: [
-    false
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    false
-  ]
+    speech: [
+      [__("Rogolan")]
+      [__("Rogolan (ambosszwergischer Dialekt)")]
+    ]
 
-  speech: [
-    [__("Rogolan")]
-    [__("Rogolan (ambosszwergischer Dialekt)")]
-  ]
+    common: [
+      __("Begabung in Handwerkstalenten")
+      __("Verbesserte Regeneration (Lebensenergie)")
+      __("Waffenbegabung")
+      __("Zäher Hund")
 
-  lettering: [
-    __("Schrift (Rogolan-Runden)")
-  ]
+      __("Angst vor ... (dem Meer)")
+      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Prinzipientreue (zwergischer Ehrenkodex)")
+      __("Schlechte Eigenschaften (Geiz)")
+      __("Schlechte Eigenschaften (Goldgier)")
+    ]
 
-  knowledge: [
-    [__("Kulturkunde (Ambosszwerge)")]
-  ]
+    ultra: [
+      [__("Einschüchtern"), 1]
+      [__("Geschichtswissen"), 1]
+      [__("Kraftakt"), 2]
+      [__("Kriegskunst"), 2]
+      [__("Mechanik"), 1]
+      [__("Metallbearbeitung"), 2]
+      [__("Orientierung"), 1]
+      [__("Rechnen"), 0]
+      [__("Sagen & Legenden"), 1]
+      [__("Selbstbeherrschung"), 0]
+      [__("Steinbearbeitung"), 2]
+      [__("Verbergen"), 1]
+      [__("Zechen"), 2]
+    ]
 
-  common: [
-    __("Begabung in Handwerkstalenten")
-    __("Begabung in Kampftechniken")
-    __("Hohe Lebenskraft")
-    __("Verbesserte Regeneration (Lebensenergie)")
-    __("Zäher Hund")
+    uncommon: [
+      __("Soziale Anpassungsfähigkeit")
 
-    __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Geiz)")
-    __("Schlechte Eigenschaft (Goldgier)")
-    __("Schlechte Eigenschaft (Platzangst)")
-    __("Schlechte Eigenschaft (Meeresangst)")
-    __("Schlechte Eigenschaft (Vorurteile)")
-    __("Prinzipientreue")
-    __("Übler Geruch")
+      __("Angst vor ... (Dunkelheit)")
+      __("Angst vor ... (engen Räumen)")
+      __("Nachtblind")
+      __("Persönlichkeitsschwächen (Eitelkeit)")
 
-    __("Einschüchtern")
-    __("Geschichtswissen")
-    __("Kriegskunst")
-    __("Mechanik")
-    __("Metallbearbeitung")
-    __("Orientierung")
-    __("Rechnen")
-    __("Sagen & Legenden")
-    __("Selbstbeherrschung")
-    __("Steinbearbeitung")
-    __("Verbergen")
-    __("Zechen")
-  ]
+      __("Betören")
+      __("Boote & Schiffe")
+      __("Fischen & Angeln")
+      __("Fliegen")
+      __("Reiten")
+      __("Schwimmen")
+      __("Sternkunde")
 
-  uncommon: [
-    __("Soziale Anpassungsfähigkeit")
+      __("Gladiator")
+      __("Ritter")
+      __("Stammeskrieger")
+    ]
 
-    __("Nachtblind")
-    __("Schlechte Eigenschaft (Dunkelangst)")
-    __("Schlechte Eigenschaft (Krankhafte Reinlichkeit)")
-    __("Schlechte Eigenschaft (Raumangst)")
+    professions: [
+      __("Profession (profan)")
 
-    __("Betören")
-    __("Fischen & Angeln")
-    __("Fliegen")
-    __("Reiten")
-    __("Schwimmen")
-    __("Seefahrt")
-    __("Sternkunde")
+      __("Magier")
 
-    __("Gladiator")
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
-
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Geode")
-    __("Magier")
-
-    __("Geweihter (Angrosch)")
-    __("Geweihter (Ingerimm)")
-    __("Geweihter (Kor)")
-    __("Geweihter (Rondra)")
-  ]
-]
+      __("Geweihter (Rondra)")
+    ]

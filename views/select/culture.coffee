@@ -26,13 +26,28 @@ define ['views/bases/selectbox', 'data/culture', 'data/animal',
     prev: 'race'
     next: 'profession'
 
+    initialize: (options) ->
+      super options
+
+      @listenTo @.collection, "reset", @render
+      @listenTo @.collection, "add", @add_equipment
+
+      # on keyinput the options are filtered
+      @.$el.off "click.dsa5gen.culture-packet-buy"
+      @.$el.on "click.dsa5gen.culture-packet-buy", "button[name='profile.select.character.profile.packet']", @buy_packet
+
+    buy_packet: =>
+      culture = this.model.get('culture')
+      _.each culture.get('ultra'), (talent) =>
+        if talent[1]
+          this.model.incr("skills", talent[0], talent[1])
+
     render: ->
       rtn = super()
 
       # Variables used
       culture = this.model.get('culture')
       profile = this.model.get('profile')
-      social = this.model.get('social')
 
       # The additional informations are only available when a race has been selected
       return rtn if not culture
@@ -44,40 +59,11 @@ define ['views/bases/selectbox', 'data/culture', 'data/animal',
       # Build the mother tong select
       @.build_select culture, profile, 'speech'
 
-      # Build the culture knowledge select
-      @.build_select culture, profile, 'knowledge'
-
       # Build familiar select
       node = @.$el.find("[name='character.familiar']")
       animals.each (animal) ->
         item_node = $("<option>").text(animal.get('name')).attr("value", animal.get('name'))
         node.find('optgroup').append(item_node)
-      #if profile[attr]
-      #  node.find('option:first').text(profile[attr]).val(profile[attr]).prop('selected', 'selected')
-
-      # Build the social state select
-      node = @.$el.find("[name='character.social']")
-      _.each culture.get('social'), (item) ->
-        return true if not item
-
-        name = item[1]
-        specialisations = _.tail(item, 2)
-
-        if specialisations.length > 0
-          optgroup = $("<optgroup>").appendTo(node).attr("label", name)
-
-          _.each specialisations, (element) ->
-            name = element[0]
-            type = element[1]
-            multiplicator = element[2]
-
-            option = $("<option>").appendTo(optgroup).attr("value", name).text("#{name} (#{type} x#{multiplicator})")
-            option.prop('selected', 'selected').attr("selected", "selected") if social == name
-
-        else
-          option = $("<option>").appendTo(node).attr("value", name).text(name)
-          if "#{social}" == "#{name}"
-            option.prop('selected', 'selected').attr("selected", "selected")
 
 
 

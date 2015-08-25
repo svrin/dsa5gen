@@ -1,76 +1,67 @@
 ###
-  Svellttal
+  Svellttaler
+
+  @version: US25001
+  @page: 115
 ###
 
-cultures.add [
-  name: __("Svellttal")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Svellttaler")
 
-  social: [
-    false
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    [20, [__("Unfrei")], [__("Leibeigener"), 1]]
+    social: [__("Adel"), __("Unfrei")]
+
+    speech: [
+      [__("Garethi")]
+    ]
+
+    lettering: [
+      __("Kusliker Zeichen")
+    ]
+
+    common: [
+      __("Entfernungssinn")
+      __("Richtungssinn")
+      __("Zäher Hund")
+
+      __("Angst vor ... (engen Räumen)")
+      __("Schlechte Eigenschaften (Aberglaube)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
   ]
 
-  speech: [
-    [__("Garethi")]
-  ]
+    ultra: [
+      [__("Fährtensuchen"), 2]
+      [__("Fahrzeuge"), 2]
+      [__("Orientierung"), 1]
+      [__("Pflanzenkunde"), 1]
+      [__("Sagen & Legenden"), 1]
+      [__("Tierkunde"), 1]
+      [__("Wildnisleben"), 1]
+    ]
 
-  lettering: [
-    __("Kusliker Zeichen")
-  ]
+    uncommon: [
+      __("Hitzeresistenz")
 
-  knowledge: [
-    [__("Kulturkunde (Svellttal)")]
-  ]
+      __("Krankheitsanfällig")
 
-  common: [
-    __("Entfernungssinn")
-    __("Gefahreninstinkt")
-    __("Hohe Lebenskraft")
-    __("Richtungssinn")
-    __("Zäher Hund")
+      __("Etikette")
+      __("Fliegen")
+      __("Geschichtswissen")
 
-    __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Raumangst)")
-    __("Schlechte Eigenschaft (Vorurteile)")
+      __("Gladiator")
+      __("Stammeskrieger")
+    ]
 
-    __("Fährtensuchen")
-    __("Fahrzeuge")
-    __("Orientierung")
-    __("Pflanzenkunde")
-    __("Sagen & Legenden")
-    __("Tierkunde")
-    __("Wildnisleben")
-  ]
+    professions: [
+      __("Profession (profan)")
 
-  uncommon: [
-    __("Hitzeresistenz")
+      __("Hexe")
+      __("Magier")
 
-    __("Krankheitsanfällig")
-    __("Schlechte Eigenschaft (Krankhafte Reinlichkeit)")
-    __("Schlechte Eigenschaft (Platzangst)")
-
-    __("Etikette")
-    __("Fliegen")
-    __("Geschichtswissen")
-    __("Seefahrt")
-    __("Staatskunst")
-
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
-
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Druide")
-    __("Hexe")
-    __("Magier")
-    __("Scharlatan")
-
-    __("Geweihter (Zwölfgötterkult)")
-  ]
-]
+      __("Geweihter (Boron)")
+      __("Geweihter (Hesinde)")
+      __("Geweihter (Peraine)")
+      __("Geweihter (Phex)")
+      __("Geweihter (Praois)")
+      __("Geweihter (Rondra)")
+    ]

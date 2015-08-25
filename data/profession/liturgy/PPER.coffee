@@ -36,7 +36,7 @@ class PPER
     [__("Menschenkenntnis"), 4]
     [__("Willenskraft"), 4]
 
-    [__("Pflanzekunde"), 7]
+    [__("Pflanzenkunde"), 7]
 
     [__("Götter & Kulte"), 7]
     [__("Rechnen"), 4]

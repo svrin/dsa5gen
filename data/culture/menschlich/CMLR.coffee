@@ -1,70 +1,58 @@
 ###
-  Mittelreich
+  Mittelreicher
+
+  @version: US25001
+  @page: 106
 ###
 
-cultures.add [
-  name: __("Mittelreich")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Mittelreicher")
 
-  social: [
-    [2000, [__("Adlig")],
-     [__("Vogt"), __("Amtsadel"), 1],
-     [__("Ritter"), __("Ritter"), 1],
-     [__("Edler"), __("Erbadel"), 2],
-     [__("Junker"), __("Erbadel"), 2],
-     [__("Baron/in"), __("Erbadel"), 4]]
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    [20, [__("Unfrei")], [__("Leibeigener"), 1]]
-  ]
+    social: [__("Adel"), __("Unfrei")]
 
-  speech: [
-    [__("Garethi")]
-  ]
+    speech: [
+      [__("Garethi")]
+    ]
 
-  lettering: [
-    __("Kusliker Zeichen")
-  ]
+    lettering: [
+      __("Kusliker Zeichen")
+    ]
 
-  knowledge: [
-    [__("Kulturkunde (Mittelreich)")]
-    [__("Kulturkunde (Mittelreich/Albernia)")]
-    [__("Kulturkunde (Mittelreich/Almada)")]
-    [__("Kulturkunde (Mittelreich/Darpatien)")]
-    [__("Kulturkunde (Mittelreich/Donnerbach)")]
-    [__("Kulturkunde (Mittelreich/Garetien)")]
-    [__("Kulturkunde (Mittelreich/Kosch)")]
-    [__("Kulturkunde (Mittelreich/Nordmarken)")]
-    [__("Kulturkunde (Mittelreich/Tobrien)")]
-    [__("Kulturkunde (Mittelreich/Weiden)")]
-  ]
+    common: [
+      __("Glück")
 
-  common: [
-    __("Glück")
+      __("Schlechte Eigenschaften (Aberglaube)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
+    ]
 
-    __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Vorurteile)")
+    ultra: [
+      [__("Holzbearbeitung"), 1]
+      [__("Metallbearbeitung"), 1]
+      [__("Pflanzenkunde"), 1]
+      [__("Stoffbearbeitung"), 1]
+      [__("Tierkunde"), 1]
+    ]
 
-    __("Holzbearbeitung")
-    __("Metallbearbeitung")
-    __("Pflanzenkunde")
-    __("Stoffbearbeitung")
-    __("Tierkunde")
-  ]
+    uncommon: [
+      __("Hitzeresistenz")
+      __("Kälteresistenz")
 
-  uncommon: [
-    __("Hitzeresistenz")
-    __("Kälteresistenz")
+      __("Fliegen")
 
-    __("Schlechte Eigenschaft (Platzangst)")
-    __("Schlechte Eigenschaft (Raumangst)")
+      __("Stammeskrieger")
+    ]
 
-    __("Fliegen")
-  ]
+    professions: [
+      __("Profession (profan)")
 
-  professions: [
-    __("Profession (profan)")
-    __("Profession (magisch)")
-    __("Profession (geweiht)")
-  ]
-]
+      __("Hexe")
+      __("Magier")
+
+      __("Geweihter (Boron)")
+      __("Geweihter (Hesinde)")
+      __("Geweihter (Peraine)")
+      __("Geweihter (Phex)")
+      __("Geweihter (Praois)")
+      __("Geweihter (Rondra)")
+    ]

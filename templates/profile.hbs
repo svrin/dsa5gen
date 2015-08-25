@@ -19,6 +19,7 @@
     <li data-href="culture">
         <% if (culture) { %>
         <%= culture.get('name_' + gender) || culture.get('name') %>
+        (<%= character.get('social') || "Frei" %>)
         <% } else { %>
         <a href="#culture">Kultur wählen</a>
         <% } %>

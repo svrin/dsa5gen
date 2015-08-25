@@ -55,6 +55,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
 
       fget @, 'AP', @calc_ap
       fget @, 'V', @calc_v
+      fget @, 'CAP', @calc_cap
 
       if not @id
         @set('uuid', uuid())
@@ -186,7 +187,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
 
     calc_ap: (top) ->
       ###
-        Compelte AP of character
+        Complete AP of character
       ###
       character = @
 
@@ -197,7 +198,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         Returns Mittelschicht if not set
       ###
       if not top? or not top
-        return __("Mittelschicht")
+        return __("Frei")
       else
         return top
 
@@ -229,15 +230,15 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
               base[ec] = "uncommon"
             else
               base[ec] = "undef"
-          console.debug "Unwired choice view"
+          console.log "Unwired choice view"
           return
 
-        if _.isBoolean(element)
-          console.log "Unexpected element in common/uncommon list", element
+        else if _.isBoolean(element)
+          console.log "Unexpected element in common/uncommon list (bool)", arguments
           return
 
-        if !_.isString(element)
-          console.error "Unexpected element in common/uncommon list", element
+        else if !_.isString(element)
+          console.error "Unexpected element in common/uncommon list", arguments, element
           return
 
         if weight > 0 && (!base[element] || base[element] == "common")
@@ -257,6 +258,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       # Add content from culture
       culture = character.get('culture')
       if culture
+        _.each culture.get('ultra'), _.partial(lambda, 1);
         _.each culture.get('common'), _.partial(lambda, 1);
         _.each culture.get('uncommon'), _.partial(lambda, -1);
 
@@ -348,9 +350,9 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         else if element.constructor.name == 'PoolView'
           element.$el.insertAfter $("[name='character.ap']")
         else if element.constructor.name == 'ChoiceView'
-          console.warn "Do something about this"
+          console.warn "Skill Calculation touched ChoiceView, should be made visible", element
         else
-          console.warn "Unexpected element in list", element
+          console.error "Unexpected element in list", element, arguments
           throw "Unexpected element in list"
 
       # Add content from race
@@ -482,6 +484,23 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
           }
       return rtn
 
+    calc_cap: (top) ->
+      ###
+        Returns current costs for cultur packet
+      ###
+      character = @
+
+      culture = character.get('culture')
+      return 0 if not culture
+      rtn = 0
+
+      _.each culture.get('ultra'), (item) ->
+        skill = skills.get(item[0])
+        value = skill.getCosts(item[1])
+
+        rtn += value
+
+      return rtn
 
     calc_costs: (costs) ->
       ###
@@ -542,146 +561,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         else
           costs += (skill_costs || 0)
 
-        if skill.get('SF') == "A"
-          costs += switch value
-            when 25 then 12 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 + 14
-            when 24 then 12 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13
-            when 23 then 12 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12
-            when 22 then 12 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11
-            when 21 then 12 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
-            when 20 then 12 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9
-            when 19 then 12 + 2 + 3 + 4 + 5 + 6 + 7 + 8
-            when 18 then 12 + 2 + 3 + 4 + 5 + 6 + 7
-            when 17 then 12 + 2 + 3 + 4 + 5 + 6
-            when 16 then 12 + 2 + 3 + 4 + 5
-            when 15 then 12 + 2 + 3 + 4
-            when 14 then 12 + 2 + 3
-            when 13 then 12 + 2
-            when 12 then 12
-            when 11 then 11
-            when 10 then 10
-            when  9 then 9
-            when  8 then 8
-            when  7 then 7
-            when  6 then 6
-            when  5 then 5
-            when  4 then 4
-            when  3 then 3
-            when  2 then 2
-            when  1 then 1
-            else 0
-        else if skill.get('SF') == "B"
-          costs += switch value
-            when 25 then 24 + 4 + 6 + 8 + 10 + 12 + 14 + 16 + 18 + 20 + 22 + 24 + 26 + 28
-            when 24 then 24 + 4 + 6 + 8 + 10 + 12 + 14 + 16 + 18 + 20 + 22 + 24 + 26
-            when 23 then 24 + 4 + 6 + 8 + 10 + 12 + 14 + 16 + 18 + 20 + 22 + 24
-            when 22 then 24 + 4 + 6 + 8 + 10 + 12 + 14 + 16 + 18 + 20 + 22
-            when 21 then 24 + 4 + 6 + 8 + 10 + 12 + 14 + 16 + 18 + 20
-            when 20 then 24 + 4 + 6 + 8 + 10 + 12 + 14 + 16 + 18
-            when 19 then 24 + 4 + 6 + 8 + 10 + 12 + 14 + 16
-            when 18 then 24 + 4 + 6 + 8 + 10 + 12 + 14
-            when 17 then 24 + 4 + 6 + 8 + 10 + 12
-            when 16 then 24 + 4 + 6 + 8 + 10
-            when 15 then 24 + 4 + 6 + 8
-            when 14 then 24 + 4 + 6
-            when 13 then 24 + 4
-            when 12 then 24
-            when 11 then 22
-            when 10 then 20
-            when  9 then 18
-            when  8 then 16
-            when  7 then 14
-            when  6 then 12
-            when  5 then 10
-            when  4 then 8
-            when  3 then 6
-            when  2 then 4
-            when  1 then 2
-            else 0
-        else if skill.get('SF') == "C"
-          costs += switch value
-            when 25 then 36 + 6 + 9 + 12 + 15 + 18 + 21 + 24 + 27 + 30 + 33 + 36 + 39 + 42
-            when 24 then 36 + 6 + 9 + 12 + 15 + 18 + 21 + 24 + 27 + 30 + 33 + 36 + 39
-            when 23 then 36 + 6 + 9 + 12 + 15 + 18 + 21 + 24 + 27 + 30 + 33 + 36
-            when 22 then 36 + 6 + 9 + 12 + 15 + 18 + 21 + 24 + 27 + 30 + 33
-            when 21 then 36 + 6 + 9 + 12 + 15 + 18 + 21 + 24 + 27 + 30
-            when 20 then 36 + 6 + 9 + 12 + 15 + 18 + 21 + 24 + 27
-            when 19 then 36 + 6 + 9 + 12 + 15 + 18 + 21 + 24
-            when 18 then 36 + 6 + 9 + 12 + 15 + 18 + 21
-            when 17 then 36 + 6 + 9 + 12 + 15 + 18
-            when 16 then 36 + 6 + 9 + 12 + 15
-            when 15 then 36 + 6 + 9 + 12
-            when 14 then 36 + 6 + 9
-            when 13 then 36 + 6
-            when 12 then 36
-            when 11 then 33
-            when 10 then 30
-            when  9 then 27
-            when  8 then 24
-            when  7 then 21
-            when  6 then 18
-            when  5 then 15
-            when  4 then 12
-            when  3 then 9
-            when  2 then 6
-            when  1 then 3
-            else 0
-        else if skill.get('SF') == "D"
-          costs += switch value
-            when 25 then 48 + 8 + 12 + 16 + 20 + 24 + 28 + 32 + 36 + 40 + 44 + 48 + 52 + 56
-            when 24 then 48 + 8 + 12 + 16 + 20 + 24 + 28 + 32 + 36 + 40 + 44 + 48 + 52
-            when 23 then 48 + 8 + 12 + 16 + 20 + 24 + 28 + 32 + 36 + 40 + 44 + 48
-            when 22 then 48 + 8 + 12 + 16 + 20 + 24 + 28 + 32 + 36 + 40 + 44
-            when 21 then 48 + 8 + 12 + 16 + 20 + 24 + 28 + 32 + 36 + 40
-            when 20 then 48 + 8 + 12 + 16 + 20 + 24 + 28 + 32 + 36
-            when 19 then 48 + 8 + 12 + 16 + 20 + 24 + 28 + 32
-            when 18 then 48 + 8 + 12 + 16 + 20 + 24 + 28
-            when 17 then 48 + 8 + 12 + 16 + 20 + 24
-            when 16 then 48 + 8 + 12 + 16 + 20
-            when 15 then 48 + 8 + 12 + 16
-            when 14 then 48 + 8 + 12
-            when 13 then 48 + 8
-            when 12 then 48
-            when 11 then 44
-            when 10 then 40
-            when  9 then 36
-            when  8 then 32
-            when  7 then 28
-            when  6 then 24
-            when  5 then 20
-            when  4 then 16
-            when  3 then 12
-            when  2 then 8
-            when  1 then 4
-            else 0
-        else if skill.get('SF') == "E"
-          costs += switch value
-            when 25 then 1375
-            when 24 then 1195
-            when 23 then 1030
-            when 22 then 880
-            when 21 then 745
-            when 20 then 625
-            when 19 then 510
-            when 18 then 420
-            when 17 then 345
-            when 16 then 285
-            when 15 then 240
-            when 14 then 210
-            when 13 then 195
-            when 12 then 180
-            when 11 then 165
-            when 10 then 150
-            when  9 then 135
-            when  8 then 120
-            when  7 then 105
-            when  6 then 90
-            when  5 then 75
-            when  4 then 60
-            when  3 then 45
-            when  2 then 30
-            when  1 then 15
-            else 0
+        if skill.get('SF')
+          costs += skill.getCosts(value)
         else if !skill_costs?
           console.error "Unknown cost table for skill " + skill.get('name')
 

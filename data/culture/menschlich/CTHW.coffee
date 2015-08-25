@@ -1,98 +1,76 @@
 ###
   Thorwaler
+
+  @version: US25001
+  @page: 116
 ###
 
-cultures.add [
-  name: __("Thorwaler")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Thorwaler")
 
-  social: [
-    false
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    false
+    social: [__("Adel")]
+
+    speech: [
+      [__("Throwalsch")]
+      [__("Throwalsch (Throwal-Dialekt)")]
+      [__("Throwalsch (Premer-Dialekt)")]
+      [__("Throwalsch (Olporter-Dialekt)")]
+      [__("Throwalsch (Waskirer Hochland-Dialekt)")]
+      [__("Throwalsch (Dialekt der Olportsteine)")]
+    ]
+
+    lettering: [
+      __("Thorwalsche Runen")
+      __("Kusliker Zeichen")
+    ]
+
+    common: [
+      __("Entfernungssinn")
+      __("Glück")
+      __("Richtungssinn")
+      __("Verbesserte Regeneration (Lebensenergie)")
+      __("Zäher Hund")
+
+      __("Blutrausch")
+      __("Schlechte Eigenschaften (Aberglaube)")
+      __("Schlechte Eigenschaften (Neugier)")
+      __("Schlechte Eigenschaften (Rachsucht)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
   ]
 
-  speech: [
-    [__("Throwalsch")]
-    [__("Throwalsch (Throwal-Dialekt)")]
-    [__("Throwalsch (Premer-Dialekt)")]
-    [__("Throwalsch (Olporter-Dialekt)")]
-    [__("Throwalsch (Waskirer Hochland-Dialekt)")]
-    [__("Throwalsch (Dialekt der Olportsteine)")]
-  ]
+    ultra: [
+      [__("Boote & Schiffe"), 2]
+      [__("Einschüchtern"), 1]
+      [__("Fischen & Angeln"), 2]
+      [__("Geographie"), 1]
+      [__("Holzbearbeitung"), 2]
+      [__("Kraftakt"), 2]
+      [__("Orientierung"), 1]
+      [__("Sagen & Legenden"), 1]
+      [__("Selbstbeherrschung"), 0]
+      [__("Steinbearbeitung"), 0]
+      [__("Sternkunde"), 0]
+      [__("Zechen"), 2]
+    ]
 
-  lettering: [
-    __("Thorwalsche Runen")
-  ]
+    uncommon: [
+      __("Soziale Anpassungsfähigkeit")
 
-  knowledge: [
-    [__("Kulturkunde (Thorwal)")]
-    [__("Kulturkunde (Thorwal/Nordthrowal)")]
-    [__("Kulturkunde (Thorwal/Premer Halbinsel)")]
-    [__("Kulturkunde (Thorwal/Südthorwal)")]
-    [__("Kulturkunde (Thorwal/Waskirer Hochland)")]
-    [__("Kulturkunde (Thorwal/Olportsteine)")]
-  ]
+      __("Angst vor ... (dem Meer)")
 
-  common: [
-    __("Balance")
-    __("Eisern")
-    __("Entfernungssinn")
-    __("Glück")
-    __("Kampfrausch")
-    __("Herausragende Eigenschaft (MU)")
-    __("Herausragende Eigenschaft (KO)")
-    __("Herausragende Eigenschaft (KK)")
-    __("Hohe Lebenskraft")
-    __("Richtungssinn")
-    __("Verbesserte Regeneration (Lebensenergie)")
-    __("Zäher Hund")
+      __("Etikette")
+      __("Fliegen")
+      __("Lebensmittelbearbeitung")
 
-    __("Blutrausch")
-    __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Neugier)")
-    __("Schlechte Eigenschaft (Rachsucht)")
-    __("Schlechte Eigenschaft (Raumangst)")
-    __("Schlechte Eigenschaft (Vorurteile)")
+      __("Gladiator")
+      __("Ritter")
+      __("Stammeskrieger")
+    ]
 
-    __("Einschüchtern")
-    __("Fischen & Angeln")
-    __("Geographie")
-    __("Orientierung")
-    __("Sagen & Legenden")
-    __("Seefahrt")
-    __("Selbstbeherrschung")
-    __("Steinbearbeitung")
-    __("Sternkunde")
-    __("Zechen")
-  ]
+    professions: [
+      __("Profession (profan)")
 
-  uncommon: [
-    __("Soziale Anpassungsfähigkeit")
-
-    __("Schlechte Eigenschaft (Meeresangst)")
-    __("Schlechte Eigenschaft (Platzangst)")
-
-    __("Etikette")
-    __("Fliegen")
-    __("Kochen & Backen")
-    __("Staatskunst")
-
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
-
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Druide")
-    __("Hexe")
-    __("Magiedilettant")
-    __("Magier")
-    __("Scharlatan")
-
-    __("Geweihter (Zwölfgötterkult)")
-  ]
-]
+      __("Hexe")
+      __("Magier")
+    ]

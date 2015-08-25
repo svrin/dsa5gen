@@ -1,5 +1,8 @@
 ###
   Firnelfen
+
+  @version: US25001
+  @page: 120
 ###
 
 require ["data/culture/elfisch"], (C) ->
@@ -11,53 +14,49 @@ require ["data/culture/elfisch"], (C) ->
       [__("Isdira (firnelfischer Dialekt)")]
     ]
 
-    knowledge: [
-      [__("Kulturkunde (Firnelfen)")]
-    ]
-
     common: [
       __("Begabung in Körpertalenten")
       __("Begabung in Naturtalenten")
-      __("Begabung in Kampftechniken")
-      __("Gefahreninstinkt")
+      __("Kälteresistenz")
       __("Magische Einstimmung (Wesen der Eises)")
       __("Richtungssinn")
-      __("Verbundenheit (Tiere)")
+      __("Waffenbegabung")
 
       __("Artefaktgebunden (Instrument)")
-      __("Magieblockade (KL)")
-      __("Schlechte Eigenschaft (Arroganz)")
-      __("Schlechte Eigenschaft (Vorurteile)")
-      __("Schlechte Eigenschaft (Weltfremd)")
+      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Persönlichkeitsschwächen (Weltfremd)")
+      __("Prinzipientreue (Elfische Weitsicht)")
       __("Unfähig in Wissenstalenten")
-      __("Wilde Magie")
+    ]
 
-      __("Fährtensuchen")
-      __("Fesseln")
-      __("Fischen & Angeln")
-      __("Klettern")
-      __("Körperbeherrschung")
-      __("Musizieren")
-      __("Orientierung")
-      __("Pflanzenkunde")
-      __("Selbstbeherrschung")
-      __("Singen")
-      __("Sinnesschärfe")
-      __("Tanzen")
-      __("Tierkunde")
-      __("Verbergen")
-      __("Wildnisleben")
+    ultra: [
+      [__("Fährtensuchen"), 2]
+      [__("Fesseln"), 0]
+      [__("Fischen & Angeln"), 1]
+      [__("Klettern"), 1]
+      [__("Körperbeherrschung"), 2]
+      [__("Musizieren"), 2]
+      [__("Orientierung"), 2]
+      [__("Pflanzenkunde"), 0]
+      [__("Selbstbeherrschung"), 1]
+      [__("Singen"), 2]
+      [__("Sinnesschärfe"), 2]
+      [__("Tanzen"), 0]
+      [__("Tierkunde"), 2]
+      [__("Verbergen"), 2]
+      [__("Wildnisleben"), 2]
     ]
 
     uncommon: [
       __("Begabung in Wissenstalenten")
       __("Soziale Anpassungsfähigkeit")
 
-      __("Schlechte Eigenschaft (Dunkelangst)")
-      __("Schlechte Eigenschaft (Goldgier)")
-      __("Schlechte Eigenschaft (Platzangst)")
-      __("Schlechte Eigenschaft (Rachsucht)")
-      __("Schlechte Eigenschaft (Raumangst)")
+      __("Angst vor ... (Dunkelheit)")
+      __("Angst vor ... (engen Räumen)")
+      __("Kälteempfindlich")
+      __("Schlechte Eigenschaften (Goldgier)")
+      __("Schlechte Eigenschaften (Rachsucht)")
       __("Unfähig in Körpertalenten")
       __("Unfähig in Naturtalenten")
 
@@ -67,7 +66,6 @@ require ["data/culture/elfisch"], (C) ->
       __("Fliegen")
       __("Rechtskunde")
       __("Schlösserknacken")
-      __("Staatskunst")
       __("Zechen")
     ]
 

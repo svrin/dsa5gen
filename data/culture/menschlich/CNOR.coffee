@@ -1,78 +1,66 @@
 ###
   Norbarden
+
+  @version: US25001
+  @page: 110
 ###
 
-cultures.add [
-  name: __("Norbarden")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Norbarden")
 
-  social: [
-    false
-    [500, [__("Oberschicht")]]
-    [100, [__("Mittelschicht")]]
-    [20, [__("Unterschicht")]]
-    false
+    social: []
+
+    speech: [
+      [__("Alaani")]
+      [__("Alaani (Gajka)")]
+      [__("Alaani (Takellen)")]
+    ]
+
+    lettering: [
+      __("Kusliker Zeichen")
+    ]
+
+    common: [
+      __("Kälteresistenz")
+      __("Richtungssinn")
+
+      __("Angst vor ... (engen Räumen)")
+      __("Angst vor ... (Höhe)")
+      __("Schlechte Eigenschaften (Goldgier)")
+      __("Schlechte Eigenschaften (Neugier)")
+      __("Verpflichtungen")
   ]
 
-  speech: [
-    [__("Alaani")]
-    [__("Alaani (Gajka)")]
-    [__("Alaani (Takellen)")]
-  ]
+    ultra: [
+      [__("Fahrzeuge"), 2]
+      [__("Geographie"), 2]
+      [__("Handel"), 2]
+      [__("Orientierung"), 1]
+      [__("Überreden"), 1]
+      [__("Wildnisleben"), 1]
+    ]
 
-  lettering: [
-    __("Kusliker Zeichen")
-  ]
+    uncommon: [
+      __("Hitzeresistenz")
 
-  knowledge: [
-    [__("Kulturkunde (Norbarden)")]
-  ]
+      __("Prinzipentreue")
+      __("Persönlichkeitsschwächen (Arroganz)")
 
-  common: [
-    __("Gutes Gedächtnis")
-    __("Kälteresistenz")
-    __("Richtungssinn")
+      __("Fliegen")
+      __("Boote & Schiffe")
+    ]
 
-    __("Schlechte Eigenschaft (Goldgier)")
-    __("Schlechte Eigenschaft (Höhenangst)")
-    __("Schlechte Eigenschaft (Neugier)")
-    __("Schlechte Eigenschaft (Raumangst)")
+    professions: [
+      __("Händler")
+      __("Heiler")
+      __("Jäger")
+      __("Söldner")
+      __("Streuner")
 
-    __("Fahrzeuge")
-    __("Geographie")
-    __("Handel")
-    __("Orientierung")
-    __("Überreden")
-    __("Wildnisleben")
-  ]
+      __("Hexe")
+      __("Magier")
 
-  uncommon: [
-    __("Hitzeresistenz")
-
-    __("Prinzipentreue")
-    __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Platzangst)")
-
-    __("Fliegen")
-    __("Seefahrt")
-  ]
-
-  professions: [
-    __("Entdecker")
-    __("Gelehrter")
-    __("Gladiator")
-    __("Handwerker")
-    __("Heiler")
-    __("Jäger")
-    __("Landarbeiter")
-    __("Räuber")
-    __("Söldner")
-    __("Streuner")
-    __("Tierkundiger")
-
-    __("Magiedilettant")
-    __("Scharlatan")
-    __("Zibilja")
-
-    __("Geweihter (Zwölfgötterkult)")
-  ]
-]
+      __("Geweihter (Hesinde)")
+      __("Geweihter (Phex)")
+    ]

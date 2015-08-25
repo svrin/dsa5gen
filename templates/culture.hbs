@@ -6,6 +6,17 @@
     <dt><label for="profile.select.character.social">Sozialstatus</label></dt>
     <dd>
         <select name="character.social" id="profile.select.character.social">
+            <% if (culture.get('social').indexOf('Adel') >= 0) { %>
+            <option value="Adel"
+            <% if (character.get('social') == "Adel") { %>selected="selected"<% }%>>Adel</option>
+            <% } %>
+            <option value="Frei"
+            <% if (character.get('social') == "Frei" || !character.get('social')) { %>selected="selected"<%
+            }%>>Frei</option>
+            <% if (culture.get('social').indexOf('Unfrei') >= 0) { %>
+            <option value="Unfrei"
+            <% if (character.get('social') == "Unfrei") { %>selected="selected"<% }%>>Unfrei</option>
+            <% } %>
         </select>
     </dd>
 
@@ -18,15 +29,17 @@
         </select>
     </dd>
 
-    <dt><label for="profile.select.character.profile.knowledge">Kulturkunde</label></dt>
+    <dt><label for="profile.select.character.profile.packet">Kulturpacket</label></dt>
     <dd>
-        <select name="character.profile.knowledge" id="profile.select.character.profile.knowledge">
-            <option value="" data-for="character.profile.knowledge"><%= character.get('profile')['knowledge'] %>
-            </option>
-            <option value="%?">Frei Wählen</option>
-            <optgroup label=""></optgroup>
-        </select>
+        <div>
+            <% var c = 0; _.each(culture.get('ultra'), function (talent) { %><% if (talent[1] > 0) { %><% if (c++ > 0)
+            {%>,<% }%>
+            <%= talent[0] %> +<%= talent[1] %><% }}); %>
+        </div>
+
+        <button name="profile.select.character.profile.packet">erwerben (<%= character.get('CAP') %> AP)</button>
     </dd>
+
 </dl>
 <% } // end culture depended %>
 
@@ -34,9 +47,9 @@
 <% var profession = character.get('profession'); %>
 
 <% if (character.hasFamiliar()) { %>
-<h4>Rasse</h4>
+<h4>Vertrautentier</h4>
 <dl>
-    <dt><label for="profile.select.character.familiar">Vertrautentier</label></dt>
+    <dt><label for="profile.select.character.familiar">Rasse</label></dt>
     <dd>
         <select name="character.familiar" id="profile.select.character.familiar">
             <option value="" data-for="character.profile.familiar"><%= character.get('familiar') &&

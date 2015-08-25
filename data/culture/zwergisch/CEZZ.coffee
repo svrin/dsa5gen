@@ -1,87 +1,70 @@
 ###
   Erzzwerge
+
+  @version: US25001
+  @page: 124
 ###
 
-cultures.add [
-  name: __("Erzzwerge")
+require ["data/culture/zwergisch"], (C) ->
+  cultures.add _.extend C,
+    name: __("Erzzwerge")
 
-  social: [
-    false
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    false
-  ]
+    speech: [
+      [__("Rogolan")]
+      [__("Rogolan (erzzwergischer Dialekt)")]
+    ]
 
-  speech: [
-    [__("Rogolan")]
-    [__("Rogolan (erzzwergischer Dialekt)")]
-  ]
+    common: [
+      __("Begabung in Handwerkstalenten")
+      __("Begabung in Wissenstalenten")
 
-  lettering: [
-    __("Schrift (Rogolan-Runden)")
-  ]
+      __("Angst vor ... (Höhe)")
+      __("Angst vor ... (dem Meer)")
+      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Schlechte Eigenschaften (Geiz)")
+      __("Schlechte Eigenschaften (Goldgier)")
+    ]
 
-  knowledge: [
-    [__("Kulturkunde (Erzzwerge)")]
-  ]
+    ultra: [
+      [__("Geschichtswissen"), 2]
+      [__("Götter & Kulte"), 2]
+      [__("Mechanik"), 2]
+      [__("Metallbearbeitung"), 1]
+      [__("Orientierung"), 0]
+      [__("Rechnen"), 2]
+      [__("Rechtskunde"), 1]
+      [__("Sagen & Legenden"), 2]
+      [__("Selbstbeherrschung"), 1]
+      [__("Steinbearbeitung"), 1]
+      [__("Verbergen"), 2]
+      [__("Zechen"), 1]
+    ]
 
-  common: [
-    __("Begabung in Wissenstalenten")
-    __("Begabung in Handwerkstalenten")
-    __("Gutes Gedächtnis")
+    uncommon: [
+      __("Soziale Anpassungsfähigkeit")
 
-    __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Geiz)")
-    __("Schlechte Eigenschaft (Goldgier)")
-    __("Schlechte Eigenschaft (Höhenangst)")
-    __("Schlechte Eigenschaft (Platzangst)")
-    __("Schlechte Eigenschaft (Meeresangst)")
-    __("Schlechte Eigenschaft (Vorurteile)")
+      __("Angst vor ... (Dunkelheit)")
+      __("Angst vor ... (engen Räumen)")
+      __("Nachtblind")
+      __("Schlechte Eigenschaften (Neugier)")
 
-    __("Geschichtswissen")
-    __("Götter & Kulte")
-    __("Mechanik")
-    __("Metallbearbeitung")
-    __("Orientierung")
-    __("Rechnen")
-    __("Rechtskunde")
-    __("Sagen & Legenden")
-    __("Selbstbeherrschung")
-    __("Steinbearbeitung")
-    __("Verbergen")
-    __("Zechen")
-  ]
+      __("Betören")
+      __("Boote & Schiffe")
+      __("Fahrzeuge")
+      __("Fischen & Angeln")
+      __("Fliegen")
+      __("Gaukeleien")
+      __("Reiten")
+      __("Schwimmen")
 
-  uncommon: [
-    __("Soziale Anpassungsfähigkeit")
+      __("Gladiator")
+      __("Ritter")
+      __("Stammeskrieger")
+    ]
 
-    __("Nachtblind")
-    __("Schlechte Eigenschaft (Dunkelangst)")
-    __("Schlechte Eigenschaft (Neugier)")
-    __("Schlechte Eigenschaft (Raumangst)")
+    professions: [
+      __("Profession (profan)")
 
-    __("Betören")
-    __("Fahrzeuge")
-    __("Fischen & Angeln")
-    __("Fliegen")
-    __("Gaukeleien")
-    __("Reiten")
-    __("Schwimmen")
-    __("Seefahrt")
-
-    __("Gladiator")
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
-
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Geode")
-    __("Magier")
-
-    __("Geweihter (Angrosch)")
-  ]
-]
+      __("Magier")
+    ]

@@ -80,4 +80,4 @@ require ["data/skill/society"], (S) ->
     dices: ["MU", "IN", "CH"]
 
     BE: false
-    SF: "C"
+    SF: "D"

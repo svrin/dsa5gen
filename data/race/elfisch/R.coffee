@@ -58,7 +58,7 @@ define "data/race/elfisch", [], () ->
     __("Immunität gegen Krankheit (Schwarze Wut)")
     __("Immunität gegen Krankheit (Tollwut)")
     __("Immunität gegen Krankheit (Lykanthropie)")
-    __("Krankheitsresitenz")
+    __("Krankheitsresistenz")
     __("Richtungssinn")
     __("Schlangenmensch")
     __("Verbesserte Regeneration (Astralenergie)")

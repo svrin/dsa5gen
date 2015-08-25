@@ -1,84 +1,69 @@
 ###
-  Maraskan
+  Maraskaner
+
+  @version: US25001
+  @page: 103
 ###
 
-cultures.add [
-  name: __("Maraskan")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Maraskaner")
 
-  social: [
-    [2000, [__("Adlig")],
-     [__("Buskur"), __("Ritter"), 1],
-     [__("Wezyrad/a"), __("Amtsadel"), 1],
-     [__("Dschunkar/a"), __("Erbadel"), 1],
-     [__("Barunn/a"), __("Erbadel"), 2]]
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    false
+    social: [__("Adel")]
+
+    speech: [
+      [__("Garethi")]
+      [__("Garethi (Maraskani)")]
+      [__("Tylamidya")]
+      [__("Tylamidya (Maraskani-Tylamidya)")]
+    ]
+
+    lettering: [
+      __("Schrift (Kusliker Zeichen)")
+      __("Schrift (Tulamidya)")
+    ]
+
+    common: [
+      __("Giftresistenz")
+      __("Hitzeresistenz")
+      __("Krankheitsresistenz")
+      __("Richtungssinn")
+      __("Soziale Anpassungsfähigkeit")
+
+      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Schlechte Eigenschaften (Neugier)")
   ]
 
-  speech: [
-    [__("Garethi")]
-    [__("Garethi (Maraskani)")]
-    [__("Tylamidya")]
-    [__("Tylamidya (Maraskani-Tylamidya)")]
-  ]
+    ultra: [
+      [__("Götter & Kulte"), 1]
+      [__("Heilkunde Gift"), 2]
+      [__("Orientierung"), 1]
+      [__("Pflanzenkunde"), 2]
+      [__("Tierkunde"), 2]
+      [__("Verbergen"), 1]
+      [__("Wildnisleben"), 1]
+    ]
 
-  lettering: [
-    __("Schrift (Kusliker Zeichen)")
-    __("Schrift (Tulamidya)")
-  ]
+    uncommon: [
+      __("Kälteresistenz")
 
-  knowledge: [
-    [__("Kulturkunde (Maraskan)")]
-  ]
+      __("Farbenblind")
+      __("Angst vor ... (Insekten)")
+      __("Schlechte Eigenschaften (Jähzorn)")
 
-  common: [
-    __("Gefahreninstinkt")
-    __("Giftresistenz")
-    __("Hitzeresistenz")
-    __("Krankheitsresistenz")
-    __("Richtungssinn")
-    __("Soziale Anpassungsfähigkeit")
+      __("Fahrzeuge")
+      __("Fliegen")
 
-    __("Schlechte Eigenschaft (Arroganz)")
-    __("Schlechte Eigenschaft (Neugier)")
-    __("Schlechte Eigenschaft (Vorurteile)")
 
-    __("Götter & Kulte")
-    __("Heilkunde Gift")
-    __("Orientierung")
-    __("Pflanzenkunde")
-    __("Tierkunde")
-    __("Verbergen")
-    __("Wildnisleben")
-  ]
+      __("Gladiator")
+      __("Ritter")
+      __("Stammeskrieger")
+    ]
 
-  uncommon: [
-    __("Kälteresistenz")
-    __("Kampfrausch")
+    professions: [
+      __("Profession (profan)")
 
-    __("Farbenblind")
-    __("Schlechte Eigenschaft (Angst vor ...)")
-    __("Schlechte Eigenschaft (Jähzorn)")
-
-    __("Fahrzeuge")
-    __("Fliegen")
-
-    __("Stammeskrieger")
-  ]
-
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Hexe")
-    __("Magiedilettant")
-    __("Magier")
-    __("Scharlatan")
-
-    __("Geweihter (Zwölfgötterkult)")
-    __("Geweihter (Rur)")
-    __("Geweihter (Gror)")
-  ]
-]
+      __("Hexe")
+      __("Magier")
+    ]

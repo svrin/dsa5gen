@@ -8,10 +8,8 @@
 ###
 
 choice = (args...) ->
-  amounts = _.map(args, (arg) ->
-    _.isNumber arg)
-  elements = _.map(args, (arg) ->
-    not _.isNumber arg)
+  amounts = _.filter(args, (arg) -> _.isNumber arg)
+  elements = _.filter(args, (arg) -> not _.isNumber arg)
 
   if not amounts
     amounts = [1]
@@ -29,5 +27,6 @@ choice = (args...) ->
   rtn = new ChoiceView
   rtn.elements = elements
   rtn.amounts = amounts
+  return rtn
 
 

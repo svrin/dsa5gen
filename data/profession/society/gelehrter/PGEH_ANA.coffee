@@ -20,7 +20,7 @@ class PGEH_ANA extends PGEH
     [__("Etikette"), 4]
     [__("Überreden"), 4]
 
-    [__("Pflanzekunde"), 4]
+    [__("Pflanzenkunde"), 4]
 
     [__("Geographie"), 4]
     [__("Geschichtswissen"), 4]

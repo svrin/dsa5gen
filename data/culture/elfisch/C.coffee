@@ -4,16 +4,10 @@
 
 define "data/culture/elfisch", [], () ->
   groups: [
-    __("Elfen")
+    __("Elfische Kulturen")
   ]
 
-  social: [
-    false
-    false
-    [100, [__("Mittelschicht")]]
-    false
-    false
-  ]
+  social: []
 
   speech: [
     __("Sprache (Isdira)")
@@ -24,10 +18,6 @@ define "data/culture/elfisch", [], () ->
   ]
 
   professions: [
-    __("Bewahrer")
-    __("Former")
-    __("Kämpfer")
-    __("Legendensänger")
     __("Wildnisläufer")
     __("Zauberweber")
 

@@ -54,7 +54,7 @@ class PLIE
 
     __("Schlechte Eigenschaft (Eitelkeit)")
     __("Schlechte Eigenschaft (Goldgier)")
-    __("Kälteresitenz")
+    __("Kälteresistenz")
     __("Schlechte Eigenschaft (Krankhafte Reinlichkeit)")
     __("Soziale Anpassungsfähigkeit")
 

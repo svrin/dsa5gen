@@ -86,7 +86,7 @@ require ["data/vantage/negative"], (S) ->
     costs: -10
 
   skills.add _.extend {}, S,
-    name: __("Kälteempfindlichkeit")
+    name: __("Kälteempfindlich")
     costs: -10
 
   skills.add _.extend {}, S,

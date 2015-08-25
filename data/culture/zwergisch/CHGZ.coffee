@@ -1,78 +1,60 @@
 ###
   Hügelzwerge
+
+  @version: US25001
+  @page: 125
 ###
 
-cultures.add [
-  name: __("Hügelzwerge")
+require ["data/culture/zwergisch"], (C) ->
+  cultures.add _.extend C,
+    name: __("Hügelzwerge")
 
-  social: [
-    false
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    false
-  ]
+    speech: [
+      [__("Rogolan")]
+      [__("Rogolan (hügelzwergischer Dialekt)")]
+    ]
 
-  speech: [
-    [__("Rogolan")]
-    [__("Rogolan (hügelzwergischen Dialekt)")]
-  ]
+    common: [
+      __("Begabung in Handwerkstalenten")
+      __("Begabung in Gesellschaftstalenten")
+      __("Soziale Anpassungsfähigkeit")
 
-  lettering: [
-    __("Schrift (Rogolan-Runden)")
-  ]
+      __("Angst vor ... (dem Meer)")
+      __("Schlechte Eigenschaften (Neugier)")
+      __("Schlechte Eigenschaften (Goldgier)")
+    ]
 
-  knowledge: [
-    [__("Kulturkunde (Hügelzwerge)")]
-  ]
+    ultra: [
+      [__("Etikette"), 0]
+      [__("Fahrzeuge"), 1]
+      [__("Fischen & Angeln"), 1]
+      [__("Lebensmittelbearbeitung"), 2]
+      [__("Singen"), 1]
+      [__("Tanzen"), 1]
+      [__("Verbergen"), 2]
+      [__("Zechen"), 1]
+    ]
 
-  common: [
-    __("Begabung in Gesellschaftstalenten")
-    __("Begabung in Handwerkstalenten")
-    __("Soziale Anpassungsfähigkeit")
+    uncommon: [
+      __("Angst vor ... (Dunkelheit)")
+      __("Angst vor ... (engen Räumen)")
+      __("Blutrausch")
+      __("Nachtblind")
 
-    __("Schlechte Eigenschaft (Goldgier)")
-    __("Schlechte Eigenschaft (Meeresangst)")
-    __("Schlechte Eigenschaft (Neugier)")
+      __("Einschüchtern")
+      __("Fliegen")
+      __("Reiten")
+      __("Wildnisleben")
 
-    __("Etikette")
-    __("Fahrzeuge")
-    __("Fischen & Angeln")
-    __("Kochen & Backen")
-    __("Singen")
-    __("Tanzen")
-    __("Verbergen")
-    __("Zechen")
-  ]
+      __("Gladiator")
+      __("Ritter")
+      __("Stammeskrieger")
+    ]
 
-  uncommon: [
-    __("Kampfrausch")
+    professions: [
+      __("Profession (profan)")
 
-    __("Blutrausch")
-    __("Nachtblind")
-    __("Schlechte Eigenschaft (Dunkelangst)")
-    __("Schlechte Eigenschaft (Raumangst)")
+      __("Magier")
 
-    __("Einschüchtern")
-    __("Fliegen")
-    __("Reiten")
-    __("Wildnisleben")
-
-    __("Gladiator")
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
-
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Geode")
-    __("Magier")
-
-    __("Geweihter (Angrosch)")
-    __("Geweihter (Ingerimm)")
-    __("Geweihter (Peraine)")
-    __("Geweihter (Travia)")
-  ]
-]
+      __("Geweihter (Phex)")
+    ]

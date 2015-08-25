@@ -1,110 +1,84 @@
 ###
   Mohas
+
+  @version: US25001
+  @page: 108
 ###
 
-cultures.add [
-  name: __("Mohas")
+require ["data/culture/menschlich"], (C) ->
+  cultures.add _.extend C,
+    name: __("Mohas")
 
-  social: [
-    false
-    [500, [__("Oberschicht")]]
-    [100, [__("Mittelschicht")]]
-    [20, [__("Unterschicht")]]
-    [4, [__("Unfrei")], [__("Sklave"), 1]]
+    social: [__("Adel"), __("Unfrei")]
+
+    speech: [
+      [__("Mohisch")]
+    ]
+
+    lettering: []
+
+    common: [
+      __("Giftresistenz")
+      __("Glück")
+      __("Gutaussehend")
+      __("Hitzeresistenz")
+      __("Richtungssinn")
+      __("Schlangenmensch")
+
+      __("Angst vor ... (engen Räumen)")
+      __("Angst vor ... (dem Meer)")
+      __("Angst vor ... (Toten und Untoten)")
+      __("Kälteempfindlich")
+      __("Niedrige Seelenkraft")
+      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Schlechte Eigenschaften (Aberglaube)")
+      __("Schlechte Eigenschaften (Neugier)")
   ]
 
-  speech: [
-    [__("Mohisch")]
-  ]
+    ultra: [
+      [__("Fährtensuchen"), 1]
+      [__("Heilkunde Gift"), 1]
+      [__("Heilkunde Krankheiten"), 0]
+      [__("Klettern"), 0]
+      [__("Körperbeherrschung"), 1]
+      [__("Orientierung"), 1]
+      [__("Pflanzenkunde"), 2]
+      [__("Sagen & Legenden"), 1]
+      [__("Sinnesschärfe"), 1]
+      [__("Tierkunde"), 2]
+      [__("Verbergen"), 1]
+      [__("Wildnisleben"), 2]
+    ]
 
-  lettering: []
+    uncommon: [
+      __("Kälteresistenz")
 
-  knowledge: [
-    [__("Kulturkunde (Waldmenschen)")]
-  ]
+      __("Angst vor ... (Höhe)")
+      __("Angst vor ... (Insekten)")
+      __("Angst vor ... (Reptilien)")
+      __("Angst vor ... (Spinnen)")
+      __("Krankheitsanfällig")
+      __("Nachtblind")
+      __("Persönlichkeitsschwächen (Eitelkeit)")
+      __("Schlechte Eigenschaften (Goldgier)")
+      __("Unfähig in Naturtalenten")
 
-  common: [
-    __("Balance")
-    __("Gefahreninstinkt")
-    __("Giftresistenz")
-    __("Glück")
-    __("Gutaussehend")
-    __("Hitzeresistenz")
-    __("Hohe Lebenskraft")
-    __("Richtungssinn")
-    __("Schlangenmensch")
+      __("Etikette")
+      __("Fahrzeuge")
+      __("Fliegen")
+      __("Gassenwissen")
+      __("Geographie")
+      __("Geschichtswissen")
+      __("Metallbearbeitung")
+      __("Reiten")
+      __("Schlösserknacken")
+      __("Zechen")
+    ]
 
-    __("Kälteempfindlichkeit")
-    __("Kind der Wildnis")
-    __("Niedrige Magieresitenz")
-    __("Schlechte Eigenschaft (Aberglaube)")
-    __("Schlechte Eigenschaft (Eitelkeit)")
-    __("Schlechte Eigenschaft (Meeresangst)")
-    __("Schlechte Eigenschaft (Neugier)")
-    __("Schlechte Eigenschaft (Platzangst)")
-    __("Schlechte Eigenschaft (Rachsucht)")
-    __("Schlechte Eigenschaft (Raumangst)")
-    __("Schlechte Eigenschaft (Totenangst)")
-    __("Schlechte Eigenschaft (Vorurteile)")
-
-    __("Fährtensuchen")
-    __("Heilkunde Gift")
-    __("Heilkunde Krankheiten")
-    __("Klettern")
-    __("Körperbeherrschung")
-    __("Orientierung")
-    __("Pflanzenkunde")
-    __("Sagen & Legenden")
-    __("Sinnesschärfe")
-    __("Tierkunde")
-    __("Verbergen")
-    __("Wildnisleben")
-  ]
-
-  uncommon: [
-    __("Eisern")
-    __("Kälteresistenz")
-
-    __("Glasknochen")
-    __("Krankheitsanfällig")
-    __("Nachtblind")
-    __("Schlechte Eigenschaft (Angst vor ...)")
-    __("Schlechte Eigenschaft (Goldgier)")
-    __("Schlechte Eigenschaft (Höhenangst)")
-    __("Schlechte Eigenschaft (Krankhafte Reinlichkeit)")
-    __("Stubenhocker")
-    __("Unfähig in Naturtalenten")
-    __("Zauberanfällig")
-
-    __("Etikette")
-    __("Fahrzeuge")
-    __("Fliegen")
-    __("Gassenwissen")
-    __("Geographie")
-    __("Geschichtswissen")
-    __("Metallbearbeitung")
-    __("Reiten")
-    __("Schlösserknacken")
-    __("Seefahrt")
-    __("Staatskunst")
-    __("Zechen")
-  ]
-
-  professions: [
-    __("Gladiator")
-    __("Handwerker")
-    __("Heiler")
-    __("Jäger")
-    __("Landarbeiter")
-    __("Räuber")
-    __("Söldner")
-    __("Stammeskrieger")
-    __("Streuner")
-    __("Tierkundiger")
-
-    __("Magiedilettant")
-    __("Schamane")
-
-    __("Hochschamane (Kamuluq)")
-  ]
-]
+    professions: [
+      __("Händler")
+      __("Heiler")
+      __("Jäger")
+      __("Söldner")
+      __("Stammeskrieger")
+    ]

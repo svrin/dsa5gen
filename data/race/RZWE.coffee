@@ -63,7 +63,7 @@ races.add
     [__("Dunkelsicht"), 2]
     __("Hitzeresistenz")
     __("Hohe Zähigkeit")
-    __("Krankheitsresitenz")
+    __("Krankheitsresistenz")
     __("Richtungssinn")
     __("Schwer zu verzaubern")
     __("Zäher Hund")

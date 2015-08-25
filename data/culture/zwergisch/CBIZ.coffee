@@ -1,90 +1,69 @@
 ###
   Brillantzwerge
+
+  @version: US25001
+  @page: 123
 ###
 
-cultures.add [
-  name: __("Brillantzwerge")
+require ["data/culture/zwergisch"], (C) ->
+  cultures.add _.extend C,
+    name: __("Brillantzwerge")
 
-  social: [
-    false
-    [2500, [__("Oberschicht")]]
-    [500, [__("Mittelschicht")]]
-    [100, [__("Unterschicht")]]
-    false
-  ]
+    speech: [
+      [__("Rogolan")]
+      [__("Rogolan (brilliantzwergischer Dialekt)")]
+    ]
 
-  speech: [
-    [__("Rogolan")]
-    [__("Rogolan (brillantzwergischer Dialekt)")]
-  ]
+    common: [
+      __("Begabung in Handwerkstalenten")
+      __("Soziale Anpassungsfähigkeit")
 
-  lettering: [
-    __("Schrift (Rogolan-Runden)")
-  ]
+      __("Angst vor ... (dem Meer)")
+      __("Persönlichkeitsschwächen (Eitelkeit)")
+      __("Schlechte Eigenschaften (Geiz)")
+      __("Schlechte Eigenschaften (Goldgier)")
+      __("Schlechte Eigenschaften (Neugier)")
+    ]
 
-  knowledge: [
-    [__("Kulturkunde (Brillantzwerge)")]
-  ]
+    ultra: [
+      [__("Betören"), 1]
+      [__("Geographie"), 2]
+      [__("Geschichtswissen"), 1]
+      [__("Malen & Zeichnen"), 0]
+      [__("Mechanik"), 0]
+      [__("Metallbearbeitung"), 1]
+      [__("Musizieren"), 1]
+      [__("Orientierung"), 0]
+      [__("Rechnen"), 0]
+      [__("Sagen & Legenden"), 1]
+      [__("Schlösserknacken"), 2]
+      [__("Steinbearbeitung"), 1]
+      [__("Tanzen"), 1]
+      [__("Tierkunde"), 0]
+      [__("Verbergen"), 2]
+      [__("Zechen"), 1]
+    ]
 
-  common: [
-    __("Begabung in Handwerkstalenten")
-    __("Soziale Anpassungsfähigkeit")
+    uncommon: [
+      __("Angst vor ... (engen Räumen)")
+      __("Blutrausch")
+      __("Nachtblind")
 
-    __("Schlechte Eigenschaft (Eitelkeit)")
-    __("Schlechte Eigenschaft (Geiz)")
-    __("Schlechte Eigenschaft (Goldgier)")
-    __("Schlechte Eigenschaft (Neugier)")
-    __("Schlechte Eigenschaft (Platzangst)")
-    __("Schlechte Eigenschaft (Meeresangst)")
+      __("Boote & Schiffe")
+      __("Fliegen")
+      __("Schwimmen")
 
-    __("Betören")
-    __("Geographie")
-    __("Geschichtswissen")
-    __("Malen & Zeichnen")
-    __("Mechanik")
-    __("Metallbearbeitung")
-    __("Musizieren")
-    __("Orientierung")
-    __("Rechnen")
-    __("Sagen & Legenden")
-    __("Schlösserknacken")
-    __("Steinbearbeitung")
-    __("Tanzen")
-    __("Tierkunde")
-    __("Verbergen")
-    __("Zechen")
-  ]
+      __("Gladiator")
+      __("Ritter")
+      __("Stammeskrieger")
+    ]
 
-  uncommon: [
-    __("Kampfrausch")
+    professions: [
+      __("Profession (profan)")
 
-    __("Blutrausch")
-    __("Nachtblind")
-    __("Schlechte Eigenschaft (Raumangst)")
-    __("Übler Geruch")
+      __("Magier")
 
-    __("Fliegen")
-    __("Schwimmen")
-    __("Seefahrt")
-
-    __("Gladiator")
-    __("Ritter")
-    __("Stammeskrieger")
-  ]
-
-  professions: [
-    __("Profession (profan)")
-
-    __("Alchimist")
-    __("Geode")
-    __("Magier")
-
-    __("Geweihter (Angrosch)")
-    __("Geweihter (Hesinde)")
-    __("Geweihter (Ingerimm)")
-    __("Geweihter (Kor)")
-    __("Geweihter (Phex)")
-    __("Geweihter (Rhaja)")
-    __("Geweihter (Rondra)")
-  ]
-]
+      __("Geweihter (Hesinde)")
+      __("Geweihter (Phex)")
+      __("Geweihter (Rondra)")
+    ]
