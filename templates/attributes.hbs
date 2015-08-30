@@ -9,7 +9,7 @@
     <li data-href="attributes">
         <label title="<%= __(key) %>"><%= key %></label>
 
-        <% v_max = (c_lifegrade.get('E_MAX') || 14) + Math.round(c_attributes[key + "_max"] || 0) %>
+        <% v_max = ((c_lifegrade && c_lifegrade.get('E_MAX')) || 14) + Math.round(c_attributes[key + "_max"] || 0) %>
         <% v_max_text = v_max %>
 
         <% race = character.get('race'); attributes = race && race.get('attributes') %>
