@@ -21,11 +21,11 @@ require ["data/culture/zwergisch"], (C) ->
       __("Zäher Hund")
 
       __("Angst vor ... (dem Meer)")
-      __("Persönlichkeitsschwächen (Arroganz)")
-      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Persönlichkeitsschwäche (Arroganz)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
       __("Prinzipientreue (zwergischer Ehrenkodex)")
-      __("Schlechte Eigenschaften (Geiz)")
-      __("Schlechte Eigenschaften (Goldgier)")
+      __("Schlechte Eigenschaft (Geiz)")
+      __("Schlechte Eigenschaft (Goldgier)")
     ]
 
     ultra: [
@@ -50,7 +50,7 @@ require ["data/culture/zwergisch"], (C) ->
       __("Angst vor ... (Dunkelheit)")
       __("Angst vor ... (engen Räumen)")
       __("Nachtblind")
-      __("Persönlichkeitsschwächen (Eitelkeit)")
+      __("Persönlichkeitsschwäche (Eitelkeit)")
 
       __("Betören")
       __("Boote & Schiffe")

@@ -25,11 +25,11 @@ require ["data/culture/menschlich"], (C) ->
       __("Hitzeresistenz")
       __("Soziale Anpassungsfähigkeit")
 
-      __("Persönlichkeitsschwächen (Eitelkeit)")
-      __("Persönlichkeitsschwächen (Vorurteile)")
-      __("Schlechte Eigenschaften (Aberglaube)")
-      __("Schlechte Eigenschaften (Goldgier)")
-      __("Schlechte Eigenschaften (Neugier)")
+      __("Persönlichkeitsschwäche (Eitelkeit)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
+      __("Schlechte Eigenschaft (Aberglaube)")
+      __("Schlechte Eigenschaft (Goldgier)")
+      __("Schlechte Eigenschaft (Neugier)")
     ]
 
     ultra: [

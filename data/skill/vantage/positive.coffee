@@ -190,13 +190,7 @@ require ["data/vantage/positive"], (S) ->
     costs: 10
     max: 2
 
-  skills.add _.extend {}, S,
-    name: __("Magische Einstimmung")
-    costs: 40
-    multiple: "Wesen"
-    required: [
-      [__("Zauberer"), 1]
-    ]
+  # Magische Einstimmung --> fear
 
   skills.add _.extend {}, S,
     name: __("Mystiker")

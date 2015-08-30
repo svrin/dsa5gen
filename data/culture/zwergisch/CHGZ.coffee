@@ -20,8 +20,8 @@ require ["data/culture/zwergisch"], (C) ->
       __("Soziale Anpassungsfähigkeit")
 
       __("Angst vor ... (dem Meer)")
-      __("Schlechte Eigenschaften (Neugier)")
-      __("Schlechte Eigenschaften (Goldgier)")
+      __("Schlechte Eigenschaft (Neugier)")
+      __("Schlechte Eigenschaft (Goldgier)")
     ]
 
     ultra: [

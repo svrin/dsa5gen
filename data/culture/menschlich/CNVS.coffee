@@ -30,10 +30,10 @@ require ["data/culture/menschlich"], (C) ->
       __("Angst vor ... (engen Räumen)")
       __("Angst vor ... (dem Meer)")
       __("Prinzipentreue (99 Gesetze)")
-      __("Persönlichkeitsschwächen (Arroganz)")
-      __("Persönlichkeitsschwächen (Vorurteile)")
-      __("Schlechte Eigenschaften (Jähzorn)")
-      __("Schlechte Eigenschaften (Rachsucht)")
+      __("Persönlichkeitsschwäche (Arroganz)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
+      __("Schlechte Eigenschaft (Jähzorn)")
+      __("Schlechte Eigenschaft (Rachsucht)")
     ]
 
     ultra: [

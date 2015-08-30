@@ -27,8 +27,8 @@ require ["data/culture/menschlich"], (C) ->
       __("Begabung in Gesellschaftstalenten")
       __("Entfernungssinn")
 
-      __("Persönlichkeitsschwächen (Eitelkeit)")
-      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Persönlichkeitsschwäche (Eitelkeit)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
       __("Schlechte Eigenschaft (Aberglaube)")
       __("Zerbrechlich")
     ]

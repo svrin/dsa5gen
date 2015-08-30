@@ -30,9 +30,9 @@ require ["data/culture/menschlich"], (C) ->
       __("Angst vor ... (Toten und Untoten)")
       __("Kälteempfindlich")
       __("Niedrige Seelenkraft")
-      __("Persönlichkeitsschwächen (Vorurteile)")
-      __("Schlechte Eigenschaften (Aberglaube)")
-      __("Schlechte Eigenschaften (Neugier)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
+      __("Schlechte Eigenschaft (Aberglaube)")
+      __("Schlechte Eigenschaft (Neugier)")
   ]
 
     ultra: [
@@ -59,8 +59,8 @@ require ["data/culture/menschlich"], (C) ->
       __("Angst vor ... (Spinnen)")
       __("Krankheitsanfällig")
       __("Nachtblind")
-      __("Persönlichkeitsschwächen (Eitelkeit)")
-      __("Schlechte Eigenschaften (Goldgier)")
+      __("Persönlichkeitsschwäche (Eitelkeit)")
+      __("Schlechte Eigenschaft (Goldgier)")
       __("Unfähig in Naturtalenten")
 
       __("Etikette")

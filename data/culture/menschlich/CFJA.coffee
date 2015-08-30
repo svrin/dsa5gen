@@ -59,7 +59,7 @@ require ["data/culture/menschlich"], (C) ->
       __("Kälteempfindlich")
       __("Krankheitsanfällig")
       __("Nachtblind")
-      __("Persönlichkeitsschwächen (Eitelkeit)")
+      __("Persönlichkeitsschwäche (Eitelkeit)")
       __("Zerbrechlich")
 
       __("Betören")

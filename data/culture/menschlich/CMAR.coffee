@@ -30,9 +30,9 @@ require ["data/culture/menschlich"], (C) ->
       __("Richtungssinn")
       __("Soziale Anpassungsfähigkeit")
 
-      __("Persönlichkeitsschwächen (Arroganz)")
-      __("Persönlichkeitsschwächen (Vorurteile)")
-      __("Schlechte Eigenschaften (Neugier)")
+      __("Persönlichkeitsschwäche (Arroganz)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
+      __("Schlechte Eigenschaft (Neugier)")
   ]
 
     ultra: [
@@ -50,7 +50,7 @@ require ["data/culture/menschlich"], (C) ->
 
       __("Farbenblind")
       __("Angst vor ... (Insekten)")
-      __("Schlechte Eigenschaften (Jähzorn)")
+      __("Schlechte Eigenschaft (Jähzorn)")
 
       __("Fahrzeuge")
       __("Fliegen")

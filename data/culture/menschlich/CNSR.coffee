@@ -24,9 +24,9 @@ require ["data/culture/menschlich"], (C) ->
       __("Richtungssinn")
       __("Zäher Hund")
 
-      __("Schlechte Eigenschaften (Aberglaube)")
-      __("Persönlichkeitsschwächen (Vorurteile)")
-      __("Persönlichkeitsschwächen (Weltfremd)")
+      __("Schlechte Eigenschaft (Aberglaube)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
+      __("Persönlichkeitsschwäche (Weltfremd)")
     ]
 
     ultra: [

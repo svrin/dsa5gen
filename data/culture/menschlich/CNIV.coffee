@@ -44,7 +44,7 @@ require ["data/culture/menschlich"], (C) ->
       __("Soziale Anpassungsfähigkeit")
 
       __("Fettleibig")
-      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Persönlichkeitsschwäche (Arroganz)")
       __("Schlechte Eigenschaft (Goldgier)")
 
       __("Boote & Schiffe")

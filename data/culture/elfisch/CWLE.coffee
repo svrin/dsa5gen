@@ -23,9 +23,9 @@ require ["data/culture/elfisch"], (C) ->
       __("Angst vor ... (engen Räumen)")
       __("Artefaktgebunden (Instrument)")
       __("Körpergebundene Kraft")
-      __("Persönlichkeitsschwächen (Arroganz)")
-      __("Persönlichkeitsschwächen (Vorurteile)")
-      __("Persönlichkeitsschwächen (Weltfremd)")
+      __("Persönlichkeitsschwäche (Arroganz)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
+      __("Persönlichkeitsschwäche (Weltfremd)")
       __("Prinzipientreue (Elfische Weitsicht)")
       __("Unfähig in Wissenstalenten")
     ]
@@ -50,9 +50,9 @@ require ["data/culture/elfisch"], (C) ->
       __("Begabung in Wissenstalenten")
       __("Soziale Anpassungsfähigkeit")
 
-      __("Schlechte Eigenschaften (Goldgier)")
-      __("Schlechte Eigenschaften (Jähzorn)")
-      __("Schlechte Eigenschaften (Rachsucht)")
+      __("Schlechte Eigenschaft (Goldgier)")
+      __("Schlechte Eigenschaft (Jähzorn)")
+      __("Schlechte Eigenschaft (Rachsucht)")
       __("Unfähig in Körpertalenten")
       __("Unfähig in Naturtalenten")
 

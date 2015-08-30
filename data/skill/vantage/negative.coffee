@@ -1,5 +1,8 @@
 ###
   Nachteile
+
+  @version: US25001
+  @page: 170-179
 ###
 
 define "data/vantage/negative", [], () ->
@@ -12,163 +15,175 @@ define "data/vantage/negative", [], () ->
   ]
 
 require ["data/vantage/negative"], (S) ->
+# Angst vor --> fear
+  skills.add _.extend {}, S,
+    name: __("Arm")
+    max: 3
+    costs: -1
+
   skills.add _.extend {}, S,
     name: __("Artefaktgebunden")
-    costs: -30
-    max: 3
-
-  skills.add _.extend {}, S,
-    name: __("Auffällig")
     costs: -10
-
-  skills.add _.extend {}, S,
-    name: __("Behäbig")
-    costs: -20
-    max: 3
-
-  skills.add _.extend {}, S,
-    name: __("Blind")
-    costs: -100
-
-  skills.add _.extend {}, S,
-    name: __("Blutrausch")
-    costs: -20
-
-  skills.add _.extend {}, S,
-    name: __("Eingeschränkte Elementarnähe")
-    costs: -5
-    restricted: true
-    multiple: "Element"
-
-  skills.add _.extend {}, S,
-    name: __("Eingeschränkter Sinn (Gehör)")
-    costs: -30
-
-  skills.add _.extend {}, S,
-    name: __("Eingeschränkter Sinn (Sicht)")
-    costs: -30
-
-  skills.add _.extend {}, S,
-    name: __("Eingeschränkter Sinn (Geruch & Geschmack)")
-    costs: -10
-
-  skills.add _.extend {}, S,
-    name: __("Eingeschränkter Sinn (Tastsinn)")
-    costs: -10
-
-  skills.add _.extend {}, S,
-    name: __("Farbenblind")
-    costs: -5
-
-  skills.add _.extend {}, S,
-    name: __("Fettleibig")
-    costs: -50
-
-  skills.add _.extend {}, S,
-    name: __("Giftanfällig")
-    costs: -50
-
-  skills.add _.extend {}, S,
-    name: __("Glasknochen")
-    costs: -20
-    max: 3
-    auto: [
-      ["WS", -1]
+    required: [
+      [__("Zauberer"), 1]
     ]
 
   skills.add _.extend {}, S,
+    name: __("Behäbig")
+    costs: -3
+
+  skills.add _.extend {}, S,
+    name: __("Blind")
+    costs: -50
+
+  skills.add _.extend {}, S,
+    name: __("Blutrausch")
+    costs: -10
+    required: [
+      [__("Jähzorn"), 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Eingeschränkter Sinn (Gehör)")
+    costs: -10
+
+  skills.add _.extend {}, S,
+    name: __("Eingeschränkter Sinn (Sicht)")
+    costs: -15
+
+  skills.add _.extend {}, S,
+    name: __("Eingeschränkter Sinn (Geruch & Geschmack)")
+    costs: -6
+
+  skills.add _.extend {}, S,
+    name: __("Eingeschränkter Sinn (Tastsinn)")
+    costs: -2
+
+  skills.add _.extend {}, S,
+    name: __("Farbenblind")
+    costs: -2
+
+  skills.add _.extend {}, S,
+    name: __("Fettleibig")
+    costs: -25
+    required: [
+      [__("Behäbig"), 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Giftanfällig")
+    costs: -5
+    max: 2
+
+  skills.add _.extend {}, S,
     name: __("Hässlich")
-    costs: -20
-    max: 3
+    costs: -10
+    max: 2
 
   skills.add _.extend {}, S,
     name: __("Hitzeempfindlichkeit")
-    costs: -10
+    costs: -3
 
   skills.add _.extend {}, S,
     name: __("Kälteempfindlich")
-    costs: -10
+    costs: -3
+
+  skills.add _.extend {}, S,
+    name: __("Kein Flugsalbe")
+    costs: -25
+# TODO: * Tradition (Hexe) -10 AP
+    required: [
+      [__("Zauberer"), 1]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Kein Vertrauter")
-    costs: -20
-
-  skills.add _.extend {}, S,
-    name: __("Kind der Wildnis")
     costs: -25
+# TODO:  * Tradition (Hexe) -10 AP
+    required: [
+      [__("Zauberer"), 1]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Körpergebundene Kraft")
-    costs: -10
-    max: 3
+    costs: -5
+    required: [
+      [__("Zauberer"), 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Körperliche Auffälligkeit")
+    costs: -2
 
   skills.add _.extend {}, S,
     name: __("Krankheitsanfällig")
-    costs: -30
+    costs: -5
+    max: 2
 
   skills.add _.extend {}, S,
     name: __("Lästige Mindergeister")
-    costs: -5
-    max: 3
+    costs: -20
+    required: [
+      [__("Zauberer"), 1]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Lichtempfindlich")
-    costs: -10
-    max: 3
-
-  skills.add _.extend {}, S,
-    name: __("Magieblockade")
     costs: -20
-    max: 3
 
-  skills.add _.extend {}, S,
-    name: __("Magische Einschränkung")
-    costs: -15
-    max: 3
-
-  skills.add _.extend {}, S,
-    name: __("Medium")
-    costs: 5
+  # Magische Einschränkung --> habits
 
   skills.add _.extend {}, S,
     name: __("Nachtblind")
-    costs: -40
+    costs: -10
 
   skills.add _.extend {}, S,
     name: __("Niedrige Astralkraft")
-    costs: -10
-    max: 3
+    costs: -2
+    max: 7
     auto: [
-      ["AE", -10]
+      ["AE", -1]
+    ]
+    required: [
+      [__("Zauberer"), 1]
     ]
 
   skills.add _.extend {}, S,
     name: __("Niedrige Karmalkraft")
-    costs: -10
-    max: 3
+    costs: -2
+    max: 7
     auto: [
-      ["KE", -10]
+      ["KE", -1]
+    ]
+    required: [
+      [__("Geweihter"), 1]
     ]
 
   skills.add _.extend {}, S,
     name: __("Niedrige Lebenskraft")
-    costs: -10
-    max: 3
+    costs: -4
+    max: 7
     auto: [
-      ["LE", -10]
+      ["LE", -1]
     ]
 
   skills.add _.extend {}, S,
-    name: __("Niedrige Magieresistenz")
-    costs: 10
-    max: 3
+    name: __("Niedrige Seelenkraft")
+    costs: -25
     auto: [
-      ["MR", -1]
+      ["SK", -1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Niedrige Zähigkeit")
+    costs: -25
+    auto: [
+      ["ZK", -1]
     ]
 
   skills.add _.extend {}, S,
     name: __("Pech")
-    costs: -25
+    costs: -20
     max: 3
     auto: [
       ["GLK", -1]
@@ -176,12 +191,9 @@ require ["data/vantage/negative"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Pechmagnet")
-    costs: -25
-
-  skills.add _.extend {}, S,
-    name: __("Praktiker")
     costs: -5
-    multiple: "Fertigkeit"
+
+  # Persöhnlichkeitsschwächen --> habits
 
   skills.add _.extend {}, S,
     name: __("Prinzipientreue")
@@ -189,22 +201,28 @@ require ["data/vantage/negative"], (S) ->
     max: 3
 
   skills.add _.extend {}, S,
-    name: __("Rückschlag")
-    costs: -40
-
-  skills.add _.extend {}, S,
     name: __("Schlafwandler")
     costs: -10
+
+  # Schlechte Angewohnheit -> habits
+
+  # Schlechte Eigenschaft -> habits
 
   skills.add _.extend {}, S,
     name: __("Schlechte Regeneration (Astralenergie)")
     costs: -10
     max: 3
+    required: [
+      [__("Zauberer"), 1]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Schlechte Regeneration (Karmaenergie)")
     costs: -10
     max: 3
+    required: [
+      [__("Geweihter"), 1]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Schlechte Regeneration (Lebensenergie)")
@@ -212,133 +230,111 @@ require ["data/vantage/negative"], (S) ->
     max: 3
 
   skills.add _.extend {}, S,
-    name: __("Schnelle Alterung")
-    costs: -5
+    name: __("Schwacher Astralkörper")
+    costs: -15
+    required: [
+      [__("Zauberer"), 1]
+    ]
 
   skills.add _.extend {}, S,
-    name: __("Schwacher Astralkörper")
-    costs: -20
+    name: __("Schwacher Karmalkörper")
+    costs: -15
+    required: [
+      [__("Geweihter"), 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Sensibler Geruchssinn")
+    costs: -10
+    restricted: true
 
   skills.add _.extend {}, S,
     name: __("Sprachfehler")
-    costs: -20
+    costs: -15
 
   skills.add _.extend {}, S,
-    name: __("Spruchhemmung")
-    costs: -60
+    name: __("Stigma (Albino)")
+    costs: -10
 
   skills.add _.extend {}, S,
-    name: __("Stigma")
-    costs: -30
-    max: 3
+    name: __("Stigma (Grüne Haare)")
+    costs: -10
 
   skills.add _.extend {}, S,
-    name: __("Stubenhocker")
-    costs: -25
+    name: __("Stigma (Brandmale)")
+    costs: -10
+
+  skills.add _.extend {}, S,
+    name: __("Stigma (Katzenhafte Augen)")
+    costs: -10
+
+  skills.add _.extend {}, S,
+    name: __("Stigma (Schlangenschuppen)")
+    costs: -10
 
   skills.add _.extend {}, S,
     name: __("Stumm")
     costs: -40
 
   skills.add _.extend {}, S,
-    name: __("Theoretiker")
-    costs: -5
-    multiple: "Fertigkeit"
-
-  skills.add _.extend {}, S,
-    name: __("Thesisgebundenheit")
-    costs: -20
-    max: 3
-
-  skills.add _.extend {}, S,
-    name: __("Übler Geruch")
-    costs: -20
-
-  skills.add _.extend {}, S,
-    name: __("Unangenehme Stimme")
-    costs: -15
+    name: __("Taub")
+    costs: -40
 
   skills.add _.extend {}, S,
     name: __("Unfähig")
     costs: (dialect) ->
       return 0 if not dialect
-      return -5 if dialect.get('SF') == "A"
-      return -10 if dialect.get('SF') == "B"
-      return -15 if dialect.get('SF') == "C"
+      return -1 if dialect.get('SF') == "A"
+      return -2 if dialect.get('SF') == "B"
+      return -3 if dialect.get('SF') == "C"
+      return -4 if dialect.get('SF') == "D"
     multiple: "Fertigkeiten"
 
   skills.add _.extend {}, S,
     name: __("Unfrei")
-    costs: -50
-    groups: ['Sozialstatus', 'Unfrei']
-
-  skills.add _.extend {}, S,
-    name: __("Unterschicht")
-    costs: -20
-    groups: ['Sozialstatus', 'Unfrei']
-
-  skills.add _.extend {}, S,
-    name: __("Verarmt")
-    costs: -10
-    max: 3
-
-  skills.add _.extend {}, S,
-    name: __("Verfeindet")
-    costs: -40
-
-  skills.add _.extend {}, S,
-    name: __("Vergesslichkeit")
-    costs: -40
-
-  skills.add _.extend {}, S,
-    name: __("Vergesslichkeit")
-    costs: -40
+    costs: -8
 
   skills.add _.extend {}, S,
     name: __("Verpflichtungen")
-    costs: -20
-    max: 18
+    costs: -5
+    max: 3
 
   skills.add _.extend {}, S,
     name: __("Verstümmelt (Einäugig)")
-    costs: -20
+    costs: -10
 
   skills.add _.extend {}, S,
     name: __("Verstümmelt (Einohrig)")
-    costs: -20
+    costs: -5
 
   skills.add _.extend {}, S,
     name: __("Verstümmelt (Einhändig)")
-    costs: -40
-
-  skills.add _.extend {}, S,
-    name: __("Verstümmelt (Einarmig)")
-    costs: -80
-
-  skills.add _.extend {}, S,
-    name: __("Verstümmelt (Einbeinig)")
-    costs: -80
-
-  skills.add _.extend {}, S,
-    name: __("Wahrer Name")
-    costs: -5
-
-  skills.add _.extend {}, S,
-    name: __("Wilde Magie")
-    costs: -25
-
-  skills.add _.extend {}, S,
-    name: __("Zauberallergie")
-    costs: -5
-
-  skills.add _.extend {}, S,
-    name: __("Zauberanfällig")
     costs: -20
 
   skills.add _.extend {}, S,
-    name: __("Zauberbeschränkung")
-    costs: -25
+    name: __("Verstümmelt (Einarmig)")
+    costs: -30
+
+  skills.add _.extend {}, S,
+    name: __("Verstümmelt (Einbeinig)")
+    costs: -30
+
+  skills.add _.extend {}, S,
+    name: __("Wahrer Name")
+    costs: -10
+
+  skills.add _.extend {}, S,
+    name: __("Wilde Magie")
+    costs: -10
+    required: [
+      [__("Zauberer"), 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Zauberanfällig")
+    costs: -12
+    max: 2
 
   skills.add _.extend {}, S,
     name: __("Zerbrechlich")
-    costs: -30
+    costs: -20

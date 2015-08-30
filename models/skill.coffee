@@ -197,7 +197,11 @@ define ["models/base"], (Model) ->
     # Vantages
     vantageGroups: [
       __('Nachteile')
-      __('Schlechte Eigenschaft')
+      __('Angst vor ...')
+      __('Magische Einstimmung')
+      __('Magische Einschränkung')
+      __('Persönlichkeitsschwächen')
+      __('Schlechte Eigenschaften')
       __('Schlechte Angewohnheiten')
       __('Vorteile')
     ]

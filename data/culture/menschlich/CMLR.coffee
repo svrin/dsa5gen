@@ -22,8 +22,8 @@ require ["data/culture/menschlich"], (C) ->
     common: [
       __("Glück")
 
-      __("Schlechte Eigenschaften (Aberglaube)")
-      __("Persönlichkeitsschwächen (Vorurteile)")
+      __("Schlechte Eigenschaft (Aberglaube)")
+      __("Persönlichkeitsschwäche (Vorurteile)")
     ]
 
     ultra: [

@@ -27,8 +27,8 @@ require ["data/culture/menschlich"], (C) ->
 
       __("Angst vor ... (engen Räumen)")
       __("Angst vor ... (Höhe)")
-      __("Schlechte Eigenschaften (Goldgier)")
-      __("Schlechte Eigenschaften (Neugier)")
+      __("Schlechte Eigenschaft (Goldgier)")
+      __("Schlechte Eigenschaft (Neugier)")
       __("Verpflichtungen")
   ]
 
@@ -45,7 +45,7 @@ require ["data/culture/menschlich"], (C) ->
       __("Hitzeresistenz")
 
       __("Prinzipentreue")
-      __("Persönlichkeitsschwächen (Arroganz)")
+      __("Persönlichkeitsschwäche (Arroganz)")
 
       __("Fliegen")
       __("Boote & Schiffe")
