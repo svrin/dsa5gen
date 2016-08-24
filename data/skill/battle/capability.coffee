@@ -1,184 +1,187 @@
+###
+  Kampfsonderfertigkeiten
+
+  @version: US25001
+  @page: 246ff
+###
+
 define "data/skill/capability/battle", [], () ->
   min: 0
   max: 1
   count: "roman"
 
   groups: [
-    __("Sonderfertigkeiten")
     __("Kampfsonderfertigkeiten")
+    __("Sonderfertigkeiten")
   ]
 
 require ["data/skill/capability/battle"], (S) ->
   skills.add _.extend {}, S,
     name: __("Aufmerksamkeit")
-    costs: 25
+    costs: 10
 
     requirements:
       IN: 13
 
   skills.add _.extend {}, S,
-    name: __("Ausfall")
-    costs: 25
-
-    requirments:
-      [__("Offensiver Kampfstil"), 1]
-
-  skills.add _.extend {}, S,
-    name: __("Ausweiden")
-    costs: 25
-
-  skills.add _.extend {}, S,
-    name: __("Behinderungsgewöhnung")
-    costs: 20
+    name: __("Belastungsgewöhnung")
     max: 2
 
+    costs: (current) ->
+      5 + current * 15
+
     requirements:
-      KK: (current) ->
+      KO: (current) ->
         11 + current * 2
 
   skills.add _.extend {}, S,
     name: __("Beidhändiger Kampf")
-    costs: 30
     max: 2
 
-  skills.add _.extend {}, S,
-    name: __("Berittener Schütze")
-    costs: 50
-
-    requirments:
-      [__("Reiterkampf"), 1]
-
-  skills.add _.extend {}, S,
-    name: __("Defensiver Kampfstil")
-    costs: 40
-    max: 2
+    costs: (current) ->
+      5 + current * 15
 
     requirements:
-      IN: (current) ->
-        13 + current * 2
-
-  skills.add _.extend {}, S,
-    name: __("Eisenarm")
-    costs: 10
-    max: 2
-
-    requirements:
-      KK: (current) ->
+      GE: (current) ->
         11 + current * 2
 
   skills.add _.extend {}, S,
-    name: __("Entwaffnen")
+    name: __("Berittener Kampf")
+    costs: 20
+
+    requirements:
+      [__("Reiten"), 10]
+
+  skills.add _.extend {}, S,
+    name: __("Berittener Schütze")
     costs: 10
+
+    requirments:
+      [__("Berittener Kampf"), 1]
+
+  skills.add _.extend {}, S,
+    name: __("Einhändiger Kampf")
+    costs: 10
+
+    requirements:
+      GE: 13
+
+  skills.add _.extend {}, S,
+    name: __("Entwaffnen")
+    costs: 40
 
     requirements:
       GE: 15
 
   skills.add _.extend {}, S,
-    name: __("Festhalten")
-    costs: 0
+    name: __("Feindgespür")
+    costs: 10
+
+    requirements:
+      IN: 15
 
   skills.add _.extend {}, S,
     name: __("Finte")
-    costs: 50
+    max: 3
+
+    costs: (current) ->
+      10 + current * 5
 
     requirements:
-      GE: 11
+      GE: (current) ->
+        11 + current * 2
 
   skills.add _.extend {}, S,
-    name: __("Gegenhalten")
-    costs: 50
-
-    requirements: [
-      [__("MU"), 15]
-      [__("Meisterparade"), 1]
-    ]
-
-  skills.add _.extend {}, S,
-    name: __("Geschosshagel")
-    costs: 30
-    max: 2
-
-    requirements:
-      FF: (current) ->
-        13 + current * 2
-
-  skills.add _.extend {}, S,
-    name: __("Gezielter Angriff")
-    costs: 20
-
-    requirements:
-      GE: 13
-
-  skills.add _.extend {}, S,
-    name: __("Gezielter Schuss")
-    costs: 20
-
-    requirements:
-      FF: 13
-
-  skills.add _.extend {}, S,
-    name: __("Gezielter Stich")
-    costs: 25
-
-    requirements: [
-      [__("GE"), 15]
-      [__("Gezielter Angriff"), 1]
-      [__("Finte"), 1]
-    ]
-
-  skills.add _.extend {}, S,
-    name: __("Halbschwert")
-    costs: 20
-
-    requirements:
-      MU: 13
-      GE: 13
+    name: __("Haltegriff")
+    costs: 5
 
   skills.add _.extend {}, S,
     name: __("Hammerschlag")
-    costs: 100
+    costs: 25
 
     requirements: [
       [__("MU"), 15]
-      [__("KK"), 17]
-      [__("Wuchtschlag"), 1]
+      [__("Vorstoß"), 1]
+      [__("Wuchtschlag"), 3]
     ]
 
   skills.add _.extend {}, S,
-    name: __("Improvisierte Waffen")
-    costs: 10
-    max: 2
-
-    requirements:
-      IN: (current) ->
-        11 + current * 2
-
-  skills.add _.extend {}, S,
     name: __("Kampfreflexe")
-    costs: 30
-    max: 2
+    max: 3
+
+    costs: (current) ->
+      5 + current * 5
 
     requirements:
       IN: (current) ->
         11 + current * 2
 
   skills.add _.extend {}, S,
-    name: __("Kreuzblock")
-    costs: 15
+    name: __("Klingenfänger")
+    costs: 10
 
     requirements:
       GE: 13
 
   skills.add _.extend {}, S,
-    name: __("Meisterparade")
-    costs: 50
+    name: __("Kreuzblock")
+    costs: 10
 
     requirements:
-      IN: 11
+      GE: 13
 
   skills.add _.extend {}, S,
-    name: __("Niederwerfen")
-    costs: 50
+    name: __("Lanzenangriff")
+    costs: 10
+
+    requirements: [
+      [__("MU"), 13]
+      [__("Berittener Kampf"), 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Präziser Schuss/Wurf")
+    max: 3
+
+    costs: (current) ->
+      10 + current * 5
+
+    requirements:
+      IN: (current) ->
+        11 + current * 2
+
+  skills.add _.extend {}, S,
+    name: __("Präziser Stich")
+    max: 3
+
+    costs: (current) ->
+      10 + current * 5
+
+    requirements:
+      GE: (current) ->
+        11 + current * 2
+
+  skills.add _.extend {}, S,
+    name: __("Riposte")
+    costs: 40
+
+    requirements:
+      GE: 15
+
+  skills.add _.extend {}, S,
+    name: __("Rundumschlag")
+    max: 2
+
+    costs: (current) ->
+      15 + current * 10
+
+    requirements:
+      GE: (current) ->
+        13 + current * 2
+
+  skills.add _.extend {}, S,
+    name: __("Schildspalter")
+    costs: 15
 
     requirements: [
       [__("KK"), 13]
@@ -186,72 +189,36 @@ require ["data/skill/capability/battle"], (S) ->
     ]
 
   skills.add _.extend {}, S,
-    name: __("Offensiver Kampfstil")
-    costs: 100
-    max: 2
+    name: __("Schnellladen (Armbrüste)")
+    costs: 5
 
     requirements:
-      GE: (current) ->
-        13 + current * 2
+      FF: 13
 
   skills.add _.extend {}, S,
-    name: __("Reiterkampf")
-    costs: 30
-
-    requirements: [
-      [__("Reiten"), 10]
-    ]
-
-  skills.add _.extend {}, S,
-    name: __("Riposte")
-    costs: 75
-
-    requirements:
-      GE: 13
-
-  skills.add _.extend {}, S,
-    name: __("Rundumschlag")
-    costs: 75
-    max: 2
-
-    requirements:
-      GE: (current) ->
-        13 + current * 2
-
-  skills.add _.extend {}, S,
-    name: __("Scharfschütze")
-    costs: 50
-
-    requirements:
-      FF: 15
-      IN: 15
-
-  skills.add _.extend {}, S,
-    name: __("Schildspalter")
-    costs: 25
-
-    requirements: [
-      [__("KK"), 15]
-      [__("Wuchtschlag"), 1]
-    ]
-
-  skills.add _.extend {}, S,
-    name: __("Schnellladen")
+    name: __("Schnellladen (Bögen)")
     costs: 20
 
     requirements:
       FF: 13
 
   skills.add _.extend {}, S,
+    name: __("Schnellladen (Wurfwaffen)")
+    costs: 10
+
+    requirements:
+      FF: 13
+
+  skills.add _.extend {}, S,
     name: __("Schnellziehen")
-    costs: 15
+    costs: 10
 
     requirements:
       FF: 13
 
   skills.add _.extend {}, S,
     name: __("Sturmangriff")
-    costs: 50
+    costs: 25
 
     requirements: [
       [__("MU"), 15]
@@ -260,41 +227,63 @@ require ["data/skill/capability/battle"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Todesstoß")
-    costs: 100
+    costs: 30
 
     requirements: [
-      [__("GE"), 17]
-      [__("Gezielter Stich"), 1]
+      [__("MU"), 15]
+      [__("Vorstoß"), 1]
+      [__("Präziser Stich"), 3]
     ]
 
   skills.add _.extend {}, S,
-    name: __("Tod von Links")
-    costs: 75
+    name: __("Verbessertes Ausweichen")
+    max: 3
 
-    requirements: [
-      [__("Beidhändiger Kampf"), 1]
-      [__("Offensiver Kampfstil"), 1]
-    ]
-
-  skills.add _.extend {}, S,
-    name: __("Wasserkampf")
-    costs: 15
-
-    requirements: [
-      [__("Schwimmen"), 10]
-    ]
-
-  skills.add _.extend {}, S,
-    name: __("Wuchtschlag")
-    costs: 50
+    costs: (current) ->
+      10 + current * 5
 
     requirements:
-      KK: 11
+      Körperbeherschung: (current) ->
+        current * 4
 
   skills.add _.extend {}, S,
-    name: __("Wurf")
-    costs: 0
+    name: __("Verteidigungshaltung")
+    costs: 10
+
+    requirements:
+      IN: 13
+
+  skills.add _.extend {}, S,
+    name: __("Vorstoß")
+    costs: 10
 
     requirements:
       GE: 13
+
+  skills.add _.extend {}, S,
+    name: __("Wuchtschlag")
+    max: 3
+
+    costs: (current) ->
+      10 + current * 5
+
+    requirements:
+      KK: (current) ->
+        11 + current * 2
+
+  skills.add _.extend {}, S,
+    name: __("Wurf")
+    costs: 10
+
+    requirements: [
+      [__("GE"), 13]
+      [__("Haltegriff"), 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Zu Fall bringen")
+    costs: 20
+
+    requirements:
+      KK: 13
 

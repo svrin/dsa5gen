@@ -5,8 +5,7 @@
 <% var values = character.get(self.for) || {}; %>
 
 <dl>
-    <% groups = self.collection.groupBy(function (element) { return element.get('groups') && element.get('groups')[0]
-    }); %>
+    <% groups = self.collection.groupBy(function (element) { return element.get('groups') && element.get('groups')[0]}); %>
     <% _.each(groups, function(collection, group) { %>
 
     <% if (collection.length > 0 && self.view.indexOf(group) >= 0) { %>
