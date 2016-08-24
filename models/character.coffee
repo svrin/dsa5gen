@@ -547,10 +547,10 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
 
         # Context
         if _.isArray(value) and value[1]
-          context = [skill, skills.get(value[1])]
+          context = [skill, value[0], skills.get(value[1])]
           value = value[0]
         else
-          context = [skill]
+          context = [skill, value, undefined]
 
         # Maybe lost from a previous version
         if not skill
@@ -559,6 +559,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
 
         # Calculate
         skill_costs = skill.get('costs', context)
+
         costs_increment = 0
         if skill_costs and not skill.get('SF')
           costs_increment += (value * skill_costs || 0)

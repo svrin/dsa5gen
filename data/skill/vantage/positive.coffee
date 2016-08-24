@@ -32,7 +32,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Begabung")
-    costs: (dialect) ->
+    costs: (current, dialect) ->
       return 0 if not dialect
       return 6 if dialect.get('SF') == "A"
       return 12 if dialect.get('SF') == "B"
@@ -97,7 +97,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Herausragende Fertigkeit")
-    costs: (dialect) ->
+    costs: (current, dialect) ->
       return 0 if not dialect
       return 2 if dialect.get('SF') == "A"
       return 4 if dialect.get('SF') == "B"
@@ -107,7 +107,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Herausragende Kampftechnik")
-    costs: (dialect) ->
+    costs: (current, dialect) ->
       return 0 if not dialect
       return 4 if dialect.get('SF') == "A"
       return 8 if dialect.get('SF') == "B"
@@ -262,7 +262,7 @@ require ["data/vantage/positive"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Waffenbegabung")
-    costs: (dialect) ->
+    costs: (current, dialect) ->
       return 0 if not dialect
       return 10 if dialect.get('SF') == "B"
       return 20 if dialect.get('SF') == "C"

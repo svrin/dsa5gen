@@ -282,7 +282,7 @@ require ["data/vantage/negative"], (S) ->
 
   skills.add _.extend {}, S,
     name: __("Unfähig")
-    costs: (dialect) ->
+    costs: (current, dialect) ->
       return 0 if not dialect
       return -1 if dialect.get('SF') == "A"
       return -2 if dialect.get('SF') == "B"

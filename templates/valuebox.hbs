@@ -3,6 +3,7 @@
 <% var gender = character.get('gender'); %>
 <% var recommendations = character.get('recommendations') || {}; %>
 <% var values = character.get(self.for) || {}; %>
+<% var dialect = null; %>
 
 <dl>
     <% groups = self.collection.groupBy(function (element) { return element.get('groups') && element.get('groups')[0]}); %>
@@ -28,6 +29,7 @@
                         <% _.each(self.collection.filter(function (element) {
                         return element.in(multiple) }), function (skill) { %>
                         <% if( _.isArray(value) && value.indexOf(skill.get('name')) >= 0) { %>
+                        <% dialect = skill %>
                         <option selected="selected" value="<%= skill.get('name') %>"><%= skill.get('name') %></option>
                         <% } else { %>
                         <option value="<%= skill.get('name') %>"><%= skill.get('name') %></option>
@@ -56,8 +58,10 @@
                 <% if (element.get('SF') !== undefined) { %>
                 <span><%= element.get('SF') %></span>
                 <% } %>
-                <% if (element.get('costs') !== undefined) { %>
-                <span title="<%= __('AP') %>"><%= element.get('costs') %> AP</span>
+
+                <% var element_costs = element.get('costs', [element, value, dialect]) %>
+                <% if (element_costs !== undefined) { %>
+                <span title="<%= __('AP') %>"><%= element_costs %> AP</span>
                 <% } %>
                 <% if (element.get('requirements') !== undefined) { %>
                 <i><%= _.join(element.get('requirements'), value + 1, element) %></i>

@@ -1,5 +1,8 @@
 ###
   Allgemeine Sonderfertigkeiten
+
+  @version: US25001
+  @page: 214ff
 ###
 
 define "data/vantage/capability/common", [], () ->
@@ -8,165 +11,239 @@ define "data/vantage/capability/common", [], () ->
   count: "roman"
 
   groups: [
-    __("Sonderfertigkeiten")
     __("Allgemeine Sonderfertigkeiten")
+    __("Sonderfertigkeiten")
   ]
 
 require ["data/vantage/capability/common"], (S) ->
   skills.add _.extend {}, S,
-    name: __("Akklimatisierung (Hitze)")
-    alias: [__("Akklimatisierung")]
-
-    costs: 5
-
-    groups: [
-      __("Sonderfertigkeiten")
-      __("Allgemeine Sonderfertigkeiten")
-      __("Akklimatisierung")
-    ]
-
-  skills.add _.extend {}, S,
-    name: __("Akklimatisierung (Kälte)")
-    alias: [__("Akklimatisierung")]
-
-    costs: 5
-
-    groups: [
-      __("Sonderfertigkeiten")
-      __("Allgemeine Sonderfertigkeiten")
-      __("Akklimatisierung")
-    ]
-
-  skills.add _.extend {}, S,
-    name: __("Berufsgeheimnis")
-
-    costs: 30
-    multiple: [__("Fertigkeiten"), __("Berufsgeheimnis")]
-
-  skills.add _.extend {}, S,
-    name: __("Fälscher")
-
+    name: __("Anführer")
     costs: 10
-    multiple: __("Handwerkstalente")
+
+    requirements: [
+      [__("Kriegskunst"), 4]
+    ]
+
+  # Berufsgeheimnis --> knowledge
+
+  skills.add _.extend {}, S,
+    name: __("Dokumentfälscher")
+    costs: 5
+
+    requirements: [
+      [__("Malen & Zeichnen"), 8]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Eisener Wille")
+    costs: 15
+    max: 3
+
+  skills.add _.extend {}, S,
+    name: __("Fächersprache")
+    costs: 3
+
+    requirements: [
+      [__("Etikette"), 8]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Fallen entschärfen")
+    costs: 5
+
+    requirements: [
+      [__("Mechanik"), 4]
+      [__("Schlösserknacken"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Falschspielen")
+    costs: 5
+
+    requirements: [
+      [__("Brett- & Glücksspiel"), 8]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Fertigkeitsspezialisierung")
+    max: 3
+
+    costs: (current, dialect) ->
+      return 0 if not dialect
+      return 1 * current if dialect.get('SF') == "A"
+      return 2 * current if dialect.get('SF') == "B"
+      return 3 * current if dialect.get('SF') == "C"
+      return 4 * current if dialect.get('SF') == "D"
+
+    multiple: __("Talente")
+
+  skills.add _.extend {}, S,
+    name: __("Fischer")
+    costs: 3
+
+    requirements: [
+      [__("Fischen & Angeln"), 4]
+      [__("Verbergen"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Füchsisch")
+    costs: 3
+
+    requirements: [
+      [__("Gassenwissen"), 8]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Geländekunde")
 
-    costs: 30
+    costs: 15
     multiple: __("Gelände")
 
   skills.add _.extend {}, S,
-    name: __("Kulturkunde")
+    name: __("Gildenrecht")
+    costs: 2
 
+    requirements: [
+      [__("Rechtskunde"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Glasbläserei")
+    costs: 2
+
+    requirements: [
+      [__("Steinbearbeitung"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Hehlerei")
+    costs: 5
+
+    requirements: [
+      [__("Gassenwissen"), 8]
+      [__("Handel"), 4]
+      [__("Ortskenntnis"), 1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Instrumente bauen")
+    costs: 2
+
+    requirements: [
+      [__("Holzbearbeitung"), 12]
+      [__("Metallbearbeitung"), 12]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Jäger")
+    costs: 5
+
+    requirements: [
+      ["FK", 10]
+      [__("Fährtensuche"), 4]
+      [__("Tierkunde"), 4]
+      [__("Verbergen"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Kartographie")
+    costs: 5
+
+    requirements: [
+      [__("Geographie"), 8]
+      [__("Rechnen"), 4]
+      [__("Malen & Zeichnen"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Lippenlesen")
     costs: 10
-    multiple: __("Kultur")
+
+    requirements: [
+      [__("Sinnesschärfe"), 4]
+      [__("Blind"), -1]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Meister der Improvisation")
+    costs: 10
 
   skills.add _.extend {}, S,
     name: __("Ortskenntnis")
-
-    costs: 20
+    costs: 2
     multiple: __("Ort")
 
   skills.add _.extend {}, S,
-    name: __("Spezialisierung")
-    max: 3
-
-    costs: (dialect) ->
-      return 0 if not dialect
-      return 10 if dialect.get('SF') == "A"
-      return 20 if dialect.get('SF') == "B"
-      return 30 if dialect.get('SF') == "C"
-    multiple: "Fertigkeiten"
-
-
-require ["data/vantage/capability/common"], (S) ->
-  skills.add _.extend {}, S,
-    name: __("Allgemeinwissen")
-    costs: 50
-  skills.add _.extend {}, S,
-    name: __("Anatom")
-    costs: 30
-    required: [
-      [__("Heilkunde Wunden"), 8]
-    ]
-  skills.add _.extend {}, S,
-    name: __("Baumeister")
-    costs: 20
-    required: [
-      [__("Rechnen"), 8]
-    ]
-  skills.add _.extend {}, S,
-    name: __("Chirurg")
-    costs: 50
-    required: [
-      [__("Anatom"), 1]
-    ]
-  skills.add _.extend {}, S,
-    name: __("Dokumentfälscher")
-    costs: 20
-    required: [
-      [__("Schrift"), 3]
-    ]
-  skills.add _.extend {}, S,
-    name: __("Dompteur")
-    costs: 30
-    required: [
-      [__("Tierkunde"), 8]
-    ]
-  skills.add _.extend {}, S,
-    name: __("Entgifter")
-    costs: 30
-    required: [
-      [__("Heilkunde Gift"), 8]
-    ]
-  skills.add _.extend {}, S,
-    name: __("Falschspiel")
-    costs: 20
-    required: [
-      [__("Brett- & Glücksspiel"), 8]
-    ]
-  skills.add _.extend {}, S,
-    name: __("Führungsstärke")
-    costs: 20
-  skills.add _.extend {}, S,
-    name: __("Hauswirtschaft")
-    costs: 10
-    required: [
-      [__("Etikette"), 4]
-    ]
-  skills.add _.extend {}, S,
-    name: __("Lehrer")
-    costs: 10
-  skills.add _.extend {}, S,
-    name: __("Meister der Improvisation")
-    costs: 50
-  skills.add _.extend {}, S,
-    name: __("Prediger")
-    costs: 30
-    required: [
-      [__("Bekehren & Überzeugen"), 8]
-    ]
-  skills.add _.extend {}, S,
     name: __("Rosstäuscher")
-    costs: 30
-    required: [
+    costs: 4
+
+    requirements: [
+      [__("Handel"), 4]
       [__("Tierkunde"), 8]
     ]
+
   skills.add _.extend {}, S,
-    name: __("Schätzen")
-    costs: 5
-  skills.add _.extend {}, S,
-    name: __("Schauspieler")
-    costs: 20
-  skills.add _.extend {}, S,
-    name: __("Seelenheiler")
-    costs: 50
-    required: [
-      [__("Heilkunde Seele"), 8]
+    name: __("Sammler")
+    costs: 2
+
+    requirements: [
+      [__("Pflanzenkunde"), 4]
+      [__("Wildnisleben"), 4]
     ]
+
   skills.add _.extend {}, S,
-    name: __("Standfest")
-    costs: 10
+    name: __("Schmerzen unterdrücken")
+    costs: 20
+
+    requirements: [
+      [__("Selbstbeherschung"), 4]
+    ]
+
   skills.add _.extend {}, S,
-    name: __("Wundheiler")
-    costs: 30
+    name: __("Schnapsbrennerei")
+    costs: 2
+
+    requirements: [
+      [__("Alchimie"), 4]
+      [__("Lebensmittelbearbeitung"), 4]
+    ]
+
+  # Schrift --> language
+
+  # Schriftstellerei --> language
+
+  # Sprache --> language
+
+  skills.add _.extend {}, S,
+    name: __("Tierstimmen immitieren")
+    costs: 5
+
+    requirements: [
+      [__("Tierkunde"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Töpferei")
+    costs: 2
+
+    requirements: [
+      [__("Steinbearbeitung"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Weittervorhersage")
+    costs: 2
+
+    requirements: [
+      [__("Wildnisleben"), 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Zahlenmystik")
+    costs: 2
+
+    requirements: [
+      [__("Rechnen"), 8]
+      [__("Sagen & Legenden"), 4]
+    ]

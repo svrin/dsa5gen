@@ -8,23 +8,61 @@ define "data/vantage/capability/language", [], () ->
   count: "roman"
 
   groups: [
-    __("Sonderfertigkeiten")
     __("Sprachsonderfertigkeiten")
+    __("Sonderfertigkeiten")
   ]
 
 require ["data/vantage/capability/language"], (S) ->
+
   skills.add _.extend {}, S,
-    name: __("Fächersprache")
-    costs: 5
+    name: __("Schriftstellerei (Liebesroman)")
+    costs: 2
+
+    requirements: [
+      ["Betören", 4]
+    ]
+
   skills.add _.extend {}, S,
-    name: __("Füchsisch")
-    costs: 5
+    name: __("Schriftstellerei (Poesie)")
+    costs: 2
+
+    requirements: [
+      ["Etikette", 4]
+    ]
+
   skills.add _.extend {}, S,
-    name: __("Kryptographie")
-    costs: 10
+    name: __("Schriftstellerei (Hetzschriften)")
+    costs: 2
+
+    requirements: [
+      ["Bekhren & Überzeugen", 4]
+    ]
+
   skills.add _.extend {}, S,
-    name: __("Lippenlesen")
-    costs: 20
+    name: __("Schriftstellerei (Kriminalgeschichten)")
+    costs: 2
+
+    requirements: [
+      ["Gassenwissen", 4]
+    ]
+
   skills.add _.extend {}, S,
-    name: __("Poesie")
-    costs: 10
+    name: __("Schriftstellerei (Romane)")
+    costs: 2
+
+    requirements: [
+      ["Überreden", 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Schriftstellerei (Märchen)")
+    costs: 2
+
+    requirements: [
+      ["Sagen & Legenden", 4]
+    ]
+
+  skills.add _.extend {}, S,
+    name: __("Schriftstellerei (Fachpublikation)")
+    costs: 2
+    multiple: __("Wissenstalente")

@@ -242,9 +242,9 @@ require ["data/skill/capability/battle"], (S) ->
     costs: (current) ->
       10 + current * 5
 
-    requirements:
-      Körperbeherschung: (current) ->
-        current * 4
+    requirements: [
+      [__("Körperbeherschung"), (current) -> current * 4]
+    ]
 
   skills.add _.extend {}, S,
     name: __("Verteidigungshaltung")
