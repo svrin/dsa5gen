@@ -19,16 +19,16 @@
     /* "../data/equipment/beleuchtung.coffee #489 */
     "50 Portionen Zunder": "50 Portionen Zunder",
 
-    /* "../templates/sheets/print.hbs #3346 */
+    /* "../templates/sheets/print.hbs #3343 */
     "AE": "AE",
 
     /* "../templates/profile.hbs #1417 */
     /* "../templates/profile.hbs #1584 */
-    /* "../templates/valuebox.hbs #2905 */
+    /* "../templates/valuebox.hbs #3061 */
     "AP": "AP",
 
-    /* "../templates/sheets/print.hbs #3300 */
-    /* "../templates/sheets/print.hbs #21445 */
+    /* "../templates/sheets/print.hbs #3297 */
+    /* "../templates/sheets/print.hbs #21935 */
     "AW": "AW",
 
     /* "../data/skill/vantage/habits.coffee #5866 */
@@ -412,7 +412,7 @@
     /* "../data/skill/magic/magic.coffee #579 */
     "Axxeleratus": "Axxeleratus",
 
-    /* "../templates/sheets/print.hbs #21645 */
+    /* "../templates/sheets/print.hbs #22135 */
     "BE": "BE",
 
     /* "../data/equipment/nahkampfwaffen.coffee #1112 */
@@ -634,14 +634,14 @@
     /* "../data/profession/military/soldat/PSOL_BSC.coffee #174 */
     "Berittene Schützin": "Berittene Schützin",
 
-    /* "../data/skill/battle/capability.coffee #895 */
-    /* "../data/skill/battle/capability.coffee #1080 */
-    /* "../data/skill/battle/capability.coffee #2363 */
+    /* "../data/skill/battle/capability.coffee #813 */
+    /* "../data/skill/battle/capability.coffee #998 */
+    /* "../data/skill/battle/capability.coffee #2281 */
     "Berittener Kampf": "Berittener Kampf",
 
     /* "../data/profession/military/soldat/PSOL_BSC.coffee #137 */
     /* "../data/profession/military/soldat/PSOL_BSC.coffee #389 */
-    /* "../data/skill/battle/capability.coffee #1016 */
+    /* "../data/skill/battle/capability.coffee #934 */
     "Berittener Schütze": "Berittener Schütze",
 
     /* "../data/equipment/reisebedarf.coffee #310 */
@@ -1242,7 +1242,7 @@
     /* "../data/skill/vantage/negative.coffee #1012 */
     "Eingeschränkter Sinn (Tastsinn)": "Eingeschränkter Sinn (Tastsinn)",
 
-    /* "../data/skill/battle/capability.coffee #1147 */
+    /* "../data/skill/battle/capability.coffee #1065 */
     "Einhändiger Kampf": "Einhändiger Kampf",
 
     /* "../data/culture/menschlich/CARA.coffee #1194 */
@@ -1364,7 +1364,7 @@
     /* "../data/skill/vantage/fear.coffee #471 */
     "Entomophobie": "Entomophobie",
 
-    /* "../data/skill/battle/capability.coffee #1257 */
+    /* "../data/skill/battle/capability.coffee #1175 */
     "Entwaffnen": "Entwaffnen",
 
     /* "../data/skill/liturgy/liturgy.coffee #1118 */
@@ -1501,7 +1501,7 @@
     /* "../data/profession/society/gaukler/PGAU.coffee #1417 */
     /* "../data/profession/society/gelehrter/PGEH.coffee #919 */
     /* "../data/profession/society/kuenstler/PKUE.coffee #917 */
-    /* "../templates/sheets/print.hbs #20951 */
+    /* "../templates/sheets/print.hbs #21441 */
     "FF": "FF",
 
     /* "../data/equipment/nahkampfwaffen.coffee #5741 */
@@ -1623,7 +1623,7 @@
     /* "../data/equipment/kleidung.coffee #1875 */
     "Federhut mit breiter Krempe": "Federhut mit breiter Krempe",
 
-    /* "../data/skill/battle/capability.coffee #1360 */
+    /* "../data/skill/battle/capability.coffee #1278 */
     "Feindgespür": "Feindgespür",
 
     /* "../data/equipment/nahkampfwaffen.coffee #5959 */
@@ -1721,7 +1721,7 @@
     /* "../data/profession/military/soldat/PSOL_REI.coffee #289 */
     /* "../data/profession/military/soldat/PSOL_SAP.coffee #292 */
     /* "../data/profession/military/soldat/PSOL_STR.coffee #322 */
-    /* "../data/skill/battle/capability.coffee #1464 */
+    /* "../data/skill/battle/capability.coffee #1382 */
     "Finte": "Finte",
 
     /* "../data/race/elfisch/RFRE.coffee #133 */
@@ -1931,20 +1931,20 @@
     /* "../data/profession/military/soldat/PSOL.coffee #1133 */
     /* "../data/profession/society/gaukler/PGAU.coffee #1430 */
     /* "../data/profession/society/streuner/PSTR.coffee #1363 */
-    /* "../data/skill/battle/capability.coffee #4695 */
-    /* "../templates/sheets/print.hbs #21074 */
+    /* "../data/skill/battle/capability.coffee #4613 */
+    /* "../templates/sheets/print.hbs #21564 */
     "GE": "GE",
 
-    /* "../templates/sheets/print.hbs #3364 */
-    /* "../templates/sheets/print.hbs #21577 */
+    /* "../templates/sheets/print.hbs #3361 */
+    /* "../templates/sheets/print.hbs #22067 */
     "GLK": "GLK",
 
-    /* "../templates/sheets/print.hbs #3291 */
-    /* "../templates/sheets/print.hbs #21511 */
+    /* "../templates/sheets/print.hbs #3288 */
+    /* "../templates/sheets/print.hbs #22001 */
     "GS": "GS",
 
     /* "../data/skill/magic/tricks.coffee #115 */
-    /* "../templates/sheets/print.hbs #7836 */
+    /* "../templates/sheets/print.hbs #8326 */
     "Gaben": "Gaben",
 
     /* "../data/equipment/ruestung.coffee #186 */
@@ -2338,7 +2338,7 @@
     "Gesellschafter": "Gesellschafter",
 
     /* "../data/skill/society.coffee #102 */
-    /* "../templates/sheets/print.hbs #7706 */
+    /* "../templates/sheets/print.hbs #8196 */
     "Gesellschaftstalente": "Gesellschaftstalente",
 
     /* "../data/equipment/ruestung.coffee #310 */
@@ -2765,14 +2765,14 @@
     /* "../data/equipment/kleidung.coffee #2359 */
     "Halstuch (Seide)": "Halstuch (Seide)",
 
-    /* "../data/skill/battle/capability.coffee #1642 */
-    /* "../data/skill/battle/capability.coffee #4716 */
+    /* "../data/skill/battle/capability.coffee #1560 */
+    /* "../data/skill/battle/capability.coffee #4634 */
     "Haltegriff": "Haltegriff",
 
     /* "../data/skill/battle/style.coffee #451 */
     "Hammerfaust": "Hammerfaust",
 
-    /* "../data/skill/battle/capability.coffee #1712 */
+    /* "../data/skill/battle/capability.coffee #1630 */
     "Hammerschlag": "Hammerschlag",
 
     /* "../data/equipment/nahkampfwaffen.coffee #2441 */
@@ -2831,7 +2831,7 @@
 
     /* "../data/profession/crafting/PHAN.coffee #649 */
     /* "../data/skill/crafting.coffee #103 */
-    /* "../templates/sheets/print.hbs #8753 */
+    /* "../templates/sheets/print.hbs #9243 */
     "Handwerkstalente": "Handwerkstalente",
 
     /* "../data/skill/magic/tricks.coffee #751 */
@@ -3427,8 +3427,8 @@
     /* "../data/profession/society/streuner/PSTR.coffee #1337 */
     "IN": "IN",
 
-    /* "../templates/sheets/print.hbs #3327 */
-    /* "../templates/sheets/print.hbs #21320 */
+    /* "../templates/sheets/print.hbs #3324 */
+    /* "../templates/sheets/print.hbs #21810 */
     "INI": "INI",
 
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #1089 */
@@ -3545,7 +3545,7 @@
     /* "../data/skill/vantage/negative.coffee #666 */
     "Jähzorn": "Jähzorn",
 
-    /* "../templates/sheets/print.hbs #3355 */
+    /* "../templates/sheets/print.hbs #3352 */
     "KE": "KE",
 
     /* "../data/profession/crafting/landarbeiter/PLND.coffee #1162 */
@@ -3553,8 +3553,8 @@
     /* "../data/profession/military/PKRR.coffee #1245 */
     /* "../data/profession/military/PSTK.coffee #1576 */
     /* "../data/profession/military/soldat/PSOL.coffee #1146 */
-    /* "../data/skill/battle/capability.coffee #3164 */
-    /* "../templates/sheets/print.hbs #21197 */
+    /* "../data/skill/battle/capability.coffee #3082 */
+    /* "../templates/sheets/print.hbs #21687 */
     "KK": "KK",
 
     /* "../data/profession/magic/PWDL.coffee #1243 */
@@ -3617,7 +3617,7 @@
     "Kampfrausch": "Kampfrausch",
 
     /* "../data/profession/military/PSTK.coffee #399 */
-    /* "../data/skill/battle/capability.coffee #1887 */
+    /* "../data/skill/battle/capability.coffee #1805 */
     "Kampfreflexe": "Kampfreflexe",
 
     /* "../data/profession/military/PKRR.coffee #397 */
@@ -3642,8 +3642,8 @@
     /* "../data/profession/military/soldat/PSOL_STR.coffee #479 */
     /* "../data/skill/battle/skills.coffee #130 */
     /* "../data/skill/battle/skills.coffee #562 */
-    /* "../templates/sheets/print.hbs #15432 */
-    /* "../templates/sheets/print.hbs #15925 */
+    /* "../templates/sheets/print.hbs #15922 */
+    /* "../templates/sheets/print.hbs #16415 */
     "Kampftechniken": "Kampftechniken",
 
     /* "../data/equipment/kleidung.coffee #3181 */
@@ -3720,8 +3720,8 @@
 
     /* "../data/profession/liturgy/PPER.coffee #386 */
     /* "../data/profession/liturgy/PRON.coffee #382 */
-    /* "../templates/sheets/print.hbs #9803 */
-    /* "../templates/sheets/print.hbs #9954 */
+    /* "../templates/sheets/print.hbs #10293 */
+    /* "../templates/sheets/print.hbs #10444 */
     "Kirche": "Kirche",
 
     /* "../data/equipment/kleidung.coffee #3456 */
@@ -3786,7 +3786,7 @@
     /* "../data/skill/body.coffee #442 */
     "Klettern": "Klettern",
 
-    /* "../data/skill/battle/capability.coffee #2071 */
+    /* "../data/skill/battle/capability.coffee #1989 */
     "Klingenfänger": "Klingenfänger",
 
     /* "../data/profession/society/hausdiener/PHAU.coffee #167 */
@@ -3855,7 +3855,7 @@
     /* "../data/skill/vantage/positive.coffee #3720 */
     "Krankheitsresistenz": "Krankheitsresistenz",
 
-    /* "../data/skill/battle/capability.coffee #2177 */
+    /* "../data/skill/battle/capability.coffee #2095 */
     "Kreuzblock": "Kreuzblock",
 
     /* "../data/profession/military/PKRR.coffee #46 */
@@ -4051,7 +4051,7 @@
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #415 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #540 */
     /* "../data/profession/society/spitzel/PSPL_MCH.coffee #730 */
-    /* "../data/skill/battle/capability.coffee #4148 */
+    /* "../data/skill/battle/capability.coffee #4066 */
     "Körperbeherschung": "Körperbeherschung",
 
     /* "../data/culture/elfisch/CWLE.coffee #496 */
@@ -4064,7 +4064,7 @@
     "Körperliche Auffälligkeit": "Körperliche Auffälligkeit",
 
     /* "../data/skill/body.coffee #99 */
-    /* "../templates/sheets/print.hbs #7644 */
+    /* "../templates/sheets/print.hbs #8134 */
     "Körpertalente": "Körpertalente",
 
     /* "../data/profession/society/kuenstler/PKUE.coffee #38 */
@@ -4105,7 +4105,7 @@
     /* "../data/equipment/ruestung.coffee #1219 */
     "Kürass": "Kürass",
 
-    /* "../templates/sheets/print.hbs #3337 */
+    /* "../templates/sheets/print.hbs #3334 */
     "LE": "LE",
 
     /* "../data/profession/military/soldat/PSOL.coffee #1200 */
@@ -4146,7 +4146,7 @@
     /* "../data/skill/battle/skills.coffee #1038 */
     "Lanzen": "Lanzen",
 
-    /* "../data/skill/battle/capability.coffee #2280 */
+    /* "../data/skill/battle/capability.coffee #2198 */
     "Lanzenangriff": "Lanzenangriff",
 
     /* "../data/skill/liturgy/liturgy.coffee #2956 */
@@ -4287,7 +4287,7 @@
     /* "../data/skill/liturgy/liturgy.coffee #5448 */
     /* "../data/skill/liturgy/liturgy.coffee #5602 */
     /* "../data/skill/liturgy/liturgy.coffee #5768 */
-    /* "../templates/sheets/print.hbs #11050 */
+    /* "../templates/sheets/print.hbs #11540 */
     "Liturgien": "Liturgien",
 
     /* "../data/skill/magic/tricks.coffee #862 */
@@ -4320,10 +4320,10 @@
     /* "../data/profession/military/PSTK.coffee #1550 */
     /* "../data/profession/society/gaukler/PGAU.coffee #1404 */
     /* "../data/profession/society/streuner/PSTR.coffee #1324 */
-    /* "../data/skill/battle/capability.coffee #1773 */
-    /* "../data/skill/battle/capability.coffee #2342 */
-    /* "../data/skill/battle/capability.coffee #3767 */
-    /* "../data/skill/battle/capability.coffee #3914 */
+    /* "../data/skill/battle/capability.coffee #1691 */
+    /* "../data/skill/battle/capability.coffee #2260 */
+    /* "../data/skill/battle/capability.coffee #3685 */
+    /* "../data/skill/battle/capability.coffee #3832 */
     "MU": "MU",
 
     /* "../data/profession/society/hausdiener/PHAU.coffee #190 */
@@ -4906,7 +4906,7 @@
     "Nase-/Ohrenbohrer": "Nase-/Ohrenbohrer",
 
     /* "../data/skill/nature.coffee #101 */
-    /* "../templates/sheets/print.hbs #7775 */
+    /* "../templates/sheets/print.hbs #8265 */
     "Naturtalente": "Naturtalente",
 
     /* "../data/skill/liturgy/ceremony.coffee #924 */
@@ -5547,11 +5547,11 @@
     /* "../data/equipment/proviant.coffee #187 */
     "Proviant für einen Tag": "Proviant für einen Tag",
 
-    /* "../data/skill/battle/capability.coffee #2436 */
+    /* "../data/skill/battle/capability.coffee #2354 */
     "Präziser Schuss/Wurf": "Präziser Schuss/Wurf",
 
-    /* "../data/skill/battle/capability.coffee #2629 */
-    /* "../data/skill/battle/capability.coffee #3960 */
+    /* "../data/skill/battle/capability.coffee #2547 */
+    /* "../data/skill/battle/capability.coffee #3878 */
     "Präziser Stich": "Präziser Stich",
 
     /* "../data/profession/magic/magier/PMAG_VWL.coffee #1004 */
@@ -5768,7 +5768,7 @@
     /* "../data/profession/society/streuner/PSTR_ZUH.coffee #1005 */
     /* "../data/skill/knowledge.coffee #1052 */
     /* "../data/skill/vantage/capability.coffee #2816 */
-    /* "../data/skill/vantage/capability.coffee #4416 */
+    /* "../data/skill/vantage/capability.coffee #4415 */
     "Rechnen": "Rechnen",
 
     /* "../data/profession/society/gelehrter/PGEH_RET.coffee #131 */
@@ -5900,7 +5900,7 @@
     /* "../data/profession/society/hoefling/PHOE_DIP.coffee #338 */
     /* "../data/profession/society/hoefling/PHOE_HOF.coffee #340 */
     /* "../data/profession/society/hoefling/PHOE_MUE.coffee #347 */
-    /* "../data/skill/battle/capability.coffee #958 */
+    /* "../data/skill/battle/capability.coffee #876 */
     /* "../data/skill/body.coffee #788 */
     "Reiten": "Reiten",
 
@@ -5960,7 +5960,7 @@
     /* "../data/equipment/ruestung.coffee #2127 */
     "Ringmantel": "Ringmantel",
 
-    /* "../data/skill/battle/capability.coffee #2816 */
+    /* "../data/skill/battle/capability.coffee #2734 */
     "Riposte": "Riposte",
 
     /* "../data/skill/language/speach.coffee #2022 */
@@ -6044,7 +6044,7 @@
     /* "../data/equipment/nahkampfwaffen.coffee #18535 */
     "Runaskraja": "Runaskraja",
 
-    /* "../data/skill/battle/capability.coffee #2916 */
+    /* "../data/skill/battle/capability.coffee #2834 */
     "Rundumschlag": "Rundumschlag",
 
     /* "../data/skill/language/speach.coffee #2291 */
@@ -6056,7 +6056,7 @@
     /* "../data/equipment/ruestung.coffee #80 */
     "Rüstung": "Rüstung",
 
-    /* "../templates/sheets/print.hbs #3309 */
+    /* "../templates/sheets/print.hbs #3306 */
     "SK": "SK",
 
     /* "../data/skill/language/speach.coffee #2354 */
@@ -6178,7 +6178,7 @@
     /* "../data/profession/society/streuner/PSTR_TAU.coffee #1085 */
     /* "../data/profession/society/streuner/PSTR_ZUH.coffee #1059 */
     /* "../data/skill/knowledge.coffee #1280 */
-    /* "../data/skill/vantage/capability.coffee #4441 */
+    /* "../data/skill/vantage/capability.coffee #4440 */
     "Sagen & Legenden": "Sagen & Legenden",
 
     /* "../data/profession/society/gelehrter/PGEH_VLK.coffee #616 */
@@ -6257,7 +6257,7 @@
     /* "../data/animal/familiar/toad.coffee #336 */
     "Schildkröte": "Schildkröte",
 
-    /* "../data/skill/battle/capability.coffee #3102 */
+    /* "../data/skill/battle/capability.coffee #3020 */
     "Schildspalter": "Schildspalter",
 
     /* "../data/skill/liturgy/liturgy.coffee #4407 */
@@ -6566,16 +6566,16 @@
     /* "../data/equipment/reisebedarf.coffee #1070 */
     "Schneeschuhe": "Schneeschuhe",
 
-    /* "../data/skill/battle/capability.coffee #3253 */
+    /* "../data/skill/battle/capability.coffee #3171 */
     "Schnellladen (Armbrüste)": "Schnellladen (Armbrüste)",
 
-    /* "../data/skill/battle/capability.coffee #3369 */
+    /* "../data/skill/battle/capability.coffee #3287 */
     "Schnellladen (Bögen)": "Schnellladen (Bögen)",
 
-    /* "../data/skill/battle/capability.coffee #3482 */
+    /* "../data/skill/battle/capability.coffee #3400 */
     "Schnellladen (Wurfwaffen)": "Schnellladen (Wurfwaffen)",
 
-    /* "../data/skill/battle/capability.coffee #3600 */
+    /* "../data/skill/battle/capability.coffee #3518 */
     "Schnellziehen": "Schnellziehen",
 
     /* "../data/skill/magic/tricks.coffee #1036 */
@@ -6693,7 +6693,7 @@
     /* "../data/profession/society/streuner/PSTR_TAU.coffee #333 */
     /* "../data/profession/society/streuner/PSTR_ZUH.coffee #326 */
     /* "../data/skill/language/lettering.coffee #92 */
-    /* "../templates/sheets/print.hbs #5182 */
+    /* "../templates/sheets/print.hbs #5179 */
     "Schrift": "Schrift",
 
     /* "../data/culture/menschlich/CNVS.coffee #297 */
@@ -6817,8 +6817,8 @@
     /* "../data/profession/magic/hexe/PHEX_SHM.coffee #402 */
     /* "../data/profession/magic/hexe/PHEX_SWW.coffee #354 */
     /* "../data/profession/magic/hexe/PHEX_TDE.coffee #355 */
-    /* "../templates/sheets/print.hbs #9206 */
-    /* "../templates/sheets/print.hbs #9407 */
+    /* "../templates/sheets/print.hbs #9696 */
+    /* "../templates/sheets/print.hbs #9897 */
     "Schwesternschaft": "Schwesternschaft",
 
     /* "../data/culture/elfisch/CAUE.coffee #918 */
@@ -7148,8 +7148,8 @@
     /* "../data/profession/magic/magier/PMAG_BEH.coffee #386 */
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #358 */
     /* "../data/profession/magic/magier/PMAG_VWL.coffee #386 */
-    /* "../templates/sheets/print.hbs #9517 */
-    /* "../templates/sheets/print.hbs #9703 */
+    /* "../templates/sheets/print.hbs #10007 */
+    /* "../templates/sheets/print.hbs #10193 */
     "Spezialgebiet": "Spezialgebiet",
 
     /* "../data/skill/knowledge.coffee #1401 */
@@ -7299,7 +7299,7 @@
     /* "../data/profession/society/streuner/PSTR_TAU.coffee #318 */
     /* "../data/profession/society/streuner/PSTR_ZUH.coffee #311 */
     /* "../data/skill/language/speach.coffee #89 */
-    /* "../templates/sheets/print.hbs #4730 */
+    /* "../templates/sheets/print.hbs #4727 */
     "Sprache": "Sprache",
 
     /* "../data/culture/elfisch/C.coffee #145 */
@@ -7612,7 +7612,7 @@
     /* "../data/skill/vantage/negative.coffee #5023 */
     "Stumm": "Stumm",
 
-    /* "../data/skill/battle/capability.coffee #3706 */
+    /* "../data/skill/battle/capability.coffee #3624 */
     "Sturmangriff": "Sturmangriff",
 
     /* "../data/equipment/nahkampfwaffen.coffee #22907 */
@@ -7909,7 +7909,7 @@
     /* "../data/profession/magic/hexe/PHEX_TDE.coffee #206 */
     "Tochter der Erde": "Tochter der Erde",
 
-    /* "../data/skill/battle/capability.coffee #3856 */
+    /* "../data/skill/battle/capability.coffee #3774 */
     "Todesstoß": "Todesstoß",
 
     /* "../data/skill/vantage/fear.coffee #1354 */
@@ -7928,8 +7928,8 @@
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #316 */
     /* "../data/profession/magic/magier/PMAG_UNI.coffee #331 */
     /* "../data/profession/magic/magier/PMAG_VWL.coffee #344 */
-    /* "../templates/sheets/print.hbs #9032 */
-    /* "../templates/sheets/print.hbs #9116 */
+    /* "../templates/sheets/print.hbs #9522 */
+    /* "../templates/sheets/print.hbs #9606 */
     "Tradition": "Tradition",
 
     /* "../data/skill/liturgy/blessing.coffee #852 */
@@ -8220,7 +8220,7 @@
     /* "../data/skill/vantage/positive.coffee #4890 */
     "Verbesserte Regeneration (Lebensenergie)": "Verbesserte Regeneration (Lebensenergie)",
 
-    /* "../data/skill/battle/capability.coffee #4031 */
+    /* "../data/skill/battle/capability.coffee #3949 */
     "Verbessertes Ausweichen": "Verbessertes Ausweichen",
 
     /* "../data/profession/society/gaukler/PGAU.coffee #1136 */
@@ -8303,7 +8303,7 @@
     /* "../data/skill/vantage/negative.coffee #5632 */
     "Verstümmelt (Einäugig)": "Verstümmelt (Einäugig)",
 
-    /* "../data/skill/battle/capability.coffee #4245 */
+    /* "../data/skill/battle/capability.coffee #4163 */
     "Verteidigungshaltung": "Verteidigungshaltung",
 
     /* "../data/profession/liturgy/PPER.coffee #1252 */
@@ -8365,9 +8365,9 @@
     /* "../data/equipment/nahkampfwaffen.coffee #23792 */
     "Vorschlaghammer": "Vorschlaghammer",
 
-    /* "../data/skill/battle/capability.coffee #1794 */
-    /* "../data/skill/battle/capability.coffee #3935 */
-    /* "../data/skill/battle/capability.coffee #4358 */
+    /* "../data/skill/battle/capability.coffee #1712 */
+    /* "../data/skill/battle/capability.coffee #3853 */
+    /* "../data/skill/battle/capability.coffee #4276 */
     "Vorstoß": "Vorstoß",
 
     /* "../data/skill/vantage/positive.coffee #151 */
@@ -8387,7 +8387,7 @@
     "Völkerkundlerin": "Völkerkundlerin",
 
     /* "../data/equipment/nahkampfwaffen.coffee #86 */
-    /* "../templates/sheets/print.hbs #17504 */
+    /* "../templates/sheets/print.hbs #17994 */
     "Waffen": "Waffen",
 
     /* "../data/culture/elfisch/CAUE.coffee #342 */
@@ -8463,9 +8463,6 @@
     /* "../data/skill/liturgy/blessing.coffee #909 */
     "Weisheitssegen": "Weisheitssegen",
 
-    /* "../data/skill/vantage/capability.coffee #4222 */
-    "Weittervorhersage": "Weittervorhersage",
-
     /* "../data/skill/vantage/habits.coffee #4093 */
     /* "../data/skill/vantage/habits.coffee #4121 */
     "Weltfremd": "Weltfremd",
@@ -8496,6 +8493,9 @@
 
     /* "../data/equipment/kleidung.coffee #6792 */
     "Weste": "Weste",
+
+    /* "../data/skill/vantage/capability.coffee #4222 */
+    "Wettervorhersage": "Wettervorhersage",
 
     /* "../data/animal/familiar/weasel.coffee #103 */
     "Wiesel": "Wiesel",
@@ -8572,7 +8572,7 @@
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #831 */
     /* "../data/skill/nature.coffee #917 */
     /* "../data/skill/vantage/capability.coffee #3486 */
-    /* "../data/skill/vantage/capability.coffee #4287 */
+    /* "../data/skill/vantage/capability.coffee #4286 */
     "Wildnisleben": "Wildnisleben",
 
     /* "../data/culture/elfisch/C.coffee #249 */
@@ -8653,7 +8653,7 @@
 
     /* "../data/skill/knowledge.coffee #104 */
     /* "../data/skill/language/capability.coffee #1220 */
-    /* "../templates/sheets/print.hbs #8690 */
+    /* "../templates/sheets/print.hbs #9180 */
     "Wissenstalente": "Wissenstalente",
 
     /* "../data/culture/menschlich/CZYK.coffee #440 */
@@ -8697,10 +8697,10 @@
     /* "../data/profession/military/soldat/PSOL_REI.coffee #307 */
     /* "../data/profession/military/soldat/PSOL_SAP.coffee #310 */
     /* "../data/profession/military/soldat/PSOL_STR.coffee #340 */
-    /* "../data/skill/battle/capability.coffee #1819 */
-    /* "../data/skill/battle/capability.coffee #3185 */
-    /* "../data/skill/battle/capability.coffee #3788 */
-    /* "../data/skill/battle/capability.coffee #4458 */
+    /* "../data/skill/battle/capability.coffee #1737 */
+    /* "../data/skill/battle/capability.coffee #3103 */
+    /* "../data/skill/battle/capability.coffee #3706 */
+    /* "../data/skill/battle/capability.coffee #4376 */
     "Wuchtschlag": "Wuchtschlag",
 
     /* "../data/skill/language/speach.coffee #2633 */
@@ -8715,7 +8715,7 @@
     /* "../data/equipment/heilmittel.coffee #962 */
     "Wundnähzeug": "Wundnähzeug",
 
-    /* "../data/skill/battle/capability.coffee #4642 */
+    /* "../data/skill/battle/capability.coffee #4560 */
     "Wurf": "Wurf",
 
     /* "../data/profession/military/soldat/PSOL.coffee #464 */
@@ -8759,10 +8759,10 @@
     /* "../data/skill/language/speach.coffee #2767 */
     "Yetisprache": "Yetisprache",
 
-    /* "../templates/sheets/print.hbs #3318 */
+    /* "../templates/sheets/print.hbs #3315 */
     "ZK": "ZK",
 
-    /* "../data/skill/vantage/capability.coffee #4356 */
+    /* "../data/skill/vantage/capability.coffee #4355 */
     "Zahlenmystik": "Zahlenmystik",
 
     /* "../data/profession/society/gelehrter/PGEH_ZMY.coffee #98 */
@@ -8772,7 +8772,7 @@
     "Zahlenmystikerin": "Zahlenmystikerin",
 
     /* "../data/skill/magic/magic.coffee #80 */
-    /* "../templates/sheets/print.hbs #10906 */
+    /* "../templates/sheets/print.hbs #11396 */
     "Zauber": "Zauber",
 
     /* "../data/skill/vantage/negative.coffee #6247 */
@@ -8974,7 +8974,7 @@
     /* "../data/profession/society/hausdiener/PHAU_ZOF.coffee #156 */
     "Zofe": "Zofe",
 
-    /* "../data/skill/battle/capability.coffee #4783 */
+    /* "../data/skill/battle/capability.coffee #4701 */
     "Zu Fall bringen": "Zu Fall bringen",
 
     /* "../data/profession/society/streuner/PSTR_ZUH.coffee #218 */

@@ -232,7 +232,7 @@ require ["data/vantage/capability/common"], (S) ->
     ]
 
   skills.add _.extend {}, S,
-    name: __("Weittervorhersage")
+    name: __("Wettervorhersage")
     costs: 2
 
     requirements: [

@@ -58,7 +58,7 @@
         <b><%= key %></b>
         <label class="subdesc" for="attributes"><%= __(key) %></label>
         <span data-for="attributes.<%= key %>"><%= value %></span>
-        <span data-for="attributes.<%= key %>_max"><%= 18 + (character.get('attributes')[key + "_max"] || 0) %></span>
+        <span data-for="attributes.<%= key %>_max"><%= 18 + parseInt(character.get('attributes')[key + "_max"] || 0) %></span>
         <br/>
         <% } %>
         <% }); %>
@@ -109,6 +109,10 @@
         <% var i = 23; %>
 
         <h2>Sprachen</h2>
+        <h3 data-for="profile.select.character.profile.speech" class="text">
+            <%= character.get('profile')['speech'] %>: M
+            <% i++ %>
+        </h3>
         <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.groups.indexOf(__('Sprache')) >= 0) { %>
         <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
@@ -141,6 +145,22 @@
 
         <% _.each(c_skills, function (skill) { %>
         <% if (skill.item && skill.item.isVantage()) { %>
+        <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
+            <%= skill.item.toString(skill.value) %>
+        </h3>
+        <% i--; %>
+        <% } %>
+        <% }); %>
+        <% while (i-- > 15) { %>
+        <h3 data-for="skills">
+            &nbsp;
+        </h3>
+        <% } %>
+
+        <h2>Sonderfertigkeiten</h2>
+
+        <% _.each(c_skills, function (skill) { %>
+        <% if (skill.item && skill.item.isCapability()) { %>
         <h3 data-for="skills.<%= skill.key %>" class="<%= (skill.key.length > 40) && 'text-long' || 'text' %>">
             <%= skill.item.toString(skill.value) %>
         </h3>
