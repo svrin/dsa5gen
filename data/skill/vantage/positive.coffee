@@ -274,6 +274,10 @@ require ["data/vantage/positive"], (S) ->
     costs: 5
 
   skills.add _.extend {}, S,
+    name: __("Zäher Hund")
+    costs: 20
+
+  skills.add _.extend {}, S,
     name: __("Zauberer")
     costs: 25
     auto: [
