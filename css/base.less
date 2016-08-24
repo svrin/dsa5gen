@@ -673,14 +673,22 @@ i {
 li {
   text-align: left;
 
-  > label {
+  > label, > .label {
     &:after {
       content: ':';
     }
   }
 
-  .box-left & > span {
+  .box-left & > span, .box-left & > .span {
     float: right;
+  }
+
+  > select {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0 0 0 -4px;
+    outline: 0;
   }
 }
 

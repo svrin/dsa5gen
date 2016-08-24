@@ -1,12 +1,12 @@
 <li>
-    <select  data-for="element" title="Wahlfreiheitsfeld">
+    <select data-for="element" title="Was solln wir tun, Fisch?" class="label">
         <% _.each(elements, function(element) { %>
             <option value="<%= element %>"><%= element %></option>
-        <% } %>
+        <% }); %>
     </select>
-    <select  data-for="amount" title="Wahlfreiheitsfeld">
+    <select data-for="amount" title="Du hast die Wahl, Fisch!" class="span">
         <% _.each(amounts, function(amount) { %>
             <option value="<%= amount %>"><%= amount %></option>
-        <% } %>
+        <% }); %>
     </select>
 </li>
