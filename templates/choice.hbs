@@ -4,9 +4,13 @@
             <option value="<%= element %>"><%= element %></option>
         <% }); %>
     </select>
+    <% if (amounts.length > 1) { %>
     <select data-for="amount" title="Du hast die Wahl, Fisch!" class="span">
         <% _.each(amounts, function(amount) { %>
             <option value="<%= amount %>"><%= amount %></option>
         <% }); %>
     </select>
+    <% } else { %>
+        <span data-for="amount"><%= amounts[0] %></span>
+    <% } %>
 </li>
