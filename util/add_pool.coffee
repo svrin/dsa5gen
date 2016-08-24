@@ -13,6 +13,9 @@ add_pool = (amount, elements...) ->
         @template = _.template (hbs)
         @render()
 
+    calc: (context) =>
+      return NaN
+
     refresh: (context, groups) =>
       if _.isFunction(amount)
         amount = amount(context)

@@ -336,10 +336,16 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         if _.isFunction(element)
           element = element(character)
 
+        if element.constructor.name == 'ChoiceView'
+          element.$el.insertAfter $("[name='character.ap']")
+          element = element.calc(character)
+        else if element.constructor.name == 'PoolView'
+          element.$el.insertAfter $("[name='character.ap']")
+          element = element.calc(character)
+
         if _.isString(element)
           base[element] = true
         else if _.isArray(element)
-
           if _.isString(element[1])
             if base[element[0]]
               base[element[0]] = base[element[0]] + "; " + element[1]
@@ -347,11 +353,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
               base[element[0]] = element[1]
           else
             base[element[0]] = (base[element[0]] || 0) + element[1]
-        else if element.constructor.name == 'PoolView'
-          element.$el.insertAfter $("[name='character.ap']")
-        else if element.constructor.name == 'ChoiceView'
-          element.$el.insertAfter $("[name='character.ap']")
-        else
+        else if !_.isNaN(element)
           console.error "Unexpected element in list", element, arguments
           throw "Unexpected element in list"
 

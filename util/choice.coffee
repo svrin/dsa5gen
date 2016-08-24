@@ -22,6 +22,19 @@ choice = (args...) ->
         @template = _.template (hbs)
         @render()
 
+    calc: (context) =>
+      costs = []
+      @$el.find("[data-for=element]").each () ->
+        element = $(@).val() || $(@).text()
+        amount = $(@).next("[data-for=amount]").val() || $(@).next("[data-for=amount]").text()
+        costs.push [element, amount]
+
+      if costs.length == 1
+        return costs[0]
+      else
+        console.warn "More than one amounts cannot be handle doring cost function"
+        return costs[0]
+
     refresh: (context, groups) =>
       return 0
 
