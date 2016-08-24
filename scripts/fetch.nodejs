@@ -8,19 +8,19 @@ var baseDir = __dirname + '/..',
 
 var jsLibs = {
     'jquery.min': 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min',
-    'jquery.tipsy.min': 'http://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.min',
-    'require.min': 'http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min',
-    'require-text.min': 'http://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.10/text.min',
-    'require-i18n.min': 'http://cdnjs.cloudflare.com/ajax/libs/require-i18n/2.0.4/i18n.min',
+    'jquery.tipsy.min': 'https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.min',
+    'require.min': 'https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min',
+    'require-text.min': 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min',
+    'require-i18n.min': 'https://cdnjs.cloudflare.com/ajax/libs/require-i18n/2.0.4/i18n.min',
     'underscore-min': 'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min',
     'backbone-min': 'http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min',
-    'nprogress.min': 'http://cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.min'
+    'nprogress.min': 'https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min'
 };
 
 var cssLibs = {
-    'nprogress.css': 'http://cdnjs.cloudflare.com/ajax/libs/nprogress/0.1.2/nprogress.css',
+    'nprogress.css': 'https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css',
     'normalize.css': 'http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.css',
-    'jquery.tipsy.css': 'http://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.2/jquery.tipsy.css'
+    'jquery.tipsy.css': 'http://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.css'
 
 };
 
@@ -36,7 +36,7 @@ builder.task({
                             .setContent(body)
                             .save(outputDir + "/" + lib);
                     } else {
-                        console.error(error);
+                        console.error(response && response.statusCode, lib, error);
                     }
                 });
             }(cssLib);
@@ -50,7 +50,7 @@ builder.task({
                             .setContent(body)
                             .save(outputDir + "/" + lib + ".js");
                     } else {
-                        console.error(error);
+                        console.error(response && response.statusCode, lib, error);
                     }
                 });
                 request(jsLibs[lib].substr(0, jsLibs[lib].length - 4) + ".js", function (error, response, body) {
@@ -59,7 +59,7 @@ builder.task({
                             .setContent(body)
                             .save(outputDir + "/" + lib.substr(0, lib.length - 4) + ".js");
                     } else {
-                        console.error(error);
+                        console.error(response && response.statusCode, lib, error);
                     }
                 });
                 request(jsLibs[lib] + ".map", function (error, response, body) {
@@ -67,8 +67,6 @@ builder.task({
                         builder('/')
                             .setContent(body)
                             .save(outputDir + "/" + lib + ".map");
-                    } else {
-                        console.error(error);
                     }
                 });
             }(jsLib);

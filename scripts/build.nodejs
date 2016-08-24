@@ -2,6 +2,7 @@
 
 var builder = require('buildify'),
     path = require('path'),
+    less = require('less'),
     glob = require('glob'),
     coffee = require('coffee-script'),
     minify = require("node-json-minify");
@@ -9,6 +10,7 @@ var builder = require('buildify'),
 var baseDir = __dirname + '/..',
     sourceDir = baseDir + '/data',
     utilDir = baseDir + '/util',
+    cssDir = baseDir + '/css',
     outputDir = baseDir + '/gen/data';
 
 var template = outputDir + "/template.hbs";
@@ -78,6 +80,19 @@ builder.task({
             .save(outputDir + "/../app.js")
             .uglify()
             .save(outputDir + "/../app.min.js");
+    }
+});
+
+// Build css
+builder.task({
+    name: "css",
+    task: function () {
+        builder('/')
+            .concat(glob.sync(cssDir + "/*.less"))
+            .perform(function (content) {
+                return less.render(content, {filename: "base.css", paths: [cssDir], compress: true});
+            })
+            .save(cssDir + "/base.css");
     }
 });
 
