@@ -585,6 +585,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         _.each race.get('auto'), (element) ->
           if element.constructor.name == 'PoolView'
             costs -= element.refresh(character, groups)
+          if element.constructor.name == 'ChoiceView'
+            costs -= element.refresh(character, groups)
 
       # Get costs from culture
       culture = character.get('culture')
@@ -595,6 +597,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         _.each culture.get('auto'), (element) ->
           if element.constructor.name == 'PoolView'
             costs -= element.refresh(character, groups)
+          if element.constructor.name == 'ChoiceView'
+            costs -= element.refresh(character, groups)
 
       # Get costs from profession
       profession = character.get('profession')
@@ -604,6 +608,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         # Update pools
         _.each profession.get('auto'), (element) ->
           if element.constructor.name == 'PoolView'
+            costs -= element.refresh(character, groups)
+          if element.constructor.name == 'ChoiceView'
             costs -= element.refresh(character, groups)
 
       return costs

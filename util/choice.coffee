@@ -22,6 +22,9 @@ choice = (args...) ->
         @template = _.template (hbs)
         @render()
 
+    refresh: (context, groups) =>
+      return 0
+
     render: ->
       @$el.html @template({amounts: amounts, elements: elements, self: @})
       @delegateEvents()
