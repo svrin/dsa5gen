@@ -3,6 +3,7 @@
 var builder = require('buildify'),
     path = require('path'),
     less = require('less'),
+    fs = require('fs'),
     glob = require('glob'),
     coffee = require('coffee-script'),
     minify = require("node-json-minify");
@@ -47,10 +48,10 @@ for (var index in dirList) {
     builder.task({
         name: dirList[index],
         task: function () {
-            dir = this.name;
+            var dir = this.name;
 
             builder('/')
-                .concat(glob.sync(sourceDir + "/" + dir + "/**/*.coffee"))
+                .concat(glob.sync(sourceDir + "/" + dir + "/**/*.coffee").sort())
                 .perform(function (content) {
                     return coffee.compile(content, {bare: true});
                 })
@@ -64,6 +65,20 @@ for (var index in dirList) {
         }
     });
 }
+
+// Build css
+builder.task({
+    name: "css",
+    task: function () {
+        builder('/')
+            .concat(glob.sync(cssDir + "/*.less"))
+            .perform(function (content) {
+                return less.render(content, {filename: "base.css", paths: [cssDir], compress: false}, function (context, output) {
+                    fs.writeFile(cssDir + "/base.css", output.css);
+                });
+            })
+    }
+});
 
 // Build app
 builder.task({
@@ -83,25 +98,12 @@ builder.task({
     }
 });
 
-// Build css
-builder.task({
-    name: "css",
-    task: function () {
-        builder('/')
-            .concat(glob.sync(cssDir + "/*.less"))
-            .perform(function (content) {
-                return less.render(content, {filename: "base.css", paths: [cssDir], compress: true});
-            })
-            .save(cssDir + "/base.css");
-    }
-});
-
 // Build i18n data
 builder.task({
     name: "i18n",
     task: function () {
         for (var index in i18nList) {
-            name = i18nList[index];
+            var name = i18nList[index];
 
             builder('/')
                 .concat(baseDir + "/i18n/" + name + ".json")

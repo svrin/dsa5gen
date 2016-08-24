@@ -8,7 +8,7 @@
 
 $ = require 'underscore'
 echo = console.log
-{exec} = require 'child_process'
+{exec, execSync} = require 'child_process'
 FS = require 'fs'
 Path = require 'path'
 jsmin = require('jsmin').jsmin
@@ -55,7 +55,7 @@ echo "#{oldStrs.length} current strings found."
 
 # Grep our checked-in files for a rough match of files:
 echo '\nSearching files for strings...'
-files = exec GIT_GREP_COMMAND, _
+files = execSync GIT_GREP_COMMAND, {encoding: "utf-8"}
 files = files.trim().split '\n'
 
 # Filter out Markdown files since they're only documentation right now:
@@ -68,7 +68,7 @@ echo "#{files.length} matching files found."
 echo "\nExtracting strings from files..."
 newStrsMap = {}
 for file in files
-    code = FS.readFile "#{__dirname}/../#{file}", 'utf8', _
+    code = FS.readFileSync "#{__dirname}/#{file}", 'utf-8'
     while match = I18N_CALL_REGEX.exec code
         if str = match[2] or match[3]
             if not newStrsMap[str]
@@ -100,4 +100,4 @@ for key in newStrs
 jsonStr = "{" + (jsonStrs.join ",") + "\n}"
 
 # Finally, update the JSON!
-FS.writeFile STRINGS_FILEPATH, jsonStr, _
+FS.writeFile STRINGS_FILEPATH, jsonStr, $
