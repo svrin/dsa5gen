@@ -1,0 +1,12 @@
+<li>
+    <select  data-for="element" title="Wahlfreiheitsfeld">
+        <% _.each(elements, function(element) { %>
+            <option value="<%= element %>"><%= element %></option>
+        <% } %>
+    </select>
+    <select  data-for="amount" title="Wahlfreiheitsfeld">
+        <% _.each(amounts, function(amount) { %>
+            <option value="<%= amount %>"><%= amount %></option>
+        <% } %>
+    </select>
+</li>

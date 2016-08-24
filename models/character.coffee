@@ -350,7 +350,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         else if element.constructor.name == 'PoolView'
           element.$el.insertAfter $("[name='character.ap']")
         else if element.constructor.name == 'ChoiceView'
-          console.warn "Skill Calculation touched ChoiceView, should be made visible", element
+          element.$el.insertAfter $("[name='character.ap']")
         else
           console.error "Unexpected element in list", element, arguments
           throw "Unexpected element in list"
@@ -509,6 +509,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       character = @
 
       costs = costs? || 0
+
       groups = {}
 
       # Add costs from attributes
@@ -556,19 +557,24 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
 
         # Calculate
         skill_costs = skill.get('costs', context)
+        costs_increment = 0
         if skill_costs and not skill.get('SF')
-          costs += (value * skill_costs || 0)
+          costs_increment += (value * skill_costs || 0)
         else
-          costs += (skill_costs || 0)
+          costs_increment += (skill_costs || 0)
 
         if skill.get('SF')
-          costs += skill.getCosts(value)
+          costs_increment += skill.getCosts(value)
         else if !skill_costs?
           console.error "Unknown cost table for skill " + skill.get('name')
 
         # Sum group costs up
         _.each skill.get('groups'), (group) ->
-          groups[group] = (groups[group] || 0) + (value || 0)
+          groups[group] = {
+            "value": (groups[group]?["value"] || 0) + (value || 0)
+            "costs": (groups[group]?["costs"] || 0) + (costs_increment || 0)
+          }
+        costs += costs_increment
 
       # Get costs from race
       race = character.get('race')

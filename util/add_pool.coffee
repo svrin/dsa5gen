@@ -13,15 +13,15 @@ add_pool = (amount, elements...) ->
         @template = _.template (hbs)
         @render()
 
-    refresh: (context, payload) =>
+    refresh: (context, groups) =>
       if _.isFunction(amount)
         amount = amount(context)
 
       current = amount
 
       _.each elements, (element) =>
-        if payload[element]
-          current -= payload[element]
+        if groups[element]
+          current -= groups[element]["costs"]
 
       if current <= 0
         current = 0

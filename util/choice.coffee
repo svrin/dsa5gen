@@ -18,11 +18,15 @@ choice = (args...) ->
     tagName: 'div'
 
     initialize: ->
-      @render()
+      require ['text!templates/choice.hbs'], (hbs) =>
+        @template = _.template (hbs)
+        @render()
 
     render: ->
-      @$el.append 'Choice amounts: ' + amounts
-      @$el.append 'For Elements: ' + elements
+      @$el.html @template({amounts: amounts, elements: elements, self: @})
+      @delegateEvents()
+
+      return @
 
   rtn = new ChoiceView
   rtn.elements = elements
