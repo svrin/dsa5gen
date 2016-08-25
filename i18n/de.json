@@ -19,17 +19,17 @@
     /* "../data/equipment/beleuchtung.coffee #489 */
     "50 Portionen Zunder": "50 Portionen Zunder",
 
-    /* "../templates/sheets/print.hbs #3343 */
+    /* "../templates/sheets/print.hbs #3351 */
     "AE": "Astralenergie",
 
-    /* "../templates/profile.hbs #1417 */
-    /* "../templates/profile.hbs #1584 */
+    /* "../templates/profile.hbs #1437 */
+    /* "../templates/profile.hbs #1604 */
     /* "../templates/valuebox.hbs #3061 */
     "AP": "AP",
 
-    /* "../templates/sheets/print.hbs #3297 */
-    /* "../templates/sheets/print.hbs #21935 */
-    "AW": "AW",
+    /* "../templates/sheets/print.hbs #3305 */
+    /* "../templates/sheets/print.hbs #22111 */
+    "AW": "Ausweichen (GE/2)",
 
     /* "../data/skill/vantage/habits.coffee #5866 */
     /* "../data/skill/vantage/habits.coffee #5895 */
@@ -124,7 +124,7 @@
     /* "../data/skill/language/lettering.coffee #271 */
     "Alte Kemi-Hieroglyphen": "Alte Kemi-Hieroglyphen",
 
-    /* "../data/race/elfisch/R.coffee #530 */
+    /* "../data/race/elfisch/R.coffee #540 */
     /* "../data/skill/vantage/positive.coffee #328 */
     "Altersresistenz": "Altersresistenz",
 
@@ -138,7 +138,7 @@
     "Amazonensäbel": "Amazonensäbel",
 
     /* "../data/culture/zwergisch/CAMZ.coffee #137 */
-    /* "../data/race/RZWE.coffee #898 */
+    /* "../data/race/RZWE.coffee #908 */
     "Ambosszwerge": "Ambosszwerge",
 
     /* "../data/profession/society/gelehrter/PGEH_ANA.coffee #90 */
@@ -155,7 +155,7 @@
 
     /* "../data/culture/menschlich/CAND.coffee #136 */
     /* "../data/equipment/nahkampfwaffen.coffee #443 */
-    /* "../data/race/RHEL.coffee #867 */
+    /* "../data/race/RHEL.coffee #877 */
     /* "../data/race/menschlich/RMLD.coffee #659 */
     "Andergaster": "Andergaster",
 
@@ -352,8 +352,8 @@
     "Auelf": "Auelf",
 
     /* "../data/culture/elfisch/CAUE.coffee #130 */
-    /* "../data/race/RHEL.coffee #889 */
-    /* "../data/race/elfisch/R.coffee #456 */
+    /* "../data/race/RHEL.coffee #899 */
+    /* "../data/race/elfisch/R.coffee #466 */
     "Auelfen": "Auelfen",
 
     /* "../data/race/elfisch/RAUE.coffee #153 */
@@ -412,7 +412,7 @@
     /* "../data/skill/magic/magic.coffee #579 */
     "Axxeleratus": "Axxeleratus",
 
-    /* "../templates/sheets/print.hbs #22135 */
+    /* "../templates/sheets/print.hbs #22309 */
     "BE": "BE",
 
     /* "../data/equipment/nahkampfwaffen.coffee #1112 */
@@ -510,15 +510,15 @@
     /* "../data/skill/vantage/positive.coffee #501 */
     "Begabung": "Begabung",
 
-    /* "../data/race/RHEL.coffee #1160 */
-    /* "../data/race/elfisch/R.coffee #711 */
+    /* "../data/race/RHEL.coffee #1170 */
+    /* "../data/race/elfisch/R.coffee #721 */
     "Begabung (Musizieren)": "Begabung (Musizieren)",
 
     /* "../data/culture/menschlich/CZYK.coffee #328 */
     "Begabung (Schwimmen)": "Begabung (Schwimmen)",
 
-    /* "../data/race/RHEL.coffee #1132 */
-    /* "../data/race/elfisch/R.coffee #683 */
+    /* "../data/race/RHEL.coffee #1142 */
+    /* "../data/race/elfisch/R.coffee #693 */
     "Begabung (Singen)": "Begabung (Singen)",
 
     /* "../data/culture/menschlich/CARA.coffee #435 */
@@ -586,8 +586,8 @@
 
     /* "../data/profession/military/PKRR.coffee #904 */
     /* "../data/profession/military/PSGE.coffee #960 */
-    /* "../data/race/RHEL.coffee #1192 */
-    /* "../data/race/elfisch/R.coffee #743 */
+    /* "../data/race/RHEL.coffee #1202 */
+    /* "../data/race/elfisch/R.coffee #753 */
     /* "../data/skill/vantage/positive.coffee #823 */
     "Beidhändig": "Beidhändig",
 
@@ -780,9 +780,9 @@
     /* "../data/profession/society/kuenstler/PKUE.coffee #988 */
     /* "../data/profession/society/liebesdiener/PLIE.coffee #1281 */
     /* "../data/profession/society/streuner/PSTR.coffee #1395 */
-    /* "../data/race/RHEL.coffee #1587 */
-    /* "../data/race/RZWE.coffee #1211 */
-    /* "../data/race/elfisch/R.coffee #1414 */
+    /* "../data/race/RHEL.coffee #1608 */
+    /* "../data/race/RZWE.coffee #1221 */
+    /* "../data/race/elfisch/R.coffee #1424 */
     /* "../data/race/menschlich/RTHW.coffee #752 */
     /* "../data/skill/vantage/negative.coffee #611 */
     "Blutrausch": "Blutrausch",
@@ -819,7 +819,7 @@
     "Bornland": "Bornland",
 
     /* "../data/culture/menschlich/CBOR.coffee #135 */
-    /* "../data/race/RHEL.coffee #907 */
+    /* "../data/race/RHEL.coffee #917 */
     /* "../data/race/menschlich/RMLD.coffee #683 */
     /* "../data/race/menschlich/RNIV.coffee #574 */
     /* "../data/race/menschlich/RNOR.coffee #497 */
@@ -893,7 +893,7 @@
     "Brettspiel": "Brettspiel",
 
     /* "../data/culture/zwergisch/CBIZ.coffee #139 */
-    /* "../data/race/RZWE.coffee #921 */
+    /* "../data/race/RZWE.coffee #931 */
     "Brillantzwerge": "Brillantzwerge",
 
     /* "../data/lifegrade/L5.coffee #22 */
@@ -939,7 +939,7 @@
     /* "../data/profession/society/kuenstler/PKUE.coffee #904 */
     /* "../data/profession/society/liebesdiener/PLIE.coffee #1213 */
     /* "../data/profession/society/streuner/PSTR.coffee #1350 */
-    "CH": "CH",
+    "CH": "Charisma",
 
     /* "../data/animal/familiar/chameleon.coffee #103 */
     "Chamäleon": "Chamäleon",
@@ -1184,11 +1184,11 @@
     /* "../data/animal/familiar/cat.coffee #339 */
     /* "../data/profession/magic/PWDL.coffee #1018 */
     /* "../data/profession/magic/PZWB.coffee #907 */
-    /* "../data/race/RHEL.coffee #1214 */
-    /* "../data/race/RZWE.coffee #780 */
-    /* "../data/race/RZWE.coffee #1006 */
-    /* "../data/race/elfisch/R.coffee #557 */
-    /* "../data/race/elfisch/R.coffee #765 */
+    /* "../data/race/RHEL.coffee #1224 */
+    /* "../data/race/RZWE.coffee #790 */
+    /* "../data/race/RZWE.coffee #1016 */
+    /* "../data/race/elfisch/R.coffee #567 */
+    /* "../data/race/elfisch/R.coffee #775 */
     /* "../data/skill/vantage/positive.coffee #894 */
     "Dunkelsicht": "Dunkelsicht",
 
@@ -1227,7 +1227,7 @@
     /* "../data/skill/magic/magic.coffee #4662 */
     "Einfluss": "Einfluss",
 
-    /* "../data/race/elfisch/R.coffee #1435 */
+    /* "../data/race/elfisch/R.coffee #1445 */
     "Eingeschränkter Sinn": "Eingeschränkter Sinn",
 
     /* "../data/skill/vantage/negative.coffee #730 */
@@ -1254,7 +1254,7 @@
     /* "../data/culture/zwergisch/CHGZ.coffee #919 */
     /* "../data/profession/military/PSTK.coffee #680 */
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #528 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #795 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #809 */
     /* "../data/profession/society/streuner/PSTR_SLG.coffee #483 */
     /* "../data/profession/society/streuner/PSTR_ZUH.coffee #483 */
     /* "../data/skill/society.coffee #468 */
@@ -1373,7 +1373,7 @@
     /* "../data/lifegrade/L2.coffee #22 */
     "Erfahren": "Erfahren",
 
-    /* "../templates/profile.hbs #1241 */
+    /* "../templates/profile.hbs #1261 */
     /* "../templates/profile_edit.hbs #955 */
     "Erfahrungsgrad": "Erfahrungsgrad",
 
@@ -1397,7 +1397,7 @@
 
     /* "../data/culture/zwergisch/CEZZ.coffee #134 */
     /* "../data/profession/society/gelehrter/PGEH_ZMY.coffee #655 */
-    /* "../data/race/RZWE.coffee #946 */
+    /* "../data/race/RZWE.coffee #956 */
     "Erzzwerge": "Erzzwerge",
 
     /* "../data/culture/menschlich/CFJA.coffee #1505 */
@@ -1477,7 +1477,7 @@
     /* "../data/profession/society/kuenstler/PKUE_TAZ.coffee #340 */
     /* "../data/profession/society/liebesdiener/PLIE_KUR.coffee #509 */
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #500 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #548 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #562 */
     /* "../data/profession/society/streuner/PSTR_HST.coffee #733 */
     /* "../data/profession/society/streuner/PSTR_TAU.coffee #754 */
     /* "../data/skill/society.coffee #586 */
@@ -1501,8 +1501,8 @@
     /* "../data/profession/society/gaukler/PGAU.coffee #1417 */
     /* "../data/profession/society/gelehrter/PGEH.coffee #919 */
     /* "../data/profession/society/kuenstler/PKUE.coffee #917 */
-    /* "../templates/sheets/print.hbs #21441 */
-    "FF": "FF",
+    /* "../templates/sheets/print.hbs #21617 */
+    "FF": "Fingerfertigkeit",
 
     /* "../data/equipment/nahkampfwaffen.coffee #5741 */
     /* "../data/equipment/reisebedarf.coffee #696 */
@@ -1680,8 +1680,8 @@
     /* "../data/skill/nature.coffee #337 */
     "Fesseln": "Fesseln",
 
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #392 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #398 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #406 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #412 */
     "Fetchtwaffen": "Fetchtwaffen",
 
     /* "../data/culture/menschlich/CFJA.coffee #1277 */
@@ -1689,8 +1689,8 @@
     /* "../data/profession/military/PKRR.coffee #1321 */
     /* "../data/profession/military/PSGE.coffee #1377 */
     /* "../data/profession/military/PSTK.coffee #1709 */
-    /* "../data/race/RHEL.coffee #1608 */
-    /* "../data/race/elfisch/R.coffee #1466 */
+    /* "../data/race/RHEL.coffee #1629 */
+    /* "../data/race/elfisch/R.coffee #1476 */
     /* "../data/skill/vantage/negative.coffee #1176 */
     "Fettleibig": "Fettleibig",
 
@@ -1728,8 +1728,8 @@
     "Firnelf": "Firnelf",
 
     /* "../data/culture/elfisch/CFRE.coffee #132 */
-    /* "../data/race/RHEL.coffee #928 */
-    /* "../data/race/elfisch/R.coffee #474 */
+    /* "../data/race/RHEL.coffee #938 */
+    /* "../data/race/elfisch/R.coffee #484 */
     "Firnelfen": "Firnelfen",
 
     /* "../data/race/elfisch/RFRE.coffee #159 */
@@ -1828,8 +1828,8 @@
     "Flim Flam": "Flim Flam",
 
     /* "../data/profession/magic/hexe/PHEX_SDN.coffee #1505 */
-    /* "../data/race/RHEL.coffee #1240 */
-    /* "../data/race/elfisch/R.coffee #791 */
+    /* "../data/race/RHEL.coffee #1250 */
+    /* "../data/race/elfisch/R.coffee #801 */
     /* "../data/skill/vantage/positive.coffee #1199 */
     "Flink": "Flink",
 
@@ -1932,19 +1932,15 @@
     /* "../data/profession/society/gaukler/PGAU.coffee #1430 */
     /* "../data/profession/society/streuner/PSTR.coffee #1363 */
     /* "../data/skill/battle/capability.coffee #4613 */
-    /* "../templates/sheets/print.hbs #21564 */
-    "GE": "GE",
+    /* "../templates/sheets/print.hbs #21740 */
+    "GE": "Gewandheit",
 
-    /* "../templates/sheets/print.hbs #3361 */
-    /* "../templates/sheets/print.hbs #22067 */
-    "GLK": "GLK",
-
-    /* "../templates/sheets/print.hbs #3288 */
-    /* "../templates/sheets/print.hbs #22001 */
-    "GS": "GS",
+    /* "../templates/sheets/print.hbs #3296 */
+    /* "../templates/sheets/print.hbs #22177 */
+    "GS": "Geschwindigkeit",
 
     /* "../data/skill/magic/tricks.coffee #115 */
-    /* "../templates/sheets/print.hbs #8326 */
+    /* "../templates/sheets/print.hbs #8502 */
     "Gaben": "Gaben",
 
     /* "../data/equipment/ruestung.coffee #186 */
@@ -2046,8 +2042,8 @@
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #526 */
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #768 */
     /* "../data/profession/society/spitzel/PSPL.coffee #496 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #574 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #580 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #588 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #594 */
     /* "../data/profession/society/streuner/PSTR.coffee #630 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #720 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #712 */
@@ -2258,7 +2254,7 @@
     /* "../data/profession/society/seefahrer/PSEF_FSCH.coffee #788 */
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #798 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #862 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #724 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #738 */
     /* "../data/profession/society/streuner/PSTR_DIL.coffee #945 */
     /* "../data/skill/knowledge.coffee #353 */
     /* "../data/skill/vantage/capability.coffee #2788 */
@@ -2338,7 +2334,7 @@
     "Gesellschafter": "Gesellschafter",
 
     /* "../data/skill/society.coffee #102 */
-    /* "../templates/sheets/print.hbs #8196 */
+    /* "../templates/sheets/print.hbs #8372 */
     "Gesellschaftstalente": "Gesellschaftstalente",
 
     /* "../data/equipment/ruestung.coffee #310 */
@@ -2348,11 +2344,11 @@
     /* "../data/profession/liturgy/PRON.coffee #297 */
     /* "../data/skill/liturgy/capability.coffee #1050 */
     /* "../data/skill/vantage/negative.coffee #2847 */
-    /* "../data/skill/vantage/negative.coffee #3988 */
-    /* "../data/skill/vantage/negative.coffee #4364 */
+    /* "../data/skill/vantage/negative.coffee #3987 */
+    /* "../data/skill/vantage/negative.coffee #4363 */
     /* "../data/skill/vantage/positive.coffee #1410 */
-    /* "../data/skill/vantage/positive.coffee #3898 */
-    /* "../data/skill/vantage/positive.coffee #4113 */
+    /* "../data/skill/vantage/positive.coffee #3897 */
+    /* "../data/skill/vantage/positive.coffee #4112 */
     "Geweihter": "Geweihter",
 
     /* "../data/culture/menschlich/CAND.coffee #1154 */
@@ -2465,7 +2461,7 @@
     /* "../data/culture/menschlich/CMOH.coffee #266 */
     /* "../data/profession/liturgy/PPER.coffee #987 */
     /* "../data/profession/society/hoefling/PHOE.coffee #914 */
-    /* "../data/race/elfisch/R.coffee #807 */
+    /* "../data/race/elfisch/R.coffee #817 */
     /* "../data/skill/vantage/positive.coffee #1480 */
     "Giftresistenz": "Giftresistenz",
 
@@ -2610,9 +2606,9 @@
     /* "../data/profession/society/barde/PBAR.coffee #907 */
     /* "../data/profession/society/liebesdiener/PLIE.coffee #960 */
     /* "../data/profession/society/streuner/PSTR.coffee #1067 */
-    /* "../data/race/RHEL.coffee #1256 */
-    /* "../data/race/elfisch/R.coffee #831 */
-    /* "../data/skill/vantage/positive.coffee #1677 */
+    /* "../data/race/RHEL.coffee #1266 */
+    /* "../data/race/elfisch/R.coffee #841 */
+    /* "../data/skill/vantage/positive.coffee #1676 */
     "Gutaussehend": "Gutaussehend",
 
     /* "../data/profession/magic/PZWB.coffee #955 */
@@ -2713,8 +2709,8 @@
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #826 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #890 */
     /* "../data/profession/society/spitzel/PSPL.coffee #665 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #783 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #827 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #797 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #841 */
     /* "../data/profession/society/streuner/PSTR.coffee #835 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #939 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #932 */
@@ -2806,8 +2802,8 @@
     /* "../data/profession/society/liebesdiener/PLIE_KUR.coffee #832 */
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #823 */
     /* "../data/profession/society/spitzel/PSPL.coffee #778 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #904 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #948 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #918 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #962 */
     /* "../data/profession/society/streuner/PSTR_SIE.coffee #975 */
     /* "../data/skill/crafting.coffee #573 */
     /* "../data/skill/vantage/capability.coffee #2268 */
@@ -2831,7 +2827,7 @@
 
     /* "../data/profession/crafting/PHAN.coffee #649 */
     /* "../data/skill/crafting.coffee #103 */
-    /* "../templates/sheets/print.hbs #9243 */
+    /* "../templates/sheets/print.hbs #9419 */
     "Handwerkstalente": "Handwerkstalente",
 
     /* "../data/skill/magic/tricks.coffee #751 */
@@ -3005,32 +3001,32 @@
     /* "../data/profession/liturgy/PRON.coffee #1153 */
     "Herausragende Eigenschaft (MU)": "Herausragende Eigenschaft (MU)",
 
-    /* "../data/skill/vantage/positive.coffee #1761 */
+    /* "../data/skill/vantage/positive.coffee #1760 */
     "Herausragende Fertigkeit": "Herausragende Fertigkeit",
 
-    /* "../data/skill/vantage/positive.coffee #2096 */
+    /* "../data/skill/vantage/positive.coffee #2095 */
     "Herausragende Kampftechnik": "Herausragende Kampftechnik",
 
     /* "../data/profession/crafting/PHAN.coffee #752 */
     "Herausragender Sinn": "Herausragender Sinn",
 
     /* "../data/profession/society/spitzel/PSPL.coffee #848 */
-    /* "../data/race/RHEL.coffee #1324 */
-    /* "../data/race/elfisch/R.coffee #854 */
-    /* "../data/skill/vantage/positive.coffee #2437 */
+    /* "../data/race/RHEL.coffee #1345 */
+    /* "../data/race/elfisch/R.coffee #864 */
+    /* "../data/skill/vantage/positive.coffee #2436 */
     "Herausragender Sinn (Gehör)": "Herausragender Sinn (Gehör)",
 
-    /* "../data/skill/vantage/positive.coffee #2613 */
+    /* "../data/skill/vantage/positive.coffee #2612 */
     "Herausragender Sinn (Geruch & Geschmack)": "Herausragender Sinn (Geruch & Geschmack)",
 
     /* "../data/profession/society/spitzel/PSPL.coffee #886 */
-    /* "../data/race/RHEL.coffee #1289 */
-    /* "../data/race/elfisch/R.coffee #892 */
-    /* "../data/skill/vantage/positive.coffee #2525 */
+    /* "../data/race/RHEL.coffee #1310 */
+    /* "../data/race/elfisch/R.coffee #902 */
+    /* "../data/skill/vantage/positive.coffee #2524 */
     "Herausragender Sinn (Sicht)": "Herausragender Sinn (Sicht)",
 
     /* "../data/profession/magic/hexe/PHEX_SWW.coffee #1679 */
-    /* "../data/skill/vantage/positive.coffee #2713 */
+    /* "../data/skill/vantage/positive.coffee #2712 */
     "Herausragender Sinn (Tastsinn)": "Herausragender Sinn (Tastsinn)",
 
     /* "../data/profession/society/barde/PBAR_HER.coffee #103 */
@@ -3156,8 +3152,8 @@
     /* "../data/profession/society/gaukler/PGAU_VAG.coffee #330 */
     /* "../data/profession/society/gaukler/PGAU_WAH.coffee #294 */
     /* "../data/profession/society/gaukler/PGAU_ZIR.coffee #310 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #412 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #418 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #426 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #432 */
     /* "../data/profession/society/streuner/PSTR.coffee #353 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #423 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #414 */
@@ -3184,7 +3180,7 @@
 
     /* "../data/culture/menschlich/CBOR.coffee #433 */
     /* "../data/culture/menschlich/CFJA.coffee #485 */
-    /* "../data/race/RZWE.coffee #1317 */
+    /* "../data/race/RZWE.coffee #1327 */
     /* "../data/skill/vantage/negative.coffee #1460 */
     "Hitzeempfindlichkeit": "Hitzeempfindlichkeit",
 
@@ -3204,12 +3200,12 @@
     /* "../data/culture/menschlich/CSAV.coffee #412 */
     /* "../data/culture/menschlich/CSVL.coffee #778 */
     /* "../data/profession/crafting/PHAN.coffee #782 */
-    /* "../data/race/RZWE.coffee #1032 */
-    /* "../data/race/elfisch/R.coffee #1335 */
+    /* "../data/race/RZWE.coffee #1042 */
+    /* "../data/race/elfisch/R.coffee #1345 */
     /* "../data/race/menschlich/RTLD.coffee #747 */
     /* "../data/race/menschlich/RUTU.coffee #576 */
     /* "../data/race/menschlich/RWLD.coffee #626 */
-    /* "../data/skill/vantage/positive.coffee #2803 */
+    /* "../data/skill/vantage/positive.coffee #2802 */
     "Hitzeresistenz": "Hitzeresistenz",
 
     /* "../data/culture/menschlich/CNIV.coffee #1427 */
@@ -3224,17 +3220,17 @@
     /* "../data/profession/society/hoefling/PHOE_HOF.coffee #108 */
     "Hofdame": "Hofdame",
 
-    /* "../data/skill/vantage/positive.coffee #2877 */
+    /* "../data/skill/vantage/positive.coffee #2876 */
     "Hohe Astralkraft": "Hohe Astralkraft",
 
-    /* "../data/skill/vantage/positive.coffee #2998 */
+    /* "../data/skill/vantage/positive.coffee #2997 */
     "Hohe Karmalkraft": "Hohe Karmalkraft",
 
     /* "../data/profession/military/PKRR.coffee #993 */
     /* "../data/profession/military/PSGE.coffee #1049 */
     /* "../data/profession/military/PSTK.coffee #1089 */
     /* "../data/profession/military/soldat/PSOL.coffee #942 */
-    /* "../data/skill/vantage/positive.coffee #3119 */
+    /* "../data/skill/vantage/positive.coffee #3118 */
     "Hohe Lebenskraft": "Hohe Lebenskraft",
 
     /* "../data/profession/magic/PWDL.coffee #1066 */
@@ -3242,12 +3238,12 @@
     /* "../data/profession/magic/magier/PMAG_UNI.coffee #1035 */
     "Hohe Magieresistenz": "Hohe Magieresistenz",
 
-    /* "../data/skill/vantage/positive.coffee #3240 */
+    /* "../data/skill/vantage/positive.coffee #3239 */
     "Hohe Seelenkraft": "Hohe Seelenkraft",
 
-    /* "../data/race/RZWE.coffee #1057 */
+    /* "../data/race/RZWE.coffee #1067 */
     /* "../data/race/menschlich/RTHW.coffee #701 */
-    /* "../data/skill/vantage/positive.coffee #3351 */
+    /* "../data/skill/vantage/positive.coffee #3350 */
     "Hohe Zähigkeit": "Hohe Zähigkeit",
 
     /* "../data/culture/menschlich/CAND.coffee #564 */
@@ -3302,7 +3298,7 @@
     "Holzspeer": "Holzspeer",
 
     /* "../data/culture/menschlich/CHOR.coffee #134 */
-    /* "../data/race/RHEL.coffee #948 */
+    /* "../data/race/RHEL.coffee #958 */
     /* "../data/race/menschlich/RMLD.coffee #706 */
     "Horasier": "Horasier",
 
@@ -3405,7 +3401,7 @@
     "Höhlenspinne": "Höhlenspinne",
 
     /* "../data/culture/zwergisch/CHGZ.coffee #136 */
-    /* "../data/race/RZWE.coffee #966 */
+    /* "../data/race/RZWE.coffee #976 */
     "Hügelzwerge": "Hügelzwerge",
 
     /* "../data/profession/crafting/PHAN.coffee #899 */
@@ -3425,11 +3421,11 @@
     /* "../data/profession/society/hoefling/PHOE.coffee #1327 */
     /* "../data/profession/society/kuenstler/PKUE.coffee #891 */
     /* "../data/profession/society/streuner/PSTR.coffee #1337 */
-    "IN": "IN",
+    "IN": "Intuition",
 
-    /* "../templates/sheets/print.hbs #3324 */
-    /* "../templates/sheets/print.hbs #21810 */
-    "INI": "INI",
+    /* "../templates/sheets/print.hbs #3332 */
+    /* "../templates/sheets/print.hbs #21986 */
+    "INI": "Initiative (MU/2+GE/2+1W6)",
 
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #1089 */
     /* "../data/skill/magic/magic.coffee #2803 */
@@ -3440,17 +3436,17 @@
 
     /* "../data/profession/liturgy/PPER.coffee #1134 */
     /* "../data/profession/magic/hexe/PHEX_SWW.coffee #1720 */
-    /* "../data/skill/vantage/positive.coffee #3460 */
+    /* "../data/skill/vantage/positive.coffee #3459 */
     "Immunität gegen Gift": "Immunität gegen Gift",
 
-    /* "../data/race/RZWE.coffee #806 */
+    /* "../data/race/RZWE.coffee #816 */
     "Immunität gegen Gift (Tulmadron)": "Immunität gegen Gift (Tulmadron)",
 
     /* "../data/race/menschlich/RUTU.coffee #603 */
     /* "../data/race/menschlich/RWLD.coffee #653 */
     "Immunität gegen Gift (Wurara)": "Immunität gegen Gift (Wurara)",
 
-    /* "../data/skill/vantage/positive.coffee #3548 */
+    /* "../data/skill/vantage/positive.coffee #3547 */
     "Immunität gegen Krankheit": "Immunität gegen Krankheit",
 
     /* "../data/race/menschlich/RUTU.coffee #699 */
@@ -3461,13 +3457,13 @@
     /* "../data/race/menschlich/RWLD.coffee #695 */
     "Immunität gegen Krankheit (Flinker Difar)": "Immunität gegen Krankheit (Flinker Difar)",
 
-    /* "../data/race/elfisch/R.coffee #1027 */
+    /* "../data/race/elfisch/R.coffee #1037 */
     "Immunität gegen Krankheit (Lykanthropie)": "Immunität gegen Krankheit (Lykanthropie)",
 
-    /* "../data/race/elfisch/R.coffee #930 */
+    /* "../data/race/elfisch/R.coffee #940 */
     "Immunität gegen Krankheit (Schwarze Wut)": "Immunität gegen Krankheit (Schwarze Wut)",
 
-    /* "../data/race/elfisch/R.coffee #981 */
+    /* "../data/race/elfisch/R.coffee #991 */
     "Immunität gegen Krankheit (Tollwut)": "Immunität gegen Krankheit (Tollwut)",
 
     /* "../data/profession/liturgy/PPER.coffee #1165 */
@@ -3545,7 +3541,7 @@
     /* "../data/skill/vantage/negative.coffee #666 */
     "Jähzorn": "Jähzorn",
 
-    /* "../templates/sheets/print.hbs #3352 */
+    /* "../templates/sheets/print.hbs #3360 */
     "KE": "Karmalenergie",
 
     /* "../data/profession/crafting/landarbeiter/PLND.coffee #1162 */
@@ -3554,7 +3550,7 @@
     /* "../data/profession/military/PSTK.coffee #1576 */
     /* "../data/profession/military/soldat/PSOL.coffee #1146 */
     /* "../data/skill/battle/capability.coffee #3082 */
-    /* "../templates/sheets/print.hbs #21687 */
+    /* "../templates/sheets/print.hbs #21863 */
     "KK": "Körperkraft",
 
     /* "../data/profession/magic/PWDL.coffee #1243 */
@@ -3642,8 +3638,8 @@
     /* "../data/profession/military/soldat/PSOL_STR.coffee #479 */
     /* "../data/skill/battle/skills.coffee #130 */
     /* "../data/skill/battle/skills.coffee #562 */
-    /* "../templates/sheets/print.hbs #15922 */
-    /* "../templates/sheets/print.hbs #16415 */
+    /* "../templates/sheets/print.hbs #16098 */
+    /* "../templates/sheets/print.hbs #16591 */
     "Kampftechniken": "Kampftechniken",
 
     /* "../data/equipment/kleidung.coffee #3181 */
@@ -3720,8 +3716,8 @@
 
     /* "../data/profession/liturgy/PPER.coffee #386 */
     /* "../data/profession/liturgy/PRON.coffee #382 */
-    /* "../templates/sheets/print.hbs #10293 */
-    /* "../templates/sheets/print.hbs #10444 */
+    /* "../templates/sheets/print.hbs #10469 */
+    /* "../templates/sheets/print.hbs #10620 */
     "Kirche": "Kirche",
 
     /* "../data/equipment/kleidung.coffee #3456 */
@@ -3770,7 +3766,7 @@
     /* "../data/profession/society/seefahrer/PSEF_FSCH.coffee #501 */
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #450 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #575 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #554 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #568 */
     /* "../data/profession/society/streuner/PSTR.coffee #440 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #516 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #507 */
@@ -3841,7 +3837,7 @@
     /* "../data/culture/menschlich/CNOV.coffee #1043 */
     /* "../data/culture/menschlich/CNSR.coffee #804 */
     /* "../data/culture/menschlich/CSVL.coffee #806 */
-    /* "../data/race/RHEL.coffee #1629 */
+    /* "../data/race/RHEL.coffee #1650 */
     /* "../data/skill/vantage/negative.coffee #2152 */
     "Krankheitsanfällig": "Krankheitsanfällig",
 
@@ -3850,9 +3846,9 @@
 
     /* "../data/culture/menschlich/CMAR.coffee #495 */
     /* "../data/profession/liturgy/PPER.coffee #1203 */
-    /* "../data/race/RZWE.coffee #1082 */
-    /* "../data/race/elfisch/R.coffee #1078 */
-    /* "../data/skill/vantage/positive.coffee #3720 */
+    /* "../data/race/RZWE.coffee #1092 */
+    /* "../data/race/elfisch/R.coffee #1088 */
+    /* "../data/skill/vantage/positive.coffee #3719 */
     "Krankheitsresistenz": "Krankheitsresistenz",
 
     /* "../data/skill/battle/capability.coffee #2095 */
@@ -3979,7 +3975,7 @@
     /* "../data/culture/menschlich/CZYK.coffee #1184 */
     /* "../data/profession/society/liebesdiener/PLIE.coffee #1091 */
     /* "../data/race/menschlich/RNIV.coffee #717 */
-    /* "../data/skill/vantage/positive.coffee #3646 */
+    /* "../data/skill/vantage/positive.coffee #3645 */
     "Kälteresistenz": "Kälteresistenz",
 
     /* "../data/profession/crafting/landarbeiter/PLND_KOE.coffee #117 */
@@ -4050,13 +4046,13 @@
     /* "../data/profession/society/seefahrer/PSEF_FSCH.coffee #466 */
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #415 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #540 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #730 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #744 */
     /* "../data/skill/battle/capability.coffee #4066 */
     "Körperbeherschung": "Körperbeherschung",
 
     /* "../data/culture/elfisch/CWLE.coffee #496 */
     /* "../data/profession/magic/hexe/PHEX_TDE.coffee #1683 */
-    /* "../data/race/elfisch/R.coffee #1230 */
+    /* "../data/race/elfisch/R.coffee #1240 */
     /* "../data/skill/vantage/negative.coffee #1936 */
     "Körpergebundene Kraft": "Körpergebundene Kraft",
 
@@ -4064,7 +4060,7 @@
     "Körperliche Auffälligkeit": "Körperliche Auffälligkeit",
 
     /* "../data/skill/body.coffee #99 */
-    /* "../templates/sheets/print.hbs #8134 */
+    /* "../templates/sheets/print.hbs #8310 */
     "Körpertalente": "Körpertalente",
 
     /* "../data/profession/society/kuenstler/PKUE.coffee #38 */
@@ -4105,8 +4101,8 @@
     /* "../data/equipment/ruestung.coffee #1219 */
     "Kürass": "Kürass",
 
-    /* "../templates/sheets/print.hbs #3334 */
-    "LE": "LE",
+    /* "../templates/sheets/print.hbs #3342 */
+    "LE": "Lebensenergie",
 
     /* "../data/profession/military/soldat/PSOL.coffee #1200 */
     "Lahm": "Lahm",
@@ -4287,7 +4283,7 @@
     /* "../data/skill/liturgy/liturgy.coffee #5448 */
     /* "../data/skill/liturgy/liturgy.coffee #5602 */
     /* "../data/skill/liturgy/liturgy.coffee #5768 */
-    /* "../templates/sheets/print.hbs #11540 */
+    /* "../templates/sheets/print.hbs #11716 */
     "Liturgien": "Liturgien",
 
     /* "../data/skill/magic/tricks.coffee #862 */
@@ -4302,7 +4298,7 @@
     /* "../data/profession/society/liebesdiener/PLIE.coffee #173 */
     "Lustknabe": "Lustknabe",
 
-    /* "../data/race/elfisch/R.coffee #1262 */
+    /* "../data/race/elfisch/R.coffee #1272 */
     /* "../data/skill/vantage/negative.coffee #2242 */
     "Lästige Mindergeister": "Lästige Mindergeister",
 
@@ -4324,7 +4320,7 @@
     /* "../data/skill/battle/capability.coffee #2260 */
     /* "../data/skill/battle/capability.coffee #3685 */
     /* "../data/skill/battle/capability.coffee #3832 */
-    "MU": "MU",
+    "MU": "Mut",
 
     /* "../data/profession/society/hausdiener/PHAU.coffee #190 */
     "Magd": "Magd",
@@ -4685,8 +4681,8 @@
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #559 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #653 */
     /* "../data/profession/society/spitzel/PSPL.coffee #524 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #604 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #610 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #618 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #624 */
     /* "../data/profession/society/streuner/PSTR.coffee #658 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #750 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #743 */
@@ -4764,7 +4760,7 @@
     "Mittelreich": "Mittelreich",
 
     /* "../data/culture/menschlich/CMLR.coffee #139 */
-    /* "../data/race/RHEL.coffee #967 */
+    /* "../data/race/RHEL.coffee #977 */
     /* "../data/race/menschlich/RMLD.coffee #750 */
     "Mittelreicher": "Mittelreicher",
 
@@ -4847,7 +4843,7 @@
     /* "../data/skill/magic/melody.coffee #1065 */
     "Musizieren": "Musizieren",
 
-    /* "../data/skill/vantage/positive.coffee #3846 */
+    /* "../data/skill/vantage/positive.coffee #3845 */
     "Mystiker": "Mystiker",
 
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #145 */
@@ -4872,8 +4868,8 @@
     /* "../data/culture/zwergisch/CEZZ.coffee #1126 */
     /* "../data/culture/zwergisch/CHGZ.coffee #895 */
     /* "../data/profession/society/gaukler/PGAU.coffee #1567 */
-    /* "../data/race/RZWE.coffee #1348 */
-    /* "../data/race/elfisch/R.coffee #1487 */
+    /* "../data/race/RZWE.coffee #1358 */
+    /* "../data/race/elfisch/R.coffee #1497 */
     /* "../data/skill/vantage/negative.coffee #2490 */
     "Nachtblind": "Nachtblind",
 
@@ -4906,7 +4902,7 @@
     "Nase-/Ohrenbohrer": "Nase-/Ohrenbohrer",
 
     /* "../data/skill/nature.coffee #101 */
-    /* "../templates/sheets/print.hbs #8265 */
+    /* "../templates/sheets/print.hbs #8441 */
     "Naturtalente": "Naturtalente",
 
     /* "../data/skill/liturgy/ceremony.coffee #924 */
@@ -4939,8 +4935,8 @@
     /* "../data/equipment/nahkampfwaffen.coffee #14811 */
     "Neunschwänzige": "Neunschwänzige",
 
-    /* "../data/race/elfisch/R.coffee #583 */
-    /* "../data/skill/vantage/positive.coffee #3964 */
+    /* "../data/race/elfisch/R.coffee #593 */
+    /* "../data/skill/vantage/positive.coffee #3963 */
     "Nichtschläfer": "Nichtschläfer",
 
     /* "../data/skill/vantage/negative.coffee #2562 */
@@ -4959,11 +4955,11 @@
     "Niedrige Magieresistenz": "Niedrige Magieresistenz",
 
     /* "../data/culture/menschlich/CMOH.coffee #570 */
-    /* "../data/race/RZWE.coffee #1369 */
+    /* "../data/race/RZWE.coffee #1379 */
     /* "../data/skill/vantage/negative.coffee #3040 */
     "Niedrige Seelenkraft": "Niedrige Seelenkraft",
 
-    /* "../data/race/RZWE.coffee #1400 */
+    /* "../data/race/RZWE.coffee #1410 */
     /* "../data/skill/vantage/negative.coffee #3157 */
     "Niedrige Zähigkeit": "Niedrige Zähigkeit",
 
@@ -4982,7 +4978,7 @@
     /* "../data/profession/society/kuenstler/PKUE.coffee #1149 */
     /* "../data/profession/society/liebesdiener/PLIE.coffee #1506 */
     /* "../data/profession/society/streuner/PSTR.coffee #1534 */
-    /* "../data/race/RHEL.coffee #991 */
+    /* "../data/race/RHEL.coffee #1001 */
     /* "../data/race/menschlich/RNIV.coffee #597 */
     "Nivesen": "Nivesen",
 
@@ -5003,7 +4999,7 @@
     "Norbardin": "Norbardin",
 
     /* "../data/culture/menschlich/CNOV.coffee #140 */
-    /* "../data/race/RHEL.coffee #1028 */
+    /* "../data/race/RHEL.coffee #1038 */
     /* "../data/race/menschlich/RMLD.coffee #776 */
     /* "../data/race/menschlich/RNIV.coffee #617 */
     /* "../data/race/menschlich/RNOR.coffee #542 */
@@ -5015,7 +5011,7 @@
     "Nostria & Andergast": "Nostria & Andergast",
 
     /* "../data/culture/menschlich/CNSR.coffee #134 */
-    /* "../data/race/RHEL.coffee #1009 */
+    /* "../data/race/RHEL.coffee #1019 */
     /* "../data/race/menschlich/RMLD.coffee #803 */
     "Nostrier": "Nostrier",
 
@@ -5131,8 +5127,8 @@
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #680 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #774 */
     /* "../data/profession/society/spitzel/PSPL.coffee #636 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #752 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #765 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #766 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #779 */
     /* "../data/profession/society/streuner/PSTR.coffee #770 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #870 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #863 */
@@ -5192,7 +5188,7 @@
     /* "../data/skill/magic/curse.coffee #590 */
     "Pech an den Hals wünschen": "Pech an den Hals wünschen",
 
-    /* "../data/skill/vantage/negative.coffee #3385 */
+    /* "../data/skill/vantage/negative.coffee #3384 */
     "Pechmagnet": "Pechmagnet",
 
     /* "../data/equipment/nahkampfwaffen.coffee #6756 */
@@ -5389,7 +5385,7 @@
     /* "../data/profession/society/gaukler/PGAU_POS.coffee #143 */
     "Possenreißerin": "Possenreißerin",
 
-    /* "../data/skill/vantage/positive.coffee #4058 */
+    /* "../data/skill/vantage/positive.coffee #4057 */
     "Pragmatiker": "Pragmatiker",
 
     /* "../data/skill/liturgy/ceremony.coffee #502 */
@@ -5415,7 +5411,7 @@
     /* "../data/profession/liturgy/PPER.coffee #1283 */
     /* "../data/profession/liturgy/PRON.coffee #1396 */
     /* "../data/profession/military/PSTK.coffee #1497 */
-    /* "../data/skill/vantage/negative.coffee #3498 */
+    /* "../data/skill/vantage/negative.coffee #3497 */
     "Prinzipientreue": "Prinzipientreue",
 
     /* "../data/culture/elfisch/CAUE.coffee #556 */
@@ -5752,8 +5748,8 @@
     /* "../data/profession/society/liebesdiener/PLIE_KUR.coffee #743 */
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #734 */
     /* "../data/profession/society/spitzel/PSPL.coffee #695 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #815 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #859 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #829 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #873 */
     /* "../data/profession/society/streuner/PSTR.coffee #865 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #971 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #964 */
@@ -5839,8 +5835,8 @@
     /* "../data/profession/society/kuenstler/PKUE_MUS.coffee #641 */
     /* "../data/profession/society/kuenstler/PKUE_TAZ.coffee #587 */
     /* "../data/profession/society/spitzel/PSPL.coffee #718 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #840 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #884 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #854 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #898 */
     /* "../data/profession/society/streuner/PSTR.coffee #888 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #996 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #989 */
@@ -5863,7 +5859,7 @@
     /* "../data/skill/magic/tricks.coffee #915 */
     "Regenbogenaugen": "Regenbogenaugen",
 
-    /* "../data/skill/vantage/positive.coffee #4179 */
+    /* "../data/skill/vantage/positive.coffee #4178 */
     "Reich": "Reich",
 
     /* "../data/equipment/reisebedarf.coffee #83 */
@@ -5946,9 +5942,9 @@
     /* "../data/profession/magic/PZWB.coffee #1012 */
     /* "../data/profession/military/PSTK.coffee #1116 */
     /* "../data/profession/military/soldat/PSOL.coffee #969 */
-    /* "../data/race/RZWE.coffee #1112 */
-    /* "../data/race/elfisch/R.coffee #1108 */
-    /* "../data/skill/vantage/positive.coffee #4256 */
+    /* "../data/race/RZWE.coffee #1122 */
+    /* "../data/race/elfisch/R.coffee #1118 */
+    /* "../data/skill/vantage/positive.coffee #4255 */
     "Richtungssinn": "Richtungssinn",
 
     /* "../data/skill/language/speach.coffee #2088 */
@@ -6056,8 +6052,12 @@
     /* "../data/equipment/ruestung.coffee #80 */
     "Rüstung": "Rüstung",
 
-    /* "../templates/sheets/print.hbs #3306 */
-    "SK": "SK",
+    /* "../templates/sheets/print.hbs #3314 */
+    "SK": "Seelenkraft",
+
+    /* "../templates/sheets/print.hbs #3369 */
+    /* "../templates/sheets/print.hbs #22243 */
+    "SP": "Schicksalspunkte",
 
     /* "../data/skill/language/speach.coffee #2354 */
     "Saga-Thorwalsch": "Saga-Thorwalsch",
@@ -6163,8 +6163,8 @@
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #858 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #922 */
     /* "../data/profession/society/spitzel/PSPL.coffee #745 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #869 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #913 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #883 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #927 */
     /* "../data/profession/society/streuner/PSTR.coffee #915 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #1025 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #1018 */
@@ -6270,7 +6270,7 @@
     /* "../data/equipment/reisebedarf.coffee #979 */
     "Schlafsack": "Schlafsack",
 
-    /* "../data/skill/vantage/negative.coffee #3586 */
+    /* "../data/skill/vantage/negative.coffee #3585 */
     "Schlafwandler": "Schlafwandler",
 
     /* "../data/equipment/nahkampfwaffen.coffee #19187 */
@@ -6281,10 +6281,10 @@
 
     /* "../data/culture/menschlich/CMOH.coffee #388 */
     /* "../data/profession/society/gaukler/PGAU.coffee #1110 */
-    /* "../data/race/RHEL.coffee #1363 */
-    /* "../data/race/RZWE.coffee #1251 */
-    /* "../data/race/elfisch/R.coffee #1132 */
-    /* "../data/skill/vantage/positive.coffee #4330 */
+    /* "../data/race/RHEL.coffee #1384 */
+    /* "../data/race/RZWE.coffee #1261 */
+    /* "../data/race/elfisch/R.coffee #1142 */
+    /* "../data/skill/vantage/positive.coffee #4329 */
     "Schlangenmensch": "Schlangenmensch",
 
     /* "../data/skill/liturgy/liturgy.coffee #4559 */
@@ -6494,14 +6494,14 @@
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #1490 */
     /* "../data/profession/magic/magier/PMAG_UNI.coffee #1363 */
     /* "../data/profession/magic/magier/PMAG_VWL.coffee #1378 */
-    /* "../data/skill/vantage/negative.coffee #3736 */
+    /* "../data/skill/vantage/negative.coffee #3735 */
     "Schlechte Regeneration (Astralenergie)": "Schlechte Regeneration (Astralenergie)",
 
-    /* "../data/skill/vantage/negative.coffee #3895 */
+    /* "../data/skill/vantage/negative.coffee #3894 */
     "Schlechte Regeneration (Karmaenergie)": "Schlechte Regeneration (Karmaenergie)",
 
     /* "../data/profession/liturgy/PRON.coffee #1563 */
-    /* "../data/skill/vantage/negative.coffee #4054 */
+    /* "../data/skill/vantage/negative.coffee #4053 */
     "Schlechte Regeneration (Lebensenergie)": "Schlechte Regeneration (Lebensenergie)",
 
     /* "../data/profession/military/PKRR.coffee #1342 */
@@ -6530,8 +6530,8 @@
     /* "../data/culture/menschlich/CNIV.coffee #1152 */
     /* "../data/culture/zwergisch/CBIZ.coffee #895 */
     /* "../data/profession/society/spitzel/PSPL.coffee #800 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #928 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #972 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #942 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #986 */
     /* "../data/profession/society/streuner/PSTR.coffee #948 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #1060 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #1053 */
@@ -6693,7 +6693,7 @@
     /* "../data/profession/society/streuner/PSTR_TAU.coffee #333 */
     /* "../data/profession/society/streuner/PSTR_ZUH.coffee #326 */
     /* "../data/skill/language/lettering.coffee #92 */
-    /* "../templates/sheets/print.hbs #5179 */
+    /* "../templates/sheets/print.hbs #5355 */
     "Schrift": "Schrift",
 
     /* "../data/culture/menschlich/CNVS.coffee #297 */
@@ -6746,10 +6746,10 @@
     /* "../data/skill/liturgy/liturgy.coffee #5052 */
     "Schutz der Wehrlosen": "Schutz der Wehrlosen",
 
-    /* "../data/skill/vantage/negative.coffee #4165 */
+    /* "../data/skill/vantage/negative.coffee #4164 */
     "Schwacher Astralkörper": "Schwacher Astralkörper",
 
-    /* "../data/skill/vantage/negative.coffee #4297 */
+    /* "../data/skill/vantage/negative.coffee #4296 */
     "Schwacher Karmalkörper": "Schwacher Karmalkörper",
 
     /* "../data/profession/magic/hexe/PHEX_SWW.coffee #206 */
@@ -6760,10 +6760,10 @@
     "Schwarzer Witwer": "Schwarzer Witwer",
 
     /* "../data/culture/menschlich/CNVS.coffee #446 */
-    /* "../data/race/RHEL.coffee #1533 */
-    /* "../data/race/RZWE.coffee #1136 */
-    /* "../data/race/elfisch/R.coffee #1360 */
-    /* "../data/skill/vantage/positive.coffee #4405 */
+    /* "../data/race/RHEL.coffee #1554 */
+    /* "../data/race/RZWE.coffee #1146 */
+    /* "../data/race/elfisch/R.coffee #1370 */
+    /* "../data/skill/vantage/positive.coffee #4404 */
     "Schwer zu verzaubern": "Schwer zu verzaubern",
 
     /* "../data/equipment/nahkampfwaffen.coffee #19857 */
@@ -6800,8 +6800,8 @@
     /* "../data/profession/society/seefahrer/PSEF_FSCH.coffee #438 */
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #386 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #512 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #430 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #436 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #444 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #450 */
     /* "../data/skill/battle/skills.coffee #1282 */
     "Schwerter": "Schwerter",
 
@@ -6817,8 +6817,8 @@
     /* "../data/profession/magic/hexe/PHEX_SHM.coffee #402 */
     /* "../data/profession/magic/hexe/PHEX_SWW.coffee #354 */
     /* "../data/profession/magic/hexe/PHEX_TDE.coffee #355 */
-    /* "../templates/sheets/print.hbs #9696 */
-    /* "../templates/sheets/print.hbs #9897 */
+    /* "../templates/sheets/print.hbs #9872 */
+    /* "../templates/sheets/print.hbs #10073 */
     "Schwesternschaft": "Schwesternschaft",
 
     /* "../data/culture/elfisch/CAUE.coffee #918 */
@@ -6945,9 +6945,9 @@
     /* "../data/equipment/nahkampfwaffen.coffee #20291 */
     "Sense": "Sense",
 
-    /* "../data/race/RHEL.coffee #1460 */
-    /* "../data/race/elfisch/R.coffee #607 */
-    /* "../data/skill/vantage/negative.coffee #4430 */
+    /* "../data/race/RHEL.coffee #1481 */
+    /* "../data/race/elfisch/R.coffee #617 */
+    /* "../data/skill/vantage/negative.coffee #4429 */
     "Sensibler Geruchssinn": "Sensibler Geruchssinn",
 
     /* "../data/equipment/nahkampfwaffen.coffee #20507 */
@@ -7043,8 +7043,8 @@
     /* "../data/profession/society/liebesdiener/PLIE_KUR.coffee #376 */
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #367 */
     /* "../data/profession/society/spitzel/PSPL.coffee #409 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #455 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #461 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #469 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #475 */
     /* "../data/profession/society/streuner/PSTR.coffee #498 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #578 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #569 */
@@ -7133,7 +7133,7 @@
     /* "../data/profession/society/liebesdiener/PLIE.coffee #1174 */
     /* "../data/profession/society/spitzel/PSPL.coffee #924 */
     /* "../data/profession/society/streuner/PSTR.coffee #1090 */
-    /* "../data/skill/vantage/positive.coffee #4507 */
+    /* "../data/skill/vantage/positive.coffee #4506 */
     "Soziale Anpassungsfähigkeit": "Soziale Anpassungsfähigkeit",
 
     /* "../data/equipment/nahkampfwaffen.coffee #21383 */
@@ -7148,8 +7148,8 @@
     /* "../data/profession/magic/magier/PMAG_BEH.coffee #386 */
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #358 */
     /* "../data/profession/magic/magier/PMAG_VWL.coffee #386 */
-    /* "../templates/sheets/print.hbs #10007 */
-    /* "../templates/sheets/print.hbs #10193 */
+    /* "../templates/sheets/print.hbs #10183 */
+    /* "../templates/sheets/print.hbs #10369 */
     "Spezialgebiet": "Spezialgebiet",
 
     /* "../data/skill/knowledge.coffee #1401 */
@@ -7299,13 +7299,13 @@
     /* "../data/profession/society/streuner/PSTR_TAU.coffee #318 */
     /* "../data/profession/society/streuner/PSTR_ZUH.coffee #311 */
     /* "../data/skill/language/speach.coffee #89 */
-    /* "../templates/sheets/print.hbs #4727 */
+    /* "../templates/sheets/print.hbs #4903 */
     "Sprache": "Sprache",
 
     /* "../data/culture/elfisch/C.coffee #145 */
     "Sprache (Isdira)": "Sprache (Isdira)",
 
-    /* "../data/skill/vantage/negative.coffee #4534 */
+    /* "../data/skill/vantage/negative.coffee #4533 */
     "Sprachfehler": "Sprachfehler",
 
     /* "../data/profession/society/gelehrter/PGEH_SPR.coffee #97 */
@@ -7472,22 +7472,22 @@
     /* "../data/profession/society/gelehrter/PGEH_STN.coffee #97 */
     "Sternkundiger": "Sternkundiger",
 
-    /* "../data/skill/vantage/negative.coffee #4608 */
+    /* "../data/skill/vantage/negative.coffee #4607 */
     "Stigma (Albino)": "Stigma (Albino)",
 
-    /* "../data/skill/vantage/negative.coffee #4767 */
+    /* "../data/skill/vantage/negative.coffee #4766 */
     "Stigma (Brandmale)": "Stigma (Brandmale)",
 
-    /* "../data/skill/vantage/negative.coffee #4685 */
+    /* "../data/skill/vantage/negative.coffee #4684 */
     "Stigma (Grüne Haare)": "Stigma (Grüne Haare)",
 
     /* "../data/profession/magic/hexe/PHEX_TDE.coffee #1807 */
     "Stigma (Hexensträhne)": "Stigma (Hexensträhne)",
 
-    /* "../data/skill/vantage/negative.coffee #4847 */
+    /* "../data/skill/vantage/negative.coffee #4846 */
     "Stigma (Katzenhafte Augen)": "Stigma (Katzenhafte Augen)",
 
-    /* "../data/skill/vantage/negative.coffee #4935 */
+    /* "../data/skill/vantage/negative.coffee #4934 */
     "Stigma (Schlangenschuppen)": "Stigma (Schlangenschuppen)",
 
     /* "../data/skill/magic/familiar.coffee #703 */
@@ -7609,7 +7609,7 @@
     /* "../data/equipment/kleidung.coffee #6234 */
     "Stulpenstiefel": "Stulpenstiefel",
 
-    /* "../data/skill/vantage/negative.coffee #5023 */
+    /* "../data/skill/vantage/negative.coffee #5022 */
     "Stumm": "Stumm",
 
     /* "../data/skill/battle/capability.coffee #3624 */
@@ -7625,7 +7625,7 @@
     "Sumpfechse": "Sumpfechse",
 
     /* "../data/culture/menschlich/CSVL.coffee #137 */
-    /* "../data/race/RHEL.coffee #1053 */
+    /* "../data/race/RHEL.coffee #1063 */
     /* "../data/race/menschlich/RMLD.coffee #850 */
     /* "../data/race/menschlich/RNIV.coffee #644 */
     "Svellttaler": "Svellttaler",
@@ -7760,8 +7760,8 @@
     /* "../data/profession/society/gaukler/PGAU_WAH.coffee #537 */
     /* "../data/profession/society/gaukler/PGAU_ZIR.coffee #598 */
     /* "../data/profession/society/spitzel/PSPL.coffee #438 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #486 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #492 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #500 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #506 */
     /* "../data/profession/society/streuner/PSTR.coffee #527 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #609 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #600 */
@@ -7780,7 +7780,7 @@
     /* "../data/equipment/luxus.coffee #2257 */
     "Taschentuch (Leinen)": "Taschentuch (Leinen)",
 
-    /* "../data/skill/vantage/negative.coffee #5090 */
+    /* "../data/skill/vantage/negative.coffee #5089 */
     "Taub": "Taub",
 
     /* "../data/profession/society/streuner/PSTR_TAU.coffee #221 */
@@ -7807,7 +7807,7 @@
 
     /* "../data/culture/menschlich/CTHW.coffee #135 */
     /* "../data/profession/society/barde/PBAR_SKA.coffee #938 */
-    /* "../data/race/RHEL.coffee #1075 */
+    /* "../data/race/RHEL.coffee #1085 */
     /* "../data/race/menschlich/RTHW.coffee #146 */
     /* "../data/race/menschlich/RTHW.coffee #658 */
     "Thorwaler": "Thorwaler",
@@ -7928,8 +7928,8 @@
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #316 */
     /* "../data/profession/magic/magier/PMAG_UNI.coffee #331 */
     /* "../data/profession/magic/magier/PMAG_VWL.coffee #344 */
-    /* "../templates/sheets/print.hbs #9522 */
-    /* "../templates/sheets/print.hbs #9606 */
+    /* "../templates/sheets/print.hbs #9698 */
+    /* "../templates/sheets/print.hbs #9782 */
     "Tradition": "Tradition",
 
     /* "../data/skill/liturgy/blessing.coffee #852 */
@@ -8043,19 +8043,19 @@
     /* "../data/culture/menschlich/CNVS.coffee #173 */
     /* "../data/culture/menschlich/CSAV.coffee #185 */
     /* "../data/culture/menschlich/CSVL.coffee #181 */
-    /* "../data/skill/vantage/negative.coffee #5478 */
+    /* "../data/skill/vantage/negative.coffee #5477 */
     "Unfrei": "Unfrei",
 
     /* "../data/skill/magic/curse.coffee #909 */
     "Unfruchtbarkeit": "Unfruchtbarkeit",
 
-    /* "../data/skill/vantage/negative.coffee #5156 */
+    /* "../data/skill/vantage/negative.coffee #5155 */
     "Unfähig": "Unfähig",
 
-    /* "../data/race/RZWE.coffee #849 */
+    /* "../data/race/RZWE.coffee #859 */
     "Unfähig (Schwimmen)": "Unfähig (Schwimmen)",
 
-    /* "../data/race/elfisch/R.coffee #639 */
+    /* "../data/race/elfisch/R.coffee #649 */
     "Unfähig (Zechen)": "Unfähig (Zechen)",
 
     /* "../data/culture/menschlich/CFJA.coffee #609 */
@@ -8103,7 +8103,7 @@
     "Unordentlich": "Unordentlich",
 
     /* "../data/culture/menschlich/CFJA.coffee #1072 */
-    /* "../data/skill/vantage/positive.coffee #4595 */
+    /* "../data/skill/vantage/positive.coffee #4594 */
     "Unscheinbar": "Unscheinbar",
 
     /* "../data/equipment/kleidung.coffee #6506 */
@@ -8178,8 +8178,8 @@
     /* "../data/profession/society/liebesdiener/PLIE_KUR.coffee #431 */
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #422 */
     /* "../data/profession/society/spitzel/PSPL.coffee #470 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #520 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #526 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #534 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #540 */
     /* "../data/profession/society/streuner/PSTR.coffee #559 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #643 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #635 */
@@ -8202,11 +8202,11 @@
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #1159 */
     /* "../data/profession/magic/magier/PMAG_UNI.coffee #1065 */
     /* "../data/profession/magic/magier/PMAG_VWL.coffee #1103 */
-    /* "../data/race/elfisch/R.coffee #1158 */
-    /* "../data/skill/vantage/positive.coffee #4666 */
+    /* "../data/race/elfisch/R.coffee #1168 */
+    /* "../data/skill/vantage/positive.coffee #4665 */
     "Verbesserte Regeneration (Astralenergie)": "Verbesserte Regeneration (Astralenergie)",
 
-    /* "../data/skill/vantage/positive.coffee #4778 */
+    /* "../data/skill/vantage/positive.coffee #4777 */
     "Verbesserte Regeneration (Karmalenergie)": "Verbesserte Regeneration (Karmalenergie)",
 
     /* "../data/culture/menschlich/CFJA.coffee #348 */
@@ -8217,7 +8217,7 @@
     /* "../data/profession/military/PSGE.coffee #1114 */
     /* "../data/profession/military/PSTK.coffee #1140 */
     /* "../data/profession/military/soldat/PSOL.coffee #993 */
-    /* "../data/skill/vantage/positive.coffee #4890 */
+    /* "../data/skill/vantage/positive.coffee #4889 */
     "Verbesserte Regeneration (Lebensenergie)": "Verbesserte Regeneration (Lebensenergie)",
 
     /* "../data/skill/battle/capability.coffee #3949 */
@@ -8229,7 +8229,7 @@
     /* "../data/profession/magic/hexe/PHEX_SDN.coffee #1581 */
     /* "../data/profession/magic/hexe/PHEX_SHM.coffee #1654 */
     /* "../data/profession/magic/hexe/PHEX_TDE.coffee #1657 */
-    /* "../data/skill/vantage/positive.coffee #5002 */
+    /* "../data/skill/vantage/positive.coffee #5001 */
     "Verhüllte Aura": "Verhüllte Aura",
 
     /* "../data/profession/magic/hexe/PHEX_SDN.coffee #1145 */
@@ -8257,8 +8257,8 @@
     /* "../data/profession/society/liebesdiener/PLIE_KUR.coffee #626 */
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #617 */
     /* "../data/profession/society/spitzel/PSPL.coffee #581 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #665 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #671 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #679 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #685 */
     /* "../data/profession/society/streuner/PSTR.coffee #715 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #811 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #804 */
@@ -8278,7 +8278,7 @@
     /* "../data/profession/liturgy/PPER.coffee #1332 */
     /* "../data/profession/liturgy/PRON.coffee #1465 */
     /* "../data/profession/military/PSTK.coffee #1523 */
-    /* "../data/skill/vantage/negative.coffee #5545 */
+    /* "../data/skill/vantage/negative.coffee #5544 */
     "Verpflichtungen": "Verpflichtungen",
 
     /* "../data/skill/vantage/habits.coffee #7359 */
@@ -8288,26 +8288,26 @@
     /* "../data/profession/crafting/PHAN.coffee #1065 */
     "Verstümmelt": "Verstümmelt",
 
-    /* "../data/skill/vantage/negative.coffee #5884 */
+    /* "../data/skill/vantage/negative.coffee #5883 */
     "Verstümmelt (Einarmig)": "Verstümmelt (Einarmig)",
 
-    /* "../data/skill/vantage/negative.coffee #5968 */
+    /* "../data/skill/vantage/negative.coffee #5967 */
     "Verstümmelt (Einbeinig)": "Verstümmelt (Einbeinig)",
 
-    /* "../data/skill/vantage/negative.coffee #5799 */
+    /* "../data/skill/vantage/negative.coffee #5798 */
     "Verstümmelt (Einhändig)": "Verstümmelt (Einhändig)",
 
-    /* "../data/skill/vantage/negative.coffee #5716 */
+    /* "../data/skill/vantage/negative.coffee #5715 */
     "Verstümmelt (Einohrig)": "Verstümmelt (Einohrig)",
 
-    /* "../data/skill/vantage/negative.coffee #5632 */
+    /* "../data/skill/vantage/negative.coffee #5631 */
     "Verstümmelt (Einäugig)": "Verstümmelt (Einäugig)",
 
     /* "../data/skill/battle/capability.coffee #4163 */
     "Verteidigungshaltung": "Verteidigungshaltung",
 
     /* "../data/profession/liturgy/PPER.coffee #1252 */
-    /* "../data/skill/vantage/positive.coffee #5077 */
+    /* "../data/skill/vantage/positive.coffee #5076 */
     "Vertrauenserweckend": "Vertrauenserweckend",
 
     /* "../data/profession/magic/hexe/PHEX_SDN.coffee #590 */
@@ -8387,7 +8387,7 @@
     "Völkerkundlerin": "Völkerkundlerin",
 
     /* "../data/equipment/nahkampfwaffen.coffee #86 */
-    /* "../templates/sheets/print.hbs #17994 */
+    /* "../templates/sheets/print.hbs #18170 */
     "Waffen": "Waffen",
 
     /* "../data/culture/elfisch/CAUE.coffee #342 */
@@ -8395,12 +8395,12 @@
     /* "../data/culture/elfisch/CWLE.coffee #385 */
     /* "../data/culture/zwergisch/CAMZ.coffee #365 */
     /* "../data/profession/liturgy/PRON.coffee #1349 */
-    /* "../data/skill/vantage/positive.coffee #5157 */
+    /* "../data/skill/vantage/positive.coffee #5156 */
     "Waffenbegabung": "Waffenbegabung",
 
-    /* "../data/race/RHEL.coffee #1492 */
-    /* "../data/race/elfisch/R.coffee #1294 */
-    /* "../data/skill/vantage/negative.coffee #6053 */
+    /* "../data/race/RHEL.coffee #1513 */
+    /* "../data/race/elfisch/R.coffee #1304 */
+    /* "../data/skill/vantage/negative.coffee #6052 */
     "Wahrer Name": "Wahrer Name",
 
     /* "../data/skill/liturgy/liturgy.coffee #5372 */
@@ -8416,8 +8416,8 @@
     "Waldelf": "Waldelf",
 
     /* "../data/culture/elfisch/CWLE.coffee #132 */
-    /* "../data/race/RHEL.coffee #1095 */
-    /* "../data/race/elfisch/R.coffee #494 */
+    /* "../data/race/RHEL.coffee #1105 */
+    /* "../data/race/elfisch/R.coffee #504 */
     "Waldelfen": "Waldelfen",
 
     /* "../data/race/elfisch/RWLE.coffee #159 */
@@ -8503,7 +8503,7 @@
     /* "../data/skill/liturgy/liturgy.coffee #5529 */
     "Wieselflink": "Wieselflink",
 
-    /* "../data/skill/vantage/negative.coffee #6126 */
+    /* "../data/skill/vantage/negative.coffee #6125 */
     "Wilde Magie": "Wilde Magie",
 
     /* "../data/animal/familiar/cat.coffee #422 */
@@ -8625,8 +8625,8 @@
     /* "../data/profession/society/liebesdiener/PLIE_KUR.coffee #654 */
     /* "../data/profession/society/liebesdiener/PLIE_MAE.coffee #645 */
     /* "../data/profession/society/spitzel/PSPL.coffee #607 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #693 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #699 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #707 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #713 */
     /* "../data/profession/society/streuner/PSTR.coffee #741 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #839 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #832 */
@@ -8653,7 +8653,7 @@
 
     /* "../data/skill/knowledge.coffee #104 */
     /* "../data/skill/language/capability.coffee #1220 */
-    /* "../templates/sheets/print.hbs #9180 */
+    /* "../templates/sheets/print.hbs #9356 */
     "Wissenstalente": "Wissenstalente",
 
     /* "../data/culture/menschlich/CZYK.coffee #440 */
@@ -8662,10 +8662,10 @@
     /* "../data/profession/society/haendler/PHAE.coffee #779 */
     /* "../data/profession/society/liebesdiener/PLIE.coffee #983 */
     /* "../data/profession/society/streuner/PSTR.coffee #1128 */
-    /* "../data/race/RHEL.coffee #1389 */
-    /* "../data/race/RZWE.coffee #1277 */
-    /* "../data/race/elfisch/R.coffee #1209 */
-    /* "../data/skill/vantage/positive.coffee #5444 */
+    /* "../data/race/RHEL.coffee #1410 */
+    /* "../data/race/RZWE.coffee #1287 */
+    /* "../data/race/elfisch/R.coffee #1219 */
+    /* "../data/skill/vantage/positive.coffee #5443 */
     "Wohlklang": "Wohlklang",
 
     /* "../data/animal/familiar/dog.coffee #252 */
@@ -8759,8 +8759,8 @@
     /* "../data/skill/language/speach.coffee #2767 */
     "Yetisprache": "Yetisprache",
 
-    /* "../templates/sheets/print.hbs #3315 */
-    "ZK": "ZK",
+    /* "../templates/sheets/print.hbs #3323 */
+    "ZK": "Zähigkeit (KO/3+KK/6)",
 
     /* "../data/skill/vantage/capability.coffee #4355 */
     "Zahlenmystik": "Zahlenmystik",
@@ -8772,10 +8772,10 @@
     "Zahlenmystikerin": "Zahlenmystikerin",
 
     /* "../data/skill/magic/magic.coffee #80 */
-    /* "../templates/sheets/print.hbs #11396 */
+    /* "../templates/sheets/print.hbs #11572 */
     "Zauber": "Zauber",
 
-    /* "../data/skill/vantage/negative.coffee #6247 */
+    /* "../data/skill/vantage/negative.coffee #6246 */
     "Zauberanfällig": "Zauberanfällig",
 
     /* "../data/profession/magic/hexe/PHEX_SDN.coffee #285 */
@@ -8786,8 +8786,8 @@
     /* "../data/profession/magic/magier/PMAG_KPF.coffee #277 */
     /* "../data/profession/magic/magier/PMAG_UNI.coffee #292 */
     /* "../data/profession/magic/magier/PMAG_VWL.coffee #305 */
-    /* "../data/race/RHEL.coffee #1409 */
-    /* "../data/race/RZWE.coffee #1297 */
+    /* "../data/race/RHEL.coffee #1430 */
+    /* "../data/race/RZWE.coffee #1307 */
     /* "../data/race/elfisch/R.coffee #347 */
     /* "../data/skill/vantage/habits.coffee #437 */
     /* "../data/skill/vantage/habits.coffee #1593 */
@@ -8797,11 +8797,11 @@
     /* "../data/skill/vantage/negative.coffee #2001 */
     /* "../data/skill/vantage/negative.coffee #2308 */
     /* "../data/skill/vantage/negative.coffee #2672 */
-    /* "../data/skill/vantage/negative.coffee #3830 */
-    /* "../data/skill/vantage/negative.coffee #4232 */
-    /* "../data/skill/vantage/negative.coffee #6182 */
+    /* "../data/skill/vantage/negative.coffee #3829 */
+    /* "../data/skill/vantage/negative.coffee #4231 */
+    /* "../data/skill/vantage/negative.coffee #6181 */
     /* "../data/skill/vantage/positive.coffee #1058 */
-    /* "../data/skill/vantage/positive.coffee #5584 */
+    /* "../data/skill/vantage/positive.coffee #5583 */
     "Zauberer": "Zauberer",
 
     /* "../data/skill/magic/ritual.coffee #908 */
@@ -8918,7 +8918,7 @@
 
     /* "../data/profession/society/haendler/PHAE.coffee #799 */
     /* "../data/profession/society/spitzel/PSPL.coffee #962 */
-    /* "../data/skill/vantage/positive.coffee #5688 */
+    /* "../data/skill/vantage/positive.coffee #5687 */
     "Zeitgefühl": "Zeitgefühl",
 
     /* "../data/skill/language/speach.coffee #2837 */
@@ -8937,8 +8937,8 @@
     /* "../data/culture/menschlich/CFJA.coffee #1431 */
     /* "../data/profession/liturgy/PRON.coffee #1635 */
     /* "../data/profession/military/PSTK.coffee #1800 */
-    /* "../data/race/RZWE.coffee #1429 */
-    /* "../data/skill/vantage/negative.coffee #6334 */
+    /* "../data/race/RZWE.coffee #1439 */
+    /* "../data/skill/vantage/negative.coffee #6333 */
     "Zerbrechlich": "Zerbrechlich",
 
     /* "../data/skill/liturgy/ceremony.coffee #144 */
@@ -9028,9 +9028,9 @@
     /* "../data/equipment/nahkampfwaffen.coffee #25569 */
     "Zweililien": "Zweililien",
 
-    /* "../data/race/RHEL.coffee #1428 */
+    /* "../data/race/RHEL.coffee #1449 */
     /* "../data/race/elfisch/R.coffee #316 */
-    /* "../data/skill/vantage/positive.coffee #5758 */
+    /* "../data/skill/vantage/positive.coffee #5757 */
     "Zweistimmiger Gesang": "Zweistimmiger Gesang",
 
     /* "../data/race/RZWE.coffee #95 */
@@ -9042,10 +9042,10 @@
     /* "../data/race/RZWE.coffee #72 */
     "Zwerge": "Zwerge",
 
-    /* "../data/race/RHEL.coffee #1564 */
-    /* "../data/race/RZWE.coffee #1188 */
-    /* "../data/race/elfisch/R.coffee #1391 */
-    /* "../data/skill/vantage/positive.coffee #5859 */
+    /* "../data/race/RHEL.coffee #1585 */
+    /* "../data/race/RZWE.coffee #1198 */
+    /* "../data/race/elfisch/R.coffee #1401 */
+    /* "../data/skill/vantage/positive.coffee #5858 */
     "Zwergennase": "Zwergennase",
 
     /* "../data/equipment/nahkampfwaffen.coffee #25789 */
@@ -9109,9 +9109,9 @@
     /* "../data/profession/military/PKRR.coffee #1109 */
     /* "../data/profession/military/PSGE.coffee #1165 */
     /* "../data/profession/military/PSTK.coffee #1191 */
-    /* "../data/race/RZWE.coffee #1167 */
+    /* "../data/race/RZWE.coffee #1177 */
     /* "../data/race/menschlich/RTHW.coffee #728 */
-    /* "../data/skill/vantage/positive.coffee #5513 */
+    /* "../data/skill/vantage/positive.coffee #5512 */
     "Zäher Hund": "Zäher Hund",
 
     /* "../data/skill/language/speach.coffee #3040 */
@@ -9537,8 +9537,8 @@
     /* "../data/profession/society/seefahrer/PSEF_PIRT.coffee #593 */
     /* "../data/profession/society/seefahrer/PSEF_WLFR.coffee #687 */
     /* "../data/profession/society/spitzel/PSPL.coffee #556 */
-    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #638 */
-    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #644 */
+    /* "../data/profession/society/spitzel/PSPL_GHA.coffee #652 */
+    /* "../data/profession/society/spitzel/PSPL_MCH.coffee #658 */
     /* "../data/profession/society/streuner/PSTR.coffee #690 */
     /* "../data/profession/society/streuner/PSTR_BET.coffee #784 */
     /* "../data/profession/society/streuner/PSTR_DIE.coffee #777 */

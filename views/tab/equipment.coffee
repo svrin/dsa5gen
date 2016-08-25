@@ -58,7 +58,7 @@ define ['views/bases/tabbox', 'text!templates/equipment.hbs', 'text!templates/eq
       # Hide all optgroup with no visible options
       @.$el.find("optgroup").each (i, optgroup) =>
         options = $("option", optgroup).filter (i, node) ->
-          $(node).css("display") == "inline"
+          $(node).css("display") == "inline" or $(node).css("display") == "block"
         if options.length > 0
           $(optgroup).show()
         else

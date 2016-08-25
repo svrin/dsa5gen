@@ -173,7 +173,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       ###
 
       # .get(_) calls bypass property functions
-      if attr.startsWith("_")
+      if attr and attr.startsWith("_")
         return @.attributes[attr.substr(1)]
 
       value = @.attributes[attr]
@@ -490,7 +490,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
 
     calc_cap: (top) ->
       ###
-        Returns current costs for cultur packet
+        Returns current costs for culture packet
       ###
       character = @
 
@@ -560,10 +560,17 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
           return
 
         # Calculate
-        skill_costs = skill.get('costs', context)
-
         costs_increment = 0
-        if skill_costs and not skill.get('SF')
+        skill_costs = skill.get('_costs')
+        if _.isFunction(skill_costs)
+          i = value
+          while i >= 1
+            costs_increment += skill.get('costs', context)
+
+            i--
+            context[1] = i
+
+        else if skill_costs and not skill.get('SF')
           costs_increment += (value * skill_costs || 0)
         else
           costs_increment += (skill_costs || 0)
@@ -671,7 +678,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         attributes["AE"] += (attributes[attribute] || 0)
         attributes["KE"] +=  (attributes[attribute] || 0)
 
-      attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0) + (c_skills['INI'] || 0)
+      #attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0) + (c_skills['INI'] || 0)
       attributes["SP"] = 3 + (c_skills['SP'] || 0)
 
       attributes["AT/PA_GE"] = 5 + Math.max(attributes["GE"] - 10, 0)

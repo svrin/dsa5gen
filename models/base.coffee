@@ -42,6 +42,11 @@ define [], () ->
         Overwritten for allowing @pget and @cget calls
         and evaluating functions on the fly
       ###
+
+      # .get(_) calls bypass property functions
+      if attr and attr.startsWith("_")
+        return @.attributes[attr.substr(1)]
+
       value = @.attributes[attr]
 
       if _.isFunction(value) and _.isArray(context)
