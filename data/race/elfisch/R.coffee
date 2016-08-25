@@ -26,7 +26,7 @@ define "data/race/elfisch", [], () ->
   auto: [
     __("Zweistimmiger Gesang")
     __("Zauberer")
-    choice(-2, "KL_max", "KK_max")
+    choice("RELF_E", -2, "KL_max", "KK_max")
     ["IN_max", 1]
     ["GE_max", 1]
   ]

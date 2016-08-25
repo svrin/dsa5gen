@@ -20,7 +20,7 @@
     "50 Portionen Zunder": "50 Portionen Zunder",
 
     /* "../templates/sheets/print.hbs #3343 */
-    "AE": "AE",
+    "AE": "Astralenergie",
 
     /* "../templates/profile.hbs #1417 */
     /* "../templates/profile.hbs #1584 */
@@ -3546,7 +3546,7 @@
     "Jähzorn": "Jähzorn",
 
     /* "../templates/sheets/print.hbs #3352 */
-    "KE": "KE",
+    "KE": "Karmalenergie",
 
     /* "../data/profession/crafting/landarbeiter/PLND.coffee #1162 */
     /* "../data/profession/liturgy/PRON.coffee #1531 */
@@ -3555,7 +3555,7 @@
     /* "../data/profession/military/soldat/PSOL.coffee #1146 */
     /* "../data/skill/battle/capability.coffee #3082 */
     /* "../templates/sheets/print.hbs #21687 */
-    "KK": "KK",
+    "KK": "Körperkraft",
 
     /* "../data/profession/magic/PWDL.coffee #1243 */
     /* "../data/profession/magic/PZWB.coffee #1146 */
@@ -3569,14 +3569,14 @@
     /* "../data/profession/society/gelehrter/PGEH.coffee #906 */
     /* "../data/profession/society/haendler/PHAE.coffee #943 */
     /* "../data/profession/society/hoefling/PHOE.coffee #1314 */
-    "KL": "KL",
+    "KL": "Klugkeit",
 
     /* "../data/profession/crafting/landarbeiter/PLND.coffee #1149 */
     /* "../data/profession/liturgy/PPER.coffee #1385 */
     /* "../data/profession/military/PSTK.coffee #1563 */
     /* "../data/profession/society/hausdiener/PHAU.coffee #1034 */
     /* "../data/profession/society/liebesdiener/PLIE.coffee #1226 */
-    "KO": "KO",
+    "KO": "Konstitution",
 
     /* "../data/equipment/kleidung.coffee #1786 */
     "Kaftan": "Kaftan",

@@ -37,11 +37,19 @@ define ['views/bases/leftbox', 'text!templates/options.hbs'], (BaseView, hbs) ->
 
     print: (event) =>
       ###
-        Destroy character call
+        Print view
       ###
       event.preventDefault()
 
       window.navigate @.model.url() + "/print"
+
+    json: (event) =>
+      ###
+        Json view
+      ###
+      event.preventDefault()
+
+      window.navigate @.model.url() + "/json"
 
     import: (event) =>
       ###

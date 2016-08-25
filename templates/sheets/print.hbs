@@ -77,9 +77,9 @@
                 <th width="24%">Aktuell</th>
             </tr>
             </thead>
-            <!-- __('GS') __('AW') __('SK') __('ZK') __('INI') __('LE') __('AE') __('KE') __('GLK') -->
+            <!-- __('GS') __('AW') __('SK') __('ZK') __('INI') __('LE') __('AE') __('KE') __('SP') -->
             <tbody>
-            <% _.each(['GS', 'SK', 'ZK', 'INI', 'LE', 'AE', 'KE', 'GLK'], function (key) { %>
+            <% _.each(['GS', 'SK', 'ZK', 'INI', 'LE', 'AE', 'KE', 'SP'], function (key) { %>
             <tr data-key="<%= key %>" data-value="<%= character.get('attributes')[key] %>">
                 <td>
                     <b><%= key %></b>
@@ -562,7 +562,7 @@
                 </th>
                 <th width="12.5%" title="<%= __('AW') %>">AW</th>
                 <th width="12.5%" title="<%= __('GS') %>">GS</th>
-                <th width="12.5%" title="<%= __('GLK') %>">GLK</th>
+                <th width="12.5%" title="<%= __('SP') %>">SP</th>
                 <th width="12.5%" title="<%= __('BE') %>">BE</th>
             </tr>
             </thead>
@@ -582,7 +582,7 @@
                 </td>
                 <td data-for="attributes.AW"><%= attributes['AW'] %></td>
                 <td data-for="attributes.GS"><%= attributes['GS'] %></td>
-                <td data-for="attributes.GLK"><%= attributes['GLK'] %></td>
+                <td data-for="attributes.SP"><%= attributes['SP'] %></td>
                 <td data-for="attributes.BE"><%= attributes['BE'] %></td>
             </tr>
             </tbody>

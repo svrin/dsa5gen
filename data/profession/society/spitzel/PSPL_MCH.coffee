@@ -19,7 +19,7 @@ professions.add new (
       [__("Raufen"), 10]
       [__("Dolche"), 12]
       [__("Armbrüste"), 10]
-      choice(12, __("Fetchtwaffen"), __("Hiebwaffen"), __("Schwerter"))
+      choice("PGPL_MCH_K", 12, __("Fetchtwaffen"), __("Hiebwaffen"), __("Schwerter"))
 
       [__("Sinnesschärfe"), 7]
       [__("Taschendiebstahl"), 5]

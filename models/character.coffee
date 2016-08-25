@@ -25,6 +25,8 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
       skills: {}
       equipments: {}
 
+      choices: {}
+
       attributes:
         MU: 8
         KL: 8
@@ -670,7 +672,7 @@ define ["models/base", 'data/race', 'data/culture', 'data/profession', 'data/lif
         attributes["KE"] +=  (attributes[attribute] || 0)
 
       attributes["INI"] = (attributes["INI"] || 0) + Math.max(attributes["IN"] - 10, 0) + (c_skills['INI'] || 0)
-      attributes["GLK"] = 3 + (c_skills['GLK'] || 0)
+      attributes["SP"] = 3 + (c_skills['SP'] || 0)
 
       attributes["AT/PA_GE"] = 5 + Math.max(attributes["GE"] - 10, 0)
       attributes["AT/PA_KK"] = 5 + Math.max(attributes["KK"] - 10, 0)

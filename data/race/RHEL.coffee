@@ -44,7 +44,7 @@ races.add
     GS: 8
 
   auto: [
-    choice(1, "MU_max", "KL_max", "IN_max", "CH_max", "FF_max", "GE_max", "KO_max", "KK_max")
+    choice("RHEL_E", 1, "MU_max", "KL_max", "IN_max", "CH_max", "FF_max", "GE_max", "KO_max", "KK_max")
   ]
 
   cultures: [
@@ -69,7 +69,7 @@ races.add
     [__("Dunkelsicht"), 1]
     __("Flink")
     __("Gutaussehend")
-    choice(1, __("Herausragender Sinn (Sicht)"), __("Herausragender Sinn (Gehör)"))
+    choice("RHEL_HS", 1, __("Herausragender Sinn (Sicht)"), __("Herausragender Sinn (Gehör)"))
     __("Schlangenmensch")
     __("Wohlklang")
     __("Zauberer")

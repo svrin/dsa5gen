@@ -41,7 +41,7 @@ races.add
     GS: 6
 
   auto: [
-    choice(-2, "CH_max", "GE_max")
+    choice("RZWE_E", -2, "CH_max", "GE_max")
     ["KO_max", 1]
     ["KK_max", 1]
   ]
