@@ -12,9 +12,11 @@ define ['views/bases/selectbox', 'data/profession'], (BaseView, professions, hbs
 
     # Filter
     options:
-      common: [__('Geläufige Professionen'), (profession) ->
+      common: [__('Geläufige Professionen'), (profession, character) ->
         if not culture?
-          return null
+          culture = character.get("culture")
+        if not culture
+          return
 
         # Geläufige Professionen stehen einmal bei der Kultur
         # Und geläufige/ungeläufige bei der Profession

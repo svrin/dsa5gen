@@ -14,7 +14,12 @@ define ['views/bases/selectbox', 'data/culture', 'data/animal',
 
     # Filter
     options:
-      common: [__('Geläufige Kulturen'), (culture) ->
+      common: [__('Geläufige Kulturen'), (culture, character) ->
+        if not race?
+          race = character.get("race")
+        if not race
+          return
+
         return race.get('cultures').indexOf(culture.get('name')) >= 0
       ]
 

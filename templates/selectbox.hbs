@@ -1,6 +1,6 @@
 <h3><%= self.caption || __(self.name) %></h3>
 
-<% gender = character.get('gender'); %>
+<% var gender = character.get('gender'); %>
 
 <% var option = -1; %>
 <% if (self.options) { %>
@@ -24,7 +24,7 @@
     <% } %>
     <% _.each(collection, function(element, index) { %>
 
-    <% if (!self.options || !option || self.options[option][1](element)) { %>
+    <% if (!self.options || !option || self.options[option][1](element, character)) { %>
     <details>
         <summary>
             <input type="radio" value="<%= element.id %>"
