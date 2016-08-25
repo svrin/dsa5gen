@@ -1,30 +1,30 @@
 <h3>Eigenschaften</h3>
 
 <% var c_lifegrade = character.get('lifegrade'); %>
+<% var c_attributes = character.get('attributes'); %>
 
 <ul>
-    <% c_attributes = character.get('attributes'); %>
     <% _.each(c_attributes, function (value, key) { %>
     <% if (key in character.defaults.attributes) { %>
     <li data-href="attributes">
         <label title="<%= __(key) %>"><%= key %></label>
 
-        <% v_max = ((c_lifegrade && c_lifegrade.get('E_MAX')) || 14) + Math.round(c_attributes[key + "_max"] || 0) %>
-        <% v_max_text = v_max %>
+        <% var v_max = ((c_lifegrade && c_lifegrade.get('E_MAX')) || 14) + Math.round(c_attributes[key + "_max"] || 0) %>
+        <% var v_max_text = v_max %>
 
-        <% race = character.get('race'); attributes = race && race.get('attributes') %>
+        <% var race = character.get('race'); attributes = race && race.get('attributes') %>
         <% if (race && attributes && attributes[key]) { %>
         <i>Rasse: <%= race.get('attributes')[key] %></i>
         <% v_max_text += race.get('attributes')[key] %>
         <% } %>
 
-        <% culture = character.get('culture'); attributes = culture && culture.get('attributes') %>
+        <% var culture = character.get('culture'); attributes = culture && culture.get('attributes') %>
         <% if (culture && attributes && attributes[key]) { %>
         <i>Kultur: <%= culture.get('attributes')[key] %></i>
         <% v_max_text += culture.get('attributes')[key] %>
         <% } %>
 
-        <% profession = character.get('profession'); attributes = profession && profession.get('attributes') %>
+        <% var profession = character.get('profession'); attributes = profession && profession.get('attributes') %>
         <% if (profession && attributes && attributes[key]) { %>
         <i>Profession: <%= profession.get('attributes')[key] %></i>
         <% v_max_text += profession.get('attributes')[key] %>

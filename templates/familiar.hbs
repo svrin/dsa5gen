@@ -4,7 +4,7 @@
 <% var c_skills = character.get('skills'); %>
 
 <ul>
-    <% v_attributes = character.get('V'); %>
+    <% var v_attributes = character.get('V'); %>
     <% _.each(v_attributes, function (value, key) { %>
     <% if (key.startsWith("V_") && !key.endsWith("max")) { %>
     <li>
@@ -18,7 +18,7 @@
         <i>Bonus: <%= c_skills[key] %></i>
         <% } %>
 
-        <% v_max = 18 + v_attributes[key + "_max"] %>
+        <% var v_max = 18 + v_attributes[key + "_max"] %>
         <span data-min="0" data-max="<%= v_max || 18 %>">
             <a href=":decr(attributes.<%=key%>)"></a>
             <span data-for="attributes.<%=key%>"><%= Math.round(value || 0) %></span>

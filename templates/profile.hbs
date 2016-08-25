@@ -1,10 +1,10 @@
 <h2><%= character.get('name') %></h2>
 <ul>
-    <% gender = character.get('gender'); %>
-    <% lifegrade = character.get('lifegrade'); %>
-    <% profession = character.get('profession'); %>
-    <% culture = character.get('culture'); %>
-    <% race = character.get('race'); %>
+    <% var gender = character.get('gender'); %>
+    <% var lifegrade = character.get('lifegrade'); %>
+    <% var profession = character.get('profession'); %>
+    <% var culture = character.get('culture'); %>
+    <% var race = character.get('race'); %>
 
     <% if (culture && race && lifegrade) { %>
     <li data-href="profession">
