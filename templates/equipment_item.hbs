@@ -24,12 +24,18 @@
             <%= item.get('skill') %><% } %><% if (item.get('distance')) { %>[<%= item.get('distance') %>]
             <% } %>
 
-            <% if (item.get('dice')) { %>
-            <%= item.get('dice') %>
+            <% var item_dice = item.get('dice') %>
+            <% if (item_dice && _.isArray(item_dice)) { %>
+            <%= item_dice.join("+") %>
+            <% } else if (item_dice) { %>
+            <%= item_dice %>
             <% } %>
 
-            <% if (item.get('bonus')) { %>
-            <%= item.get('bonus')['attribute'] %><%= item.get('bonus')['value'] %>
+            <% var item_bonus = item.get('bonus') %>
+            <% if (item_bonus && _.isArray(item_bonus['attribute'])) { %>
+            <%= item_bonus['attribute'].join(item_bonus['value'] + "/") %><%= item_bonus['value'] %>
+            <% } else if (item_bonus) { %>
+            <%= item_bonus['attribute'] %><%= item_bonus['value'] %>
             <% } %>
         </span>
     <% } %>

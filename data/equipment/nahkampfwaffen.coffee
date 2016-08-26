@@ -86,8 +86,8 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 5]
 
     bonus:
-      attribute: "KK"
-      value: 13
+      attribute: ["KK", "GE"]
+      value: 15
 
     distance: __("mittel")
     skill: __("Schwerter")
@@ -371,8 +371,8 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 2]
 
     bonus:
-      attribute: "KK"
-      value: 14
+      attribute: ["KK", "GE"]
+      value: 15
 
     distance: __("mittel")
     skill: __("Schwerter")
@@ -536,8 +536,8 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 2]
 
     bonus:
-      attribute: "KK"
-      value: 14
+      attribute: ["KK", "GE"]
+      value: 15
 
     distance: __("mittel")
     skill: __("Schwerter")
@@ -686,8 +686,8 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 4]
 
     bonus:
-      attribute: "KK"
-      value: 14
+      attribute: ["KK", "GE"]
+      value: 15
 
     distance: __("mittel")
     skill: __("Schwerter")
@@ -791,8 +791,8 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 2]
 
     bonus:
-      attribute: "KK"
-      value: 14
+      attribute: ["KK", "GE"]
+      value: 15
 
     distance: __("kurz")
     skill: __("Schwerter")
@@ -806,7 +806,7 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 3]
 
     bonus:
-      attribute: "KK"
+      attribute: ["KK", "GE"]
       value: 14
 
     distance: __("mittel")
@@ -1226,8 +1226,8 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 3]
 
     bonus:
-      attribute: "KK"
-      value: 14
+      attribute: ["KK", "GE"]
+      value: 15
 
     distance: __("mittel")
     skill: __("Schwerter")
@@ -1271,8 +1271,8 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 3]
 
     bonus:
-      attribute: "KK"
-      value: 14
+      attribute: ["KK", "GE"]
+      value: 15
 
     distance: __("mittel")
     skill: __("Schwerter")
@@ -1406,8 +1406,8 @@ require ["data/equipment/nahkampfwaffen"], (S) ->
     dice: ["1W6", 4]
 
     bonus:
-      attribute: "KK"
-      value: 14
+      attribute: ["KK", "GE"]
+      value: 15
 
     distance: __("mittel")
     skill: __("Schwerter")

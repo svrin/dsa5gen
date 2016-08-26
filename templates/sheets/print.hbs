@@ -494,7 +494,8 @@
             </tr>
             <tr>
                 <td colspan="2" class="center" data-for="equipments.<%= equipment.key %>.bonus">
-                    <%= equipment.item.get('bonus')['attribute'] %><%= equipment.item.get('bonus')['value'] %>
+                    <% var bonus_attribute = equipment.item.getBonusAttribute(character, attributes) %>
+                    <%= bonus_attribute %><%= equipment.item.get('bonus')['value'] %>
                 </td>
                 <td colspan="2" class="center" data-for="equipments.<%= equipment.key %>.dice">
                     <%= equipment.item.get('dice')[0] %>
@@ -504,17 +505,17 @@
                     <% if (equipment.item.get('dice')[1] < 0) { %>
                     <%= equipment.item.get('dice')[1] %>
                     <% } %>
-                    <% if (attributes[equipment.item.get('bonus')['attribute']] > equipment.item.get('bonus')['value'])
-                    { %>
-                    +<%= attributes[equipment.item.get('bonus')['attribute']]-equipment.item.get('bonus')['value'] %>
+
+                    <% if (attributes[bonus_attribute] > equipment.item.get('bonus')['value']) { %>
+                        +<%= attributes[bonus_attribute]-equipment.item.get('bonus')['value'] %>
                     <% } %>
                 </td>
                 <td colspan="2" class="center" data-for="equipments.<%= equipment.key %>.AT">
-                    <%= attributes["AT/PA_" + equipment.item.get('bonus')['attribute']] +
+                    <%= attributes["AT/PA_" + bonus_attribute] +
                     Math.ceil(character.get('skills')[equipment.item.get('skill')] / 2) %>
                 </td>
                 <td colspan="2" class="center" data-for="equipments.<%= equipment.key %>.PA">
-                    <%= attributes["AT/PA_" + equipment.item.get('bonus')['attribute']] +
+                    <%= attributes["AT/PA_" + bonus_attribute] +
                     Math.floor(character.get('skills')[equipment.item.get('skill')] / 2) %>
                 </td>
                 <td colspan="4" class="center" data-for="equipments.<%= equipment.key %>.notes">&nbsp;</td>
@@ -736,6 +737,7 @@
                 <th width="34%">Notizen</th>
             </tr>
             </thead>
+            <% var i = 30; %>
             <tbody>
             <% _.each(equipments, function (equipment) { %>
             <tr>
@@ -753,6 +755,17 @@
                 <td data-for="equipments.<%= equipment.key %>.notes"></td>
             </tr>
             <% }); %>
+
+            <% while (i-- > 0) { %>
+            <tr>
+                <td data-for="equipments.0.name">&nbsp;</td>
+                <td data-for="equipments.0.costs">&nbsp;</td>
+                <td data-for="equipments.0.weight">&nbsp;</td>
+                <td data-for="equipments.0.value">&nbsp;</td>
+                <td data-for="equipments.0.notes">&nbsp;</td>
+            </tr>
+            <% } %>
+
             </tbody>
         </table>
     </section>
